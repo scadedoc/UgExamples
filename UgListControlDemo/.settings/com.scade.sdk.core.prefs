@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+scade.project.build.androidbuildfolder=target
+scade.project.build.applicationid=
+scade.project.build.bundleid=com.scade
+scade.project.build.iosbuildfolder=target
+scade.project.build.ioscertificate=
+scade.project.build.iosprovisioningprofile=
+scade.project.build.iostarget=device
+scade.project.build.mode=development
+scade.project.build.platform=
+scade.project.folders.output=.target
+scade.project.folders.resources=res
+scade.project.folders.src=src
+scade.project.language=Swift Mobile Application Project
