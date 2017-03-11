@@ -1,0 +1,76 @@
+{
+  "eClass" : "http://scade.com/sdk/build#//ScadeApplication",
+  "settings" : [ {
+    "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
+    "path" : "/usr/bin/swiftc",
+    "sdk" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk",
+    "extraArgs" : "",
+    "searchPaths" : [ "platform:/plugin/com.scade.sdk.phoenix/osx/PhoenixSimulator.app/Contents/Resources" ],
+    "linkedLibs" : [ "ScadeKit.framework" ],
+    "output" : "UgMapControl/.target",
+    "arch" : "x86",
+    "os" : "10.11"
+  }, {
+    "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
+    "platform" : "ios",
+    "path" : "/usr/bin/swiftc",
+    "sdk" : "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk",
+    "extraArgs" : "",
+    "searchPaths" : [ "platform:/plugin/com.scade.sdk.phoenix/iphonesimulator" ],
+    "linkedLibs" : [ "ScadeKit.framework" ],
+    "output" : "UgMapControl/.build/ios-simulator",
+    "arch" : "x86",
+    "os" : "9.3"
+  }, {
+    "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
+    "platform" : "ios",
+    "path" : "/usr/bin/swiftc",
+    "sdk" : "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk",
+    "searchPaths" : [ "platform:/plugin/com.scade.sdk.phoenix/iphoneos" ],
+    "linkedLibs" : [ "ScadeKit.framework" ],
+    "output" : "UgMapControl/.build/ios-device",
+    "os" : "9.3"
+  }, {
+    "eClass" : "http://scade.com/sdk/build#//CodeSignSetting",
+    "platform" : "ios",
+    "provisionProfile" : "",
+    "certificate" : ""
+  }, {
+    "eClass" : "http://scade.com/sdk/build#//PListSetting",
+    "platform" : "ios",
+    "key" : "NSLocationWhenInUseUsageDescription",
+    "value" : ""
+  }, {
+    "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
+    "platform" : "android",
+    "path" : "platform:/plugin/com.scade.sdk.build/scade-swift-android",
+    "sdk" : "platform:/plugin/com.scade.sdk.phoenix/android-armeabi-v7a",
+    "output" : "UgMapControl/.build/android-armeabi-v7a"
+  }, {
+    "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
+    "platform" : "android",
+    "path" : "platform:/plugin/com.scade.sdk.build/scade-swift-android",
+    "sdk" : "platform:/plugin/com.scade.sdk.phoenix/android-x86",
+    "output" : "UgMapControl/.build/android-x86",
+    "arch" : "x86"
+  }, {
+    "eClass" : "http://scade.com/sdk/build#//GoogleApiSetting",
+    "platform" : "android",
+    "key" : ""
+  }, {
+    "eClass" : "http://scade.com/sdk/build#//Icons",
+    "platform" : "all",
+    "ios" : {
+      "eClass" : "http://scade.com/sdk/build#//IOSIcons",
+      "appIcon2x" : "",
+      "appIcon3x" : ""
+    },
+    "android" : {
+      "eClass" : "http://scade.com/sdk/build#//AndroidIcons",
+      "mdpiIcon" : "",
+      "hdpiIcon" : "",
+      "xhdpiIcon" : "",
+      "xxhdpiIcon" : ""
+    }
+  } ]
+}
