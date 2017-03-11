@@ -5,7 +5,7 @@ import ScadeKit
 
 @objc class Main : ObjectiveC.NSObject, SCDApplication {
 
- 	let moduleName  = "UgTextLabelDemo"
+ 	let moduleName  = "UgSliderControlDemo"
 	var mainView: SCDLatticeView!
   	var mainAdapter: MainPageAdapter!
   	
