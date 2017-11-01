@@ -2,7 +2,7 @@ import ScadeKit
 
 class BindingAndScalePagePageAdapter: SCDLatticePageAdapter {
 
-	dynamic var imageUrl:String 
+	@objc dynamic var imageUrl:String 
 	var falseValue:Bool = false
 	
 	// page adapter initialization

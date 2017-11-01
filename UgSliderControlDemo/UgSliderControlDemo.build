@@ -2,21 +2,39 @@
   "eClass" : "http://scade.com/sdk/build#//ScadeApplication",
   "settings" : [ {
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
-    "path" : "/usr/bin/swiftc",
-    "sdk" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk",
+    "sdk" : "",
     "extraArgs" : "",
-    "searchPaths" : [ "platform:/plugin/com.scade.sdk.phoenix/osx/PhoenixSimulator.app/Contents/Resources" ],
+    "searchPaths" : [ "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/osx/PhoenixSimulator.app/Contents/Resources" ],
     "linkedLibs" : [ "ScadeKit.framework" ],
-    "output" : "UgSliderControlDemo/.target",
+    "output" : "UgSliderControlDemo/.build/scade-simulator",
     "arch" : "x86",
     "os" : "10.11"
   }, {
+    "eClass" : "http://scade.com/sdk/build#//PListSetting",
+    "platform" : "ios",
+    "key" : "CFBundleName",
+    "value" : "UgSliderControlDemo"
+  }, {
+    "eClass" : "http://scade.com/sdk/build#//PListSetting",
+    "platform" : "ios",
+    "key" : "CFBundleIdentifier",
+    "value" : "com.scade.UgSliderControlDemo"
+  }, {
+    "eClass" : "http://scade.com/sdk/build#//PListSetting",
+    "platform" : "ios",
+    "key" : "CFBundleShortVersionString",
+    "value" : "1.0"
+  }, {
+    "eClass" : "http://scade.com/sdk/build#//PListSetting",
+    "platform" : "ios",
+    "key" : "CFBundleVersion",
+    "value" : "1"
+  }, {
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
     "platform" : "ios",
-    "path" : "/usr/bin/swiftc",
-    "sdk" : "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk",
+    "sdk" : "",
     "extraArgs" : "",
-    "searchPaths" : [ "platform:/plugin/com.scade.sdk.phoenix/iphonesimulator" ],
+    "searchPaths" : [ "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/iphonesimulator" ],
     "linkedLibs" : [ "ScadeKit.framework" ],
     "output" : "UgSliderControlDemo/.build/ios-simulator",
     "arch" : "x86",
@@ -24,33 +42,43 @@
   }, {
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
     "platform" : "ios",
-    "path" : "/usr/bin/swiftc",
-    "sdk" : "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk",
-    "searchPaths" : [ "platform:/plugin/com.scade.sdk.phoenix/iphoneos" ],
+    "sdk" : "",
+    "searchPaths" : [ "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/iphoneos" ],
     "linkedLibs" : [ "ScadeKit.framework" ],
     "output" : "UgSliderControlDemo/.build/ios-device",
     "os" : "9.3"
   }, {
     "eClass" : "http://scade.com/sdk/build#//CodeSignSetting",
     "platform" : "ios",
-    "provisionProfile" : "",
-    "certificate" : ""
+    "provisionProfile" : "/Users/juliabulantseva/Downloads/scade_dev.mobileprovision",
+    "certificate" : "/Users/juliabulantseva/Downloads/scade_development.p12",
+    "betaReportsActive" : false
   }, {
     "eClass" : "http://scade.com/sdk/build#//PListSetting",
     "platform" : "ios",
     "key" : "NSLocationWhenInUseUsageDescription",
     "value" : ""
   }, {
+    "eClass" : "http://scade.com/sdk/build#//PListSetting",
+    "platform" : "ios",
+    "key" : "NSCameraUsageDescription",
+    "value" : "Take pictures from camera"
+  }, {
+    "eClass" : "http://scade.com/sdk/build#//PListSetting",
+    "platform" : "ios",
+    "key" : "NSPhotoLibraryUsageDescription",
+    "value" : "Choose a photo from your library"
+  }, {
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
     "platform" : "android",
-    "path" : "platform:/plugin/com.scade.sdk.build/scade-swift-android",
-    "sdk" : "platform:/plugin/com.scade.sdk.phoenix/android-armeabi-v7a",
+    "path" : "workspace:/.metadata/.plugins/com.scade.sdk.build/Compiler/scade-swift-android",
+    "sdk" : "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/android-armeabi-v7a",
     "output" : "UgSliderControlDemo/.build/android-armeabi-v7a"
   }, {
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
     "platform" : "android",
-    "path" : "platform:/plugin/com.scade.sdk.build/scade-swift-android",
-    "sdk" : "platform:/plugin/com.scade.sdk.phoenix/android-x86",
+    "path" : "workspace:/.metadata/.plugins/com.scade.sdk.build/Compiler/scade-swift-android",
+    "sdk" : "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/android-x86",
     "output" : "UgSliderControlDemo/.build/android-x86",
     "arch" : "x86"
   }, {

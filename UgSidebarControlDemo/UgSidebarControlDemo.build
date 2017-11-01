@@ -2,12 +2,11 @@
   "eClass" : "http://scade.com/sdk/build#//ScadeApplication",
   "settings" : [ {
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
-    "path" : "/usr/bin/swiftc",
-    "sdk" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk",
+    "sdk" : "",
     "extraArgs" : "",
     "searchPaths" : [ "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/osx/PhoenixSimulator.app/Contents/Resources" ],
     "linkedLibs" : [ "ScadeKit.framework" ],
-    "output" : "UgSidebarControlDemo/.target",
+    "output" : "UgSidebarControlDemo/.build/scade-simulator",
     "arch" : "x86",
     "os" : "10.11"
   }, {
@@ -33,8 +32,7 @@
   }, {
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
     "platform" : "ios",
-    "path" : "/usr/bin/swiftc",
-    "sdk" : "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk",
+    "sdk" : "",
     "extraArgs" : "",
     "searchPaths" : [ "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/iphonesimulator" ],
     "linkedLibs" : [ "ScadeKit.framework" ],
@@ -44,8 +42,7 @@
   }, {
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
     "platform" : "ios",
-    "path" : "/usr/bin/swiftc",
-    "sdk" : "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk",
+    "sdk" : "",
     "searchPaths" : [ "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/iphoneos" ],
     "linkedLibs" : [ "ScadeKit.framework" ],
     "output" : "UgSidebarControlDemo/.build/ios-device",
@@ -54,7 +51,8 @@
     "eClass" : "http://scade.com/sdk/build#//CodeSignSetting",
     "platform" : "ios",
     "provisionProfile" : "",
-    "certificate" : ""
+    "certificate" : "",
+    "betaReportsActive" : false
   }, {
     "eClass" : "http://scade.com/sdk/build#//PListSetting",
     "platform" : "ios",

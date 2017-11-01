@@ -2,7 +2,7 @@ import ScadeKit
 
 class MainPageAdapter: SCDLatticePageAdapter {
 
-	dynamic var dogs : [Dog] = []
+	@objc dynamic var dogs : [Dog] = []
 	
 	// page adapter initialization
 	override func load(_ path: String) {		
@@ -12,7 +12,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		
 		// listen to itemSelected events
 		let listControl = self.page!.getWidgetByName("list1") as! SCDWidgetsList
-		listControl.onItemSelected.append(SCDWidgetsItemSelectedEventHandler{ ev in self.rowClicked(event: ev)})
+		listControl.onItemSelected.append(SCDWidgetsItemSelectedEventHandler{ ev in self.rowClicked(event: ev!)})
 				
 		// Listen to action buttons
 		let listControlRowActionButtonRight = self.page!.getWidgetByName("btnListRowInfo") as! SCDWidgetsButton

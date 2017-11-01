@@ -2,7 +2,7 @@ import ScadeKit
 
 class MainPageAdapter: SCDLatticePageAdapter {
 
-	dynamic var imageUrl : String = ""
+	@objc dynamic var imageUrl : String = ""
 	let valueFalse : Bool = false
 	
 	// page adapter initialization

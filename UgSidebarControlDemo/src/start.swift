@@ -9,7 +9,7 @@ import ScadeKit
 	let window = SCDLatticeWindow()
   	let mainAdapter = MainPageAdapter()
   	
-	func main() {
+	@objc func main() {
 		SCDRuntime.initRuntime(self)
 		mainAdapter.load("main.page")
 		mainAdapter.show(window)

@@ -6,16 +6,16 @@ import ScadeKit
 @objc class Main : ObjectiveC.NSObject, SCDApplication {
 
  	let moduleName  = "UgMapControl"
-	var mainView: SCDLatticeView!
+let window = SCDLatticeWindow()
   	var mainAdapter: MainPageAdapter!
   	
-	func main() {
+	@objc func main() {
 		SCDRuntime.initRuntime(self)
 
-		mainView = SCDLatticeView()
+
 		mainAdapter = MainPageAdapter()
 		
 		mainAdapter.load("main.page")
-		mainAdapter.show(mainView)
+		mainAdapter.show(window)
 	}
 }

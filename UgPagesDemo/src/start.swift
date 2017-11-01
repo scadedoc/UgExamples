@@ -6,15 +6,15 @@ import ScadeKit
 @objc class Main : ObjectiveC.NSObject, SCDApplication {
 
  	let moduleName  = "UgPagesDemo"
-	var mainView: SCDLatticeView!
+ 	let window = SCDLatticeWindow()
   	var mainAdapter: MainPageAdapter!
   	
-	func main() {
+	@objc func main() {
 		SCDRuntime.initRuntime(self)
 		saveAndLoadData()
 	}
   	
-  	func saveAndLoadData() {
+  	 func saveAndLoadData() {
   		
 		let data = "CrossPlatformSwift rocks"
 		let location = "mystringdata.data"

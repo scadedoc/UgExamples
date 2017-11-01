@@ -1,23 +1,22 @@
 import Foundation
 import ScadeKit
 
-@objc class Main : NSObject, SCDApplication {
+@objc class Main : ObjectiveC.NSObject, SCDApplication {
 
  	let moduleName  = "UgBitmapDemo"
-	var mainView: SCDLatticeView!
+	let window = SCDLatticeWindow()
   	var mainAdapter: MainPageAdapter!
   	var bindingPage : BindingAndScalePagePageAdapter!
   	
-	func main() {
+	@objc func main() {
 		SCDRuntime.initRuntime(self)
 
-		mainView = SCDLatticeView()
 		mainAdapter = MainPageAdapter()
 		
 		bindingPage = BindingAndScalePagePageAdapter()
 		bindingPage.load("BindingAndScalePage.page")
 		
 		mainAdapter.load("main.page")
-		mainAdapter.show(mainView)
+		mainAdapter.show(window)
 	}
 }

@@ -2,7 +2,7 @@ import ScadeKit
 
 class GroupedByBreedPageAdapter: SCDLatticePageAdapter {
 
-	dynamic var dogs : [DogView] = []
+	@objc dynamic var dogs : [DogView] = []
 	
 	// page adapter initialization
 	override func load(_ path: String) {		

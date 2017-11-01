@@ -6,7 +6,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	var secondHandSvg : SCDSvgLine?
 	var statusStopped : Bool = false
 
-	override func show(_ view: SCDLatticeView, data: Any!) {		
+	override func show(_ view: SCDLatticeView!, data: Any!) {		
 		super.show(view, data: data)
 		
 		self.secondHandSvg = self.page!.drawing!.find(byId: "sechand") as? SCDSvgLine

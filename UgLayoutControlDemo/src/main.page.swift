@@ -2,14 +2,17 @@ import ScadeKit
 
 class MainPageAdapter: SCDLatticePageAdapter {
 
-	dynamic var xposition : String = ""
+	@objc dynamic var xposition : String = ""
 	
 	// page adapter initialization
 	override func load(_ path: String) {		
 		super.load(path)
 		
 		let scrollbox = self.page!.drawing!.find(byId:"sg1") as! SCDSvgScrollGroup
-		scrollbox.onTouch.append(SCDSvgTouchHandler{(ev:SCDSvgTouchEvent) in self.onScroll(point:scrollbox.getPosition())})
+		let gestureHandler = SCDSvgPanGestureRecognizer {handler in
+        		self.onScroll(point:scrollbox.getPosition())
+		}
+		scrollbox.gestureRecognizers.append(gestureHandler)
 		
 		let middlebutton = self.page!.getWidgetByName("btnMiddle") as! SCDWidgetsClickable
 		middlebutton.onClick.append(SCDWidgetsEventHandler{_ in self.gotoMiddle()})
