@@ -57,7 +57,7 @@
     "eClass" : "http://scade.com/sdk/build#//PListSetting",
     "platform" : "ios",
     "key" : "NSLocationWhenInUseUsageDescription",
-    "value" : ""
+    "value" : "Location"
   }, {
     "eClass" : "http://scade.com/sdk/build#//PListSetting",
     "platform" : "ios",
@@ -84,7 +84,7 @@
   }, {
     "eClass" : "http://scade.com/sdk/build#//GoogleApiSetting",
     "platform" : "android",
-    "key" : ""
+    "key" : "AIzaSyAYoreZUQAcxs-Yt18zEAidBSqEuoqnKP4"
   }, {
     "eClass" : "http://scade.com/sdk/build#//Icons",
     "platform" : "all",
