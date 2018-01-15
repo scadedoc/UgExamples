@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.scade.sdk.data.binding="http://scade.com/sdk/data/binding" xmlns:com.scade.sdk.expr="com.scade.sdk.expr" xmlns:com.scade.sdk.lattice.navigation="http://scade.com/lattice/navigation" xmlns:com.scade.sdk.layout="http://scade.com/sdk/layout" xmlns:com.scade.sdk.view="http://scade.com/sdk/view/widgets" xmlns:com.scade.sdk.view.widgets="http://scade.com/sdk/view/widgets/style" xmlns:com.scade.sdk.view.widgets.layout="http://scade.com/sdk/view/widgets/layout" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:svg="http://scade.com/svg/draw" xmlns:svg_1="http://scade.com/svg/constraints" xmlns:svg_2="http://scade.com/svg/style/color">
   <com.scade.sdk.view:Page name="groupedByBreed" drawing="/3">
-    <styles xsi:type="com.scade.sdk.view.widgets:PageStyle" platform="iPhone iOS7">
+    <styles xsi:type="com.scade.sdk.view.widgets:PageStyle">
       <screen device="iPhone 5/5S (4-inch)" svg="svg/screen/iphone_5.svg">
         <size width="320" height="568"/>
         <location x="16"/>
         <landscapeLocation x="-70" y="87"/>
       </screen>
     </styles>
-    <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7"/>
+    <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
     <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2"/>
     <minArea width="320" height="568"/>
     <maxArea width="320" height="568"/>
@@ -16,11 +16,11 @@
       <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" verticalAlignment="BOTTOM" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
       <size width="320" height="55"/>
       <location y="513"/>
-      <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+      <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
         <minSize width="50" height="49"/>
         <maxSize width="-1" height="49"/>
       </styles>
-      <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle" platform="iPhone iOS7"/>
+      <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle"/>
       <layout xsi:type="com.scade.sdk.layout:GridLayout" columns="2"/>
       <minArea width="320" height="52"/>
       <maxArea width="-1" height="-1"/>
@@ -28,7 +28,7 @@
         <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" grabHorizontalSpace="true" heightConstraint="MATCH_PARENT"/>
         <size width="160" height="55"/>
         <location/>
-        <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle" marginTop="5" marginBottom="3" platform="iPhone iOS7"/>
+        <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle" marginTop="5" marginBottom="3"/>
         <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2"/>
         <minArea width="45" height="52"/>
         <maxArea width="-1" height="-1"/>
@@ -36,7 +36,7 @@
           <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true"/>
           <size width="28" height="28"/>
           <location x="66" y="5"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize width="28" height="28"/>
             <maxSize width="-1" height="-1"/>
           </styles>
@@ -46,19 +46,19 @@
           <size width="37" height="19"/>
           <location x="61" y="33"/>
           <contentSize width="37" height="13"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize width="32" height="19"/>
             <maxSize width="-1" height="-1"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="HelveticaNeue" size="11"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7" horizontalAlignment="CENTER"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="HelveticaNeue" size="11"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
         </children>
       </children>
       <children xsi:type="com.scade.sdk.view:ToolBarItem" name="item4" drawing="/3/@drawableChilds.1/@drawableChilds.2">
         <layoutData xsi:type="com.scade.sdk.layout:GridData" column="1" horizontalAlignment="CENTER" grabHorizontalSpace="true" heightConstraint="MATCH_PARENT"/>
         <size width="160" height="55"/>
         <location x="160"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle" marginTop="5" marginBottom="3" platform="iPhone iOS7"/>
+        <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle" marginTop="5" marginBottom="3"/>
         <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2"/>
         <minArea width="45" height="45"/>
         <maxArea width="-1" height="-1"/>
@@ -66,7 +66,7 @@
           <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true"/>
           <size width="28" height="28"/>
           <location x="66" y="5"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize width="28" height="28"/>
             <maxSize width="-1" height="-1"/>
           </styles>
@@ -76,12 +76,12 @@
           <size width="95" height="19"/>
           <location x="32" y="33"/>
           <contentSize width="95" height="13"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize width="32" height="19"/>
             <maxSize width="-1" height="-1"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="HelveticaNeue" size="11"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7" horizontalAlignment="CENTER"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="HelveticaNeue" size="11"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
         </children>
       </children>
     </children>
@@ -98,7 +98,7 @@
           <layoutData xsi:type="com.scade.sdk.layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
           <size width="320" height="57"/>
           <location/>
-          <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
           <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2"/>
           <minArea height="45"/>
           <maxArea width="-1" height="-1"/>
@@ -106,7 +106,7 @@
             <layoutData xsi:type="com.scade.sdk.layout:GridData" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
             <size width="320" height="27"/>
             <location/>
-            <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7" type="COLOR">
+            <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" type="COLOR">
               <color Red="230" Green="230" Blue="230"/>
             </styles>
             <layout xsi:type="com.scade.sdk.layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
@@ -117,19 +117,19 @@
               <size width="58" height="17"/>
               <location x="5" y="5"/>
               <contentSize width="58" height="17"/>
-              <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+              <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
                 <minSize/>
                 <maxSize width="-1" height="-1"/>
               </styles>
-              <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="ArialMT" size="14"/>
-              <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7"/>
+              <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="14"/>
+              <styles xsi:type="com.scade.sdk.view.widgets:TextStyle"/>
             </children>
           </children>
           <children xsi:type="com.scade.sdk.view:RowView" name="detailView" drawing="/3/@drawableChilds.2/@drawableChilds.0/@drawableChilds.0/@drawableChilds.1/@drawableChilds.1">
             <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
             <size width="320" height="30"/>
             <location y="27"/>
-            <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7"/>
+            <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
             <layout xsi:type="com.scade.sdk.layout:GridLayout" columns="5" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
             <minArea/>
             <maxArea width="-1" height="-1"/>
@@ -138,44 +138,44 @@
               <size width="51" height="20"/>
               <location x="5" y="5"/>
               <contentSize width="51" height="20"/>
-              <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+              <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
                 <minSize/>
                 <maxSize width="51" height="20"/>
               </styles>
-              <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="Arial-BoldMT" size="17"/>
-              <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7"/>
+              <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="Arial-BoldMT" size="17"/>
+              <styles xsi:type="com.scade.sdk.view.widgets:TextStyle"/>
             </children>
             <children xsi:type="com.scade.sdk.view:Label" name="dogbreed2" drawing="/3/@drawableChilds.2/@drawableChilds.0/@drawableChilds.0/@drawableChilds.1/@drawableChilds.1/@drawableChilds.2" text="St. Bernard" wrapText="true">
               <layoutData xsi:type="com.scade.sdk.layout:GridData" column="1" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
               <size width="86" height="20"/>
               <location x="109" y="5"/>
               <contentSize width="86" height="20"/>
-              <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+              <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
                 <minSize/>
                 <maxSize width="86" height="20"/>
               </styles>
-              <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="ArialMT" size="17"/>
-              <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7"/>
+              <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17"/>
+              <styles xsi:type="com.scade.sdk.view.widgets:TextStyle"/>
             </children>
             <children xsi:type="com.scade.sdk.view:Label" name="dogid2" drawing="/3/@drawableChilds.2/@drawableChilds.0/@drawableChilds.0/@drawableChilds.1/@drawableChilds.1/@drawableChilds.3" text="D100" wrapText="true">
               <layoutData xsi:type="com.scade.sdk.layout:GridData" column="2" horizontalAlignment="RIGHT" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
               <size width="41" height="20"/>
               <location x="274" y="5"/>
               <contentSize width="41" height="20"/>
-              <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+              <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
                 <minSize/>
                 <maxSize width="41" height="20"/>
               </styles>
-              <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="ArialMT" size="17">
+              <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17">
                 <color Red="204" Green="204" Blue="204"/>
               </styles>
-              <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7" horizontalAlignment="RIGHT"/>
+              <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="RIGHT"/>
             </children>
           </children>
           <leftBar xsi:type="com.scade.sdk.view:RowView" name="leftBar" drawing="/3/@drawableChilds.2/@drawableChilds.0/@drawableChilds.0/@drawableChilds.3" visible="false">
             <size width="320" height="57"/>
             <location/>
-            <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7"/>
+            <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
             <layout xsi:type="com.scade.sdk.layout:GridLayout"/>
             <minArea/>
             <maxArea width="-1" height="-1"/>
@@ -183,7 +183,7 @@
           <rightBar xsi:type="com.scade.sdk.view:RowView" name="rightBar" drawing="/3/@drawableChilds.2/@drawableChilds.0/@drawableChilds.0/@drawableChilds.4" visible="false">
             <size width="320" height="57"/>
             <location/>
-            <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7"/>
+            <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
             <layout xsi:type="com.scade.sdk.layout:GridLayout"/>
             <minArea/>
             <maxArea width="-1" height="-1"/>
@@ -201,7 +201,7 @@
         <dstSelector feature="items"/>
       </root>
     </bindings>
-    <bindings src="/0/@children.1" dst="/0/@children.1" active="true">
+    <bindings src="/0/@children.1" dst="/0/@children.1">
       <root>
         <srcSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="items" at="-1"/>
         <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="elements" at="-1"/>
@@ -215,59 +215,7 @@
         </next>
       </root>
     </bindings>
-    <bindings src="/0/@children.1" dst="/0/@children.1" active="true">
-      <root>
-        <srcSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="items" at="-1"/>
-        <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="elements" at="-1"/>
-        <next>
-          <srcSelector feature="isDetail"/>
-          <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="children">
-            <next feature="layoutData">
-              <next feature="exclude"/>
-            </next>
-          </dstSelector>
-        </next>
-      </root>
-    </bindings>
-    <bindings src="/0/@children.1" dst="/0/@children.1" active="true">
-      <root>
-        <srcSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="items" at="-1"/>
-        <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="elements" at="-1"/>
-        <next>
-          <srcSelector feature="isGroup"/>
-          <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="children">
-            <next feature="visible"/>
-          </dstSelector>
-        </next>
-      </root>
-    </bindings>
-    <bindings src="/0/@children.1" dst="/0/@children.1" active="true">
-      <root>
-        <srcSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="items" at="-1"/>
-        <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="elements" at="-1"/>
-        <next>
-          <srcSelector feature="isGroup"/>
-          <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="children" at="1">
-            <next feature="layoutData">
-              <next feature="exclude"/>
-            </next>
-          </dstSelector>
-        </next>
-      </root>
-    </bindings>
-    <bindings src="/0/@children.1" dst="/0/@children.1" active="true">
-      <root>
-        <srcSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="items" at="-1"/>
-        <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="elements" at="-1"/>
-        <next>
-          <srcSelector feature="isDetail"/>
-          <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="children" at="1">
-            <next feature="visible"/>
-          </dstSelector>
-        </next>
-      </root>
-    </bindings>
-    <bindings src="/0/@children.1" dst="/0/@children.1" active="true">
+    <bindings src="/0/@children.1" dst="/0/@children.1">
       <root>
         <srcSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="items" at="-1"/>
         <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="elements" at="-1"/>
@@ -281,21 +229,7 @@
         </next>
       </root>
     </bindings>
-    <bindings src="/0/@children.1" dst="/0/@children.1" active="true">
-      <root>
-        <srcSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="items" at="-1"/>
-        <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="elements" at="-1"/>
-        <next>
-          <srcSelector feature="breed"/>
-          <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="children" at="1">
-            <next xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="children" at="1">
-              <next feature="text"/>
-            </next>
-          </dstSelector>
-        </next>
-      </root>
-    </bindings>
-    <bindings src="/0/@children.1" dst="/0/@children.1" active="true">
+    <bindings src="/0/@children.1" dst="/0/@children.1">
       <root>
         <srcSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="items" at="-1"/>
         <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="elements" at="-1"/>
@@ -305,18 +239,6 @@
             <next xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="children" at="2">
               <next feature="text"/>
             </next>
-          </dstSelector>
-        </next>
-      </root>
-    </bindings>
-    <bindings src="/0/@children.1" dst="/0/@children.1" active="true">
-      <root>
-        <srcSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="items" at="-1"/>
-        <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="elements" at="-1"/>
-        <next>
-          <srcSelector feature="breed"/>
-          <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="children" at="2">
-            <next feature="text"/>
           </dstSelector>
         </next>
       </root>
