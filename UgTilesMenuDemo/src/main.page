@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.scade.sdk.data.binding="http://scade.com/sdk/data/binding" xmlns:com.scade.sdk.expr="com.scade.sdk.expr" xmlns:com.scade.sdk.lattice.navigation="http://scade.com/lattice/navigation" xmlns:com.scade.sdk.layout="http://scade.com/sdk/layout" xmlns:com.scade.sdk.view="http://scade.com/sdk/view/widgets" xmlns:com.scade.sdk.view.widgets="http://scade.com/sdk/view/widgets/style" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:svg="http://scade.com/svg/draw" xmlns:svg_1="http://scade.com/svg/constraints" xmlns:svg_2="http://scade.com/svg/style/color">
   <com.scade.sdk.view:Page name="main" drawing="/3">
-    <styles xsi:type="com.scade.sdk.view.widgets:PageStyle" platform="iPhone iOS7">
+    <styles xsi:type="com.scade.sdk.view.widgets:PageStyle">
       <screen device="iPhone 5/5S (4-inch)" svg="svg/screen/iphone_5.svg">
         <size width="320" height="568"/>
         <location x="16"/>
         <landscapeLocation x="-70" y="87"/>
       </screen>
     </styles>
-    <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7"/>
-    <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2"/>
+    <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
+    <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="3"/>
     <minArea width="320" height="568"/>
     <maxArea width="320" height="568"/>
     <children xsi:type="com.scade.sdk.view:ToolBar" name="toolbar1" drawing="/3/@drawableChilds.1">
-      <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" verticalAlignment="BOTTOM" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
+      <layoutData xsi:type="com.scade.sdk.layout:GridData" row="2" verticalAlignment="BOTTOM" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
       <size width="320" height="55"/>
       <location y="513"/>
-      <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+      <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
         <minSize width="50" height="49"/>
         <maxSize width="-1" height="49"/>
       </styles>
-      <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle" platform="iPhone iOS7"/>
+      <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle"/>
       <layout xsi:type="com.scade.sdk.layout:GridLayout" columns="4"/>
       <minArea width="320" height="52"/>
       <maxArea width="-1" height="-1"/>
@@ -28,7 +28,7 @@
         <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" grabHorizontalSpace="true" heightConstraint="MATCH_PARENT"/>
         <size width="80" height="55"/>
         <location/>
-        <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle" marginTop="5" marginBottom="3" platform="iPhone iOS7"/>
+        <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle" marginTop="5" marginBottom="3"/>
         <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2"/>
         <minArea width="45" height="52"/>
         <maxArea width="-1" height="-1"/>
@@ -36,7 +36,7 @@
           <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true"/>
           <size width="28" height="28"/>
           <location x="26" y="5"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize width="28" height="28"/>
             <maxSize width="-1" height="-1"/>
           </styles>
@@ -45,19 +45,19 @@
           <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" horizontalAlignment="CENTER" grabHorizontalSpace="true"/>
           <size width="32" height="19"/>
           <location x="24" y="33"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize width="32" height="19"/>
             <maxSize width="-1" height="-1"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="HelveticaNeue" size="11"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7" horizontalAlignment="CENTER"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="HelveticaNeue" size="11"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
         </children>
       </children>
       <children xsi:type="com.scade.sdk.view:ToolBarItem" name="item2" drawing="/3/@drawableChilds.1/@drawableChilds.2">
         <layoutData xsi:type="com.scade.sdk.layout:GridData" column="1" horizontalAlignment="CENTER" grabHorizontalSpace="true" heightConstraint="MATCH_PARENT"/>
         <size width="80" height="55"/>
         <location x="80"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle" marginTop="5" marginBottom="3" platform="iPhone iOS7"/>
+        <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle" marginTop="5" marginBottom="3"/>
         <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2"/>
         <minArea width="45" height="45"/>
         <maxArea width="-1" height="-1"/>
@@ -65,7 +65,7 @@
           <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true"/>
           <size width="28" height="28"/>
           <location x="26" y="5"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize width="28" height="28"/>
             <maxSize width="-1" height="-1"/>
           </styles>
@@ -74,19 +74,19 @@
           <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" horizontalAlignment="CENTER" grabHorizontalSpace="true"/>
           <size width="32" height="19"/>
           <location x="24" y="33"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize width="32" height="19"/>
             <maxSize width="-1" height="-1"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="HelveticaNeue" size="11"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7" horizontalAlignment="CENTER"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="HelveticaNeue" size="11"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
         </children>
       </children>
       <children xsi:type="com.scade.sdk.view:ToolBarItem" name="item3" drawing="/3/@drawableChilds.1/@drawableChilds.3">
         <layoutData xsi:type="com.scade.sdk.layout:GridData" column="2" horizontalAlignment="CENTER" grabHorizontalSpace="true" heightConstraint="MATCH_PARENT"/>
         <size width="80" height="55"/>
         <location x="160"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle" marginTop="5" marginBottom="3" platform="iPhone iOS7"/>
+        <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle" marginTop="5" marginBottom="3"/>
         <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2"/>
         <minArea width="45" height="45"/>
         <maxArea width="-1" height="-1"/>
@@ -94,7 +94,7 @@
           <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true"/>
           <size width="28" height="28"/>
           <location x="26" y="5"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize width="28" height="28"/>
             <maxSize width="-1" height="-1"/>
           </styles>
@@ -103,19 +103,19 @@
           <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" horizontalAlignment="CENTER" grabHorizontalSpace="true"/>
           <size width="32" height="19"/>
           <location x="24" y="33"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize width="32" height="19"/>
             <maxSize width="-1" height="-1"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="HelveticaNeue" size="11"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7" horizontalAlignment="CENTER"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="HelveticaNeue" size="11"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
         </children>
       </children>
       <children xsi:type="com.scade.sdk.view:ToolBarItem" name="item4" drawing="/3/@drawableChilds.1/@drawableChilds.4">
         <layoutData xsi:type="com.scade.sdk.layout:GridData" column="3" horizontalAlignment="CENTER" grabHorizontalSpace="true" heightConstraint="MATCH_PARENT"/>
         <size width="80" height="55"/>
         <location x="240"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle" marginTop="5" marginBottom="3" platform="iPhone iOS7"/>
+        <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle" marginTop="5" marginBottom="3"/>
         <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2"/>
         <minArea width="45" height="45"/>
         <maxArea width="-1" height="-1"/>
@@ -123,7 +123,7 @@
           <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true"/>
           <size width="28" height="28"/>
           <location x="26" y="5"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize width="28" height="28"/>
             <maxSize width="-1" height="-1"/>
           </styles>
@@ -132,20 +132,20 @@
           <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" horizontalAlignment="CENTER" grabHorizontalSpace="true"/>
           <size width="32" height="19"/>
           <location x="24" y="33"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize width="32" height="19"/>
             <maxSize width="-1" height="-1"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="HelveticaNeue" size="11"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7" horizontalAlignment="CENTER"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="HelveticaNeue" size="11"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
         </children>
       </children>
     </children>
     <children xsi:type="com.scade.sdk.view:GridView" name="grid1" drawing="/3/@drawableChilds.2">
       <layoutData xsi:type="com.scade.sdk.layout:GridData" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
-      <size width="320" height="513"/>
+      <size width="320" height="491"/>
       <location/>
-      <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7">
+      <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle">
         <color Red="229" Green="224" Blue="230"/>
       </styles>
       <layout xsi:type="com.scade.sdk.layout:GridLayout" columns="3" rows="3" verticalSpacing="5" horizontalSpacing="5" marginTop="5" marginBottom="5" marginLeft="5" marginRight="15"/>
@@ -156,7 +156,7 @@
         <size width="100" height="130"/>
         <location x="5" y="5"/>
         <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7" type="COLOR">
+        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" type="COLOR">
           <color Green="128" Blue="255"/>
         </styles>
         <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
@@ -167,7 +167,7 @@
           <size width="90" height="100"/>
           <location x="5" y="5"/>
           <contentSize width="-38"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize/>
             <maxSize width="-1" height="-1"/>
           </styles>
@@ -177,14 +177,14 @@
           <size width="51" height="20"/>
           <location x="24" y="105"/>
           <contentSize width="51" height="20"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize/>
             <maxSize width="51" height="20"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="ArialMT" size="17">
+          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17">
             <color Red="255" Green="255" Blue="255"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7" horizontalAlignment="CENTER"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
         </children>
       </children>
       <children xsi:type="com.scade.sdk.view:ListView" name="verticalview2" drawing="/3/@drawableChilds.2/@drawableChilds.0/@drawableChilds.2">
@@ -192,7 +192,7 @@
         <size width="100" height="130"/>
         <location x="5" y="140"/>
         <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7" type="COLOR">
+        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" type="COLOR">
           <color Blue="255"/>
         </styles>
         <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
@@ -203,7 +203,7 @@
           <size width="90" height="100"/>
           <location x="5" y="5"/>
           <contentSize width="-57"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize width="100" height="100"/>
             <maxSize width="-1" height="-1"/>
           </styles>
@@ -213,14 +213,14 @@
           <size width="54" height="20"/>
           <location x="23" y="105"/>
           <contentSize width="54" height="20"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize/>
             <maxSize width="54" height="20"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="ArialMT" size="17">
+          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17">
             <color Red="255" Green="255" Blue="255"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7" horizontalAlignment="CENTER"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
         </children>
       </children>
       <children xsi:type="com.scade.sdk.view:ListView" name="verticalview3" drawing="/3/@drawableChilds.2/@drawableChilds.0/@drawableChilds.3">
@@ -228,7 +228,7 @@
         <size width="100" height="132"/>
         <location x="5" y="275"/>
         <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7" type="COLOR">
+        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" type="COLOR">
           <color Red="255"/>
         </styles>
         <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
@@ -238,7 +238,7 @@
           <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
           <size width="90" height="100"/>
           <location x="5" y="5"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize height="100"/>
             <maxSize width="-1" height="-1"/>
           </styles>
@@ -248,14 +248,14 @@
           <size width="90" height="22"/>
           <location x="5" y="105"/>
           <contentSize width="52" height="22"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize/>
             <maxSize width="-1" height="-1"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="ArialMT" size="17">
+          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17">
             <color Red="255" Green="255" Blue="255"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7" horizontalAlignment="CENTER"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
         </children>
       </children>
       <children xsi:type="com.scade.sdk.view:ListView" name="verticalview4" drawing="/3/@drawableChilds.2/@drawableChilds.0/@drawableChilds.4">
@@ -263,7 +263,7 @@
         <size width="100" height="132"/>
         <location x="215" y="275"/>
         <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7"/>
+        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
         <layout xsi:type="com.scade.sdk.layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
         <minArea/>
         <maxArea width="-1" height="-1"/>
@@ -273,7 +273,7 @@
         <size width="100" height="132"/>
         <location x="110" y="275"/>
         <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7"/>
+        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
         <layout xsi:type="com.scade.sdk.layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
         <minArea/>
         <maxArea width="-1" height="-1"/>
@@ -283,7 +283,7 @@
         <size width="100" height="130"/>
         <location x="110" y="5"/>
         <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7" type="COLOR">
+        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" type="COLOR">
           <color Red="128" Green="128"/>
         </styles>
         <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
@@ -294,7 +294,7 @@
           <size width="90" height="100"/>
           <location x="5" y="5"/>
           <contentSize width="-24"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize width="100" height="100"/>
             <maxSize width="-1" height="-1"/>
           </styles>
@@ -304,14 +304,14 @@
           <size width="39" height="20"/>
           <location x="30" y="105"/>
           <contentSize width="39" height="20"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize/>
             <maxSize width="39" height="20"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="ArialMT" size="17">
+          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17">
             <color Red="255" Green="255" Blue="255"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7" horizontalAlignment="CENTER"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
         </children>
       </children>
       <children xsi:type="com.scade.sdk.view:ListView" name="verticalview7" drawing="/3/@drawableChilds.2/@drawableChilds.0/@drawableChilds.7">
@@ -319,7 +319,7 @@
         <size width="100" height="130"/>
         <location x="215" y="5"/>
         <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7" type="COLOR">
+        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" type="COLOR">
           <color Red="255" Green="128"/>
         </styles>
         <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
@@ -330,7 +330,7 @@
           <size width="90" height="100"/>
           <location x="5" y="5"/>
           <contentSize width="-132" height="-26"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize width="80" height="80"/>
             <maxSize width="-1" height="-1"/>
           </styles>
@@ -340,14 +340,14 @@
           <size width="49" height="20"/>
           <location x="25" y="105"/>
           <contentSize width="49" height="20"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize/>
             <maxSize width="49" height="20"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="ArialMT" size="17">
+          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17">
             <color Red="255" Green="255" Blue="255"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7" horizontalAlignment="CENTER"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
         </children>
       </children>
       <children xsi:type="com.scade.sdk.view:ListView" name="verticalview8" drawing="/3/@drawableChilds.2/@drawableChilds.0/@drawableChilds.8">
@@ -355,7 +355,7 @@
         <size width="100" height="130"/>
         <location x="110" y="140"/>
         <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7" type="COLOR">
+        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" type="COLOR">
           <color Red="128" Blue="255"/>
         </styles>
         <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
@@ -366,7 +366,7 @@
           <size width="90" height="60"/>
           <location x="5" y="25"/>
           <contentSize width="10" height="32"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize width="60" height="60"/>
             <maxSize width="-1" height="-1"/>
           </styles>
@@ -376,14 +376,14 @@
           <size width="49" height="20"/>
           <location x="25" y="105"/>
           <contentSize width="49" height="20"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize/>
             <maxSize width="49" height="20"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="ArialMT" size="17">
+          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17">
             <color Red="255" Green="255" Blue="255"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7" horizontalAlignment="CENTER"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
         </children>
       </children>
       <children xsi:type="com.scade.sdk.view:ListView" name="verticalview9" drawing="/3/@drawableChilds.2/@drawableChilds.0/@drawableChilds.9">
@@ -391,7 +391,7 @@
         <size width="100" height="130"/>
         <location x="215" y="140"/>
         <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7" type="COLOR">
+        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" type="COLOR">
           <color Red="255" Blue="128"/>
         </styles>
         <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
@@ -402,7 +402,7 @@
           <size width="90" height="60"/>
           <location x="5" y="25"/>
           <contentSize width="-15" height="7"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize width="100" height="60"/>
             <maxSize width="-1" height="-1"/>
           </styles>
@@ -412,16 +412,27 @@
           <size width="90" height="20"/>
           <location x="5" y="105"/>
           <contentSize width="87" height="20"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
+          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
             <minSize/>
             <maxSize width="-1" height="-1"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="ArialMT" size="17">
+          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17">
             <color Red="255" Green="255" Blue="255"/>
           </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7" horizontalAlignment="CENTER"/>
+          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
         </children>
       </children>
+    </children>
+    <children xsi:type="com.scade.sdk.view:Label" name="label1" drawing="/3/@drawableChilds.3" text="label">
+      <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" verticalAlignment="MIDDLE"/>
+      <size width="44" height="22"/>
+      <location y="491"/>
+      <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
+        <minSize width="44" height="22"/>
+        <maxSize width="-1" height="-1"/>
+      </styles>
+      <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17"/>
+      <styles xsi:type="com.scade.sdk.view.widgets:TextStyle"/>
     </children>
   </com.scade.sdk.view:Page>
   <com.scade.sdk.data.binding:BindingModel/>
@@ -596,7 +607,7 @@
       </drawableChilds>
     </drawableChilds>
     <drawableChilds xsi:type="svg:Group" attributes="{&quot;widget-id&quot;:&quot;grid1&quot;}">
-      <drawableChilds xsi:type="svg:ScrollGroup" attributes="{&quot;template-id&quot;:&quot;container-scroll&quot;}" width="320" height="513">
+      <drawableChilds xsi:type="svg:ScrollGroup" attributes="{&quot;template-id&quot;:&quot;container-scroll&quot;}" width="320" height="491">
         <constraints xsi:type="svg_1:ScrollSizeConstraint" exprStr="size.w size.h">
           <width xsi:type="com.scade.sdk.expr:Variable" name="size">
             <path>w</path>
@@ -626,7 +637,7 @@
             <ry/>
           </drawableChilds>
           <width value="320.0"/>
-          <height value="513.0"/>
+          <height value="491.0"/>
         </drawableChilds>
         <drawableChilds xsi:type="svg:Group" attributes="{&quot;widget-id&quot;:&quot;verticalview1&quot;}">
           <matrix translateX="5.0" translateY="5.0"/>
@@ -1051,6 +1062,14 @@
             </drawableChilds>
           </drawableChilds>
         </drawableChilds>
+      </drawableChilds>
+    </drawableChilds>
+    <drawableChilds xsi:type="svg:Group">
+      <matrix translateY="491.0"/>
+      <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="ArialMT" text="label" alignmentBaseline="central">
+        <fill xsi:type="svg_2:RGBColor" r="0.27450982" g="0.27450982" b="0.27450982"/>
+        <x/>
+        <y value="11.0"/>
       </drawableChilds>
     </drawableChilds>
   </svg:Box>

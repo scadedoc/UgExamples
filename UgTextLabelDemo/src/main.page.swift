@@ -3,7 +3,7 @@ import ScadeKit
 class MainPageAdapter: SCDLatticePageAdapter {
 	
 	var label1 : SCDWidgetsLabel!
-	let valueTrue : Bool = true
+	@objc dynamic var valueTrue : Bool = true
 	
 	// page adapter initialization
 	override func load(_ path: String) {		

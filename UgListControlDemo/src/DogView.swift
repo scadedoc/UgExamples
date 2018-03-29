@@ -4,13 +4,13 @@
 			
 		// please make sure you annotate each variable with the type
 		// for SCADE to more identify and leverage the type information
-		let id : String
-		let name : String
-		let ageInYears : Int 
-		let breed:String 
+		@objc dynamic var id : String
+		@objc dynamic var name : String
+		@objc dynamic var ageInYears : Int 
+		@objc dynamic var breed:String 
 		
-		let isGroup:Bool
-		let isDetail:Bool
+		@objc dynamic var isGroup:Bool
+		@objc dynamic var isDetail:Bool
 		
 		init(id:String,name:String,breed:String,ageInYears:Int) {
 			self.id = id
