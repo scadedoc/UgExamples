@@ -21,7 +21,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 			rect.gestureRecognizers.append(getTapGesture("tapped rectangle"))
 		}
 		
-		// setup and move circle using touch gesture
+		// setup and move circle using Pan gesture
 		self.circle = self.page!.drawing!.find(byId: "circle1") as? SCDSvgCircle
 		self.circle!.gestureRecognizers.append(getPanGesture())
 		
@@ -50,7 +50,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		
 	func getPanGesture() -> SCDSvgPanGestureRecognizer {
 		
-		// A touch gesture is a movement along a path
+		// A pan gesture is a movement along a path
 		let gestureHandler = SCDSvgPanGestureRecognizer {handler in
     		let handler = handler as! SCDSvgPanGestureRecognizer
  
