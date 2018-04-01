@@ -31,9 +31,10 @@ class ListControlPageAdapter: SCDLatticePageAdapter {
 		
 		// First step, setup template 
 		listControl._template?.element?.children = [createTemplate()]
-			
+		
 		// return control
 		return listControl
+		
 	}
 	
 	func createTemplate() -> SCDWidgetsRowView {
