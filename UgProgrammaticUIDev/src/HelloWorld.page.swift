@@ -22,7 +22,8 @@ class HelloWorldPageAdapter: SCDLatticePageAdapter {
 		
 		// assign layout to button
 		button.layoutData = gridData
-		
+	 	button.onClick.append(SCDWidgetsEventHandler{ _ in print("Hello")})
+		 
 		// Configure current (main page)
 		let layout = self.page!.layout as! SCDLayoutGridLayout
 		layout.rows = 2 // here we tell the layout manager that the grid has two rows
@@ -33,7 +34,7 @@ class HelloWorldPageAdapter: SCDLatticePageAdapter {
 		if let button = e.target as? SCDWidgetsButton {
 			button.text = "Hello World. I was clicked!"
 		}
-		
+	
 		let svgIcon = getBitmapControl()
 		(svgIcon.layoutData as! SCDLayoutGridData).row = 1
 		self.page!.children.append(svgIcon)
@@ -53,6 +54,7 @@ class HelloWorldPageAdapter: SCDLatticePageAdapter {
 		svg.url = "res/check5.svg" 
 		svg.isContentPriority = false // this needs to be set to false, else we source img from content property
 		self.configureGridData(of:svg)
+		svg.url = "Ewq"
 		return svg
 	}
 	
