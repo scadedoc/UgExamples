@@ -3,7 +3,7 @@ Hi Kyle
 thanks for the feedback on the API
 
 1. setting with and height is easy if you know how. 
-- please see the implementaiton of the setWidthContraint method
+- please see the implementation of the setWidthContraint method
 
 2. There is one bug there stops you from setting the scrollbar via code. We will fix this shortly
 - in the meantime, i just added a grid through the editor and made it scrollable horizontally
