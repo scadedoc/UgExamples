@@ -15,6 +15,8 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func menuClicked(_ id:String) {
+		let label1 = self.page!.getWidgetByName("label1") as! SCDWidgetsLabel
+		label1.text = "Menu \(id) clicked"
 		print("Menu \(id) clicked")
 	}
 }
