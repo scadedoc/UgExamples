@@ -1,11 +1,21 @@
 {
   "eClass" : "http://scade.com/sdk/build#//ScadeApplication",
+  "dependencies" : [ {
+    "eClass" : "http://scade.com/sdk/build#//SpmPackage",
+    "url" : "",
+    "from" : ""
+  } ],
   "settings" : [ {
+    "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
+    "platform" : "all",
+    "searchPaths" : [ "" ],
+    "linkedLibs" : [ "" ]
+  }, {
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
     "sdk" : "",
     "extraArgs" : "",
-    "searchPaths" : [ "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/bin/macos/PhoenixSimulator.app/Contents/Resources" ],
-    "linkedLibs" : [ "ScadeKit.framework" ],
+    "searchPaths" : [ "" ],
+    "linkedLibs" : [ "" ],
     "output" : "UgCameraDemo/.build/scade-simulator",
     "arch" : "x86",
     "os" : "10.11"
@@ -14,6 +24,12 @@
     "platform" : "ios",
     "name" : "UgCameraDemo",
     "id" : "com.scade.UgCameraDemo"
+  }, {
+    "eClass" : "http://scade.com/sdk/build#//AppleApp",
+    "platform" : "ios",
+    "deviceFamily" : "iphone",
+    "supportedInterfaceOrientations" : [ "portrait" ],
+    "supportedInterfaceOrientationsiPad" : [ "portrait" ]
   }, {
     "eClass" : "http://scade.com/sdk/build#//PListSetting",
     "platform" : "ios",
@@ -29,8 +45,8 @@
     "platform" : "ios",
     "sdk" : "",
     "extraArgs" : "",
-    "searchPaths" : [ "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/lib/iphonesimulator" ],
-    "linkedLibs" : [ "ScadeKit.framework" ],
+    "searchPaths" : [ "" ],
+    "linkedLibs" : [ "" ],
     "output" : "UgCameraDemo/.build/ios-simulator",
     "arch" : "x86",
     "os" : "9.3"
@@ -38,15 +54,16 @@
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
     "platform" : "ios",
     "sdk" : "",
-    "searchPaths" : [ "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/lib/iphoneos" ],
-    "linkedLibs" : [ "ScadeKit.framework" ],
+    "extraArgs" : "",
+    "searchPaths" : [ "" ],
+    "linkedLibs" : [ "" ],
     "output" : "UgCameraDemo/.build/ios-device",
     "os" : "9.3"
   }, {
     "eClass" : "http://scade.com/sdk/build#//CodeSignSetting",
     "platform" : "ios",
-    "provisionProfile" : "/Users/juliabulantseva/Downloads/scade_dev.mobileprovision",
-    "certificate" : "/Users/juliabulantseva/Downloads/scade_development.p12",
+    "provisionProfile" : "/Users/juliabulantseva/Downloads/ExyteWeatherApp_Ad_Hoc.mobileprovision",
+    "certificate" : "/Users/juliabulantseva/Downloads/Exyte_distribution.p12",
     "betaReportsActive" : false
   }, {
     "eClass" : "http://scade.com/sdk/build#//PListSetting",
@@ -71,18 +88,24 @@
   }, {
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
     "platform" : "android",
-    "path" : "workspace:/.metadata/.plugins/com.scade.sdk.build/Compiler/scade-swift-android",
-    "sdk" : "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/lib/android-armeabi-v7a",
+    "path" : "workspace:/.metadata/.plUgCameraDemoins/com.scade.sdk.build/Compiler/scade-swift-android",
+    "sdk" : "",
+    "extraArgs" : "",
+    "searchPaths" : [ "" ],
+    "linkedLibs" : [ "" ],
     "output" : "UgCameraDemo/.build/android-armeabi-v7a",
-    "buildType" : "Debug"
+    "buildType" : "DebUgCameraDemo"
   }, {
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
     "platform" : "android",
-    "path" : "workspace:/.metadata/.plugins/com.scade.sdk.build/Compiler/scade-swift-android",
-    "sdk" : "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/lib/android-x86",
+    "path" : "workspace:/.metadata/.plUgCameraDemoins/com.scade.sdk.build/Compiler/scade-swift-android",
+    "sdk" : "",
+    "extraArgs" : "",
+    "searchPaths" : [ "" ],
+    "linkedLibs" : [ "" ],
     "output" : "UgCameraDemo/.build/android-x86",
     "arch" : "x86",
-    "buildType" : "Debug"
+    "buildType" : "DebUgCameraDemo"
   }, {
     "eClass" : "http://scade.com/sdk/build#//GoogleApiSetting",
     "platform" : "android",
