@@ -1,16 +1,11 @@
-#if os(Linux) || os(Android)
-import SwiftFoundation
-#endif
 import ScadeKit
 
-@objc class Main : ObjectiveC.NSObject, SCDApplication {
+class UgSidebarControlDemo: SCDApplication {
 
- 	let moduleName  = "UgSidebarControlDemo"
 	let window = SCDLatticeWindow()
   	let mainAdapter = MainPageAdapter()
   	
-	@objc func main() {
-		SCDRuntime.initRuntime(self)
+	override func onFinishLaunching() {
 		mainAdapter.load("main.page")
 		mainAdapter.show(window)
 	}
