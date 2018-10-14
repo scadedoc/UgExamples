@@ -5,14 +5,16 @@ class UgPagesDemo: SCDApplication {
  	let window = SCDLatticeWindow()
   	var mainAdapter: MainPageAdapter!
   	
-  	func dataToString(data: Data) -> String {
-		#if os(Android)
-        	let pointer = data.bytes.bindMemory(to: CChar.self, capacity: Int(data.length))
-        	return String(utf8String: pointer)!
-    	#else
-         	return String(data: data, encoding: .utf8)!
-    	#endif
-	}
+  	#if os(Android)
+  		func dataToString(data: SF_NSData, isUtf8: Bool) -> String {
+    		let pointer = data.bytes.bindMemory(to: CChar.self, capacity: Int(data.length))
+    		return String(cString: pointer, encoding: isUtf8 ? .utf8 : .isoLatin1)!
+  		}
+	#else
+  		func dataToString(data: Data, isUtf8: Bool) -> String {
+    		return String(data: data, encoding: isUtf8 ? .utf8 : .isoLatin1)!
+  		}
+	#endif
   	
 	override func onFinishLaunching() {
 		saveAndLoadData()
@@ -25,7 +27,7 @@ class UgPagesDemo: SCDApplication {
 		SCDRuntime.saveFile(location, content:data)
 		
 		let data2 = SCDRuntime.loadFile(location)
-		let eq = data == dataToString(data: data2!)
+		let eq = data == dataToString(data: data2!, isUtf8: true)
 		print("worked = \(eq)")
   	}
 }
