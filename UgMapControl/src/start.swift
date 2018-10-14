@@ -1,17 +1,11 @@
-#if os(Linux) || os(Android)
-import SwiftFoundation
-#endif
 import ScadeKit
 
-@objc class Main : ObjectiveC.NSObject, SCDApplication {
+class UgMapControl: SCDApplication {
 
- 	let moduleName  = "UgMapControl"
-let window = SCDLatticeWindow()
+	let window = SCDLatticeWindow()
   	var mainAdapter: MainPageAdapter!
   	
-	@objc func main() {
-		SCDRuntime.initRuntime(self)
-
+	override func onFinishLaunching() {
 
 		mainAdapter = MainPageAdapter()
 		
