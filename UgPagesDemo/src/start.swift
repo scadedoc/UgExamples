@@ -1,16 +1,20 @@
-#if os(Linux) || os(Android)
-import SwiftFoundation
-#endif
 import ScadeKit
 
-@objc class Main : ObjectiveC.NSObject, SCDApplication {
+class UgPagesDemo: SCDApplication {
 
- 	let moduleName  = "UgPagesDemo"
  	let window = SCDLatticeWindow()
   	var mainAdapter: MainPageAdapter!
   	
-	@objc func main() {
-		SCDRuntime.initRuntime(self)
+  	func dataToString(data: Data) -> String {
+		#if os(Android)
+        	let pointer = data.bytes.bindMemory(to: CChar.self, capacity: Int(data.length))
+        	return String(utf8String: pointer)!
+    	#else
+         	return String(data: data, encoding: .utf8)!
+    	#endif
+	}
+  	
+	override func onFinishLaunching() {
 		saveAndLoadData()
 	}
   	
@@ -21,7 +25,7 @@ import ScadeKit
 		SCDRuntime.saveFile(location, content:data)
 		
 		let data2 = SCDRuntime.loadFile(location)
-		let eq = data == data2
+		let eq = data == dataToString(data: data2!)
 		print("worked = \(eq)")
   	}
 }
