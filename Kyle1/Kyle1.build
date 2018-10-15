@@ -15,6 +15,12 @@
     "name" : "Kyle1",
     "id" : "com.scade.kyle1"
   }, {
+    "eClass" : "http://scade.com/sdk/build#//AppleApp",
+    "platform" : "ios",
+    "deviceFamily" : "universal",
+    "supportedInterfaceOrientations" : [ "portrait", "landscape_left", "landscape_right", "upside_down" ],
+    "supportedInterfaceOrientationsiPad" : [ "portrait" ]
+  },{
     "eClass" : "http://scade.com/sdk/build#//PListSetting",
     "platform" : "ios",
     "key" : "CFBundleShortVersionString",
@@ -45,8 +51,8 @@
   }, {
     "eClass" : "http://scade.com/sdk/build#//CodeSignSetting",
     "platform" : "ios",
-    "provisionProfile" : "",
-    "certificate" : "",
+    "provisionProfile" : "/Users/juliabulantseva/Downloads/Wildcard_Ad_Hoc.mobileprovision",
+    "certificate" : "/Users/juliabulantseva/Downloads/Exyte_distribution.p12",
     "betaReportsActive" : false
   }, {
     "eClass" : "http://scade.com/sdk/build#//PListSetting",

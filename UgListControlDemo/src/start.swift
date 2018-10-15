@@ -1,19 +1,12 @@
-#if os(Linux) || os(Android)
-import SwiftFoundation
-#endif
 import ScadeKit
 
-@objc class Main : ObjectiveC.NSObject, SCDApplication {
+class UgListControlDemo: SCDApplication {
 
- 	let moduleName  = "UgListControlDemo"
-let window = SCDLatticeWindow()
+	let window = SCDLatticeWindow()
   	var mainAdapter: MainPageAdapter!
   	var groupedByBreedPage : GroupedByBreedPageAdapter!
   	
-	@objc func main() {
-		SCDRuntime.initRuntime(self)
-
-
+	override func onFinishLaunching() {
 		mainAdapter = MainPageAdapter()
 		
 		groupedByBreedPage = GroupedByBreedPageAdapter()

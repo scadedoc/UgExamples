@@ -20,6 +20,12 @@
     "key" : "CFBundleIdentifier",
     "value" : "com.scade.UgTilesMenuDemo"
   }, {
+    "eClass" : "http://scade.com/sdk/build#//AppleApp",
+    "platform" : "ios",
+    "deviceFamily" : "universal",
+    "supportedInterfaceOrientations" : [ "portrait", "landscape_left", "landscape_right", "upside_down" ],
+    "supportedInterfaceOrientationsiPad" : [ "portrait" ]
+  },{
     "eClass" : "http://scade.com/sdk/build#//PListSetting",
     "platform" : "ios",
     "key" : "CFBundleShortVersionString",
@@ -50,8 +56,8 @@
   }, {
     "eClass" : "http://scade.com/sdk/build#//CodeSignSetting",
     "platform" : "ios",
-    "provisionProfile" : "/Users/juliabulantseva/Downloads/scade_dev.mobileprovision",
-    "certificate" : "/Users/juliabulantseva/Downloads/scade_development.p12",
+    "provisionProfile" : "/Users/juliabulantseva/Downloads/Wildcard_Ad_Hoc.mobileprovision",
+    "certificate" : "/Users/juliabulantseva/Downloads/Exyte_distribution.p12",
     "betaReportsActive" : false
   }, {
     "eClass" : "http://scade.com/sdk/build#//PListSetting",

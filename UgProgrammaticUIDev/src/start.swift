@@ -1,6 +1,3 @@
-#if os(Linux) || os(Android)
-import SwiftFoundation
-#endif
 import ScadeKit
 
 // some global variables
@@ -9,9 +6,8 @@ let lightGrayColor = SCDGraphicsRGB(red:211,green:211,blue:211)
 let whiteColor = SCDGraphicsRGB(red:241,green:241,blue:241)
 let orangeColor = SCDGraphicsRGB(red:255,green:127,blue:80)
 
-@objc class Main : ObjectiveC.NSObject, SCDApplication {
+class UgProgrammaticUIDev: SCDApplication {
 
- 	let moduleName  = "UgProgrammaticUIDev"
 	let window = SCDLatticeWindow()
   	let mainAdapter = MainPageAdapter()
   	let helloWorldPage = HelloWorldPageAdapter()
@@ -19,8 +15,7 @@ let orangeColor = SCDGraphicsRGB(red:255,green:127,blue:80)
   	let listControlPage = ListControlPageAdapter()
   	let dynamicButtonGridPage = DynamicButtonGridPageAdapter()
   	
-	@objc func main() {
-		SCDRuntime.initRuntime(self)
+	override func onFinishLaunching() {
 		mainAdapter.load("main.page")
 		helloWorldPage.load("HelloWorld.page")
 		formEntryPage.load("FormEntryPage.page")

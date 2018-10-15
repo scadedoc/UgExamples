@@ -1,16 +1,11 @@
-#if os(Linux) || os(Android)
-import SwiftFoundation
-#endif
 import ScadeKit
 
-@objc class Main : ObjectiveC.NSObject, SCDApplication {
+class UgSliderControlDemo: SCDApplication {
 
- 	let moduleName  = "UgSliderControlDemo"
  	let window = SCDLatticeWindow()
   	var mainAdapter: MainPageAdapter!
   	
-	@objc func main() {
-		SCDRuntime.initRuntime(self)
+	override func onFinishLaunching() {
 
 		mainAdapter = MainPageAdapter()
 		

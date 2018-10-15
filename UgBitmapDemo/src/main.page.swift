@@ -4,6 +4,17 @@ class MainPageAdapter: SCDLatticePageAdapter {
 
 	@objc dynamic var imageUrl : String = ""
 	let valueFalse : Bool = false
+  	
+    #if os(Android)
+  		func dataToString(data: SF_NSData, isUtf8: Bool) -> String {
+    		let pointer = data.bytes.bindMemory(to: CChar.self, capacity: Int(data.length))
+    		return String(cString: pointer, encoding: isUtf8 ? .utf8 : .isoLatin1)!
+  		}
+	#else
+  		func dataToString(data: Data, isUtf8: Bool) -> String {
+    		return String(data: data, encoding: isUtf8 ? .utf8 : .isoLatin1)!
+  		}
+	#endif
 	
 	// page adapter initialization
 	override func load(_ path: String) {		
@@ -25,7 +36,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 			let request = SCDNetworkRequest()
 			request.url = externalurl
 			if let response = request.call() {
-				bc3.content = response.body
+				bc3.content = dataToString(data: response.body, isUtf8: false)
 				bc3.isContentPriority = true
 			}
 		}

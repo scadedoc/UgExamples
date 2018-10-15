@@ -3,8 +3,8 @@ import ScadeKit
 class TextboxAnimatedPageAdapter: SCDLatticePageAdapter {
 	
 	let duration : Float = 0.25
-	let fromColorGray = SCDSvgRGBColor(r:170,g:170,b:170)
-	let toColorLime = SCDSvgRGBColor(r:0,g:255,b:0)
+	let fromColorGray = SCDSvgRGBColor(r:0.66,g:0.66,b:0.66)
+	let toColorLime = SCDSvgRGBColor(r:0,g:1,b:0)
 	var textboxState : [String:Bool] = [:]
 	
 	// page adapter initialization
