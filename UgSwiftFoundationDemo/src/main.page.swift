@@ -8,9 +8,25 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	override func load(_ path: String) {		
 		super.load(path)
 		
+		// Run tests when button pressed
+		if let runTestsButton = self.page!.getWidgetByName("button1") as? SCDWidgetsButton {
+			runTestsButton.onClick.append(SCDWidgetsEventHandler {
+			 	_ in self.runTests()	
+			})
+		}
+		
+		// run the tests
+		self.runTests()
+	}
+	
+	func runTests() {
+		
+		self.testResults = []
+		
 		self.testResults = [
-		    TestResult(name:"TestDate", stat:"3/3", success:true),
-		    TestResult(name:"TestDate1", stat:"2/3", success:false)    
+		    TestResult(name:"TestURLSession", stat:"1/1", success: HttpClientSample().postSample() ),
+		    TestResult(name:"TestDate.distantFuture", stat:"1/1", success: DateDemo().testDistantFuture()) ,
 		]
+		
 	}
 }
