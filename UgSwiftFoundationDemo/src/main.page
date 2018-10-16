@@ -70,8 +70,8 @@
               <minArea/>
               <maxArea width="-1" height="-1"/>
               <children xsi:type="com.scade.sdk.view:RowView" name="horizontalview3" drawing="/3/@drawableChilds.1/@drawableChilds.0/@drawableChilds.0/@drawableChilds.0/@drawableChilds.1/@drawableChilds.0/@drawableChilds.1/@drawableChilds.2/@drawableChilds.1/@drawableChilds.0">
-                <layoutData xsi:type="com.scade.sdk.layout:GridData" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
-                <size width="75" height="32"/>
+                <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
+                <size width="47" height="32"/>
                 <location x="5" y="5"/>
                 <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" type="COLOR">
                   <color Red="64" Green="128"/>
@@ -90,7 +90,7 @@
                   <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17">
                     <color Red="255" Green="255" Blue="255"/>
                   </styles>
-                  <styles xsi:type="com.scade.sdk.view.widgets:TextStyle"/>
+                  <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
                 </children>
               </children>
             </children>
@@ -103,8 +103,8 @@
               <minArea/>
               <maxArea width="-1" height="-1"/>
               <children xsi:type="com.scade.sdk.view:RowView" name="horizontalview31" drawing="/3/@drawableChilds.1/@drawableChilds.0/@drawableChilds.0/@drawableChilds.0/@drawableChilds.1/@drawableChilds.0/@drawableChilds.2/@drawableChilds.1/@drawableChilds.0">
-                <layoutData xsi:type="com.scade.sdk.layout:GridData" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
-                <size width="65" height="32"/>
+                <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
+                <size width="37" height="32"/>
                 <location x="5" y="5"/>
                 <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" type="COLOR">
                   <color Red="189" Blue="18"/>
@@ -123,7 +123,7 @@
                   <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17">
                     <color Red="255" Green="255" Blue="255"/>
                   </styles>
-                  <styles xsi:type="com.scade.sdk.view.widgets:TextStyle"/>
+                  <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
                 </children>
               </children>
             </children>
@@ -240,8 +240,10 @@
         <next>
           <srcSelector feature="success"/>
           <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="children">
-            <next xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="children" at="2">
-              <next feature="visible"/>
+            <next xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="children" at="3">
+              <next feature="layoutData">
+                <next feature="exclude"/>
+              </next>
             </next>
           </dstSelector>
         </next>
@@ -252,10 +254,12 @@
         <srcSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="items" at="-1"/>
         <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="elements" at="-1"/>
         <next>
-          <srcSelector feature="success"/>
+          <srcSelector feature="exclude"/>
           <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="children">
-            <next xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="children" at="3">
-              <next feature="visible"/>
+            <next xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="children" at="2">
+              <next feature="layoutData">
+                <next feature="exclude"/>
+              </next>
             </next>
           </dstSelector>
         </next>
@@ -289,7 +293,6 @@
     </drawableChilds>
     <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
       <drawableChilds xsi:type="svg:Group" attributes="{&quot;scade:bind&quot;:&quot;testResults&quot;}">
-        <matrix translateY="42.0"/>
         <drawableChilds xsi:type="svg:ScrollGroup" attributes="{&quot;template-id&quot;:&quot;listContent&quot;}" width="375" height="578">
           <constraints xsi:type="svg_1:ScrollSizeConstraint" exprStr="size.w size.h">
             <width xsi:type="com.scade.sdk.expr:Variable" name="size">
@@ -318,7 +321,6 @@
             </drawableChilds>
             <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;elementContent&quot;}">
               <drawableChilds xsi:type="svg:Group" attributes="">
-                <matrix translateX="10.0"/>
                 <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
                   <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
                     <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
@@ -344,23 +346,22 @@
                 </drawableChilds>
                 <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
                   <drawableChilds xsi:type="svg:Group" attributes="{&quot;scade:bind&quot;:&quot;text:testResults.name&quot;}">
-                    <matrix translateX="5.0" translateY="5.0"/>
                     <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="18" fontName="ArialMT" text="TestTimer" alignmentBaseline="central">
                       <fill xsi:type="svg_2:RGBColor" r="0.27450982" g="0.27450982" b="0.27450982"/>
                       <x/>
                       <y value="21.0"/>
                     </drawableChilds>
+                    <matrix translateX="5.0" translateY="5.0"/>
                   </drawableChilds>
                   <drawableChilds xsi:type="svg:Group" attributes="{&quot;scade:bind&quot;:&quot;text:testResults.stat&quot;}">
-                    <matrix translateX="211.0" translateY="5.0"/>
                     <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="12" fontName="ArialMT" text="22 / 22" anchor="middle" alignmentBaseline="central">
                       <fill xsi:type="svg_2:RGBColor" r="0.27450982" g="0.27450982" b="0.27450982"/>
                       <x value="22.0"/>
                       <y value="21.0"/>
                     </drawableChilds>
+                    <matrix translateX="211.0" translateY="5.0"/>
                   </drawableChilds>
                   <drawableChilds xsi:type="svg:Group" attributes="{&quot;scade:bind&quot;:&quot;visible:testResults.success;exclude:testResults.exclude&quot;}">
-                    <matrix translateX="256.0" translateY="5.0"/>
                     <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
                       <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
                         <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
@@ -386,7 +387,6 @@
                     </drawableChilds>
                     <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
                       <drawableChilds xsi:type="svg:Group" attributes="">
-                        <matrix translateX="5.0" translateY="5.0"/>
                         <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
                           <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
                             <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
@@ -407,25 +407,26 @@
                             <rx/>
                             <ry/>
                           </drawableChilds>
-                          <width value="75.0"/>
+                          <width value="47.0"/>
                           <height value="32.0"/>
                         </drawableChilds>
                         <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
                           <drawableChilds xsi:type="svg:Group" attributes="">
-                            <matrix translateX="5.0" translateY="5.0"/>
-                            <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="ArialMT" text="Passed" alignmentBaseline="central">
+                            <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="ArialMT" text="Passed" anchor="middle" alignmentBaseline="central">
                               <fill xsi:type="svg_2:RGBColor" r="1.0" g="1.0" b="1.0"/>
-                              <x/>
+                              <x value="32.0"/>
                               <y value="11.0"/>
                             </drawableChilds>
+                            <matrix translateX="5.0" translateY="5.0"/>
                           </drawableChilds>
                         </drawableChilds>
+                        <matrix translateX="5.0" translateY="5.0"/>
                       </drawableChilds>
                     </drawableChilds>
+                    <matrix translateX="256.0" translateY="5.0"/>
                   </drawableChilds>
                 </drawableChilds>
                 <drawableChilds xsi:type="svg:Group" attributes="{&quot;scade:bind&quot;:&quot;exclude:testResults.exclude;visible:testResults.success&quot;}">
-                  <matrix translateX="313.0" translateY="5.0"/>
                   <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
                     <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
                       <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
@@ -451,7 +452,6 @@
                   </drawableChilds>
                   <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
                     <drawableChilds xsi:type="svg:Group" attributes="">
-                      <matrix translateX="5.0" translateY="5.0"/>
                       <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
                         <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
                           <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
@@ -472,22 +472,25 @@
                           <rx/>
                           <ry/>
                         </drawableChilds>
-                        <width value="65.0"/>
+                        <width value="37.0"/>
                         <height value="32.0"/>
                       </drawableChilds>
                       <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
                         <drawableChilds xsi:type="svg:Group" attributes="">
-                          <matrix translateX="5.0" translateY="5.0"/>
-                          <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="ArialMT" text="Failed" alignmentBaseline="central">
+                          <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="ArialMT" text="Failed" anchor="middle" alignmentBaseline="central">
                             <fill xsi:type="svg_2:RGBColor" r="1.0" g="1.0" b="1.0"/>
-                            <x/>
+                            <x value="27.0"/>
                             <y value="11.0"/>
                           </drawableChilds>
+                          <matrix translateX="5.0" translateY="5.0"/>
                         </drawableChilds>
                       </drawableChilds>
+                      <matrix translateX="5.0" translateY="5.0"/>
                     </drawableChilds>
                   </drawableChilds>
+                  <matrix translateX="313.0" translateY="5.0"/>
                 </drawableChilds>
+                <matrix translateX="10.0"/>
               </drawableChilds>
             </drawableChilds>
             <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;elementSeparator&quot;}">
@@ -503,9 +506,7 @@
                   <path>h</path>
                 </translateY>
               </constraints>
-              <matrix translateX="10.0" translateY="52.0"/>
               <drawableChilds xsi:type="svg:Line" attributes="{&quot;template-id&quot;:&quot;separatorLine&quot;,&quot;stroke-miterlimit&quot;:&quot;10&quot;}">
-                <stroke xsi:type="svg_2:RGBColor" r="0.8" g="0.79607844" b="0.8156863"/>
                 <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.width - list1.layout.marginRight">
                   <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Line/x2"/>
                   <expression xsi:type="com.scade.sdk.expr:Minus">
@@ -518,16 +519,19 @@
                     </right>
                   </expression>
                 </constraints>
+                <stroke xsi:type="svg_2:RGBColor" r="0.8" g="0.79607844" b="0.8156863"/>
                 <x1/>
                 <y1 value="0.5"/>
                 <x2 value="375.0"/>
                 <y2 value="0.5"/>
               </drawableChilds>
+              <matrix translateX="10.0" translateY="52.0"/>
             </drawableChilds>
             <drawableChilds xsi:type="svg:Group" attributes="" visible="false"/>
             <drawableChilds xsi:type="svg:Group" attributes="" visible="false"/>
           </drawableChilds>
         </drawableChilds>
+        <matrix translateY="42.0"/>
       </drawableChilds>
       <drawableChilds xsi:type="svg:Group" attributes="">
         <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -555,17 +559,16 @@
         </drawableChilds>
         <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
           <drawableChilds xsi:type="svg:Group" attributes="">
-            <matrix translateX="18.0" translateY="10.0"/>
             <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="Arial-BoldMT" text="Swift Foundation 4.0 on Android and iOS" anchor="middle" alignmentBaseline="central">
               <fill xsi:type="svg_2:RGBColor" r="0.9019608" g="0.9019608" b="0.9019608"/>
               <x value="169.0"/>
               <y value="11.0"/>
             </drawableChilds>
+            <matrix translateX="18.0" translateY="10.0"/>
           </drawableChilds>
         </drawableChilds>
       </drawableChilds>
       <drawableChilds xsi:type="svg:Group" attributes="">
-        <matrix translateY="620.0"/>
         <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
           <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
             <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
@@ -591,7 +594,6 @@
         </drawableChilds>
         <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
           <drawableChilds xsi:type="svg:Group" attributes="">
-            <matrix translateX="62.0" translateY="5.0"/>
             <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
               <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
                 <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
@@ -615,13 +617,15 @@
               <width value="250.0"/>
               <height value="37.0"/>
             </drawableChilds>
-            <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="16" fontName="ArialMT" text="Run TestFoundation tests" anchor="middle" alignmentBaseline="central">
+            <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="ArialMT" text="Run TestFoundation tests" anchor="middle" alignmentBaseline="central">
               <fill xsi:type="svg_2:RGBColor"/>
               <x value="125.0"/>
               <y value="18.0"/>
             </drawableChilds>
+            <matrix translateX="62.0" translateY="5.0"/>
           </drawableChilds>
         </drawableChilds>
+        <matrix translateY="620.0"/>
       </drawableChilds>
     </drawableChilds>
   </svg:Box>

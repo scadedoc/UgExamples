@@ -1,6 +1,7 @@
 import ScadeKit
 
-class TestResult {
+@objc
+class TestResult : EObject {
 	
 	@objc dynamic var name : String
 	@objc dynamic var stat : String
@@ -16,3 +17,4 @@ class TestResult {
 	}
 	
 }
+

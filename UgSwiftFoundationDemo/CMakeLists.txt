@@ -3,123 +3,28 @@ include(ScadeSDK)
 
 add_scade_application(UgSwiftFoundationDemo "com.scade.ugswiftfoundationdemo"
 	SOURCES
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestResult.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/start.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/HTTPServer.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestAffineTransform.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestBundle.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestByteCountFormatter.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestCalendar.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestCharacterSet.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestCodable.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestDate.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestDateFormatter.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestDecimal.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestEnergyFormatter.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestFileHandle.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestFileManager.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestHTTPCookie.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestHTTPCookieStorage.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestISO8601DateFormatter.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestIndexPath.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestIndexSet.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestJSONEncoder.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestJSONSerialization.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestLengthFormatter.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestMassFormatter.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSArray.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSAttributedString.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSByteCountFormatter.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSCache.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSCompoundPredicate.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSData.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSDictionary.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSError.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSGeometry.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSIndexPath.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSIndexSet.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSJSONSerialization.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSKeyedArchiver.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSKeyedUnarchiver.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSLocale.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSNull.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSNumber.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSOrderedSet.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSPersonNameComponents.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSPredicate.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSProgressFraction.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSRange.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSRegularExpression.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSSet.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSString.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSTextCheckingResult.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSURLRequest.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSURLSession.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSUUID.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNSValue.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNotification.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNotificationCenter.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNotificationQueue.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestNumberFormatter.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestObjCRuntime.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestOperationQueue.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestPersonNameComponents.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestPipe.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestProcess.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestProcessInfo.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestProgress.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestPropertyListSerialization.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestRunLoop.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestScanner.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestStream.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestThread.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestTimeZone.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestTimer.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestURL.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestURLCredential.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestURLProtocol.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestURLRequest.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestURLResponse.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestURLSession.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestUnitConverter.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestUserDefaults.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestUtils.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestXMLDocument.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/TestXMLParser.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/XDGTestHelper.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/TestFoundation/main.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/main.page
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/main.page.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Private/ArgumentParser.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Private/ObjectWrapper.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Private/PerformanceMeter.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Private/PrintObserver.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Private/TestFiltering.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Private/TestListing.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Private/WallClockTimeMetric.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Private/XCPredicateExpectation.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Private/XCTestCaseSuite.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Private/XCTestInternalObservation.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/Asynchronous/XCNotificationExpectationHandler.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/Asynchronous/XCPredicateExpectationHandler.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/Asynchronous/XCTestCase+Asynchronous.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/Asynchronous/XCTestCase+NotificationExpectation.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/Asynchronous/XCTestCase+PredicateExpectation.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/Asynchronous/XCTestExpectation.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/Asynchronous/XCWaitCompletionHandler.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/XCAbstractTest.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/XCTAssert.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/XCTestCase+Performance.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/XCTestCase.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/XCTestCaseRun.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/XCTestErrors.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/XCTestMain.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/XCTestObservation.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/XCTestObservationCenter.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/XCTestRun.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/XCTestSuite.swift
-	/Users/flangel/ScadeM26/UgSwiftFoundationDemo/src/XCTest/Public/XCTestSuiteRun.swift
-	"res/fonts"
-	"res/fonts/Arial-BoldMT.ttf"
-	"res/fonts/ArialMT.ttf"
-	 MACOS_PLIST_PROPERTIES "CFBundleShortVersionString" "1.0" "CFBundleVersion" "1" "NSLocationWhenInUseUsageDescription" "" "NSCameraUsageDescription" "Take pictures from camera" "NSPhotoLibraryUsageDescription" "Choose a photo from your library")
+	src/DateDemo.swift
+	src/HttpClientSample.swift
+	src/TestResult.swift
+	src/main.page.swift
+	src/start.swift
+	RESOURCES
+		RESOURCES_GROUP "src" NOPREFIX
+			main.page
+		RESOURCES_GROUP NOBASE NOPREFIX
+			"res/fonts"
+			"res/fonts/Arial-BoldMT.ttf"
+			"res/fonts/ArialMT.ttf"
+	SEARCH_PATHS_MACOS "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/bin/macos/PhoenixSimulator.app/Contents/Resources"
+	LIBRARIES_MACOS ScadeKit.framework
+	SEARCH_PATHS_IPHONEOS "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/lib/iphoneos"
+	LIBRARIES_IPHONEOS ScadeKit.framework
+	SEARCH_PATHS_IPHONESIMULATOR "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/lib/iphonesimulator"
+	LIBRARIES_IPHONESIMULATOR ScadeKit.framework
+	MACOS_PLIST_PROPERTIES "CFBundleShortVersionString" "STRING" "1.0"
+		"CFBundleVersion" "STRING" "1"
+		"NSLocationWhenInUseUsageDescription" "STRING" ""
+		"NSCameraUsageDescription" "STRING" "Take pictures from camera"
+		"NSPhotoLibraryUsageDescription" "STRING" "Choose a photo from your library"
+		"UIDeviceFamily" ARRAY INT "1" ARRAY_END
+		"UISupportedInterfaceOrientations" ARRAY STRING "UIInterfaceOrientationPortrait" ARRAY_END)

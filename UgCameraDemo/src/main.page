@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.scade.sdk.data.binding="http://scade.com/sdk/data/binding" xmlns:com.scade.sdk.expr="com.scade.sdk.expr" xmlns:com.scade.sdk.lattice.navigation="http://scade.com/lattice/navigation" xmlns:com.scade.sdk.layout="http://scade.com/sdk/layout" xmlns:com.scade.sdk.view="http://scade.com/sdk/view/widgets" xmlns:com.scade.sdk.view.widgets="http://scade.com/sdk/view/widgets/style" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:svg="http://scade.com/svg/draw" xmlns:svg_1="http://scade.com/svg/constraints" xmlns:svg_2="http://scade.com/svg/style/color">
-  <com.scade.sdk.view:Page name="main" drawing="/3">
+  <com.scade.sdk.view:Page name="panel1" drawing="/3">
     <styles xsi:type="com.scade.sdk.view.widgets:PageStyle">
       <screen device="iPhone 5/5S (4-inch)" svg="svg/screen/iphone_5.svg">
         <size width="320" height="568"/>
@@ -37,16 +37,16 @@
       <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" type="COLOR">
         <color Red="76" Green="76" Blue="76"/>
       </styles>
-      <layout xsi:type="com.scade.sdk.layout:GridLayout" columns="2" horizontalSpacing="5" marginTop="8" marginBottom="8" marginLeft="5" marginRight="10"/>
+      <layout xsi:type="com.scade.sdk.layout:GridLayout" columns="3" horizontalSpacing="5" marginTop="8" marginBottom="8" marginLeft="5" marginRight="10"/>
       <minArea/>
       <maxArea width="-1" height="-1"/>
-      <children xsi:type="com.scade.sdk.view:Button" name="button2" drawing="/3/@drawableChilds.2/@drawableChilds.1/@drawableChilds.0" text="Select from Library">
+      <children xsi:type="com.scade.sdk.view:Button" name="button2" drawing="/3/@drawableChilds.2/@drawableChilds.1/@drawableChilds.0" text="Pic from Lib">
         <layoutData xsi:type="com.scade.sdk.layout:GridData" column="1" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
-        <size width="152" height="23"/>
-        <location x="163" y="8"/>
+        <size width="111" height="23"/>
+        <location x="103" y="8"/>
         <contentSize width="112" height="23"/>
         <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
-          <minSize/>
+          <minSize width="90" height="20"/>
           <maxSize width="-1" height="-1"/>
         </styles>
         <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17">
@@ -57,13 +57,13 @@
           <color Red="127" Green="127" Blue="127"/>
         </styles>
       </children>
-      <children xsi:type="com.scade.sdk.view:Button" name="button1" drawing="/3/@drawableChilds.2/@drawableChilds.1/@drawableChilds.1" text="Take Picture">
+      <children xsi:type="com.scade.sdk.view:Button" name="button1" drawing="/3/@drawableChilds.2/@drawableChilds.1/@drawableChilds.1" text="Take Pic">
         <layoutData xsi:type="com.scade.sdk.layout:GridData" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
-        <size width="153" height="23"/>
+        <size width="93" height="23"/>
         <location x="5" y="8"/>
         <contentSize width="94" height="23"/>
         <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
-          <minSize/>
+          <minSize width="65" height="20"/>
           <maxSize width="-1" height="-1"/>
         </styles>
         <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17">
@@ -72,6 +72,20 @@
         <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
         <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" type="COLOR">
           <color Red="127" Green="127" Blue="127"/>
+        </styles>
+      </children>
+      <children xsi:type="com.scade.sdk.view:Button" name="btnUpload" drawing="/3/@drawableChilds.2/@drawableChilds.1/@drawableChilds.2" text="Upload">
+        <layoutData xsi:type="com.scade.sdk.layout:GridData" column="2" verticalAlignment="MIDDLE" grabVerticalSpace="true" heightConstraint="MATCH_PARENT"/>
+        <size width="92" height="23"/>
+        <location x="219" y="8"/>
+        <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
+          <minSize width="92" height="23"/>
+          <maxSize width="-1" height="-1"/>
+        </styles>
+        <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17"/>
+        <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
+        <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" type="COLOR">
+          <color Red="213" Green="213" Blue="213"/>
         </styles>
       </children>
     </children>
@@ -130,7 +144,6 @@
       </drawableChilds>
       <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
         <drawableChilds xsi:type="svg:Group">
-          <matrix translateX="5.0" translateY="5.0"/>
           <drawableChilds xsi:type="svg:Image" attributes="{&quot;template-id&quot;:&quot;node-image&quot;}" xhref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDZGQjRCRUYyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDZGQjRCRjAyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpENkZCNEJFRDI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpENkZCNEJFRTI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmri+DQAAAS8SURBVHja7JxdK2xRGMfPnHPChUGHGIphmCGN8lYahdyQQi7kI/hOfALFhaSk3CLlLTZ5G2YoQ+MtjULU+befWu323uaME5PZ/v+L3Zq1n732Wr/9rGc9aymusbGxH1Rq+kkEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVY316/U7QbHR3F9eLiYmZmhp5FERZhERZhfc/VMMkSOT8/H41GGxoaqqqqPB6PLJp7e3sHBwdiFggE6urqbG8ZhRbKysoKCwtzc3Px8+bmJhKJaJr2+PhoNc7JyQkGg7BXzZ6cnGxvb3u93t7eXtSMj4+/9QrYoPz8/ByLxdAZdD4dsER5eXnd3d1+v1/VeHQVFRUtLS3Z3sIjq6urxkYGBwdl2Ep/dFVWVs7Ozpp4lZSU9PX1ZWVlmZqtra3d2tqy7STg9vf3o0FVg8e9utbX102d+URY+FzwBbjA7u7u3d0d/Ki9vR1dwZfPzs4GqcPDw42NDeOt5ubmo6Mj1KhGrq6ucMV3Pj09BRpxHJhheF1dXXBeZVlQUCCk4BqaLtgDX2NjI0aO9m07KaQSiQS4iF+jnaamJnQPb7m/v7d1dpN+DQwMpEKkpaUFV7xsf3/fVIl+o8dwIvn+19fXt7e3NTU1KGNOwckXFhbUrdfX1/LycnkKs0w1FY/Hd3Z2YPDy8oKfuJ6fn7tcrtLSUowqHA4r5+rp6cnPz0cBHofPIPYPDw+wgcMWFxeL2drammq8tbXV5/MB7uTk5OXlpVSiQXQA7o/2ccUUTlOAhycbfwIQsEp5ZWXFeAt9QqdRcLvdxnrbwHR2diYFhQADk9kKTGrYSsvLy9K4SXBSXG3D3+bmJq6YGfDNdMBCcLV2QsEyzjURIrdEmX+2rHDAZaQgDgsdHx9b7dENadwU4CS6YeIneYX6Hp8bsz5QGBgmKRYsDM8YjI1RWTlvim3KrIdGRkaSmCG8ZgwszK/Ozk7lbnBMOKzVARFcMjXP+ihh7RsaGpIFDoEZ8UjNa0nlPkS2mVfmZfChUEhITU9PYwWwDfYiLJFqwqbYONKC9z7ypWEhP5DAb1oN4HFvjby6utrWQ63rBhI3KdTX1zsBluxv5GoU0kVTDVJHWWeRDVg9BR5qu0RiXqOA/BP5c8bDksEAFvZG4k2I99jigYg1b1pcXJQC8ngMXuwBDvbAYZtnqfwLNJHiGykj6UfKKrvFzAjw2Ayhuwhbfl3GQarNuTHjRb2EuZCu5PbiXHNzcx0dHUhHgrqsSXUquciXgIVQNTExgWEjeMG/MNFisRh2msgYkXPJtsm0DUByj52d2BvPDwBLThSsyefU1JTpYCOhC4uG2iokl8th/zFkeHgY7vNJf1hx1OEfIp3k/XKGQVjJ1NbWJoVwOOzYDP4/5lokEonH4xKVsSBWVFSow1hN06wHEt8UViAQkENU27tysubkveG7hLz06enJ5/O53W6VJSCiI07JUa3DN9LvVVRX+t/LP4URFmERFmERFkVYhEVYhEVYhEURFmERFmERFmFRhEVYhEVYhEVYFGERFmERFmERFkVYhEVYhEVYDtVfAQYA9Kg8ERKqtwIAAAAASUVORK5CYII=">
             <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
               <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Image/height"/>
@@ -147,11 +160,11 @@
             <width value="310.0"/>
             <height value="519.0"/>
           </drawableChilds>
+          <matrix translateX="5.0" translateY="5.0"/>
         </drawableChilds>
       </drawableChilds>
     </drawableChilds>
     <drawableChilds xsi:type="svg:Group">
-      <matrix translateY="529.0"/>
       <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
         <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
           <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
@@ -175,7 +188,6 @@
       </drawableChilds>
       <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
         <drawableChilds xsi:type="svg:Group">
-          <matrix translateX="163.0" translateY="8.0"/>
           <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
             <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
               <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
@@ -194,17 +206,17 @@
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </drawableChilds>
-            <width value="152.0"/>
+            <width value="111.0"/>
             <height value="23.0"/>
           </drawableChilds>
-          <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="ArialMT" text="Select from Library" anchor="middle" alignmentBaseline="central">
+          <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="ArialMT" text="Pic from Lib" anchor="middle" alignmentBaseline="central">
             <fill xsi:type="svg_2:RGBColor" r="1.0" g="1.0" b="1.0"/>
-            <x value="76.0"/>
+            <x value="55.0"/>
             <y value="11.0"/>
           </drawableChilds>
+          <matrix translateX="103.0" translateY="8.0"/>
         </drawableChilds>
         <drawableChilds xsi:type="svg:Group">
-          <matrix translateX="5.0" translateY="8.0"/>
           <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
             <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
               <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
@@ -223,16 +235,47 @@
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </drawableChilds>
-            <width value="153.0"/>
+            <width value="93.0"/>
             <height value="23.0"/>
           </drawableChilds>
-          <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="ArialMT" text="Take Picture" anchor="middle" alignmentBaseline="central">
+          <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="ArialMT" text="Take Pic" anchor="middle" alignmentBaseline="central">
             <fill xsi:type="svg_2:RGBColor" r="1.0" g="1.0" b="1.0"/>
-            <x value="76.0"/>
+            <x value="46.0"/>
             <y value="11.0"/>
           </drawableChilds>
+          <matrix translateX="5.0" translateY="8.0"/>
+        </drawableChilds>
+        <drawableChilds xsi:type="svg:Group">
+          <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+            <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
+              <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
+              <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                <path>h</path>
+              </expression>
+            </constraints>
+            <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
+              <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
+              <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                <path>w</path>
+              </expression>
+            </constraints>
+            <drawableChilds xsi:type="svg:Rect">
+              <fill xsi:type="svg_2:RGBColor" r="0.8352941" g="0.8352941" b="0.8352941"/>
+              <width value="100.0" measurement="PERCENTAGE"/>
+              <height value="100.0" measurement="PERCENTAGE"/>
+            </drawableChilds>
+            <width value="92.0"/>
+            <height value="23.0"/>
+          </drawableChilds>
+          <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="17" fontName="ArialMT" text="Upload" anchor="middle" alignmentBaseline="central">
+            <fill xsi:type="svg_2:RGBColor" r="0.26666668" g="0.41568628" b="0.7019608"/>
+            <x value="46.0"/>
+            <y value="11.0"/>
+          </drawableChilds>
+          <matrix translateX="219.0" translateY="8.0"/>
         </drawableChilds>
       </drawableChilds>
+      <matrix translateY="529.0"/>
     </drawableChilds>
   </svg:Box>
 </xmi:XMI>
