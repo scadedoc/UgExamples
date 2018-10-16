@@ -62,7 +62,7 @@
   }, {
     "eClass" : "http://scade.com/sdk/build#//CodeSignSetting",
     "platform" : "ios",
-    "provisionProfile" : "/Users/juliabulantseva/Downloads/ExyteWeatherApp_Ad_Hoc.mobileprovision",
+    "provisionProfile" : "/Users/juliabulantseva/Downloads/Wildcard_Ad_Hoc.mobileprovision",
     "certificate" : "/Users/juliabulantseva/Downloads/Exyte_distribution.p12",
     "betaReportsActive" : false
   }, {
@@ -88,24 +88,24 @@
   }, {
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
     "platform" : "android",
-    "path" : "workspace:/.metadata/.plUgCameraDemoins/com.scade.sdk.build/Compiler/scade-swift-android",
+    "path" : "workspace:/.metadata/.plugins/com.scade.sdk.build/Compiler/scade-swift-android",
     "sdk" : "",
     "extraArgs" : "",
     "searchPaths" : [ "" ],
     "linkedLibs" : [ "" ],
     "output" : "UgCameraDemo/.build/android-armeabi-v7a",
-    "buildType" : "DebUgCameraDemo"
+    "buildType" : "Debug"
   }, {
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
     "platform" : "android",
-    "path" : "workspace:/.metadata/.plUgCameraDemoins/com.scade.sdk.build/Compiler/scade-swift-android",
+    "path" : "workspace:/.metadata/.plugins/com.scade.sdk.build/Compiler/scade-swift-android",
     "sdk" : "",
     "extraArgs" : "",
     "searchPaths" : [ "" ],
     "linkedLibs" : [ "" ],
     "output" : "UgCameraDemo/.build/android-x86",
     "arch" : "x86",
-    "buildType" : "DebUgCameraDemo"
+    "buildType" : "Debug"
   }, {
     "eClass" : "http://scade.com/sdk/build#//GoogleApiSetting",
     "platform" : "android",
@@ -116,7 +116,10 @@
     "ios" : {
       "eClass" : "http://scade.com/sdk/build#//IOSIcons",
       "appIcon2x" : "",
-      "appIcon3x" : ""
+      "appIcon3x" : "",
+      "iPadAppIcon" : "",
+      "iPadAppIcon2x" : "",
+      "iPadProIcon2x" : ""
     },
     "android" : {
       "eClass" : "http://scade.com/sdk/build#//AndroidIcons",

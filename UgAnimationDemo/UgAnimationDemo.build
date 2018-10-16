@@ -1,11 +1,21 @@
 {
   "eClass" : "http://scade.com/sdk/build#//ScadeApplication",
+  "dependencies" : [ {
+    "eClass" : "http://scade.com/sdk/build#//SpmPackage",
+    "url" : "",
+    "from" : ""
+  } ],
   "settings" : [ {
+    "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
+    "platform" : "all",
+    "searchPaths" : [ "" ],
+    "linkedLibs" : [ "" ]
+  }, {
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
     "sdk" : "",
     "extraArgs" : "",
-    "searchPaths" : [ "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/bin/macos/PhoenixSimulator.app/Contents/Resources" ],
-    "linkedLibs" : [ "ScadeKit.framework" ],
+    "searchPaths" : [ "" ],
+    "linkedLibs" : [ "" ],
     "output" : "UgAnimationDemo/.build/scade-simulator",
     "arch" : "x86",
     "os" : "10.11"
@@ -14,11 +24,11 @@
     "platform" : "ios",
     "name" : "UgAnimationDemo",
     "id" : "com.scade.UgAnimationDemo"
-  },{
+  }, {
     "eClass" : "http://scade.com/sdk/build#//AppleApp",
     "platform" : "ios",
-    "deviceFamily" : "universal",
-    "supportedInterfaceOrientations" : [ "portrait", "landscape_left", "landscape_right", "upside_down" ],
+    "deviceFamily" : "iphone",
+    "supportedInterfaceOrientations" : [ "portrait" ],
     "supportedInterfaceOrientationsiPad" : [ "portrait" ]
   }, {
     "eClass" : "http://scade.com/sdk/build#//PListSetting",
@@ -35,8 +45,8 @@
     "platform" : "ios",
     "sdk" : "",
     "extraArgs" : "",
-    "searchPaths" : [ "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/lib/iphonesimulator" ],
-    "linkedLibs" : [ "ScadeKit.framework" ],
+    "searchPaths" : [ "" ],
+    "linkedLibs" : [ "" ],
     "output" : "UgAnimationDemo/.build/ios-simulator",
     "arch" : "x86",
     "os" : "9.3"
@@ -44,8 +54,9 @@
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
     "platform" : "ios",
     "sdk" : "",
-    "searchPaths" : [ "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/lib/iphoneos" ],
-    "linkedLibs" : [ "ScadeKit.framework" ],
+    "extraArgs" : "",
+    "searchPaths" : [ "" ],
+    "linkedLibs" : [ "" ],
     "output" : "UgAnimationDemo/.build/ios-device",
     "os" : "9.3"
   }, {
@@ -78,14 +89,20 @@
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
     "platform" : "android",
     "path" : "workspace:/.metadata/.plugins/com.scade.sdk.build/Compiler/scade-swift-android",
-    "sdk" : "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/lib/android-armeabi-v7a",
+    "sdk" : "",
+    "extraArgs" : "",
+    "searchPaths" : [ "" ],
+    "linkedLibs" : [ "" ],
     "output" : "UgAnimationDemo/.build/android-armeabi-v7a",
     "buildType" : "Debug"
   }, {
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
     "platform" : "android",
     "path" : "workspace:/.metadata/.plugins/com.scade.sdk.build/Compiler/scade-swift-android",
-    "sdk" : "workspace:/.metadata/.plugins/com.scade.sdk.phoenix/ScadeSDK/lib/android-x86",
+    "sdk" : "",
+    "extraArgs" : "",
+    "searchPaths" : [ "" ],
+    "linkedLibs" : [ "" ],
     "output" : "UgAnimationDemo/.build/android-x86",
     "arch" : "x86",
     "buildType" : "Debug"
@@ -99,7 +116,10 @@
     "ios" : {
       "eClass" : "http://scade.com/sdk/build#//IOSIcons",
       "appIcon2x" : "",
-      "appIcon3x" : ""
+      "appIcon3x" : "",
+      "iPadAppIcon" : "",
+      "iPadAppIcon2x" : "",
+      "iPadProIcon2x" : ""
     },
     "android" : {
       "eClass" : "http://scade.com/sdk/build#//AndroidIcons",
