@@ -8,6 +8,9 @@ class UgSystemDemo: SCDApplication {
 	override func onFinishLaunching() {	
 		mainAdapter.load("main.page")
 		mainAdapter.show(window)
+		
+		// Demo Dispatch functionality
+		DispatchExample().run()
 	}
 	
 	// Override method to capture background enter event
