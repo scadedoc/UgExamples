@@ -5,16 +5,18 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	@objc dynamic var imageUrl : String = ""
 	let valueFalse : Bool = false
   	
-    #if os(Android)
-  		func dataToString(data: SF_NSData, isUtf8: Bool) -> String {
-    		let pointer = data.bytes.bindMemory(to: CChar.self, capacity: Int(data.length))
-    		return String(cString: pointer, encoding: isUtf8 ? .utf8 : .isoLatin1)!
-  		}
-	#else
-  		func dataToString(data: Data, isUtf8: Bool) -> String {
+	#if os(Android)
+    	func dataToString(data: SF_NSData, isUtf8: Bool) -> String {
+     	let enc = isUtf8 ? String.Encoding.utf8 : String.Encoding.isoLatin1
+     	let nsstring = SF_NSString(bytes: data.bytes, length: Int(data.length), encoding: enc.rawValue)
+
+     	return String(nsstring)
+   	}
+  	#else
+       func dataToString(data: Data, isUtf8: Bool) -> String {
     		return String(data: data, encoding: isUtf8 ? .utf8 : .isoLatin1)!
-  		}
-	#endif
+  	}
+  	#endif
 	
 	// page adapter initialization
 	override func load(_ path: String) {		
