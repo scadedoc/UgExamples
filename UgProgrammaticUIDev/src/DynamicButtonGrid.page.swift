@@ -58,7 +58,7 @@ class DynamicButtonGridPageAdapter: SCDLatticePageAdapter {
 	// all these methods should be moved into a utility class
 	
 	func createButton(label:String,action:@escaping (_ e:String)->Void) -> SCDWidgetsButton {
-	  let button = SCDWidgetsButton.create()
+	  let button = SCDWidgetsButton()
 	  button.layoutData = createLayoutGridData()
 	  button.name = label
 	  button.text = label
@@ -108,14 +108,14 @@ class DynamicButtonGridPageAdapter: SCDLatticePageAdapter {
 	
 	func createHorizontalContainer(at:(Int,Int)) -> SCDWidgetsContainer {
 		// create a horizontal container
-		 let container = SCDWidgetsListView.create()
+		 let container = SCDWidgetsListView()
 		 container.layoutData = createLayoutGridData(column:at.0,row:at.1)
 		 return container
 	}
 	
 	func createGridContainer(at:(Int,Int)) -> SCDWidgetsGridView  {
 		// create a grid container
-		 let container = SCDWidgetsGridView.create()
+		 let container = SCDWidgetsGridView()
 		 container.layoutData = createLayoutGridData(column:at.0,row:at.1)
 		 return container
 	}

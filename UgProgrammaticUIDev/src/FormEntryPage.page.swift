@@ -34,7 +34,7 @@ class FormEntryPagePageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func getHeader() -> SCDWidgetsRowView {
-		let headerView = SCDWidgetsRowView.create()
+		let headerView = SCDWidgetsRowView()
 		configureBackground(of:headerView)
 		
 		// Position in row #1 and use minimal space
@@ -44,7 +44,7 @@ class FormEntryPagePageAdapter: SCDLatticePageAdapter {
 		layoutData.heightConstraint = .wrap_content
 		
 		// Create the label 
-		let label =  SCDWidgetsLabel.create();
+		let label =  SCDWidgetsLabel();
 		label.text = "Hello SCADE"
 		self.configureFontStyle(of:label)
 		_ = configureLayoutData(of:label)
@@ -56,7 +56,7 @@ class FormEntryPagePageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func getFormEntry() -> SCDWidgetsGridView {
-		let formGrid = SCDWidgetsGridView.create()
+		let formGrid = SCDWidgetsGridView()
 		
 		// set grid layoutdata 
 		let layoutData = configureLayoutData(of:formGrid)
@@ -89,7 +89,7 @@ class FormEntryPagePageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func getLabel(withText:String, col:Int, row:Int) -> SCDWidgetsLabel {
-		let label =  SCDWidgetsLabel.create();
+		let label =  SCDWidgetsLabel();
 		label.text = withText
 		
 		let layoutData = SCDLayoutGridData()
@@ -103,7 +103,7 @@ class FormEntryPagePageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func getTextBox(inCol:Int,inRow:Int) -> SCDWidgetsTextbox {
-		let textbox = SCDWidgetsTextbox.create()
+		let textbox = SCDWidgetsTextbox()
 		textbox.text = "TB\(inRow)"
 		textbox.tabIndex = inRow
 		
@@ -117,14 +117,14 @@ class FormEntryPagePageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func getBottomView() -> SCDWidgetsListView {
-		let bottomView = SCDWidgetsListView.create()
+		let bottomView = SCDWidgetsListView()
 		let layoutData = configureLayoutData(of:bottomView)
 		layoutData.row = 2
 		layoutData.widthConstraint = .wrap_content
 		layoutData.heightConstraint = .wrap_content
 		layoutData.isGrabVerticalSpace = false
 		
-		let button =  SCDWidgetsButton.create()
+		let button =  SCDWidgetsButton()
 		button.text = "Press me"
 		_ = configureLayoutData(of:button)
 		

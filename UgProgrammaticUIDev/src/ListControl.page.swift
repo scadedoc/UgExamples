@@ -24,7 +24,7 @@ class ListControlPageAdapter: SCDLatticePageAdapter {
 	func createListControl() -> SCDWidgetsList {
 		
 		// Two steps 
-		let listControl = SCDWidgetsList.create()
+		let listControl = SCDWidgetsList()
 		let layoutData = configureLayoutData(of: listControl)
 		layoutData.widthConstraint = .match_parent
 		layoutData.heightConstraint = .match_parent
@@ -40,7 +40,7 @@ class ListControlPageAdapter: SCDLatticePageAdapter {
 	func createTemplate() -> SCDWidgetsRowView {
 		
 		// Create row view and configure it
-		let row = SCDWidgetsRowView.create()
+		let row = SCDWidgetsRowView()
 		_ = configureLayoutData(of:row)
 		
 		// configure inner layout
@@ -75,7 +75,7 @@ class ListControlPageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func createLabel(inColumn:Int) -> SCDWidgetsLabel {
-		let label = SCDWidgetsLabel.create()
+		let label = SCDWidgetsLabel()
 		let layoutData = configureLayoutData(of:label)
 		layoutData.widthConstraint = .match_parent
 		layoutData.column = inColumn

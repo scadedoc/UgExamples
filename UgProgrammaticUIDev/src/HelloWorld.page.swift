@@ -7,7 +7,7 @@ class HelloWorldPageAdapter: SCDLatticePageAdapter {
 		super.load(path)
 		
 		// setup the button
-		let button = SCDWidgetsButton.create()
+		let button = SCDWidgetsButton()
 		button.text = "Press me!"
 		button.onClick.append( SCDWidgetsEventHandler{ e in self.handleButtonClick(e!) })
 		configureFontStyle(of:button)
@@ -50,7 +50,7 @@ class HelloWorldPageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func getBitmapControl() -> SCDWidgetsBitmap {
-		let svg = SCDWidgetsBitmap.create()
+		let svg = SCDWidgetsBitmap()
 		svg.url = "res/check5.svg" 
 		svg.isContentPriority = false // this needs to be set to false, else we source img from content property
 		self.configureGridData(of:svg)
