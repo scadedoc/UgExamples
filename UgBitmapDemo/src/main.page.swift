@@ -28,12 +28,12 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		
 		
 		// get reference to second bitmap and set bitmap
-		if let bc2 = self.page!.getWidgetByName("bitmap2") as? SCDWidgetsBitmap {
+		if let bc2 = self.page!.getWidgetByName("bitmap2") as? SCDWidgetsImage {
 			bc2.url = "res/dog2.jpg"
 			bc2.isContentPriority = false
 		}
 		
-		if let bc3 = self.page!.getWidgetByName("bitmap3") as? SCDWidgetsBitmap {
+		if let bc3 = self.page!.getWidgetByName("bitmap3") as? SCDWidgetsImage {
 			let externalurl = "https://s3.amazonaws.com/scade.io/demo/documentation/dog3.jpg"
 			let request = SCDNetworkRequest()
 			request.url = externalurl
