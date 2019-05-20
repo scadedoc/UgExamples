@@ -1,49 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.scade.sdk.data.binding="http://scade.com/sdk/data/binding" xmlns:com.scade.sdk.expr="com.scade.sdk.expr" xmlns:com.scade.sdk.lattice.navigation="http://scade.com/lattice/navigation" xmlns:com.scade.sdk.layout="http://scade.com/sdk/layout" xmlns:com.scade.sdk.view="http://scade.com/sdk/view/widgets" xmlns:com.scade.sdk.view.widgets="http://scade.com/sdk/view/widgets/style" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:svg="http://scade.com/svg/draw" xmlns:svg_1="http://scade.com/svg/constraints" xmlns:svg_2="http://scade.com/svg/style/color">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.scade.sdk.data.binding="http://scade.com/sdk/data/binding" xmlns:com.scade.sdk.expr="com.scade.sdk.expr" xmlns:com.scade.sdk.lattice.navigation="http://scade.com/lattice/navigation" xmlns:com.scade.sdk.layout="http://scade.com/sdk/layout" xmlns:com.scade.sdk.view="http://scade.com/sdk/view/widgets" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:svg="http://scade.com/svg/draw" xmlns:svg_1="http://scade.com/svg/constraints" xmlns:svg_2="http://scade.com/svg/style/color">
   <com.scade.sdk.view:Page name="main" drawing="/3">
-    <styles xsi:type="com.scade.sdk.view.widgets:PageStyle">
-      <screen device="iPhone 6/7/8 (4.7-inch)" svg="svg/screen/iphone_6.svg">
-        <size width="375" height="667"/>
-        <location x="18" y="14"/>
-        <landscapeLocation x="-62" y="89"/>
-      </screen>
-    </styles>
-    <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" image="res/image1.png" type="IMAGE">
-      <color Red="230" Green="230" Blue="230"/>
-    </styles>
+    <size width="414" height="896"/>
     <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="3" marginTop="20" marginBottom="20" marginLeft="50" marginRight="50"/>
     <minArea width="375" height="667"/>
     <maxArea width="375" height="667"/>
-    <children xsi:type="com.scade.sdk.view:Label" name="label1" drawing="/3/@drawableChilds.1/@drawableChilds.0" text="My gesture" wrapText="true">
-      <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
-      <size width="134" height="31"/>
-      <location x="120" y="318"/>
-      <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
-        <minSize width="134" height="31"/>
-        <maxSize width="134" height="31"/>
-      </styles>
-      <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="27">
-        <color Blue="128"/>
-      </styles>
-      <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
+    <children xsi:type="com.scade.sdk.view:Label" name="label1" drawing="/3/@children.1/@children.0" text="My gesture" wrapText="true">
+      <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT">
+        <minSize/>
+      </layoutData>
+      <size width="314" height="796"/>
+      <location x="50" y="50"/>
     </children>
-    <children xsi:type="com.scade.sdk.view:CustomWidget" name="customwidget1" drawing="/3/@drawableChilds.1/@drawableChilds.1">
-      <layoutData xsi:type="com.scade.sdk.layout:GridData" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
-      <size width="275" height="100"/>
+    <children xsi:type="com.scade.sdk.view:CustomWidget" name="customwidget1" drawing="/3/@children.1/@children.1">
+      <layoutData xsi:type="com.scade.sdk.layout:GridData" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+        <minSize width="30" height="30"/>
+      </layoutData>
+      <size width="314" height="30"/>
       <location x="50" y="20"/>
-      <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
-        <minSize width="100" height="100"/>
-        <maxSize width="-1" height="-1"/>
-      </styles>
     </children>
-    <children xsi:type="com.scade.sdk.view:CustomWidget" name="customwidget2" drawing="/3/@drawableChilds.1/@drawableChilds.2">
-      <layoutData xsi:type="com.scade.sdk.layout:GridData" row="2" horizontalAlignment="CENTER" verticalAlignment="MIDDLE"/>
-      <size width="100" height="100"/>
-      <location x="137" y="547"/>
-      <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
-        <minSize width="100" height="100"/>
-        <maxSize width="-1" height="-1"/>
-      </styles>
+    <children xsi:type="com.scade.sdk.view:CustomWidget" name="customwidget2" drawing="/3/@children.1/@children.2">
+      <layoutData xsi:type="com.scade.sdk.layout:GridData" row="2" horizontalAlignment="CENTER" verticalAlignment="MIDDLE">
+        <minSize width="30" height="30"/>
+      </layoutData>
+      <size width="30" height="30"/>
+      <location x="192" y="846"/>
     </children>
     <adapterClass href="http://scade.com/NGGestureDemo#//MainPageAdapter"/>
   </com.scade.sdk.view:Page>
@@ -59,7 +40,7 @@
   </com.scade.sdk.data.binding:BindingModel>
   <com.scade.sdk.lattice.navigation:Navigation page="/0"/>
   <svg:Box>
-    <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+    <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
       <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
         <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
         <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
@@ -72,48 +53,48 @@
           <path>h</path>
         </expression>
       </constraints>
-      <drawableChilds xsi:type="svg:Image" preserveAspectRatio="slice" alignment="xMaxYMax" xhref="res/image1.png">
+      <children xsi:type="svg:Image" preserveAspectRatio="slice" alignment="xMaxYMax" xhref="res/image1.png">
         <width value="100.0" measurement="PERCENTAGE"/>
         <height value="100.0" measurement="PERCENTAGE"/>
-      </drawableChilds>
-      <width value="375.0"/>
-      <height value="667.0"/>
-    </drawableChilds>
-    <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
-      <drawableChilds xsi:type="svg:Group" attributes="{&quot;scade:bind&quot;:&quot;text:label&quot;}">
-        <matrix translateX="120.0" translateY="318.0"/>
-        <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="27" fontName="ArialMT" text="My gesture" anchor="middle" alignmentBaseline="central">
+      </children>
+      <width value="414.0"/>
+      <height value="896.0"/>
+    </children>
+    <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
+      <children xsi:type="svg:Group" attributes="{&quot;scade:bind&quot;:&quot;text:label&quot;}">
+        <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="27" fontName="ArialMT" text="My gesture" alignmentBaseline="central">
           <fill xsi:type="svg_2:RGBColor" b="0.5019608"/>
-          <x value="67.0"/>
-          <y value="15.0"/>
-        </drawableChilds>
-      </drawableChilds>
-      <drawableChilds xsi:type="svg:Group" attributes="">
-        <matrix translateX="50.0" translateY="20.0"/>
-        <drawableChilds xsi:type="svg:Rect" fillOpacity="0.6" strokeWidth="3.0" id="rect1" attributes="{&quot;fill-stroke&quot;:&quot;#804000&quot;}">
-          <fill xsi:type="svg_2:RGBColor" r="0.5019608" g="0.2509804"/>
+          <x/>
+          <y value="398.0"/>
+        </children>
+        <matrix translateX="50.0" translateY="50.0"/>
+      </children>
+      <children xsi:type="svg:Group" attributes="">
+        <children xsi:type="svg:Rect" id="rect1" attributes="{&quot;fill-stroke&quot;:&quot;#804000&quot;}" fillOpacity="0.6" strokeWidth="3.0">
           <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
             <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Rect/width"/>
             <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
               <path>w</path>
             </expression>
           </constraints>
-          <width value="275.0"/>
+          <fill xsi:type="svg_2:RGBColor" r="0.5019608" g="0.2509804"/>
+          <width value="314.0"/>
           <height value="100.0"/>
           <rx/>
           <ry/>
-        </drawableChilds>
-      </drawableChilds>
-      <drawableChilds xsi:type="svg:Group" attributes="">
-        <matrix translateX="137.0" translateY="547.0"/>
-        <drawableChilds xsi:type="svg:Circle" fillOpacity="0.9" strokeWidth="3.0" id="circle1">
+        </children>
+        <matrix translateX="50.0" translateY="20.0"/>
+      </children>
+      <children xsi:type="svg:Group" attributes="">
+        <children xsi:type="svg:Circle" id="circle1" fillOpacity="0.9" strokeWidth="3.0">
           <fill xsi:type="svg_2:RGBColor" r="0.95686275" g="0.9843137" b="0.57254905"/>
           <stroke xsi:type="svg_2:RGBColor" g="0.5019608" b="0.2509804"/>
           <cx/>
           <cy/>
           <r value="20.0"/>
-        </drawableChilds>
-      </drawableChilds>
-    </drawableChilds>
+        </children>
+        <matrix translateX="192.0" translateY="846.0"/>
+      </children>
+    </children>
   </svg:Box>
 </xmi:XMI>
