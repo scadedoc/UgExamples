@@ -1,82 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.scade.sdk.data.binding="http://scade.com/sdk/data/binding" xmlns:com.scade.sdk.expr="com.scade.sdk.expr" xmlns:com.scade.sdk.lattice.navigation="http://scade.com/lattice/navigation" xmlns:com.scade.sdk.layout="http://scade.com/sdk/layout" xmlns:com.scade.sdk.view="http://scade.com/sdk/view/widgets" xmlns:com.scade.sdk.view.widgets="http://scade.com/sdk/view/widgets/style" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:svg="http://scade.com/svg/draw" xmlns:svg_1="http://scade.com/svg/constraints" xmlns:svg_2="http://scade.com/svg/style/color">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.scade.sdk.data.binding="http://scade.com/sdk/data/binding" xmlns:com.scade.sdk.expr="com.scade.sdk.expr" xmlns:com.scade.sdk.lattice.navigation="http://scade.com/lattice/navigation" xmlns:com.scade.sdk.layout="http://scade.com/sdk/layout" xmlns:com.scade.sdk.view="http://scade.com/sdk/view/widgets" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:svg="http://scade.com/svg/draw" xmlns:svg_1="http://scade.com/svg/constraints" xmlns:svg_2="http://scade.com/svg/style/color">
   <com.scade.sdk.view:Page name="main" drawing="/3">
-    <styles xsi:type="com.scade.sdk.view.widgets:PageStyle">
-      <screen device="iPhone 5/5S (4-inch)" svg="svg/screen/iphone_5.svg">
-        <size width="320" height="568"/>
-        <location x="16"/>
-        <landscapeLocation x="-70" y="87"/>
-      </screen>
-    </styles>
-    <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
+    <size width="414" height="896"/>
     <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="3"/>
     <minArea width="320" height="568"/>
     <maxArea width="320" height="568"/>
-    <children xsi:type="com.scade.sdk.view:RowView" name="horizontalview2" drawing="/3/@drawableChilds.1">
-      <layoutData xsi:type="com.scade.sdk.layout:GridData" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
-      <size width="320" height="273"/>
+    <children xsi:type="com.scade.sdk.view:RowView" name="horizontalview2" drawing="/3/@children.1">
+      <layoutData xsi:type="com.scade.sdk.layout:GridData" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT">
+        <minSize/>
+      </layoutData>
+      <size width="414" height="437"/>
       <location/>
-      <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
       <layout xsi:type="com.scade.sdk.layout:GridLayout" columns="3" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
       <minArea/>
       <maxArea width="-1" height="-1"/>
-      <children xsi:type="com.scade.sdk.view:Bitmap" name="bitmap1" drawing="/3/@drawableChilds.1/@drawableChilds.0/@drawableChilds.1" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDZGQjRCRUYyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDZGQjRCRjAyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpENkZCNEJFRDI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpENkZCNEJFRTI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmri+DQAAAS8SURBVHja7JxdK2xRGMfPnHPChUGHGIphmCGN8lYahdyQQi7kI/hOfALFhaSk3CLlLTZ5G2YoQ+MtjULU+befWu323uaME5PZ/v+L3Zq1n732Wr/9rGc9aymusbGxH1Rq+kkEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVY316/U7QbHR3F9eLiYmZmhp5FERZhERZhfc/VMMkSOT8/H41GGxoaqqqqPB6PLJp7e3sHBwdiFggE6urqbG8ZhRbKysoKCwtzc3Px8+bmJhKJaJr2+PhoNc7JyQkGg7BXzZ6cnGxvb3u93t7eXtSMj4+/9QrYoPz8/ByLxdAZdD4dsER5eXnd3d1+v1/VeHQVFRUtLS3Z3sIjq6urxkYGBwdl2Ep/dFVWVs7Ozpp4lZSU9PX1ZWVlmZqtra3d2tqy7STg9vf3o0FVg8e9utbX102d+URY+FzwBbjA7u7u3d0d/Ki9vR1dwZfPzs4GqcPDw42NDeOt5ubmo6Mj1KhGrq6ucMV3Pj09BRpxHJhheF1dXXBeZVlQUCCk4BqaLtgDX2NjI0aO9m07KaQSiQS4iF+jnaamJnQPb7m/v7d1dpN+DQwMpEKkpaUFV7xsf3/fVIl+o8dwIvn+19fXt7e3NTU1KGNOwckXFhbUrdfX1/LycnkKs0w1FY/Hd3Z2YPDy8oKfuJ6fn7tcrtLSUowqHA4r5+rp6cnPz0cBHofPIPYPDw+wgcMWFxeL2drammq8tbXV5/MB7uTk5OXlpVSiQXQA7o/2ccUUTlOAhycbfwIQsEp5ZWXFeAt9QqdRcLvdxnrbwHR2diYFhQADk9kKTGrYSsvLy9K4SXBSXG3D3+bmJq6YGfDNdMBCcLV2QsEyzjURIrdEmX+2rHDAZaQgDgsdHx9b7dENadwU4CS6YeIneYX6Hp8bsz5QGBgmKRYsDM8YjI1RWTlvim3KrIdGRkaSmCG8ZgwszK/Ozk7lbnBMOKzVARFcMjXP+ihh7RsaGpIFDoEZ8UjNa0nlPkS2mVfmZfChUEhITU9PYwWwDfYiLJFqwqbYONKC9z7ypWEhP5DAb1oN4HFvjby6utrWQ63rBhI3KdTX1zsBluxv5GoU0kVTDVJHWWeRDVg9BR5qu0RiXqOA/BP5c8bDksEAFvZG4k2I99jigYg1b1pcXJQC8ngMXuwBDvbAYZtnqfwLNJHiGykj6UfKKrvFzAjw2Ayhuwhbfl3GQarNuTHjRb2EuZCu5PbiXHNzcx0dHUhHgrqsSXUquciXgIVQNTExgWEjeMG/MNFisRh2msgYkXPJtsm0DUByj52d2BvPDwBLThSsyefU1JTpYCOhC4uG2iokl8th/zFkeHgY7vNJf1hx1OEfIp3k/XKGQVjJ1NbWJoVwOOzYDP4/5lokEonH4xKVsSBWVFSow1hN06wHEt8UViAQkENU27tysubkveG7hLz06enJ5/O53W6VJSCiI07JUa3DN9LvVVRX+t/LP4URFmERFmERFkVYhEVYhEVYhEURFmERFmERFmFRhEVYhEVYhEVYFGERFmERFmERFkVYhEVYhEVYDtVfAQYA9Kg8ERKqtwIAAAAASUVORK5CYII=" url="res/dog.jpg" contentPriority="false">
-        <layoutData xsi:type="com.scade.sdk.layout:GridData" verticalAlignment="MIDDLE" grabVerticalSpace="true" heightConstraint="MATCH_PARENT"/>
-        <size width="250" height="263"/>
+      <children xsi:type="com.scade.sdk.view:Image" name="bitmap1" drawing="/3/@children.1/@children.0/@children.1" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDZGQjRCRUYyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDZGQjRCRjAyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpENkZCNEJFRDI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpENkZCNEJFRTI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmri+DQAAAS8SURBVHja7JxdK2xRGMfPnHPChUGHGIphmCGN8lYahdyQQi7kI/hOfALFhaSk3CLlLTZ5G2YoQ+MtjULU+befWu323uaME5PZ/v+L3Zq1n732Wr/9rGc9aymusbGxH1Rq+kkEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVY316/U7QbHR3F9eLiYmZmhp5FERZhERZhfc/VMMkSOT8/H41GGxoaqqqqPB6PLJp7e3sHBwdiFggE6urqbG8ZhRbKysoKCwtzc3Px8+bmJhKJaJr2+PhoNc7JyQkGg7BXzZ6cnGxvb3u93t7eXtSMj4+/9QrYoPz8/ByLxdAZdD4dsER5eXnd3d1+v1/VeHQVFRUtLS3Z3sIjq6urxkYGBwdl2Ep/dFVWVs7Ozpp4lZSU9PX1ZWVlmZqtra3d2tqy7STg9vf3o0FVg8e9utbX102d+URY+FzwBbjA7u7u3d0d/Ki9vR1dwZfPzs4GqcPDw42NDeOt5ubmo6Mj1KhGrq6ucMV3Pj09BRpxHJhheF1dXXBeZVlQUCCk4BqaLtgDX2NjI0aO9m07KaQSiQS4iF+jnaamJnQPb7m/v7d1dpN+DQwMpEKkpaUFV7xsf3/fVIl+o8dwIvn+19fXt7e3NTU1KGNOwckXFhbUrdfX1/LycnkKs0w1FY/Hd3Z2YPDy8oKfuJ6fn7tcrtLSUowqHA4r5+rp6cnPz0cBHofPIPYPDw+wgcMWFxeL2drammq8tbXV5/MB7uTk5OXlpVSiQXQA7o/2ccUUTlOAhycbfwIQsEp5ZWXFeAt9QqdRcLvdxnrbwHR2diYFhQADk9kKTGrYSsvLy9K4SXBSXG3D3+bmJq6YGfDNdMBCcLV2QsEyzjURIrdEmX+2rHDAZaQgDgsdHx9b7dENadwU4CS6YeIneYX6Hp8bsz5QGBgmKRYsDM8YjI1RWTlvim3KrIdGRkaSmCG8ZgwszK/Ozk7lbnBMOKzVARFcMjXP+ihh7RsaGpIFDoEZ8UjNa0nlPkS2mVfmZfChUEhITU9PYwWwDfYiLJFqwqbYONKC9z7ypWEhP5DAb1oN4HFvjby6utrWQ63rBhI3KdTX1zsBluxv5GoU0kVTDVJHWWeRDVg9BR5qu0RiXqOA/BP5c8bDksEAFvZG4k2I99jigYg1b1pcXJQC8ngMXuwBDvbAYZtnqfwLNJHiGykj6UfKKrvFzAjw2Ayhuwhbfl3GQarNuTHjRb2EuZCu5PbiXHNzcx0dHUhHgrqsSXUquciXgIVQNTExgWEjeMG/MNFisRh2msgYkXPJtsm0DUByj52d2BvPDwBLThSsyefU1JTpYCOhC4uG2iokl8th/zFkeHgY7vNJf1hx1OEfIp3k/XKGQVjJ1NbWJoVwOOzYDP4/5lokEonH4xKVsSBWVFSow1hN06wHEt8UViAQkENU27tysubkveG7hLz06enJ5/O53W6VJSCiI07JUa3DN9LvVVRX+t/LP4URFmERFmERFkVYhEVYhEVYhEURFmERFmERFmFRhEVYhEVYhEVYFGERFmERFmERFkVYhEVYhEVYDtVfAQYA9Kg8ERKqtwIAAAAASUVORK5CYII=" url="res/dog.jpg" contentPriority="false">
+        <layoutData xsi:type="com.scade.sdk.layout:GridData" verticalAlignment="MIDDLE" grabVerticalSpace="true" heightConstraint="MATCH_PARENT">
+          <minSize width="300" height="100"/>
+        </layoutData>
+        <size width="300" height="427"/>
         <location x="5" y="5"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
-          <minSize width="250" height="250"/>
-          <maxSize width="-1" height="-1"/>
-        </styles>
       </children>
-      <children xsi:type="com.scade.sdk.view:Bitmap" name="bitmap2" drawing="/3/@drawableChilds.1/@drawableChilds.0/@drawableChilds.2" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDZGQjRCRUYyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDZGQjRCRjAyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpENkZCNEJFRDI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpENkZCNEJFRTI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmri+DQAAAS8SURBVHja7JxdK2xRGMfPnHPChUGHGIphmCGN8lYahdyQQi7kI/hOfALFhaSk3CLlLTZ5G2YoQ+MtjULU+befWu323uaME5PZ/v+L3Zq1n732Wr/9rGc9aymusbGxH1Rq+kkEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVY316/U7QbHR3F9eLiYmZmhp5FERZhERZhfc/VMMkSOT8/H41GGxoaqqqqPB6PLJp7e3sHBwdiFggE6urqbG8ZhRbKysoKCwtzc3Px8+bmJhKJaJr2+PhoNc7JyQkGg7BXzZ6cnGxvb3u93t7eXtSMj4+/9QrYoPz8/ByLxdAZdD4dsER5eXnd3d1+v1/VeHQVFRUtLS3Z3sIjq6urxkYGBwdl2Ep/dFVWVs7Ozpp4lZSU9PX1ZWVlmZqtra3d2tqy7STg9vf3o0FVg8e9utbX102d+URY+FzwBbjA7u7u3d0d/Ki9vR1dwZfPzs4GqcPDw42NDeOt5ubmo6Mj1KhGrq6ucMV3Pj09BRpxHJhheF1dXXBeZVlQUCCk4BqaLtgDX2NjI0aO9m07KaQSiQS4iF+jnaamJnQPb7m/v7d1dpN+DQwMpEKkpaUFV7xsf3/fVIl+o8dwIvn+19fXt7e3NTU1KGNOwckXFhbUrdfX1/LycnkKs0w1FY/Hd3Z2YPDy8oKfuJ6fn7tcrtLSUowqHA4r5+rp6cnPz0cBHofPIPYPDw+wgcMWFxeL2drammq8tbXV5/MB7uTk5OXlpVSiQXQA7o/2ccUUTlOAhycbfwIQsEp5ZWXFeAt9QqdRcLvdxnrbwHR2diYFhQADk9kKTGrYSsvLy9K4SXBSXG3D3+bmJq6YGfDNdMBCcLV2QsEyzjURIrdEmX+2rHDAZaQgDgsdHx9b7dENadwU4CS6YeIneYX6Hp8bsz5QGBgmKRYsDM8YjI1RWTlvim3KrIdGRkaSmCG8ZgwszK/Ozk7lbnBMOKzVARFcMjXP+ihh7RsaGpIFDoEZ8UjNa0nlPkS2mVfmZfChUEhITU9PYwWwDfYiLJFqwqbYONKC9z7ypWEhP5DAb1oN4HFvjby6utrWQ63rBhI3KdTX1zsBluxv5GoU0kVTDVJHWWeRDVg9BR5qu0RiXqOA/BP5c8bDksEAFvZG4k2I99jigYg1b1pcXJQC8ngMXuwBDvbAYZtnqfwLNJHiGykj6UfKKrvFzAjw2Ayhuwhbfl3GQarNuTHjRb2EuZCu5PbiXHNzcx0dHUhHgrqsSXUquciXgIVQNTExgWEjeMG/MNFisRh2msgYkXPJtsm0DUByj52d2BvPDwBLThSsyefU1JTpYCOhC4uG2iokl8th/zFkeHgY7vNJf1hx1OEfIp3k/XKGQVjJ1NbWJoVwOOzYDP4/5lokEonH4xKVsSBWVFSow1hN06wHEt8UViAQkENU27tysubkveG7hLz06enJ5/O53W6VJSCiI07JUa3DN9LvVVRX+t/LP4URFmERFmERFkVYhEVYhEVYhEURFmERFmERFmFRhEVYhEVYhEVYFGERFmERFmERFkVYhEVYhEVYDtVfAQYA9Kg8ERKqtwIAAAAASUVORK5CYII=" url="res/dog2.jpg" contentPriority="false">
-        <layoutData xsi:type="com.scade.sdk.layout:GridData" column="1" verticalAlignment="MIDDLE" grabVerticalSpace="true" heightConstraint="MATCH_PARENT"/>
-        <size width="250" height="263"/>
-        <location x="255" y="5"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
-          <minSize width="250" height="250"/>
-          <maxSize width="-1" height="-1"/>
-        </styles>
+      <children xsi:type="com.scade.sdk.view:Image" name="bitmap2" drawing="/3/@children.1/@children.0/@children.2" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDZGQjRCRUYyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDZGQjRCRjAyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpENkZCNEJFRDI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpENkZCNEJFRTI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmri+DQAAAS8SURBVHja7JxdK2xRGMfPnHPChUGHGIphmCGN8lYahdyQQi7kI/hOfALFhaSk3CLlLTZ5G2YoQ+MtjULU+befWu323uaME5PZ/v+L3Zq1n732Wr/9rGc9aymusbGxH1Rq+kkEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVY316/U7QbHR3F9eLiYmZmhp5FERZhERZhfc/VMMkSOT8/H41GGxoaqqqqPB6PLJp7e3sHBwdiFggE6urqbG8ZhRbKysoKCwtzc3Px8+bmJhKJaJr2+PhoNc7JyQkGg7BXzZ6cnGxvb3u93t7eXtSMj4+/9QrYoPz8/ByLxdAZdD4dsER5eXnd3d1+v1/VeHQVFRUtLS3Z3sIjq6urxkYGBwdl2Ep/dFVWVs7Ozpp4lZSU9PX1ZWVlmZqtra3d2tqy7STg9vf3o0FVg8e9utbX102d+URY+FzwBbjA7u7u3d0d/Ki9vR1dwZfPzs4GqcPDw42NDeOt5ubmo6Mj1KhGrq6ucMV3Pj09BRpxHJhheF1dXXBeZVlQUCCk4BqaLtgDX2NjI0aO9m07KaQSiQS4iF+jnaamJnQPb7m/v7d1dpN+DQwMpEKkpaUFV7xsf3/fVIl+o8dwIvn+19fXt7e3NTU1KGNOwckXFhbUrdfX1/LycnkKs0w1FY/Hd3Z2YPDy8oKfuJ6fn7tcrtLSUowqHA4r5+rp6cnPz0cBHofPIPYPDw+wgcMWFxeL2drammq8tbXV5/MB7uTk5OXlpVSiQXQA7o/2ccUUTlOAhycbfwIQsEp5ZWXFeAt9QqdRcLvdxnrbwHR2diYFhQADk9kKTGrYSsvLy9K4SXBSXG3D3+bmJq6YGfDNdMBCcLV2QsEyzjURIrdEmX+2rHDAZaQgDgsdHx9b7dENadwU4CS6YeIneYX6Hp8bsz5QGBgmKRYsDM8YjI1RWTlvim3KrIdGRkaSmCG8ZgwszK/Ozk7lbnBMOKzVARFcMjXP+ihh7RsaGpIFDoEZ8UjNa0nlPkS2mVfmZfChUEhITU9PYwWwDfYiLJFqwqbYONKC9z7ypWEhP5DAb1oN4HFvjby6utrWQ63rBhI3KdTX1zsBluxv5GoU0kVTDVJHWWeRDVg9BR5qu0RiXqOA/BP5c8bDksEAFvZG4k2I99jigYg1b1pcXJQC8ngMXuwBDvbAYZtnqfwLNJHiGykj6UfKKrvFzAjw2Ayhuwhbfl3GQarNuTHjRb2EuZCu5PbiXHNzcx0dHUhHgrqsSXUquciXgIVQNTExgWEjeMG/MNFisRh2msgYkXPJtsm0DUByj52d2BvPDwBLThSsyefU1JTpYCOhC4uG2iokl8th/zFkeHgY7vNJf1hx1OEfIp3k/XKGQVjJ1NbWJoVwOOzYDP4/5lokEonH4xKVsSBWVFSow1hN06wHEt8UViAQkENU27tysubkveG7hLz06enJ5/O53W6VJSCiI07JUa3DN9LvVVRX+t/LP4URFmERFmERFkVYhEVYhEVYhEURFmERFmERFmFRhEVYhEVYhEVYFGERFmERFmERFkVYhEVYhEVYDtVfAQYA9Kg8ERKqtwIAAAAASUVORK5CYII=" url="res/dog2.jpg" contentPriority="false">
+        <layoutData xsi:type="com.scade.sdk.layout:GridData" column="1" verticalAlignment="MIDDLE" grabVerticalSpace="true" heightConstraint="MATCH_PARENT">
+          <minSize width="300" height="100"/>
+        </layoutData>
+        <size width="300" height="427"/>
+        <location x="305" y="5"/>
       </children>
-      <children xsi:type="com.scade.sdk.view:Bitmap" name="bitmap3" drawing="/3/@drawableChilds.1/@drawableChilds.0/@drawableChilds.3" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDZGQjRCRUYyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDZGQjRCRjAyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpENkZCNEJFRDI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpENkZCNEJFRTI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmri+DQAAAS8SURBVHja7JxdK2xRGMfPnHPChUGHGIphmCGN8lYahdyQQi7kI/hOfALFhaSk3CLlLTZ5G2YoQ+MtjULU+befWu323uaME5PZ/v+L3Zq1n732Wr/9rGc9aymusbGxH1Rq+kkEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVY316/U7QbHR3F9eLiYmZmhp5FERZhERZhfc/VMMkSOT8/H41GGxoaqqqqPB6PLJp7e3sHBwdiFggE6urqbG8ZhRbKysoKCwtzc3Px8+bmJhKJaJr2+PhoNc7JyQkGg7BXzZ6cnGxvb3u93t7eXtSMj4+/9QrYoPz8/ByLxdAZdD4dsER5eXnd3d1+v1/VeHQVFRUtLS3Z3sIjq6urxkYGBwdl2Ep/dFVWVs7Ozpp4lZSU9PX1ZWVlmZqtra3d2tqy7STg9vf3o0FVg8e9utbX102d+URY+FzwBbjA7u7u3d0d/Ki9vR1dwZfPzs4GqcPDw42NDeOt5ubmo6Mj1KhGrq6ucMV3Pj09BRpxHJhheF1dXXBeZVlQUCCk4BqaLtgDX2NjI0aO9m07KaQSiQS4iF+jnaamJnQPb7m/v7d1dpN+DQwMpEKkpaUFV7xsf3/fVIl+o8dwIvn+19fXt7e3NTU1KGNOwckXFhbUrdfX1/LycnkKs0w1FY/Hd3Z2YPDy8oKfuJ6fn7tcrtLSUowqHA4r5+rp6cnPz0cBHofPIPYPDw+wgcMWFxeL2drammq8tbXV5/MB7uTk5OXlpVSiQXQA7o/2ccUUTlOAhycbfwIQsEp5ZWXFeAt9QqdRcLvdxnrbwHR2diYFhQADk9kKTGrYSsvLy9K4SXBSXG3D3+bmJq6YGfDNdMBCcLV2QsEyzjURIrdEmX+2rHDAZaQgDgsdHx9b7dENadwU4CS6YeIneYX6Hp8bsz5QGBgmKRYsDM8YjI1RWTlvim3KrIdGRkaSmCG8ZgwszK/Ozk7lbnBMOKzVARFcMjXP+ihh7RsaGpIFDoEZ8UjNa0nlPkS2mVfmZfChUEhITU9PYwWwDfYiLJFqwqbYONKC9z7ypWEhP5DAb1oN4HFvjby6utrWQ63rBhI3KdTX1zsBluxv5GoU0kVTDVJHWWeRDVg9BR5qu0RiXqOA/BP5c8bDksEAFvZG4k2I99jigYg1b1pcXJQC8ngMXuwBDvbAYZtnqfwLNJHiGykj6UfKKrvFzAjw2Ayhuwhbfl3GQarNuTHjRb2EuZCu5PbiXHNzcx0dHUhHgrqsSXUquciXgIVQNTExgWEjeMG/MNFisRh2msgYkXPJtsm0DUByj52d2BvPDwBLThSsyefU1JTpYCOhC4uG2iokl8th/zFkeHgY7vNJf1hx1OEfIp3k/XKGQVjJ1NbWJoVwOOzYDP4/5lokEonH4xKVsSBWVFSow1hN06wHEt8UViAQkENU27tysubkveG7hLz06enJ5/O53W6VJSCiI07JUa3DN9LvVVRX+t/LP4URFmERFmERFkVYhEVYhEVYhEURFmERFmERFmFRhEVYhEVYhEVYFGERFmERFmERFkVYhEVYhEVYDtVfAQYA9Kg8ERKqtwIAAAAASUVORK5CYII=" url="res/dog3.jpg" contentPriority="false">
-        <layoutData xsi:type="com.scade.sdk.layout:GridData" column="2" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" heightConstraint="MATCH_PARENT"/>
-        <size width="250" height="263"/>
-        <location x="505" y="5"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
-          <minSize width="250" height="250"/>
-          <maxSize width="-1" height="-1"/>
-        </styles>
+      <children xsi:type="com.scade.sdk.view:Image" name="bitmap3" drawing="/3/@children.1/@children.0/@children.3" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDZGQjRCRUYyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDZGQjRCRjAyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpENkZCNEJFRDI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpENkZCNEJFRTI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmri+DQAAAS8SURBVHja7JxdK2xRGMfPnHPChUGHGIphmCGN8lYahdyQQi7kI/hOfALFhaSk3CLlLTZ5G2YoQ+MtjULU+befWu323uaME5PZ/v+L3Zq1n732Wr/9rGc9aymusbGxH1Rq+kkEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVY316/U7QbHR3F9eLiYmZmhp5FERZhERZhfc/VMMkSOT8/H41GGxoaqqqqPB6PLJp7e3sHBwdiFggE6urqbG8ZhRbKysoKCwtzc3Px8+bmJhKJaJr2+PhoNc7JyQkGg7BXzZ6cnGxvb3u93t7eXtSMj4+/9QrYoPz8/ByLxdAZdD4dsER5eXnd3d1+v1/VeHQVFRUtLS3Z3sIjq6urxkYGBwdl2Ep/dFVWVs7Ozpp4lZSU9PX1ZWVlmZqtra3d2tqy7STg9vf3o0FVg8e9utbX102d+URY+FzwBbjA7u7u3d0d/Ki9vR1dwZfPzs4GqcPDw42NDeOt5ubmo6Mj1KhGrq6ucMV3Pj09BRpxHJhheF1dXXBeZVlQUCCk4BqaLtgDX2NjI0aO9m07KaQSiQS4iF+jnaamJnQPb7m/v7d1dpN+DQwMpEKkpaUFV7xsf3/fVIl+o8dwIvn+19fXt7e3NTU1KGNOwckXFhbUrdfX1/LycnkKs0w1FY/Hd3Z2YPDy8oKfuJ6fn7tcrtLSUowqHA4r5+rp6cnPz0cBHofPIPYPDw+wgcMWFxeL2drammq8tbXV5/MB7uTk5OXlpVSiQXQA7o/2ccUUTlOAhycbfwIQsEp5ZWXFeAt9QqdRcLvdxnrbwHR2diYFhQADk9kKTGrYSsvLy9K4SXBSXG3D3+bmJq6YGfDNdMBCcLV2QsEyzjURIrdEmX+2rHDAZaQgDgsdHx9b7dENadwU4CS6YeIneYX6Hp8bsz5QGBgmKRYsDM8YjI1RWTlvim3KrIdGRkaSmCG8ZgwszK/Ozk7lbnBMOKzVARFcMjXP+ihh7RsaGpIFDoEZ8UjNa0nlPkS2mVfmZfChUEhITU9PYwWwDfYiLJFqwqbYONKC9z7ypWEhP5DAb1oN4HFvjby6utrWQ63rBhI3KdTX1zsBluxv5GoU0kVTDVJHWWeRDVg9BR5qu0RiXqOA/BP5c8bDksEAFvZG4k2I99jigYg1b1pcXJQC8ngMXuwBDvbAYZtnqfwLNJHiGykj6UfKKrvFzAjw2Ayhuwhbfl3GQarNuTHjRb2EuZCu5PbiXHNzcx0dHUhHgrqsSXUquciXgIVQNTExgWEjeMG/MNFisRh2msgYkXPJtsm0DUByj52d2BvPDwBLThSsyefU1JTpYCOhC4uG2iokl8th/zFkeHgY7vNJf1hx1OEfIp3k/XKGQVjJ1NbWJoVwOOzYDP4/5lokEonH4xKVsSBWVFSow1hN06wHEt8UViAQkENU27tysubkveG7hLz06enJ5/O53W6VJSCiI07JUa3DN9LvVVRX+t/LP4URFmERFmERFkVYhEVYhEVYhEURFmERFmERFmFRhEVYhEVYhEVYFGERFmERFmERFkVYhEVYhEVYDtVfAQYA9Kg8ERKqtwIAAAAASUVORK5CYII=" url="res/dog3.jpg" contentPriority="false">
+        <layoutData xsi:type="com.scade.sdk.layout:GridData" column="2" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" heightConstraint="MATCH_PARENT">
+          <minSize width="300" height="100"/>
+        </layoutData>
+        <size width="300" height="427"/>
+        <location x="605" y="5"/>
       </children>
     </children>
-    <children xsi:type="com.scade.sdk.view:RowView" name="horizontalview1" drawing="/3/@drawableChilds.2">
-      <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
-      <size width="320" height="272"/>
-      <location y="273"/>
-      <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" type="COLOR">
-        <color Red="230" Green="230" Blue="230"/>
-      </styles>
+    <children xsi:type="com.scade.sdk.view:RowView" name="horizontalview1" drawing="/3/@children.2">
+      <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT">
+        <minSize/>
+      </layoutData>
+      <size width="414" height="436"/>
+      <location y="437"/>
       <layout xsi:type="com.scade.sdk.layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
       <minArea/>
       <maxArea width="-1" height="-1"/>
     </children>
-    <children xsi:type="com.scade.sdk.view:Button" name="btnMiddle" drawing="/3/@drawableChilds.3" text="Goto middle">
-      <layoutData xsi:type="com.scade.sdk.layout:GridData" row="2" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true"/>
-      <size width="130" height="23"/>
-      <location x="95" y="545"/>
-      <contentSize width="130" height="23"/>
-      <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
+    <children xsi:type="com.scade.sdk.view:Button" name="btnMiddle" drawing="/3/@children.3" text="Goto middle">
+      <layoutData xsi:type="com.scade.sdk.layout:GridData" row="2" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true">
         <minSize/>
-        <maxSize width="-1" height="-1"/>
-      </styles>
-      <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17"/>
-      <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
-      <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
+      </layoutData>
+      <size width="130" height="23"/>
+      <location x="142" y="873"/>
+      <contentSize width="130" height="23"/>
     </children>
   </com.scade.sdk.view:Page>
   <com.scade.sdk.data.binding:BindingModel/>
   <com.scade.sdk.lattice.navigation:Navigation page="/0"/>
   <svg:Box>
-    <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+    <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
       <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
         <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
         <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
@@ -89,18 +71,18 @@
           <path>h</path>
         </expression>
       </constraints>
-      <drawableChilds xsi:type="svg:Rect">
+      <children xsi:type="svg:Rect">
         <fill xsi:type="svg_2:RGBColor" r="0.972549" g="0.972549" b="0.972549"/>
         <width value="100.0" measurement="PERCENTAGE"/>
         <height value="100.0" measurement="PERCENTAGE"/>
         <rx/>
         <ry/>
-      </drawableChilds>
-      <width value="320.0"/>
-      <height value="568.0"/>
-    </drawableChilds>
-    <drawableChilds xsi:type="svg:Group" attributes="{&quot;widget-id&quot;:&quot;horizontalview2&quot;}">
-      <drawableChilds xsi:type="svg:ScrollGroup" id="sg1" attributes="{&quot;template-id&quot;:&quot;container-scroll&quot;}" width="320" height="273" type="horizontal">
+      </children>
+      <width value="414.0"/>
+      <height value="896.0"/>
+    </children>
+    <children xsi:type="svg:Group" attributes="{&quot;widget-id&quot;:&quot;horizontalview2&quot;}">
+      <children xsi:type="svg:ScrollGroup" id="sg1" attributes="{&quot;template-id&quot;:&quot;container-scroll&quot;}" width="414" height="437" type="horizontal">
         <constraints xsi:type="svg_1:ScrollSizeConstraint" exprStr="size.w size.h">
           <width xsi:type="com.scade.sdk.expr:Variable" name="size">
             <path>w</path>
@@ -109,7 +91,7 @@
             <path>h</path>
           </height>
         </constraints>
-        <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+        <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
           <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
             <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
             <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
@@ -122,19 +104,37 @@
               <path>h</path>
             </expression>
           </constraints>
-          <drawableChilds xsi:type="svg:Rect">
+          <children xsi:type="svg:Rect">
             <fill xsi:type="svg_2:NoneColor"/>
             <width value="100.0" measurement="PERCENTAGE"/>
             <height value="100.0" measurement="PERCENTAGE"/>
             <rx/>
             <ry/>
-          </drawableChilds>
-          <width value="320.0"/>
-          <height value="273.0"/>
-        </drawableChilds>
-        <drawableChilds xsi:type="svg:Group" attributes="{&quot;widget-id&quot;:&quot;bitmap1&quot;}">
+          </children>
+          <width value="414.0"/>
+          <height value="437.0"/>
+        </children>
+        <children xsi:type="svg:Group" attributes="{&quot;widget-id&quot;:&quot;bitmap1&quot;}">
+          <children xsi:type="svg:Image" attributes="{&quot;template-id&quot;:&quot;node-image&quot;}" preserveAspectRatio="slice" xhref="res/dog.jpg">
+            <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
+              <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Image/width"/>
+              <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                <path>w</path>
+              </expression>
+            </constraints>
+            <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
+              <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Image/height"/>
+              <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                <path>h</path>
+              </expression>
+            </constraints>
+            <width value="300.0"/>
+            <height value="427.0"/>
+          </children>
           <matrix translateX="5.0" translateY="5.0"/>
-          <drawableChilds xsi:type="svg:Image" attributes="{&quot;template-id&quot;:&quot;node-image&quot;}" preserveAspectRatio="slice" xhref="res/dog.jpg">
+        </children>
+        <children xsi:type="svg:Group" attributes="{&quot;widget-id&quot;:&quot;bitmap2&quot;}">
+          <children xsi:type="svg:Image" attributes="{&quot;template-id&quot;:&quot;node-image&quot;}" preserveAspectRatio="slice" xhref="res/dog2.jpg">
             <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
               <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Image/width"/>
               <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
@@ -147,13 +147,13 @@
                 <path>h</path>
               </expression>
             </constraints>
-            <width value="250.0"/>
-            <height value="263.0"/>
-          </drawableChilds>
-        </drawableChilds>
-        <drawableChilds xsi:type="svg:Group" attributes="{&quot;widget-id&quot;:&quot;bitmap2&quot;}">
-          <matrix translateX="255.0" translateY="5.0"/>
-          <drawableChilds xsi:type="svg:Image" attributes="{&quot;template-id&quot;:&quot;node-image&quot;}" preserveAspectRatio="slice" xhref="res/dog2.jpg">
+            <width value="300.0"/>
+            <height value="427.0"/>
+          </children>
+          <matrix translateX="305.0" translateY="5.0"/>
+        </children>
+        <children xsi:type="svg:Group" attributes="{&quot;widget-id&quot;:&quot;bitmap3&quot;}">
+          <children xsi:type="svg:Image" attributes="{&quot;template-id&quot;:&quot;node-image&quot;}" preserveAspectRatio="slice" xhref="res/dog3.jpg">
             <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
               <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Image/width"/>
               <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
@@ -166,34 +166,15 @@
                 <path>h</path>
               </expression>
             </constraints>
-            <width value="250.0"/>
-            <height value="263.0"/>
-          </drawableChilds>
-        </drawableChilds>
-        <drawableChilds xsi:type="svg:Group" attributes="{&quot;widget-id&quot;:&quot;bitmap3&quot;}">
-          <matrix translateX="505.0" translateY="5.0"/>
-          <drawableChilds xsi:type="svg:Image" attributes="{&quot;template-id&quot;:&quot;node-image&quot;}" preserveAspectRatio="slice" xhref="res/dog3.jpg">
-            <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
-              <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Image/width"/>
-              <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
-                <path>w</path>
-              </expression>
-            </constraints>
-            <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
-              <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Image/height"/>
-              <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
-                <path>h</path>
-              </expression>
-            </constraints>
-            <width value="250.0"/>
-            <height value="263.0"/>
-          </drawableChilds>
-        </drawableChilds>
-      </drawableChilds>
-    </drawableChilds>
-    <drawableChilds xsi:type="svg:Group" attributes="{&quot;widget-id&quot;:&quot;horizontalview1&quot;}">
-      <matrix translateY="273.0"/>
-      <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+            <width value="300.0"/>
+            <height value="427.0"/>
+          </children>
+          <matrix translateX="605.0" translateY="5.0"/>
+        </children>
+      </children>
+    </children>
+    <children xsi:type="svg:Group" attributes="{&quot;widget-id&quot;:&quot;horizontalview1&quot;}">
+      <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
         <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
           <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
           <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
@@ -206,20 +187,20 @@
             <path>h</path>
           </expression>
         </constraints>
-        <drawableChilds xsi:type="svg:Rect">
+        <children xsi:type="svg:Rect">
           <fill xsi:type="svg_2:RGBColor" r="0.9019608" g="0.9019608" b="0.9019608"/>
           <width value="100.0" measurement="PERCENTAGE"/>
           <height value="100.0" measurement="PERCENTAGE"/>
           <rx/>
           <ry/>
-        </drawableChilds>
-        <width value="320.0"/>
-        <height value="272.0"/>
-      </drawableChilds>
-    </drawableChilds>
-    <drawableChilds xsi:type="svg:Group">
-      <matrix translateX="95.0" translateY="545.0"/>
-      <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+        </children>
+        <width value="414.0"/>
+        <height value="436.0"/>
+      </children>
+      <matrix translateY="437.0"/>
+    </children>
+    <children xsi:type="svg:Group">
+      <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
         <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
           <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
           <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
@@ -234,12 +215,13 @@
         </constraints>
         <width value="130.0"/>
         <height value="23.0"/>
-      </drawableChilds>
-      <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="ArialMT" text="Goto middle" anchor="middle" alignmentBaseline="central">
+      </children>
+      <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="ArialMT" text="Goto middle" alignmentBaseline="central">
         <fill xsi:type="svg_2:RGBColor" r="0.26666668" g="0.41568628" b="0.7019608"/>
-        <x value="65.0"/>
+        <x/>
         <y value="11.0"/>
-      </drawableChilds>
-    </drawableChilds>
+      </children>
+      <matrix translateX="142.0" translateY="873.0"/>
+    </children>
   </svg:Box>
 </xmi:XMI>
