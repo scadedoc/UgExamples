@@ -37,13 +37,11 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func createButton(label:String,action:@escaping (_ e:String)->Void) -> SCDWidgetsButton {
-	  let button = SCDWidgetsButton.create()
+	  let button = SCDWidgetsButton()
 	  let layoutData = SCDLayoutGridData()
 
 	  button.layoutData = layoutData
 	  button.text = "x"
-	  button.setWidthContraint(min:25,max:25)
-	  button.setHeightConstraint(min:25,max:25)
 	  
 	  // on click, call callback with name of button
 	  button.onClick.append( SCDWidgetsEventHandler{ (e:SCDWidgetsEvent?) in 
@@ -52,8 +50,8 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		})
 	  
 	  // set colors
-	  button.setFontColor(to: whiteColor)
-	  button.setBackgroundColor(to: redColor)
+	  button.font!.color = whiteColor
+	  button.backgroundColor = redColor
 	  
 	  return button
 	}
