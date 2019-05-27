@@ -100,10 +100,7 @@ class DynamicButtonGridPageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func setBackgroundColor(of control : SCDWidgetsWidget, to color:SCDGraphicsRGB ) {
-		if let backgroundStyle = control.getStyle(SCDWidgetsBackgroundStyle.eClass) as? SCDWidgetsBackgroundStyle {
-			backgroundStyle.type = .color
-      		backgroundStyle.color = color
-  		}
+		control.backgroundColor = color
 	}
 	
 	func createHorizontalContainer(at:(Int,Int)) -> SCDWidgetsContainer {
@@ -131,9 +128,7 @@ class DynamicButtonGridPageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func configureFontStyle(of control : SCDWidgetsTextWidget,to color:SCDGraphicsRGB  ) {
-		if let fontStyle = control.getStyle(SCDWidgetsFontStyle.eClass) as? SCDWidgetsFontStyle  {
-    	  fontStyle.color = color  
-		}
+		control.font!.color = color
 	}
 	
 }

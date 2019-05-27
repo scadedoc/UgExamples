@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.scade.sdk.data.binding="http://scade.com/sdk/data/binding" xmlns:com.scade.sdk.expr="com.scade.sdk.expr" xmlns:com.scade.sdk.lattice.navigation="http://scade.com/lattice/navigation" xmlns:com.scade.sdk.layout="http://scade.com/sdk/layout" xmlns:com.scade.sdk.view="http://scade.com/sdk/view/widgets" xmlns:com.scade.sdk.view.widgets="http://scade.com/sdk/view/widgets/style" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:svg="http://scade.com/svg/draw" xmlns:svg_1="http://scade.com/svg/constraints" xmlns:svg_2="http://scade.com/svg/style/color">
   <com.scade.sdk.view:Page name="DynamicButtonGrid" drawing="/3">
-    <styles xsi:type="com.scade.sdk.view.widgets:PageStyle">
-      <screen device="iPhone 5/SE (4-inch)" svg="svg/screen/iphone_5.svg">
-        <size width="320" height="568"/>
-        <location x="16"/>
-        <landscapeLocation x="-70" y="87"/>
-      </screen>
-    </styles>
-    <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
     <layout xsi:type="com.scade.sdk.layout:GridLayout"/>
     <minArea width="320" height="568"/>
     <adapterClass href="http://scade.com/UgProgrammaticUIDev#//DynamicButtonGridPageAdapter"/>
@@ -16,7 +8,7 @@
   <com.scade.sdk.data.binding:BindingModel/>
   <com.scade.sdk.lattice.navigation:Navigation page="/0"/>
   <svg:Box>
-    <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+    <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
       <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
         <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
         <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
@@ -29,16 +21,16 @@
           <path>w</path>
         </expression>
       </constraints>
-      <drawableChilds xsi:type="svg:Rect">
+      <children xsi:type="svg:Rect">
         <fill xsi:type="svg_2:RGBColor" r="0.972549" g="0.972549" b="0.972549"/>
         <width value="100.0" measurement="PERCENTAGE"/>
         <height value="100.0" measurement="PERCENTAGE"/>
         <rx/>
         <ry/>
-      </drawableChilds>
+      </children>
       <width value="320.0"/>
       <height value="568.0"/>
-    </drawableChilds>
-    <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}"/>
+    </children>
+    <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}"/>
   </svg:Box>
 </xmi:XMI>

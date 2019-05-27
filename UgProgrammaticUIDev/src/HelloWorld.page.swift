@@ -41,16 +41,12 @@ class HelloWorldPageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func configureFontStyle(of control : SCDWidgetsTextWidget ) {
-		if let fontStyle = control.getStyle(SCDWidgetsFontStyle.eClass) as? SCDWidgetsFontStyle  {
-    	  fontStyle.fontFamily = "Courier"
-    	  fontStyle.color = redColor // see start.swift for def of redColor
-    	  // fontStyle.isUnderline = true 
-    	  // fontStyle.isLineThrough = true 
-		}
+		control.font!.fontFamily = "Courier"
+		control.font!.color = redColor
 	}
 	
-	func getBitmapControl() -> SCDWidgetsBitmap {
-		let svg = SCDWidgetsBitmap()
+	func getBitmapControl() -> SCDWidgetsImage {
+		let svg = SCDWidgetsImage()
 		svg.url = "res/check5.svg" 
 		svg.isContentPriority = false // this needs to be set to false, else we source img from content property
 		self.configureGridData(of:svg)

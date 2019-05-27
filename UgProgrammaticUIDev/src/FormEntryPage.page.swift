@@ -133,16 +133,11 @@ class FormEntryPagePageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func configureFontStyle(of control : SCDWidgetsTextWidget ) {
-		if let fontStyle = control.getStyle(SCDWidgetsFontStyle.eClass) as? SCDWidgetsFontStyle  {
-    	  fontStyle.color = whiteColor // 
-		}
+		control.font!.color = whiteColor
 	}
 	
 	func configureBackground(of control : SCDWidgetsWidget ) {
-		if let backgroundStyle = control.getStyle(SCDWidgetsBackgroundStyle.eClass) as? SCDWidgetsBackgroundStyle {
-     	    print("setting background")
-			backgroundStyle.type = .color
-      		backgroundStyle.color = redColor
-  		}
+		print("setting background")
+		control.backgroundColor = redColor
 	}
 }
