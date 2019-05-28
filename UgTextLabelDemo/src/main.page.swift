@@ -28,18 +28,14 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func setGeneralProperties() {
-		let style = SCDWidgetsTextStyle()
-		let textstyle = label1.getStyle(style.eClass()) as! SCDWidgetsTextStyle
-		textstyle.horizontalAlignment = SCDLayoutHorizontalAlignment.center
-		textstyle.baselineAlignment = SCDWidgetsBaselineAlignment.alphabetic
+		label1.horizontalAlignment = SCDLayoutHorizontalAlignment.center
+		label1.baselineAlignment = SCDWidgetsBaselineAlignment.alphabetic
 	}
 	
 	func setFontProperties() {
-		let style = SCDWidgetsFontStyle()
-		let fontstyle = label1.getStyle(style.eClass()) as! SCDWidgetsFontStyle
-		fontstyle.isBold = true
-		fontstyle.isItalic = true
-		fontstyle.isLineThrough = true
+		label1.font!.isBold = true
+		label1.font!.isItalic = true
+		label1.font!.isLineThrough = true
 	}
 	
 }
