@@ -1,196 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.scade.sdk.data.binding="http://scade.com/sdk/data/binding" xmlns:com.scade.sdk.expr="com.scade.sdk.expr" xmlns:com.scade.sdk.lattice.navigation="http://scade.com/lattice/navigation" xmlns:com.scade.sdk.layout="http://scade.com/sdk/layout" xmlns:com.scade.sdk.view="http://scade.com/sdk/view/widgets" xmlns:com.scade.sdk.view.widgets="http://scade.com/sdk/view/widgets/style" xmlns:com.scade.sdk.view.widgets.layout="http://scade.com/sdk/view/widgets/layout" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:svg="http://scade.com/svg/draw" xmlns:svg_1="http://scade.com/svg/constraints" xmlns:svg_2="http://scade.com/svg/style/color">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.scade.sdk.data.binding="http://scade.com/sdk/data/binding" xmlns:com.scade.sdk.expr="com.scade.sdk.expr" xmlns:com.scade.sdk.lattice.navigation="http://scade.com/lattice/navigation" xmlns:com.scade.sdk.layout="http://scade.com/sdk/layout" xmlns:com.scade.sdk.view="http://scade.com/sdk/view/widgets" xmlns:com.scade.sdk.view.widgets.layout="http://scade.com/sdk/view/widgets/layout" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:svg="http://scade.com/svg/draw" xmlns:svg_1="http://scade.com/svg/constraints" xmlns:svg_2="http://scade.com/svg/style/color">
   <com.scade.sdk.view:Page name="main" drawing="/3">
-    <styles xsi:type="com.scade.sdk.view.widgets:PageStyle" platform="iPhone iOS7">
-      <screen device="iPhone 5/5S (4-inch)" svg="svg/screen/iphone_5.svg">
-        <size width="320" height="568"/>
-        <location x="16"/>
-        <landscapeLocation x="-70" y="87"/>
-      </screen>
-    </styles>
-    <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7"/>
+    <size width="414" height="896"/>
     <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2"/>
     <minArea width="320" height="568"/>
     <maxArea width="320" height="568"/>
-    <children xsi:type="com.scade.sdk.view:ToolBar" name="toolbar1" drawing="/3/@drawableChilds.1">
-      <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" verticalAlignment="BOTTOM" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
-      <size width="320" height="55"/>
-      <location y="513"/>
-      <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
-        <minSize width="50" height="49"/>
-        <maxSize width="-1" height="49"/>
-      </styles>
-      <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle" platform="iPhone iOS7"/>
-      <layout xsi:type="com.scade.sdk.layout:GridLayout" columns="2"/>
-      <minArea width="320" height="52"/>
-      <maxArea width="-1" height="-1"/>
-      <children xsi:type="com.scade.sdk.view:ToolBarItem" name="item1" drawing="/3/@drawableChilds.1/@drawableChilds.1">
-        <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" grabHorizontalSpace="true" heightConstraint="MATCH_PARENT"/>
-        <size width="160" height="55"/>
-        <location/>
-        <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle" marginTop="5" marginBottom="3" platform="iPhone iOS7"/>
-        <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2"/>
-        <minArea width="45" height="52"/>
-        <maxArea width="-1" height="-1"/>
-        <children xsi:type="com.scade.sdk.view:Bitmap" name="icon1" drawing="/3/@drawableChilds.1/@drawableChilds.1/@drawableChilds.0" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABRCAMAAAB7eHFAAAACiFBMVEUAAAAAAACAgIBVVVWAgIBmZmaAgICSkpKAgICOjo6AgICLi4uAgICJiYmSkpKIiIiPj4+Hh4eOjo6GhoaMjIySkpKLi4uQkJCKioqPj4+JiYmOjo6SkpKNjY2MjIyPj4+Pj4+SkpKOjo6RkZGNjY2QkJCMjIyPj4+SkpKOjo6RkZGOjo6NjY2Pj4+Pj4+RkZGOjo6QkJCOjo6SkpKPj4+RkZGPj4+QkJCSkpKPj4+RkZGRkZGPj4+QkJCSkpKQkJCRkZGPj4+RkZGPj4+QkJCSkpKQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGPj4+SkpKRkZGQkJCRkZGPj4+RkZGQkJCRkZGQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGSkpKRkZGQkJCSkpKRkZGRkZGRkZGQkJCRkZGSkpKSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKSkpIWRJMCAAAA13RSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0fICIjJCUmJygpKissLS8wMjM0NTY4OTo7Pj9AQUNERUZHSElKS0xNTk9RVFVWV1hZW11eX2BhY2RlZmhpamtsbW5vcXR1dnd4enx9f4CBgoOFh4iJiouMjY+QkZKTlJWXmJmam52foKGjpKWnqaqrrK2usLGys7W2t7i5uru8vr/Aw8TFxsfIyczNz9DR0tPU1dbX2Nna29zd3+Dh4uPk5ebn6Onq6+zt7/Dx8vP09fb3+Pn6+/z9/mBbZ+MAAAQJSURBVHgBvdfpd1NVF8fxX5NAAoWHPAwCWtQKalUGkAKKIii0QFWgigoqKChYQXAQKdQiteDAICgyWFEUQUBFBgcBRRlKW6BD04bk+++49K6VJl3JHZqz/Lw6L89vn+zsfeXagAky76lKmVfzV45M6xulUKbNhVUybReckmF92oARMmsOwEqZtQPguIzqHQHgVpk0C6JReEkmbYdPd8JhGZTbAjNLgBtlTgk0BEOXYZHM2QLrpSr4Wsb0aILx0niIDZIpM7Ba9BTMlymbYJkkLYfPZUjwKuRLUj5E/y8zihIPtB8ekxnvwzzrNA92yIhuDUTC1jEcobWXTHgQtkqWj+BhmbABpiWVd4sMCNRTG0iUopbGkLI3CdYqYS0UKXtVMEoJo+E9Zc1fmzpFTlAfULYmwhIlWQr3K1vriOUpSV6Md+SkeLG9i+xVii+4uNhesXKrcVCqFKU4eDdXUnEtdppylaJXE3YuTde/Bu4C4LOqtBaok4VVaVVfAdjTMRqebQEaZioL138JtC5UktuOAFT3VFcV1QHfFShFt9djwMkR6pJgBRBf1V2dTTgDRJ7PkXe3/wCcnag0+nwIsPs6efVkM7Al0/B6tAE4/4A8CW8FrpQqoyH7ErVxa9wZYP9NsuF7oQ04PFQu+cquQbTML3sjjgONj8uVG/YBv4yRo1BFHNjcR86m11mt7sbkc8DpQjkIVVqt7lK/j4FomU92Co5are7eE43AV3nKbF6L1epe5B8E6mcog/A2q9U98q8AapRBIbC6uzy7B5irDHLOdm3+rYG2sDIp79r8P2O7NhbC1R7yaiQwS7LL/4i8WgnNvZRZOeyUV8cclsZCaO8nb24BZkj2+Z+RNy/ClaDslMMBeXOw808m+MbW/ko2DrhZXgyOwxQlGX4ULkzrnP9lefE01AWU4FvaBkB179T8P8mLGlivhPxvsHB6Qmr+MXIv3A73dvzLNQGRRQubgdhbweT8a+TebDjnk2XwboDjw6WhBwCOjUzKf8Ev17Z13KGkHmBdD0nyLYkA7WX+jvxT5FaoCcZaddgEUJt49juPABwalsj/gdwqhtP6x6Q/AfYMVEJgeRRoWZBj5bdWYlc2wmuSer4dT7OzjToGsHeIlZ/ZcsdfB8Olu38G+PEudRJ8MwZcnmPl3+3+0+mkuq24BlARSrc//Qqwvb/KIepyS6yAZQVHAC4+pLR6VsaBC0XjgOfkyh+wvhVgV+Zb3Pc7wMYGOCQ3RmNpXSAb/9uAhaFy4VUAOHqH7E09BwCvyIUTAPE1QTnpuxmA3+RsGMD5yXKj5BLAWDlaCuwcIHcGfgJUytG3tHgZaKWXuRRw3Ljj3xfIi7wapjoOktVBeTS/2rFK8m6Q/gN/A0O640AHZc9eAAAAAElFTkSuQmCC">
-          <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true"/>
-          <size width="28" height="28"/>
-          <location x="66" y="5"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
-            <minSize width="28" height="28"/>
-            <maxSize width="-1" height="-1"/>
-          </styles>
-        </children>
-        <children xsi:type="com.scade.sdk.view:Label" name="caption1" drawing="/3/@drawableChilds.1/@drawableChilds.1/@drawableChilds.1" text="DogList">
-          <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" horizontalAlignment="CENTER" grabHorizontalSpace="true"/>
-          <size width="37" height="19"/>
-          <location x="61" y="33"/>
-          <contentSize width="37" height="13"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
-            <minSize width="32" height="19"/>
-            <maxSize width="-1" height="-1"/>
-          </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="HelveticaNeue" size="11"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7" horizontalAlignment="CENTER"/>
-        </children>
-      </children>
-      <children xsi:type="com.scade.sdk.view:ToolBarItem" name="itmGroupedByBreed" drawing="/3/@drawableChilds.1/@drawableChilds.2">
-        <layoutData xsi:type="com.scade.sdk.layout:GridData" column="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" heightConstraint="MATCH_PARENT"/>
-        <size width="160" height="55"/>
-        <location x="160"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:GridLayoutStyle" marginTop="5" marginBottom="3" platform="iPhone iOS7"/>
-        <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2"/>
-        <minArea width="45" height="52"/>
-        <maxArea width="-1" height="-1"/>
-        <children xsi:type="com.scade.sdk.view:Bitmap" name="icon" drawing="/3/@drawableChilds.1/@drawableChilds.2/@drawableChilds.0" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABRCAMAAAB7eHFAAAACiFBMVEUAAAAAAACAgIBVVVWAgIBmZmaAgICSkpKAgICOjo6AgICLi4uAgICJiYmSkpKIiIiPj4+Hh4eOjo6GhoaMjIySkpKLi4uQkJCKioqPj4+JiYmOjo6SkpKNjY2MjIyPj4+Pj4+SkpKOjo6RkZGNjY2QkJCMjIyPj4+SkpKOjo6RkZGOjo6NjY2Pj4+Pj4+RkZGOjo6QkJCOjo6SkpKPj4+RkZGPj4+QkJCSkpKPj4+RkZGRkZGPj4+QkJCSkpKQkJCRkZGPj4+RkZGPj4+QkJCSkpKQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGPj4+SkpKRkZGQkJCRkZGPj4+RkZGQkJCRkZGQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGSkpKRkZGQkJCSkpKRkZGRkZGRkZGQkJCRkZGSkpKSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKSkpIWRJMCAAAA13RSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0fICIjJCUmJygpKissLS8wMjM0NTY4OTo7Pj9AQUNERUZHSElKS0xNTk9RVFVWV1hZW11eX2BhY2RlZmhpamtsbW5vcXR1dnd4enx9f4CBgoOFh4iJiouMjY+QkZKTlJWXmJmam52foKGjpKWnqaqrrK2usLGys7W2t7i5uru8vr/Aw8TFxsfIyczNz9DR0tPU1dbX2Nna29zd3+Dh4uPk5ebn6Onq6+zt7/Dx8vP09fb3+Pn6+/z9/mBbZ+MAAAQJSURBVHgBvdfpd1NVF8fxX5NAAoWHPAwCWtQKalUGkAKKIii0QFWgigoqKChYQXAQKdQiteDAICgyWFEUQUBFBgcBRRlKW6BD04bk+++49K6VJl3JHZqz/Lw6L89vn+zsfeXagAky76lKmVfzV45M6xulUKbNhVUybReckmF92oARMmsOwEqZtQPguIzqHQHgVpk0C6JReEkmbYdPd8JhGZTbAjNLgBtlTgk0BEOXYZHM2QLrpSr4Wsb0aILx0niIDZIpM7Ba9BTMlymbYJkkLYfPZUjwKuRLUj5E/y8zihIPtB8ekxnvwzzrNA92yIhuDUTC1jEcobWXTHgQtkqWj+BhmbABpiWVd4sMCNRTG0iUopbGkLI3CdYqYS0UKXtVMEoJo+E9Zc1fmzpFTlAfULYmwhIlWQr3K1vriOUpSV6Md+SkeLG9i+xVii+4uNhesXKrcVCqFKU4eDdXUnEtdppylaJXE3YuTde/Bu4C4LOqtBaok4VVaVVfAdjTMRqebQEaZioL138JtC5UktuOAFT3VFcV1QHfFShFt9djwMkR6pJgBRBf1V2dTTgDRJ7PkXe3/wCcnag0+nwIsPs6efVkM7Al0/B6tAE4/4A8CW8FrpQqoyH7ErVxa9wZYP9NsuF7oQ04PFQu+cquQbTML3sjjgONj8uVG/YBv4yRo1BFHNjcR86m11mt7sbkc8DpQjkIVVqt7lK/j4FomU92Co5are7eE43AV3nKbF6L1epe5B8E6mcog/A2q9U98q8AapRBIbC6uzy7B5irDHLOdm3+rYG2sDIp79r8P2O7NhbC1R7yaiQwS7LL/4i8WgnNvZRZOeyUV8cclsZCaO8nb24BZkj2+Z+RNy/ClaDslMMBeXOw808m+MbW/ko2DrhZXgyOwxQlGX4ULkzrnP9lefE01AWU4FvaBkB179T8P8mLGlivhPxvsHB6Qmr+MXIv3A73dvzLNQGRRQubgdhbweT8a+TebDjnk2XwboDjw6WhBwCOjUzKf8Ev17Z13KGkHmBdD0nyLYkA7WX+jvxT5FaoCcZaddgEUJt49juPABwalsj/gdwqhtP6x6Q/AfYMVEJgeRRoWZBj5bdWYlc2wmuSer4dT7OzjToGsHeIlZ/ZcsdfB8Olu38G+PEudRJ8MwZcnmPl3+3+0+mkuq24BlARSrc//Qqwvb/KIepyS6yAZQVHAC4+pLR6VsaBC0XjgOfkyh+wvhVgV+Zb3Pc7wMYGOCQ3RmNpXSAb/9uAhaFy4VUAOHqH7E09BwCvyIUTAPE1QTnpuxmA3+RsGMD5yXKj5BLAWDlaCuwcIHcGfgJUytG3tHgZaKWXuRRw3Ljj3xfIi7wapjoOktVBeTS/2rFK8m6Q/gN/A0O640AHZc9eAAAAAElFTkSuQmCC">
-          <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true"/>
-          <size width="28" height="28"/>
-          <location x="66" y="5"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
-            <minSize width="28" height="28"/>
-            <maxSize width="-1" height="-1"/>
-          </styles>
-        </children>
-        <children xsi:type="com.scade.sdk.view:Label" name="labelx" drawing="/3/@drawableChilds.1/@drawableChilds.2/@drawableChilds.1" text="Grouped by breed">
-          <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" horizontalAlignment="CENTER" grabHorizontalSpace="true"/>
-          <size width="93" height="19"/>
-          <location x="33" y="33"/>
-          <contentSize width="93" height="13"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
-            <minSize width="32" height="19"/>
-            <maxSize width="-1" height="-1"/>
-          </styles>
-          <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="HelveticaNeue" size="11"/>
-          <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7" horizontalAlignment="CENTER"/>
-        </children>
-      </children>
-    </children>
-    <children xsi:type="com.scade.sdk.view:ListView" name="verticalview1" drawing="/3/@drawableChilds.2">
-      <layoutData xsi:type="com.scade.sdk.layout:GridData" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
-      <size width="320" height="513"/>
+    <children xsi:type="com.scade.sdk.view:ListView" name="verticalview1" drawing="/3/@children.1">
+      <layoutData xsi:type="com.scade.sdk.layout:GridData" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT">
+        <minSize/>
+      </layoutData>
+      <size width="414" height="841"/>
       <location/>
-      <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
-      <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7"/>
       <layout xsi:type="com.scade.sdk.layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
       <minArea/>
       <maxArea width="-1" height="-1"/>
-      <children xsi:type="com.scade.sdk.view:List" name="list1" drawing="/3/@drawableChilds.2/@drawableChilds.1">
-        <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
-        <size width="310" height="503"/>
+      <children xsi:type="com.scade.sdk.view:List" name="list1" drawing="/3/@children.1/@children.1">
+        <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT">
+          <minSize/>
+        </layoutData>
+        <size width="404" height="831"/>
         <location x="5" y="5"/>
         <layout xsi:type="com.scade.sdk.view.widgets.layout:ListLayout"/>
         <minArea/>
         <maxArea width="-1" height="-1"/>
         <template name="template">
           <location/>
-          <element name="listElement" drawing="/3/@drawableChilds.2/@drawableChilds.1/@drawableChilds.0/@drawableChilds.0">
-            <layoutData xsi:type="com.scade.sdk.layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
-            <size width="310" height="45"/>
+          <element name="listElement" drawing="/3/@children.1/@children.1/@children.0/@children.0">
+            <layoutData xsi:type="com.scade.sdk.layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT">
+              <minSize/>
+            </layoutData>
+            <size width="404" height="45"/>
             <location/>
-            <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7">
-              <color Red="189" Blue="18"/>
-            </styles>
             <layout xsi:type="com.scade.sdk.layout:GridLayout" columns="3" marginLeft="10"/>
             <minArea height="45"/>
             <maxArea width="-1" height="-1"/>
-            <children xsi:type="com.scade.sdk.view:Label" name="dogName" drawing="/3/@drawableChilds.2/@drawableChilds.1/@drawableChilds.0/@drawableChilds.0/@drawableChilds.6" text="Bailey" wrapText="true">
-              <layoutData xsi:type="com.scade.sdk.layout:GridData" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
+            <children xsi:type="com.scade.sdk.view:Label" name="dogName" drawing="/3/@children.1/@children.1/@children.0/@children.0/@children.6" text="Bailey" wrapText="true">
+              <layoutData xsi:type="com.scade.sdk.layout:GridData" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+                <minSize/>
+              </layoutData>
               <size width="51" height="20"/>
               <location x="10"/>
               <contentSize width="51" height="20"/>
-              <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
-                <minSize/>
-                <maxSize width="51" height="20"/>
-              </styles>
-              <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="Arial-BoldMT" size="17"/>
-              <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7"/>
             </children>
-            <children xsi:type="com.scade.sdk.view:Label" name="dogBreed" drawing="/3/@drawableChilds.2/@drawableChilds.1/@drawableChilds.0/@drawableChilds.0/@drawableChilds.7" text="St. Bernard" wrapText="true">
-              <layoutData xsi:type="com.scade.sdk.layout:GridData" column="1" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
+            <children xsi:type="com.scade.sdk.view:Label" name="dogBreed" drawing="/3/@children.1/@children.1/@children.0/@children.0/@children.7" text="St. Bernard" wrapText="true">
+              <layoutData xsi:type="com.scade.sdk.layout:GridData" column="1" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+                <minSize/>
+              </layoutData>
               <size width="86" height="20"/>
               <location x="110"/>
               <contentSize width="86" height="20"/>
-              <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
-                <minSize/>
-                <maxSize width="86" height="20"/>
-              </styles>
-              <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="ArialMT" size="17"/>
-              <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7"/>
             </children>
-            <children xsi:type="com.scade.sdk.view:Label" name="dogId" drawing="/3/@drawableChilds.2/@drawableChilds.1/@drawableChilds.0/@drawableChilds.0/@drawableChilds.8" text="D100" wrapText="true">
-              <layoutData xsi:type="com.scade.sdk.layout:GridData" column="2" horizontalAlignment="RIGHT" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
+            <children xsi:type="com.scade.sdk.view:Label" name="dogId" drawing="/3/@children.1/@children.1/@children.0/@children.0/@children.8" text="D100" wrapText="true">
+              <layoutData xsi:type="com.scade.sdk.layout:GridData" column="2" horizontalAlignment="RIGHT" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+                <minSize/>
+              </layoutData>
               <size width="41" height="20"/>
               <location x="269"/>
               <contentSize width="41" height="20"/>
-              <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
-                <minSize/>
-                <maxSize width="41" height="20"/>
-              </styles>
-              <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="ArialMT" size="17">
-                <color Red="204" Green="204" Blue="204"/>
-              </styles>
-              <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7" horizontalAlignment="RIGHT"/>
             </children>
-            <leftBar xsi:type="com.scade.sdk.view:RowView" name="leftBar" drawing="/3/@drawableChilds.2/@drawableChilds.1/@drawableChilds.0/@drawableChilds.0/@drawableChilds.4" visible="false">
-              <size width="310" height="45"/>
+            <leftBar xsi:type="com.scade.sdk.view:RowView" name="leftBar" drawing="/3/@children.1/@children.1/@children.0/@children.0/@children.4" visible="false">
+              <size width="404" height="45"/>
               <location/>
-              <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7"/>
               <layout xsi:type="com.scade.sdk.layout:GridLayout"/>
               <minArea/>
               <maxArea width="-1" height="-1"/>
             </leftBar>
-            <rightBar xsi:type="com.scade.sdk.view:RowView" name="rightBar" drawing="/3/@drawableChilds.2/@drawableChilds.1/@drawableChilds.0/@drawableChilds.0/@drawableChilds.5" visible="false">
-              <size width="310" height="45"/>
+            <rightBar xsi:type="com.scade.sdk.view:RowView" name="rightBar" drawing="/3/@children.1/@children.1/@children.0/@children.0/@children.5" visible="false">
+              <size width="404" height="45"/>
               <location/>
-              <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7"/>
               <layout xsi:type="com.scade.sdk.layout:GridLayout"/>
               <minArea/>
               <maxArea width="-1" height="-1"/>
-              <children xsi:type="com.scade.sdk.view:Button" name="btnListRowInfo" drawing="/3/@drawableChilds.2/@drawableChilds.1/@drawableChilds.0/@drawableChilds.0/@drawableChilds.5/@drawableChilds.0" text="Info">
-                <layoutData xsi:type="com.scade.sdk.layout:GridData" verticalAlignment="MIDDLE" grabVerticalSpace="true" heightConstraint="MATCH_PARENT"/>
+              <children xsi:type="com.scade.sdk.view:Button" name="btnListRowInfo" drawing="/3/@children.1/@children.1/@children.0/@children.0/@children.5/@children.0" text="Info">
+                <layoutData xsi:type="com.scade.sdk.layout:GridData" verticalAlignment="MIDDLE" grabVerticalSpace="true" heightConstraint="MATCH_PARENT">
+                  <minSize/>
+                </layoutData>
                 <size width="67" height="45"/>
                 <location/>
                 <contentSize width="67" height="20"/>
-                <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle" platform="iPhone iOS7">
-                  <minSize/>
-                  <maxSize width="-1" height="-1"/>
-                </styles>
-                <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" platform="iPhone iOS7" fontFamily="ArialMT" size="17">
-                  <color Red="255" Green="255" Blue="255"/>
-                </styles>
-                <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" platform="iPhone iOS7" horizontalAlignment="CENTER"/>
-                <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" platform="iPhone iOS7" type="COLOR">
-                  <color Red="76" Green="76" Blue="76"/>
-                </styles>
               </children>
             </rightBar>
           </element>
         </template>
       </children>
     </children>
+    <children xsi:type="com.scade.sdk.view:ToolBar" name="toolbar1" drawing="/3/@children.2">
+      <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" verticalAlignment="BOTTOM" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+        <minSize width="50" height="49"/>
+        <maxSize width="-1" height="49"/>
+        <gridStyle/>
+      </layoutData>
+      <size width="414" height="55"/>
+      <location y="841"/>
+      <layout xsi:type="com.scade.sdk.layout:GridLayout" columns="2"/>
+      <minArea width="320" height="52"/>
+      <maxArea width="-1" height="-1"/>
+      <children xsi:type="com.scade.sdk.view:ToolBarItem" name="item1" drawing="/3/@children.2/@children.1/@children.1">
+        <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" grabHorizontalSpace="true" heightConstraint="MATCH_PARENT">
+          <minSize/>
+          <gridStyle marginTop="5" marginBottom="3"/>
+        </layoutData>
+        <size width="207" height="55"/>
+        <location/>
+        <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2"/>
+        <minArea width="45" height="52"/>
+        <maxArea width="-1" height="-1"/>
+        <children xsi:type="com.scade.sdk.view:Image" name="icon1" drawing="/3/@children.2/@children.1/@children.1/@children.1/@children.0" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABRCAMAAAB7eHFAAAACiFBMVEUAAAAAAACAgIBVVVWAgIBmZmaAgICSkpKAgICOjo6AgICLi4uAgICJiYmSkpKIiIiPj4+Hh4eOjo6GhoaMjIySkpKLi4uQkJCKioqPj4+JiYmOjo6SkpKNjY2MjIyPj4+Pj4+SkpKOjo6RkZGNjY2QkJCMjIyPj4+SkpKOjo6RkZGOjo6NjY2Pj4+Pj4+RkZGOjo6QkJCOjo6SkpKPj4+RkZGPj4+QkJCSkpKPj4+RkZGRkZGPj4+QkJCSkpKQkJCRkZGPj4+RkZGPj4+QkJCSkpKQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGPj4+SkpKRkZGQkJCRkZGPj4+RkZGQkJCRkZGQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGSkpKRkZGQkJCSkpKRkZGRkZGRkZGQkJCRkZGSkpKSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKSkpIWRJMCAAAA13RSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0fICIjJCUmJygpKissLS8wMjM0NTY4OTo7Pj9AQUNERUZHSElKS0xNTk9RVFVWV1hZW11eX2BhY2RlZmhpamtsbW5vcXR1dnd4enx9f4CBgoOFh4iJiouMjY+QkZKTlJWXmJmam52foKGjpKWnqaqrrK2usLGys7W2t7i5uru8vr/Aw8TFxsfIyczNz9DR0tPU1dbX2Nna29zd3+Dh4uPk5ebn6Onq6+zt7/Dx8vP09fb3+Pn6+/z9/mBbZ+MAAAQJSURBVHgBvdfpd1NVF8fxX5NAAoWHPAwCWtQKalUGkAKKIii0QFWgigoqKChYQXAQKdQiteDAICgyWFEUQUBFBgcBRRlKW6BD04bk+++49K6VJl3JHZqz/Lw6L89vn+zsfeXagAky76lKmVfzV45M6xulUKbNhVUybReckmF92oARMmsOwEqZtQPguIzqHQHgVpk0C6JReEkmbYdPd8JhGZTbAjNLgBtlTgk0BEOXYZHM2QLrpSr4Wsb0aILx0niIDZIpM7Ba9BTMlymbYJkkLYfPZUjwKuRLUj5E/y8zihIPtB8ekxnvwzzrNA92yIhuDUTC1jEcobWXTHgQtkqWj+BhmbABpiWVd4sMCNRTG0iUopbGkLI3CdYqYS0UKXtVMEoJo+E9Zc1fmzpFTlAfULYmwhIlWQr3K1vriOUpSV6Md+SkeLG9i+xVii+4uNhesXKrcVCqFKU4eDdXUnEtdppylaJXE3YuTde/Bu4C4LOqtBaok4VVaVVfAdjTMRqebQEaZioL138JtC5UktuOAFT3VFcV1QHfFShFt9djwMkR6pJgBRBf1V2dTTgDRJ7PkXe3/wCcnag0+nwIsPs6efVkM7Al0/B6tAE4/4A8CW8FrpQqoyH7ErVxa9wZYP9NsuF7oQ04PFQu+cquQbTML3sjjgONj8uVG/YBv4yRo1BFHNjcR86m11mt7sbkc8DpQjkIVVqt7lK/j4FomU92Co5are7eE43AV3nKbF6L1epe5B8E6mcog/A2q9U98q8AapRBIbC6uzy7B5irDHLOdm3+rYG2sDIp79r8P2O7NhbC1R7yaiQwS7LL/4i8WgnNvZRZOeyUV8cclsZCaO8nb24BZkj2+Z+RNy/ClaDslMMBeXOw808m+MbW/ko2DrhZXgyOwxQlGX4ULkzrnP9lefE01AWU4FvaBkB179T8P8mLGlivhPxvsHB6Qmr+MXIv3A73dvzLNQGRRQubgdhbweT8a+TebDjnk2XwboDjw6WhBwCOjUzKf8Ev17Z13KGkHmBdD0nyLYkA7WX+jvxT5FaoCcZaddgEUJt49juPABwalsj/gdwqhtP6x6Q/AfYMVEJgeRRoWZBj5bdWYlc2wmuSer4dT7OzjToGsHeIlZ/ZcsdfB8Olu38G+PEudRJ8MwZcnmPl3+3+0+mkuq24BlARSrc//Qqwvb/KIepyS6yAZQVHAC4+pLR6VsaBC0XjgOfkyh+wvhVgV+Zb3Pc7wMYGOCQ3RmNpXSAb/9uAhaFy4VUAOHqH7E09BwCvyIUTAPE1QTnpuxmA3+RsGMD5yXKj5BLAWDlaCuwcIHcGfgJUytG3tHgZaKWXuRRw3Ljj3xfIi7wapjoOktVBeTS/2rFK8m6Q/gN/A0O640AHZc9eAAAAAElFTkSuQmCC">
+          <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true">
+            <minSize width="28" height="28"/>
+            <maxSize width="-1" height="-1"/>
+          </layoutData>
+          <size width="28" height="28"/>
+          <location x="89" y="5"/>
+        </children>
+        <children xsi:type="com.scade.sdk.view:Label" name="caption1" drawing="/3/@children.2/@children.1/@children.1/@children.1/@children.1" text="DogList" horizontalAlignment="CENTER">
+          <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" horizontalAlignment="CENTER" grabHorizontalSpace="true">
+            <minSize width="37" height="19"/>
+            <maxSize width="-1" height="-1"/>
+          </layoutData>
+          <size width="37" height="19"/>
+          <location x="85" y="33"/>
+          <font fontFamily="HelveticaNeue" size="11"/>
+        </children>
+      </children>
+      <children xsi:type="com.scade.sdk.view:ToolBarItem" name="itmGroupedByBreed" drawing="/3/@children.2/@children.1/@children.2">
+        <layoutData xsi:type="com.scade.sdk.layout:GridData" column="1" horizontalAlignment="CENTER" grabHorizontalSpace="true" heightConstraint="MATCH_PARENT">
+          <minSize/>
+          <gridStyle marginTop="5" marginBottom="3"/>
+        </layoutData>
+        <size width="207" height="55"/>
+        <location x="207"/>
+        <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2"/>
+        <minArea width="45" height="45"/>
+        <maxArea width="-1" height="-1"/>
+        <children xsi:type="com.scade.sdk.view:Image" name="icon21" drawing="/3/@children.2/@children.1/@children.2/@children.1/@children.0" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAMAAAArteDzAAABGlBMVEUAAACAgIBVVVWAgICAgICOjo6AgICJiYmSkpKIiIiGhoaSkpKLi4uQkJCKioqPj4+JiYmMjIyPj4+Li4uOjo6NjY2QkJCNjY2RkZGOjo6QkJCQkJCRkZGRkZGPj4+RkZGPj4+RkZGRkZGRkZGPj4+SkpKQkJCQkJCRkZGQkJCSkpKQkJCRkZGRkZGRkZGRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKSkpKRkZGRkZGSkpKRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKSkpKtnLlmAAAAXXRSTlMAAgMGCAkMDQ4PExUWFxgZGh8gISQmJy88PUVHSEpLUVJWXV9gYmNqa2xwcXJ9h4mOkJGSmJmen6Cjqauur7C9vr/BwsjJy87P0tPY3d/g4ebn7O/w8fL19vn8/f7RmKQUAAADeUlEQVR4AbXZ/1MaRxzG8adAFRRag180tRFEq9GoBEQRq0XMSdBqtYqiOd7//7/RYQbbgR7ygdu8fueZ2b3jdvdZDZVe2TmoXd7cv7zc31zWDnZW0gpnJle+hX635dyMxjSxXm0zQLu6PqnRLRy26LqrlXa3N1ZXN7Z3S7U7ulqHCxrN4rFPh1/PL8fVI76cr3+jwz9elF2qAh3e5pQCTW160FFJySay1QR4LszrDfOFZ4DmVkQGsxcAj3tJDZHcewS4mNVQ2QegfTQtg+mjNvCQHTb0AsDVkoyWrgAKEb0hdgqwH5VZtAhwGtNAifP+0RhkHoDzxMDMBnA9pxHNXQONAamxc6CRUrDfPn9eU7BUAziPKUDkFPgS1wB/wO8aIH4OnAY9rQLQiGucUMUbQCHg/QSuUxovVKlrIKs+sw/wMKdxQzXX+f1s34ReAFmNH6oMcNE7rVvAvsKEqghs9UxJE66i4UKjl9BM6T8VaC8pXKiW2lDRvxaBI4UN1RGwqFfH8DQdPnT6EY7VteDDnsKHag/819XwEJ6TLkKTz3AodUy2oCgXoSpAa1Id68C8m9B5YF0dZ+DJTag8OJOkmTZsugrdhPaMpBz4U65Cp75BTlIZ6nIVqjqUJd1C3l1oHm6lNLDsLnQZSGsFiLsLjQMr2oE7uQvVHezoAGouQ2twoBqUXIaWoKYr2HUZuguXuoFtl6HbcKN72HAZugH3eoFVl6Gr8PJ9QoOG/0vm/y6wDz/wQf1JIPuDuoRde6jxlapByRhqf/mD/qaxHwNFzX/THfhbdrYPygqQkJ3p05cGfpWd5SNtXk6M8nBrX/iM6lC2L9E2Uz7kupuJj3JkE/wZSaqCJ0c8qNo3aDbzwLp9K2lThNaEfdNr0t302rfnHfbtefcgkVRo009wbD/ymPQdeVQB3iukJaBiP0aaRK+gmbIfeE32+w+8inhAViFkAS+iHuluiWBgLhGkDHD9k2yC646MrZgJZi9mFDnpr5DsmV+Ak8jgsssyA/ayS0p8Hb+W+5pwWiBm3y4QpdjJyFXnPsBJzFDKvh+1lLXUoe2j5Aj1ccZQdHsAT5ai+wnAm5XBD91Kvvh2JV/sq+TNlwcf7ZcHI15zJNQjsZyv+4ZrDlcXMgYTa1WfAfzq2oTG9HOu/Bf2Sy67dx8+lc5er+PODj59eKdh/gHz8XDxSR6kGQAAAABJRU5ErkJggg==">
+          <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true">
+            <minSize width="28" height="28"/>
+            <maxSize width="-1" height="-1"/>
+          </layoutData>
+          <size width="28" height="28"/>
+          <location x="89" y="5"/>
+        </children>
+        <children xsi:type="com.scade.sdk.view:Label" name="caption2" drawing="/3/@children.2/@children.1/@children.2/@children.1/@children.1" text="Grouped By Breed" horizontalAlignment="CENTER">
+          <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" horizontalAlignment="CENTER" grabHorizontalSpace="true">
+            <minSize width="95" height="19"/>
+            <maxSize width="-1" height="-1"/>
+          </layoutData>
+          <size width="95" height="19"/>
+          <location x="56" y="33"/>
+          <font fontFamily="HelveticaNeue" size="11"/>
+        </children>
+      </children>
+    </children>
   </com.scade.sdk.view:Page>
   <com.scade.sdk.data.binding:BindingModel>
-    <bindings src="/0" dst="/0/@children.1/@children.0" active="true">
+    <bindings src="/0" dst="/0/@children.0/@children.0">
       <root>
         <srcSelector feature="adapter">
           <next feature="dogs"/>
@@ -198,7 +162,7 @@
         <dstSelector feature="items"/>
       </root>
     </bindings>
-    <bindings src="/0/@children.1/@children.0" dst="/0/@children.1/@children.0" active="true">
+    <bindings src="/0/@children.0/@children.0" dst="/0/@children.0/@children.0">
       <root>
         <srcSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="items" at="-1"/>
         <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="elements" at="-1"/>
@@ -210,7 +174,7 @@
         </next>
       </root>
     </bindings>
-    <bindings src="/0/@children.1/@children.0" dst="/0/@children.1/@children.0" active="true">
+    <bindings src="/0/@children.0/@children.0" dst="/0/@children.0/@children.0">
       <root>
         <srcSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="items" at="-1"/>
         <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="elements" at="-1"/>
@@ -222,7 +186,7 @@
         </next>
       </root>
     </bindings>
-    <bindings src="/0/@children.1/@children.0" dst="/0/@children.1/@children.0" active="true">
+    <bindings src="/0/@children.0/@children.0" dst="/0/@children.0/@children.0">
       <root>
         <srcSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="items" at="-1"/>
         <dstSelector xsi:type="com.scade.sdk.data.binding:CollectionSelector" feature="elements" at="-1"/>
@@ -237,32 +201,31 @@
   </com.scade.sdk.data.binding:BindingModel>
   <com.scade.sdk.lattice.navigation:Navigation page="/0"/>
   <svg:Box>
-    <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
-      <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
-        <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
-        <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
-          <path>h</path>
-        </expression>
-      </constraints>
+    <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
       <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
         <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
         <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
           <path>w</path>
         </expression>
       </constraints>
-      <drawableChilds xsi:type="svg:Rect">
+      <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
+        <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
+        <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+          <path>h</path>
+        </expression>
+      </constraints>
+      <children xsi:type="svg:Rect" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
         <fill xsi:type="svg_2:RGBColor" r="0.972549" g="0.972549" b="0.972549"/>
         <width value="100.0" measurement="PERCENTAGE"/>
         <height value="100.0" measurement="PERCENTAGE"/>
         <rx/>
         <ry/>
-      </drawableChilds>
-      <width value="320.0"/>
-      <height value="568.0"/>
-    </drawableChilds>
-    <drawableChilds xsi:type="svg:Group">
-      <matrix translateY="513.0"/>
-      <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+      </children>
+      <width value="414.0"/>
+      <height value="896.0"/>
+    </children>
+    <children xsi:type="svg:Group" attributes="" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
+      <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
         <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
           <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
           <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
@@ -275,105 +238,18 @@
             <path>h</path>
           </expression>
         </constraints>
-        <drawableChilds xsi:type="svg:Rect">
-          <fill xsi:type="svg_2:RGBColor" r="0.93333334" g="0.93333334" b="0.93333334"/>
-          <width value="100.0" measurement="PERCENTAGE"/>
-          <height value="100.0" measurement="PERCENTAGE"/>
-          <rx/>
-          <ry/>
-        </drawableChilds>
-        <width value="320.0"/>
-        <height value="55.0"/>
-      </drawableChilds>
-      <drawableChilds xsi:type="svg:Group">
-        <drawableChilds xsi:type="svg:Group">
-          <matrix translateX="66.0" translateY="5.0"/>
-          <drawableChilds xsi:type="svg:Image" attributes="{&quot;template-id&quot;:&quot;node-image&quot;}" xhref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABRCAMAAAB7eHFAAAACiFBMVEUAAAAAAACAgIBVVVWAgIBmZmaAgICSkpKAgICOjo6AgICLi4uAgICJiYmSkpKIiIiPj4+Hh4eOjo6GhoaMjIySkpKLi4uQkJCKioqPj4+JiYmOjo6SkpKNjY2MjIyPj4+Pj4+SkpKOjo6RkZGNjY2QkJCMjIyPj4+SkpKOjo6RkZGOjo6NjY2Pj4+Pj4+RkZGOjo6QkJCOjo6SkpKPj4+RkZGPj4+QkJCSkpKPj4+RkZGRkZGPj4+QkJCSkpKQkJCRkZGPj4+RkZGPj4+QkJCSkpKQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGPj4+SkpKRkZGQkJCRkZGPj4+RkZGQkJCRkZGQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGSkpKRkZGQkJCSkpKRkZGRkZGRkZGQkJCRkZGSkpKSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKSkpIWRJMCAAAA13RSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0fICIjJCUmJygpKissLS8wMjM0NTY4OTo7Pj9AQUNERUZHSElKS0xNTk9RVFVWV1hZW11eX2BhY2RlZmhpamtsbW5vcXR1dnd4enx9f4CBgoOFh4iJiouMjY+QkZKTlJWXmJmam52foKGjpKWnqaqrrK2usLGys7W2t7i5uru8vr/Aw8TFxsfIyczNz9DR0tPU1dbX2Nna29zd3+Dh4uPk5ebn6Onq6+zt7/Dx8vP09fb3+Pn6+/z9/mBbZ+MAAAQJSURBVHgBvdfpd1NVF8fxX5NAAoWHPAwCWtQKalUGkAKKIii0QFWgigoqKChYQXAQKdQiteDAICgyWFEUQUBFBgcBRRlKW6BD04bk+++49K6VJl3JHZqz/Lw6L89vn+zsfeXagAky76lKmVfzV45M6xulUKbNhVUybReckmF92oARMmsOwEqZtQPguIzqHQHgVpk0C6JReEkmbYdPd8JhGZTbAjNLgBtlTgk0BEOXYZHM2QLrpSr4Wsb0aILx0niIDZIpM7Ba9BTMlymbYJkkLYfPZUjwKuRLUj5E/y8zihIPtB8ekxnvwzzrNA92yIhuDUTC1jEcobWXTHgQtkqWj+BhmbABpiWVd4sMCNRTG0iUopbGkLI3CdYqYS0UKXtVMEoJo+E9Zc1fmzpFTlAfULYmwhIlWQr3K1vriOUpSV6Md+SkeLG9i+xVii+4uNhesXKrcVCqFKU4eDdXUnEtdppylaJXE3YuTde/Bu4C4LOqtBaok4VVaVVfAdjTMRqebQEaZioL138JtC5UktuOAFT3VFcV1QHfFShFt9djwMkR6pJgBRBf1V2dTTgDRJ7PkXe3/wCcnag0+nwIsPs6efVkM7Al0/B6tAE4/4A8CW8FrpQqoyH7ErVxa9wZYP9NsuF7oQ04PFQu+cquQbTML3sjjgONj8uVG/YBv4yRo1BFHNjcR86m11mt7sbkc8DpQjkIVVqt7lK/j4FomU92Co5are7eE43AV3nKbF6L1epe5B8E6mcog/A2q9U98q8AapRBIbC6uzy7B5irDHLOdm3+rYG2sDIp79r8P2O7NhbC1R7yaiQwS7LL/4i8WgnNvZRZOeyUV8cclsZCaO8nb24BZkj2+Z+RNy/ClaDslMMBeXOw808m+MbW/ko2DrhZXgyOwxQlGX4ULkzrnP9lefE01AWU4FvaBkB179T8P8mLGlivhPxvsHB6Qmr+MXIv3A73dvzLNQGRRQubgdhbweT8a+TebDjnk2XwboDjw6WhBwCOjUzKf8Ev17Z13KGkHmBdD0nyLYkA7WX+jvxT5FaoCcZaddgEUJt49juPABwalsj/gdwqhtP6x6Q/AfYMVEJgeRRoWZBj5bdWYlc2wmuSer4dT7OzjToGsHeIlZ/ZcsdfB8Olu38G+PEudRJ8MwZcnmPl3+3+0+mkuq24BlARSrc//Qqwvb/KIepyS6yAZQVHAC4+pLR6VsaBC0XjgOfkyh+wvhVgV+Zb3Pc7wMYGOCQ3RmNpXSAb/9uAhaFy4VUAOHqH7E09BwCvyIUTAPE1QTnpuxmA3+RsGMD5yXKj5BLAWDlaCuwcIHcGfgJUytG3tHgZaKWXuRRw3Ljj3xfIi7wapjoOktVBeTS/2rFK8m6Q/gN/A0O640AHZc9eAAAAAElFTkSuQmCC">
-            <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
-              <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Image/height"/>
-              <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
-                <path>h</path>
-              </expression>
-            </constraints>
-            <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
-              <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Image/width"/>
-              <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
-                <path>w</path>
-              </expression>
-            </constraints>
-            <width value="28.0"/>
-            <height value="28.0"/>
-          </drawableChilds>
-        </drawableChilds>
-        <drawableChilds xsi:type="svg:Group">
-          <matrix translateX="61.0" translateY="33.0"/>
-          <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="11" fontName="HelveticaNeue" text="DogList" anchor="middle" alignmentBaseline="central">
-            <fill xsi:type="svg_2:RGBColor" r="0.27450982" g="0.27450982" b="0.27450982"/>
-            <x value="18.0"/>
-            <y value="9.0"/>
-          </drawableChilds>
-        </drawableChilds>
-      </drawableChilds>
-      <drawableChilds xsi:type="svg:Group">
-        <matrix translateX="160.0"/>
-        <drawableChilds xsi:type="svg:Group">
-          <matrix translateX="66.0" translateY="5.0"/>
-          <drawableChilds xsi:type="svg:Image" attributes="{&quot;template-id&quot;:&quot;node-image&quot;}" xhref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABRCAMAAAB7eHFAAAACiFBMVEUAAAAAAACAgIBVVVWAgIBmZmaAgICSkpKAgICOjo6AgICLi4uAgICJiYmSkpKIiIiPj4+Hh4eOjo6GhoaMjIySkpKLi4uQkJCKioqPj4+JiYmOjo6SkpKNjY2MjIyPj4+Pj4+SkpKOjo6RkZGNjY2QkJCMjIyPj4+SkpKOjo6RkZGOjo6NjY2Pj4+Pj4+RkZGOjo6QkJCOjo6SkpKPj4+RkZGPj4+QkJCSkpKPj4+RkZGRkZGPj4+QkJCSkpKQkJCRkZGPj4+RkZGPj4+QkJCSkpKQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGPj4+SkpKRkZGQkJCRkZGPj4+RkZGQkJCRkZGQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGSkpKRkZGQkJCSkpKRkZGRkZGRkZGQkJCRkZGSkpKSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKSkpIWRJMCAAAA13RSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0fICIjJCUmJygpKissLS8wMjM0NTY4OTo7Pj9AQUNERUZHSElKS0xNTk9RVFVWV1hZW11eX2BhY2RlZmhpamtsbW5vcXR1dnd4enx9f4CBgoOFh4iJiouMjY+QkZKTlJWXmJmam52foKGjpKWnqaqrrK2usLGys7W2t7i5uru8vr/Aw8TFxsfIyczNz9DR0tPU1dbX2Nna29zd3+Dh4uPk5ebn6Onq6+zt7/Dx8vP09fb3+Pn6+/z9/mBbZ+MAAAQJSURBVHgBvdfpd1NVF8fxX5NAAoWHPAwCWtQKalUGkAKKIii0QFWgigoqKChYQXAQKdQiteDAICgyWFEUQUBFBgcBRRlKW6BD04bk+++49K6VJl3JHZqz/Lw6L89vn+zsfeXagAky76lKmVfzV45M6xulUKbNhVUybReckmF92oARMmsOwEqZtQPguIzqHQHgVpk0C6JReEkmbYdPd8JhGZTbAjNLgBtlTgk0BEOXYZHM2QLrpSr4Wsb0aILx0niIDZIpM7Ba9BTMlymbYJkkLYfPZUjwKuRLUj5E/y8zihIPtB8ekxnvwzzrNA92yIhuDUTC1jEcobWXTHgQtkqWj+BhmbABpiWVd4sMCNRTG0iUopbGkLI3CdYqYS0UKXtVMEoJo+E9Zc1fmzpFTlAfULYmwhIlWQr3K1vriOUpSV6Md+SkeLG9i+xVii+4uNhesXKrcVCqFKU4eDdXUnEtdppylaJXE3YuTde/Bu4C4LOqtBaok4VVaVVfAdjTMRqebQEaZioL138JtC5UktuOAFT3VFcV1QHfFShFt9djwMkR6pJgBRBf1V2dTTgDRJ7PkXe3/wCcnag0+nwIsPs6efVkM7Al0/B6tAE4/4A8CW8FrpQqoyH7ErVxa9wZYP9NsuF7oQ04PFQu+cquQbTML3sjjgONj8uVG/YBv4yRo1BFHNjcR86m11mt7sbkc8DpQjkIVVqt7lK/j4FomU92Co5are7eE43AV3nKbF6L1epe5B8E6mcog/A2q9U98q8AapRBIbC6uzy7B5irDHLOdm3+rYG2sDIp79r8P2O7NhbC1R7yaiQwS7LL/4i8WgnNvZRZOeyUV8cclsZCaO8nb24BZkj2+Z+RNy/ClaDslMMBeXOw808m+MbW/ko2DrhZXgyOwxQlGX4ULkzrnP9lefE01AWU4FvaBkB179T8P8mLGlivhPxvsHB6Qmr+MXIv3A73dvzLNQGRRQubgdhbweT8a+TebDjnk2XwboDjw6WhBwCOjUzKf8Ev17Z13KGkHmBdD0nyLYkA7WX+jvxT5FaoCcZaddgEUJt49juPABwalsj/gdwqhtP6x6Q/AfYMVEJgeRRoWZBj5bdWYlc2wmuSer4dT7OzjToGsHeIlZ/ZcsdfB8Olu38G+PEudRJ8MwZcnmPl3+3+0+mkuq24BlARSrc//Qqwvb/KIepyS6yAZQVHAC4+pLR6VsaBC0XjgOfkyh+wvhVgV+Zb3Pc7wMYGOCQ3RmNpXSAb/9uAhaFy4VUAOHqH7E09BwCvyIUTAPE1QTnpuxmA3+RsGMD5yXKj5BLAWDlaCuwcIHcGfgJUytG3tHgZaKWXuRRw3Ljj3xfIi7wapjoOktVBeTS/2rFK8m6Q/gN/A0O640AHZc9eAAAAAElFTkSuQmCC">
-            <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
-              <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Image/height"/>
-              <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
-                <path>h</path>
-              </expression>
-            </constraints>
-            <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
-              <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Image/width"/>
-              <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
-                <path>w</path>
-              </expression>
-            </constraints>
-            <width value="28.0"/>
-            <height value="28.0"/>
-          </drawableChilds>
-        </drawableChilds>
-        <drawableChilds xsi:type="svg:Group">
-          <matrix translateX="33.0" translateY="33.0"/>
-          <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="11" fontName="HelveticaNeue" text="Grouped by breed" anchor="middle" alignmentBaseline="central">
-            <fill xsi:type="svg_2:RGBColor" r="0.27450982" g="0.27450982" b="0.27450982"/>
-            <x value="46.0"/>
-            <y value="9.0"/>
-          </drawableChilds>
-        </drawableChilds>
-      </drawableChilds>
-    </drawableChilds>
-    <drawableChilds xsi:type="svg:Group">
-      <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
-        <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
-          <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
-          <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
-            <path>h</path>
-          </expression>
-        </constraints>
-        <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
-          <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
-          <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
-            <path>w</path>
-          </expression>
-        </constraints>
-        <drawableChilds xsi:type="svg:Rect">
+        <children xsi:type="svg:Rect" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
           <fill xsi:type="svg_2:NoneColor"/>
-          <x/>
-          <y/>
           <width value="100.0" measurement="PERCENTAGE"/>
           <height value="100.0" measurement="PERCENTAGE"/>
           <rx/>
           <ry/>
-        </drawableChilds>
-        <width value="320.0"/>
-        <height value="513.0"/>
-      </drawableChilds>
-      <drawableChilds xsi:type="svg:Group" attributes="{&quot;widget-id&quot;:&quot;list1&quot;,&quot;scade:bind&quot;:&quot;dogs&quot;}">
-        <matrix translateX="5.0" translateY="5.0"/>
-        <drawableChilds xsi:type="svg:ScrollGroup" attributes="{&quot;template-id&quot;:&quot;listContent&quot;}" width="310" height="503">
+        </children>
+        <width value="414.0"/>
+        <height value="841.0"/>
+      </children>
+      <children xsi:type="svg:Group" attributes="{&quot;scade:bind&quot;:&quot;dogs&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
+        <children xsi:type="svg:ScrollGroup" attributes="{&quot;template-id&quot;:&quot;listContent&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" width="404" height="831">
           <constraints xsi:type="svg_1:ScrollSizeConstraint" exprStr="size.w size.h">
             <width xsi:type="com.scade.sdk.expr:Variable" name="size">
               <path>w</path>
@@ -382,28 +258,28 @@
               <path>h</path>
             </height>
           </constraints>
-          <drawableChilds xsi:type="svg:Group">
-            <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;disclosure&quot;}">
-              <matrix translateX="290.0" translateY="12.0"/>
-            </drawableChilds>
-            <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
-              <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
-                <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
-                <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
-                  <path>h</path>
-                </expression>
-              </constraints>
+          <children xsi:type="svg:Group" attributes="" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
+            <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;disclosure&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
+              <matrix translateX="384.0" translateY="12.0"/>
+            </children>
+            <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
               <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
                 <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
                 <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
                   <path>w</path>
                 </expression>
               </constraints>
-              <width value="310.0"/>
+              <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
+                <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
+                <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                  <path>h</path>
+                </expression>
+              </constraints>
+              <width value="404.0"/>
               <height value="45.0"/>
-            </drawableChilds>
-            <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;elementContent&quot;}"/>
-            <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;elementSeparator&quot;}">
+            </children>
+            <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;elementContent&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0"/>
+            <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;elementSeparator&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
               <constraints xsi:type="svg_1:MatrixConstraint" exprStr="matrix(1 0 0 1 layout.marginLeft size.h)">
                 <scaleX xsi:type="com.scade.sdk.expr:Number" value="1.0"/>
                 <skewX xsi:type="com.scade.sdk.expr:Number"/>
@@ -416,9 +292,7 @@
                   <path>h</path>
                 </translateY>
               </constraints>
-              <matrix translateX="10.0" translateY="45.0"/>
-              <drawableChilds xsi:type="svg:Line" attributes="{&quot;template-id&quot;:&quot;separatorLine&quot;,&quot;stroke-miterlimit&quot;:&quot;10&quot;}">
-                <stroke xsi:type="svg_2:RGBColor" r="0.8" g="0.79607844" b="0.8156863"/>
+              <children xsi:type="svg:Line" attributes="{&quot;template-id&quot;:&quot;separatorLine&quot;,&quot;stroke-miterlimit&quot;:&quot;10&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
                 <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.width - list1.layout.marginRight">
                   <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Line/x2"/>
                   <expression xsi:type="com.scade.sdk.expr:Minus">
@@ -431,70 +305,246 @@
                     </right>
                   </expression>
                 </constraints>
+                <stroke xsi:type="svg_2:RGBColor" r="0.8" g="0.79607844" b="0.8156863"/>
                 <x1/>
                 <y1 value="0.5"/>
-                <x2 value="310.0"/>
+                <x2 value="404.0"/>
                 <y2 value="0.5"/>
-              </drawableChilds>
-            </drawableChilds>
-            <drawableChilds xsi:type="svg:Group" visible="false"/>
-            <drawableChilds xsi:type="svg:Group" visible="false">
-              <drawableChilds xsi:type="svg:Group">
-                <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
-                  <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
-                    <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
-                    <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
-                      <path>h</path>
-                    </expression>
-                  </constraints>
+              </children>
+              <matrix translateX="10.0" translateY="45.0"/>
+            </children>
+            <children xsi:type="svg:Group" attributes="" visible="false" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0"/>
+            <children xsi:type="svg:Group" attributes="" visible="false" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
+              <children xsi:type="svg:Group" attributes="" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
+                <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
                   <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
                     <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
                     <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
                       <path>w</path>
                     </expression>
                   </constraints>
-                  <drawableChilds xsi:type="svg:Rect">
+                  <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
+                    <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
+                    <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                      <path>h</path>
+                    </expression>
+                  </constraints>
+                  <children xsi:type="svg:Rect" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
                     <fill xsi:type="svg_2:RGBColor" r="0.29803923" g="0.29803923" b="0.29803923"/>
                     <width value="100.0" measurement="PERCENTAGE"/>
                     <height value="100.0" measurement="PERCENTAGE"/>
-                  </drawableChilds>
+                    <rx/>
+                    <ry/>
+                  </children>
                   <width value="67.0"/>
                   <height value="45.0"/>
-                </drawableChilds>
-                <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="ArialMT" text="Info" anchor="middle" alignmentBaseline="central">
+                </children>
+                <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="17" fontName="ArialMT" text="Info" anchor="middle">
                   <fill xsi:type="svg_2:RGBColor" r="1.0" g="1.0" b="1.0"/>
                   <x value="33.0"/>
                   <y value="22.8"/>
-                </drawableChilds>
-              </drawableChilds>
-            </drawableChilds>
-            <drawableChilds xsi:type="svg:Group">
+                </children>
+              </children>
+            </children>
+            <children xsi:type="svg:Group" attributes="{&quot;scade:bind&quot;:&quot;text:dogs.name&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
+              <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="17" fontName="Arial-BoldMT" text="Bailey" alignmentBaseline="central">
+                <fill xsi:type="svg_2:RGBColor" r="0.27450982" g="0.27450982" b="0.27450982"/>
+                <x/>
+                <y value="10.0"/>
+              </children>
               <matrix translateX="10.0"/>
-              <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="Arial-BoldMT" text="Bailey" alignmentBaseline="central">
+            </children>
+            <children xsi:type="svg:Group" attributes="{&quot;scade:bind&quot;:&quot;text:dogs.breed&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
+              <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="17" fontName="ArialMT" text="St. Bernard" alignmentBaseline="central">
                 <fill xsi:type="svg_2:RGBColor" r="0.27450982" g="0.27450982" b="0.27450982"/>
                 <x/>
                 <y value="10.0"/>
-              </drawableChilds>
-            </drawableChilds>
-            <drawableChilds xsi:type="svg:Group">
+              </children>
               <matrix translateX="110.0"/>
-              <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="ArialMT" text="St. Bernard" alignmentBaseline="central">
-                <fill xsi:type="svg_2:RGBColor" r="0.27450982" g="0.27450982" b="0.27450982"/>
+            </children>
+            <children xsi:type="svg:Group" attributes="{&quot;scade:bind&quot;:&quot;text:dogs.id&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
+              <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="17" fontName="ArialMT" text="D100" alignmentBaseline="central">
+                <fill xsi:type="svg_2:RGBColor" r="0.8" g="0.8" b="0.8"/>
                 <x/>
                 <y value="10.0"/>
-              </drawableChilds>
-            </drawableChilds>
-            <drawableChilds xsi:type="svg:Group">
+              </children>
               <matrix translateX="269.0"/>
-              <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="ArialMT" text="D100" anchor="end" alignmentBaseline="central">
-                <fill xsi:type="svg_2:RGBColor" r="0.8" g="0.8" b="0.8"/>
-                <x value="41.0"/>
-                <y value="10.0"/>
-              </drawableChilds>
-            </drawableChilds>
-          </drawableChilds>
-        </drawableChilds>
-      </drawableChilds>
-    </drawableChilds>
+            </children>
+          </children>
+        </children>
+        <matrix translateX="5.0" translateY="5.0"/>
+      </children>
+    </children>
+    <children xsi:type="svg:Group">
+      <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+        <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
+          <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
+          <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+            <path>h</path>
+          </expression>
+        </constraints>
+        <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
+          <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
+          <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+            <path>w</path>
+          </expression>
+        </constraints>
+        <width value="414.0"/>
+        <height value="55.0"/>
+      </children>
+      <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
+        <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+          <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
+            <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
+            <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+              <path>w</path>
+            </expression>
+          </constraints>
+          <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
+            <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
+            <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+              <path>h</path>
+            </expression>
+          </constraints>
+          <children xsi:type="svg:Rect" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
+            <fill xsi:type="svg_2:RGBColor" r="0.93333334" g="0.93333334" b="0.93333334"/>
+            <width value="100.0" measurement="PERCENTAGE"/>
+            <height value="100.0" measurement="PERCENTAGE"/>
+            <rx/>
+            <ry/>
+          </children>
+          <width value="414.0"/>
+          <height value="55.0"/>
+        </children>
+        <children xsi:type="svg:Group">
+          <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+            <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
+              <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
+              <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                <path>h</path>
+              </expression>
+            </constraints>
+            <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
+              <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
+              <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                <path>w</path>
+              </expression>
+            </constraints>
+            <width value="207.0"/>
+            <height value="55.0"/>
+          </children>
+          <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
+            <children xsi:type="svg:Group">
+              <children xsi:type="svg:Image" attributes="{&quot;template-id&quot;:&quot;node-image&quot;}" xhref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABRCAMAAAB7eHFAAAACiFBMVEUAAAAAAACAgIBVVVWAgIBmZmaAgICSkpKAgICOjo6AgICLi4uAgICJiYmSkpKIiIiPj4+Hh4eOjo6GhoaMjIySkpKLi4uQkJCKioqPj4+JiYmOjo6SkpKNjY2MjIyPj4+Pj4+SkpKOjo6RkZGNjY2QkJCMjIyPj4+SkpKOjo6RkZGOjo6NjY2Pj4+Pj4+RkZGOjo6QkJCOjo6SkpKPj4+RkZGPj4+QkJCSkpKPj4+RkZGRkZGPj4+QkJCSkpKQkJCRkZGPj4+RkZGPj4+QkJCSkpKQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGPj4+SkpKRkZGQkJCRkZGPj4+RkZGQkJCRkZGQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGSkpKRkZGQkJCSkpKRkZGRkZGRkZGQkJCRkZGSkpKSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKSkpIWRJMCAAAA13RSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0fICIjJCUmJygpKissLS8wMjM0NTY4OTo7Pj9AQUNERUZHSElKS0xNTk9RVFVWV1hZW11eX2BhY2RlZmhpamtsbW5vcXR1dnd4enx9f4CBgoOFh4iJiouMjY+QkZKTlJWXmJmam52foKGjpKWnqaqrrK2usLGys7W2t7i5uru8vr/Aw8TFxsfIyczNz9DR0tPU1dbX2Nna29zd3+Dh4uPk5ebn6Onq6+zt7/Dx8vP09fb3+Pn6+/z9/mBbZ+MAAAQJSURBVHgBvdfpd1NVF8fxX5NAAoWHPAwCWtQKalUGkAKKIii0QFWgigoqKChYQXAQKdQiteDAICgyWFEUQUBFBgcBRRlKW6BD04bk+++49K6VJl3JHZqz/Lw6L89vn+zsfeXagAky76lKmVfzV45M6xulUKbNhVUybReckmF92oARMmsOwEqZtQPguIzqHQHgVpk0C6JReEkmbYdPd8JhGZTbAjNLgBtlTgk0BEOXYZHM2QLrpSr4Wsb0aILx0niIDZIpM7Ba9BTMlymbYJkkLYfPZUjwKuRLUj5E/y8zihIPtB8ekxnvwzzrNA92yIhuDUTC1jEcobWXTHgQtkqWj+BhmbABpiWVd4sMCNRTG0iUopbGkLI3CdYqYS0UKXtVMEoJo+E9Zc1fmzpFTlAfULYmwhIlWQr3K1vriOUpSV6Md+SkeLG9i+xVii+4uNhesXKrcVCqFKU4eDdXUnEtdppylaJXE3YuTde/Bu4C4LOqtBaok4VVaVVfAdjTMRqebQEaZioL138JtC5UktuOAFT3VFcV1QHfFShFt9djwMkR6pJgBRBf1V2dTTgDRJ7PkXe3/wCcnag0+nwIsPs6efVkM7Al0/B6tAE4/4A8CW8FrpQqoyH7ErVxa9wZYP9NsuF7oQ04PFQu+cquQbTML3sjjgONj8uVG/YBv4yRo1BFHNjcR86m11mt7sbkc8DpQjkIVVqt7lK/j4FomU92Co5are7eE43AV3nKbF6L1epe5B8E6mcog/A2q9U98q8AapRBIbC6uzy7B5irDHLOdm3+rYG2sDIp79r8P2O7NhbC1R7yaiQwS7LL/4i8WgnNvZRZOeyUV8cclsZCaO8nb24BZkj2+Z+RNy/ClaDslMMBeXOw808m+MbW/ko2DrhZXgyOwxQlGX4ULkzrnP9lefE01AWU4FvaBkB179T8P8mLGlivhPxvsHB6Qmr+MXIv3A73dvzLNQGRRQubgdhbweT8a+TebDjnk2XwboDjw6WhBwCOjUzKf8Ev17Z13KGkHmBdD0nyLYkA7WX+jvxT5FaoCcZaddgEUJt49juPABwalsj/gdwqhtP6x6Q/AfYMVEJgeRRoWZBj5bdWYlc2wmuSer4dT7OzjToGsHeIlZ/ZcsdfB8Olu38G+PEudRJ8MwZcnmPl3+3+0+mkuq24BlARSrc//Qqwvb/KIepyS6yAZQVHAC4+pLR6VsaBC0XjgOfkyh+wvhVgV+Zb3Pc7wMYGOCQ3RmNpXSAb/9uAhaFy4VUAOHqH7E09BwCvyIUTAPE1QTnpuxmA3+RsGMD5yXKj5BLAWDlaCuwcIHcGfgJUytG3tHgZaKWXuRRw3Ljj3xfIi7wapjoOktVBeTS/2rFK8m6Q/gN/A0O640AHZc9eAAAAAElFTkSuQmCC">
+                <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
+                  <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Image/height"/>
+                  <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                    <path>h</path>
+                  </expression>
+                </constraints>
+                <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
+                  <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Image/width"/>
+                  <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                    <path>w</path>
+                  </expression>
+                </constraints>
+                <width value="28.0"/>
+                <height value="28.0"/>
+              </children>
+              <matrix translateX="89.0" translateY="5.0"/>
+            </children>
+            <children xsi:type="svg:Group">
+              <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+                <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
+                  <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
+                  <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                    <path>h</path>
+                  </expression>
+                </constraints>
+                <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
+                  <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
+                  <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                    <path>w</path>
+                  </expression>
+                </constraints>
+                <width value="37.0"/>
+                <height value="19.0"/>
+              </children>
+              <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="11" fontName="HelveticaNeue" text="DogList" anchor="middle" alignmentBaseline="central">
+                <fill xsi:type="svg_2:RGBColor" r="0.27450982" g="0.27450982" b="0.27450982"/>
+                <x value="18.0"/>
+                <y value="9.0"/>
+              </children>
+              <matrix translateX="85.0" translateY="33.0"/>
+            </children>
+          </children>
+        </children>
+        <children xsi:type="svg:Group">
+          <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+            <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
+              <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
+              <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                <path>h</path>
+              </expression>
+            </constraints>
+            <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
+              <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
+              <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                <path>w</path>
+              </expression>
+            </constraints>
+            <width value="207.0"/>
+            <height value="55.0"/>
+          </children>
+          <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
+            <children xsi:type="svg:Group">
+              <children xsi:type="svg:Image" attributes="{&quot;template-id&quot;:&quot;node-image&quot;}" xhref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAMAAAArteDzAAABGlBMVEUAAACAgIBVVVWAgICAgICOjo6AgICJiYmSkpKIiIiGhoaSkpKLi4uQkJCKioqPj4+JiYmMjIyPj4+Li4uOjo6NjY2QkJCNjY2RkZGOjo6QkJCQkJCRkZGRkZGPj4+RkZGPj4+RkZGRkZGRkZGPj4+SkpKQkJCQkJCRkZGQkJCSkpKQkJCRkZGRkZGRkZGRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKSkpKRkZGRkZGSkpKRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKSkpKtnLlmAAAAXXRSTlMAAgMGCAkMDQ4PExUWFxgZGh8gISQmJy88PUVHSEpLUVJWXV9gYmNqa2xwcXJ9h4mOkJGSmJmen6Cjqauur7C9vr/BwsjJy87P0tPY3d/g4ebn7O/w8fL19vn8/f7RmKQUAAADeUlEQVR4AbXZ/1MaRxzG8adAFRRag180tRFEq9GoBEQRq0XMSdBqtYqiOd7//7/RYQbbgR7ygdu8fueZ2b3jdvdZDZVe2TmoXd7cv7zc31zWDnZW0gpnJle+hX635dyMxjSxXm0zQLu6PqnRLRy26LqrlXa3N1ZXN7Z3S7U7ulqHCxrN4rFPh1/PL8fVI76cr3+jwz9elF2qAh3e5pQCTW160FFJySay1QR4LszrDfOFZ4DmVkQGsxcAj3tJDZHcewS4mNVQ2QegfTQtg+mjNvCQHTb0AsDVkoyWrgAKEb0hdgqwH5VZtAhwGtNAifP+0RhkHoDzxMDMBnA9pxHNXQONAamxc6CRUrDfPn9eU7BUAziPKUDkFPgS1wB/wO8aIH4OnAY9rQLQiGucUMUbQCHg/QSuUxovVKlrIKs+sw/wMKdxQzXX+f1s34ReAFmNH6oMcNE7rVvAvsKEqghs9UxJE66i4UKjl9BM6T8VaC8pXKiW2lDRvxaBI4UN1RGwqFfH8DQdPnT6EY7VteDDnsKHag/819XwEJ6TLkKTz3AodUy2oCgXoSpAa1Id68C8m9B5YF0dZ+DJTag8OJOkmTZsugrdhPaMpBz4U65Cp75BTlIZ6nIVqjqUJd1C3l1oHm6lNLDsLnQZSGsFiLsLjQMr2oE7uQvVHezoAGouQ2twoBqUXIaWoKYr2HUZuguXuoFtl6HbcKN72HAZugH3eoFVl6Gr8PJ9QoOG/0vm/y6wDz/wQf1JIPuDuoRde6jxlapByRhqf/mD/qaxHwNFzX/THfhbdrYPygqQkJ3p05cGfpWd5SNtXk6M8nBrX/iM6lC2L9E2Uz7kupuJj3JkE/wZSaqCJ0c8qNo3aDbzwLp9K2lThNaEfdNr0t302rfnHfbtefcgkVRo009wbD/ymPQdeVQB3iukJaBiP0aaRK+gmbIfeE32+w+8inhAViFkAS+iHuluiWBgLhGkDHD9k2yC646MrZgJZi9mFDnpr5DsmV+Ak8jgsssyA/ayS0p8Hb+W+5pwWiBm3y4QpdjJyFXnPsBJzFDKvh+1lLXUoe2j5Aj1ccZQdHsAT5ai+wnAm5XBD91Kvvh2JV/sq+TNlwcf7ZcHI15zJNQjsZyv+4ZrDlcXMgYTa1WfAfzq2oTG9HOu/Bf2Sy67dx8+lc5er+PODj59eKdh/gHz8XDxSR6kGQAAAABJRU5ErkJggg==">
+                <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
+                  <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Image/height"/>
+                  <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                    <path>h</path>
+                  </expression>
+                </constraints>
+                <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
+                  <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Image/width"/>
+                  <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                    <path>w</path>
+                  </expression>
+                </constraints>
+                <width value="28.0"/>
+                <height value="28.0"/>
+              </children>
+              <matrix translateX="89.0" translateY="5.0"/>
+            </children>
+            <children xsi:type="svg:Group">
+              <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+                <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
+                  <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
+                  <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                    <path>h</path>
+                  </expression>
+                </constraints>
+                <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
+                  <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
+                  <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                    <path>w</path>
+                  </expression>
+                </constraints>
+                <width value="95.0"/>
+                <height value="19.0"/>
+              </children>
+              <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="11" fontName="HelveticaNeue" text="Grouped By Breed" anchor="middle" alignmentBaseline="central">
+                <fill xsi:type="svg_2:RGBColor" r="0.27450982" g="0.27450982" b="0.27450982"/>
+                <x value="47.0"/>
+                <y value="9.0"/>
+              </children>
+              <matrix translateX="56.0" translateY="33.0"/>
+            </children>
+          </children>
+          <matrix translateX="207.0"/>
+        </children>
+      </children>
+      <matrix translateY="841.0"/>
+    </children>
   </svg:Box>
 </xmi:XMI>
