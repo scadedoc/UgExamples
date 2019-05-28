@@ -2,7 +2,7 @@ import ScadeKit
 
 class MainPageAdapter: SCDLatticePageAdapter {
 
-  var bitmap : SCDWidgetsBitmap!
+  var bitmap : SCDWidgetsImage!
   var takePhotoButton : SCDWidgetsButton!
   var chooseFromLibraryButton : SCDWidgetsButton!
   var uploadButton : SCDWidgetsButton!
@@ -10,7 +10,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
   override func load(_ path: String) {
     super.load(path)
     
-    bitmap = page?.getWidgetByName("bitmap1") as! SCDWidgetsBitmap
+    bitmap = page?.getWidgetByName("bitmap1") as! SCDWidgetsImage
     takePhotoButton = page?.getWidgetByName("button1") as! SCDWidgetsButton
     chooseFromLibraryButton = page?.getWidgetByName("button2") as! SCDWidgetsButton
     uploadButton = page?.getWidgetByName("btnUpload") as! SCDWidgetsButton
@@ -75,7 +75,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 			    }
 				    
       	 // print result
-		  print(json!)
+		  print(json)
             
         })
 
