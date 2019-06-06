@@ -1,48 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.scade.sdk.data.binding="http://scade.com/sdk/data/binding" xmlns:com.scade.sdk.expr="com.scade.sdk.expr" xmlns:com.scade.sdk.lattice.navigation="http://scade.com/lattice/navigation" xmlns:com.scade.sdk.layout="http://scade.com/sdk/layout" xmlns:com.scade.sdk.view="http://scade.com/sdk/view/widgets" xmlns:com.scade.sdk.view.widgets="http://scade.com/sdk/view/widgets/style" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:svg="http://scade.com/svg/draw" xmlns:svg_1="http://scade.com/svg/constraints" xmlns:svg_2="http://scade.com/svg/style/color">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.scade.sdk.data.binding="http://scade.com/sdk/data/binding" xmlns:com.scade.sdk.expr="com.scade.sdk.expr" xmlns:com.scade.sdk.lattice.navigation="http://scade.com/lattice/navigation" xmlns:com.scade.sdk.layout="http://scade.com/sdk/layout" xmlns:com.scade.sdk.view="http://scade.com/sdk/view/widgets" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:svg="http://scade.com/svg/draw" xmlns:svg_1="http://scade.com/svg/constraints" xmlns:svg_2="http://scade.com/svg/style/color">
   <com.scade.sdk.view:Page name="main" drawing="/3">
-    <styles xsi:type="com.scade.sdk.view.widgets:PageStyle">
-      <screen device="iPhone 6/7/8 (4.7-inch)" svg="svg/screen/iphone_6.svg">
-        <size width="375" height="667"/>
-        <location x="18" y="14"/>
-        <landscapeLocation x="-62" y="89"/>
-      </screen>
-    </styles>
-    <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle" type="COLOR">
-      <color Red="254" Green="251"/>
-    </styles>
+    <size width="414" height="896"/>
     <layout xsi:type="com.scade.sdk.layout:GridLayout"/>
     <minArea width="375" height="667"/>
     <maxArea width="375" height="667"/>
-    <children xsi:type="com.scade.sdk.view:ListView" name="verticalview1" drawing="/3/@drawableChilds.1/@drawableChilds.0">
-      <layoutData xsi:type="com.scade.sdk.layout:GridData" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT"/>
-      <size width="375" height="62"/>
-      <location y="302"/>
-      <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
+    <children xsi:type="com.scade.sdk.view:ListView" name="verticalview1" drawing="/3/@children.1/@children.0">
+      <layoutData xsi:type="com.scade.sdk.layout:GridData" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT">
+        <minSize/>
+      </layoutData>
+      <size width="414" height="70"/>
+      <location y="413"/>
       <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
       <minArea/>
       <maxArea width="-1" height="-1"/>
-      <children xsi:type="com.scade.sdk.view:Label" name="label1" drawing="/3/@drawableChilds.1/@drawableChilds.0/@drawableChilds.1/@drawableChilds.0" text="Hello Deep Linking!">
-        <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
-        <size width="365" height="30"/>
+      <children xsi:type="com.scade.sdk.view:Label" name="label1" drawing="/3/@children.1/@children.0/@children.1/@children.0" text="Hello Deep Linking!">
+        <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize width="404" height="30"/>
+        </layoutData>
+        <size width="404" height="30"/>
         <location x="5" y="5"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
-          <minSize width="225" height="30"/>
-          <maxSize width="-1" height="-1"/>
-        </styles>
-        <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="Arial-BoldMT" size="24"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
       </children>
-      <children xsi:type="com.scade.sdk.view:Label" name="lbContent" drawing="/3/@drawableChilds.1/@drawableChilds.0/@drawableChilds.1/@drawableChilds.1" text="my content">
-        <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
-        <size width="365" height="22"/>
+      <children xsi:type="com.scade.sdk.view:Label" name="lbContent" drawing="/3/@children.1/@children.0/@children.1/@children.1" text="my content">
+        <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize width="404" height="30"/>
+        </layoutData>
+        <size width="404" height="30"/>
         <location x="5" y="35"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
-          <minSize width="84" height="22"/>
-          <maxSize width="-1" height="-1"/>
-        </styles>
-        <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17"/>
-        <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
       </children>
     </children>
     <adapterClass href="http://scade.com/UgSystemDemo#//MainPageAdapter"/>
@@ -59,7 +43,7 @@
   </com.scade.sdk.data.binding:BindingModel>
   <com.scade.sdk.lattice.navigation:Navigation page="/0"/>
   <svg:Box>
-    <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+    <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
       <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
         <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
         <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
@@ -72,17 +56,17 @@
           <path>w</path>
         </expression>
       </constraints>
-      <drawableChilds xsi:type="svg:Rect">
+      <children xsi:type="svg:Rect">
         <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="0.9843137"/>
         <width value="100.0" measurement="PERCENTAGE"/>
         <height value="100.0" measurement="PERCENTAGE"/>
-      </drawableChilds>
-      <width value="375.0"/>
-      <height value="667.0"/>
-    </drawableChilds>
-    <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
-      <drawableChilds xsi:type="svg:Group">
-        <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+      </children>
+      <width value="414.0"/>
+      <height value="896.0"/>
+    </children>
+    <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
+      <children xsi:type="svg:Group">
+        <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
           <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
             <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
             <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
@@ -95,7 +79,7 @@
               <path>w</path>
             </expression>
           </constraints>
-          <drawableChilds xsi:type="svg:Rect" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
+          <children xsi:type="svg:Rect" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
             <fill xsi:type="svg_2:NoneColor"/>
             <x/>
             <y/>
@@ -103,30 +87,30 @@
             <height value="100.0" measurement="PERCENTAGE"/>
             <rx/>
             <ry/>
-          </drawableChilds>
-          <width value="375.0"/>
-          <height value="62.0"/>
-        </drawableChilds>
-        <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
-          <drawableChilds xsi:type="svg:Group">
-            <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="24" fontName="Arial-BoldMT" text="Hello Deep Linking!" anchor="middle" alignmentBaseline="central">
+          </children>
+          <width value="414.0"/>
+          <height value="70.0"/>
+        </children>
+        <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
+          <children xsi:type="svg:Group">
+            <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="24" fontName="Arial-BoldMT" text="Hello Deep Linking!" alignmentBaseline="central">
               <fill xsi:type="svg_2:RGBColor" r="0.27450982" g="0.27450982" b="0.27450982"/>
-              <x value="182.0"/>
+              <x/>
               <y value="15.0"/>
-            </drawableChilds>
+            </children>
             <matrix translateX="5.0" translateY="5.0"/>
-          </drawableChilds>
-          <drawableChilds xsi:type="svg:Group">
-            <drawableChilds xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="17" fontName="ArialMT" text="my content" anchor="middle" alignmentBaseline="central">
+          </children>
+          <children xsi:type="svg:Group">
+            <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="17" fontName="ArialMT" text="my content" alignmentBaseline="central">
               <fill xsi:type="svg_2:RGBColor" r="0.27450982" g="0.27450982" b="0.27450982"/>
-              <x value="182.0"/>
-              <y value="11.0"/>
-            </drawableChilds>
+              <x/>
+              <y value="15.0"/>
+            </children>
             <matrix translateX="5.0" translateY="35.0"/>
-          </drawableChilds>
-        </drawableChilds>
-        <matrix translateY="302.0"/>
-      </drawableChilds>
-    </drawableChilds>
+          </children>
+        </children>
+        <matrix translateY="413.0"/>
+      </children>
+    </children>
   </svg:Box>
 </xmi:XMI>
