@@ -30,7 +30,7 @@ class ListControlPageAdapter: SCDLatticePageAdapter {
 		layoutData.heightConstraint = .match_parent
 		
 		// First step, setup template 
-		listControl._template?.element?.children = [createTemplate()]
+		listControl.template.element?.children = [createTemplate()]
 		
 		// return control
 		return listControl
