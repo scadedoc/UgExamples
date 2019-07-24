@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.scade.sdk.data.binding="http://scade.com/sdk/data/binding" xmlns:com.scade.sdk.expr="com.scade.sdk.expr" xmlns:com.scade.sdk.lattice.navigation="http://scade.com/lattice/navigation" xmlns:com.scade.sdk.layout="http://scade.com/sdk/layout" xmlns:com.scade.sdk.view="http://scade.com/sdk/view/widgets" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:svg="http://scade.com/svg/draw" xmlns:svg_1="http://scade.com/svg/constraints" xmlns:svg_2="http://scade.com/svg/style/color">
   <com.scade.sdk.view:Page name="ModalContentPage" drawing="/3">
-    <size width="414" height="736"/>
+    <size width="414" height="896"/>
     <layout xsi:type="com.scade.sdk.layout:AutoLayout"/>
     <children xsi:type="com.scade.sdk.view:ListView" name="verticalview1" drawing="/3/@children.1/@children.0">
       <backgroundColor Red="254" Green="255" Blue="255"/>
@@ -13,7 +13,7 @@
         <constraints source="/0/@children.0" sourceAnchor="BOTTOM" target="/0" targetAnchor="BOTTOM" constant="-150.0"/>
         <constraints source="/0/@children.0" sourceAnchor="TOP" target="/0" targetAnchor="TOP" constant="150.0"/>
       </layoutData>
-      <size width="344" height="436"/>
+      <size width="344" height="596"/>
       <location x="35" y="150"/>
       <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="3" marginTop="10" marginBottom="5" marginLeft="5" marginRight="5"/>
       <minArea/>
@@ -36,7 +36,7 @@
           <maxSize width="220" height="24"/>
         </layoutData>
         <size width="220" height="24"/>
-        <location x="62" y="201"/>
+        <location x="62" y="281"/>
         <font fontFamily="OpenSans" size="18"/>
       </children>
       <children xsi:type="com.scade.sdk.view:RowView" name="horizontalview1" drawing="/3/@children.1/@children.0/@children.1/@children.2">
@@ -44,7 +44,7 @@
           <minSize/>
         </layoutData>
         <size width="334" height="53"/>
-        <location x="5" y="378"/>
+        <location x="5" y="538"/>
         <layout xsi:type="com.scade.sdk.layout:GridLayout" columns="2" verticalSpacing="10" horizontalSpacing="10" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
         <minArea/>
         <maxArea width="-1" height="-1"/>
@@ -93,7 +93,7 @@
         </expression>
       </constraints>
       <width value="414.0"/>
-      <height value="736.0"/>
+      <height value="896.0"/>
     </children>
     <children xsi:type="svg:Group" id="modalDialog" attributes="{&quot;template-id&quot;:&quot;content&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
       <children xsi:type="svg:Group" attributes="" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
@@ -118,7 +118,7 @@
             <ry value="15.0"/>
           </children>
           <width value="344.0"/>
-          <height value="436.0"/>
+          <height value="596.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
           <children xsi:type="svg:Group" attributes="" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
@@ -174,7 +174,7 @@
               <x value="110.0"/>
               <y value="12.0"/>
             </children>
-            <matrix translateX="62.0" translateY="201.0"/>
+            <matrix translateX="62.0" translateY="281.0"/>
           </children>
           <children xsi:type="svg:Group" attributes="" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0">
             <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -257,7 +257,7 @@
                 <matrix translateX="172.0" translateY="5.0"/>
               </children>
             </children>
-            <matrix translateX="5.0" translateY="378.0"/>
+            <matrix translateX="5.0" translateY="538.0"/>
           </children>
         </children>
         <matrix translateX="35.0" translateY="150.0"/>

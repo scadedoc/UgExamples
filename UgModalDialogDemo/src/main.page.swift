@@ -1,7 +1,7 @@
 import ScadeKit
 
 #if os(iOS)
-			import UIKit
+	import UIKit
 #endif
 
 class MainPageAdapter: SCDLatticePageAdapter {
@@ -27,6 +27,37 @@ class MainPageAdapter: SCDLatticePageAdapter {
 				// the window instantiated within the modalContentPage class
 				_ in self.modalContentPage.show() 
 		})}
+		
+		// Add action to iOSAlertController button
+		if let btnAlertController = self.page!.getWidgetByName("btnAlertController") as? SCDWidgetsButton {
+			btnAlertController.onClick.append( SCDWidgetsEventHandler{
+				
+				// Should native iOS Alert Controler view
+				_ in self.showUIAlertController()
+		})}
 	}
 	
+	func showUIAlertController() {
+		// A example of how to display the UIAlertController on iOS
+		// This is the same Swift code you would write on XCode
+		// It works only on iOS, therefore the #if #endif command for conditional compilation 
+		// 
+		// Important. Use SCDApplication.rootViewController to access the UIViewController instance
+		
+	    #if os(iOS)
+	    
+	    	let alert = UIAlertController(title: "Did you bring your towel?",
+		                                  message: "It's recommended you bring your towel before continuing.",
+		                                  preferredStyle: .alert)
+	
+	    	alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { _ in print("yes") }))
+	    
+	   	    alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: { _ in print("no") }))
+	
+	   		SCDApplication.rootViewController?.present(alert, animated: true)
+	    
+	    #endif
+	}
 }
+
+ 

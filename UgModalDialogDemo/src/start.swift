@@ -9,5 +9,22 @@ class UgModalDialogDemo: SCDApplication {
 		
 		mainAdapter.load("main.page")
 		mainAdapter.show(window)
+		
+	}
+	
+}
+
+#if os(iOS) 
+
+import UIKit 
+
+extension SCDApplication {
+	
+	static var rootViewController : UIViewController? {
+		
+		get {
+			return UIApplication.shared.delegate?.window??.rootViewController
+		}
 	}
 }
+#endif

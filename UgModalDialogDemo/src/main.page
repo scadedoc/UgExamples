@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.scade.sdk.data.binding="http://scade.com/sdk/data/binding" xmlns:com.scade.sdk.expr="com.scade.sdk.expr" xmlns:com.scade.sdk.lattice.navigation="http://scade.com/lattice/navigation" xmlns:com.scade.sdk.layout="http://scade.com/sdk/layout" xmlns:com.scade.sdk.view="http://scade.com/sdk/view/widgets" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:svg="http://scade.com/svg/draw" xmlns:svg_1="http://scade.com/svg/constraints" xmlns:svg_2="http://scade.com/svg/style/color">
   <com.scade.sdk.view:Page name="main" drawing="/3">
     <backgroundColor Green="150" Blue="255"/>
-    <size width="414" height="736"/>
+    <size width="414" height="896"/>
     <layout xsi:type="com.scade.sdk.layout:AutoLayout"/>
     <children xsi:type="com.scade.sdk.view:ListView" name="verticalview1" drawing="/3/@children.1/@children.0">
       <layoutData xsi:type="com.scade.sdk.layout:AutoLayoutData">
@@ -11,9 +11,9 @@
         <constraints source="/0/@children.0" target="/0" constant="40.0"/>
         <constraints source="/0/@children.0" sourceAnchor="TOP" target="/0" targetAnchor="TOP" constant="40.0"/>
       </layoutData>
-      <size width="334" height="656"/>
+      <size width="334" height="816"/>
       <location x="40" y="40"/>
-      <layout xsi:type="com.scade.sdk.layout:GridLayout" verticalSpacing="5" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
+      <layout xsi:type="com.scade.sdk.layout:GridLayout" rows="2" verticalSpacing="5" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
       <minArea/>
       <maxArea width="-1" height="-1"/>
       <children xsi:type="com.scade.sdk.view:Button" name="btnCustomModalDialog" drawing="/3/@children.1/@children.0/@children.1/@children.0" text="Custom Modal Dialog" horizontalAlignment="CENTER">
@@ -24,6 +24,18 @@
         </layoutData>
         <size width="324" height="43"/>
         <location x="5" y="5"/>
+        <font fontFamily="ArialMT" size="20">
+          <color Red="254" Green="255" Blue="255"/>
+        </font>
+      </children>
+      <children xsi:type="com.scade.sdk.view:Button" name="btnAlertController" drawing="/3/@children.1/@children.0/@children.2" text="iOS AlertController" horizontalAlignment="CENTER">
+        <backgroundColor Green="149" Blue="255"/>
+        <layoutData xsi:type="com.scade.sdk.layout:GridData" row="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize width="166" height="43"/>
+          <maxSize width="-1" height="-1"/>
+        </layoutData>
+        <size width="324" height="43"/>
+        <location x="5" y="53"/>
         <font fontFamily="ArialMT" size="20">
           <color Red="254" Green="255" Blue="255"/>
         </font>
@@ -53,7 +65,7 @@
         <height value="100.0" measurement="PERCENTAGE"/>
       </children>
       <width value="414.0"/>
-      <height value="736.0"/>
+      <height value="896.0"/>
     </children>
     <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
       <children xsi:type="svg:Group">
@@ -71,7 +83,7 @@
             </expression>
           </constraints>
           <width value="334.0"/>
-          <height value="656.0"/>
+          <height value="816.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
           <children xsi:type="svg:Group">
@@ -105,6 +117,37 @@
             </children>
             <matrix translateX="5.0" translateY="5.0"/>
           </children>
+        </children>
+        <children xsi:type="svg:Group" attributes="">
+          <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+            <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
+              <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
+              <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                <path>h</path>
+              </expression>
+            </constraints>
+            <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
+              <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
+              <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+                <path>w</path>
+              </expression>
+            </constraints>
+            <children xsi:type="svg:Rect" attributes="" strokeWidth="2.0">
+              <fill xsi:type="svg_2:RGBColor" g="0.58431375" b="1.0"/>
+              <stroke xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
+              <width value="100.0" measurement="PERCENTAGE"/>
+              <height value="100.0" measurement="PERCENTAGE"/>
+            </children>
+            <width value="324.0"/>
+            <height value="43.0"/>
+          </children>
+          <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeWidth="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="20" fontName="ArialMT" text="iOS AlertController" anchor="middle" alignmentBaseline="central">
+            <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
+            <stroke xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
+            <x value="162.0"/>
+            <y value="21.0"/>
+          </children>
+          <matrix translateX="5.0" translateY="53.0"/>
         </children>
         <matrix translateX="40.0" translateY="40.0"/>
       </children>
