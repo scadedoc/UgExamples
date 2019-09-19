@@ -2,9 +2,9 @@
   "eClass" : "http://scade.com/sdk/build#//ScadeApplication",
   "dependencies" : [ {
     "eClass" : "http://scade.com/sdk/build#//SpmPackage",
-    "url" : "",
+    "url" : "https://github.com/flangel/Expression",
     "path" : "",
-    "from" : "",
+    "from" : "0.13.2",
     "settings" : [ {
       "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
       "platform" : "all",
@@ -16,7 +16,7 @@
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
     "platform" : "all",
     "searchPaths" : [ "" ],
-    "linkedLibs" : [ "" ]
+    "linkedLibs" : [ "Expression"]
   }, {
     "eClass" : "http://scade.com/sdk/build#//SwiftCompiler",
     "sdk" : "",
@@ -71,8 +71,8 @@
   }, {
     "eClass" : "http://scade.com/sdk/build#//CodeSignSetting",
     "platform" : "ios",
-    "provisionProfile" : "",
-    "certificate" : "",
+    "provisionProfile" : "/Users/flangel/temp/certs/FrankBlackDeviceDev.mobileprovision",
+    "certificate" : "/Users/flangel/temp/certs/FrankBlackDeviceDevPrivate2.p12",
     "betaReportsActive" : false
   }, {
     "eClass" : "http://scade.com/sdk/build#//PListSetting",
@@ -124,16 +124,16 @@
     "platform" : "all",
     "ios" : {
       "eClass" : "http://scade.com/sdk/build#//IOSIcons",
-      "appIcon2x" : "",
-      "appIcon3x" : "",
+      "appIcon2x" : "./res/icons/Calculator-icon.png",
+      "appIcon3x" : "./res/icons/Calculator-icon.png",
       "iPadAppIcon" : "",
       "iPadAppIcon2x" : "",
       "iPadProIcon2x" : ""
     },
     "android" : {
       "eClass" : "http://scade.com/sdk/build#//AndroidIcons",
-      "mdpiIcon" : "",
-      "hdpiIcon" : "",
+      "mdpiIcon" : "./res/icons/Calculator-icon.png",
+      "hdpiIcon" : "./res/icons/Calculator-icon.png",
       "xhdpiIcon" : "",
       "xxhdpiIcon" : ""
     }

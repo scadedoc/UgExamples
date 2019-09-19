@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.scade.sdk.data.binding="http://scade.com/sdk/data/binding" xmlns:com.scade.sdk.expr="com.scade.sdk.expr" xmlns:com.scade.sdk.lattice.navigation="http://scade.com/lattice/navigation" xmlns:com.scade.sdk.layout="http://scade.com/sdk/layout" xmlns:com.scade.sdk.view="http://scade.com/sdk/view/widgets" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:svg="http://scade.com/svg/draw" xmlns:svg_1="http://scade.com/svg/constraints" xmlns:svg_2="http://scade.com/svg/style/color">
   <com.scade.sdk.view:Page name="main" drawing="/3">
     <backgroundColor Red="248" Green="248" Blue="248"/>
-    <size width="360" height="640"/>
+    <size width="414" height="896"/>
     <layout xsi:type="com.scade.sdk.layout:AutoLayout"/>
     <children xsi:type="com.scade.sdk.view:RowView" name="viewNumberDisplay" drawing="/3/@children.1/@children.0">
       <backgroundColor Red="49" Green="52" Blue="56"/>
@@ -12,7 +12,7 @@
         <constraints source="/0/@children.0" sourceAnchor="TOP" target="/0" targetAnchor="TOP" active="true"/>
         <constraints source="/0/@children.0" sourceAnchor="BOTTOM" target="/0" targetAnchor="TOP" constant="100.0"/>
       </layoutData>
-      <size width="360" height="100"/>
+      <size width="414" height="100"/>
       <location/>
       <layout xsi:type="com.scade.sdk.layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="10"/>
       <minArea/>
@@ -22,7 +22,7 @@
           <minSize width="23" height="55"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="345" height="55"/>
+        <size width="399" height="55"/>
         <location x="5" y="40"/>
         <font fontFamily="OpenSans-Light" size="40">
           <color Red="254" Green="255" Blue="255"/>
@@ -37,7 +37,7 @@
         <constraints source="/0/@children.1" sourceAnchor="TOP" target="/0/@children.0" targetAnchor="BOTTOM" active="true"/>
         <constraints source="/0/@children.1" sourceAnchor="BOTTOM" target="/0" targetAnchor="BOTTOM" active="true"/>
       </layoutData>
-      <size width="360" height="540"/>
+      <size width="414" height="796"/>
       <location y="100"/>
       <layout xsi:type="com.scade.sdk.layout:GridLayout" columns="4" rows="6" verticalSpacing="1" horizontalSpacing="1"/>
       <minArea/>
@@ -48,7 +48,7 @@
           <minSize width="30" height="33"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="90" height="107"/>
+        <size width="105" height="159"/>
         <location/>
         <font fontFamily="OpenSans" size="24">
           <color Red="254" Green="255" Blue="255"/>
@@ -60,8 +60,8 @@
           <minSize width="31" height="33"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="89" height="107"/>
-        <location x="91"/>
+        <size width="102" height="159"/>
+        <location x="106"/>
         <font fontFamily="OpenSans" size="24">
           <color Red="254" Green="255" Blue="255"/>
         </font>
@@ -72,20 +72,20 @@
           <minSize width="20" height="33"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="89" height="107"/>
-        <location x="181"/>
+        <size width="102" height="159"/>
+        <location x="209"/>
         <font fontFamily="OpenSans" size="24">
           <color Red="254" Green="255" Blue="255"/>
         </font>
       </children>
       <children xsi:type="com.scade.sdk.view:Button" name="btnDivide" drawing="/3/@children.1/@children.1/@children.4" text="÷" horizontalAlignment="CENTER">
-        <backgroundColor Red="248" Green="153" Blue="12"/>
+        <backgroundColor Red="255" Green="158" Blue="11"/>
         <layoutData xsi:type="com.scade.sdk.layout:GridData" column="3" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT">
           <minSize width="23" height="55"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="89" height="107"/>
-        <location x="271"/>
+        <size width="102" height="159"/>
+        <location x="312"/>
         <font fontFamily="OpenSans" size="40">
           <color Red="254" Green="255" Blue="255"/>
         </font>
@@ -96,8 +96,8 @@
           <minSize width="14" height="33"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="90" height="107"/>
-        <location y="108"/>
+        <size width="105" height="158"/>
+        <location y="160"/>
         <font fontFamily="OpenSans" size="24">
           <color Red="254" Green="255" Blue="255"/>
         </font>
@@ -108,8 +108,8 @@
           <minSize width="14" height="33"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="89" height="107"/>
-        <location x="91" y="108"/>
+        <size width="102" height="158"/>
+        <location x="106" y="160"/>
         <font fontFamily="OpenSans" size="24">
           <color Red="254" Green="255" Blue="255"/>
         </font>
@@ -120,8 +120,8 @@
           <minSize width="14" height="33"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="89" height="107"/>
-        <location x="181" y="108"/>
+        <size width="102" height="158"/>
+        <location x="209" y="160"/>
         <font fontFamily="OpenSans" size="24">
           <color Red="254" Green="255" Blue="255"/>
         </font>
@@ -132,8 +132,8 @@
           <minSize width="14" height="33"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="90" height="107"/>
-        <location y="216"/>
+        <size width="105" height="158"/>
+        <location y="319"/>
         <font fontFamily="OpenSans" size="24">
           <color Red="254" Green="255" Blue="255"/>
         </font>
@@ -144,8 +144,8 @@
           <minSize width="14" height="33"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="89" height="107"/>
-        <location x="91" y="216"/>
+        <size width="102" height="158"/>
+        <location x="106" y="319"/>
         <font fontFamily="OpenSans" size="24">
           <color Red="254" Green="255" Blue="255"/>
         </font>
@@ -156,8 +156,8 @@
           <minSize width="14" height="33"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="89" height="107"/>
-        <location x="181" y="216"/>
+        <size width="102" height="158"/>
+        <location x="209" y="319"/>
         <font fontFamily="OpenSans" size="24">
           <color Red="254" Green="255" Blue="255"/>
         </font>
@@ -168,8 +168,8 @@
           <minSize width="14" height="33"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="90" height="107"/>
-        <location y="324"/>
+        <size width="105" height="158"/>
+        <location y="478"/>
         <font fontFamily="OpenSans" size="24">
           <color Red="254" Green="255" Blue="255"/>
         </font>
@@ -180,8 +180,8 @@
           <minSize width="14" height="33"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="89" height="107"/>
-        <location x="91" y="324"/>
+        <size width="102" height="158"/>
+        <location x="106" y="478"/>
         <font fontFamily="OpenSans" size="24">
           <color Red="254" Green="255" Blue="255"/>
         </font>
@@ -192,8 +192,8 @@
           <minSize width="14" height="33"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="89" height="107"/>
-        <location x="181" y="324"/>
+        <size width="102" height="158"/>
+        <location x="209" y="478"/>
         <font fontFamily="OpenSans" size="24">
           <color Red="254" Green="255" Blue="255"/>
         </font>
@@ -204,8 +204,8 @@
           <minSize width="23" height="55"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="89" height="107"/>
-        <location x="271" y="108"/>
+        <size width="102" height="158"/>
+        <location x="312" y="160"/>
         <font fontFamily="OpenSans" size="40">
           <color Red="254" Green="255" Blue="255"/>
         </font>
@@ -216,8 +216,8 @@
           <minSize width="23" height="55"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="89" height="107"/>
-        <location x="271" y="216"/>
+        <size width="102" height="158"/>
+        <location x="312" y="319"/>
         <font fontFamily="OpenSans" size="40">
           <color Red="254" Green="255" Blue="255"/>
         </font>
@@ -228,8 +228,8 @@
           <minSize width="23" height="55"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="89" height="107"/>
-        <location x="271" y="324"/>
+        <size width="102" height="158"/>
+        <location x="312" y="478"/>
         <font fontFamily="OpenSans" size="40">
           <color Red="254" Green="255" Blue="255"/>
         </font>
@@ -240,8 +240,8 @@
           <minSize width="23" height="55"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="89" height="107"/>
-        <location x="271" y="432"/>
+        <size width="102" height="158"/>
+        <location x="312" y="637"/>
         <font fontFamily="OpenSans" size="40">
           <color Red="254" Green="255" Blue="255"/>
         </font>
@@ -252,40 +252,40 @@
           <minSize width="7" height="33"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
-        <size width="89" height="107"/>
-        <location x="181" y="432"/>
+        <size width="102" height="158"/>
+        <location x="209" y="637"/>
         <font fontFamily="OpenSans" size="24">
           <color Red="254" Green="255" Blue="255"/>
         </font>
       </children>
       <children xsi:type="com.scade.sdk.view:RowView" name="btnNumber0" drawing="/3/@children.1/@children.1/@children.1/@children.1">
-        <backgroundColor Red="99" Green="100" Blue="104"/>
+        <backgroundColor Red="100" Green="101" Blue="104"/>
         <layoutData xsi:type="com.scade.sdk.layout:GridData" row="4" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT" horizontalSpan="2">
           <minSize/>
         </layoutData>
-        <size width="180" height="107"/>
-        <location y="432"/>
-        <layout xsi:type="com.scade.sdk.layout:GridLayout" columns="2" marginTop="5" marginBottom="5"/>
+        <size width="208" height="158"/>
+        <location y="637"/>
+        <layout xsi:type="com.scade.sdk.layout:GridLayout" columns="2" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
         <minArea/>
         <maxArea width="-1" height="-1"/>
         <children xsi:type="com.scade.sdk.view:Label" name="label1" drawing="/3/@children.1/@children.1/@children.1/@children.1/@children.1/@children.0" text="0" horizontalAlignment="CENTER">
           <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT">
-            <minSize width="14" height="33"/>
+            <minSize width="14" height="28"/>
             <maxSize width="-1" height="-1"/>
           </layoutData>
-          <size width="90" height="97"/>
-          <location y="5"/>
-          <font fontFamily="OpenSans" size="24">
+          <size width="99" height="148"/>
+          <location x="5" y="5"/>
+          <font fontFamily="ArialMT" size="24">
             <color Red="254" Green="255" Blue="255"/>
           </font>
         </children>
-        <children xsi:type="com.scade.sdk.view:Label" name="label2" drawing="/3/@children.1/@children.1/@children.1/@children.1/@children.1/@children.1" text=" ">
+        <children xsi:type="com.scade.sdk.view:Label" name="label2" drawing="/3/@children.1/@children.1/@children.1/@children.1/@children.1/@children.1">
           <layoutData xsi:type="com.scade.sdk.layout:GridData" column="1" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT">
-            <minSize width="8" height="20"/>
+            <minSize height="20"/>
             <maxSize width="-1" height="-1"/>
           </layoutData>
-          <size width="90" height="97"/>
-          <location x="90" y="5"/>
+          <size width="99" height="148"/>
+          <location x="104" y="5"/>
           <font fontFamily="ArialMT" size="17"/>
         </children>
       </children>
@@ -293,7 +293,7 @@
     <adapterClass href="http://scade.com/UgCalculator#//MainPageAdapter"/>
   </com.scade.sdk.view:Page>
   <com.scade.sdk.data.binding:BindingModel>
-    <bindings src="/0" dst="/0/@children.0/@children.0" active="true">
+    <bindings src="/0" dst="/0/@children.0/@children.0">
       <root>
         <srcSelector feature="adapter">
           <next feature="buffer"/>
@@ -322,8 +322,8 @@
         <width value="100.0" measurement="PERCENTAGE"/>
         <height value="100.0" measurement="PERCENTAGE"/>
       </children>
-      <width value="360.0"/>
-      <height value="640.0"/>
+      <width value="414.0"/>
+      <height value="896.0"/>
     </children>
     <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
       <children xsi:type="svg:Group">
@@ -345,7 +345,7 @@
             <width value="100.0" measurement="PERCENTAGE"/>
             <height value="100.0" measurement="PERCENTAGE"/>
           </children>
-          <width value="360.0"/>
+          <width value="414.0"/>
           <height value="100.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
@@ -363,12 +363,12 @@
                   <path>w</path>
                 </expression>
               </constraints>
-              <width value="345.0"/>
+              <width value="399.0"/>
               <height value="55.0"/>
             </children>
             <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="40" fontName="OpenSans-Light" text="0" anchor="end" alignmentBaseline="central">
               <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-              <x value="345.0"/>
+              <x value="399.0"/>
               <y value="27.0"/>
             </children>
             <matrix translateX="5.0" translateY="40.0"/>
@@ -394,8 +394,8 @@
             <width value="100.0" measurement="PERCENTAGE"/>
             <height value="100.0" measurement="PERCENTAGE"/>
           </children>
-          <width value="360.0"/>
-          <height value="540.0"/>
+          <width value="414.0"/>
+          <height value="796.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
           <children xsi:type="svg:Group">
@@ -417,13 +417,13 @@
                 <width value="100.0" measurement="PERCENTAGE"/>
                 <height value="100.0" measurement="PERCENTAGE"/>
               </children>
-              <width value="90.0"/>
-              <height value="107.0"/>
+              <width value="105.0"/>
+              <height value="159.0"/>
             </children>
             <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="24" fontName="OpenSans" text="AC" anchor="middle" alignmentBaseline="central">
               <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-              <x value="45.0"/>
-              <y value="53.0"/>
+              <x value="52.0"/>
+              <y value="79.0"/>
             </children>
           </children>
           <children xsi:type="svg:Group">
@@ -441,12 +441,12 @@
                 </expression>
               </constraints>
               <children xsi:type="svg:Rect">
-                <fill xsi:type="svg_2:RGBColor" r="0.3882353" g="0.39215687" b="0.40784314"/>
+                <fill xsi:type="svg_2:RGBColor" r="0.39215687" g="0.39607844" b="0.40784314"/>
                 <width value="100.0" measurement="PERCENTAGE"/>
                 <height value="100.0" measurement="PERCENTAGE"/>
               </children>
-              <width value="180.0"/>
-              <height value="107.0"/>
+              <width value="208.0"/>
+              <height value="158.0"/>
             </children>
             <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
               <children xsi:type="svg:Group">
@@ -463,15 +463,15 @@
                       <path>w</path>
                     </expression>
                   </constraints>
-                  <width value="90.0"/>
-                  <height value="97.0"/>
+                  <width value="99.0"/>
+                  <height value="148.0"/>
                 </children>
-                <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="24" fontName="OpenSans" text="0" anchor="middle" alignmentBaseline="central">
+                <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="24" fontName="ArialMT" text="0" anchor="middle" alignmentBaseline="central">
                   <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-                  <x value="45.0"/>
-                  <y value="48.0"/>
+                  <x value="49.0"/>
+                  <y value="74.0"/>
                 </children>
-                <matrix translateY="5.0"/>
+                <matrix translateX="5.0" translateY="5.0"/>
               </children>
               <children xsi:type="svg:Group">
                 <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -487,18 +487,18 @@
                       <path>w</path>
                     </expression>
                   </constraints>
-                  <width value="90.0"/>
-                  <height value="97.0"/>
+                  <width value="99.0"/>
+                  <height value="148.0"/>
                 </children>
-                <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="17" fontName="ArialMT" text=" " alignmentBaseline="central">
+                <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="17" fontName="ArialMT" text="" alignmentBaseline="central">
                   <fill xsi:type="svg_2:RGBColor" r="0.27450982" g="0.27450982" b="0.27450982"/>
                   <x/>
-                  <y value="48.0"/>
+                  <y value="74.0"/>
                 </children>
-                <matrix translateX="90.0" translateY="5.0"/>
+                <matrix translateX="104.0" translateY="5.0"/>
               </children>
             </children>
-            <matrix translateY="432.0"/>
+            <matrix translateY="637.0"/>
           </children>
         </children>
         <children xsi:type="svg:Group" attributes="">
@@ -520,15 +520,15 @@
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </children>
-            <width value="89.0"/>
-            <height value="107.0"/>
+            <width value="102.0"/>
+            <height value="159.0"/>
           </children>
           <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="24" fontName="OpenSans" text="+/-" anchor="middle" alignmentBaseline="central">
             <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-            <x value="44.0"/>
-            <y value="53.0"/>
+            <x value="51.0"/>
+            <y value="79.0"/>
           </children>
-          <matrix translateX="91.0"/>
+          <matrix translateX="106.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="">
           <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -549,15 +549,15 @@
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </children>
-            <width value="89.0"/>
-            <height value="107.0"/>
+            <width value="102.0"/>
+            <height value="159.0"/>
           </children>
           <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="24" fontName="OpenSans" text="%" anchor="middle" alignmentBaseline="central">
             <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-            <x value="44.0"/>
-            <y value="53.0"/>
+            <x value="51.0"/>
+            <y value="79.0"/>
           </children>
-          <matrix translateX="181.0"/>
+          <matrix translateX="209.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="">
           <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -574,19 +574,19 @@
               </expression>
             </constraints>
             <children xsi:type="svg:Rect">
-              <fill xsi:type="svg_2:RGBColor" r="0.972549" g="0.6" b="0.047058824"/>
+              <fill xsi:type="svg_2:RGBColor" r="1.0" g="0.61960787" b="0.043137256"/>
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </children>
-            <width value="89.0"/>
-            <height value="107.0"/>
+            <width value="102.0"/>
+            <height value="159.0"/>
           </children>
           <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="40" fontName="OpenSans" text="÷" anchor="middle" alignmentBaseline="central">
             <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-            <x value="44.0"/>
-            <y value="53.0"/>
+            <x value="51.0"/>
+            <y value="79.0"/>
           </children>
-          <matrix translateX="271.0"/>
+          <matrix translateX="312.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="">
           <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -607,15 +607,15 @@
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </children>
-            <width value="90.0"/>
-            <height value="107.0"/>
+            <width value="105.0"/>
+            <height value="158.0"/>
           </children>
           <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="24" fontName="OpenSans" text="7" anchor="middle" alignmentBaseline="central">
             <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-            <x value="45.0"/>
-            <y value="53.0"/>
+            <x value="52.0"/>
+            <y value="79.0"/>
           </children>
-          <matrix translateY="108.0"/>
+          <matrix translateY="160.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="">
           <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -636,15 +636,15 @@
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </children>
-            <width value="89.0"/>
-            <height value="107.0"/>
+            <width value="102.0"/>
+            <height value="158.0"/>
           </children>
           <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="24" fontName="OpenSans" text="8" anchor="middle" alignmentBaseline="central">
             <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-            <x value="44.0"/>
-            <y value="53.0"/>
+            <x value="51.0"/>
+            <y value="79.0"/>
           </children>
-          <matrix translateX="91.0" translateY="108.0"/>
+          <matrix translateX="106.0" translateY="160.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="">
           <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -665,15 +665,15 @@
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </children>
-            <width value="89.0"/>
-            <height value="107.0"/>
+            <width value="102.0"/>
+            <height value="158.0"/>
           </children>
           <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="24" fontName="OpenSans" text="9" anchor="middle" alignmentBaseline="central">
             <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-            <x value="44.0"/>
-            <y value="53.0"/>
+            <x value="51.0"/>
+            <y value="79.0"/>
           </children>
-          <matrix translateX="181.0" translateY="108.0"/>
+          <matrix translateX="209.0" translateY="160.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="">
           <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -694,15 +694,15 @@
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </children>
-            <width value="90.0"/>
-            <height value="107.0"/>
+            <width value="105.0"/>
+            <height value="158.0"/>
           </children>
           <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="24" fontName="OpenSans" text="4" anchor="middle" alignmentBaseline="central">
             <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-            <x value="45.0"/>
-            <y value="53.0"/>
+            <x value="52.0"/>
+            <y value="79.0"/>
           </children>
-          <matrix translateY="216.0"/>
+          <matrix translateY="319.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="">
           <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -723,15 +723,15 @@
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </children>
-            <width value="89.0"/>
-            <height value="107.0"/>
+            <width value="102.0"/>
+            <height value="158.0"/>
           </children>
           <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="24" fontName="OpenSans" text="5" anchor="middle" alignmentBaseline="central">
             <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-            <x value="44.0"/>
-            <y value="53.0"/>
+            <x value="51.0"/>
+            <y value="79.0"/>
           </children>
-          <matrix translateX="91.0" translateY="216.0"/>
+          <matrix translateX="106.0" translateY="319.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="">
           <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -752,15 +752,15 @@
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </children>
-            <width value="89.0"/>
-            <height value="107.0"/>
+            <width value="102.0"/>
+            <height value="158.0"/>
           </children>
           <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="24" fontName="OpenSans" text="6" anchor="middle" alignmentBaseline="central">
             <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-            <x value="44.0"/>
-            <y value="53.0"/>
+            <x value="51.0"/>
+            <y value="79.0"/>
           </children>
-          <matrix translateX="181.0" translateY="216.0"/>
+          <matrix translateX="209.0" translateY="319.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="">
           <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -781,15 +781,15 @@
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </children>
-            <width value="90.0"/>
-            <height value="107.0"/>
+            <width value="105.0"/>
+            <height value="158.0"/>
           </children>
           <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="24" fontName="OpenSans" text="1" anchor="middle" alignmentBaseline="central">
             <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-            <x value="45.0"/>
-            <y value="53.0"/>
+            <x value="52.0"/>
+            <y value="79.0"/>
           </children>
-          <matrix translateY="324.0"/>
+          <matrix translateY="478.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="">
           <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -810,15 +810,15 @@
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </children>
-            <width value="89.0"/>
-            <height value="107.0"/>
+            <width value="102.0"/>
+            <height value="158.0"/>
           </children>
           <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="24" fontName="OpenSans" text="2" anchor="middle" alignmentBaseline="central">
             <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-            <x value="44.0"/>
-            <y value="53.0"/>
+            <x value="51.0"/>
+            <y value="79.0"/>
           </children>
-          <matrix translateX="91.0" translateY="324.0"/>
+          <matrix translateX="106.0" translateY="478.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="">
           <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -834,20 +834,20 @@
                 <path>w</path>
               </expression>
             </constraints>
-            <children xsi:type="svg:Rect" attributes="">
+            <children xsi:type="svg:Rect">
               <fill xsi:type="svg_2:RGBColor" r="0.39215687" g="0.39607844" b="0.40784314"/>
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </children>
-            <width value="89.0"/>
-            <height value="107.0"/>
+            <width value="102.0"/>
+            <height value="158.0"/>
           </children>
           <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="24" fontName="OpenSans" text="3" anchor="middle" alignmentBaseline="central">
             <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-            <x value="44.0"/>
-            <y value="53.0"/>
+            <x value="51.0"/>
+            <y value="79.0"/>
           </children>
-          <matrix translateX="181.0" translateY="324.0"/>
+          <matrix translateX="209.0" translateY="478.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="">
           <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -863,20 +863,20 @@
                 <path>w</path>
               </expression>
             </constraints>
-            <children xsi:type="svg:Rect" attributes="">
+            <children xsi:type="svg:Rect">
               <fill xsi:type="svg_2:RGBColor" r="1.0" g="0.61960787" b="0.043137256"/>
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </children>
-            <width value="89.0"/>
-            <height value="107.0"/>
+            <width value="102.0"/>
+            <height value="158.0"/>
           </children>
           <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="40" fontName="OpenSans" text="×" anchor="middle" alignmentBaseline="central">
             <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-            <x value="44.0"/>
-            <y value="53.0"/>
+            <x value="51.0"/>
+            <y value="79.0"/>
           </children>
-          <matrix translateX="271.0" translateY="108.0"/>
+          <matrix translateX="312.0" translateY="160.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="">
           <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -897,15 +897,15 @@
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </children>
-            <width value="89.0"/>
-            <height value="107.0"/>
+            <width value="102.0"/>
+            <height value="158.0"/>
           </children>
           <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="40" fontName="OpenSans" text="−" anchor="middle" alignmentBaseline="central">
             <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-            <x value="44.0"/>
-            <y value="53.0"/>
+            <x value="51.0"/>
+            <y value="79.0"/>
           </children>
-          <matrix translateX="271.0" translateY="216.0"/>
+          <matrix translateX="312.0" translateY="319.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="">
           <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -926,15 +926,15 @@
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </children>
-            <width value="89.0"/>
-            <height value="107.0"/>
+            <width value="102.0"/>
+            <height value="158.0"/>
           </children>
           <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="40" fontName="OpenSans" text="+" anchor="middle" alignmentBaseline="central">
             <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-            <x value="44.0"/>
-            <y value="53.0"/>
+            <x value="51.0"/>
+            <y value="79.0"/>
           </children>
-          <matrix translateX="271.0" translateY="324.0"/>
+          <matrix translateX="312.0" translateY="478.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="">
           <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -955,15 +955,15 @@
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </children>
-            <width value="89.0"/>
-            <height value="107.0"/>
+            <width value="102.0"/>
+            <height value="158.0"/>
           </children>
           <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="40" fontName="OpenSans" text="=" anchor="middle" alignmentBaseline="central">
             <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-            <x value="44.0"/>
-            <y value="53.0"/>
+            <x value="51.0"/>
+            <y value="79.0"/>
           </children>
-          <matrix translateX="271.0" translateY="432.0"/>
+          <matrix translateX="312.0" translateY="637.0"/>
         </children>
         <children xsi:type="svg:Group" attributes="">
           <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
@@ -984,15 +984,15 @@
               <width value="100.0" measurement="PERCENTAGE"/>
               <height value="100.0" measurement="PERCENTAGE"/>
             </children>
-            <width value="89.0"/>
-            <height value="107.0"/>
+            <width value="102.0"/>
+            <height value="158.0"/>
           </children>
           <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="24" fontName="OpenSans" text="." anchor="middle" alignmentBaseline="hanging">
             <fill xsi:type="svg_2:RGBColor" r="0.99607843" g="1.0" b="1.0"/>
-            <x value="44.0"/>
-            <y value="53.0"/>
+            <x value="51.0"/>
+            <y value="79.0"/>
           </children>
-          <matrix translateX="181.0" translateY="432.0"/>
+          <matrix translateX="209.0" translateY="637.0"/>
         </children>
         <matrix translateY="100.0"/>
       </children>
