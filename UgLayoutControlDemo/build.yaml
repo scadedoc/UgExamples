@@ -9,8 +9,8 @@ search-paths: []
 linked-libs: []
 
 ios:
-  name: UgTilesMenuDemo
-  id: com.scade.UgTilesMenuDemo
+  name: UgLayoutControlDemo
+  id: com.scade.UgLayoutControlDemo
   device-family: iphone # iphone, ipad or universal
   supported-interface-orientations: ['portrait'] # portrait, upside_down, landscape_left or landscape_right
   supported-interface-orientationsiPad: ['portrait']
@@ -18,19 +18,19 @@ ios:
   app-delegate-file:
   simulator:
     os: 12.1
-    output: UgTilesMenuDemo/.build/ios-simulator
+    output: UgLayoutControlDemo/.build/ios-simulator
     extra-args:
     search-paths: []
     linked-libs: []
   device: 
     os: 12.1
-    output: UgTilesMenuDemo/.build/ios-device
+    output: UgLayoutControlDemo/.build/ios-device
     extra-args: 
     search-paths: []
     linked-libs: []
   mac:
     os: 10.11
-    output: UgTilesMenuDemo/.build/scade-simulator
+    output: UgLayoutControlDemo/.build/scade-simulator
     extra-args: 
     search-paths: []
     linked-libs: []
@@ -64,8 +64,8 @@ ios:
       value: Choose a photo from your library
 
 android:
-  name: UgTilesMenuDemo
-  id: com.scade.UgTilesMenuDemo
+  name: UgLayoutControlDemo
+  id: com.scade.UgLayoutControlDemo
   version-name: 1.0.0
   version-code: 1
   build-type: Debug
@@ -74,12 +74,12 @@ android:
   manifest-file:
   permissions: []
   armeabi-v7a:
-    output: UgTilesMenuDemo/.build/android-armeabi-v7a
+    output: UgLayoutControlDemo/.build/android-armeabi-v7a
     extra-args:
     search-paths: []
     linked-libs: []
   x86:
-    output: UgTilesMenuDemo/.build/android-x86
+    output: UgLayoutControlDemo/.build/android-x86
     extra-args:
     search-paths: []
     linked-libs: []
