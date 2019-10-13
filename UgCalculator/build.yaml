@@ -43,7 +43,7 @@ ios:
     beta-reports-active: false
   icons: 
     iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5
-      60X60_2X:
+      60X60_2X: 
       76X76_2X:
       76X76_3X:
       83.5X83.5_2X:
@@ -105,7 +105,7 @@ android:
       scheme:
       categories: [] 
   icons:
-    mdpi:
-    hdpi:
-    xhdpi: 
-    xxhdpi:
+    mdpi: res/icons/Calculator-icon.png
+    hdpi: res/icons/Calculator-icon.png
+    xhdpi: res/icons/Calculator-icon.png
+    xxhdpi: res/icons/Calculator-icon.png
