@@ -26,8 +26,8 @@ class ListControlPageAdapter: SCDLatticePageAdapter {
 		// Two steps 
 		let listControl = SCDWidgetsList()
 		let layoutData = configureLayoutData(of: listControl)
-		layoutData.widthConstraint = .match_parent
-		layoutData.heightConstraint = .match_parent
+		layoutData.widthConstraint = .matchParent
+		layoutData.heightConstraint = .matchParent
 		
 		// First step, setup template 
 		listControl.template.element?.children = [createTemplate()]
@@ -77,7 +77,7 @@ class ListControlPageAdapter: SCDLatticePageAdapter {
 	func createLabel(inColumn:Int) -> SCDWidgetsLabel {
 		let label = SCDWidgetsLabel()
 		let layoutData = configureLayoutData(of:label)
-		layoutData.widthConstraint = .match_parent
+		layoutData.widthConstraint = .matchParent
 		layoutData.column = inColumn
 		label.text = ""
 		return label
