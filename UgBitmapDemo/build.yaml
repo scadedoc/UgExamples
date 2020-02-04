@@ -42,15 +42,13 @@ ios:
     certificate: /Users/juliawork/ScadeTools/certificates/Certificates.p12
     beta-reports-active: true
   icons: 
-    app-iphone:
-      2x: res/applicationIcons/WeatherIcon2x.png
-      3x: res/applicationIcons/WeatherIcon3x.png
-    app-ipad:
-      2x: res/applicationIcons/WeatherIcon2x.png
-      3x: res/applicationIcons/WeatherIcon3x.png
-    app-ipad-pro:
-      2x: res/applicationIcons/WeatherIcon2x.png
-      3x: res/applicationIcons/WeatherIcon3x.png
+    iphone:
+      60X60_2X:
+      76X76_2X:
+      76X76_3X:
+      83.5X83.5_2X:
+    marketing:
+      1024X1024_1X:
   plist: 
     - key: CFBundleShortVersionString
       type: string  # string, bool, int, list or dict
