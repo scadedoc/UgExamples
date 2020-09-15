@@ -33,10 +33,10 @@
       <maxArea width="-1" height="-1"/>
       <children xsi:type="com.scade.sdk.view:CustomWidget" name="threeDots" drawing="/3/@children.1/@children.1/@children.1/@children.0">
         <layoutData xsi:type="com.scade.sdk.layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true">
-          <minSize width="50" height="50"/>
+          <minSize width="100" height="50"/>
         </layoutData>
-        <size width="50" height="50"/>
-        <location x="78" y="125"/>
+        <size width="100" height="50"/>
+        <location x="53" y="125"/>
       </children>
     </children>
     <children xsi:type="com.scade.sdk.view:RowView" name="horizontalview3" drawing="/3/@children.1/@children.2">
@@ -227,7 +227,7 @@
               <cy value="15.0"/>
               <r value="15.0"/>
             </children>
-            <matrix translateX="78.0" translateY="125.0"/>
+            <matrix translateX="53.0" translateY="125.0"/>
           </children>
         </children>
         <matrix translateX="207.0"/>

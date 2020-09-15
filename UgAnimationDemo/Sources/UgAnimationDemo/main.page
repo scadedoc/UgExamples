@@ -15,7 +15,7 @@
   <com.scade.sdk.data.binding:BindingModel/>
   <com.scade.sdk.lattice.navigation:Navigation page="/0"/>
   <svg:Box>
-    <drawableChilds xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+    <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
       <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
         <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
         <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
@@ -28,16 +28,16 @@
           <path>w</path>
         </expression>
       </constraints>
-      <drawableChilds xsi:type="svg:Rect">
+      <children xsi:type="svg:Rect">
         <fill xsi:type="svg_2:RGBColor" r="0.972549" g="0.972549" b="0.972549"/>
         <width value="100.0" measurement="PERCENTAGE"/>
         <height value="100.0" measurement="PERCENTAGE"/>
         <rx/>
         <ry/>
-      </drawableChilds>
+      </children>
       <width/>
       <height/>
-    </drawableChilds>
-    <drawableChilds xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}"/>
+    </children>
+    <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}"/>
   </svg:Box>
 </xmi:XMI>
