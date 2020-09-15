@@ -35,7 +35,7 @@ ios:
     search-paths: []
     linked-libs: []
   sign:
-    provision-profile: /Users/juliawork/ScadeTools/certificates/Scade_Adhoc.mobileprovision
+    provision-profile: /Users/juliawork/ScadeTools/certificates/Scade_ad_hoc_3.mobileprovision
     certificate: /Users/juliawork/ScadeTools/certificates/Certificates.p12
     beta-reports-active: false
   icons: 
