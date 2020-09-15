@@ -100,6 +100,5 @@ class MainPageAdapter: SCDLatticePageAdapter {
 			print(curr.longitude)
 			mapWidget.moveToUserLocation()
 		}
-	}
-	
+	}	
 }

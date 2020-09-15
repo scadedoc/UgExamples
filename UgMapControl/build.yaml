@@ -14,7 +14,7 @@ linked-libs: []
 ios:
   name: UgMapControl
   id: com.scade.UgMapControl
-  device-family: iphone # iphone, ipad or universal
+  device-family: universal # iphone, ipad or universal
   supported-interface-orientations: ['portrait'] # portrait, upside_down, landscape_left or landscape_right
   supported-interface-orientationsiPad: ['portrait']
   entitlements-file: 
