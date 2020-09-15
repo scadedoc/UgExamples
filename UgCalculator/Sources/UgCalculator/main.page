@@ -1,0 +1,1193 @@
+<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:attributes="http://scade.com/svg/draw/attributes" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:color="http://scade.com/svg/style/color" xmlns:constraints="http://scade.com/svg/constraints" xmlns:draw="http://scade.com/svg/draw" xmlns:expr="com.scade.sdk.expr" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:transform="http://scade.com/svg/transform" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="main" drawing="/3">
+    <minArea xsi:type="graphics:Dimension" width="414" height="896"/>
+    <location xsi:type="graphics:Point"/>
+    <backgroundColor xsi:type="graphics:RGB" Red="248" Green="248" Blue="248"/>
+    <children xsi:type="widgets:RowView" name="viewNumberDisplay" drawing="/3/@children.1/@children.0">
+      <minArea xsi:type="graphics:Dimension"/>
+      <location xsi:type="graphics:Point"/>
+      <backgroundColor xsi:type="graphics:RGB" Red="49" Green="52" Blue="56"/>
+      <children xsi:type="widgets:Label" text="0" name="lbNumberDisplay" horizontalAlignment="RIGHT" drawing="/3/@children.1/@children.0/@children.1/@children.0">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans-Light" size="40">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <layoutData xsi:type="layout:GridData" horizontalAlignment="RIGHT" verticalAlignment="BOTTOM" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true">
+          <minSize xsi:type="graphics:Dimension" width="23" height="55"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <location xsi:type="graphics:Point" x="5" y="40"/>
+        <size xsi:type="graphics:Dimension" width="399" height="55"/>
+        <contentSize xsi:type="graphics:Dimension" width="23" height="55"/>
+      </children>
+      <layout xsi:type="layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="10"/>
+      <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+      <size xsi:type="graphics:Dimension" width="414" height="100"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints xsi:type="layout:Constraint" source="/0/@children.0" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.0" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="TOP" source="/0/@children.0" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="HEIGHT" constant="100" source="/0/@children.0"/>
+      </layoutData>
+    </children>
+    <children xsi:type="widgets:GridView" name="grid1" drawing="/3/@children.1/@children.1">
+      <minArea xsi:type="graphics:Dimension"/>
+      <location xsi:type="graphics:Point" y="100"/>
+      <backgroundColor xsi:type="graphics:RGB" Red="33" Green="33" Blue="33"/>
+      <children xsi:type="widgets:Button" text="AC" name="btnClear" horizontalAlignment="CENTER" drawing="/3/@children.1/@children.1/@children.1/@children.0">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans" size="24">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" y="1"/>
+        <size xsi:type="graphics:Dimension" width="105" height="158"/>
+        <contentSize xsi:type="graphics:Dimension" width="34" height="33"/>
+        <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true">
+          <minSize xsi:type="graphics:Dimension" width="30" height="33"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="69" Green="71" Blue="76"/>
+      </children>
+      <children xsi:type="widgets:Button" text="+/-" name="button11" horizontalAlignment="CENTER" drawing="/3/@children.1/@children.1/@children.2">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans" size="24">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" x="106" y="1"/>
+        <size xsi:type="graphics:Dimension" width="102" height="158"/>
+        <contentSize xsi:type="graphics:Dimension" width="31" height="33"/>
+        <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="31" height="33"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="69" Green="71" Blue="76"/>
+      </children>
+      <children xsi:type="widgets:Button" text="%" name="button111" horizontalAlignment="CENTER" drawing="/3/@children.1/@children.1/@children.3">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans" size="24">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" x="209" y="1"/>
+        <size xsi:type="graphics:Dimension" width="102" height="158"/>
+        <contentSize xsi:type="graphics:Dimension" width="22" height="33"/>
+        <layoutData xsi:type="layout:GridData" column="2" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="20" height="33"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="69" Green="71" Blue="76"/>
+      </children>
+      <children xsi:type="widgets:Button" text="÷" name="btnDivide" horizontalAlignment="CENTER" drawing="/3/@children.1/@children.1/@children.4">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans" size="40">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" x="312" y="1"/>
+        <size xsi:type="graphics:Dimension" width="102" height="158"/>
+        <contentSize xsi:type="graphics:Dimension" width="23" height="55"/>
+        <layoutData xsi:type="layout:GridData" column="3" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="23" height="55"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="255" Green="158" Blue="11"/>
+      </children>
+      <children xsi:type="widgets:Button" text="7" name="btnNumber7" horizontalAlignment="CENTER" drawing="/3/@children.1/@children.1/@children.5">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans" size="24">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" y="160"/>
+        <size xsi:type="graphics:Dimension" width="105" height="158"/>
+        <contentSize xsi:type="graphics:Dimension" width="14" height="33"/>
+        <layoutData xsi:type="layout:GridData" row="1" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="14" height="33"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="100" Green="101" Blue="104"/>
+      </children>
+      <children xsi:type="widgets:Button" text="8" name="btnNumber8" horizontalAlignment="CENTER" drawing="/3/@children.1/@children.1/@children.6">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans" size="24">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" x="106" y="160"/>
+        <size xsi:type="graphics:Dimension" width="102" height="158"/>
+        <contentSize xsi:type="graphics:Dimension" width="14" height="33"/>
+        <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" row="1" grabVerticalSpace="true" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="14" height="33"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="100" Green="101" Blue="104"/>
+      </children>
+      <children xsi:type="widgets:Button" text="9" name="btnNumber9" horizontalAlignment="CENTER" drawing="/3/@children.1/@children.1/@children.7">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans" size="24">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" x="209" y="160"/>
+        <size xsi:type="graphics:Dimension" width="102" height="158"/>
+        <contentSize xsi:type="graphics:Dimension" width="14" height="33"/>
+        <layoutData xsi:type="layout:GridData" column="2" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" row="1" grabVerticalSpace="true" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="14" height="33"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="100" Green="101" Blue="104"/>
+      </children>
+      <children xsi:type="widgets:Button" text="4" name="btnNumber4" horizontalAlignment="CENTER" drawing="/3/@children.1/@children.1/@children.8">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans" size="24">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" y="319"/>
+        <size xsi:type="graphics:Dimension" width="105" height="158"/>
+        <contentSize xsi:type="graphics:Dimension" width="14" height="33"/>
+        <layoutData xsi:type="layout:GridData" row="2" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="14" height="33"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="100" Green="101" Blue="104"/>
+      </children>
+      <children xsi:type="widgets:Button" text="5" name="btnNumber5" horizontalAlignment="CENTER" drawing="/3/@children.1/@children.1/@children.9">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans" size="24">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" x="106" y="319"/>
+        <size xsi:type="graphics:Dimension" width="102" height="158"/>
+        <contentSize xsi:type="graphics:Dimension" width="14" height="33"/>
+        <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" row="2" grabVerticalSpace="true" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="14" height="33"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="100" Green="101" Blue="104"/>
+      </children>
+      <children xsi:type="widgets:Button" text="6" name="btnNumber6" horizontalAlignment="CENTER" drawing="/3/@children.1/@children.1/@children.10">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans" size="24">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" x="209" y="319"/>
+        <size xsi:type="graphics:Dimension" width="102" height="158"/>
+        <contentSize xsi:type="graphics:Dimension" width="14" height="33"/>
+        <layoutData xsi:type="layout:GridData" column="2" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" row="2" grabVerticalSpace="true" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="14" height="33"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="100" Green="101" Blue="104"/>
+      </children>
+      <children xsi:type="widgets:Button" text="1" name="btnNumber1" horizontalAlignment="CENTER" drawing="/3/@children.1/@children.1/@children.11">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans" size="24">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" y="478"/>
+        <size xsi:type="graphics:Dimension" width="105" height="158"/>
+        <contentSize xsi:type="graphics:Dimension" width="14" height="33"/>
+        <layoutData xsi:type="layout:GridData" row="3" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="14" height="33"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="100" Green="101" Blue="104"/>
+      </children>
+      <children xsi:type="widgets:Button" text="2" name="btnNumber2" horizontalAlignment="CENTER" drawing="/3/@children.1/@children.1/@children.12">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans" size="24">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" x="106" y="478"/>
+        <size xsi:type="graphics:Dimension" width="102" height="158"/>
+        <contentSize xsi:type="graphics:Dimension" width="14" height="33"/>
+        <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" row="3" grabVerticalSpace="true" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="14" height="33"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="100" Green="101" Blue="104"/>
+      </children>
+      <children xsi:type="widgets:Button" text="3" name="btnNumber3" horizontalAlignment="CENTER" drawing="/3/@children.1/@children.1/@children.13">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans" size="24">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" x="209" y="478"/>
+        <size xsi:type="graphics:Dimension" width="102" height="158"/>
+        <contentSize xsi:type="graphics:Dimension" width="14" height="33"/>
+        <layoutData xsi:type="layout:GridData" column="2" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" row="3" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="14" height="33"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="100" Green="101" Blue="104"/>
+      </children>
+      <children xsi:type="widgets:Button" text="×" name="btnMultiple" horizontalAlignment="CENTER" drawing="/3/@children.1/@children.1/@children.14">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans" size="40">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" x="312" y="160"/>
+        <size xsi:type="graphics:Dimension" width="102" height="158"/>
+        <contentSize xsi:type="graphics:Dimension" width="24" height="55"/>
+        <layoutData xsi:type="layout:GridData" column="3" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" row="1" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="23" height="55"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="255" Green="158" Blue="11"/>
+      </children>
+      <children xsi:type="widgets:Button" text="−" name="btnMinus" horizontalAlignment="CENTER" drawing="/3/@children.1/@children.1/@children.15">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans" size="40">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" x="312" y="319"/>
+        <size xsi:type="graphics:Dimension" width="102" height="158"/>
+        <contentSize xsi:type="graphics:Dimension" width="24" height="55"/>
+        <layoutData xsi:type="layout:GridData" column="3" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" row="2" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="23" height="55"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="255" Green="158" Blue="11"/>
+      </children>
+      <children xsi:type="widgets:Button" text="+" name="btnPlus" horizontalAlignment="CENTER" drawing="/3/@children.1/@children.1/@children.16">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans" size="40">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" x="312" y="478"/>
+        <size xsi:type="graphics:Dimension" width="102" height="158"/>
+        <contentSize xsi:type="graphics:Dimension" width="24" height="55"/>
+        <layoutData xsi:type="layout:GridData" column="3" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" row="3" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="23" height="55"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="255" Green="158" Blue="11"/>
+      </children>
+      <children xsi:type="widgets:Button" text="=" name="btnEqual" horizontalAlignment="CENTER" drawing="/3/@children.1/@children.1/@children.17">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans" size="40">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" x="312" y="637"/>
+        <size xsi:type="graphics:Dimension" width="102" height="158"/>
+        <contentSize xsi:type="graphics:Dimension" width="24" height="55"/>
+        <layoutData xsi:type="layout:GridData" column="3" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" row="4" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="23" height="55"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="255" Green="158" Blue="11"/>
+      </children>
+      <children xsi:type="widgets:Button" text="." name="btnnumber7261" horizontalAlignment="CENTER" baselineAlignment="HANGING" drawing="/3/@children.1/@children.1/@children.18">
+        <font xsi:type="graphics:Font" fontFamily="OpenSans" size="24">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" x="209" y="637"/>
+        <size xsi:type="graphics:Dimension" width="102" height="158"/>
+        <contentSize xsi:type="graphics:Dimension" width="7" height="33"/>
+        <layoutData xsi:type="layout:GridData" column="2" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" row="4" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="7" height="33"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="100" Green="101" Blue="104"/>
+      </children>
+      <children xsi:type="widgets:RowView" name="btnNumber0" drawing="/3/@children.1/@children.1/@children.1/@children.1">
+        <minArea xsi:type="graphics:Dimension"/>
+        <location xsi:type="graphics:Point" y="637"/>
+        <backgroundColor xsi:type="graphics:RGB" Red="100" Green="101" Blue="104"/>
+        <children xsi:type="widgets:Label" text="0" name="label1" horizontalAlignment="CENTER" drawing="/3/@children.1/@children.1/@children.1/@children.1/@children.1/@children.0">
+          <font xsi:type="graphics:Font" fontFamily="ArialMT" size="24">
+            <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+          </font>
+          <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" grabHorizontalSpace="true">
+            <minSize xsi:type="graphics:Dimension" width="14" height="28"/>
+            <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+          </layoutData>
+          <location xsi:type="graphics:Point" x="5" y="5"/>
+          <size xsi:type="graphics:Dimension" width="99" height="148"/>
+          <contentSize xsi:type="graphics:Dimension" width="14" height="28"/>
+        </children>
+        <children xsi:type="widgets:Label" name="label2" drawing="/3/@children.1/@children.1/@children.1/@children.1/@children.1/@children.1">
+          <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17"/>
+          <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" grabHorizontalSpace="true">
+            <minSize xsi:type="graphics:Dimension" height="20"/>
+            <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+          </layoutData>
+          <location xsi:type="graphics:Point" x="104" y="5"/>
+          <size xsi:type="graphics:Dimension" width="99" height="148"/>
+          <contentSize xsi:type="graphics:Dimension" height="20"/>
+        </children>
+        <layout xsi:type="layout:GridLayout" columns="2" marginRight="5" marginTop="5" marginBottom="5" marginLeft="5"/>
+        <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        <size xsi:type="graphics:Dimension" width="208" height="158"/>
+        <layoutData xsi:type="layout:GridData" row="4" grabVerticalSpace="true" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT" horizontalSpan="2">
+          <minSize xsi:type="graphics:Dimension"/>
+        </layoutData>
+      </children>
+      <layout xsi:type="layout:GridLayout" columns="4" rows="6" verticalSpacing="1" horizontalSpacing="1" marginTop="1"/>
+      <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+      <size xsi:type="graphics:Dimension" width="414" height="796"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints xsi:type="layout:Constraint" source="/0/@children.1" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.1" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="BOTTOM" targetAnchor="BOTTOM" source="/0/@children.1" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="BOTTOM" source="/0/@children.1" target="/0/@children.0"/>
+      </layoutData>
+    </children>
+    <layout xsi:type="layout:AutoLayout"/>
+    <maxArea xsi:type="graphics:Dimension" width="414" height="896"/>
+    <size xsi:type="graphics:Dimension" width="414" height="896"/>
+  </widgets:Page>
+  <binding:BindingModel>
+    <bindings xsi:type="binding:Binding" active="true" src="/0" dst="/0/@children.0/@children.0">
+      <root xsi:type="binding:BindingSyncPoint">
+        <srcSelector xsi:type="binding:BindingSelector" feature="adapter">
+          <next xsi:type="binding:BindingSelector" feature="buffer"/>
+        </srcSelector>
+        <dstSelector xsi:type="binding:BindingSelector" feature="text"/>
+      </root>
+    </bindings>
+  </binding:BindingModel>
+  <navigation:Navigation page="/0"/>
+  <draw:Box>
+    <x xsi:type="attributes:Unit"/>
+    <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+      <x xsi:type="attributes:Unit"/>
+      <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+        <expression xsi:type="expr:Variable" name="size" path="h"/>
+      </constraints>
+      <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+        <expression xsi:type="expr:Variable" name="size" path="w"/>
+      </constraints>
+      <children xsi:type="draw:Rect">
+        <x xsi:type="attributes:Unit"/>
+        <y xsi:type="attributes:Unit"/>
+        <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+        <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+        <matrix xsi:type="transform:Matrix"/>
+        <rx xsi:type="attributes:Unit"/>
+        <ry xsi:type="attributes:Unit"/>
+        <fill xsi:type="color:RGBColor" r="0.972549" g="0.972549" b="0.972549"/>
+      </children>
+      <y xsi:type="attributes:Unit"/>
+      <width xsi:type="attributes:Unit" value="414"/>
+      <height xsi:type="attributes:Unit" value="896"/>
+      <location xsi:type="graphics:Point"/>
+      <matrix xsi:type="transform:Matrix"/>
+      <size xsi:type="graphics:Dimension"/>
+    </children>
+    <children xsi:type="draw:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}
+">
+      <matrix xsi:type="transform:Matrix"/>
+      <children xsi:type="draw:Group">
+        <matrix xsi:type="transform:Matrix"/>
+        <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+          <x xsi:type="attributes:Unit"/>
+          <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+            <expression xsi:type="expr:Variable" name="size" path="h"/>
+          </constraints>
+          <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+            <expression xsi:type="expr:Variable" name="size" path="w"/>
+          </constraints>
+          <children xsi:type="draw:Rect">
+            <x xsi:type="attributes:Unit"/>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+            <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <rx xsi:type="attributes:Unit"/>
+            <ry xsi:type="attributes:Unit"/>
+            <fill xsi:type="color:RGBColor" r="0.192157" g="0.203922" b="0.219608"/>
+          </children>
+          <y xsi:type="attributes:Unit"/>
+          <width xsi:type="attributes:Unit" value="414"/>
+          <height xsi:type="attributes:Unit" value="100"/>
+          <location xsi:type="graphics:Point"/>
+          <matrix xsi:type="transform:Matrix"/>
+          <size xsi:type="graphics:Dimension"/>
+        </children>
+        <children xsi:type="draw:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}
+">
+          <matrix xsi:type="transform:Matrix"/>
+          <children xsi:type="draw:Group">
+            <matrix xsi:type="transform:Matrix" translateX="5" translateY="40"/>
+            <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+              <x xsi:type="attributes:Unit"/>
+              <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+                <expression xsi:type="expr:Variable" name="size" path="h"/>
+              </constraints>
+              <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+                <expression xsi:type="expr:Variable" name="size" path="w"/>
+              </constraints>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="399"/>
+              <height xsi:type="attributes:Unit" value="55"/>
+              <location xsi:type="graphics:Point"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <size xsi:type="graphics:Dimension"/>
+            </children>
+            <children xsi:type="draw:Text" text="0" anchor="end" fontSize="40" fontName="OpenSans-Light" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+              <x xsi:type="attributes:Unit" value="399"/>
+              <y xsi:type="attributes:Unit" value="27.5"/>
+              <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+              <matrix xsi:type="transform:Matrix"/>
+            </children>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="draw:Group">
+        <matrix xsi:type="transform:Matrix" translateY="100"/>
+        <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+          <x xsi:type="attributes:Unit"/>
+          <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+            <expression xsi:type="expr:Variable" name="size" path="h"/>
+          </constraints>
+          <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+            <expression xsi:type="expr:Variable" name="size" path="w"/>
+          </constraints>
+          <children xsi:type="draw:Rect">
+            <x xsi:type="attributes:Unit"/>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+            <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <rx xsi:type="attributes:Unit"/>
+            <ry xsi:type="attributes:Unit"/>
+            <fill xsi:type="color:RGBColor" r="0.129412" g="0.129412" b="0.129412"/>
+          </children>
+          <y xsi:type="attributes:Unit"/>
+          <width xsi:type="attributes:Unit" value="414"/>
+          <height xsi:type="attributes:Unit" value="796"/>
+          <location xsi:type="graphics:Point"/>
+          <matrix xsi:type="transform:Matrix"/>
+          <size xsi:type="graphics:Dimension"/>
+        </children>
+        <children xsi:type="draw:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}
+">
+          <matrix xsi:type="transform:Matrix"/>
+          <children xsi:type="draw:Group">
+            <matrix xsi:type="transform:Matrix" translateY="1"/>
+            <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+              <x xsi:type="attributes:Unit"/>
+              <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+                <expression xsi:type="expr:Variable" name="size" path="h"/>
+              </constraints>
+              <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+                <expression xsi:type="expr:Variable" name="size" path="w"/>
+              </constraints>
+              <children xsi:type="draw:Rect">
+                <x xsi:type="attributes:Unit"/>
+                <y xsi:type="attributes:Unit"/>
+                <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+                <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+                <matrix xsi:type="transform:Matrix"/>
+                <rx xsi:type="attributes:Unit"/>
+                <ry xsi:type="attributes:Unit"/>
+                <fill xsi:type="color:RGBColor" r="0.270588" g="0.278431" b="0.298039"/>
+              </children>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="105"/>
+              <height xsi:type="attributes:Unit" value="158"/>
+              <location xsi:type="graphics:Point"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <size xsi:type="graphics:Dimension"/>
+            </children>
+            <children xsi:type="draw:Text" text="AC" anchor="middle" fontSize="24" fontName="OpenSans" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+              <x xsi:type="attributes:Unit" value="52.5"/>
+              <y xsi:type="attributes:Unit" value="79"/>
+              <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+              <matrix xsi:type="transform:Matrix"/>
+            </children>
+          </children>
+          <children xsi:type="draw:Group">
+            <matrix xsi:type="transform:Matrix" translateY="637"/>
+            <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+              <x xsi:type="attributes:Unit"/>
+              <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+                <expression xsi:type="expr:Variable" name="size" path="h"/>
+              </constraints>
+              <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+                <expression xsi:type="expr:Variable" name="size" path="w"/>
+              </constraints>
+              <children xsi:type="draw:Rect">
+                <x xsi:type="attributes:Unit"/>
+                <y xsi:type="attributes:Unit"/>
+                <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+                <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+                <matrix xsi:type="transform:Matrix"/>
+                <rx xsi:type="attributes:Unit"/>
+                <ry xsi:type="attributes:Unit"/>
+                <fill xsi:type="color:RGBColor" r="0.392157" g="0.396078" b="0.407843"/>
+              </children>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="208"/>
+              <height xsi:type="attributes:Unit" value="158"/>
+              <location xsi:type="graphics:Point"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <size xsi:type="graphics:Dimension"/>
+            </children>
+            <children xsi:type="draw:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}
+">
+              <matrix xsi:type="transform:Matrix"/>
+              <children xsi:type="draw:Group">
+                <matrix xsi:type="transform:Matrix" translateX="5" translateY="5"/>
+                <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+                  <x xsi:type="attributes:Unit"/>
+                  <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+                    <expression xsi:type="expr:Variable" name="size" path="h"/>
+                  </constraints>
+                  <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+                    <expression xsi:type="expr:Variable" name="size" path="w"/>
+                  </constraints>
+                  <y xsi:type="attributes:Unit"/>
+                  <width xsi:type="attributes:Unit" value="99"/>
+                  <height xsi:type="attributes:Unit" value="148"/>
+                  <location xsi:type="graphics:Point"/>
+                  <matrix xsi:type="transform:Matrix"/>
+                  <size xsi:type="graphics:Dimension"/>
+                </children>
+                <children xsi:type="draw:Text" text="0" anchor="middle" fontSize="24" fontName="ArialMT" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+                  <x xsi:type="attributes:Unit" value="49.5"/>
+                  <y xsi:type="attributes:Unit" value="74"/>
+                  <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+                  <matrix xsi:type="transform:Matrix"/>
+                </children>
+              </children>
+              <children xsi:type="draw:Group">
+                <matrix xsi:type="transform:Matrix" translateX="104" translateY="5"/>
+                <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+                  <x xsi:type="attributes:Unit"/>
+                  <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+                    <expression xsi:type="expr:Variable" name="size" path="h"/>
+                  </constraints>
+                  <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+                    <expression xsi:type="expr:Variable" name="size" path="w"/>
+                  </constraints>
+                  <y xsi:type="attributes:Unit"/>
+                  <width xsi:type="attributes:Unit" value="99"/>
+                  <height xsi:type="attributes:Unit" value="148"/>
+                  <location xsi:type="graphics:Point"/>
+                  <matrix xsi:type="transform:Matrix"/>
+                  <size xsi:type="graphics:Dimension"/>
+                </children>
+                <children xsi:type="draw:Text" alignmentBaseline="central" fontSize="17" fontName="ArialMT" weight="400" decoration="none" style="normal" fillOpacity="1" opacity="1" strokeOpacity="1" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+                  <x xsi:type="attributes:Unit"/>
+                  <y xsi:type="attributes:Unit" value="74"/>
+                  <fill xsi:type="color:RGBColor" r="0.27451" g="0.27451" b="0.27451"/>
+                  <matrix xsi:type="transform:Matrix"/>
+                </children>
+              </children>
+            </children>
+          </children>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix" translateX="106" translateY="1"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <children xsi:type="draw:Rect">
+              <x xsi:type="attributes:Unit"/>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <rx xsi:type="attributes:Unit"/>
+              <ry xsi:type="attributes:Unit"/>
+              <fill xsi:type="color:RGBColor" r="0.270588" g="0.278431" b="0.298039"/>
+            </children>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="102"/>
+            <height xsi:type="attributes:Unit" value="158"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Text" text="+/-" anchor="middle" fontSize="24" fontName="OpenSans" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+            <x xsi:type="attributes:Unit" value="51"/>
+            <y xsi:type="attributes:Unit" value="79"/>
+            <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+            <matrix xsi:type="transform:Matrix"/>
+          </children>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix" translateX="209" translateY="1"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <children xsi:type="draw:Rect">
+              <x xsi:type="attributes:Unit"/>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <rx xsi:type="attributes:Unit"/>
+              <ry xsi:type="attributes:Unit"/>
+              <fill xsi:type="color:RGBColor" r="0.270588" g="0.278431" b="0.298039"/>
+            </children>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="102"/>
+            <height xsi:type="attributes:Unit" value="158"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Text" text="%" anchor="middle" fontSize="24" fontName="OpenSans" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+            <x xsi:type="attributes:Unit" value="51"/>
+            <y xsi:type="attributes:Unit" value="79"/>
+            <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+            <matrix xsi:type="transform:Matrix"/>
+          </children>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix" translateX="312" translateY="1"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <children xsi:type="draw:Rect">
+              <x xsi:type="attributes:Unit"/>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <rx xsi:type="attributes:Unit"/>
+              <ry xsi:type="attributes:Unit"/>
+              <fill xsi:type="color:RGBColor" r="1" g="0.619608" b="0.0431373"/>
+            </children>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="102"/>
+            <height xsi:type="attributes:Unit" value="158"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Text" text="÷" anchor="middle" fontSize="40" fontName="OpenSans" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+            <x xsi:type="attributes:Unit" value="51"/>
+            <y xsi:type="attributes:Unit" value="79"/>
+            <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+            <matrix xsi:type="transform:Matrix"/>
+          </children>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix" translateY="160"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <children xsi:type="draw:Rect">
+              <x xsi:type="attributes:Unit"/>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <rx xsi:type="attributes:Unit"/>
+              <ry xsi:type="attributes:Unit"/>
+              <fill xsi:type="color:RGBColor" r="0.392157" g="0.396078" b="0.407843"/>
+            </children>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="105"/>
+            <height xsi:type="attributes:Unit" value="158"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Text" text="7" anchor="middle" fontSize="24" fontName="OpenSans" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+            <x xsi:type="attributes:Unit" value="52.5"/>
+            <y xsi:type="attributes:Unit" value="79"/>
+            <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+            <matrix xsi:type="transform:Matrix"/>
+          </children>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix" translateX="106" translateY="160"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <children xsi:type="draw:Rect">
+              <x xsi:type="attributes:Unit"/>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <rx xsi:type="attributes:Unit"/>
+              <ry xsi:type="attributes:Unit"/>
+              <fill xsi:type="color:RGBColor" r="0.392157" g="0.396078" b="0.407843"/>
+            </children>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="102"/>
+            <height xsi:type="attributes:Unit" value="158"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Text" text="8" anchor="middle" fontSize="24" fontName="OpenSans" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+            <x xsi:type="attributes:Unit" value="51"/>
+            <y xsi:type="attributes:Unit" value="79"/>
+            <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+            <matrix xsi:type="transform:Matrix"/>
+          </children>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix" translateX="209" translateY="160"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <children xsi:type="draw:Rect">
+              <x xsi:type="attributes:Unit"/>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <rx xsi:type="attributes:Unit"/>
+              <ry xsi:type="attributes:Unit"/>
+              <fill xsi:type="color:RGBColor" r="0.392157" g="0.396078" b="0.407843"/>
+            </children>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="102"/>
+            <height xsi:type="attributes:Unit" value="158"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Text" text="9" anchor="middle" fontSize="24" fontName="OpenSans" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+            <x xsi:type="attributes:Unit" value="51"/>
+            <y xsi:type="attributes:Unit" value="79"/>
+            <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+            <matrix xsi:type="transform:Matrix"/>
+          </children>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix" translateY="319"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <children xsi:type="draw:Rect">
+              <x xsi:type="attributes:Unit"/>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <rx xsi:type="attributes:Unit"/>
+              <ry xsi:type="attributes:Unit"/>
+              <fill xsi:type="color:RGBColor" r="0.392157" g="0.396078" b="0.407843"/>
+            </children>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="105"/>
+            <height xsi:type="attributes:Unit" value="158"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Text" text="4" anchor="middle" fontSize="24" fontName="OpenSans" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+            <x xsi:type="attributes:Unit" value="52.5"/>
+            <y xsi:type="attributes:Unit" value="79"/>
+            <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+            <matrix xsi:type="transform:Matrix"/>
+          </children>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix" translateX="106" translateY="319"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <children xsi:type="draw:Rect">
+              <x xsi:type="attributes:Unit"/>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <rx xsi:type="attributes:Unit"/>
+              <ry xsi:type="attributes:Unit"/>
+              <fill xsi:type="color:RGBColor" r="0.392157" g="0.396078" b="0.407843"/>
+            </children>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="102"/>
+            <height xsi:type="attributes:Unit" value="158"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Text" text="5" anchor="middle" fontSize="24" fontName="OpenSans" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+            <x xsi:type="attributes:Unit" value="51"/>
+            <y xsi:type="attributes:Unit" value="79"/>
+            <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+            <matrix xsi:type="transform:Matrix"/>
+          </children>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix" translateX="209" translateY="319"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <children xsi:type="draw:Rect">
+              <x xsi:type="attributes:Unit"/>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <rx xsi:type="attributes:Unit"/>
+              <ry xsi:type="attributes:Unit"/>
+              <fill xsi:type="color:RGBColor" r="0.392157" g="0.396078" b="0.407843"/>
+            </children>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="102"/>
+            <height xsi:type="attributes:Unit" value="158"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Text" text="6" anchor="middle" fontSize="24" fontName="OpenSans" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+            <x xsi:type="attributes:Unit" value="51"/>
+            <y xsi:type="attributes:Unit" value="79"/>
+            <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+            <matrix xsi:type="transform:Matrix"/>
+          </children>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix" translateY="478"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <children xsi:type="draw:Rect">
+              <x xsi:type="attributes:Unit"/>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <rx xsi:type="attributes:Unit"/>
+              <ry xsi:type="attributes:Unit"/>
+              <fill xsi:type="color:RGBColor" r="0.392157" g="0.396078" b="0.407843"/>
+            </children>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="105"/>
+            <height xsi:type="attributes:Unit" value="158"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Text" text="1" anchor="middle" fontSize="24" fontName="OpenSans" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+            <x xsi:type="attributes:Unit" value="52.5"/>
+            <y xsi:type="attributes:Unit" value="79"/>
+            <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+            <matrix xsi:type="transform:Matrix"/>
+          </children>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix" translateX="106" translateY="478"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <children xsi:type="draw:Rect">
+              <x xsi:type="attributes:Unit"/>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <rx xsi:type="attributes:Unit"/>
+              <ry xsi:type="attributes:Unit"/>
+              <fill xsi:type="color:RGBColor" r="0.392157" g="0.396078" b="0.407843"/>
+            </children>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="102"/>
+            <height xsi:type="attributes:Unit" value="158"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Text" text="2" anchor="middle" fontSize="24" fontName="OpenSans" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+            <x xsi:type="attributes:Unit" value="51"/>
+            <y xsi:type="attributes:Unit" value="79"/>
+            <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+            <matrix xsi:type="transform:Matrix"/>
+          </children>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix" translateX="209" translateY="478"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <children xsi:type="draw:Rect">
+              <x xsi:type="attributes:Unit"/>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <rx xsi:type="attributes:Unit"/>
+              <ry xsi:type="attributes:Unit"/>
+              <fill xsi:type="color:RGBColor" r="0.392157" g="0.396078" b="0.407843"/>
+            </children>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="102"/>
+            <height xsi:type="attributes:Unit" value="158"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Text" text="3" anchor="middle" fontSize="24" fontName="OpenSans" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+            <x xsi:type="attributes:Unit" value="51"/>
+            <y xsi:type="attributes:Unit" value="79"/>
+            <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+            <matrix xsi:type="transform:Matrix"/>
+          </children>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix" translateX="312" translateY="160"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <children xsi:type="draw:Rect">
+              <x xsi:type="attributes:Unit"/>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <rx xsi:type="attributes:Unit"/>
+              <ry xsi:type="attributes:Unit"/>
+              <fill xsi:type="color:RGBColor" r="1" g="0.619608" b="0.0431373"/>
+            </children>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="102"/>
+            <height xsi:type="attributes:Unit" value="158"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Text" text="×" anchor="middle" fontSize="40" fontName="OpenSans" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+            <x xsi:type="attributes:Unit" value="51"/>
+            <y xsi:type="attributes:Unit" value="79"/>
+            <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+            <matrix xsi:type="transform:Matrix"/>
+          </children>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix" translateX="312" translateY="319"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <children xsi:type="draw:Rect">
+              <x xsi:type="attributes:Unit"/>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <rx xsi:type="attributes:Unit"/>
+              <ry xsi:type="attributes:Unit"/>
+              <fill xsi:type="color:RGBColor" r="1" g="0.619608" b="0.0431373"/>
+            </children>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="102"/>
+            <height xsi:type="attributes:Unit" value="158"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Text" text="−" anchor="middle" fontSize="40" fontName="OpenSans" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+            <x xsi:type="attributes:Unit" value="51"/>
+            <y xsi:type="attributes:Unit" value="79"/>
+            <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+            <matrix xsi:type="transform:Matrix"/>
+          </children>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix" translateX="312" translateY="478"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <children xsi:type="draw:Rect">
+              <x xsi:type="attributes:Unit"/>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <rx xsi:type="attributes:Unit"/>
+              <ry xsi:type="attributes:Unit"/>
+              <fill xsi:type="color:RGBColor" r="1" g="0.619608" b="0.0431373"/>
+            </children>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="102"/>
+            <height xsi:type="attributes:Unit" value="158"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Text" text="+" anchor="middle" fontSize="40" fontName="OpenSans" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+            <x xsi:type="attributes:Unit" value="51"/>
+            <y xsi:type="attributes:Unit" value="79"/>
+            <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+            <matrix xsi:type="transform:Matrix"/>
+          </children>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix" translateX="312" translateY="637"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <children xsi:type="draw:Rect">
+              <x xsi:type="attributes:Unit"/>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <rx xsi:type="attributes:Unit"/>
+              <ry xsi:type="attributes:Unit"/>
+              <fill xsi:type="color:RGBColor" r="1" g="0.619608" b="0.0431373"/>
+            </children>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="102"/>
+            <height xsi:type="attributes:Unit" value="158"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Text" text="=" anchor="middle" fontSize="40" fontName="OpenSans" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="central" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+            <x xsi:type="attributes:Unit" value="51"/>
+            <y xsi:type="attributes:Unit" value="79"/>
+            <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+            <matrix xsi:type="transform:Matrix"/>
+          </children>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix" translateX="209" translateY="637"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <children xsi:type="draw:Rect">
+              <x xsi:type="attributes:Unit"/>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <rx xsi:type="attributes:Unit"/>
+              <ry xsi:type="attributes:Unit"/>
+              <fill xsi:type="color:RGBColor" r="0.392157" g="0.396078" b="0.407843"/>
+            </children>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="102"/>
+            <height xsi:type="attributes:Unit" value="158"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Text" text="." anchor="middle" fontSize="24" fontName="OpenSans" style="normal" weight="400" decoration="none" opacity="1" strokeOpacity="1" fillOpacity="1" alignmentBaseline="hanging" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+            <x xsi:type="attributes:Unit" value="51"/>
+            <y xsi:type="attributes:Unit" value="79"/>
+            <fill xsi:type="color:RGBColor" r="0.996078" g="1" b="1"/>
+            <matrix xsi:type="transform:Matrix"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <y xsi:type="attributes:Unit"/>
+    <width xsi:type="attributes:Unit" value="414"/>
+    <height xsi:type="attributes:Unit" value="896"/>
+    <location xsi:type="graphics:Point"/>
+    <matrix xsi:type="transform:Matrix"/>
+    <size xsi:type="graphics:Dimension"/>
+  </draw:Box>
+</xmi:XMI>

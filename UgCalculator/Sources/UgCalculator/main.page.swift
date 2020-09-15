@@ -15,7 +15,6 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	let colorOperatorKeyDefault = SCDGraphicsRGB(red:255,green:158,blue:11)
 	let colorOperatorKeyDown = SCDGraphicsRGB(red:216,green:133,blue:1)
 	
-	
 	// Button ids and input
 	lazy var  buttonNameInputs = 
 			[("btnNumber1", ("1", colorNumberKeyDefault, colorNumberKeyDown) ), 
