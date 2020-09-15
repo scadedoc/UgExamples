@@ -1,0 +1,154 @@
+<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:attributes="http://scade.com/svg/draw/attributes" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:color="http://scade.com/svg/style/color" xmlns:constraints="http://scade.com/svg/constraints" xmlns:draw="http://scade.com/svg/draw" xmlns:expr="com.scade.sdk.expr" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:path="http://scade.com/svg/draw/attributes/path" xmlns:transform="http://scade.com/svg/transform" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="DynamicButtonGrid" drawing="/3">
+    <children xsi:type="widgets:CustomWidget" name="customwidget1" drawing="/3/@children.1/@children.0">
+      <location xsi:type="graphics:Point"/>
+      <size xsi:type="graphics:Dimension" width="300" height="300"/>
+      <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE">
+        <minSize xsi:type="graphics:Dimension" width="300" height="300"/>
+        <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+      </layoutData>
+    </children>
+    <layout xsi:type="layout:GridLayout" columns="2" rows="2"/>
+    <maxArea xsi:type="graphics:Dimension" width="414" height="896"/>
+    <location xsi:type="graphics:Point"/>
+    <minArea xsi:type="graphics:Dimension" width="414" height="896"/>
+    <size xsi:type="graphics:Dimension" width="414" height="896"/>
+  </widgets:Page>
+  <binding:BindingModel/>
+  <navigation:Navigation page="/0"/>
+  <draw:Box>
+    <x xsi:type="attributes:Unit"/>
+    <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+      <x xsi:type="attributes:Unit"/>
+      <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+        <expression xsi:type="expr:Variable" name="size" path="w"/>
+      </constraints>
+      <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+        <expression xsi:type="expr:Variable" name="size" path="h"/>
+      </constraints>
+      <children xsi:type="draw:Rect" fillOpacity="1" strokeOpacity="1" opacity="1">
+        <x xsi:type="attributes:Unit"/>
+        <y xsi:type="attributes:Unit"/>
+        <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+        <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+        <matrix xsi:type="transform:Matrix"/>
+        <rx xsi:type="attributes:Unit"/>
+        <ry xsi:type="attributes:Unit"/>
+        <fill xsi:type="color:RGBColor" r="0.972549" g="0.972549" b="0.972549"/>
+      </children>
+      <y xsi:type="attributes:Unit"/>
+      <width xsi:type="attributes:Unit" value="414"/>
+      <height xsi:type="attributes:Unit" value="896"/>
+      <location xsi:type="graphics:Point"/>
+      <matrix xsi:type="transform:Matrix"/>
+      <size xsi:type="graphics:Dimension"/>
+    </children>
+    <children xsi:type="draw:Group" fillOpacity="1" strokeOpacity="1" opacity="1" attributes="{&quot;template-id&quot;:&quot;content&quot;}
+">
+      <matrix xsi:type="transform:Matrix"/>
+      <children xsi:type="draw:Group" fillOpacity="1" strokeOpacity="1" opacity="1">
+        <matrix xsi:type="transform:Matrix"/>
+        <children xsi:type="draw:Path" fillOpacity="1" strokeOpacity="1" opacity="1" id="Credit-Cards-Icon">
+          <elements xsi:type="path:PathMove" x="14.973" y="273.666"/>
+          <elements xsi:type="path:PathLine" x="7.00894" y="274.896"/>
+          <elements xsi:type="path:PathCubic" x1="6.6126" y1="274.957" x2="6.34196" y2="275.328" x="6.40311" y="275.724"/>
+          <elements xsi:type="path:PathCubic" x1="6.4586" y1="276.083" x2="6.76661" y2="276.338" x="7.11878" y="276.338"/>
+          <elements xsi:type="path:PathCubic" x1="7.15502" y1="276.338" x2="7.19352" y2="276.335" x="7.22976" y="276.329"/>
+          <elements xsi:type="path:PathLine" x="15.1938" y="275.1"/>
+          <elements xsi:type="path:PathCubic" x1="15.5913" y1="275.039" x2="15.8608" y2="274.668" x="15.8008" y="274.272"/>
+          <elements xsi:type="path:PathCubic" x1="15.7408" y1="273.876" x2="15.3626" y2="273.608" x="14.973" y="273.666"/>
+          <elements xsi:type="path:PathLine" x="14.973" y="273.666"/>
+          <elements xsi:type="path:PathClose"/>
+          <elements xsi:type="path:PathMove" x="6.66809" y="273.426"/>
+          <elements xsi:type="path:PathCubic" x1="6.70433" y1="273.426" x2="6.74283" y2="273.424" x="6.7802" y="273.418"/>
+          <elements xsi:type="path:PathLine" x="22.7083" y="270.957"/>
+          <elements xsi:type="path:PathCubic" x1="23.1058" y1="270.896" x2="23.3765" y2="270.526" x="23.3153" y="270.13"/>
+          <elements xsi:type="path:PathCubic" x1="23.2542" y1="269.733" x2="22.8725" y2="269.466" x="22.4875" y="269.524"/>
+          <elements xsi:type="path:PathLine" x="6.55825" y="271.984"/>
+          <elements xsi:type="path:PathCubic" x1="6.16191" y1="272.046" x2="5.89127" y2="272.416" x="5.95242" y="272.812"/>
+          <elements xsi:type="path:PathCubic" x1="6.00791" y1="273.17" x2="6.31592" y2="273.426" x="6.66809" y="273.426"/>
+          <elements xsi:type="path:PathLine" x="6.66809" y="273.426"/>
+          <elements xsi:type="path:PathClose"/>
+          <elements xsi:type="path:PathMove" x="39.2174" y="266.012"/>
+          <elements xsi:type="path:PathLine" x="36.075" y="266.012"/>
+          <elements xsi:type="path:PathLine" x="35.3526" y="261.337"/>
+          <elements xsi:type="path:PathLine" x="37.0296" y="261.337"/>
+          <elements xsi:type="path:PathCubic" x1="38.2356" y1="261.337" x2="39.2174" y2="262.317" x="39.2174" y="263.523"/>
+          <elements xsi:type="path:PathLine" x="39.2174" y="266.012"/>
+          <elements xsi:type="path:PathClose"/>
+          <elements xsi:type="path:PathMove" x="39.2174" y="271.235"/>
+          <elements xsi:type="path:PathLine" x="36.8813" y="271.235"/>
+          <elements xsi:type="path:PathLine" x="36.2992" y="267.463"/>
+          <elements xsi:type="path:PathLine" x="39.2174" y="267.463"/>
+          <elements xsi:type="path:PathLine" x="39.2174" y="271.235"/>
+          <elements xsi:type="path:PathClose"/>
+          <elements xsi:type="path:PathMove" x="39.2174" y="282.363"/>
+          <elements xsi:type="path:PathCubic" x1="39.2174" y1="283.569" x2="38.2356" y2="284.549" x="37.0296" y="284.549"/>
+          <elements xsi:type="path:PathLine" x="8.03488" y="284.549"/>
+          <elements xsi:type="path:PathCubic" x1="6.82889" y1="284.549" x2="5.84938" y2="283.569" x="5.84938" y="282.363"/>
+          <elements xsi:type="path:PathLine" x="5.84938" y="281.866"/>
+          <elements xsi:type="path:PathCubic" x1="5.9762" y1="281.863" x2="6.10416" y2="281.855" x="6.23439" y="281.836"/>
+          <elements xsi:type="path:PathLine" x="34.8883" y="277.41"/>
+          <elements xsi:type="path:PathCubic" x1="36.4782" y1="277.164" x2="37.5675" y2="275.676" x="37.3218" y="274.087"/>
+          <elements xsi:type="path:PathLine" x="37.1055" y="272.687"/>
+          <elements xsi:type="path:PathLine" x="39.2174" y="272.687"/>
+          <elements xsi:type="path:PathLine" x="39.2174" y="282.363"/>
+          <elements xsi:type="path:PathClose"/>
+          <elements xsi:type="path:PathMove" x="4.34557" y="279.181"/>
+          <elements xsi:type="path:PathLine" x="2.8678" y="269.619"/>
+          <elements xsi:type="path:PathLine" x="34.4104" y="264.745"/>
+          <elements xsi:type="path:PathLine" x="35.8882" y="274.308"/>
+          <elements xsi:type="path:PathCubic" x1="35.9482" y1="274.694" x2="35.8542" y2="275.08" x="35.6232" y="275.395"/>
+          <elements xsi:type="path:PathCubic" x1="35.3922" y1="275.71" x2="35.0536" y2="275.916" x="34.6675" y="275.975"/>
+          <elements xsi:type="path:PathLine" x="6.01244" y="280.403"/>
+          <elements xsi:type="path:PathCubic" x1="5.93657" y1="280.414" x2="5.8607" y2="280.42" x="5.78483" y="280.42"/>
+          <elements xsi:type="path:PathCubic" x1="5.07369" y1="280.42" x2="4.45428" y2="279.887" x="4.34557" y="279.181"/>
+          <elements xsi:type="path:PathLine" x="4.34557" y="279.181"/>
+          <elements xsi:type="path:PathClose"/>
+          <elements xsi:type="path:PathMove" x="2.0706" y="264.456"/>
+          <elements xsi:type="path:PathLine" x="33.6132" y="259.584"/>
+          <elements xsi:type="path:PathLine" x="34.1896" y="263.312"/>
+          <elements xsi:type="path:PathLine" x="2.64586" y="268.184"/>
+          <elements xsi:type="path:PathLine" x="2.0706" y="264.456"/>
+          <elements xsi:type="path:PathClose"/>
+          <elements xsi:type="path:PathMove" x="1.46931" y="260.563"/>
+          <elements xsi:type="path:PathCubic" x1="1.40929" y1="260.177" x2="1.50328" y2="259.791" x="1.73428" y="259.476"/>
+          <elements xsi:type="path:PathCubic" x1="1.96416" y1="259.161" x2="2.30388" y2="258.955" x="2.69002" y="258.896"/>
+          <elements xsi:type="path:PathLine" x="31.3439" y="254.469"/>
+          <elements xsi:type="path:PathCubic" x1="31.4209" y1="254.457" x2="31.4968" y2="254.451" x="31.5715" y="254.451"/>
+          <elements xsi:type="path:PathCubic" x1="32.2838" y1="254.451" x2="32.9032" y2="254.984" x="33.0119" y="255.689"/>
+          <elements xsi:type="path:PathLine" x="33.3924" y="258.15"/>
+          <elements xsi:type="path:PathLine" x="1.84866" y="263.023"/>
+          <elements xsi:type="path:PathLine" x="1.46931" y="260.563"/>
+          <elements xsi:type="path:PathClose"/>
+          <elements xsi:type="path:PathMove" x="37.0296" y="259.886"/>
+          <elements xsi:type="path:PathLine" x="35.1284" y="259.886"/>
+          <elements xsi:type="path:PathLine" x="34.4455" y="255.469"/>
+          <elements xsi:type="path:PathCubic" x1="34.2236" y1="254.029" x2="32.9836" y2="253" x="31.5704" y="253"/>
+          <elements xsi:type="path:PathCubic" x1="31.4232" y1="253" x2="31.2737" y2="253.011" x="31.1231" y="253.035"/>
+          <elements xsi:type="path:PathLine" x="2.46807" y="257.463"/>
+          <elements xsi:type="path:PathCubic" x1="0.879333" y1="257.707" x2="-0.211155" y2="259.195" x="0.034573" y="260.785"/>
+          <elements xsi:type="path:PathLine" x="2.91083" y="279.403"/>
+          <elements xsi:type="path:PathCubic" x1="3.05578" y1="280.335" x2="3.6299" y2="281.089" x="4.39766" y="281.509"/>
+          <elements xsi:type="path:PathLine" x="4.39766" y="282.363"/>
+          <elements xsi:type="path:PathCubic" x1="4.39766" y1="284.368" x2="6.03056" y2="286" x="8.03488" y="286"/>
+          <elements xsi:type="path:PathLine" x="37.0296" y="286"/>
+          <elements xsi:type="path:PathCubic" x1="39.0362" y1="286" x2="40.668" y2="284.368" x="40.668" y="282.363"/>
+          <elements xsi:type="path:PathLine" x="40.668" y="263.523"/>
+          <elements xsi:type="path:PathCubic" x1="40.668" y1="261.518" x2="39.0362" y2="259.886" x="37.0296" y="259.886"/>
+          <elements xsi:type="path:PathLine" x="37.0296" y="259.886"/>
+          <elements xsi:type="path:PathClose"/>
+          <matrix xsi:type="transform:Matrix"/>
+        </children>
+      </children>
+    </children>
+    <y xsi:type="attributes:Unit"/>
+    <width xsi:type="attributes:Unit" value="414"/>
+    <height xsi:type="attributes:Unit" value="896"/>
+    <location xsi:type="graphics:Point"/>
+    <matrix xsi:type="transform:Matrix"/>
+    <size xsi:type="graphics:Dimension"/>
+  </draw:Box>
+</xmi:XMI>

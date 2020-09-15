@@ -13,7 +13,7 @@ linked-libs: []
 
 ios:
   name: UgProgrammaticUIDev
-  id: com.scade.UgProgrammaticUIDev
+  id: com.scade.ugprogrammaticuidev
   device-family: iphone # iphone, ipad or universal
   supported-interface-orientations: ['portrait'] # portrait, upside_down, landscape_left or landscape_right
   supported-interface-orientationsiPad: ['portrait']
