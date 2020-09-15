@@ -25,7 +25,7 @@ class UgSystemDemo: SCDApplication {
 	
 	// handle deep link calls
 	override func onOpen(with url: String) {
-		
+		print("url: \(url)")
 		// deep link call happened, analyse URL
 		if let ucs = URLComponents(string:url) {
 			
