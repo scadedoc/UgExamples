@@ -65,7 +65,7 @@
           <path>h</path>
         </expression>
       </constraints>
-      <children xsi:type="svg:Image" preserveAspectRatio="slice" alignment="xMaxYMax" xhref="res/image1.png">
+      <children xsi:type="svg:Image" preserveAspectRatio="slice" alignment="xMaxYMax" xhref="Resources/image1.png">
         <width value="100.0" measurement="PERCENTAGE"/>
         <height value="100.0" measurement="PERCENTAGE"/>
       </children>

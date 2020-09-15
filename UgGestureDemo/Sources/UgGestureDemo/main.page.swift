@@ -22,7 +22,6 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		
 		// add tag gesture to page
 		self.addTapGestureToPage()
-		
 		// setup swipe gestures for entire page
 		let swipeGesture = getSwipeGesture()  
 	 	self.page!.drawing!.gestureRecognizers.append(swipeGesture) 
