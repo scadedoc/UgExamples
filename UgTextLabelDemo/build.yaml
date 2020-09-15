@@ -13,7 +13,7 @@ linked-libs: []
 
 ios:
   name: UgTextLabelDemo
-  id: com.scade.UgTextLabelDemo
+  id: com.scade.ugtextlabeldemo
   device-family: iphone # iphone, ipad or universal
   supported-interface-orientations: ['portrait'] # portrait, upside_down, landscape_left or landscape_right
   supported-interface-orientationsiPad: ['portrait']
@@ -68,7 +68,7 @@ ios:
 
 android:
   name: UgTextLabelDemo
-  id: com.scade.UgTextLabelDemo
+  id: com.scade.ugtextlabeldemo
   version-name: 1.0.0
   version-code: 1
   build-type: Debug
