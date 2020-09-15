@@ -1,0 +1,594 @@
+<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:attributes="http://scade.com/svg/draw/attributes" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:color="http://scade.com/svg/style/color" xmlns:constraints="http://scade.com/svg/constraints" xmlns:draw="http://scade.com/svg/draw" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expr="com.scade.sdk.expr" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:transform="http://scade.com/svg/transform" xmlns:widgetlayouts="http://scade.com/sdk/view/widgets/layout" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="main" drawing="/3">
+    <children xsi:type="widgets:ListView" name="verticalview1" drawing="/3/@children.1">
+      <children xsi:type="widgets:List" name="list1" drawing="/3/@children.1/@children.1">
+        <template xsi:type="widgets:ListTemplate" name="template">
+          <element xsi:type="widgets:ListElement" name="listElement" drawing="/3/@children.1/@children.1/@children.0/@children.0">
+            <leftBar xsi:type="widgets:RowView" name="leftBar" visible="false" drawing="/3/@children.1/@children.1/@children.0/@children.0/@children.4">
+              <layout xsi:type="layout:GridLayout"/>
+              <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+              <minArea xsi:type="graphics:Dimension"/>
+              <size xsi:type="graphics:Dimension" width="404" height="45"/>
+              <location xsi:type="graphics:Point"/>
+            </leftBar>
+            <children xsi:type="widgets:Label" text="Bailey" name="dogName" wrapText="true" drawing="/3/@children.1/@children.1/@children.0/@children.0/@children.6">
+              <location xsi:type="graphics:Point" x="10"/>
+              <size xsi:type="graphics:Dimension" width="51" height="19"/>
+              <contentSize xsi:type="graphics:Dimension" width="51" height="19"/>
+              <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+                <minSize xsi:type="graphics:Dimension"/>
+                <maxSize xsi:type="graphics:Dimension" width="51" height="20"/>
+              </layoutData>
+            </children>
+            <children xsi:type="widgets:Label" text="St. Bernard" name="dogBreed" wrapText="true" drawing="/3/@children.1/@children.1/@children.0/@children.0/@children.7">
+              <location xsi:type="graphics:Point" x="142"/>
+              <size xsi:type="graphics:Dimension" width="86" height="19"/>
+              <contentSize xsi:type="graphics:Dimension" width="86" height="19"/>
+              <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+                <minSize xsi:type="graphics:Dimension"/>
+                <maxSize xsi:type="graphics:Dimension" width="86" height="20"/>
+              </layoutData>
+            </children>
+            <children xsi:type="widgets:Label" text="D100" name="dogId" wrapText="true" drawing="/3/@children.1/@children.1/@children.0/@children.0/@children.8">
+              <location xsi:type="graphics:Point" x="363"/>
+              <size xsi:type="graphics:Dimension" width="41" height="19"/>
+              <contentSize xsi:type="graphics:Dimension" width="41" height="19"/>
+              <layoutData xsi:type="layout:GridData" column="2" horizontalAlignment="RIGHT" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+                <minSize xsi:type="graphics:Dimension"/>
+                <maxSize xsi:type="graphics:Dimension" width="41" height="20"/>
+              </layoutData>
+            </children>
+            <minArea xsi:type="graphics:Dimension" height="45"/>
+            <location xsi:type="graphics:Point"/>
+            <layout xsi:type="layout:GridLayout" columns="3" marginLeft="10"/>
+            <rightBar xsi:type="widgets:RowView" name="rightBar" visible="false" drawing="/3/@children.1/@children.1/@children.0/@children.0/@children.5">
+              <children xsi:type="widgets:Button" text="Info" name="btnListRowInfo" drawing="/3/@children.1/@children.1/@children.0/@children.0/@children.5/@children.0">
+                <location xsi:type="graphics:Point"/>
+                <size xsi:type="graphics:Dimension" width="67" height="45"/>
+                <contentSize xsi:type="graphics:Dimension" width="67" height="20"/>
+                <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabVerticalSpace="true">
+                  <minSize xsi:type="graphics:Dimension"/>
+                </layoutData>
+              </children>
+              <layout xsi:type="layout:GridLayout"/>
+              <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+              <location xsi:type="graphics:Point"/>
+              <minArea xsi:type="graphics:Dimension"/>
+              <size xsi:type="graphics:Dimension" width="404" height="45"/>
+            </rightBar>
+            <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+            <size xsi:type="graphics:Dimension" width="404" height="45"/>
+            <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT">
+              <minSize xsi:type="graphics:Dimension"/>
+            </layoutData>
+          </element>
+          <location xsi:type="graphics:Point"/>
+          <size xsi:type="graphics:Dimension"/>
+        </template>
+        <size xsi:type="graphics:Dimension" width="404" height="831"/>
+        <layout xsi:type="widgetlayouts:ListLayout"/>
+        <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        <location xsi:type="graphics:Point" x="5" y="5"/>
+        <minArea xsi:type="graphics:Dimension"/>
+        <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" grabHorizontalSpace="true">
+          <minSize xsi:type="graphics:Dimension"/>
+        </layoutData>
+      </children>
+      <layout xsi:type="layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
+      <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+      <location xsi:type="graphics:Point"/>
+      <minArea xsi:type="graphics:Dimension"/>
+      <size xsi:type="graphics:Dimension" width="414" height="841"/>
+      <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" heightConstraint="MATCH_PARENT">
+        <minSize xsi:type="graphics:Dimension"/>
+      </layoutData>
+    </children>
+    <children xsi:type="widgets:ToolBar" name="toolbar1" drawing="/3/@children.2">
+      <children xsi:type="widgets:ToolBarItem" name="item1" drawing="/3/@children.2/@children.1/@children.1">
+        <children xsi:type="widgets:Image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABRCAMAAAB7eHFAAAACiFBMVEUAAAAAAACAgIBVVVWAgIBmZmaAgICSkpKAgICOjo6AgICLi4uAgICJiYmSkpKIiIiPj4+Hh4eOjo6GhoaMjIySkpKLi4uQkJCKioqPj4+JiYmOjo6SkpKNjY2MjIyPj4+Pj4+SkpKOjo6RkZGNjY2QkJCMjIyPj4+SkpKOjo6RkZGOjo6NjY2Pj4+Pj4+RkZGOjo6QkJCOjo6SkpKPj4+RkZGPj4+QkJCSkpKPj4+RkZGRkZGPj4+QkJCSkpKQkJCRkZGPj4+RkZGPj4+QkJCSkpKQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGPj4+SkpKRkZGQkJCRkZGPj4+RkZGQkJCRkZGQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGSkpKRkZGQkJCSkpKRkZGRkZGRkZGQkJCRkZGSkpKSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKSkpIWRJMCAAAA13RSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0fICIjJCUmJygpKissLS8wMjM0NTY4OTo7Pj9AQUNERUZHSElKS0xNTk9RVFVWV1hZW11eX2BhY2RlZmhpamtsbW5vcXR1dnd4enx9f4CBgoOFh4iJiouMjY+QkZKTlJWXmJmam52foKGjpKWnqaqrrK2usLGys7W2t7i5uru8vr/Aw8TFxsfIyczNz9DR0tPU1dbX2Nna29zd3+Dh4uPk5ebn6Onq6+zt7/Dx8vP09fb3+Pn6+/z9/mBbZ+MAAAQJSURBVHgBvdfpd1NVF8fxX5NAAoWHPAwCWtQKalUGkAKKIii0QFWgigoqKChYQXAQKdQiteDAICgyWFEUQUBFBgcBRRlKW6BD04bk+++49K6VJl3JHZqz/Lw6L89vn+zsfeXagAky76lKmVfzV45M6xulUKbNhVUybReckmF92oARMmsOwEqZtQPguIzqHQHgVpk0C6JReEkmbYdPd8JhGZTbAjNLgBtlTgk0BEOXYZHM2QLrpSr4Wsb0aILx0niIDZIpM7Ba9BTMlymbYJkkLYfPZUjwKuRLUj5E/y8zihIPtB8ekxnvwzzrNA92yIhuDUTC1jEcobWXTHgQtkqWj+BhmbABpiWVd4sMCNRTG0iUopbGkLI3CdYqYS0UKXtVMEoJo+E9Zc1fmzpFTlAfULYmwhIlWQr3K1vriOUpSV6Md+SkeLG9i+xVii+4uNhesXKrcVCqFKU4eDdXUnEtdppylaJXE3YuTde/Bu4C4LOqtBaok4VVaVVfAdjTMRqebQEaZioL138JtC5UktuOAFT3VFcV1QHfFShFt9djwMkR6pJgBRBf1V2dTTgDRJ7PkXe3/wCcnag0+nwIsPs6efVkM7Al0/B6tAE4/4A8CW8FrpQqoyH7ErVxa9wZYP9NsuF7oQ04PFQu+cquQbTML3sjjgONj8uVG/YBv4yRo1BFHNjcR86m11mt7sbkc8DpQjkIVVqt7lK/j4FomU92Co5are7eE43AV3nKbF6L1epe5B8E6mcog/A2q9U98q8AapRBIbC6uzy7B5irDHLOdm3+rYG2sDIp79r8P2O7NhbC1R7yaiQwS7LL/4i8WgnNvZRZOeyUV8cclsZCaO8nb24BZkj2+Z+RNy/ClaDslMMBeXOw808m+MbW/ko2DrhZXgyOwxQlGX4ULkzrnP9lefE01AWU4FvaBkB179T8P8mLGlivhPxvsHB6Qmr+MXIv3A73dvzLNQGRRQubgdhbweT8a+TebDjnk2XwboDjw6WhBwCOjUzKf8Ev17Z13KGkHmBdD0nyLYkA7WX+jvxT5FaoCcZaddgEUJt49juPABwalsj/gdwqhtP6x6Q/AfYMVEJgeRRoWZBj5bdWYlc2wmuSer4dT7OzjToGsHeIlZ/ZcsdfB8Olu38G+PEudRJ8MwZcnmPl3+3+0+mkuq24BlARSrc//Qqwvb/KIepyS6yAZQVHAC4+pLR6VsaBC0XjgOfkyh+wvhVgV+Zb3Pc7wMYGOCQ3RmNpXSAb/9uAhaFy4VUAOHqH7E09BwCvyIUTAPE1QTnpuxmA3+RsGMD5yXKj5BLAWDlaCuwcIHcGfgJUytG3tHgZaKWXuRRw3Ljj3xfIi7wapjoOktVBeTS/2rFK8m6Q/gN/A0O640AHZc9eAAAAAElFTkSuQmCC" name="icon1" drawing="/3/@children.2/@children.1/@children.1/@children.1/@children.0">
+          <location xsi:type="graphics:Point" x="89" y="5"/>
+          <size xsi:type="graphics:Dimension" width="28" height="28"/>
+          <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true">
+            <minSize xsi:type="graphics:Dimension" width="28" height="28"/>
+            <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+          </layoutData>
+        </children>
+        <children xsi:type="widgets:Label" text="DogList" name="caption1" horizontalAlignment="CENTER" drawing="/3/@children.2/@children.1/@children.1/@children.1/@children.1">
+          <font xsi:type="graphics:Font" fontFamily="HelveticaNeue" size="11"/>
+          <layoutData xsi:type="layout:GridData" row="1" horizontalAlignment="CENTER" grabHorizontalSpace="true">
+            <minSize xsi:type="graphics:Dimension" width="37" height="19"/>
+            <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+          </layoutData>
+          <location xsi:type="graphics:Point" x="85" y="33"/>
+          <size xsi:type="graphics:Dimension" width="37" height="19"/>
+        </children>
+        <layout xsi:type="layout:GridLayout" rows="2"/>
+        <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        <location xsi:type="graphics:Point"/>
+        <minArea xsi:type="graphics:Dimension" width="45" height="52"/>
+        <size xsi:type="graphics:Dimension" width="207" height="55"/>
+        <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true">
+          <minSize xsi:type="graphics:Dimension"/>
+          <gridStyle xsi:type="layout:GridStyle" marginTop="5" marginBottom="3"/>
+        </layoutData>
+      </children>
+      <children xsi:type="widgets:ToolBarItem" name="itmGroupedByBreed" drawing="/3/@children.2/@children.1/@children.2">
+        <children xsi:type="widgets:Image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAMAAAArteDzAAABGlBMVEUAAACAgIBVVVWAgICAgICOjo6AgICJiYmSkpKIiIiGhoaSkpKLi4uQkJCKioqPj4+JiYmMjIyPj4+Li4uOjo6NjY2QkJCNjY2RkZGOjo6QkJCQkJCRkZGRkZGPj4+RkZGPj4+RkZGRkZGRkZGPj4+SkpKQkJCQkJCRkZGQkJCSkpKQkJCRkZGRkZGRkZGRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKSkpKRkZGRkZGSkpKRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKSkpKtnLlmAAAAXXRSTlMAAgMGCAkMDQ4PExUWFxgZGh8gISQmJy88PUVHSEpLUVJWXV9gYmNqa2xwcXJ9h4mOkJGSmJmen6Cjqauur7C9vr/BwsjJy87P0tPY3d/g4ebn7O/w8fL19vn8/f7RmKQUAAADeUlEQVR4AbXZ/1MaRxzG8adAFRRag180tRFEq9GoBEQRq0XMSdBqtYqiOd7//7/RYQbbgR7ygdu8fueZ2b3jdvdZDZVe2TmoXd7cv7zc31zWDnZW0gpnJle+hX635dyMxjSxXm0zQLu6PqnRLRy26LqrlXa3N1ZXN7Z3S7U7ulqHCxrN4rFPh1/PL8fVI76cr3+jwz9elF2qAh3e5pQCTW160FFJySay1QR4LszrDfOFZ4DmVkQGsxcAj3tJDZHcewS4mNVQ2QegfTQtg+mjNvCQHTb0AsDVkoyWrgAKEb0hdgqwH5VZtAhwGtNAifP+0RhkHoDzxMDMBnA9pxHNXQONAamxc6CRUrDfPn9eU7BUAziPKUDkFPgS1wB/wO8aIH4OnAY9rQLQiGucUMUbQCHg/QSuUxovVKlrIKs+sw/wMKdxQzXX+f1s34ReAFmNH6oMcNE7rVvAvsKEqghs9UxJE66i4UKjl9BM6T8VaC8pXKiW2lDRvxaBI4UN1RGwqFfH8DQdPnT6EY7VteDDnsKHag/819XwEJ6TLkKTz3AodUy2oCgXoSpAa1Id68C8m9B5YF0dZ+DJTag8OJOkmTZsugrdhPaMpBz4U65Cp75BTlIZ6nIVqjqUJd1C3l1oHm6lNLDsLnQZSGsFiLsLjQMr2oE7uQvVHezoAGouQ2twoBqUXIaWoKYr2HUZuguXuoFtl6HbcKN72HAZugH3eoFVl6Gr8PJ9QoOG/0vm/y6wDz/wQf1JIPuDuoRde6jxlapByRhqf/mD/qaxHwNFzX/THfhbdrYPygqQkJ3p05cGfpWd5SNtXk6M8nBrX/iM6lC2L9E2Uz7kupuJj3JkE/wZSaqCJ0c8qNo3aDbzwLp9K2lThNaEfdNr0t302rfnHfbtefcgkVRo009wbD/ymPQdeVQB3iukJaBiP0aaRK+gmbIfeE32+w+8inhAViFkAS+iHuluiWBgLhGkDHD9k2yC646MrZgJZi9mFDnpr5DsmV+Ak8jgsssyA/ayS0p8Hb+W+5pwWiBm3y4QpdjJyFXnPsBJzFDKvh+1lLXUoe2j5Aj1ccZQdHsAT5ai+wnAm5XBD91Kvvh2JV/sq+TNlwcf7ZcHI15zJNQjsZyv+4ZrDlcXMgYTa1WfAfzq2oTG9HOu/Bf2Sy67dx8+lc5er+PODj59eKdh/gHz8XDxSR6kGQAAAABJRU5ErkJggg==" name="icon21" drawing="/3/@children.2/@children.1/@children.2/@children.1/@children.0">
+          <location xsi:type="graphics:Point" x="89" y="5"/>
+          <size xsi:type="graphics:Dimension" width="28" height="28"/>
+          <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true">
+            <minSize xsi:type="graphics:Dimension" width="28" height="28"/>
+            <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+          </layoutData>
+        </children>
+        <children xsi:type="widgets:Label" text="Grouped By Breed" name="caption2" horizontalAlignment="CENTER" drawing="/3/@children.2/@children.1/@children.2/@children.1/@children.1">
+          <font xsi:type="graphics:Font" fontFamily="HelveticaNeue" size="11"/>
+          <layoutData xsi:type="layout:GridData" row="1" horizontalAlignment="CENTER" grabHorizontalSpace="true">
+            <minSize xsi:type="graphics:Dimension" width="95" height="19"/>
+            <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+          </layoutData>
+          <location xsi:type="graphics:Point" x="56" y="33"/>
+          <size xsi:type="graphics:Dimension" width="95" height="19"/>
+        </children>
+        <layout xsi:type="layout:GridLayout" rows="2"/>
+        <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        <location xsi:type="graphics:Point" x="207"/>
+        <minArea xsi:type="graphics:Dimension" width="45" height="45"/>
+        <size xsi:type="graphics:Dimension" width="207" height="55"/>
+        <layoutData xsi:type="layout:GridData" column="1" horizontalAlignment="CENTER" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true">
+          <minSize xsi:type="graphics:Dimension"/>
+          <gridStyle xsi:type="layout:GridStyle" marginTop="5" marginBottom="3"/>
+        </layoutData>
+      </children>
+      <layout xsi:type="layout:GridLayout" columns="2"/>
+      <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+      <location xsi:type="graphics:Point" y="841"/>
+      <minArea xsi:type="graphics:Dimension" width="320" height="52"/>
+      <size xsi:type="graphics:Dimension" width="414" height="55"/>
+      <layoutData xsi:type="layout:GridData" row="1" verticalAlignment="BOTTOM" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+        <minSize xsi:type="graphics:Dimension" width="50" height="49"/>
+        <maxSize xsi:type="graphics:Dimension" width="-1" height="49"/>
+        <gridStyle xsi:type="layout:GridStyle"/>
+      </layoutData>
+    </children>
+    <layout xsi:type="layout:GridLayout" rows="2"/>
+    <maxArea xsi:type="graphics:Dimension" width="414" height="896"/>
+    <location xsi:type="graphics:Point"/>
+    <minArea xsi:type="graphics:Dimension" width="414" height="896"/>
+    <size xsi:type="graphics:Dimension" width="414" height="896"/>
+  </widgets:Page>
+  <binding:BindingModel>
+    <bindings xsi:type="binding:Binding" src="/0" dst="/0/@children.0/@children.0">
+      <root xsi:type="binding:BindingSyncPoint">
+        <srcSelector xsi:type="binding:BindingSelector" feature="adapter">
+          <next xsi:type="binding:BindingSelector" feature="dogs"/>
+        </srcSelector>
+        <dstSelector xsi:type="binding:BindingSelector" feature="items"/>
+      </root>
+    </bindings>
+    <bindings xsi:type="binding:Binding" src="/0/@children.0/@children.0" dst="/0/@children.0/@children.0">
+      <root xsi:type="binding:BindingSyncPoint">
+        <srcSelector xsi:type="binding:CollectionSelector" at="-1" feature="items"/>
+        <dstSelector xsi:type="binding:CollectionSelector" at="-1" feature="elements"/>
+        <next xsi:type="binding:BindingSyncPoint">
+          <srcSelector xsi:type="binding:BindingSelector" feature="name"/>
+          <dstSelector xsi:type="binding:CollectionSelector" feature="children">
+            <next xsi:type="binding:BindingSelector" feature="text"/>
+          </dstSelector>
+        </next>
+      </root>
+    </bindings>
+    <bindings xsi:type="binding:Binding" src="/0/@children.0/@children.0" dst="/0/@children.0/@children.0">
+      <root xsi:type="binding:BindingSyncPoint">
+        <srcSelector xsi:type="binding:CollectionSelector" at="-1" feature="items"/>
+        <dstSelector xsi:type="binding:CollectionSelector" at="-1" feature="elements"/>
+        <next xsi:type="binding:BindingSyncPoint">
+          <srcSelector xsi:type="binding:BindingSelector" feature="breed"/>
+          <dstSelector xsi:type="binding:CollectionSelector" at="1" feature="children">
+            <next xsi:type="binding:BindingSelector" feature="text"/>
+          </dstSelector>
+        </next>
+      </root>
+    </bindings>
+    <bindings xsi:type="binding:Binding" src="/0/@children.0/@children.0" dst="/0/@children.0/@children.0">
+      <root xsi:type="binding:BindingSyncPoint">
+        <srcSelector xsi:type="binding:CollectionSelector" at="-1" feature="items"/>
+        <dstSelector xsi:type="binding:CollectionSelector" at="-1" feature="elements"/>
+        <next xsi:type="binding:BindingSyncPoint">
+          <srcSelector xsi:type="binding:BindingSelector" feature="id"/>
+          <dstSelector xsi:type="binding:CollectionSelector" at="2" feature="children">
+            <next xsi:type="binding:BindingSelector" feature="text"/>
+          </dstSelector>
+        </next>
+      </root>
+    </bindings>
+  </binding:BindingModel>
+  <navigation:Navigation page="/0"/>
+  <draw:Box>
+    <x xsi:type="attributes:Unit"/>
+    <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+      <x xsi:type="attributes:Unit"/>
+      <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+        <expression xsi:type="expr:Variable" name="size" path="w"/>
+      </constraints>
+      <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+        <expression xsi:type="expr:Variable" name="size" path="h"/>
+      </constraints>
+      <children xsi:type="draw:Rect" fillOpacity="1" strokeOpacity="1" opacity="1">
+        <x xsi:type="attributes:Unit"/>
+        <y xsi:type="attributes:Unit"/>
+        <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+        <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+        <matrix xsi:type="transform:Matrix"/>
+        <rx xsi:type="attributes:Unit"/>
+        <ry xsi:type="attributes:Unit"/>
+        <fill xsi:type="color:RGBColor" r="0.972549" g="0.972549" b="0.972549"/>
+      </children>
+      <y xsi:type="attributes:Unit"/>
+      <width xsi:type="attributes:Unit" value="414"/>
+      <height xsi:type="attributes:Unit" value="896"/>
+      <location xsi:type="graphics:Point"/>
+      <matrix xsi:type="transform:Matrix"/>
+      <size xsi:type="graphics:Dimension"/>
+    </children>
+    <children xsi:type="draw:Group" fillOpacity="1" strokeOpacity="1" opacity="1">
+      <matrix xsi:type="transform:Matrix"/>
+      <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+        <x xsi:type="attributes:Unit"/>
+        <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+          <expression xsi:type="expr:Variable" name="size" path="w"/>
+        </constraints>
+        <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+          <expression xsi:type="expr:Variable" name="size" path="h"/>
+        </constraints>
+        <children xsi:type="draw:Rect" fillOpacity="1" strokeOpacity="1" opacity="1">
+          <x xsi:type="attributes:Unit"/>
+          <y xsi:type="attributes:Unit"/>
+          <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+          <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+          <matrix xsi:type="transform:Matrix"/>
+          <rx xsi:type="attributes:Unit"/>
+          <ry xsi:type="attributes:Unit"/>
+          <fill xsi:type="color:NoneColor"/>
+        </children>
+        <y xsi:type="attributes:Unit"/>
+        <width xsi:type="attributes:Unit" value="414"/>
+        <height xsi:type="attributes:Unit" value="841"/>
+        <location xsi:type="graphics:Point"/>
+        <matrix xsi:type="transform:Matrix"/>
+        <size xsi:type="graphics:Dimension"/>
+      </children>
+      <children xsi:type="draw:Group" fillOpacity="1" strokeOpacity="1" opacity="1" attributes="{&quot;scade:bind&quot;:&quot;dogs&quot;}
+">
+        <matrix xsi:type="transform:Matrix" translateX="5" translateY="5"/>
+        <children xsi:type="draw:ScrollGroup" width="404" height="831" strokeOpacity="1" opacity="1" fillOpacity="1" attributes="{&quot;template-id&quot;:&quot;listContent&quot;}
+">
+          <matrix xsi:type="transform:Matrix"/>
+          <constraints xsi:type="constraints:ScrollSizeConstraint" exprStr="size.w size.h">
+            <width xsi:type="expr:Variable" name="size" path="w"/>
+            <height xsi:type="expr:Variable" name="size" path="h"/>
+          </constraints>
+          <children xsi:type="draw:Group" fillOpacity="1" strokeOpacity="1" opacity="1">
+            <matrix xsi:type="transform:Matrix"/>
+            <children xsi:type="draw:Group" fillOpacity="1" strokeOpacity="1" opacity="1" attributes="{&quot;template-id&quot;:&quot;disclosure&quot;}
+">
+              <matrix xsi:type="transform:Matrix" translateX="384" translateY="12"/>
+            </children>
+            <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+              <x xsi:type="attributes:Unit"/>
+              <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+                <expression xsi:type="expr:Variable" name="size" path="w"/>
+              </constraints>
+              <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+                <expression xsi:type="expr:Variable" name="size" path="h"/>
+              </constraints>
+              <y xsi:type="attributes:Unit"/>
+              <width xsi:type="attributes:Unit" value="404"/>
+              <height xsi:type="attributes:Unit" value="45"/>
+              <location xsi:type="graphics:Point"/>
+              <matrix xsi:type="transform:Matrix"/>
+              <size xsi:type="graphics:Dimension"/>
+            </children>
+            <children xsi:type="draw:Group" fillOpacity="1" strokeOpacity="1" opacity="1" attributes="{&quot;template-id&quot;:&quot;elementContent&quot;}
+">
+              <matrix xsi:type="transform:Matrix"/>
+            </children>
+            <children xsi:type="draw:Group" fillOpacity="1" strokeOpacity="1" opacity="1" attributes="{&quot;template-id&quot;:&quot;elementSeparator&quot;}
+">
+              <matrix xsi:type="transform:Matrix" translateX="10" translateY="45"/>
+              <constraints xsi:type="constraints:MatrixConstraint" exprStr="matrix(1 0 0 1 layout.marginLeft size.h)">
+                <scaleX xsi:type="expr:Number" value="1"/>
+                <skewX xsi:type="expr:Number"/>
+                <translateX xsi:type="expr:Variable" name="layout" path="marginLeft"/>
+                <translateY xsi:type="expr:Variable" name="size" path="h"/>
+                <skewY xsi:type="expr:Number"/>
+                <scaleY xsi:type="expr:Number" value="1"/>
+              </constraints>
+              <children xsi:type="draw:Line" fillOpacity="1" strokeOpacity="1" opacity="1" attributes="{&quot;stroke-miterlimit&quot;:&quot;10&quot;,&quot;template-id&quot;:&quot;separatorLine&quot;}
+">
+                <stroke xsi:type="color:RGBColor" r="0.8" g="0.796078" b="0.815686"/>
+                <y1 xsi:type="attributes:Unit" value="0.5"/>
+                <x2 xsi:type="attributes:Unit" value="393"/>
+                <x1 xsi:type="attributes:Unit"/>
+                <y2 xsi:type="attributes:Unit" value="0.5"/>
+                <constraints xsi:type="constraints:DirectConstraint" exprStr="size.width - list1.layout.marginRight" feature="ecore:EReference http://scade.com/svg#//draw/Line/x2">
+                  <expression xsi:type="expr:Minus">
+                    <left xsi:type="expr:Variable" name="size" path="width"/>
+                    <right xsi:type="expr:Variable" name="list1" path="layout marginRight"/>
+                  </expression>
+                </constraints>
+                <matrix xsi:type="transform:Matrix"/>
+              </children>
+            </children>
+            <children xsi:type="draw:Group" fillOpacity="1" strokeOpacity="1" opacity="1" visible="false">
+              <matrix xsi:type="transform:Matrix"/>
+            </children>
+            <children xsi:type="draw:Group" fillOpacity="1" strokeOpacity="1" opacity="1" visible="false">
+              <matrix xsi:type="transform:Matrix"/>
+              <children xsi:type="draw:Group" fillOpacity="1" strokeOpacity="1" opacity="1">
+                <matrix xsi:type="transform:Matrix"/>
+                <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+                  <x xsi:type="attributes:Unit"/>
+                  <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+                    <expression xsi:type="expr:Variable" name="size" path="w"/>
+                  </constraints>
+                  <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+                    <expression xsi:type="expr:Variable" name="size" path="h"/>
+                  </constraints>
+                  <children xsi:type="draw:Rect" fillOpacity="1" strokeOpacity="1" opacity="1">
+                    <x xsi:type="attributes:Unit"/>
+                    <y xsi:type="attributes:Unit"/>
+                    <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+                    <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+                    <matrix xsi:type="transform:Matrix"/>
+                    <rx xsi:type="attributes:Unit"/>
+                    <ry xsi:type="attributes:Unit"/>
+                    <fill xsi:type="color:RGBColor" r="0.298039" g="0.298039" b="0.298039"/>
+                  </children>
+                  <y xsi:type="attributes:Unit"/>
+                  <width xsi:type="attributes:Unit" value="67"/>
+                  <height xsi:type="attributes:Unit" value="45"/>
+                  <location xsi:type="graphics:Point"/>
+                  <matrix xsi:type="transform:Matrix"/>
+                  <size xsi:type="graphics:Dimension"/>
+                </children>
+                <children xsi:type="draw:Text" text="Info" anchor="middle" fontSize="17" fontName="ArialMT" fillOpacity="1" opacity="1" strokeOpacity="1" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+                  <x xsi:type="attributes:Unit" value="33"/>
+                  <y xsi:type="attributes:Unit" value="22.8"/>
+                  <fill xsi:type="color:RGBColor" r="1" g="1" b="1"/>
+                  <matrix xsi:type="transform:Matrix"/>
+                </children>
+              </children>
+            </children>
+            <children xsi:type="draw:Group" fillOpacity="1" strokeOpacity="1" opacity="1" attributes="{&quot;scade:bind&quot;:&quot;text:dogs.name&quot;}
+">
+              <matrix xsi:type="transform:Matrix" translateX="10"/>
+              <children xsi:type="draw:Text" text="Bailey" alignmentBaseline="central" fontSize="17" fontName="Arial-BoldMT" fillOpacity="1" opacity="1" strokeOpacity="1" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+                <x xsi:type="attributes:Unit"/>
+                <y xsi:type="attributes:Unit" value="9.5"/>
+                <fill xsi:type="color:RGBColor" r="0.27451" g="0.27451" b="0.27451"/>
+                <matrix xsi:type="transform:Matrix"/>
+              </children>
+            </children>
+            <children xsi:type="draw:Group" fillOpacity="1" strokeOpacity="1" opacity="1" attributes="{&quot;scade:bind&quot;:&quot;text:dogs.breed&quot;}
+">
+              <matrix xsi:type="transform:Matrix" translateX="142"/>
+              <children xsi:type="draw:Text" text="St. Bernard" alignmentBaseline="central" fontSize="17" fontName="ArialMT" fillOpacity="1" opacity="1" strokeOpacity="1" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+                <x xsi:type="attributes:Unit"/>
+                <y xsi:type="attributes:Unit" value="9.5"/>
+                <fill xsi:type="color:RGBColor" r="0.27451" g="0.27451" b="0.27451"/>
+                <matrix xsi:type="transform:Matrix"/>
+              </children>
+            </children>
+            <children xsi:type="draw:Group" fillOpacity="1" strokeOpacity="1" opacity="1" attributes="{&quot;scade:bind&quot;:&quot;text:dogs.id&quot;}
+">
+              <matrix xsi:type="transform:Matrix" translateX="363"/>
+              <children xsi:type="draw:Text" text="D100" alignmentBaseline="central" fontSize="17" fontName="ArialMT" fillOpacity="1" opacity="1" strokeOpacity="1" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+                <x xsi:type="attributes:Unit"/>
+                <y xsi:type="attributes:Unit" value="9.5"/>
+                <fill xsi:type="color:RGBColor" r="0.8" g="0.8" b="0.8"/>
+                <matrix xsi:type="transform:Matrix"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </children>
+    </children>
+    <children xsi:type="draw:Group">
+      <matrix xsi:type="transform:Matrix" translateY="841"/>
+      <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+        <x xsi:type="attributes:Unit"/>
+        <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+          <expression xsi:type="expr:Variable" name="size" path="h"/>
+        </constraints>
+        <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+          <expression xsi:type="expr:Variable" name="size" path="w"/>
+        </constraints>
+        <y xsi:type="attributes:Unit"/>
+        <width xsi:type="attributes:Unit" value="414"/>
+        <height xsi:type="attributes:Unit" value="55"/>
+        <location xsi:type="graphics:Point"/>
+        <matrix xsi:type="transform:Matrix"/>
+        <size xsi:type="graphics:Dimension"/>
+      </children>
+      <children xsi:type="draw:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}
+">
+        <matrix xsi:type="transform:Matrix"/>
+        <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+          <x xsi:type="attributes:Unit"/>
+          <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+            <expression xsi:type="expr:Variable" name="size" path="w"/>
+          </constraints>
+          <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+            <expression xsi:type="expr:Variable" name="size" path="h"/>
+          </constraints>
+          <children xsi:type="draw:Rect" fillOpacity="1" strokeOpacity="1" opacity="1">
+            <x xsi:type="attributes:Unit"/>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+            <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <rx xsi:type="attributes:Unit"/>
+            <ry xsi:type="attributes:Unit"/>
+            <fill xsi:type="color:RGBColor" r="0.933333" g="0.933333" b="0.933333"/>
+          </children>
+          <y xsi:type="attributes:Unit"/>
+          <width xsi:type="attributes:Unit" value="414"/>
+          <height xsi:type="attributes:Unit" value="55"/>
+          <location xsi:type="graphics:Point"/>
+          <matrix xsi:type="transform:Matrix"/>
+          <size xsi:type="graphics:Dimension"/>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="207"/>
+            <height xsi:type="attributes:Unit" value="55"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}
+">
+            <matrix xsi:type="transform:Matrix"/>
+            <children xsi:type="draw:Group">
+              <matrix xsi:type="transform:Matrix" translateX="89" translateY="5"/>
+              <children xsi:type="draw:Image" xhref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABRCAMAAAB7eHFAAAACiFBMVEUAAAAAAACAgIBVVVWAgIBmZmaAgICSkpKAgICOjo6AgICLi4uAgICJiYmSkpKIiIiPj4+Hh4eOjo6GhoaMjIySkpKLi4uQkJCKioqPj4+JiYmOjo6SkpKNjY2MjIyPj4+Pj4+SkpKOjo6RkZGNjY2QkJCMjIyPj4+SkpKOjo6RkZGOjo6NjY2Pj4+Pj4+RkZGOjo6QkJCOjo6SkpKPj4+RkZGPj4+QkJCSkpKPj4+RkZGRkZGPj4+QkJCSkpKQkJCRkZGPj4+RkZGPj4+QkJCSkpKQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGPj4+SkpKRkZGQkJCRkZGPj4+RkZGQkJCRkZGQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGSkpKRkZGQkJCSkpKRkZGRkZGRkZGQkJCRkZGSkpKSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKSkpIWRJMCAAAA13RSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0fICIjJCUmJygpKissLS8wMjM0NTY4OTo7Pj9AQUNERUZHSElKS0xNTk9RVFVWV1hZW11eX2BhY2RlZmhpamtsbW5vcXR1dnd4enx9f4CBgoOFh4iJiouMjY+QkZKTlJWXmJmam52foKGjpKWnqaqrrK2usLGys7W2t7i5uru8vr/Aw8TFxsfIyczNz9DR0tPU1dbX2Nna29zd3+Dh4uPk5ebn6Onq6+zt7/Dx8vP09fb3+Pn6+/z9/mBbZ+MAAAQJSURBVHgBvdfpd1NVF8fxX5NAAoWHPAwCWtQKalUGkAKKIii0QFWgigoqKChYQXAQKdQiteDAICgyWFEUQUBFBgcBRRlKW6BD04bk+++49K6VJl3JHZqz/Lw6L89vn+zsfeXagAky76lKmVfzV45M6xulUKbNhVUybReckmF92oARMmsOwEqZtQPguIzqHQHgVpk0C6JReEkmbYdPd8JhGZTbAjNLgBtlTgk0BEOXYZHM2QLrpSr4Wsb0aILx0niIDZIpM7Ba9BTMlymbYJkkLYfPZUjwKuRLUj5E/y8zihIPtB8ekxnvwzzrNA92yIhuDUTC1jEcobWXTHgQtkqWj+BhmbABpiWVd4sMCNRTG0iUopbGkLI3CdYqYS0UKXtVMEoJo+E9Zc1fmzpFTlAfULYmwhIlWQr3K1vriOUpSV6Md+SkeLG9i+xVii+4uNhesXKrcVCqFKU4eDdXUnEtdppylaJXE3YuTde/Bu4C4LOqtBaok4VVaVVfAdjTMRqebQEaZioL138JtC5UktuOAFT3VFcV1QHfFShFt9djwMkR6pJgBRBf1V2dTTgDRJ7PkXe3/wCcnag0+nwIsPs6efVkM7Al0/B6tAE4/4A8CW8FrpQqoyH7ErVxa9wZYP9NsuF7oQ04PFQu+cquQbTML3sjjgONj8uVG/YBv4yRo1BFHNjcR86m11mt7sbkc8DpQjkIVVqt7lK/j4FomU92Co5are7eE43AV3nKbF6L1epe5B8E6mcog/A2q9U98q8AapRBIbC6uzy7B5irDHLOdm3+rYG2sDIp79r8P2O7NhbC1R7yaiQwS7LL/4i8WgnNvZRZOeyUV8cclsZCaO8nb24BZkj2+Z+RNy/ClaDslMMBeXOw808m+MbW/ko2DrhZXgyOwxQlGX4ULkzrnP9lefE01AWU4FvaBkB179T8P8mLGlivhPxvsHB6Qmr+MXIv3A73dvzLNQGRRQubgdhbweT8a+TebDjnk2XwboDjw6WhBwCOjUzKf8Ev17Z13KGkHmBdD0nyLYkA7WX+jvxT5FaoCcZaddgEUJt49juPABwalsj/gdwqhtP6x6Q/AfYMVEJgeRRoWZBj5bdWYlc2wmuSer4dT7OzjToGsHeIlZ/ZcsdfB8Olu38G+PEudRJ8MwZcnmPl3+3+0+mkuq24BlARSrc//Qqwvb/KIepyS6yAZQVHAC4+pLR6VsaBC0XjgOfkyh+wvhVgV+Zb3Pc7wMYGOCQ3RmNpXSAb/9uAhaFy4VUAOHqH7E09BwCvyIUTAPE1QTnpuxmA3+RsGMD5yXKj5BLAWDlaCuwcIHcGfgJUytG3tHgZaKWXuRRw3Ljj3xfIi7wapjoOktVBeTS/2rFK8m6Q/gN/A0O640AHZc9eAAAAAElFTkSuQmCC" attributes="{&quot;template-id&quot;:&quot;node-image&quot;}
+">
+                <x xsi:type="attributes:Unit"/>
+                <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Image/height">
+                  <expression xsi:type="expr:Variable" name="size" path="h"/>
+                </constraints>
+                <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Image/width">
+                  <expression xsi:type="expr:Variable" name="size" path="w"/>
+                </constraints>
+                <y xsi:type="attributes:Unit"/>
+                <width xsi:type="attributes:Unit" value="28"/>
+                <height xsi:type="attributes:Unit" value="28"/>
+                <matrix xsi:type="transform:Matrix"/>
+              </children>
+            </children>
+            <children xsi:type="draw:Group">
+              <matrix xsi:type="transform:Matrix" translateX="85" translateY="33"/>
+              <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+                <x xsi:type="attributes:Unit"/>
+                <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+                  <expression xsi:type="expr:Variable" name="size" path="h"/>
+                </constraints>
+                <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+                  <expression xsi:type="expr:Variable" name="size" path="w"/>
+                </constraints>
+                <y xsi:type="attributes:Unit"/>
+                <width xsi:type="attributes:Unit" value="37"/>
+                <height xsi:type="attributes:Unit" value="19"/>
+                <location xsi:type="graphics:Point"/>
+                <matrix xsi:type="transform:Matrix"/>
+                <size xsi:type="graphics:Dimension"/>
+              </children>
+              <children xsi:type="draw:Text" text="DogList" anchor="middle" fontSize="11" fontName="HelveticaNeue" alignmentBaseline="central" fillOpacity="1" opacity="1" strokeOpacity="1" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+                <x xsi:type="attributes:Unit" value="18"/>
+                <y xsi:type="attributes:Unit" value="9"/>
+                <fill xsi:type="color:RGBColor" r="0.27451" g="0.27451" b="0.27451"/>
+                <matrix xsi:type="transform:Matrix"/>
+              </children>
+            </children>
+          </children>
+        </children>
+        <children xsi:type="draw:Group">
+          <matrix xsi:type="transform:Matrix" translateX="207"/>
+          <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+            <x xsi:type="attributes:Unit"/>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+              <expression xsi:type="expr:Variable" name="size" path="h"/>
+            </constraints>
+            <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+              <expression xsi:type="expr:Variable" name="size" path="w"/>
+            </constraints>
+            <y xsi:type="attributes:Unit"/>
+            <width xsi:type="attributes:Unit" value="207"/>
+            <height xsi:type="attributes:Unit" value="55"/>
+            <location xsi:type="graphics:Point"/>
+            <matrix xsi:type="transform:Matrix"/>
+            <size xsi:type="graphics:Dimension"/>
+          </children>
+          <children xsi:type="draw:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}
+">
+            <matrix xsi:type="transform:Matrix"/>
+            <children xsi:type="draw:Group">
+              <matrix xsi:type="transform:Matrix" translateX="89" translateY="5"/>
+              <children xsi:type="draw:Image" xhref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAMAAAArteDzAAABGlBMVEUAAACAgIBVVVWAgICAgICOjo6AgICJiYmSkpKIiIiGhoaSkpKLi4uQkJCKioqPj4+JiYmMjIyPj4+Li4uOjo6NjY2QkJCNjY2RkZGOjo6QkJCQkJCRkZGRkZGPj4+RkZGPj4+RkZGRkZGRkZGPj4+SkpKQkJCQkJCRkZGQkJCSkpKQkJCRkZGRkZGRkZGRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKSkpKRkZGRkZGSkpKRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKSkpKtnLlmAAAAXXRSTlMAAgMGCAkMDQ4PExUWFxgZGh8gISQmJy88PUVHSEpLUVJWXV9gYmNqa2xwcXJ9h4mOkJGSmJmen6Cjqauur7C9vr/BwsjJy87P0tPY3d/g4ebn7O/w8fL19vn8/f7RmKQUAAADeUlEQVR4AbXZ/1MaRxzG8adAFRRag180tRFEq9GoBEQRq0XMSdBqtYqiOd7//7/RYQbbgR7ygdu8fueZ2b3jdvdZDZVe2TmoXd7cv7zc31zWDnZW0gpnJle+hX635dyMxjSxXm0zQLu6PqnRLRy26LqrlXa3N1ZXN7Z3S7U7ulqHCxrN4rFPh1/PL8fVI76cr3+jwz9elF2qAh3e5pQCTW160FFJySay1QR4LszrDfOFZ4DmVkQGsxcAj3tJDZHcewS4mNVQ2QegfTQtg+mjNvCQHTb0AsDVkoyWrgAKEb0hdgqwH5VZtAhwGtNAifP+0RhkHoDzxMDMBnA9pxHNXQONAamxc6CRUrDfPn9eU7BUAziPKUDkFPgS1wB/wO8aIH4OnAY9rQLQiGucUMUbQCHg/QSuUxovVKlrIKs+sw/wMKdxQzXX+f1s34ReAFmNH6oMcNE7rVvAvsKEqghs9UxJE66i4UKjl9BM6T8VaC8pXKiW2lDRvxaBI4UN1RGwqFfH8DQdPnT6EY7VteDDnsKHag/819XwEJ6TLkKTz3AodUy2oCgXoSpAa1Id68C8m9B5YF0dZ+DJTag8OJOkmTZsugrdhPaMpBz4U65Cp75BTlIZ6nIVqjqUJd1C3l1oHm6lNLDsLnQZSGsFiLsLjQMr2oE7uQvVHezoAGouQ2twoBqUXIaWoKYr2HUZuguXuoFtl6HbcKN72HAZugH3eoFVl6Gr8PJ9QoOG/0vm/y6wDz/wQf1JIPuDuoRde6jxlapByRhqf/mD/qaxHwNFzX/THfhbdrYPygqQkJ3p05cGfpWd5SNtXk6M8nBrX/iM6lC2L9E2Uz7kupuJj3JkE/wZSaqCJ0c8qNo3aDbzwLp9K2lThNaEfdNr0t302rfnHfbtefcgkVRo009wbD/ymPQdeVQB3iukJaBiP0aaRK+gmbIfeE32+w+8inhAViFkAS+iHuluiWBgLhGkDHD9k2yC646MrZgJZi9mFDnpr5DsmV+Ak8jgsssyA/ayS0p8Hb+W+5pwWiBm3y4QpdjJyFXnPsBJzFDKvh+1lLXUoe2j5Aj1ccZQdHsAT5ai+wnAm5XBD91Kvvh2JV/sq+TNlwcf7ZcHI15zJNQjsZyv+4ZrDlcXMgYTa1WfAfzq2oTG9HOu/Bf2Sy67dx8+lc5er+PODj59eKdh/gHz8XDxSR6kGQAAAABJRU5ErkJggg==" attributes="{&quot;template-id&quot;:&quot;node-image&quot;}
+">
+                <x xsi:type="attributes:Unit"/>
+                <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Image/height">
+                  <expression xsi:type="expr:Variable" name="size" path="h"/>
+                </constraints>
+                <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Image/width">
+                  <expression xsi:type="expr:Variable" name="size" path="w"/>
+                </constraints>
+                <y xsi:type="attributes:Unit"/>
+                <width xsi:type="attributes:Unit" value="28"/>
+                <height xsi:type="attributes:Unit" value="28"/>
+                <matrix xsi:type="transform:Matrix"/>
+              </children>
+            </children>
+            <children xsi:type="draw:Group">
+              <matrix xsi:type="transform:Matrix" translateX="56" translateY="33"/>
+              <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
+">
+                <x xsi:type="attributes:Unit"/>
+                <constraints xsi:type="constraints:DirectConstraint" exprStr="size.h" feature="ecore:EReference http://scade.com/svg#//draw/Box/height">
+                  <expression xsi:type="expr:Variable" name="size" path="h"/>
+                </constraints>
+                <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
+                  <expression xsi:type="expr:Variable" name="size" path="w"/>
+                </constraints>
+                <y xsi:type="attributes:Unit"/>
+                <width xsi:type="attributes:Unit" value="95"/>
+                <height xsi:type="attributes:Unit" value="19"/>
+                <location xsi:type="graphics:Point"/>
+                <matrix xsi:type="transform:Matrix"/>
+                <size xsi:type="graphics:Dimension"/>
+              </children>
+              <children xsi:type="draw:Text" text="Grouped By Breed" anchor="middle" fontSize="11" fontName="HelveticaNeue" alignmentBaseline="central" fillOpacity="1" opacity="1" strokeOpacity="1" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}
+">
+                <x xsi:type="attributes:Unit" value="47"/>
+                <y xsi:type="attributes:Unit" value="9"/>
+                <fill xsi:type="color:RGBColor" r="0.27451" g="0.27451" b="0.27451"/>
+                <matrix xsi:type="transform:Matrix"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </children>
+    </children>
+    <y xsi:type="attributes:Unit"/>
+    <width xsi:type="attributes:Unit" value="414"/>
+    <height xsi:type="attributes:Unit" value="896"/>
+    <location xsi:type="graphics:Point"/>
+    <matrix xsi:type="transform:Matrix"/>
+    <size xsi:type="graphics:Dimension"/>
+  </draw:Box>
+</xmi:XMI>
