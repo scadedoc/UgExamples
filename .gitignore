@@ -5,4 +5,5 @@ products/
 *.scadeapp
 .DS_Store
 CMakeLists.txt
-fonts/
+Package.swift
+Package.resolved
