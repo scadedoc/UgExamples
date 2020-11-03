@@ -31,7 +31,7 @@ class ModalContentPagePageAdapter: SCDLatticePageAdapter {
 	func show() {
 		
 		// <page>.show(window) is the default method to show a page in a window
-		self.show(self.modalWindow)
+		self.show(view: self.modalWindow)
 	}
 }
 	
