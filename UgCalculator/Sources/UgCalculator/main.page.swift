@@ -122,6 +122,9 @@ class MainPageAdapter: SCDLatticePageAdapter {
 				}
 				// Add gesture to button
 			    btn.drawing!.gestureRecognizers.append(gestureHandler)
+			    for _ in 0 … 10{
+			    	
+			    }
 		    }
 		} 
 	}
