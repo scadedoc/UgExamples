@@ -1,9 +1,9 @@
 spm:
-  - url: 
+  - url:
     from:
-    path: 
+    path:
     branch:
-    exact: 
+    exact:
     revision:
     search-paths: []
     linked-libs: []
@@ -13,35 +13,38 @@ linked-libs: []
 
 ios:
   name: UgListControlDemo
-  id: com.scade.UgListControlDemo
+  id: com.scade.uglistcontroldemo
   device-family: iphone # iphone, ipad or universal
   supported-interface-orientations: ['portrait'] # portrait, upside_down, landscape_left or landscape_right
   supported-interface-orientationsiPad: ['portrait']
-  entitlements-file: 
+  entitlements-file:
   app-delegate-file:
+  export-method: ad-hoc # app-store, enterprise or development
   simulator:
     os: 12.1
     output: UgListControlDemo/.build/ios-simulator
+    product-path: UgListControlDemo/Product/ios-simulator
     extra-args:
     search-paths: []
     linked-libs: []
-  device: 
+  device:
     os: 12.1
     output: UgListControlDemo/.build/ios-device
-    extra-args: 
+    product-path: UgListControlDemo/Product/ios-device
+    extra-args:
     search-paths: []
     linked-libs: []
   mac:
     os: 10.11
-    output: UgListControlDemo/.build/scade-simulator
-    extra-args: 
+    output:  UgListControlDemo/.build/scade-simulator
+    product-path: UgListControlDemo/Product/scade-simulator
+    extra-args:
     search-paths: []
     linked-libs: []
   sign:
-    provision-profile: /Users/juliawork/ScadeTools/certificates/Scade_Adhoc.mobileprovision
-    certificate: /Users/juliawork/ScadeTools/certificates/Certificates.p12
-    beta-reports-active: false
-  icons: 
+    provision-profile:
+    certificate:
+  icons:
     iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5
       60X60_2X:
       76X76_2X:
@@ -49,7 +52,7 @@ ios:
       83.5X83.5_2X:
     marketing:
       1024X1024_1X:
-  plist: 
+  plist:
     - key: CFBundleShortVersionString
       type: string  # string, bool, int, list or dict
       value: 1.0
@@ -58,7 +61,7 @@ ios:
       value: 1
     - key: NSLocationWhenInUseUsageDescription
       type: string
-      value: 
+      value:
     - key: NSCameraUsageDescription
       type: string
       value: Take pictures from camera
@@ -68,40 +71,44 @@ ios:
 
 android:
   name: UgListControlDemo
-  id: com.scade.UgListControlDemo
+  id: com.scade.uglistcontroldemo
   version-name: 1.0.0
   version-code: 1
   build-type: Debug
   key-store-properties:
-  google-api-key: 
+  google-api-key:
   manifest-file:
   permissions: []
   armeabi-v7a:
     output: UgListControlDemo/.build/android-armeabi-v7a
+    product-path: UgListControlDemo/Product/android-armeabi-v7a
     extra-args:
     search-paths: []
     linked-libs: []
   arm64-v8a:
     output: UgListControlDemo/.build/android-arm64-v8a
+    product-path: UgListControlDemo/Product/android-arm64-v8a
     extra-args:
     search-paths: []
     linked-libs: []
   x86:
     output: UgListControlDemo/.build/android-x86
+    product-path: UgListControlDemo/Product/android-x86
     extra-args:
     search-paths: []
     linked-libs: []
   x86_64:
     output: UgListControlDemo/.build/android-x86_64
+    product-path: UgListControlDemo/Product/android-x86_64
     extra-args:
     search-paths: []
     linked-libs: []
   intent-filters:
     - action:
       scheme:
-      categories: [] 
+      categories: []
   icons:
     mdpi:
     hdpi:
-    xhdpi: 
+    xhdpi:
     xxhdpi:

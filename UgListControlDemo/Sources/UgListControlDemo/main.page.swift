@@ -20,7 +20,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		
 		// wire toolbar buttons
 		let groupedByButton = self.page!.getWidgetByName("itmGroupedByBreed") as! SCDWidgetsClickable
-		groupedByButton.onClick.append(SCDWidgetsEventHandler{_ in self.navigation!.go("groupedByBreed.page")})
+		groupedByButton.onClick.append(SCDWidgetsEventHandler{_ in self.navigation!.go(page: "groupedByBreed.page")})
 		
 		
 	}

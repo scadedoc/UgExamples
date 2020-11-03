@@ -10,7 +10,7 @@ class GroupedByBreedPageAdapter: SCDLatticePageAdapter {
 		setupDogs()
 		
 		let backbutton = self.page!.getWidgetByName("itmDoglist") as! SCDWidgetsClickable
-		backbutton.onClick.append(SCDWidgetsEventHandler{_ in self.navigation!.go("main.page")})
+		backbutton.onClick.append(SCDWidgetsEventHandler{_ in self.navigation!.go(page: "main.page")})
 	}
 	
 	func setupDogs() {

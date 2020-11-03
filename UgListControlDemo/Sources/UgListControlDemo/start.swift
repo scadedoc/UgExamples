@@ -13,6 +13,6 @@ class UgListControlDemo: SCDApplication {
 		groupedByBreedPage.load("groupedByBreed.page")
 		
 		mainAdapter.load("main.page")
-		mainAdapter.show(window)
+		mainAdapter.show(view: window)
 	}
 }
