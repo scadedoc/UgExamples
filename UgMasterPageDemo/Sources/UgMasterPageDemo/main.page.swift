@@ -31,13 +31,13 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		self.pageContainer = self.page!.getWidgetByName("pagecontainer1") as? SCDLatticePageContainer 
 		
 		// Finally, we use the page container to show page1
-		self.page1.show(self.pageContainer)
+		self.page1.show(view: self.pageContainer)
 	}
 	
 	func showPage(_ page:SCDLatticePageAdapter) {
 		// our syntax is the other way round
 		// we tell the page to display itself in container X
 		// we don't tell the container to show a page
-		page.show(self.pageContainer)
+		page.show(view: self.pageContainer)
 	}
 }
