@@ -1,4 +1,5 @@
 import ScadeKit
+import Foundation
 
 class MainPageAdapter: SCDLatticePageAdapter {
 	
@@ -20,11 +21,11 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		
 		print("name \(label.name)")
 		print("text \(label.text)")
-		print("isEnabled : \(label.isEnable)")
-		print("isVisible : \(label.isVisible)")
-		print("isMultiline : \(label.isMultiline)")
-		print("isWrapText : \(label.isWrapText)")
-		print("label.drawing.accessibilityLabel : \(label.drawing!.accessibilityLabel)")
+		print("isEnabled : \(label.enable)")
+		print("isVisible : \(label.visible)")
+		print("isMultiline : \(label.multiline)")
+		print("isWrapText : \(label.wrapText)")
+		print("label.drawing.accessibilityLabel : \(label.drawing!.accessibilityTitle)")
 	}
 	
 	func setGeneralProperties() {
@@ -33,9 +34,9 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func setFontProperties() {
-		label1.font!.isBold = true
-		label1.font!.isItalic = true
-		label1.font!.isLineThrough = true
+		label1.font!.bold = true
+		label1.font!.italic = true
+		label1.font!.lineThrough = true
 	}
 	
 }
