@@ -10,6 +10,6 @@ class UgMapControl: SCDApplication {
 		mainAdapter = MainPageAdapter()
 		
 		mainAdapter.load("main.page")
-		mainAdapter.show(window)
+		mainAdapter.show(view: window)
 	}
 }

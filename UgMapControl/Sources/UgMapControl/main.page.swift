@@ -77,10 +77,10 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	func setOverlayAroundSushiPlace() {
 		
         // get the map specific coordinates
-	    let coor2d = mapWidget.convert(fromGeoLocation: bestSushiLocation)
+	    let coor2d = mapWidget.convertFromGeoLocation(bestSushiLocation)
 	    
 	   	// Create overlay circle of radius 1000m 
-	    let overlayCircle = SCDSvgCircle(cx:SCDSvgUnit(value:coor2d.x),cy:SCDSvgUnit(value:coor2d.y),r:SCDSvgUnit(value:1000))
+	    let overlayCircle = SCDSvgCircle(cx:SCDSvgUnit(value:coor2d!.x),cy:SCDSvgUnit(value:coor2d!.y),r:SCDSvgUnit(value:1000))
 	    overlayCircle.fill = SCDColor(r: 1, g: 0, b: 0, a: 0.2)
 	    
 	    // Create an overlay
@@ -94,10 +94,10 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	
 	func gotoCurrentLocation() {	
 		// currently, the desktop returns isShowUserLocation==false
-		if(mapWidget.isShowUserLocation) {
+		if(mapWidget.showUserLocation) {
 			let curr = mapWidget.userLocation
-			print(curr.latitude)
-			print(curr.longitude)
+			print(curr?.latitude ?? 0)
+			print(curr!.longitude)
 			mapWidget.moveToUserLocation()
 		}
 	}	
