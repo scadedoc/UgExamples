@@ -7,7 +7,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		super.load(path)
 		
 		[1,2,3,4,5,6,7].forEach{
-			let name = "verticalview\($0)";
+			let name = "listView\($0)";
 			if let clickable = self.page!.getWidgetByName(name) as? SCDWidgetsClickable {
 				clickable.onClick.append(SCDWidgetsEventHandler{ _ in self.menuClicked(name)})
 			}
@@ -18,5 +18,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		let label1 = self.page!.getWidgetByName("label1") as! SCDWidgetsLabel
 		label1.text = "Menu \(id) clicked"
 		print("Menu \(id) clicked")
+		
+		
 	}
 }
