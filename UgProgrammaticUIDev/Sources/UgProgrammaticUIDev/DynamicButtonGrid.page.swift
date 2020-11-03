@@ -87,8 +87,8 @@ class DynamicButtonGridPageAdapter: SCDLatticePageAdapter {
 	  let gridData = SCDLayoutGridData()
 	  gridData.horizontalAlignment = .center
 	  gridData.verticalAlignment = .middle
-	  gridData.isGrabHorizontalSpace = true
-	  gridData.isGrabVerticalSpace = true
+	  gridData.grabHorizontalSpace = true
+	  gridData.grabVerticalSpace = true
 	  return gridData
 	}
 	

@@ -27,8 +27,8 @@ class FormEntryPagePageAdapter: SCDLatticePageAdapter {
 		let layoutData = SCDLayoutGridData()
 		layoutData.horizontalAlignment = .center
 		layoutData.verticalAlignment = .middle
-		layoutData.isGrabHorizontalSpace = true
-		layoutData.isGrabVerticalSpace = true
+		layoutData.grabHorizontalSpace = true
+		layoutData.grabVerticalSpace = true
 		control.layoutData = layoutData
 		return layoutData
 	}
@@ -40,7 +40,7 @@ class FormEntryPagePageAdapter: SCDLatticePageAdapter {
 		// Position in row #1 and use minimal space
 		let layoutData = configureLayoutData(of:headerView)
 		layoutData.row = 0
-		layoutData.isGrabVerticalSpace = false
+		layoutData.grabVerticalSpace = false
 		layoutData.heightConstraint = .wrapContent
 		
 		// Create the label 
@@ -95,7 +95,7 @@ class FormEntryPagePageAdapter: SCDLatticePageAdapter {
 		let layoutData = SCDLayoutGridData()
   		layoutData.column = col
    		layoutData.row = row    
-		layoutData.isGrabVerticalSpace = false
+		layoutData.grabVerticalSpace = false
 		layoutData.heightConstraint = .wrapContent
     	
    		label.layoutData = layoutData
@@ -110,7 +110,7 @@ class FormEntryPagePageAdapter: SCDLatticePageAdapter {
 		let layoutData = configureLayoutData(of:textbox)
 		layoutData.column = inCol
 		layoutData.row = inRow
-		layoutData.isGrabVerticalSpace = false
+		layoutData.grabVerticalSpace = false
 		layoutData.heightConstraint = .wrapContent
 		layoutData.widthConstraint = .matchParent
 		return textbox
@@ -122,7 +122,7 @@ class FormEntryPagePageAdapter: SCDLatticePageAdapter {
 		layoutData.row = 2
 		layoutData.widthConstraint = .wrapContent
 		layoutData.heightConstraint = .wrapContent
-		layoutData.isGrabVerticalSpace = false
+		layoutData.grabVerticalSpace = false
 		
 		let button =  SCDWidgetsButton()
 		button.text = "Press me"

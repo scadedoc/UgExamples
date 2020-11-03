@@ -13,8 +13,8 @@ class ListControlPageAdapter: SCDLatticePageAdapter {
 		self.page!.children.append(listControl!)
 	}
 	
-	override func show(_ view: SCDLatticeView?) {
-		super.show(view)	
+	override func show(view: SCDLatticeView?) {
+		super.show(view: view)	
 		// Step 2: populate data in list control. Population needs to be done in SHOW method
 		let names = [("Peter","Parker"),("Louise","Lane"),("Bruce","Willis")]
 		self.listControl!.items = names.map{ return $0.0 }
@@ -30,7 +30,7 @@ class ListControlPageAdapter: SCDLatticePageAdapter {
 		layoutData.heightConstraint = .matchParent
 		
 		// First step, setup template 
-		listControl.template.element?.children = [createTemplate()]
+		listControl.template?.element?.children = [createTemplate()]
 		
 		// return control
 		return listControl
@@ -68,8 +68,8 @@ class ListControlPageAdapter: SCDLatticePageAdapter {
 		let layoutData = SCDLayoutGridData()
 		layoutData.horizontalAlignment = .left
 		layoutData.verticalAlignment = .middle
-		layoutData.isGrabHorizontalSpace = true
-		layoutData.isGrabVerticalSpace = true
+		layoutData.grabHorizontalSpace = true
+		layoutData.grabVerticalSpace = true
 		control.layoutData = layoutData
 		return layoutData
 	}

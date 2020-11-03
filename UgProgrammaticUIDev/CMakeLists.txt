@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 include(ScadeSDK)
-if("${SCADESDK_TARGET}" STREQUAL "macos")
+if(NOT "${SCADESDK_TARGET}" STREQUAL "iphoneos" AND
+   NOT "${SCADESDK_TARGET}" STREQUAL "iphonesimulator")
     set(use_spm_flag USE_SPM)
 else()
     set(use_spm_flag)
@@ -22,7 +23,7 @@ add_scade_application(UgProgrammaticUIDev "com.scade.UgProgrammaticUIDev"
 			main.page
 			HelloWorld.page
 		RESOURCES_GROUP NOBASE NOPREFIX
-			"Resources/check5.svg"
+
 	IOS_EXPORT_METHOD "ad-hoc"
 	MACOS_PLIST_PROPERTIES
 		"CFBundleShortVersionString" "STRING" "1.0"

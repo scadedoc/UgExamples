@@ -17,8 +17,8 @@ class HelloWorldPageAdapter: SCDLatticePageAdapter {
 		gridData.row = 0 // here, we tell the layout manager that this control belongs into row 1 (i.e 0)
 		gridData.horizontalAlignment = .center
 		gridData.verticalAlignment = .middle
-		gridData.isGrabHorizontalSpace = true
-		gridData.isGrabVerticalSpace = true
+		gridData.grabHorizontalSpace = true
+		gridData.grabVerticalSpace = true
 		
 		// assign layout to button
 		button.layoutData = gridData
@@ -48,7 +48,7 @@ class HelloWorldPageAdapter: SCDLatticePageAdapter {
 	func getBitmapControl() -> SCDWidgetsImage {
 		let svg = SCDWidgetsImage()
 		svg.url = "res/check5.svg" 
-		svg.isContentPriority = false // this needs to be set to false, else we source img from content property
+		svg.contentPriority = false // this needs to be set to false, else we source img from content property
 		self.configureGridData(of:svg)
 		svg.url = "Ewq"
 		return svg
@@ -58,8 +58,8 @@ class HelloWorldPageAdapter: SCDLatticePageAdapter {
 		let gridData = SCDLayoutGridData()
 		gridData.horizontalAlignment = .center
 		gridData.verticalAlignment = .middle
-		gridData.isGrabHorizontalSpace = true
-		gridData.isGrabVerticalSpace = true
+		gridData.grabHorizontalSpace = true
+		gridData.grabVerticalSpace = true
 		control.layoutData = gridData
 	}
 }

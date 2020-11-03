@@ -23,8 +23,8 @@ class UgProgrammaticUIDev: SCDApplication {
 		dynamicButtonGridPage.load("DynamicButtonGrid.page")
 		
 		// To run the samples, uncomment 1 - but only one - of the below lines
-		//helloWorldPage.show(window)
-		//formEntryPage.show(window)
-		dynamicButtonGridPage.show(window)
+		helloWorldPage.show(view: window)
+		//formEntryPage.show(view: window)
+		//dynamicButtonGridPage.show(view: window)
 	}
 }
