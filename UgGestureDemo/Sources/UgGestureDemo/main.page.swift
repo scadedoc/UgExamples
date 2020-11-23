@@ -1,4 +1,5 @@
 import ScadeKit
+import Foundation
 
 class MainPageAdapter: SCDLatticePageAdapter {
 
@@ -7,9 +8,6 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	
 	// holds reference to circle
 	var circle : SCDSvgCircle?
-	
-	// holds button reference
-	var button1 : SCDWidgetsButton?
 	
 	// colors
 	let colorDefaultGreen = SCDGraphicsRGB(red: 0, green: 142, blue: 0, alpha: 255)
@@ -27,18 +25,17 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	 	self.page!.drawing!.gestureRecognizers.append(swipeGesture) 
 		
 		// setup gesture for the rectangle only
-		if let rect = self.page!.drawing!.find(byId: "rect1") as? SCDSvgRect {
+		if let rect = self.page!.drawing!.findById("rect1") as? SCDSvgRect {
 			rect.gestureRecognizers.append(getTapGesture("tapped rectangle"))
 		}
 		
 		// setup and move circle using Pan gesture
-		self.circle = self.page!.drawing!.find(byId: "circle1") as? SCDSvgCircle
+		self.circle = self.page!.drawing!.findById("circle1") as? SCDSvgCircle
 		self.circle!.gestureRecognizers.append(getPanGesture())
 		
 		// add gesture to button. Is changes the background color
 		// of the button when button is pressed (began) and finger is lifted up (ended)
-		self.button1 = self.page!.getWidgetByName("button1") as? SCDWidgetsButton
-		self.button1!.drawing!.gestureRecognizers.append(getUpDownGestureForButton())
+		self.button1.drawing!.gestureRecognizers.append(getUpDownGestureForButton())
 		
 	}
 	
@@ -53,7 +50,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		}
 		
 		// Step 2 : Create recognizer
-		let tapGestureRecognizer = SCDSvgTapGestureRecognizer(handler: onActionTap)
+		let tapGestureRecognizer = SCDSvgTapGestureRecognizer(onActionTap)
 		
 		// Step 3 : Configure recognizer. Set number of taps to wait for before triggering
 		tapGestureRecognizer.numTaps = 1
@@ -71,7 +68,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		}
 		
 		// Step 2 : Create recognizer
-		let tapGestureRecognizer = SCDSvgTapGestureRecognizer(handler: onActionTap)
+		let tapGestureRecognizer = SCDSvgTapGestureRecognizer(onActionTap)
 		
 		// Step 3 : Configure recognizer. Set number of taps to wait for before triggering
 		tapGestureRecognizer.numTaps = 1
@@ -108,7 +105,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		}
 		
 		// create recognizer
-		let panGestureRecognizer = SCDSvgPanGestureRecognizer(handler: onPanAction) 
+		let panGestureRecognizer = SCDSvgPanGestureRecognizer(onPanAction) 
 		
 		// Configure gesture --> nothing to configure. Return it
 		return panGestureRecognizer
@@ -123,16 +120,16 @@ class MainPageAdapter: SCDLatticePageAdapter {
 			// we set the button background a different color
 			switch(recognizer!.state) {
 				case .began:
-					self.button1!.backgroundColor = self.colorPressedGreen
+					self.button1.backgroundColor = self.colorPressedGreen
 				case .ended: 
-					self.button1!.backgroundColor = self.colorDefaultGreen
+					self.button1.backgroundColor = self.colorDefaultGreen
 				default:
 					return 
 			}
 		}
 			
 		// create recognizer
-		let panGestureRecognizer = SCDSvgPanGestureRecognizer(handler: onPanAction) 
+		let panGestureRecognizer = SCDSvgPanGestureRecognizer(onPanAction) 
 		
 		// Configure gesture --> nothing to configure. Return it
 		return panGestureRecognizer
