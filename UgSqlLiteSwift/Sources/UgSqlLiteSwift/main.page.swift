@@ -3,7 +3,7 @@ import SQLite
 
 class MainPageAdapter: SCDLatticePageAdapter {
 
-	@objc dynamic var label : String = ""
+	var label : String = ""
 	
 	// page adapter initialization
 	override func load(_ path: String) {		
@@ -37,6 +37,8 @@ class MainPageAdapter: SCDLatticePageAdapter {
 			    print("id: \(user[id]), name: \(user[name]), email: \(user[email])")
 			    
 			    self.label = "Hello " + ( user[name]  ?? "User not found")
+			    let label1 = self.page!.getWidgetByName("label1") as! SCDWidgetsLabel
+			    label1.text = self.label
 			    
 			    // id: 1, name: Optional("Alice"), email: alice@mac.com
 			}
