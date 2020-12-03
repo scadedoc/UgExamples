@@ -1,5 +1,6 @@
 import ScadeKit
 import os
+import Foundation
 
 enum SCDLoggingType : Int {
     case info = 1
