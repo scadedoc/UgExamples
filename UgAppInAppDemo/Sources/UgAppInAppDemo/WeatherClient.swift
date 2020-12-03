@@ -1,5 +1,8 @@
 import ScadeKit
 import Foundation
+#if os(Android)	
+	import FoundationNetworking
+#endif
 
 // MARK: - WeatherInfo
 struct WeatherInfo: Codable {
