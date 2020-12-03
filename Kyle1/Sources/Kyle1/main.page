@@ -1,5 +1,5 @@
 <?xml  version="1.0" encoding="UTF-8" standalone="no"?>
-<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:attributes="http://scade.com/svg/draw/attributes" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:color="http://scade.com/svg/style/color" xmlns:constraints="http://scade.com/svg/constraints" xmlns:draw="http://scade.com/svg/draw" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expr="com.scade.sdk.expr" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:transform="http://scade.com/svg/transform" xmlns:widgets="http://scade.com/sdk/view/widgets">
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:attributes="http://scade.com/svg/draw/attributes" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:constraints="http://scade.com/svg/constraints" xmlns:draw="http://scade.com/svg/draw" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expr="com.scade.sdk.expr" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:transform="http://scade.com/svg/transform" xmlns:widgets="http://scade.com/sdk/view/widgets">
   <widgets:Page name="main" drawing="/3">
     <children xsi:type="widgets:GridView" name="grid1" drawing="/3/@children.1/@children.0">
       <layout xsi:type="layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
@@ -28,16 +28,6 @@
       <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
         <expression xsi:type="expr:Variable" name="size" path="w"/>
       </constraints>
-      <children xsi:type="draw:Rect">
-        <x xsi:type="attributes:Unit"/>
-        <y xsi:type="attributes:Unit"/>
-        <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
-        <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
-        <matrix xsi:type="transform:Matrix"/>
-        <rx xsi:type="attributes:Unit"/>
-        <ry xsi:type="attributes:Unit"/>
-        <fill xsi:type="color:RGBColor" r="0.972549" g="0.972549" b="0.972549"/>
-      </children>
       <y xsi:type="attributes:Unit"/>
       <width xsi:type="attributes:Unit" value="320"/>
       <height xsi:type="attributes:Unit" value="480"/>
@@ -59,16 +49,6 @@
           <constraints xsi:type="constraints:DirectConstraint" exprStr="size.w" feature="ecore:EReference http://scade.com/svg#//draw/Box/width">
             <expression xsi:type="expr:Variable" name="size" path="w"/>
           </constraints>
-          <children xsi:type="draw:Rect">
-            <x xsi:type="attributes:Unit"/>
-            <y xsi:type="attributes:Unit"/>
-            <width xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
-            <height xsi:type="attributes:Unit" value="100" measurement="PERCENTAGE"/>
-            <matrix xsi:type="transform:Matrix"/>
-            <rx xsi:type="attributes:Unit"/>
-            <ry xsi:type="attributes:Unit"/>
-            <fill xsi:type="color:NoneColor"/>
-          </children>
           <y xsi:type="attributes:Unit"/>
           <width xsi:type="attributes:Unit" value="320"/>
           <height xsi:type="attributes:Unit" value="480"/>
