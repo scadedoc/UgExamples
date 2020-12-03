@@ -7,7 +7,7 @@ class UgSystemDemo: SCDApplication {
 	
 	override func onFinishLaunching() {	
 		mainAdapter.load("main.page")
-		mainAdapter.show(window)
+		mainAdapter.show(view: window)
 		
 		// Demo Dispatch functionality
 		DispatchExample().run()
@@ -24,7 +24,7 @@ class UgSystemDemo: SCDApplication {
   	}
 	
 	// handle deep link calls
-	override func onOpen(with url: String) {
+	override func onOpen(url: String) {
 		print("url: \(url)")
 		// deep link call happened, analyse URL
 		if let ucs = URLComponents(string:url) {
