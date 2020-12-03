@@ -7,6 +7,6 @@ class UgCameraDemo: SCDApplication {
 	
 	override func onFinishLaunching() {	
 		mainAdapter.load("main.page")
-		mainAdapter.show(window)
+		mainAdapter.show(view: window)
 	}
 }

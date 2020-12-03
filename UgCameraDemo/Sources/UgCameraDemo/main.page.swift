@@ -1,4 +1,8 @@
 import ScadeKit
+import Foundation
+#if os(Android)
+	import FoundationNetworking
+#endif
 
 class MainPageAdapter: SCDLatticePageAdapter {
 
