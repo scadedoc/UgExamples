@@ -13,11 +13,11 @@
                 <font xsi:type="graphics:Font" fontFamily="ArialMT" size="15">
                   <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
                 </font>
-                <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true">
+                <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true">
                   <minSize xsi:type="graphics:Dimension" width="44" height="22"/>
                   <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
                 </layoutData>
-                <location xsi:type="graphics:Point" x="31" y="5"/>
+                <location xsi:type="graphics:Point" x="5" y="5"/>
                 <size xsi:type="graphics:Dimension" width="44" height="25"/>
                 <contentSize xsi:type="graphics:Dimension" width="44" height="22"/>
               </children>
@@ -25,11 +25,11 @@
                 <font xsi:type="graphics:Font" fontFamily="ArialMT" size="15">
                   <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
                 </font>
-                <layoutData xsi:type="layout:GridData" column="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true">
+                <layoutData xsi:type="layout:GridData" column="1" horizontalAlignment="RIGHT" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true">
                   <minSize xsi:type="graphics:Dimension" width="44" height="22"/>
                   <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
                 </layoutData>
-                <location xsi:type="graphics:Point" x="128" y="5"/>
+                <location xsi:type="graphics:Point" x="155" y="5"/>
                 <size xsi:type="graphics:Dimension" width="44" height="25"/>
                 <contentSize xsi:type="graphics:Dimension" width="44" height="22"/>
               </children>
@@ -248,7 +248,7 @@
 ">
                       <matrix xsi:type="transform:Matrix"/>
                       <children xsi:type="draw:Group">
-                        <matrix xsi:type="transform:Matrix" translateX="31" translateY="5"/>
+                        <matrix xsi:type="transform:Matrix" translateX="5" translateY="5"/>
                         <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
 ">
                           <x xsi:type="attributes:Unit"/>
@@ -274,7 +274,7 @@
                         </children>
                       </children>
                       <children xsi:type="draw:Group">
-                        <matrix xsi:type="transform:Matrix" translateX="128" translateY="5"/>
+                        <matrix xsi:type="transform:Matrix" translateX="155" translateY="5"/>
                         <children xsi:type="draw:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}
 ">
                           <x xsi:type="attributes:Unit"/>
