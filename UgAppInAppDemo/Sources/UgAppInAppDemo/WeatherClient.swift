@@ -43,7 +43,6 @@ struct Main: Codable {
 // MARK: - Sys
 struct Sys: Codable {
     let type, id: Int
-    let message: Double
     let country: String
     let sunrise, sunset: Int
 }
@@ -75,18 +74,19 @@ class WeatherClient {
 		 
 		// create UrlRequest
 		let req = URLRequest(url: URL(string: urlString)!)
-        
      	// create UrlSession
         let task = URLSession(configuration: .default).dataTask(with: req) { (data, response, error) in
-			
 				var temp : Double = 0.0
 				
 				if let dataResponse = data {
-				    if let weatherInfo = try? JSONDecoder().decode(WeatherInfo.self, from: dataResponse) {
-				    	temp = weatherInfo.main.temp - 273.15 
-				    }
+					do {
+						let weatherInfo = try JSONDecoder().decode(WeatherInfo.self, from: dataResponse)
+						temp = weatherInfo.main.temp - 273.15 
+					} catch {
+						print(error)
+					}
 	        	}
-					
+				
 				onWeatherDataRetrieved(temp)
             }
 		
