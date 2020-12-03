@@ -49,8 +49,8 @@ ios:
         - name: Expression
           package: Expression
   sign:
-    provision-profile: /Users/esil/projects/scade/certs/SCADE_Wildcard_Ad_Hoc.mobileprovision
-    certificate: /Users/esil/projects/scade/certs/Certificate_Scade_Latest.p12
+    provision-profile:
+    certificate:
     beta-reports-active: false
   icons: 
     iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5

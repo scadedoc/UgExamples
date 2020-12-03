@@ -1,10 +1,11 @@
 import ScadeKit
 import Expression
+import Foundation
 
 class MainPageAdapter: SCDLatticePageAdapter {
 	
 	// variable buffer is used a model for model-view binding
-	@objc dynamic var buffer:String = "0"
+	var buffer:String = "0"
 	
 	var isOperatorMode = false
 	
@@ -116,13 +117,15 @@ class MainPageAdapter: SCDLatticePageAdapter {
 						case .ended:
 							btn.backgroundColor = input.1 // default color
 							self.process(input.0)  // process input
+							let displayLabel = self.page!.getWidgetByName("lbNumberDisplay") as! SCDWidgetsLabel
+							displayLabel.text = self.buffer
 						default: 
 							return
 					}
 				}
 				// Add gesture to button
 			    btn.drawing!.gestureRecognizers.append(gestureHandler)
-			    for _ in 0 … 10{
+			    for _ in 0 ... 10{
 			    	
 			    }
 		    }
