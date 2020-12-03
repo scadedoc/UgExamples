@@ -13,7 +13,7 @@ linked-libs: []
 
 ios:
   name: UgSidebarControlDemo
-  id: com.scade.UgSidebarControlDemo
+  id: com.scade.ugsidebarcontroldemo
   device-family: iphone # iphone, ipad or universal
   supported-interface-orientations: ['portrait'] # portrait, upside_down, landscape_left or landscape_right
   supported-interface-orientationsiPad: ['portrait']
@@ -38,8 +38,8 @@ ios:
     search-paths: []
     linked-libs: []
   sign:
-    provision-profile: /Users/juliawork/ScadeTools/certificates/Scade_ad_hoc_3.mobileprovision
-    certificate: /Users/juliawork/ScadeTools/certificates/Certificates.p12
+    provision-profile: 
+    certificate: 
     beta-reports-active: false
   icons: 
     iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5
@@ -68,7 +68,7 @@ ios:
 
 android:
   name: UgSidebarControlDemo
-  id: com.scade.UgSidebarControlDemo
+  id: com.scade.ugsidebarcontroldemo
   version-name: 1.0.0
   version-code: 1
   build-type: Debug

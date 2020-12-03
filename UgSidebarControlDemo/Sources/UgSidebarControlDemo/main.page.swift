@@ -11,12 +11,12 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		
 		// get reference to X button to collapse menu, and if clicked, set sidebar to hidden
 		if let collapseButton = sidebar.panel!.getWidgetByName("btnCollapseSidebar") as? SCDWidgetsClickable {
-			collapseButton.onClick.append(SCDWidgetsEventHandler{_ in sidebar.isHidden = true})
+			collapseButton.onClick.append(SCDWidgetsEventHandler{_ in sidebar.hidden = true})
 		}
 		
 		// get reference to expand button, and if clicked, unhide
 		if let expandButton = self.page!.getWidgetByName("btnSideMenuExpand") as? SCDWidgetsClickable {
-			expandButton.onClick.append(SCDWidgetsEventHandler{_ in sidebar.isHidden = false })
+			expandButton.onClick.append(SCDWidgetsEventHandler{_ in sidebar.hidden = false })
 		}
 	}
 }
