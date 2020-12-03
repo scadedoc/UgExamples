@@ -68,7 +68,7 @@ ios:
 
 android:
   name: UgProgrammaticUIDev
-  id: com.scade.UgProgrammaticUIDev
+  id: com.scade.ugprogrammaticuidev
   version-name: 1.0.0
   version-code: 1
   build-type: Debug
