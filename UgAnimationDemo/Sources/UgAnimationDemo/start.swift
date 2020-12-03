@@ -16,8 +16,8 @@ class UgAnimationDemo: SCDApplication {
 		textboxPage.load("TextboxAnimated.page")
 		basicPage.load("Basic.page")
 		//graphPage.load(path: "GraphPage.page")
-		//loader1Page.show(window)
-		//textboxPage.show(window)
-		basicPage.show(window)
+		//loader1Page.show(view: window)
+		//textboxPage.show(view: window)
+		basicPage.show(view: window)
 	}
 }

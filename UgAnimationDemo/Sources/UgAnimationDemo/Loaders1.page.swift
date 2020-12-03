@@ -12,8 +12,8 @@ class Loaders1PageAdapter: SCDLatticePageAdapter {
 		// Dont use load method for SVG animations
 	}
 	
-	override func show(_ view: SCDLatticeView?) {
-		super.show(view)
+	override func show(view: SCDLatticeView?) {
+		super.show(view: view)
 		
 		// Its important that you setup animations in the SHOW method
 		// not in the LOAD method. The show method is invoked when other graphics 
@@ -42,20 +42,20 @@ class Loaders1PageAdapter: SCDLatticePageAdapter {
 		// We position path in the middle of the circle and 
 		// that rotating
 		
-		let circle = self.page!.drawing!.find(byId: "c0") as! SCDSvgCircle
+		let circle = self.page!.drawing!.findById("c0") as! SCDSvgCircle
 		let bbox = circle.getBoundingBox()
 		
 		let anim = SCDSvgRotateAnimation()
 		anim.angle = 360
 		anim.duration = 5
 		
-		anim.anchorX = Float(bbox.location.x + bbox.bounds.width / 2)
-		anim.anchorY = Float(bbox.location.y + bbox.bounds.height / 2)
+		anim.anchorX = Float(bbox!.location.x + bbox!.bounds.width / 2)
+		anim.anchorY = Float(bbox!.location.y + bbox!.bounds.height / 2)
 
-		anim.isAbsolute = true
+		anim.absolute = true
 		anim.repeatCount = -1
 
-		if let svgPath = self.page!.drawing!.find(byId: "path1") as? SCDSvgPath {
+		if let svgPath = self.page!.drawing!.findById("path1") as? SCDSvgPath {
 			svgPath.animations.append(anim)	
 		}
 	}
@@ -69,7 +69,7 @@ class Loaders1PageAdapter: SCDLatticePageAdapter {
 		let anim = SCDSvgGroupAnimation()
 		anim.animations = [radiusAnimation, opacityAnimation]
 		
-		if let svgCircle = self.page!.drawing!.find(byId: "c1") as? SCDSvgCircle {
+		if let svgCircle = self.page!.drawing!.findById("c1") as? SCDSvgCircle {
 			svgCircle.animations.append(anim)	
 		}
 		
@@ -79,12 +79,12 @@ class Loaders1PageAdapter: SCDLatticePageAdapter {
 		let anim2 = SCDSvgGroupAnimation()
 		anim2.animations = [radiusAnimation2, opacityAnimation2]
 		
-		if let svgCircle = self.page!.drawing!.find(byId: "c2") as? SCDSvgCircle {
+		if let svgCircle = self.page!.drawing!.findById("c2") as? SCDSvgCircle {
 			svgCircle.animations.append(anim2)	
 		}
 		
 		// add first animation to 3rd circle
-		if let svgCircle = self.page!.drawing!.find(byId: "c3") as? SCDSvgCircle {
+		if let svgCircle = self.page!.drawing!.findById("c3") as? SCDSvgCircle {
 			svgCircle.animations.append(anim)	
 		}
 	}
@@ -107,7 +107,7 @@ class Loaders1PageAdapter: SCDLatticePageAdapter {
 		  
 		// set the animations
 		for (id,values) in circleAnimationValues {
-			if let circle = self.page!.drawing!.find(byId: id) as? SCDSvgCircle {
+			if let circle = self.page!.drawing!.findById(id) as? SCDSvgCircle {
 				let opacityAnimation = SCDSvgPropertyAnimation("fillOpacity", values: values)
 				opacityAnimation.duration = 1.3
 				opacityAnimation.repeatCount = -1
@@ -123,8 +123,7 @@ class Loaders1PageAdapter: SCDLatticePageAdapter {
  	    radiusAnimation1.duration = 1.8
   	    radiusAnimation1.repeatCount = -1
   	    radiusAnimation1.timeFunction =
-        SCDSvgCustomTimeFunction(
-              handler: AnimationUtiliites().makeCubicBezierFunction(x0: 0, y0: 0,
+        SCDSvgCustomTimeFunction(AnimationUtiliites().makeCubicBezierFunction(x0: 0, y0: 0,
                                                x1: 0.165, y1: 0.84,
                                                x2: 0.44, y2: 1,
                                                x3: 1, y3: 1))
@@ -133,14 +132,13 @@ class Loaders1PageAdapter: SCDLatticePageAdapter {
  	    strokeAnimation1.duration = 1.8
   	    strokeAnimation1.repeatCount = -1
   	    strokeAnimation1.timeFunction =
-        SCDSvgCustomTimeFunction(
-              handler: AnimationUtiliites().makeCubicBezierFunction(x0: 0, y0: 0,
+        SCDSvgCustomTimeFunction(AnimationUtiliites().makeCubicBezierFunction(x0: 0, y0: 0,
                                                x1: 0.3, y1: 0.61,
                                                x2: 0.353, y2: 1,
                                                x3: 1, y3: 1))
         
         
-        if let c21 = self.page!.drawing!.find(byId: "c21") as? SCDSvgCircle {
+        if let c21 = self.page!.drawing!.findById("c21") as? SCDSvgCircle {
 			let groupAnim = SCDSvgGroupAnimation()
 			groupAnim.animations = [radiusAnimation1, strokeAnimation1]
 			c21.animations.append(groupAnim)
@@ -152,8 +150,7 @@ class Loaders1PageAdapter: SCDLatticePageAdapter {
  	    radiusAnimation2.duration = 1.8
   	    radiusAnimation2.repeatCount = -1
   	    radiusAnimation2.timeFunction =
-        SCDSvgCustomTimeFunction(
-              handler: AnimationUtiliites().makeCubicBezierFunction(x0: 0, y0: 0,
+        SCDSvgCustomTimeFunction(AnimationUtiliites().makeCubicBezierFunction(x0: 0, y0: 0,
                                                x1: 0.165, y1: 0.84,
                                                x2: 0.44, y2: 1,
                                                x3: 1, y3: 1))
@@ -163,14 +160,13 @@ class Loaders1PageAdapter: SCDLatticePageAdapter {
  	    strokeAnimation2.delay = -0.9
   	    strokeAnimation2.repeatCount = -1
   	    strokeAnimation2.timeFunction =
-        SCDSvgCustomTimeFunction(
-              handler: AnimationUtiliites().makeCubicBezierFunction(x0: 0, y0: 0,
+        SCDSvgCustomTimeFunction(AnimationUtiliites().makeCubicBezierFunction(x0: 0, y0: 0,
                                                x1: 0.3, y1: 0.61,
                                                x2: 0.353, y2: 1,
                                                x3: 1, y3: 1))
         
         
-        if let c22 = self.page!.drawing!.find(byId: "c22") as? SCDSvgCircle {
+        if let c22 = self.page!.drawing!.findById("c22") as? SCDSvgCircle {
 			
 			let groupAnim = SCDSvgGroupAnimation()
 			groupAnim.animations = [radiusAnimation2, strokeAnimation2]
@@ -197,7 +193,7 @@ class Loaders1PageAdapter: SCDLatticePageAdapter {
 			let groupAnimation = SCDSvgGroupAnimation()
 			groupAnimation.animations = [heightAnimation, yAnimation]
 			
-			if let bar = self.page!.drawing!.find(byId: bar) as? SCDSvgRect {
+			if let bar = self.page!.drawing!.findById(bar) as? SCDSvgRect {
 				bar.animations.append(groupAnimation)
 			}
 		}
@@ -207,7 +203,7 @@ class Loaders1PageAdapter: SCDLatticePageAdapter {
 	func setupHearts() {
 		// Setup left and right heart to change fill Opacity
 		["heart1":0.0,"heart2":0.7].forEach{ (name:String,delay:Float) in
-			if let svgHeart = self.page!.drawing!.find(byId: name) as? SCDSvgPath {
+			if let svgHeart = self.page!.drawing!.findById(name) as? SCDSvgPath {
 				svgHeart.animations.append(self.createPropertyAnimation(of:"fillOpacity", values: [0.5,1.0,0.5],duration:1.4,delay:delay))
 			}
 		}

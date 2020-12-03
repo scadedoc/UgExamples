@@ -9,11 +9,11 @@ class BasicPageAdapter: SCDLatticePageAdapter {
 		super.load(path)
 	}
 	
-	override func show(_ view: SCDLatticeView?) {
-		super.show(view) 
+	override func show(view: SCDLatticeView?) {
+		super.show(view: view) 
 		
 		// all animmation setup has to happen in show method
-		self.rect = self.page!.drawing!.find(byId: "rect1") as? SCDSvgRect
+		self.rect = self.page!.drawing!.findById("rect1") as? SCDSvgRect
 
 		// create an animation
 		let rotateAnimation = SCDSvgRotateAnimation()
@@ -23,7 +23,7 @@ class BasicPageAdapter: SCDLatticePageAdapter {
 		// Use of relative anchor coordinates
 		rotateAnimation.anchorX = 0.5
 		rotateAnimation.anchorY = 0.5
-		rotateAnimation.isAbsolute = false // false is the default
+		rotateAnimation.absolute = false // false is the default
 		
 		// create translate animation
 		let moveAnimation = getMoveByAnimation(dx:50,dy:50)
@@ -53,7 +53,7 @@ class BasicPageAdapter: SCDLatticePageAdapter {
 	func getXYCoordinateCenterLowerThird() -> (Float,Float) {
 		// get width and height of screen
 		let screensize = SCDRuntime.getSystem().getScreenSize()
-		let (w,h) = (Float(screensize.width), Float(screensize.height))
+		let (w,h) = (Float(screensize!.width), Float(screensize!.height))
 		return (w/2.0, h*(2/3) + (h*(1/3) / 2) )
 	}
 	
@@ -62,11 +62,11 @@ class BasicPageAdapter: SCDLatticePageAdapter {
 		let screenSize = SCDRuntime.getSystem().getScreenSize()
 		
 		// compute points of rectangle to move along by
-		let (x0,y0) = (Float(screenSize.width) * 0.2, Float(screenSize.height) * 0.2)
-		let (x1,y1) = (Float(screenSize.width) - x0 - self.rect!.width.value, Float(screenSize.height) - y0 - self.rect!.height.value)
+		let (x0,y0) = (Float(screenSize!.width) * 0.2, Float(screenSize!.height) * 0.2)
+		let (x1,y1) = (Float(screenSize!.width) - x0 - self.rect!.width.value, Float(screenSize!.height) - y0 - self.rect!.height.value)
 		
 		// get absolute location of vector element
-		let bbLocation = self.rect!.getBoundingBox().location
+		let bbLocation = self.rect!.getBoundingBox()!.location
 		let (currentX, currentY) = (Float(bbLocation.x),Float(bbLocation.y))
 		
 		// create path and set start position
@@ -77,7 +77,7 @@ class BasicPageAdapter: SCDLatticePageAdapter {
 		[(x0,y1), (x0,y0), (x1,y0), (x1,y1), (currentX, currentY)].forEach{ path.elements.append(SCDSvgPathLine(x:$0.0, y:$0.1))}
 		
 		// set to absolute movement (will be default to true in next build)
-		path.elements.forEach{ $0.isAbsolute = true }	
+		path.elements.forEach{ $0.absolute = true }	
 	
 		// create motion path animation. the x,y points need to be translated to 
 		let motionAnim = SCDSvgMotionAnimation()
@@ -110,13 +110,13 @@ class BasicPageAdapter: SCDLatticePageAdapter {
 		// Use of relative anchor coordinates
 		rotateAnimation.anchorX = 0.5
 		rotateAnimation.anchorY = 0.5
-		rotateAnimation.isAbsolute = false // false is the default	
+		rotateAnimation.absolute = false // false is the default	
 		
 		return rotateAnimation
 	}
 	
 	func getAbsoluteCoordinates(of vectorElement:SCDSvgShape) -> (Float,Float) {
-		let location = vectorElement.getBoundingBox().location
+		let location = vectorElement.getBoundingBox()!.location
 		return (Float(location.x),Float(location.y))
 	}
 	

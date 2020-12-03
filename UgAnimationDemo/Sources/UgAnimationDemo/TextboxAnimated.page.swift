@@ -12,8 +12,8 @@ class TextboxAnimatedPageAdapter: SCDLatticePageAdapter {
 		super.load(path)
 	}
 	
-	override func show(_ view: SCDLatticeView?) {
-		super.show(view)
+	override func show(view: SCDLatticeView?) {
+		super.show(view: view)
 		
 		// register touch events and setup initial display
 		self.setup()
@@ -23,7 +23,7 @@ class TextboxAnimatedPageAdapter: SCDLatticePageAdapter {
 		// Helper function
 		let animation : SCDSvgPropertyAnimation = SCDSvgPropertyAnimation(of, values: values)
 		animation.duration = self.duration
-		animation.isAdditive = false
+		animation.additive = false
 		return animation
 	}	
 	
@@ -57,7 +57,7 @@ class TextboxAnimatedPageAdapter: SCDLatticePageAdapter {
 		// Helper function
 		let animation = SCDSvgPropertyAnimation(of, from:from, to:to)
 		animation.duration = self.duration
-		animation.isAdditive = false
+		animation.additive = false
 		return animation
 	}
 	
@@ -75,8 +75,8 @@ class TextboxAnimatedPageAdapter: SCDLatticePageAdapter {
 		
 		// get Y animation from and to
 		let fromY = Double( text!.y.value) 
-		let y1 = Double( text!.getBoundingBox().location.y)
-		let y2 = Double( line!.getBoundingBox().location.y ) + Double(line!.getBoundingBox().bounds.height)
+		let y1 = Double( text!.getBoundingBox()!.location.y)
+		let y2 = Double( line!.getBoundingBox()!.location.y) + Double(line!.getBoundingBox()!.bounds.height)
 		let toY = fromY+(y2-y1)
 		
 		// get font scaling parameter
@@ -91,8 +91,8 @@ class TextboxAnimatedPageAdapter: SCDLatticePageAdapter {
 	
 	func animateIn(textIdBy:String, lineIdBy:String) {
 		
-		let text = self.page!.drawing!.find(byId:textIdBy) as? SCDSvgText
-		let line = self.page!.drawing!.find(byId:lineIdBy) as? SCDSvgLine
+		let text = self.page!.drawing!.findById(textIdBy) as? SCDSvgText
+		let line = self.page!.drawing!.findById(lineIdBy) as? SCDSvgLine
 		
 		let (fromY,toY,fontScalingValues,colorRange,strokeWidthRange) = getParameter(direction:true,textByRef:text!, lineByRef: line!)
 		
@@ -115,7 +115,7 @@ class TextboxAnimatedPageAdapter: SCDLatticePageAdapter {
 	
 	func setTextboxVisibility(of:String, to:Bool) {
 		if let textbox = self.page!.getWidgetByName(of) {
-			textbox.isVisible = to
+			textbox.visible = to
 			//(textbox.layoutData as! SCDLayoutXYLayoutData).isExcluded = !to
 		}
 	}
