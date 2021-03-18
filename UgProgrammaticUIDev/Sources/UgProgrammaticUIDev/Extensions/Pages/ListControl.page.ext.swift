@@ -1,0 +1,5 @@
+import ScadeKit
+
+extension ListControlPageAdapter {
+
+}
