@@ -1,0 +1,23 @@
+<?xml encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="main.page#/0" widget-name="main" width="414" height="896">
+  <svg template-id="background" width="414" height="896" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h">
+    <image xlink:href="Assets/image1.png" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" />
+  </svg>
+  <g template-id="content">
+    <g scade:bind="text:label" eObject-URI="main.page#/0/@children.0" widget-name="label1" transform="matrix(1 0 0 1 50 50)">
+      <text text-anchor="middle" alignment-baseline="central" font-size="27" font-family="ArialMT" template-id="node-text" x="157" y="369" fill="#80">My gesture</text>
+    </g>
+    <g eObject-URI="main.page#/0/@children.1" widget-name="customwidget1" transform="matrix(1 0 0 1 50 20)">
+      <rect fill-opacity="0.6" stroke-width="3" id="rect1" fill-stroke="#804000" width="314" height="100" fill="#803f00" constraints="direct!http://scade.com/svg/draw#//Rect/width|size.w" />
+    </g>
+    <g eObject-URI="main.page#/0/@children.2" widget-name="customwidget2" transform="matrix(1 0 0 1 192 846)">
+      <circle fill-opacity="0.9" stroke-width="3" id="circle1" r="20" fill="#f4fb91" stroke="#803f" />
+    </g>
+    <g eObject-URI="main.page#/0/@children.3" widget-name="button1" transform="matrix(1 0 0 1 50 788)">
+      <svg template-id="background" width="314" height="58" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h">
+        <rect width="100%" height="100%" fill="#125606" />
+      </svg>
+      <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="157" y="29" fill="#feffff">MyButton</text>
+    </g>
+  </g>
+</svg>
