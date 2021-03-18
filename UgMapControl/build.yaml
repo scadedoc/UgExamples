@@ -1,0 +1,112 @@
+spm:
+  - url: 
+    from:
+    path: 
+    branch:
+    exact: 
+    revision:
+    search-paths: []
+    linked-libs: []
+
+search-paths: []
+linked-libs: []
+
+ios:
+  name: UgMapControl
+  id: io.scade.weatherapp
+  device-family: universal # iphone, ipad or universal
+  supported-interface-orientations: ['portrait'] # portrait, upside_down, landscape_left or landscape_right
+  supported-interface-orientationsiPad: ['portrait']
+  entitlements-file: 
+  app-delegate-file:
+  simulator:
+    os: 12.1
+    output: UgMapControl/.build/ios-simulator
+    product-path: UgMapControl/Product/ios-device
+    extra-args:
+    search-paths: []
+    linked-libs: []
+  device: 
+    os: 12.1
+    output: UgMapControl/.build/ios-device
+    extra-args: 
+    search-paths: []
+    linked-libs: []
+  mac:
+    os: 10.11
+    output: UgMapControl/.build/scade-simulator
+    extra-args: 
+    search-paths: []
+    linked-libs: []
+  sign:
+    provision-profile: /Users/juliabulantseva/Downloads/certificates/WeatherApp_Ad_Hoc_SCADE_Latest.mobileprovision
+    certificate: /Users/juliabulantseva/Downloads/certificates/Certificate_Scade_Latest.p12
+    beta-reports-active: false
+  icons: 
+    iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5
+      60X60_2X:
+      76X76_2X:
+      76X76_3X:
+      83.5X83.5_2X:
+    marketing:
+      1024X1024_1X:
+  plist: 
+    - key: CFBundleShortVersionString
+      type: string  # string, bool, int, list or dict
+      value: 1.0
+    - key: CFBundleVersion
+      type: string
+      value: 1
+    - key: NSLocationWhenInUseUsageDescription
+      type: string
+      value: 
+    - key: NSCameraUsageDescription
+      type: string
+      value: Take pictures from camera
+    - key: NSPhotoLibraryUsageDescription
+      type: string
+      value: Choose a photo from your library
+
+android:
+  name: UgMapControl
+  id: io.scade.weatherapp
+  version-name: 1.0.1
+  version-code: 2
+  build-type: Release
+  key-store-properties: /Users/juliawork/Desktop/keystore.properties
+  google-api-key: AIzaSyCjyCDkwGlffCOi5BcCgxmHaHvUx1DwiB4
+  manifest-file:
+  permissions: []
+  armeabi-v7a:
+    output: UgMapControl/.build/android-armeabi-v7a
+    product-path: UgMapControl/Product/android-armeabi-v7a
+    extra-args:
+    search-paths: []
+    linked-libs: []
+  arm64-v8a:
+    output: UgMapControl/.build/android-arm64-v8a
+    product-path: UgMapControl/Product/android-arm64-v8a
+    extra-args:
+    search-paths: []
+    linked-libs: []
+  x86:
+    output: UgMapControl/.build/android-x86
+    product-path: UgMapControl/Product/android-x86
+    extra-args:
+    search-paths: []
+    linked-libs: []
+  x86_64:
+    output: UgMapControl/.build/android-x86_64
+    product-path: UgMapControl/Product/android-x86_64
+    extra-args:
+    search-paths: []
+    linked-libs: []
+  intent-filters:
+    - action:
+      scheme:
+      categories: [] 
+  icons:
+    mdpi:
+    hdpi:
+    xhdpi: 
+    xxhdpi:

@@ -1,0 +1,52 @@
+<?xml encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="main.page#/0" widget-name="main" width="414" height="896">
+  <svg template-id="background" width="414" height="896" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+  <g eObject-URI="main.page#/0/@children.0" widget-name="mapwidget1" transform="matrix(1 0 0 1 0 14)">
+    <svg y="2" width="414" height="810">
+      <rect stroke-width="2" width="100%" height="100%" fill="#a5cdfd" stroke="#7490b1" />
+      <text text-anchor="middle" alignment-baseline="central" font-size="20" x="50%" y="50%">MapWidget</text>
+    </svg>
+    <svg y="2" width="414" height="810">
+      <rect stroke-width="2" width="100%" height="100%" fill="#a5cdfd" stroke="#7490b1" />
+      <text text-anchor="middle" alignment-baseline="central" font-size="20" x="50%" y="50%">MapWidget</text>
+    </svg>
+    <svg y="2" width="414" height="810">
+      <rect stroke-width="2" width="100%" height="100%" fill="#a5cdfd" stroke="#7490b1" />
+      <text text-anchor="middle" alignment-baseline="central" font-size="20" x="50%" y="50%">MapWidget</text>
+    </svg>
+  </g>
+  <g eObject-URI="main.page#/0/@children.1" widget-name="horizontalview2" transform="matrix(1 0 0 1 0 867)">
+    <svg template-id="background" width="414" height="29" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+    <g eObject-URI="main.page#/0/@children.1/@children.0" widget-name="btnStandard" transform="matrix(1 0 0 1 38 5)">
+      <svg template-id="background" width="69" height="19" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="9.5" fill="#0">Standard</text>
+    </g>
+    <g eObject-URI="main.page#/0/@children.1/@children.1" widget-name="btnSatellite" transform="matrix(1 0 0 1 177 5)">
+      <svg template-id="background" width="61" height="19" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <text alignment-baseline="central" font-size="17" font-family="ArialMT" template-id="node-text" x="0" y="9.5" fill="#4469b3">Satellite</text>
+    </g>
+    <g eObject-URI="main.page#/0/@children.1/@children.2" widget-name="btnHybrid" transform="matrix(1 0 0 1 317 5)">
+      <svg template-id="background" width="50" height="19" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <text alignment-baseline="central" font-size="17" font-family="ArialMT" template-id="node-text" x="0" y="9.5" fill="#4469b3">Hybrid</text>
+    </g>
+  </g>
+  <g eObject-URI="main.page#/0/@children.2" widget-name="grid1" transform="matrix(1 0 0 1 0 838)">
+    <svg template-id="background" width="414" height="29" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
+      <rect width="100%" height="100%" fill="#fbf6f0" />
+    </svg>
+    <g template-id="content">
+      <g eObject-URI="main.page#/0/@children.2/@children.0" widget-name="btnToronto" transform="matrix(1 0 0 1 44 5)">
+        <svg template-id="background" width="57" height="19" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+        <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="9.5" fill="#0">Toronto</text>
+      </g>
+      <g eObject-URI="main.page#/0/@children.2/@children.1" widget-name="btnCurrLoc" transform="matrix(1 0 0 1 147 5)">
+        <svg template-id="background" width="121" height="19" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+        <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="9.5" fill="#0">Current location</text>
+      </g>
+      <g eObject-URI="main.page#/0/@children.2/@children.2" widget-name="btnSushi" transform="matrix(1 0 0 1 320 5)">
+        <svg template-id="background" width="43" height="19" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+        <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="9.5" fill="#0">Sushi</text>
+      </g>
+    </g>
+  </g>
+</svg>
