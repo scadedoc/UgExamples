@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Expression",
+        "repositoryURL": "git@github.com:nicklockwood/Expression.git",
+        "state": {
+          "branch": null,
+          "revision": "79696716b913c816d8dd1c135293de266a01a098",
+          "version": "0.13.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
