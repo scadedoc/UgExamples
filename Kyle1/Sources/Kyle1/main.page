@@ -1,0 +1,20 @@
+<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="main">
+    <children xsi:type="widgets:GridView" name="grid1">
+      <layout xsi:type="layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
+      <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+      <size xsi:type="graphics:Dimension" width="320" height="480"/>
+      <location xsi:type="graphics:Point"/>
+      <minArea xsi:type="graphics:Dimension"/>
+      <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" heightConstraint="MATCH_PARENT"/>
+    </children>
+    <layout xsi:type="layout:GridLayout"/>
+    <maxArea xsi:type="graphics:Dimension" width="320" height="480"/>
+    <location xsi:type="graphics:Point"/>
+    <minArea xsi:type="graphics:Dimension" width="320" height="480"/>
+    <size xsi:type="graphics:Dimension" width="320" height="480"/>
+  </widgets:Page>
+  <binding:BindingModel/>
+  <navigation:Navigation page="/0"/>
+</xmi:XMI>
