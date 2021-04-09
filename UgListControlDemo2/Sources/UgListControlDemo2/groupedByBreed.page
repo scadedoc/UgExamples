@@ -1,0 +1,139 @@
+<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgetlayouts="http://scade.com/sdk/view/widgets/layout" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="groupedByBreed">
+    <minArea xsi:type="graphics:Dimension" width="428" height="926"/>
+    <location xsi:type="graphics:Point"/>
+    <backgroundColor xsi:type="graphics:RGB" Red="248" Green="248" Blue="248"/>
+    <children xsi:type="widgets:List" name="list1">
+      <template xsi:type="widgets:ListTemplate" name="template">
+        <element xsi:type="widgets:ListElement" name="listElement">
+          <children xsi:type="widgets:GridView" name="gridView1">
+            <children xsi:type="widgets:Label" text="dogname2" name="dogname2">
+              <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
+                <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
+              </font>
+              <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true">
+                <minSize xsi:type="graphics:Dimension" width="44" height="22"/>
+                <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+              </layoutData>
+              <location xsi:type="graphics:Point" x="5" y="5"/>
+              <size xsi:type="graphics:Dimension" width="136" height="35"/>
+              <contentSize xsi:type="graphics:Dimension" width="81" height="22"/>
+            </children>
+            <children xsi:type="widgets:Label" text="dogbreed2" name="dogbreed2" horizontalAlignment="CENTER">
+              <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
+                <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
+              </font>
+              <layoutData xsi:type="layout:GridData" column="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+                <minSize xsi:type="graphics:Dimension" width="44" height="22"/>
+                <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+              </layoutData>
+              <location xsi:type="graphics:Point" x="141" y="11"/>
+              <size xsi:type="graphics:Dimension" width="136" height="22"/>
+              <contentSize xsi:type="graphics:Dimension" width="82" height="22"/>
+            </children>
+            <children xsi:type="widgets:Label" text="dogid2" name="dogid2" horizontalAlignment="RIGHT">
+              <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
+                <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
+              </font>
+              <layoutData xsi:type="layout:GridData" column="2" horizontalAlignment="RIGHT" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+                <minSize xsi:type="graphics:Dimension" width="44" height="22"/>
+                <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+              </layoutData>
+              <location xsi:type="graphics:Point" x="277" y="11"/>
+              <size xsi:type="graphics:Dimension" width="136" height="22"/>
+              <contentSize xsi:type="graphics:Dimension" width="52" height="22"/>
+            </children>
+            <layout xsi:type="layout:GridLayout" columns="3" marginRight="5" marginTop="5" marginBottom="5" marginLeft="5"/>
+            <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+            <location xsi:type="graphics:Point" x="10"/>
+            <minArea xsi:type="graphics:Dimension"/>
+            <size xsi:type="graphics:Dimension" width="418" height="45"/>
+            <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" heightConstraint="MATCH_PARENT">
+              <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+            </layoutData>
+          </children>
+          <layout xsi:type="layout:GridLayout" marginLeft="10"/>
+          <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+          <location xsi:type="graphics:Point"/>
+          <minArea xsi:type="graphics:Dimension" height="45"/>
+          <size xsi:type="graphics:Dimension" width="428" height="45"/>
+          <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT">
+            <minSize xsi:type="graphics:Dimension"/>
+          </layoutData>
+        </element>
+        <location xsi:type="graphics:Point"/>
+        <size xsi:type="graphics:Dimension"/>
+      </template>
+      <size xsi:type="graphics:Dimension" width="428" height="836"/>
+      <layout xsi:type="widgetlayouts:ListLayout"/>
+      <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+      <location xsi:type="graphics:Point" y="40"/>
+      <minArea xsi:type="graphics:Dimension"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="BOTTOM" source="/0/@children.0" target="/0/@children.1"/>
+        <constraints xsi:type="layout:Constraint" source="/0/@children.0" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.0" target="/0"/>
+      </layoutData>
+    </children>
+    <children xsi:type="widgets:Label" text="Labrador" name="lbBreed">
+      <font xsi:type="graphics:Font" fontFamily="Arial-BoldMT" size="17">
+        <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
+      </font>
+      <location xsi:type="graphics:Point"/>
+      <size xsi:type="graphics:Dimension" width="428" height="40"/>
+      <contentSize xsi:type="graphics:Dimension" width="74" height="19"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="TOP" source="/0/@children.1" target="/0"/>
+        <constraints xsi:type="layout:Constraint" source="/0/@children.1" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.1" target="/0"/>
+      </layoutData>
+      <backgroundColor xsi:type="graphics:RGB" Red="123" Green="122" Blue="123"/>
+    </children>
+    <children xsi:type="widgets:RowView" name="rowView1">
+      <children xsi:type="widgets:Button" text="DogList" name="itmDoglist" horizontalAlignment="CENTER">
+        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="10">
+          <color xsi:type="graphics:RGB"/>
+        </font>
+        <location xsi:type="graphics:Point" x="5" y="5"/>
+        <size xsi:type="graphics:Dimension" width="209" height="40"/>
+        <contentSize xsi:type="graphics:Dimension" width="86" height="23"/>
+        <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true">
+          <minSize xsi:type="graphics:Dimension" width="86" height="23"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="255" Green="255" Blue="255" Alpha="0"/>
+      </children>
+      <children xsi:type="widgets:Button" text="Grouped By Breed" name="itmGroupedByBreed" horizontalAlignment="CENTER">
+        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="10">
+          <color xsi:type="graphics:RGB"/>
+        </font>
+        <location xsi:type="graphics:Point" x="214" y="5"/>
+        <size xsi:type="graphics:Dimension" width="209" height="40"/>
+        <contentSize xsi:type="graphics:Dimension" width="86" height="23"/>
+        <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" grabHorizontalSpace="true">
+          <minSize xsi:type="graphics:Dimension" width="86" height="23"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Red="255" Green="255" Blue="255" Alpha="0"/>
+      </children>
+      <layout xsi:type="layout:GridLayout" columns="2" marginRight="5" marginTop="5" marginBottom="5" marginLeft="5"/>
+      <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+      <location xsi:type="graphics:Point" y="876"/>
+      <minArea xsi:type="graphics:Dimension"/>
+      <size xsi:type="graphics:Dimension" width="428" height="50"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="BOTTOM" source="/0/@children.2" target="/0/@children.0"/>
+        <constraints xsi:type="layout:Constraint" source="/0/@children.2" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.2" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="BOTTOM" targetAnchor="BOTTOM" source="/0/@children.2" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="HEIGHT" constant="50" source="/0/@children.2"/>
+      </layoutData>
+    </children>
+    <layout xsi:type="layout:AutoLayout"/>
+    <maxArea xsi:type="graphics:Dimension" width="428" height="926"/>
+    <size xsi:type="graphics:Dimension" width="428" height="926"/>
+  </widgets:Page>
+  <binding:BindingModel/>
+  <navigation:Navigation page="/0"/>
+</xmi:XMI>

@@ -1,0 +1,62 @@
+<?xml encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" widget-name="groupedByBreed" eObject-URI="groupedByBreed.page#/0" width="428" height="926">
+  <svg template-id="background" width="428" height="926" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
+    <rect width="100%" height="100%" fill="#f8f8f8" />
+  </svg>
+  <g template-id="content">
+    <g widget-name="list1" eObject-URI="groupedByBreed.page#/0/@children.0" transform="matrix(1 0 0 1 0 40)">
+      <g scrollableBox="428 836" template-id="listContent" scrollable="vertical" constraints="scrollsize!size.w|size.h">
+        <g widget-name="listElement" eObject-URI="groupedByBreed.page#/0/@children.0/@template/@element">
+          <svg template-id="background" width="428" height="45" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+          <g template-id="elementContent">
+            <g widget-name="gridView1" eObject-URI="groupedByBreed.page#/0/@children.0/@template/@element/@children.0" transform="matrix(1 0 0 1 10 0)">
+              <svg template-id="background" width="418" height="45" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+              <g template-id="content">
+                <g widget-name="dogname2" eObject-URI="groupedByBreed.page#/0/@children.0/@template/@element/@children.0/@children.0" transform="matrix(1 0 0 1 5 5)">
+                  <svg template-id="background" width="136" height="35" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+                  <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="17.5" fill="#464646">dogname2</text>
+                </g>
+                <g widget-name="dogbreed2" eObject-URI="groupedByBreed.page#/0/@children.0/@template/@element/@children.0/@children.1" transform="matrix(1 0 0 1 141 11)">
+                  <svg template-id="background" width="136" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+                  <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="68" y="11" fill="#464646">dogbreed2</text>
+                </g>
+                <g widget-name="dogid2" eObject-URI="groupedByBreed.page#/0/@children.0/@template/@element/@children.0/@children.2" transform="matrix(1 0 0 1 277 11)">
+                  <svg template-id="background" width="136" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+                  <text text-anchor="end" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="136" y="11" fill="#464646">dogid2</text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g template-id="elementSeparator" transform="matrix(1 0 0 1 10 45)" constraints="matrix!1|0|layout.marginLeft|0|1|size.h">
+            <line template-id="separatorLine" stroke-miterlimit="10" y1="0.5" x2="417" y2="0.5" stroke="#cccacf" constraints="direct!http://scade.com/svg/draw#//Line/x2|size.width-layout.marginLeft" />
+          </g>
+          <g />
+          <g />
+        </g>
+      </g>
+    </g>
+    <g widget-name="lbBreed" eObject-URI="groupedByBreed.page#/0/@children.1">
+      <svg template-id="background" width="428" height="40" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
+        <rect width="100%" height="100%" fill="#7b7a7b" />
+      </svg>
+      <text alignment-baseline="central" font-size="17" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="20" fill="#464646">Labrador</text>
+    </g>
+    <g widget-name="rowView1" eObject-URI="groupedByBreed.page#/0/@children.2" transform="matrix(1 0 0 1 0 876)">
+      <svg template-id="background" width="428" height="50" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <g template-id="content">
+        <g widget-name="itmDoglist" eObject-URI="groupedByBreed.page#/0/@children.2/@children.0" transform="matrix(1 0 0 1 5 5)">
+          <svg template-id="background" width="209" height="40" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
+            <rect stroke-width="2" width="100%" height="100%" fill="#ffffff" stroke="#50505" />
+          </svg>
+          <text text-anchor="middle" alignment-baseline="central" font-size="10" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="104.5" y="20" fill="#0">DogList</text>
+        </g>
+        <g widget-name="itmGroupedByBreed" eObject-URI="groupedByBreed.page#/0/@children.2/@children.1" transform="matrix(1 0 0 1 214 5)">
+          <svg template-id="background" width="209" height="40" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
+            <rect stroke-width="2" width="100%" height="100%" fill="#ffffff" stroke="#50505" />
+          </svg>
+          <text text-anchor="middle" alignment-baseline="central" font-size="10" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="104.5" y="20" fill="#0">Grouped By Breed</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
