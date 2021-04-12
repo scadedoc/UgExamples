@@ -23,7 +23,7 @@ ios:
     output: UgSqlLiteSwift/.build/ios-simulator
     extra-args:
     search-paths: []
-    linked-libs: [SQLite]
+    linked-libs: []
     spm:
       dependencies:
         - name: SQLite
@@ -32,7 +32,7 @@ ios:
     output: UgSqlLiteSwift/.build/ios-device
     extra-args: 
     search-paths: []
-    linked-libs: [SQLite]
+    linked-libs: []
     spm:
       dependencies:
         - name: SQLite
