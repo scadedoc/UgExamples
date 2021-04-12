@@ -22,8 +22,7 @@ ios:
     product-path: UgCalculator/Product/ios-simulator
     extra-args:
     search-paths: []
-    linked-libs:
-      - Expression
+    linked-libs: []
     spm:
       dependencies:
         - name: Expression
@@ -34,8 +33,7 @@ ios:
     product-path: UgCalculator/Product/ios-device
     extra-args: 
     search-paths: []
-    linked-libs:
-      - Expression
+    linked-libs: []
     spm:
       dependencies:
         - name: Expression
