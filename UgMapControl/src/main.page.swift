@@ -81,7 +81,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	    
 	   	// Create overlay circle of radius 1000m 
 	    let overlayCircle = SCDSvgCircle(cx:SCDSvgUnit(value:coor2d.x),cy:SCDSvgUnit(value:coor2d.y),r:SCDSvgUnit(value:1000))
-	    overlayCircle.fill = SCDColor(r: 1, g: 0, b: 0, a: 0.2)
+	    overlayCircle.fill = SCDSvgRGBColor(a:0.2,r:1,g:0,b:0)
 	    
 	    // Create an overlay
 	    let overlay = SCDWidgetsMapOverlay()

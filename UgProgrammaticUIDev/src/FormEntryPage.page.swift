@@ -41,7 +41,7 @@ class FormEntryPagePageAdapter: SCDLatticePageAdapter {
 		let layoutData = configureLayoutData(of:headerView)
 		layoutData.row = 0
 		layoutData.isGrabVerticalSpace = false
-		layoutData.heightConstraint = .wrapContent
+		layoutData.heightConstraint = .wrap_content
 		
 		// Create the label 
 		let label =  SCDWidgetsLabel();
@@ -61,8 +61,8 @@ class FormEntryPagePageAdapter: SCDLatticePageAdapter {
 		// set grid layoutdata 
 		let layoutData = configureLayoutData(of:formGrid)
 		layoutData.row = 1
-		layoutData.widthConstraint = .matchParent
-		layoutData.heightConstraint = .matchParent
+		layoutData.widthConstraint = .match_parent
+		layoutData.heightConstraint = .match_parent
 		
 		// set layout inside
 		let layout = formGrid.layout as! SCDLayoutGridLayout
@@ -96,7 +96,7 @@ class FormEntryPagePageAdapter: SCDLatticePageAdapter {
   		layoutData.column = col
    		layoutData.row = row    
 		layoutData.isGrabVerticalSpace = false
-		layoutData.heightConstraint = .wrapContent
+		layoutData.heightConstraint = .wrap_content
     	
    		label.layoutData = layoutData
     	return label
@@ -111,8 +111,8 @@ class FormEntryPagePageAdapter: SCDLatticePageAdapter {
 		layoutData.column = inCol
 		layoutData.row = inRow
 		layoutData.isGrabVerticalSpace = false
-		layoutData.heightConstraint = .wrapContent
-		layoutData.widthConstraint = .matchParent
+		layoutData.heightConstraint = .wrap_content
+		layoutData.widthConstraint = .match_parent
 		return textbox
 	}
 	
@@ -120,8 +120,8 @@ class FormEntryPagePageAdapter: SCDLatticePageAdapter {
 		let bottomView = SCDWidgetsListView()
 		let layoutData = configureLayoutData(of:bottomView)
 		layoutData.row = 2
-		layoutData.widthConstraint = .wrapContent
-		layoutData.heightConstraint = .wrapContent
+		layoutData.widthConstraint = .wrap_content
+		layoutData.heightConstraint = .wrap_content
 		layoutData.isGrabVerticalSpace = false
 		
 		let button =  SCDWidgetsButton()
