@@ -317,15 +317,5 @@
     <maxArea xsi:type="graphics:Dimension" width="414" height="896"/>
     <size xsi:type="graphics:Dimension" width="414" height="896"/>
   </widgets:Page>
-  <binding:BindingModel>
-    <bindings xsi:type="binding:Binding" active="true" src="/0" dst="/0/@children.0/@children.0">
-      <root xsi:type="binding:BindingSyncPoint">
-        <srcSelector xsi:type="binding:BindingSelector" feature="adapter">
-          <next xsi:type="binding:BindingSelector" feature="buffer"/>
-        </srcSelector>
-        <dstSelector xsi:type="binding:BindingSelector" feature="text"/>
-      </root>
-    </bindings>
-  </binding:BindingModel>
   <navigation:Navigation page="/0"/>
 </xmi:XMI>
