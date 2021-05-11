@@ -20,7 +20,7 @@ let package = Package(
         )
     ],
     dependencies: [
-      .package(url: "git@github.com:nicklockwood/Expression.git", from: "0.12.0")
+      .package(url: "https://github.com/nicklockwood/Expression.git", from: "0.12.0")
     ],
     targets: [
         .target(
