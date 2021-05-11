@@ -1,6 +1,9 @@
 // swift-tools-version:5.3
 
 import PackageDescription
+import Foundation
+
+let SCADE_SDK = ProcessInfo.processInfo.environment["SCADE_SDK"] ?? ""
 
 let package = Package(
     name: "UgTextLabelDemo",
@@ -23,8 +26,10 @@ let package = Package(
         .target(
             name: "UgTextLabelDemo",
             dependencies: [],
+            exclude: ["main.page"],
             swiftSettings: [
-                .unsafeFlags(["-I", "/Users/juliabulantseva/Library/Developer/Xcode/DerivedData/ScadeIDE-eapqctpaagnimndymxsgtstfvthc/Build/Products/Debug/Scade.app/Contents/Plugins/ScadeSDK.plugin/Contents/Resources/Libraries/ScadeSDK/lib/android-x86_64/include"])
+                .unsafeFlags(["-F", SCADE_SDK], .when(platforms: [.macOS, .iOS])),
+                .unsafeFlags(["-I", "\(SCADE_SDK)/include"], .when(platforms: [.android])),
             ]
         )
     ]

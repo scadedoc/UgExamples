@@ -22,7 +22,7 @@ ios:
     output: UgCryptoSwift/.build/ios-simulator
     extra-args:
     search-paths: []
-    linked-libs: [CryptoSwift]
+    linked-libs: []
     spm:
       dependencies:
         - name: CryptoSwift
@@ -32,7 +32,7 @@ ios:
     product-path: UgCryptoSwift/Product/ios-device
     extra-args: 
     search-paths: []
-    linked-libs: [CryptoSwift]
+    linked-libs: []
     spm:
       dependencies:
         - name: CryptoSwift

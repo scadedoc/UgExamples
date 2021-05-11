@@ -85,7 +85,7 @@ android:
     linked-libs: []
   arm64-v8a:
     output: UgGestureDemo/.build/android-arm64-v8a
-    product-path: UgGestureDemo/Product/aandroid-arm64-v8a
+    product-path: UgGestureDemo/Product/android-arm64-v8a
     extra-args:
     search-paths: []
     linked-libs: []
