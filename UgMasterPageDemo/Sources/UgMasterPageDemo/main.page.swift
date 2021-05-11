@@ -5,7 +5,6 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	let page1 : Page1PageAdapter = Page1PageAdapter()
 	let page2 : Page2PageAdapter = Page2PageAdapter()
 	let page3 : Page3PageAdapter = Page3PageAdapter()
-	var pageContainer : SCDLatticePageContainer?
 	
 	// page adapter initialization
 	override func load(_ path: String) {		
@@ -18,26 +17,20 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		self.page3.load("page3.page")
 		
 		// lets add event handlers
-		let tbItem1 = self.page!.getWidgetByName("item1") as! SCDWidgetsClickable
-		tbItem1.onClick.append(SCDWidgetsEventHandler{ _ in self.showPage(self.page1)})
+		self.item1.onClick{ _ in self.showPage(self.page1)}
 		
-		let tbItem2 = self.page!.getWidgetByName("item2") as! SCDWidgetsClickable
-		tbItem2.onClick.append(SCDWidgetsEventHandler{ _ in self.showPage(self.page2)})
+		self.item2.onClick{_ in self.showPage(self.page2)}
 		
-		let tbItem3 = self.page!.getWidgetByName("item3") as! SCDWidgetsClickable
-		tbItem3.onClick.append(SCDWidgetsEventHandler{ _ in self.showPage(self.page3)})
-		
-		// Now,we get a reference to the page container
-		self.pageContainer = self.page!.getWidgetByName("pagecontainer1") as? SCDLatticePageContainer 
-		
+		self.item3.onClick{ _ in self.showPage(self.page3)}
+				
 		// Finally, we use the page container to show page1
-		self.page1.show(view: self.pageContainer)
+		self.page1.show(view: self.pagecontainer1)
 	}
 	
 	func showPage(_ page:SCDLatticePageAdapter) {
 		// our syntax is the other way round
 		// we tell the page to display itself in container X
 		// we don't tell the container to show a page
-		page.show(view: self.pageContainer)
+		page.show(view: self.pagecontainer1)
 	}
 }
