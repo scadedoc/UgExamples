@@ -13,11 +13,8 @@ class MainPageAdapter: SCDLatticePageAdapter {
     super.load(path)
 
     // Run tests when button pressed
-    if let runTestsButton = self.page!.getWidgetByName("button1") as? SCDWidgetsButton {
-      runTestsButton.onClick.append(
-        SCDWidgetsEventHandler {
-          _ in self.runTests()
-        })
+    button1.onClick{
+       _ in self.runTests()
     }
 
     // run the tests
@@ -33,7 +30,6 @@ class MainPageAdapter: SCDLatticePageAdapter {
       TestResult(name: "TestDate.distantFuture", stat: "1/1", success: DateDemo().testDistantFuture()),
     ]
     
-    let list1 = self.page?.getWidgetByName("list1") as! SCDWidgetsList
     list1.items.removeAll();
     self.testResults.forEach { result in
     	list1.items.append(0)
