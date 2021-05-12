@@ -15,14 +15,14 @@ class ModalContentPagePageAdapter: SCDLatticePageAdapter {
 		// link buttons' click events to code that returns to main page
 		for bname in ["btnLeave","btnConfirm"] {
 			if let button = self.page!.getWidgetByName(bname) as? SCDWidgetsButton {
-				button.onClick.append(SCDWidgetsEventHandler {	_ in 
+				button.onClick{	_ in 
 					
 					// close the window - modal dialog disappears
 					self.modalWindow.close(); 
 					
 					// return to parent page with result
 					self.onExit("pressed \(bname)")
-				})
+				}
 			}
 		}
 		

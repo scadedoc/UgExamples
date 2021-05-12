@@ -20,21 +20,19 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		modalContentPage.onExit = { print("left modalDialog \($0)") } 
 		
 		// Display custom modal content page when button on main page is clicked
-		if let btnModalDialog = self.page!.getWidgetByName("btnCustomModalDialog") as? SCDWidgetsButton {
-			btnModalDialog.onClick.append( SCDWidgetsEventHandler{
+		btnCustomModalDialog.onClick{
 				
-				// the show method is custom method that uses 
-				// the window instantiated within the modalContentPage class
-				_ in self.modalContentPage.show() 
-		})}
+			// the show method is custom method that uses 
+			// the window instantiated within the modalContentPage class
+			_ in self.modalContentPage.show() 
+		}
 		
 		// Add action to iOSAlertController button
-		if let btnAlertController = self.page!.getWidgetByName("btnAlertController") as? SCDWidgetsButton {
-			btnAlertController.onClick.append( SCDWidgetsEventHandler{
+		btnAlertController.onClick{
 				
-				// Should native iOS Alert Controler view
-				_ in self.showUIAlertController()
-		})}
+			// Should native iOS Alert Controler view
+			_ in self.showUIAlertController()
+		}
 	}
 	
 	func showUIAlertController() {
