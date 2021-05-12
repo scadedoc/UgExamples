@@ -1,8 +1,6 @@
 import ScadeKit
 
 class MainPageAdapter: SCDLatticePageAdapter {
-
-	var mapWidget : SCDWidgetsMapWidget!
 	
 	// set coordinates
 	let perfectlySoftLocation = SCDPlatformLocationCoordinate(latitude:44.061334,longitude:-79.454920)
@@ -12,26 +10,18 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	override func load(_ path: String) {		
 		super.load(path)
 		
-		self.mapWidget = self.page!.getWidgetByName("mapwidget1") as! SCDWidgetsMapWidget
+		btnToronto.onClick{ _ in self.goto(coordinates:self.perfectlySoftLocation) }
 		
-		let button = self.page!.getWidgetByName("btnToronto") as! SCDWidgetsButton
-		button.onClick.append(SCDWidgetsEventHandler{ _ in self.goto(coordinates:self.perfectlySoftLocation) })
+		btnCurrLoc.onClick{_ in self.gotoCurrentLocation()}
 		
-		let btnCurrLoc = self.page!.getWidgetByName("btnCurrLoc") as! SCDWidgetsButton
-		btnCurrLoc.onClick.append(SCDWidgetsEventHandler{_ in self.gotoCurrentLocation()})
-		
-		let btnSushi = self.page!.getWidgetByName("btnSushi") as! SCDWidgetsButton
-		btnSushi.onClick.append(SCDWidgetsEventHandler{_ in self.goto(coordinates:self.bestSushiLocation)})
+		btnSushi.onClick{_ in self.goto(coordinates:self.bestSushiLocation)}
 		
 		// let add buttons for setting map type
-		let btnStandard = self.page!.getWidgetByName("btnStandard") as! SCDWidgetsButton
-		btnStandard.onClick.append(SCDWidgetsEventHandler{_ in self.setMapType(btnStandard.name)})
+		btnStandard.onClick{_ in self.setMapType(self.btnStandard.name)}
 		
-		let btnHybrid = self.page!.getWidgetByName("btnSatellite") as! SCDWidgetsButton
-		btnHybrid.onClick.append(SCDWidgetsEventHandler{_ in self.setMapType(btnHybrid.name)})
+		btnSatellite.onClick{_ in self.setMapType(self.btnHybrid.name)}
 	
-		let btnSatellite = self.page!.getWidgetByName("btnHybrid") as! SCDWidgetsButton
-		btnSatellite.onClick.append(SCDWidgetsEventHandler{_ in self.setMapType(btnSatellite.name)})
+		btnHybrid.onClick{_ in self.setMapType(self.btnSatellite.name)}
 		
 		// demo annotation https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/AnnotatingMaps/AnnotatingMaps.html
 		self.setPerfectlySoftPin()
@@ -44,22 +34,22 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		
 		switch(name) {
 			case "btnHybrid":
-				self.mapWidget.mapType = SCDWidgetsMapType.hybrid
+				mapwidget1.mapType = SCDWidgetsMapType.hybrid
 			case "btnSatellite":
-				self.mapWidget.mapType = SCDWidgetsMapType.satellite
+				mapwidget1.mapType = SCDWidgetsMapType.satellite
 			case "btnStandard":
-				self.mapWidget.mapType = SCDWidgetsMapType.standard	
+				mapwidget1.mapType = SCDWidgetsMapType.standard	
 			default:
 				print("not covered")
 		}
 	}
 	
 	func goto(coordinates:SCDPlatformLocationCoordinate) {
-		  self.mapWidget.setRegion(coordinates,latitudinalMeters:1000,longitudinalMeters:1000)
+		  mapwidget1.setRegion(coordinates,latitudinalMeters:1000,longitudinalMeters:1000)
 	}
 	
 	func setPerfectlySoftPin() {
-		self.setPinAsAnnotaton(coordinate:perfectlySoftLocation,imagePath:"res/pinOrange.svg")
+		self.setPinAsAnnotaton(coordinate:perfectlySoftLocation,imagePath:"Assets/pinOrange.svg")
 	}
 	
 	func setPinAsAnnotaton(coordinate:SCDPlatformLocationCoordinate, imagePath:String) {
@@ -71,13 +61,13 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		let ann = SCDWidgetsMapAnnotation(location:coordinate)
 		ann.drawing = svgImage
 		
-		self.mapWidget.annotations.append(ann)
+		mapwidget1.annotations.append(ann)
 	}
 	
 	func setOverlayAroundSushiPlace() {
 		
         // get the map specific coordinates
-	    let coor2d = mapWidget.convertFromGeoLocation(bestSushiLocation)
+	    let coor2d = mapwidget1.convertFromGeoLocation(bestSushiLocation)
 	    
 	   	// Create overlay circle of radius 1000m 
 	    let overlayCircle = SCDSvgCircle(cx:SCDSvgUnit(value:coor2d!.x),cy:SCDSvgUnit(value:coor2d!.y),r:SCDSvgUnit(value:1000))
@@ -88,17 +78,17 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	    overlay.drawing = overlayCircle
 	    
 	    // Add overlay onto the map
-	    mapWidget.overlays.append(overlay)
+	    mapwidget1.overlays.append(overlay)
 	    
 	}
 	
 	func gotoCurrentLocation() {	
 		// currently, the desktop returns isShowUserLocation==false
-		if(mapWidget.showUserLocation) {
-			let curr = mapWidget.userLocation
+		if(mapwidget1.showUserLocation) {
+			let curr = mapwidget1.userLocation
 			print(curr?.latitude ?? 0)
 			print(curr!.longitude)
-			mapWidget.moveToUserLocation()
+			mapwidget1.moveToUserLocation()
 		}
 	}	
 }
