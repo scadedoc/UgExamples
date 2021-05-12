@@ -3,15 +3,11 @@ import Foundation
 
 class MainPageAdapter: SCDLatticePageAdapter {
 	
-	var label1 : SCDWidgetsLabel!
-	@objc dynamic var valueTrue : Bool = true
-	
 	// page adapter initialization
 	override func load(_ path: String) {		
 		super.load(path)
 		
-		label1 = self.page!.getWidgetByName("lbName") as! SCDWidgetsLabel
-		getTextLabelVariables(label:label1)
+		getTextLabelVariables(label:lbName)
 		
 		setGeneralProperties()
 		setFontProperties()
@@ -19,24 +15,24 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	
 	func getTextLabelVariables(label:SCDWidgetsLabel) {
 		
-		print("name \(label.name)")
-		print("text \(label.text)")
-		print("isEnabled : \(label.enable)")
-		print("isVisible : \(label.visible)")
-		print("isMultiline : \(label.multiline)")
-		print("isWrapText : \(label.wrapText)")
-		print("label.drawing.accessibilityLabel : \(label.drawing!.accessibilityTitle)")
+		print("name \(lbName.name)")
+		print("text \(lbName.text)")
+		print("isEnabled : \(lbName.enable)")
+		print("isVisible : \(lbName.visible)")
+		print("isMultiline : \(lbName.multiline)")
+		print("isWrapText : \(lbName.wrapText)")
+		print("lbName.drawing.accessibilityLabel : \(lbName.drawing!.accessibilityTitle)")
 	}
 	
 	func setGeneralProperties() {
-		label1.horizontalAlignment = SCDLayoutHorizontalAlignment.center
-		label1.baselineAlignment = SCDWidgetsBaselineAlignment.alphabetic
+		lbName.horizontalAlignment = SCDLayoutHorizontalAlignment.center
+		lbName.baselineAlignment = SCDWidgetsBaselineAlignment.alphabetic
 	}
 	
 	func setFontProperties() {
-		label1.font!.bold = true
-		label1.font!.italic = true
-		label1.font!.lineThrough = true
+		lbName.font!.bold = true
+		lbName.font!.italic = true
+		lbName.font!.lineThrough = true
 	}
 	
 }
