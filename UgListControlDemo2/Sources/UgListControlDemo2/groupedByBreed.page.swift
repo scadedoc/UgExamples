@@ -9,9 +9,7 @@ class GroupedByBreedPageAdapter: SCDLatticePageAdapter {
     super.load(path)
     setupDogs()
 
-    let backbutton = self.page!.getWidgetByName("itmDoglist") as! SCDWidgetsClickable
-    backbutton.onClick.append(
-      SCDWidgetsEventHandler { _ in self.navigation!.go(page: "main.page") })
+    itmDoglist.onClick{ _ in self.navigation!.go(page: "main.page") }
   }
 
   func setupDogs() {
@@ -23,7 +21,6 @@ class GroupedByBreedPageAdapter: SCDLatticePageAdapter {
     dogs.append(DogView(breed: "St.Bernard"))
     dogs.append(DogView(id: "d103", name: "Bailey", breed: "St.Bernard", ageInYears: 3))
 
-    let list1 = self.page?.getWidgetByName("list1") as! SCDWidgetsList
     list1.items.removeAll()
 
     self.dogs.forEach { result in

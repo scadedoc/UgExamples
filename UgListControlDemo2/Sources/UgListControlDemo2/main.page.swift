@@ -15,8 +15,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
     self.setupDogs()
 
     // listen to itemSelected events
-    let listControl = self.page!.getWidgetByName("list1") as! SCDWidgetsList
-    listControl.onItemSelected.append(
+    list1.onItemSelected.append(
       SCDWidgetsItemSelectedEventHandler { ev in self.rowClicked(event: ev!) })
 
 //    // Listen to action buttons
@@ -26,9 +25,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 //      SCDWidgetsEventHandler { _ in print("Info button Clicked") })
 
     // wire toolbar buttons
-    let groupedByButton = self.page!.getWidgetByName("itmGroupedByBreed") as! SCDWidgetsClickable
-    groupedByButton.onClick.append(
-      SCDWidgetsEventHandler { _ in self.navigation!.go(page: "groupedByBreed.page") })
+    itmGroupedByBreed.onClick{ _ in self.navigation!.go(page: "groupedByBreed.page") }
 
   }
 
@@ -38,10 +35,10 @@ class MainPageAdapter: SCDLatticePageAdapter {
     dogs.append(Dog(id: "d102", name: "Bailey", breed: "St.Bernard", ageInYears: 3))
 
     //let list1 = self.page?.getWidgetByName("list1") as! SCDWidgetsList
-    self.list1.items.removeAll()
+    list1.items.removeAll()
 
     self.dogs.forEach { result in
-      self.list1.items.append(0)
+      list1.items.append(0)
       guard let elem = self.list1.elements.last else { return }
       let gridView = elem.children[0] as! SCDWidgetsGridView
       let dogName = gridView.children[0] as! SCDWidgetsLabel
