@@ -4,7 +4,7 @@ import Foundation
 class MainPageAdapter: SCDLatticePageAdapter {
 
 	// This variable is bound to label control via binding editor
-	@objc dynamic var label : String = "No gesture executed"
+	var label : String = "No gesture executed"
 	
 	// holds reference to circle
 	var circle : SCDSvgCircle?
@@ -35,7 +35,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		
 		// add gesture to button. Is changes the background color
 		// of the button when button is pressed (began) and finger is lifted up (ended)
-		self.button1.drawing!.gestureRecognizers.append(getUpDownGestureForButton())
+		button1.drawing!.gestureRecognizers.append(getUpDownGestureForButton())
 		
 	}
 	
