@@ -13,9 +13,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		
 		// closure to process temperature
 		let displayTemperature = {  (temperature:Double) in 
-		     if let label = self.page!.getWidgetByName("lblTemperature") as? SCDWidgetsLabel {
-				label.text = String(Double(round(10*temperature)/10))
-			}
+			self.lblTemperature.text = String(Double(round(10*temperature)/10))
 		}
 		
 		// retrieve temp async and invoke display function
