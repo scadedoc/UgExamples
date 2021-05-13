@@ -9,7 +9,7 @@ class HelloWorldPageAdapter: SCDLatticePageAdapter {
 		// setup the button
 		let button = SCDWidgetsButton()
 		button.text = "Press me!"
-		button.onClick.append( SCDWidgetsEventHandler{ e in self.handleButtonClick(e!) })
+		button.onClick{ e in self.handleButtonClick(e) }
 		configureFontStyle(of:button)
 		
 		// It is MANDATORY to set the layoutData property. Without it, code crashes
@@ -22,7 +22,7 @@ class HelloWorldPageAdapter: SCDLatticePageAdapter {
 		
 		// assign layout to button
 		button.layoutData = gridData
-	 	button.onClick.append(SCDWidgetsEventHandler{ _ in print("Hello")})
+	 	button.onClick{ _ in print("Hello")}
 		 
 		// Configure current (main page)
 		let layout = self.page!.layout as! SCDLayoutGridLayout

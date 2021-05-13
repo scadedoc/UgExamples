@@ -64,10 +64,10 @@ class DynamicButtonGridPageAdapter: SCDLatticePageAdapter {
 	  button.text = label
 	  
 	  // on click, call callback with name of button
-	  button.onClick.append( SCDWidgetsEventHandler{ (e:SCDWidgetsEvent?) in 
-		  let button = e!.target as! SCDWidgetsButton
-		  action(button.name) 
-		})
+	  button.onClick{ (e:SCDWidgetsEvent?) in 
+		 let button = e!.target as! SCDWidgetsButton
+		 action(button.name) 
+	  }
 	  
 	  self.configureFontStyle(of: button, to: whiteColor)
 	  self.setBackgroundColor(of: button, to: redColor)
