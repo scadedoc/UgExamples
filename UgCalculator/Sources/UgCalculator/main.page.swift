@@ -117,8 +117,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 						case .ended:
 							btn.backgroundColor = input.1 // default color
 							self.process(input.0)  // process input
-							let displayLabel = self.page!.getWidgetByName("lbNumberDisplay") as! SCDWidgetsLabel
-							displayLabel.text = self.buffer
+							self.lbNumberDisplay.text = self.buffer
 						default: 
 							return
 					}
