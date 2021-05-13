@@ -15,17 +15,12 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		// this is the shortest way of wiring the logic
 		// there are more elegant ways
 		
-		// get reference of label called lbMd5
-		let lbMD5 = self.page!.getWidgetByName("lbMd5") as! SCDWidgetsLabel
-		
 		 // get reference to textbox, and add editFinished event
-		if let tbText = self.page!.getWidgetByName("tbText") as? SCDWidgetsTextbox {
-			tbText.onEditFinish.append(SCDWidgetsEditFinishEventHandler{
-				(e:SCDWidgetsEditFinishEvent?) in
-					let newValue = e!.newValue
-					let md5 = newValue.md5() // Use CrytoSwift
-					lbMD5.text = md5
-			})
-		}
+		tbText.onEditFinish.append(SCDWidgetsEditFinishEventHandler{
+			(e:SCDWidgetsEditFinishEvent?) in
+				let newValue = e!.newValue
+				let md5 = newValue.md5() // Use CrytoSwift
+				self.lbMd5.text = md5
+		})
 	}
 }
