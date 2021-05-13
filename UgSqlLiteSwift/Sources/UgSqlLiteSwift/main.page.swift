@@ -38,7 +38,6 @@ class MainPageAdapter: SCDLatticePageAdapter {
 			    print("id: \(user[id]), name: \(user[name]), email: \(user[email])")
 			    
 			    self.label = "Hello " + ( user[name]  ?? "User not found")
-			    let label1 = self.page!.getWidgetByName("label1") as! SCDWidgetsLabel
 			    label1.text = self.label
 			    
 			    // id: 1, name: Optional("Alice"), email: alice@mac.com
