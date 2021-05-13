@@ -12,25 +12,25 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		
 		// pages could either be loaded on demand
 		// or in advance. We load all pages in advance here
-		self.page1.load("page1.page")
-		self.page2.load("page2.page")
-		self.page3.load("page3.page")
+		page1.load("page1.page")
+		page2.load("page2.page")
+		page3.load("page3.page")
 		
 		// lets add event handlers
-		self.item1.onClick{ _ in self.showPage(self.page1)}
+		item1.onClick{ _ in self.showPage(self.page1)}
 		
-		self.item2.onClick{_ in self.showPage(self.page2)}
+		item2.onClick{_ in self.showPage(self.page2)}
 		
-		self.item3.onClick{ _ in self.showPage(self.page3)}
+		item3.onClick{ _ in self.showPage(self.page3)}
 				
 		// Finally, we use the page container to show page1
-		self.page1.show(view: self.pagecontainer1)
+		page1.show(view: pagecontainer1)
 	}
 	
 	func showPage(_ page:SCDLatticePageAdapter) {
 		// our syntax is the other way round
 		// we tell the page to display itself in container X
 		// we don't tell the container to show a page
-		page.show(view: self.pagecontainer1)
+		page.show(view: pagecontainer1)
 	}
 }
