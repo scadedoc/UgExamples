@@ -9,7 +9,7 @@
         <element xsi:type="widgets:ListElement" name="listElement">
           <children xsi:type="widgets:GridView" name="gridView1">
             <children xsi:type="widgets:Label" text="dogName" name="dogName">
-              <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
+              <font xsi:type="graphics:Font" fontFamily="Arial-BoldMT" size="17">
                 <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
               </font>
               <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" grabHorizontalSpace="true">
@@ -17,18 +17,18 @@
                 <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
               </layoutData>
               <location xsi:type="graphics:Point" x="5" y="5"/>
-              <size xsi:type="graphics:Dimension" width="74" height="22"/>
-              <contentSize xsi:type="graphics:Dimension" width="74" height="22"/>
+              <size xsi:type="graphics:Dimension" width="78" height="22"/>
+              <contentSize xsi:type="graphics:Dimension" width="78" height="22"/>
             </children>
             <children xsi:type="widgets:Label" text="dogBreed" name="dogBreed">
               <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
                 <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
               </font>
-              <layoutData xsi:type="layout:GridData" column="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true">
-                <minSize xsi:type="graphics:Dimension" width="44" height="22"/>
+              <layoutData xsi:type="layout:GridData" row="1" verticalAlignment="MIDDLE">
+                <minSize xsi:type="graphics:Dimension" width="74" height="22"/>
                 <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
               </layoutData>
-              <location xsi:type="graphics:Point" x="118" y="5"/>
+              <location xsi:type="graphics:Point" x="5" y="27"/>
               <size xsi:type="graphics:Dimension" width="74" height="22"/>
               <contentSize xsi:type="graphics:Dimension" width="74" height="22"/>
             </children>
@@ -36,19 +36,19 @@
               <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
                 <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
               </font>
-              <layoutData xsi:type="layout:GridData" column="2" horizontalAlignment="RIGHT" verticalAlignment="MIDDLE" grabHorizontalSpace="true">
+              <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" row="1">
                 <minSize xsi:type="graphics:Dimension" width="44" height="22"/>
                 <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
               </layoutData>
-              <location xsi:type="graphics:Point" x="261" y="5"/>
+              <location xsi:type="graphics:Point" x="261" y="27"/>
               <size xsi:type="graphics:Dimension" width="44" height="22"/>
               <contentSize xsi:type="graphics:Dimension" width="44" height="22"/>
             </children>
-            <layout xsi:type="layout:GridLayout" columns="3" marginRight="5" marginTop="5" marginBottom="5" marginLeft="5"/>
+            <layout xsi:type="layout:GridLayout" rows="2" marginTop="5" columns="3" marginBottom="5" marginLeft="5" marginRight="5"/>
             <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
             <location xsi:type="graphics:Point" x="10"/>
             <minArea xsi:type="graphics:Dimension"/>
-            <size xsi:type="graphics:Dimension" width="310" height="45"/>
+            <size xsi:type="graphics:Dimension" width="310" height="54"/>
             <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" heightConstraint="MATCH_PARENT">
               <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
             </layoutData>
@@ -57,7 +57,7 @@
           <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
           <location xsi:type="graphics:Point"/>
           <minArea xsi:type="graphics:Dimension" height="45"/>
-          <size xsi:type="graphics:Dimension" width="320" height="45"/>
+          <size xsi:type="graphics:Dimension" width="320" height="54"/>
           <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT">
             <minSize xsi:type="graphics:Dimension"/>
           </layoutData>
@@ -83,22 +83,9 @@
           <color xsi:type="graphics:RGB"/>
         </font>
         <location xsi:type="graphics:Point" x="5" y="5"/>
-        <size xsi:type="graphics:Dimension" width="155" height="40"/>
+        <size xsi:type="graphics:Dimension" width="310" height="40"/>
         <contentSize xsi:type="graphics:Dimension" width="86" height="23"/>
         <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true">
-          <minSize xsi:type="graphics:Dimension" width="86" height="23"/>
-          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
-        </layoutData>
-        <backgroundColor xsi:type="graphics:RGB" Red="255" Green="255" Blue="255" Alpha="0"/>
-      </children>
-      <children xsi:type="widgets:Button" text="Grouped By Breed" name="itmGroupedByBreed" horizontalAlignment="CENTER">
-        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="10">
-          <color xsi:type="graphics:RGB" Blue="1"/>
-        </font>
-        <location xsi:type="graphics:Point" x="160" y="5"/>
-        <size xsi:type="graphics:Dimension" width="155" height="40"/>
-        <contentSize xsi:type="graphics:Dimension" width="86" height="23"/>
-        <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" grabHorizontalSpace="true">
           <minSize xsi:type="graphics:Dimension" width="86" height="23"/>
           <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
         </layoutData>
