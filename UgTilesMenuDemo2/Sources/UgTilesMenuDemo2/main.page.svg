@@ -14,7 +14,6 @@
           <g template-id="content">
             <g eObject-URI="main.page#/0/@children.0/@children.0/@children.0" widget-name="label2" transform="matrix(1 0 0 1 5 85)">
               <svg template-id="background" width="88" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
-                <rect width="100%" height="100%" fill="#ffffff" />
               </svg>
               <text text-anchor="middle" alignment-baseline="central" font-size="13" font-family="Arial" font-style="normal" text-decoration="none" template-id="node-text" x="44" y="11" fill="#fcfcfc">Flights</text>
             </g>
