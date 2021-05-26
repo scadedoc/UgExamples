@@ -12,8 +12,4 @@ extension MainPageAdapter {
   var itmDoglist: SCDWidgetsButton {
     return self.page?.getWidgetByName("itmDoglist") as! SCDWidgetsButton
   }
-
-  var itmGroupedByBreed: SCDWidgetsButton {
-    return self.page?.getWidgetByName("itmGroupedByBreed") as! SCDWidgetsButton
-  }
 }
