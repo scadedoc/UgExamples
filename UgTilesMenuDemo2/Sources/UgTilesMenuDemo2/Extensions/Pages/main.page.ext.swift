@@ -1,8 +1,8 @@
 import ScadeKit
 
 extension MainPageAdapter {
-  var label1: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("label1") as! SCDWidgetsLabel
+  var gridView1: SCDWidgetsGridView {
+    return self.page?.getWidgetByName("gridView1") as! SCDWidgetsGridView
   }
 
   var listView1: SCDWidgetsListView {
@@ -29,6 +29,18 @@ extension MainPageAdapter {
     return self.page?.getWidgetByName("label3") as! SCDWidgetsLabel
   }
 
+  var listView3: SCDWidgetsListView {
+    return self.page?.getWidgetByName("listView3") as! SCDWidgetsListView
+  }
+
+  var image3: SCDWidgetsImage {
+    return self.page?.getWidgetByName("image3") as! SCDWidgetsImage
+  }
+
+  var label4: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("label4") as! SCDWidgetsLabel
+  }
+
   var listView4: SCDWidgetsListView {
     return self.page?.getWidgetByName("listView4") as! SCDWidgetsListView
   }
@@ -53,6 +65,18 @@ extension MainPageAdapter {
     return self.page?.getWidgetByName("label6") as! SCDWidgetsLabel
   }
 
+  var listView6: SCDWidgetsListView {
+    return self.page?.getWidgetByName("listView6") as! SCDWidgetsListView
+  }
+
+  var image6: SCDWidgetsImage {
+    return self.page?.getWidgetByName("image6") as! SCDWidgetsImage
+  }
+
+  var label7: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("label7") as! SCDWidgetsLabel
+  }
+
   var listView7: SCDWidgetsListView {
     return self.page?.getWidgetByName("listView7") as! SCDWidgetsListView
   }
@@ -65,27 +89,7 @@ extension MainPageAdapter {
     return self.page?.getWidgetByName("label8") as! SCDWidgetsLabel
   }
 
-  var listView3: SCDWidgetsListView {
-    return self.page?.getWidgetByName("listView3") as! SCDWidgetsListView
-  }
-
-  var image3: SCDWidgetsImage {
-    return self.page?.getWidgetByName("image3") as! SCDWidgetsImage
-  }
-
-  var label4: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("label4") as! SCDWidgetsLabel
-  }
-
-  var listView6: SCDWidgetsListView {
-    return self.page?.getWidgetByName("listView6") as! SCDWidgetsListView
-  }
-
-  var image6: SCDWidgetsImage {
-    return self.page?.getWidgetByName("image6") as! SCDWidgetsImage
-  }
-
-  var label7: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("label7") as! SCDWidgetsLabel
+  var label1: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("label1") as! SCDWidgetsLabel
   }
 }
