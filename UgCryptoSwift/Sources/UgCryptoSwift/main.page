@@ -1,0 +1,68 @@
+<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="main">
+    <children xsi:type="widgets:ListView" name="verticalview1">
+      <children xsi:type="widgets:Label" text="Enter your text value" name="label1">
+        <location xsi:type="graphics:Point" x="5" y="5"/>
+        <size xsi:type="graphics:Dimension" width="384" height="30"/>
+        <contentSize xsi:type="graphics:Dimension" width="384" height="30"/>
+        <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="384" height="30"/>
+          <maxSize xsi:type="graphics:Dimension" width="384" height="30"/>
+        </layoutData>
+      </children>
+      <children xsi:type="widgets:Textbox" text="Your Text" name="tbText">
+        <location xsi:type="graphics:Point" x="5" y="35"/>
+        <size xsi:type="graphics:Dimension" width="384" height="30"/>
+        <contentSize xsi:type="graphics:Dimension" width="384" height="25"/>
+        <layoutData xsi:type="layout:GridData" row="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="384" height="30"/>
+          <maxSize xsi:type="graphics:Dimension" width="384" height="30"/>
+        </layoutData>
+      </children>
+      <layout xsi:type="layout:GridLayout" rows="3" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
+      <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+      <location xsi:type="graphics:Point" x="10" y="189"/>
+      <minArea xsi:type="graphics:Dimension"/>
+      <size xsi:type="graphics:Dimension" width="394" height="70"/>
+      <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true">
+        <minSize xsi:type="graphics:Dimension"/>
+      </layoutData>
+    </children>
+    <children xsi:type="widgets:ListView" name="verticalview2">
+      <children xsi:type="widgets:Label" text="Your MD5 value thanks to CryptoSwift and SCADE" name="label11">
+        <location xsi:type="graphics:Point" x="5" y="5"/>
+        <size xsi:type="graphics:Dimension" width="384" height="30"/>
+        <contentSize xsi:type="graphics:Dimension" width="384" height="30"/>
+        <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="384" height="30"/>
+          <maxSize xsi:type="graphics:Dimension" width="384" height="30"/>
+        </layoutData>
+      </children>
+      <children xsi:type="widgets:Label" text="MD5 value thanks to CryptoSwift" name="lbMd5">
+        <location xsi:type="graphics:Point" x="5" y="35"/>
+        <size xsi:type="graphics:Dimension" width="384" height="30"/>
+        <contentSize xsi:type="graphics:Dimension" width="384" height="30"/>
+        <layoutData xsi:type="layout:GridData" row="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize xsi:type="graphics:Dimension" width="384" height="30"/>
+          <maxSize xsi:type="graphics:Dimension" width="384" height="30"/>
+        </layoutData>
+      </children>
+      <layout xsi:type="layout:GridLayout" rows="2" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
+      <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+      <location xsi:type="graphics:Point" x="10" y="637"/>
+      <minArea xsi:type="graphics:Dimension"/>
+      <size xsi:type="graphics:Dimension" width="394" height="70"/>
+      <layoutData xsi:type="layout:GridData" row="1" grabVerticalSpace="true" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+        <minSize xsi:type="graphics:Dimension"/>
+      </layoutData>
+    </children>
+    <layout xsi:type="layout:GridLayout" rows="2" marginLeft="10" marginRight="10"/>
+    <maxArea xsi:type="graphics:Dimension" width="414" height="896"/>
+    <location xsi:type="graphics:Point"/>
+    <minArea xsi:type="graphics:Dimension" width="414" height="896"/>
+    <size xsi:type="graphics:Dimension" width="414" height="896"/>
+  </widgets:Page>
+  <binding:BindingModel/>
+  <navigation:Navigation page="/0"/>
+</xmi:XMI>

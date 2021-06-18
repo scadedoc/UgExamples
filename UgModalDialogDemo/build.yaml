@@ -19,24 +19,27 @@ ios:
   simulator:
     os: 12.1
     output: UgModalDialogDemo/.build/ios-simulator
+    product-path: UgModalDialogDemo/Product/ios-simulator
     extra-args:
     search-paths: []
     linked-libs: []
   device: 
     os: 12.1
     output: UgModalDialogDemo/.build/ios-device
+    product-path: UgModalDialogDemo/Product/ios-device
     extra-args: 
     search-paths: []
     linked-libs: []
   mac:
     os: 10.11
     output: UgModalDialogDemo/.build/scade-simulator
+    product-path: UgModalDialogDemo/Product/scade-simulator
     extra-args: 
     search-paths: []
     linked-libs: []
   sign:
-    provision-profile: /Users/juliawork/ScadeTools/certificates/Scade_Adhoc.mobileprovision
-    certificate: /Users/juliawork/ScadeTools/certificates/Certificates.p12
+    provision-profile: 
+    certificate: 
     beta-reports-active: false
   icons: 
     iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5
@@ -74,21 +77,25 @@ android:
   permissions: []
   armeabi-v7a:
     output: UgModalDialogDemo/.build/android-armeabi-v7a
+    product-path: UgModalDialogDemo/Product/android-armeabi-v7a
     extra-args:
     search-paths: []
     linked-libs: []
   arm64-v8a:
     output: UgModalDialogDemo/.build/android-arm64-v8a
+    product-path: UgModalDialogDemo/Product/android-arm64-v8a
     extra-args:
     search-paths: []
     linked-libs: []
   x86:
     output: UgModalDialogDemo/.build/android-x86
+    product-path: UgModalDialogDemo/Product/android-x86
     extra-args:
     search-paths: []
     linked-libs: []
   x86_64:
     output: UgModalDialogDemo/.build/android-x86_64
+    product-path: UgModalDialogDemo/Product/android-x86_64
     extra-args:
     search-paths: []
     linked-libs: []

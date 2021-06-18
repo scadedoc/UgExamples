@@ -13,7 +13,7 @@ linked-libs: []
 
 ios:
   name: UgTextLabelDemo
-  id: com.scade.UgTextLabelDemo
+  id: com.scade.ugtextlabeldemo
   device-family: iphone # iphone, ipad or universal
   supported-interface-orientations: ['portrait'] # portrait, upside_down, landscape_left or landscape_right
   supported-interface-orientationsiPad: ['portrait']
@@ -28,18 +28,20 @@ ios:
   device: 
     os: 12.1
     output: UgTextLabelDemo/.build/ios-device
+    product-path: UgTextLabelDemo/Product/ios-device
     extra-args: 
     search-paths: []
     linked-libs: []
   mac:
     os: 10.11
     output: UgTextLabelDemo/.build/scade-simulator
+    product-path: UgTextLabelDemo/Product/scade-simulator
     extra-args: 
     search-paths: []
     linked-libs: []
   sign:
-    provision-profile: /Users/juliawork/ScadeTools/certificates/Scade_Adhoc.mobileprovision
-    certificate: /Users/juliawork/ScadeTools/certificates/Certificates.p12
+    provision-profile:
+    certificate:
     beta-reports-active: false
   icons: 
     iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5
@@ -68,7 +70,7 @@ ios:
 
 android:
   name: UgTextLabelDemo
-  id: com.scade.UgTextLabelDemo
+  id: com.scade.ugtextlabeldemo
   version-name: 1.0.0
   version-code: 1
   build-type: Debug
@@ -78,21 +80,25 @@ android:
   permissions: []
   armeabi-v7a:
     output: UgTextLabelDemo/.build/android-armeabi-v7a
+    product-path: UgTextLabelDemo/Product/android-armeabi-v7a
     extra-args:
     search-paths: []
     linked-libs: []
   arm64-v8a:
     output: UgTextLabelDemo/.build/android-arm64-v8a
+    product-path: UgTextLabelDemo/Product/android-arm64-v8a
     extra-args:
     search-paths: []
     linked-libs: []
   x86:
     output: UgTextLabelDemo/.build/android-x86
+    product-path: UgTextLabelDemo/Product/android-x86
     extra-args:
     search-paths: []
     linked-libs: []
   x86_64:
     output: UgTextLabelDemo/.build/android-x86_64
+    product-path: UgTextLabelDemo/Product/android-x86_64
     extra-args:
     search-paths: []
     linked-libs: []

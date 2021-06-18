@@ -19,27 +19,38 @@ ios:
   simulator:
     os: 12.1
     output: UgCalculator/.build/ios-simulator
+    product-path: UgCalculator/Product/ios-simulator
     extra-args:
     search-paths: []
-    linked-libs:
-      - Expression
+    linked-libs: []
+    spm:
+      dependencies:
+        - name: Expression
+          package: Expression
   device: 
     os: 12.1
     output: UgCalculator/.build/ios-device
+    product-path: UgCalculator/Product/ios-device
     extra-args: 
     search-paths: []
-    linked-libs:
-      - Expression
+    linked-libs: []
+    spm:
+      dependencies:
+        - name: Expression
+          package: Expression
   mac:
     os: 10.11
     output: UgCalculator/.build/scade-simulator
     extra-args: 
     search-paths: []
     linked-libs:
-      - Expression
+    spm:
+      dependencies:
+        - name: Expression
+          package: Expression
   sign:
-    provision-profile: /Users/juliawork/ScadeTools/certificates/Scade_Adhoc.mobileprovision
-    certificate: /Users/juliawork/ScadeTools/certificates/Certificates.p12
+    provision-profile:
+    certificate:
     beta-reports-active: false
   icons: 
     iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5
@@ -78,28 +89,44 @@ android:
   permissions: []
   armeabi-v7a:
     output: UgCalculator/.build/android-armeabi-v7a
+    product-path: UgCalculator/Product/android-armeabi-v7a
     extra-args:
     search-paths: []
     linked-libs:
-      - Expression    
+    spm:
+      dependencies:
+        - name: Expression
+          package: Expression
   x86:
     output: UgCalculator/.build/android-x86
+    product-path: UgCalculator/Product/android-x86
     extra-args:
     search-paths: []
     linked-libs:
-      - Expression
+    spm:
+      dependencies:
+        - name: Expression
+          package: Expression
   arm64-v8a:
     output: UgCalculator/.build/android-arm64-v8a
+    product-path: UgCalculator/Product/android-arm64-v8a
     extra-args:
     search-paths: []
     linked-libs:
-      - Expression
+    spm:
+      dependencies:
+        - name: Expression
+          package: Expression
   x86_64:
     output: UgCalculator/.build/android-x86_64
+    product-path: UgCalculator/Product/android-x86_64
     extra-args:
     search-paths: []
     linked-libs:
-      - Expression
+    spm:
+      dependencies:
+        - name: Expression
+          package: Expression
   intent-filters:
     - action:
       scheme:

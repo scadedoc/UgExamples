@@ -8,6 +8,7 @@ spm:
 search-paths: []
 linked-libs: []
 
+
 ios:
   name: UgCryptoSwift
   id: com.scade.UgCryptoSwift
@@ -21,22 +22,33 @@ ios:
     output: UgCryptoSwift/.build/ios-simulator
     extra-args:
     search-paths: []
-    linked-libs: [CryptoSwift]
+    linked-libs: []
+    spm:
+      dependencies:
+        - name: CryptoSwift
   device: 
     os: 12.1
     output: UgCryptoSwift/.build/ios-device
+    product-path: UgCryptoSwift/Product/ios-device
     extra-args: 
     search-paths: []
-    linked-libs: [CryptoSwift]
+    linked-libs: []
+    spm:
+      dependencies:
+        - name: CryptoSwift
   mac:
     os: 10.11
     output: UgCryptoSwift/.build/scade-simulator
+    product-path: UgCryptoSwift/Product/scade-simulator
     extra-args: 
     search-paths: []
-    linked-libs: [CryptoSwift]
+    linked-libs: []
+    spm:
+      dependencies:
+        - name: CryptoSwift
   sign:
-    provision-profile: /Users/juliawork/ScadeTools/certificates/Scade_Adhoc.mobileprovision
-    certificate: /Users/juliawork/ScadeTools/certificates/Certificates.p12
+    provision-profile:
+    certificate:
     beta-reports-active: false
   icons: 
     iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5
@@ -75,24 +87,40 @@ android:
   permissions: []
   armeabi-v7a:
     output: UgCryptoSwift/.build/android-armeabi-v7a
+    product-path: UgCryptoSwift/Product/android-armeabi-v7a
     extra-args:
     search-paths: []
-    linked-libs: [CryptoSwift]
+    linked-libs: []
+    spm:
+      dependencies:
+        - name: CryptoSwift
   x86:
     output: UgCryptoSwift/.build/android-x86
+    product-path: UgCryptoSwift/Product/android-x86
     extra-args:
     search-paths: []
-    linked-libs: [CryptoSwift]
+    linked-libs: []
+    spm:
+      dependencies:
+        - name: CryptoSwift
   arm64-v8a:
     output: UgCryptoSwift/.build/android-arm64-v8a
+    product-path: UgCryptoSwift/Product/android-arm64-v8a
     extra-args:
     search-paths: []
-    linked-libs: [CryptoSwift]
+    linked-libs: []
+    spm:
+      dependencies:
+        - name: CryptoSwift
   x86_64:
     output: UgCryptoSwift/.build/android-x86_64
+    product-path: UgCryptoSwift/Product/android-x86_64
     extra-args:
     search-paths: []
-    linked-libs: [CryptoSwift]
+    linked-libs: []
+    spm:
+      dependencies:
+        - name: CryptoSwift
   intent-filters:
     - action:
       scheme:

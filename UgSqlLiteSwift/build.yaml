@@ -1,7 +1,9 @@
 spm:
-  - url: git@github.com:stephencelis/SQLite.swift.git
-    from: 0.11.0
-    path: 
+  - name:
+    url: https://github.com/scadedoc/SQLite.swift
+    branch: master
+    from:
+    path:
     search-paths: []
     linked-libs: []
 
@@ -10,7 +12,7 @@ linked-libs: []
 
 ios:
   name: UgSqlLiteSwift
-  id: com.scade.UgSqlLiteSwift
+  id: com.scade.ugsqlliteswift
   device-family: iphone # iphone, ipad or universal
   supported-interface-orientations: ['portrait'] # portrait, upside_down, landscape_left or landscape_right
   supported-interface-orientationsiPad: ['portrait']
@@ -21,22 +23,33 @@ ios:
     output: UgSqlLiteSwift/.build/ios-simulator
     extra-args:
     search-paths: []
-    linked-libs: [SQLite]
+    linked-libs: []
+    spm:
+      dependencies:
+        - name: SQLite
   device: 
     os: 12.1
     output: UgSqlLiteSwift/.build/ios-device
     extra-args: 
     search-paths: []
-    linked-libs: [SQLite]
+    linked-libs: []
+    spm:
+      dependencies:
+        - name: SQLite
+          package: SQLite
   mac:
     os: 10.11
     output: UgSqlLiteSwift/.build/scade-simulator
     extra-args: 
     search-paths: []
-    linked-libs: [SQLite]
+    linked-libs: []
+    spm:
+      dependencies:
+        - name: SQLite
+          package: SQLite.swift
   sign:
-    provision-profile: /Users/juliawork/ScadeTools/certificates/Scade_Adhoc.mobileprovision
-    certificate: /Users/juliawork/ScadeTools/certificates/Certificates.p12
+    provision-profile:
+    certificate:
     beta-reports-active: false
   icons: 
     iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5
@@ -65,7 +78,7 @@ ios:
 
 android:
   name: UgSqlLiteSwift
-  id: com.scade.UgSqlLiteSwift
+  id: com.scade.ugsqlliteswift
   version-name: 1.0.0
   version-code: 1
   build-type: Debug
@@ -77,12 +90,40 @@ android:
     output: UgSqlLiteSwift/.build/android-armeabi-v7a
     extra-args:
     search-paths: []
-    linked-libs: [SQLite]
+    linked-libs: [sqlite3]
+    spm:
+      dependencies:
+        - name: SQLite
+          package: SQLite.swift
+  arm64-v8a:
+    output: UgSqlLiteSwift/.build/android-x86
+    product-path: UgSqlLiteSwift/Product/android-arm64-v8a
+    extra-args:
+    search-paths: []
+    linked-libs: [sqlite3]
+    spm:
+      dependencies:
+        - name: SQLite
+          package: SQLite.swift
   x86:
     output: UgSqlLiteSwift/.build/android-x86
     extra-args:
     search-paths: []
-    linked-libs: [SQLite]
+    linked-libs: [sqlite3]
+    spm:
+      dependencies:
+        - name: SQLite
+          package: SQLite.swift
+  x86_64:
+    output: UgSqlLiteSwift/.build/android-x86
+    product-path: UgSqlLiteSwift/Product/android-x86_64
+    extra-args:
+    search-paths: []
+    linked-libs: [sqlite3]
+    spm:
+      dependencies:
+        - name: SQLite
+          package: SQLite.swift
   intent-filters:
     - action:
       scheme:

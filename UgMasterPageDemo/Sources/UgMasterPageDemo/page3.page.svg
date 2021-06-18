@@ -1,0 +1,7 @@
+<?xml encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="page3.page#/0" widget-name="page3" width="414" height="896">
+  <svg template-id="background" width="414" height="896" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+  <g eObject-URI="page3.page#/0/@children.0" widget-name="label1" transform="matrix(1 0 0 1 166 431)">
+    <text alignment-baseline="central" font-size="29" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="16.5" fill="#269323">Page 3</text>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<?xml encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" widget-name="main" eObject-URI="main.page#/0" width="414" height="896">
+  <svg template-id="background" width="414" height="896" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
+    <rect width="100%" height="100%" fill="#96ff" />
+  </svg>
+  <g template-id="content">
+    <g widget-name="verticalview1" eObject-URI="main.page#/0/@children.0" transform="matrix(1 0 0 1 40 40)">
+      <svg template-id="background" width="334" height="816" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <g template-id="content">
+        <g widget-name="btnCustomModalDialog" eObject-URI="main.page#/0/@children.0/@children.0" transform="matrix(1 0 0 1 5 5)">
+          <svg template-id="background" width="324" height="43" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
+            <rect stroke-width="2" width="100%" height="100%" fill="#95ff" stroke="#fdffff" />
+          </svg>
+          <text text-anchor="middle" alignment-baseline="central" font-size="20" font-family="Arial" font-style="normal" text-decoration="none" template-id="node-text" x="162" y="21.5" fill="#feffff" stroke="#fdffff">Custom Modal Dialog</text>
+        </g>
+      </g>
+      <g widget-name="btnAlertController" eObject-URI="main.page#/0/@children.0/@children.1" transform="matrix(1 0 0 1 5 53)">
+        <svg template-id="background" width="324" height="43" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
+          <rect stroke-width="2" width="100%" height="100%" fill="#95ff" stroke="#fdffff" />
+        </svg>
+        <text text-anchor="middle" alignment-baseline="central" font-size="20" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="162" y="21.5" fill="#feffff" stroke="#fdffff">iOS AlertController</text>
+      </g>
+    </g>
+  </g>
+</svg>
