@@ -1,6 +1,6 @@
 spm:
   - url: git@github.com:nicklockwood/Expression.git
-    from: 0.12.0
+    from: 0.13.2
     path: 
     search-paths: []
     linked-libs: []
@@ -54,10 +54,10 @@ ios:
     beta-reports-active: false
   icons: 
     iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5
-      60X60_2X: 
-      76X76_2X:
-      76X76_3X:
-      83.5X83.5_2X:
+      60X60_2X: Assets/icons/Calculator-icon.png
+      76X76_2X: Assets/icons/Calculator-icon.png
+      76X76_3X: Assets/icons/Calculator-icon.png
+      83.5X83.5_2X: Assets/icons/Calculator-icon.png
     marketing:
       1024X1024_1X:
   plist: 
@@ -132,7 +132,7 @@ android:
       scheme:
       categories: [] 
   icons:
-    mdpi: res/icons/Calculator-icon.png
-    hdpi: res/icons/Calculator-icon.png
-    xhdpi: res/icons/Calculator-icon.png
-    xxhdpi: res/icons/Calculator-icon.png
+    mdpi: Assets/icons/Calculator-icon.png
+    hdpi: Assets/icons/Calculator-icon.png
+    xhdpi: Assets/icons/Calculator-icon.png
+    xxhdpi: Assets/icons/Calculator-icon.png
