@@ -9,20 +9,20 @@ extension MainPageAdapter {
     return self.page?.getWidgetByName("lbNumberDisplay") as! SCDWidgetsLabel
   }
 
-  var grid1: SCDWidgetsGridView {
-    return self.page?.getWidgetByName("grid1") as! SCDWidgetsGridView
+  var grid: SCDWidgetsGridView {
+    return self.page?.getWidgetByName("grid") as! SCDWidgetsGridView
   }
 
   var btnClear: SCDWidgetsButton {
     return self.page?.getWidgetByName("btnClear") as! SCDWidgetsButton
   }
 
-  var button11: SCDWidgetsButton {
-    return self.page?.getWidgetByName("button11") as! SCDWidgetsButton
+  var button1: SCDWidgetsButton {
+    return self.page?.getWidgetByName("button1") as! SCDWidgetsButton
   }
 
-  var button111: SCDWidgetsButton {
-    return self.page?.getWidgetByName("button111") as! SCDWidgetsButton
+  var button2: SCDWidgetsButton {
+    return self.page?.getWidgetByName("button2") as! SCDWidgetsButton
   }
 
   var btnDivide: SCDWidgetsButton {
@@ -39,6 +39,10 @@ extension MainPageAdapter {
 
   var btnNumber9: SCDWidgetsButton {
     return self.page?.getWidgetByName("btnNumber9") as! SCDWidgetsButton
+  }
+
+  var btnMultiple: SCDWidgetsButton {
+    return self.page?.getWidgetByName("btnMultiple") as! SCDWidgetsButton
   }
 
   var btnNumber4: SCDWidgetsButton {
@@ -65,8 +69,8 @@ extension MainPageAdapter {
     return self.page?.getWidgetByName("btnNumber3") as! SCDWidgetsButton
   }
 
-  var btnMultiple: SCDWidgetsButton {
-    return self.page?.getWidgetByName("btnMultiple") as! SCDWidgetsButton
+  var button11: SCDWidgetsButton {
+    return self.page?.getWidgetByName("button11") as! SCDWidgetsButton
   }
 
   var btnMinus: SCDWidgetsButton {
@@ -81,19 +85,15 @@ extension MainPageAdapter {
     return self.page?.getWidgetByName("btnEqual") as! SCDWidgetsButton
   }
 
-  var btnnumber7261: SCDWidgetsButton {
-    return self.page?.getWidgetByName("btnnumber7261") as! SCDWidgetsButton
-  }
-
   var btnNumber0: SCDWidgetsRowView {
     return self.page?.getWidgetByName("btnNumber0") as! SCDWidgetsRowView
   }
 
-  var label1: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("label1") as! SCDWidgetsLabel
+  var label: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("label") as! SCDWidgetsLabel
   }
 
-  var label2: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("label2") as! SCDWidgetsLabel
+  var label1: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("label1") as! SCDWidgetsLabel
   }
 }
