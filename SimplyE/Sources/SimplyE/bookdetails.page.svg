@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="bookdetails.page#/0" widget-name="bookdetails" width="320" height="480">
+  <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h">
+    <rect width="100%" height="100%" fill="#f8f8f8" />
+  </svg>
+  <g widget-id="viewBookDetails" widget-name="viewBookDetails" eObject-URI="bookdetails.page#/0/@children.1" transform="matrix(1 0 0 1 0 50)">
+    <g scrollableBox="320 480" template-id="container-scroll" scrollable="vertical" constraints="scrollsize!size.w|size.h">
+      <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h">
+        <rect width="100%" height="100%" fill="none" />
+      </svg>
+      <g widget-id="viewBitmapAndBookInfo" widget-name="viewBitmapAndBookInfo" eObject-URI="bookdetails.page#/0/@children.1/@children.0">
+        <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h">
+          <rect width="100%" height="100%" fill="none" />
+        </svg>
+        <g widget-id="horizontalview4" widget-name="horizontalview4" eObject-URI="bookdetails.page#/0/@children.1/@children.0/@children.0">
+          <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h" />
+          <g widget-name="bmpBook" eObject-URI="bookdetails.page#/0/@children.1/@children.0/@children.0/@children.0" widget-id="bmpBook" scade:bind="content:book.bookImage;contentPriority:trueAttribute" transform="matrix(1 0 0 1 30 0)">
+            <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDZGQjRCRUYyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDZGQjRCRjAyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpENkZCNEJFRDI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpENkZCNEJFRTI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmri+DQAAAS8SURBVHja7JxdK2xRGMfPnHPChUGHGIphmCGN8lYahdyQQi7kI/hOfALFhaSk3CLlLTZ5G2YoQ+MtjULU+befWu323uaME5PZ/v+L3Zq1n732Wr/9rGc9aymusbGxH1Rq+kkEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVY316/U7QbHR3F9eLiYmZmhp5FERZhERZhfc/VMMkSOT8/H41GGxoaqqqqPB6PLJp7e3sHBwdiFggE6urqbG8ZhRbKysoKCwtzc3Px8+bmJhKJaJr2+PhoNc7JyQkGg7BXzZ6cnGxvb3u93t7eXtSMj4+/9QrYoPz8/ByLxdAZdD4dsER5eXnd3d1+v1/VeHQVFRUtLS3Z3sIjq6urxkYGBwdl2Ep/dFVWVs7Ozpp4lZSU9PX1ZWVlmZqtra3d2tqy7STg9vf3o0FVg8e9utbX102d+URY+FzwBbjA7u7u3d0d/Ki9vR1dwZfPzs4GqcPDw42NDeOt5ubmo6Mj1KhGrq6ucMV3Pj09BRpxHJhheF1dXXBeZVlQUCCk4BqaLtgDX2NjI0aO9m07KaQSiQS4iF+jnaamJnQPb7m/v7d1dpN+DQwMpEKkpaUFV7xsf3/fVIl+o8dwIvn+19fXt7e3NTU1KGNOwckXFhbUrdfX1/LycnkKs0w1FY/Hd3Z2YPDy8oKfuJ6fn7tcrtLSUowqHA4r5+rp6cnPz0cBHofPIPYPDw+wgcMWFxeL2drammq8tbXV5/MB7uTk5OXlpVSiQXQA7o/2ccUUTlOAhycbfwIQsEp5ZWXFeAt9QqdRcLvdxnrbwHR2diYFhQADk9kKTGrYSsvLy9K4SXBSXG3D3+bmJq6YGfDNdMBCcLV2QsEyzjURIrdEmX+2rHDAZaQgDgsdHx9b7dENadwU4CS6YeIneYX6Hp8bsz5QGBgmKRYsDM8YjI1RWTlvim3KrIdGRkaSmCG8ZgwszK/Ozk7lbnBMOKzVARFcMjXP+ihh7RsaGpIFDoEZ8UjNa0nlPkS2mVfmZfChUEhITU9PYwWwDfYiLJFqwqbYONKC9z7ypWEhP5DAb1oN4HFvjby6utrWQ63rBhI3KdTX1zsBluxv5GoU0kVTDVJHWWeRDVg9BR5qu0RiXqOA/BP5c8bDksEAFvZG4k2I99jigYg1b1pcXJQC8ngMXuwBDvbAYZtnqfwLNJHiGykj6UfKKrvFzAjw2Ayhuwhbfl3GQarNuTHjRb2EuZCu5PbiXHNzcx0dHUhHgrqsSXUquciXgIVQNTExgWEjeMG/MNFisRh2msgYkXPJtsm0DUByj52d2BvPDwBLThSsyefU1JTpYCOhC4uG2iokl8th/zFkeHgY7vNJf1hx1OEfIp3k/XKGQVjJ1NbWJoVwOOzYDP4/5lokEonH4xKVsSBWVFSow1hN06wHEt8UViAQkENU27tysubkveG7hLz06enJ5/O53W6VJSCiI07JUa3DN9LvVVRX+t/LP4URFmERFmERFkVYhEVYhEVYhEURFmERFmERFmFRhEVYhEVYhEVYFGERFmERFmERFkVYhEVYhEVYDtVfAQYA9Kg8ERKqtwIAAAAASUVORK5CYII=" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
+          </g>
+        </g>
+        <g widget-id="verticalview1" widget-name="verticalview1" eObject-URI="bookdetails.page#/0/@children.1/@children.0/@children.1" transform="matrix(1 0 0 1 130 0)">
+          <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h">
+            <rect width="100%" height="100%" fill="none" />
+          </svg>
+          <g widget-name="lbBookTitle" eObject-URI="bookdetails.page#/0/@children.1/@children.0/@children.1/@children.0" widget-id="lbBookTitle" scade:bind="text:book.title" transform="matrix(1 0 0 1 2 2)">
+            <text alignment-baseline="central" font-size="18" font-family="Avenir-Black" template-id="node-text" maxWidth="1" x="0" y="19.5" fill="#464646">Silence of the Lambs</text>
+          </g>
+          <g widget-name="lbAuthorName" eObject-URI="bookdetails.page#/0/@children.1/@children.0/@children.1/@children.1" widget-id="lbAuthorName" scade:bind="text:book.author" transform="matrix(1 0 0 1 2 41)">
+            <text alignment-baseline="central" font-size="14" font-family="Avenir-Medium" template-id="node-text" x="0" y="10" fill="#464646">Charles Dickens</text>
+          </g>
+          <g widget-id="viewPublishingInfo" widget-name="viewPublishingInfo" eObject-URI="bookdetails.page#/0/@children.1/@children.0/@children.1/@children.2" transform="matrix(1 0 0 1 2 61)">
+            <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h" />
+            <g widget-id="label4" widget-name="label4" eObject-URI="bookdetails.page#/0/@children.1/@children.0/@children.1/@children.2/@children.0" transform="matrix(1 0 0 1 0 15)">
+              <text alignment-baseline="central" font-size="12" font-family="Avenir-Light" template-id="node-text" x="0" y="8.5" fill="#464646">Publisher</text>
+            </g>
+            <g widget-name="lbPublisher" eObject-URI="bookdetails.page#/0/@children.1/@children.0/@children.1/@children.2/@children.1" widget-id="lbPublisher" scade:bind="text:book.publisher" transform="matrix(1 0 0 1 74 15)">
+              <text alignment-baseline="central" font-size="12" font-family="Avenir-Light" template-id="node-text" x="0" y="8.5" fill="#464646">label</text>
+            </g>
+            <g widget-id="label6" widget-name="label6" eObject-URI="bookdetails.page#/0/@children.1/@children.0/@children.1/@children.2/@children.2" transform="matrix(1 0 0 1 0 32)">
+              <text alignment-baseline="central" font-size="12" font-family="Avenir-Light" template-id="node-text" x="0" y="8.5" fill="#464646">Published</text>
+            </g>
+            <g widget-name="lbPublished" eObject-URI="bookdetails.page#/0/@children.1/@children.0/@children.1/@children.2/@children.3" widget-id="lbPublished" scade:bind="text:book.published" transform="matrix(1 0 0 1 74 32)">
+              <text alignment-baseline="central" font-size="12" font-family="Avenir-Light" template-id="node-text" x="0" y="8.5" fill="#464646">label</text>
+            </g>
+            <g widget-id="label8" widget-name="label8" eObject-URI="bookdetails.page#/0/@children.1/@children.0/@children.1/@children.2/@children.4" transform="matrix(1 0 0 1 0 49)">
+              <text alignment-baseline="central" font-size="12" font-family="Avenir-Light" template-id="node-text" x="0" y="8.5" fill="#464646">Category</text>
+            </g>
+            <g widget-id="lbCategory" widget-name="lbCategory" eObject-URI="bookdetails.page#/0/@children.1/@children.0/@children.1/@children.2/@children.5" transform="matrix(1 0 0 1 74 49)">
+              <text alignment-baseline="central" font-size="12" font-family="Avenir-Light" template-id="node-text" x="0" y="8.5" fill="#464646">label</text>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g widget-id="horizontalview5" widget-name="horizontalview5" eObject-URI="bookdetails.page#/0/@children.1/@children.1" transform="matrix(1 0 0 1 0 134)">
+        <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h" />
+        <g widget-id="label10" widget-name="label10" eObject-URI="bookdetails.page#/0/@children.1/@children.1/@children.0" transform="matrix(1 0 0 1 0 8)">
+          <text alignment-baseline="central" font-size="12" font-family="Avenir-Medium" template-id="node-text" x="0" y="7.5" fill="#ffffff">This book is available to borrow</text>
+        </g>
+      </g>
+      <g widget-id="horizontalview6" widget-name="horizontalview6" eObject-URI="bookdetails.page#/0/@children.1/@children.2" transform="matrix(1 0 0 1 0 165)">
+        <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h">
+          <rect width="100%" height="100%" fill="none" />
+        </svg>
+        <g widget-id="horizontalview7" widget-name="horizontalview7" eObject-URI="bookdetails.page#/0/@children.1/@children.2/@children.0" transform="matrix(1 0 0 1 5 5)">
+          <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h" />
+        </g>
+        <g widget-id="horizontalview8" widget-name="horizontalview8" eObject-URI="bookdetails.page#/0/@children.1/@children.2/@children.1" transform="matrix(1 0 0 1 105 5)">
+          <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h" />
+          <g widget-id="label11" widget-name="label11" eObject-URI="bookdetails.page#/0/@children.1/@children.2/@children.1/@children.0" transform="matrix(1 0 0 1 31 6)">
+            <text alignment-baseline="central" font-size="17" font-family="Avenir-Medium" template-id="node-text" x="0" y="10.5" fill="#c01815">Get</text>
+          </g>
+        </g>
+        <g widget-id="horizontalview9" widget-name="horizontalview9" eObject-URI="bookdetails.page#/0/@children.1/@children.2/@children.2" transform="matrix(1 0 0 1 204 5)">
+          <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h" />
+          <g widget-id="label51" widget-name="label51" eObject-URI="bookdetails.page#/0/@children.1/@children.2/@children.2/@children.0" transform="matrix(1 0 0 1 5 6)">
+            <text alignment-baseline="central" font-size="12" font-family="Avenir-Light" template-id="node-text" x="0" y="10.5" fill="#c01815">Report a problem</text>
+          </g>
+        </g>
+      </g>
+      <g widget-id="viewDescription" widget-name="viewDescription" eObject-URI="bookdetails.page#/0/@children.1/@children.3" transform="matrix(1 0 0 1 0 209)">
+        <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h">
+          <rect width="100%" height="100%" fill="none" />
+        </svg>
+        <g widget-name="lbDescription1" eObject-URI="bookdetails.page#/0/@children.1/@children.3/@children.0" widget-id="lbDescription1" scade:bind="text:book.description1" transform="matrix(1 0 0 1 35 5)">
+          <text alignment-baseline="central" font-size="14" font-family="Avenir-Black" template-id="node-text" maxWidth="1" x="0" y="0" fill="#464646">description1</text>
+        </g>
+        <g widget-name="lbDescription2" eObject-URI="bookdetails.page#/0/@children.1/@children.3/@children.1" widget-id="lbDescription2" scade:bind="text:book.description2" transform="matrix(1 0 0 1 35 35)">
+          <text alignment-baseline="central" font-size="14" font-family="Avenir-Medium" template-id="node-text" maxWidth="1" x="0" y="0" fill="#464646">description2</text>
+        </g>
+        <g widget-id="horizontalview10" widget-name="horizontalview10" eObject-URI="bookdetails.page#/0/@children.1/@children.3/@children.2" transform="matrix(1 0 0 1 35 25)">
+          <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <g widget-id="viewNavigation" widget-name="viewNavigation" eObject-URI="bookdetails.page#/0/@children.0">
+    <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h">
+      <rect width="100%" height="100%" fill="#ffffff" />
+    </svg>
+    <g widget-id="viewBackButton" widget-name="viewBackButton" eObject-URI="bookdetails.page#/0/@children.0/@children.0" transform="matrix(1 0 0 1 5 5)">
+      <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h" />
+      <g widget-id="bitmap1" widget-name="bitmap1" eObject-URI="bookdetails.page#/0/@children.0/@children.0/@children.0" transform="matrix(1 0 0 1 5 5)">
+        <image xlink:href="Assets/backArrowRed.svg" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
+      </g>
+      <g widget-id="label2" widget-name="label2" eObject-URI="bookdetails.page#/0/@children.0/@children.0/@children.1" transform="matrix(1 0 0 1 35 5)">
+        <text alignment-baseline="central" font-size="14" font-family="HelveticaNeue" template-id="node-text" x="0" y="15" fill="#c01815">Catalog</text>
+      </g>
+    </g>
+    <g widget-id="horizontalview2" widget-name="horizontalview2" eObject-URI="bookdetails.page#/0/@children.0/@children.1" transform="matrix(1 0 0 1 212 5)">
+      <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h" />
+    </g>
+    <g widget-id="horizontalview3" widget-name="horizontalview3" eObject-URI="bookdetails.page#/0/@children.0/@children.2" transform="matrix(1 0 0 1 109 5)">
+      <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h" />
+      <g widget-id="label1" widget-name="label1" eObject-URI="bookdetails.page#/0/@children.0/@children.2/@children.0" transform="matrix(1 0 0 1 5 5)">
+        <text alignment-baseline="central" font-size="18" font-family="Avenir-Black" template-id="node-text" x="0" y="15" fill="#464646">Details</text>
+      </g>
+    </g>
+  </g>
+  <g widget-id="toolbar1" widget-name="toolbar1" eObject-URI="bookdetails.page#/0/@children.2" transform="matrix(1 0 0 1 0 428)">
+    <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h" />
+    <g widget-id="item1" widget-name="item1" eObject-URI="bookdetails.page#/0/@children.2/@children.0" transform="matrix(1 0 0 1 17 0)">
+      <g widget-id="icon1" widget-name="icon1" eObject-URI="bookdetails.page#/0/@children.2/@children.0/@children.0" transform="matrix(1 0 0 1 9 2)">
+        <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABRCAMAAAB7eHFAAAACiFBMVEUAAAAAAACAgIBVVVWAgIBmZmaAgICSkpKAgICOjo6AgICLi4uAgICJiYmSkpKIiIiPj4+Hh4eOjo6GhoaMjIySkpKLi4uQkJCKioqPj4+JiYmOjo6SkpKNjY2MjIyPj4+Pj4+SkpKOjo6RkZGNjY2QkJCMjIyPj4+SkpKOjo6RkZGOjo6NjY2Pj4+Pj4+RkZGOjo6QkJCOjo6SkpKPj4+RkZGPj4+QkJCSkpKPj4+RkZGRkZGPj4+QkJCSkpKQkJCRkZGPj4+RkZGPj4+QkJCSkpKQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGPj4+SkpKRkZGQkJCRkZGPj4+RkZGQkJCRkZGQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGSkpKRkZGQkJCSkpKRkZGRkZGRkZGQkJCRkZGSkpKSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKSkpIWRJMCAAAA13RSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0fICIjJCUmJygpKissLS8wMjM0NTY4OTo7Pj9AQUNERUZHSElKS0xNTk9RVFVWV1hZW11eX2BhY2RlZmhpamtsbW5vcXR1dnd4enx9f4CBgoOFh4iJiouMjY+QkZKTlJWXmJmam52foKGjpKWnqaqrrK2usLGys7W2t7i5uru8vr/Aw8TFxsfIyczNz9DR0tPU1dbX2Nna29zd3+Dh4uPk5ebn6Onq6+zt7/Dx8vP09fb3+Pn6+/z9/mBbZ+MAAAQJSURBVHgBvdfpd1NVF8fxX5NAAoWHPAwCWtQKalUGkAKKIii0QFWgigoqKChYQXAQKdQiteDAICgyWFEUQUBFBgcBRRlKW6BD04bk+++49K6VJl3JHZqz/Lw6L89vn+zsfeXagAky76lKmVfzV45M6xulUKbNhVUybReckmF92oARMmsOwEqZtQPguIzqHQHgVpk0C6JReEkmbYdPd8JhGZTbAjNLgBtlTgk0BEOXYZHM2QLrpSr4Wsb0aILx0niIDZIpM7Ba9BTMlymbYJkkLYfPZUjwKuRLUj5E/y8zihIPtB8ekxnvwzzrNA92yIhuDUTC1jEcobWXTHgQtkqWj+BhmbABpiWVd4sMCNRTG0iUopbGkLI3CdYqYS0UKXtVMEoJo+E9Zc1fmzpFTlAfULYmwhIlWQr3K1vriOUpSV6Md+SkeLG9i+xVii+4uNhesXKrcVCqFKU4eDdXUnEtdppylaJXE3YuTde/Bu4C4LOqtBaok4VVaVVfAdjTMRqebQEaZioL138JtC5UktuOAFT3VFcV1QHfFShFt9djwMkR6pJgBRBf1V2dTTgDRJ7PkXe3/wCcnag0+nwIsPs6efVkM7Al0/B6tAE4/4A8CW8FrpQqoyH7ErVxa9wZYP9NsuF7oQ04PFQu+cquQbTML3sjjgONj8uVG/YBv4yRo1BFHNjcR86m11mt7sbkc8DpQjkIVVqt7lK/j4FomU92Co5are7eE43AV3nKbF6L1epe5B8E6mcog/A2q9U98q8AapRBIbC6uzy7B5irDHLOdm3+rYG2sDIp79r8P2O7NhbC1R7yaiQwS7LL/4i8WgnNvZRZOeyUV8cclsZCaO8nb24BZkj2+Z+RNy/ClaDslMMBeXOw808m+MbW/ko2DrhZXgyOwxQlGX4ULkzrnP9lefE01AWU4FvaBkB179T8P8mLGlivhPxvsHB6Qmr+MXIv3A73dvzLNQGRRQubgdhbweT8a+TebDjnk2XwboDjw6WhBwCOjUzKf8Ev17Z13KGkHmBdD0nyLYkA7WX+jvxT5FaoCcZaddgEUJt49juPABwalsj/gdwqhtP6x6Q/AfYMVEJgeRRoWZBj5bdWYlc2wmuSer4dT7OzjToGsHeIlZ/ZcsdfB8Olu38G+PEudRJ8MwZcnmPl3+3+0+mkuq24BlARSrc//Qqwvb/KIepyS6yAZQVHAC4+pLR6VsaBC0XjgOfkyh+wvhVgV+Zb3Pc7wMYGOCQ3RmNpXSAb/9uAhaFy4VUAOHqH7E09BwCvyIUTAPE1QTnpuxmA3+RsGMD5yXKj5BLAWDlaCuwcIHcGfgJUytG3tHgZaKWXuRRw3Ljj3xfIi7wapjoOktVBeTS/2rFK8m6Q/gN/A0O640AHZc9eAAAAAElFTkSuQmCC" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
+      </g>
+      <g widget-id="caption1" widget-name="caption1" eObject-URI="bookdetails.page#/0/@children.2/@children.0/@children.1" transform="matrix(1 0 0 1 0 33)">
+        <text alignment-baseline="central" font-size="11" font-family="HelveticaNeue" template-id="node-text" x="0" y="9.5" fill="#464646">Favorites</text>
+      </g>
+    </g>
+    <g widget-id="item2" widget-name="item2" eObject-URI="bookdetails.page#/0/@children.2/@children.1" transform="matrix(1 0 0 1 97 0)">
+      <g widget-id="icon2" widget-name="icon2" eObject-URI="bookdetails.page#/0/@children.2/@children.1/@children.0" transform="matrix(1 0 0 1 8 2)">
+        <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAMAAAArteDzAAABGlBMVEUAAACAgIBVVVWAgICAgICOjo6AgICJiYmSkpKIiIiGhoaSkpKLi4uQkJCKioqPj4+JiYmMjIyPj4+Li4uOjo6NjY2QkJCNjY2RkZGOjo6QkJCQkJCRkZGRkZGPj4+RkZGPj4+RkZGRkZGRkZGPj4+SkpKQkJCQkJCRkZGQkJCSkpKQkJCRkZGRkZGRkZGRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKSkpKRkZGRkZGSkpKRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKSkpKtnLlmAAAAXXRSTlMAAgMGCAkMDQ4PExUWFxgZGh8gISQmJy88PUVHSEpLUVJWXV9gYmNqa2xwcXJ9h4mOkJGSmJmen6Cjqauur7C9vr/BwsjJy87P0tPY3d/g4ebn7O/w8fL19vn8/f7RmKQUAAADeUlEQVR4AbXZ/1MaRxzG8adAFRRag180tRFEq9GoBEQRq0XMSdBqtYqiOd7//7/RYQbbgR7ygdu8fueZ2b3jdvdZDZVe2TmoXd7cv7zc31zWDnZW0gpnJle+hX635dyMxjSxXm0zQLu6PqnRLRy26LqrlXa3N1ZXN7Z3S7U7ulqHCxrN4rFPh1/PL8fVI76cr3+jwz9elF2qAh3e5pQCTW160FFJySay1QR4LszrDfOFZ4DmVkQGsxcAj3tJDZHcewS4mNVQ2QegfTQtg+mjNvCQHTb0AsDVkoyWrgAKEb0hdgqwH5VZtAhwGtNAifP+0RhkHoDzxMDMBnA9pxHNXQONAamxc6CRUrDfPn9eU7BUAziPKUDkFPgS1wB/wO8aIH4OnAY9rQLQiGucUMUbQCHg/QSuUxovVKlrIKs+sw/wMKdxQzXX+f1s34ReAFmNH6oMcNE7rVvAvsKEqghs9UxJE66i4UKjl9BM6T8VaC8pXKiW2lDRvxaBI4UN1RGwqFfH8DQdPnT6EY7VteDDnsKHag/819XwEJ6TLkKTz3AodUy2oCgXoSpAa1Id68C8m9B5YF0dZ+DJTag8OJOkmTZsugrdhPaMpBz4U65Cp75BTlIZ6nIVqjqUJd1C3l1oHm6lNLDsLnQZSGsFiLsLjQMr2oE7uQvVHezoAGouQ2twoBqUXIaWoKYr2HUZuguXuoFtl6HbcKN72HAZugH3eoFVl6Gr8PJ9QoOG/0vm/y6wDz/wQf1JIPuDuoRde6jxlapByRhqf/mD/qaxHwNFzX/THfhbdrYPygqQkJ3p05cGfpWd5SNtXk6M8nBrX/iM6lC2L9E2Uz7kupuJj3JkE/wZSaqCJ0c8qNo3aDbzwLp9K2lThNaEfdNr0t302rfnHfbtefcgkVRo009wbD/ymPQdeVQB3iukJaBiP0aaRK+gmbIfeE32+w+8inhAViFkAS+iHuluiWBgLhGkDHD9k2yC646MrZgJZi9mFDnpr5DsmV+Ak8jgsssyA/ayS0p8Hb+W+5pwWiBm3y4QpdjJyFXnPsBJzFDKvh+1lLXUoe2j5Aj1ccZQdHsAT5ai+wnAm5XBD91Kvvh2JV/sq+TNlwcf7ZcHI15zJNQjsZyv+4ZrDlcXMgYTa1WfAfzq2oTG9HOu/Bf2Sy67dx8+lc5er+PODj59eKdh/gHz8XDxSR6kGQAAAABJRU5ErkJggg==" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
+      </g>
+      <g widget-id="caption2" widget-name="caption2" eObject-URI="bookdetails.page#/0/@children.2/@children.1/@children.1" transform="matrix(1 0 0 1 2 33)">
+        <text alignment-baseline="central" font-size="11" font-family="HelveticaNeue" template-id="node-text" x="0" y="9.5" fill="#464646">Recents</text>
+      </g>
+    </g>
+    <g widget-id="item3" widget-name="item3" eObject-URI="bookdetails.page#/0/@children.2/@children.2" transform="matrix(1 0 0 1 177 0)">
+      <g widget-id="icon3" widget-name="icon3" eObject-URI="bookdetails.page#/0/@children.2/@children.2/@children.0" transform="matrix(1 0 0 1 8 2)">
+        <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAMAAAArteDzAAACSVBMVEUAAAAAAACAgICAgICAgICSkpKOjo6AgICLi4uAgICJiYmPj4+Ojo6SkpKLi4uQkJCKioqPj4+JiYmOjo6SkpKNjY2RkZGMjIyPj4+Li4uPj4+SkpKOjo6RkZGNjY2MjIyPj4+SkpKOjo6RkZGOjo6QkJCNjY2Pj4+Pj4+RkZGOjo6QkJCOjo6QkJCSkpKRkZGPj4+RkZGOjo6QkJCSkpKPj4+RkZGPj4+QkJCSkpKQkJCPj4+RkZGPj4+QkJCSkpKPj4+RkZGPj4+QkJCSkpKRkZGRkZGSkpKQkJCRkZGQkJCRkZGPj4+RkZGSkpKQkJCRkZGRkZGQkJCRkZGQkJCRkZGSkpKQkJCRkZGQkJCRkZGRkZGSkpKRkZGRkZGQkJCSkpKSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGRkZGQkJCRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGSkpKSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKSkpKtgZHyAAAAwnRSTlMAAQIEBgcJCgsMDRASFRYXGBkaGxwdHh8gISIjJCUmKCkqKywtLi8wMjM0NTY3ODo7PD0+P0BDREVGR0lKS0xNUFFSU1RYWltcXV5fYGFiY2RmZ2hsbXBxcnN0dnd4eXp8fn+Ag4eKi42Oj5CRkpSVlpeYmZuen6ChoqOkpaaoqaqrra6vsLO1t7i5u7y+v8TFxsjJysvOz9DR0tPU1dbX2Nrb3N3e3+Dh4uPk5ufo6err7O3u8PH09fb3+Pn6+/z9/ldDmVMAAAUESURBVHgBpdn9X5RZGcfxLyNLA8QuVHBHO7tWVLva1rY9bw1YWS0YsYUia6FsD7Bb7sLGw6xhhKWmCQImio2pIcFYSRqDjsDwMJ+/rBdK6Jw5554Zff88c15nrjP3676u71FWXri152x0dj6ZnJ+Nnu1pDXt6MuX1/TEyxPrry/WYgg3D6zisDzcElb9QX4JNdycGOtpbGhtb2jsGJu6wKdEXUn4++bs17rvWvbtCaSp2d13lvrXBGuWuLJJiw5W2SllVtl1hQypSptwEmhcAViM75GNH/wrAQnNAOagcA1h+z1MWXvcSwFilsqqLA5z0lIOqEwDxOvkLdKaAmTrlqHYGSHUG5KNwCOBosXIWHAAYKpRTyQiw+Lry8voiMFLiXHMCmHtBmYp21u871PHLA021TyvDCzeBCceqhSPA9WqZXvr1tTW2zEZelqF6ChgplEVgCJg0d1Lw2jSmyVeV7ulJYCigTJ3AdXPNT/0Fi1RXkbHqFNCpDHUpmDN/+xfvYHd6m1GBm5Cqk6EyDovmGX1lEZf3zdNahHilUdAxwPwvFcdw+6bSNQFj6WVtBo7K8A4+LhUo3QDQrEeULcBMsbnRJfx81fz4DCyU6aEIUCfD9/H1lgy1QERbalJwUqY/4isq0wlI1ej/BmHZkymKr2WZqpZgUJtCa/CeMszjr0SmblgL6YE+WPVkKiSLj8nkrUCf7gsmIKL8F31eGfohEdSGBmCHMi3iz1OGF4E92jAMV2RxE3/PKNPfYFiSytehTRZ/zfugpDZYL5dUD1TK4ji+VmXxEaD+QXGvyeYtfP1XNlehX1IMumXzY3xNyaYLYpIH7JbNF/A1LpvvAJ7CQIVsSlL4OSGbciCsVrgruyn8/EZWd6BVvTAhq68t42euWjbnoUejMCCbon/h78+y+S2MKgod9o2STaksOiCqWWiXzQ/JpkYW7TCreWiRzUtkkXxKFi0wryQ0yuoc/t6VTSMklYQmWVX9Gz/jRa6qJTUP+2X3M/x8Q1b7YV6z8HPZPY+PW9ucO5lVFH4lhwu4HZbd2xDVKByRwz7cPi279+GseuC8HEqXsDO/Yz6mrXAvIIcBXJpkV5CAVoWBkBw+i8PcU7J7FgjLA74tlzPYHZTDtwBPisFhuXwZq5UPyuEwxCT1wz/kUvBPbE7LZRr6N1/RH5fL77F5Uw7bgfrNZuKncjmITVgOP9lsJjQMF+XyXWyelcMkDG81aK/IwfsPmS5uk90rQMNWKzkkl+opTGeKfU4gEXzY9H5YLr/IvaIfWoG+R9rzd+VyANOX5ND1SHuuQVjdLocWTJ+X3fZVGEwbeU7JYT+ml2X3p7SRRxHgVdkdcs16pq8DEWOMjJXK6m1M35NN6Q1jjFQzcExWxzEdks0xoDlzNP+RbG5g+oPj1WyO5qqKw70Xc2tUEiXKsDMB8SoZ6oBbIZmKzpGpV6bQbUjtsgczM+VKU3Eghs2FH6Rv9plpoNMVIV0q05bPHBxfx2Xp1N6PuiMkM+wKaUPZa0fmyObv74Q/IEmhaTPsMmO525/TJ96cWCc3yTP7KnbetsRyRoB47wJ5WV+2B4hG1Jm/ocLsoWw+jFDWblecPMV3KauqcfIyXqUcBPYukLOFvYE8Lw/8uS8PHGoG1/Dnf83h8FxfAl+JvueUv+CeEffV0cieoB5TheuSq0JPxgu/0Tt6ORZPJuOxy6O9b9R6yuZ/MroJ/1F+ZTwAAAAASUVORK5CYII=" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
+      </g>
+      <g widget-id="caption3" widget-name="caption3" eObject-URI="bookdetails.page#/0/@children.2/@children.2/@children.1" transform="matrix(1 0 0 1 0 33)">
+        <text alignment-baseline="central" font-size="11" font-family="HelveticaNeue" template-id="node-text" x="0" y="9.5" fill="#464646">Contacts</text>
+      </g>
+    </g>
+    <g widget-id="item4" widget-name="item4" eObject-URI="bookdetails.page#/0/@children.2/@children.3" transform="matrix(1 0 0 1 257 0)">
+      <g widget-id="icon4" widget-name="icon4" eObject-URI="bookdetails.page#/0/@children.2/@children.3/@children.0" transform="matrix(1 0 0 1 8 2)">
+        <image xlink:href="data:image/png;base64,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" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
+      </g>
+      <g widget-id="caption4" widget-name="caption4" eObject-URI="bookdetails.page#/0/@children.2/@children.3/@children.1" transform="matrix(1 0 0 1 3 33)">
+        <text alignment-baseline="central" font-size="11" font-family="HelveticaNeue" template-id="node-text" x="0" y="9.5" fill="#464646">Keypad</text>
+      </g>
+    </g>
+  </g>
+</svg>
