@@ -1,0 +1,111 @@
+<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="main">
+    <minArea width="414" height="736"/>
+    <location/>
+    <backgroundColor Red="248" Green="248" Blue="248"/>
+    <children xsi:type="widgets:ListView" name="listView1">
+      <children xsi:type="widgets:SliderLine" name="sliderLine1">
+        <location x="5" y="5"/>
+        <size width="404" height="36"/>
+        <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize width="120" height="36"/>
+          <maxSize width="-1" height="-1"/>
+        </layoutData>
+      </children>
+      <layout xsi:type="layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
+      <maxArea width="-1" height="-1"/>
+      <location y="221"/>
+      <minArea/>
+      <size width="414" height="100"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="TOP" targetAnchor="BOTTOM" constant="20" source="/0/@children.0" target="/0/@children.2"/>
+        <constraints source="/0/@children.0" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.0" target="/0"/>
+        <constraints sourceAnchor="HEIGHT" constant="100" source="/0/@children.0"/>
+      </layoutData>
+    </children>
+    <children xsi:type="widgets:ListView" name="listView2">
+      <children xsi:type="widgets:SliderLine" name="sliderLine2">
+        <location x="5" y="5"/>
+        <size width="404" height="90"/>
+        <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" grabHorizontalSpace="true">
+          <minSize width="120" height="36"/>
+          <maxSize width="-1" height="-1"/>
+        </layoutData>
+      </children>
+      <layout xsi:type="layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
+      <maxArea width="-1" height="-1"/>
+      <location y="341"/>
+      <minArea/>
+      <size width="414" height="100"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="TOP" targetAnchor="BOTTOM" constant="20" source="/0/@children.1" target="/0/@children.0"/>
+        <constraints source="/0/@children.1" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.1" target="/0"/>
+        <constraints sourceAnchor="HEIGHT" constant="100" source="/0/@children.1"/>
+      </layoutData>
+    </children>
+    <children xsi:type="widgets:ListView" name="verticalView">
+      <children xsi:type="widgets:SliderLine" name="sliderLine">
+        <location x="5" y="5"/>
+        <size width="404" height="36"/>
+        <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <minSize width="120" height="36"/>
+          <maxSize width="-1" height="-1"/>
+        </layoutData>
+      </children>
+      <layout xsi:type="layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
+      <maxArea width="-1" height="-1"/>
+      <location y="101"/>
+      <minArea/>
+      <size width="414" height="100"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="TOP" targetAnchor="BOTTOM" constant="20" source="/0/@children.2" target="/0/@children.3"/>
+        <constraints source="/0/@children.2" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.2" target="/0"/>
+        <constraints sourceAnchor="HEIGHT" constant="100" source="/0/@children.2"/>
+      </layoutData>
+    </children>
+    <children xsi:type="widgets:RowView" name="horizontalView">
+      <children xsi:type="widgets:Label" text="0" name="label" horizontalAlignment="RIGHT">
+        <font fontFamily="ArialMT" size="17">
+          <color Red="70" Green="70" Blue="70"/>
+        </font>
+        <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabVerticalSpace="true">
+          <minSize width="44" height="22"/>
+          <maxSize width="-1" height="-1"/>
+        </layoutData>
+        <location x="5" y="5"/>
+        <size width="44" height="41"/>
+        <contentSize width="44" height="22"/>
+      </children>
+      <children xsi:type="widgets:Label" text="%" name="label1">
+        <font fontFamily="ArialMT" size="17">
+          <color Red="70" Green="70" Blue="70"/>
+        </font>
+        <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabVerticalSpace="true">
+          <minSize width="44" height="22"/>
+          <maxSize width="-1" height="-1"/>
+        </layoutData>
+        <location x="49" y="5"/>
+        <size width="44" height="41"/>
+        <contentSize width="44" height="22"/>
+      </children>
+      <layout xsi:type="layout:GridLayout" columns="2" marginRight="5" marginTop="5" marginBottom="5" marginLeft="5"/>
+      <maxArea width="-1" height="-1"/>
+      <location x="157" y="30"/>
+      <minArea/>
+      <size width="100" height="51"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="TOP" targetAnchor="TOP" constant="30" source="/0/@children.3" target="/0"/>
+        <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.3" target="/0"/>
+      </layoutData>
+    </children>
+    <layout xsi:type="layout:AutoLayout"/>
+    <maxArea width="414" height="736"/>
+    <size width="414" height="736"/>
+  </widgets:Page>
+  <binding:BindingModel/>
+  <navigation:Navigation page="/0"/>
+</xmi:XMI>
