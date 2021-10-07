@@ -9,7 +9,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		super.load(path)
 		// Get data from REST endpoint instead of local dummy data
 
-		if let rsp = EreaderServiceManager.getInstance().getOverview() {
+		if let rsp = EReaderService.getOverview() {
 			self.categories = rsp.data.map{CatalogServiceManager.fromBookCategory(bc:$0)}
 			// listen to click event
 			print("loaded data \(self.categories.count)")
@@ -30,7 +30,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func gotoMore() {
-		self.navigation!.go("settings.page",transition:"FORWARD_PUSH")
+		self.navigation!.go(page: "settings.page", transition: .fromLeft)
 	}
 	
 	func populateBitmaps() {
@@ -55,11 +55,13 @@ class MainPageAdapter: SCDLatticePageAdapter {
 				//
 				let bitmapname = "bmpbook\(index+1)"
 				print("bitmapname \(bitmapname)")
-				if let bitmap = row.getWidgetByName(bitmapname) as? SCDWidgetsBitmap {
+				if let bitmap = row.getWidgetByName(bitmapname) as? SCDWidgetsImage,
+           // TODO: use async
+           let imageData = NetworkUtils.loadData(from: book.bookCoverUrl) {
 					
 					//bitmap.url = book.bookCoverUrl
-					bitmap.content = NetworkUtils.download(url:book.bookCoverUrl)
-					bitmap.isContentPriority = true
+					bitmap.content = imageData
+					bitmap.contentPriority = true
 					
 					// add onClickEvent
 					bitmap.onClick.append(SCDWidgetsEventHandler{(ev:SCDWidgetsEvent?) in self.displayBookDetails(bookId:book.id)})
@@ -72,7 +74,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	
 	func displayBookDetails(bookId:String) {
 		print("BookId : \(bookId)")
-		self.navigation!.go(with:"bookdetails.page", data:bookId, transition : "FORWARD_PUSH")
+		self.navigation?.goWith(page: "bookdetails.page", data:bookId, transition : .fromLeft)
 	}
 	
 }

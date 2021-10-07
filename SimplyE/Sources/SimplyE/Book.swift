@@ -13,10 +13,10 @@ class Book : EObject {
 	var description1 : String = ""
 	var description2 : String = ""
 	
-	var bookImageInternal : String? 
-	var bookImage : String {
-		get { return bookImageInternal ?? loadBookImage() }
-	}
+	// var bookImageInternal : String? 
+	// var bookImage : String {
+	// 	get { return bookImageInternal ?? loadBookImage() }
+	// }
 	
 	init(id : String, url : String ) {
 		self.id = id
@@ -38,8 +38,8 @@ class Book : EObject {
 		self.bookCoverUrl = bookCoverUrl
 	}
 	
-	func loadBookImage() -> String {
-		self.bookImageInternal =  NetworkUtils.download(url:self.bookCoverUrl)
-		return self.bookImageInternal!
-	}
+	// func loadBookImage() -> String {
+	// 	self.bookImageInternal =  NetworkUtils.download(url:self.bookCoverUrl)
+	// 	return self.bookImageInternal!
+	// }
 }

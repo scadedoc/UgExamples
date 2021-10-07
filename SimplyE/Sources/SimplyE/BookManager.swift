@@ -60,7 +60,7 @@ class BookManager {
 	}
 	
 	func retrieveBook(isbn:String) -> Book? {
-		let bookdetail = EreaderServiceManager.getInstance().getBookByIsbn(isbn:isbn)
+		let bookdetail = EReaderService.getBookByIsbn(isbn:isbn)
 		let book = getBookFromBookDetailResponse(bookdetail:bookdetail!)
 		return book // book
 	}

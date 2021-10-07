@@ -4,11 +4,11 @@ import ScadeKit
 class SimplyE: SCDApplication {
 
 	var window = SCDLatticeWindow()
-  	var mainAdapter: MainPageAdapter!
-  	var loginPage : LoginPageAdapter!
-  	var bookDetail: BookdetailsPageAdapter!
-  	var settings : SettingsPageAdapter!
-  	
+  var mainAdapter: MainPageAdapter!
+  var loginPage : LoginPageAdapter!
+  var bookDetail: BookdetailsPageAdapter!
+  var settings : SettingsPageAdapter!
+  
 	override func onFinishLaunching() {
 
 		mainAdapter = MainPageAdapter()
@@ -23,7 +23,6 @@ class SimplyE: SCDApplication {
 		settings.load("settings.page")
 		
 		mainAdapter.load("main.page")
-		loginPage.show(window)	
-		
+		loginPage.show(view: window)
 	}
 }

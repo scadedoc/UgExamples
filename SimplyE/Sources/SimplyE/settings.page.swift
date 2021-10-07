@@ -14,7 +14,7 @@ class SettingsPageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func gotoCatalog() {
-		self.navigation!.go("main.page",transition:"BACKWARD_PUSH")
+		self.navigation!.go(page: "main.page", transition: .fromRight)
 	}
 	
 	func gotoLibraryCard() {

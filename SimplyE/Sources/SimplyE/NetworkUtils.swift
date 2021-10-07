@@ -1,23 +1,27 @@
-import ScadeKit
+import Foundation
 
 class NetworkUtils {
-	
-	 static func download(url:String) -> String {	
-		print("Downloading \(url)")
-		let request = SCDNetworkRequest()
-		request.onError = SCDNetworkErrorHandler { responseError in
-    		print("code: \(responseError!.code) message: '\(responseError!.message)'")
-		}
-		
-		request.url = url
-        if let response = request.call() {
-        	print("called X out to the internet to get image. Statuscode \(url) \(response.statusCode)")
-        	return response.body
-		} else
-        { 
-			print("Timeout")
+
+  static func loadData(from urlString: String) -> Data? {
+    guard let url = URL(string: urlString) else { return nil }
+
+    return try? Data(contentsOf: url)
+  }
+
+  static func loadDataAsync(from urlString: String,
+                            completion: @escaping (Result<Data, Error>) -> Void) {
+    if let url = URL(string: urlString) {
+      let urlSession = URLSession(configuration: .default).dataTask(with: url) { (data, response, error) in
+        if let error = error {
+          completion(.failure(error))
         }
-		
-		return ""
-	}
+        
+        if let data = data {
+          completion(.success(data))
+        }
+      }
+      
+      urlSession.resume()
+    }
+  }
 }
