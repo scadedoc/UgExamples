@@ -6,3 +6,6 @@ products/
 .DS_Store
 CMakeLists.txt
 fonts/
+
+# Emacs Backup Files #
+*~
