@@ -2,8 +2,8 @@ import ScadeKit
 
 class BookdetailsPageAdapter: SCDLatticePageAdapter {
 
-	@objc dynamic var book : Book?
-	@objc dynamic var trueAttribute : Bool = true 
+	var book : Book?
+	var trueAttribute : Bool = true 
 	
 	
 	// page adapter initialization
@@ -24,6 +24,17 @@ class BookdetailsPageAdapter: SCDLatticePageAdapter {
 		if let isbn = ev.data as? String {
 			print("loading book \(isbn)")
 			self.book = BookManager.sharedInstance.getBook(isbn:isbn)!
+			
+			bmpBook.content = NetworkUtils.loadData(from: book!.bookCoverUrl)!
+        	bmpBook.contentPriority = true
+        	lbDescription1.text = book!.description1
+        	lbDescription2.text = book!.description2
+        	lbBookTitle.text = book!.title
+        	lbAuthorName.text = book!.author
+        	lbPublisher.text = book!.publisher
+        	lbPublished.text = book!.published
+        	lbCategory.text = book!.category
+        	
 		}
 	}
 	
