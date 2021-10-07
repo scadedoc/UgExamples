@@ -62,23 +62,20 @@ class MainPageAdapter: SCDLatticePageAdapter {
           if let lbCategory = viewCategory.getWidgetByName("lbCategory") as? SCDWidgetsLabel {
           	lbCategory.text = category.label
           }
+
           for (index, book) in category.books.enumerated() {
             let bitmapname = "bmpbook\(index+1)"
             print("bitmapname \(bitmapname)")
-            if let bitmap = row.getWidgetByName(bitmapname) as? SCDWidgetsImage,
-              // TODO: use async
-              let imageData = NetworkUtils.loadData(from: book.bookCoverUrl)
-            {
+            if let bitmap = row.getWidgetByName(bitmapname) as? SCDWidgetsImage {
 
-              //bitmap.url = book.bookCoverUrl
-              bitmap.content = imageData
-              bitmap.contentPriority = true
+              NetworkUtils.loadDataAsync(from: book.bookCoverUrl, queue: .main) { [weak bitmap] data in
+                bitmap?.content = data
+              }
 
               // add onClickEvent
-              bitmap.onClick.append(
-                SCDWidgetsEventHandler { (ev: SCDWidgetsEvent?) in
-                  self.displayBookDetails(bookId: book.id)
-                })
+              bitmap.onClick { _ in
+                self.displayBookDetails(bookId: book.id)
+              }
 
             }
           }
