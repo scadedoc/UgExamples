@@ -7,7 +7,7 @@ class BookManager {
 
 	private init() {
 		
-		let prefix = "res/bookCovers/"
+		let prefix = "Assets/bookCovers/"
 		
 		let classicBookData = [
 		       	("1984","1984.jpeg"),
