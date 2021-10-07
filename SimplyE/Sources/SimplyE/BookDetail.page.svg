@@ -7,7 +7,7 @@
     <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h" />
     <g widget-id="item11" eObject-URI="BookDetail.page#/0/@children.0/@children.0" widget-name="item11" transform="matrix(1 0 0 1 17 0)">
       <g widget-id="icon11" eObject-URI="BookDetail.page#/0/@children.0/@children.0/@children.0" widget-name="icon11" transform="matrix(1 0 0 1 8 2)">
-        <image xlink:href="/SimplyE/Assets/Catalog@2x_red.png" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
+        <image xlink:href="Assets/Catalog@2x_red.png" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
       </g>
       <g widget-id="caption11" eObject-URI="BookDetail.page#/0/@children.0/@children.0/@children.1" widget-name="caption11" transform="matrix(1 0 0 1 3 33)">
         <text alignment-baseline="central" font-size="11" font-family="HelveticaNeue" template-id="node-text" x="0" y="9.5" fill="#c51816">Catalog</text>
@@ -15,7 +15,7 @@
     </g>
     <g widget-id="item21" eObject-URI="BookDetail.page#/0/@children.0/@children.1" widget-name="item21" transform="matrix(1 0 0 1 94 0)">
       <g widget-id="icon21" eObject-URI="BookDetail.page#/0/@children.0/@children.1/@children.0" widget-name="icon21" transform="matrix(1 0 0 1 11 2)">
-        <image xlink:href="/SimplyE/Assets/MyBooks@2x.png" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
+        <image xlink:href="Assets/MyBooks@2x.png" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
       </g>
       <g widget-id="caption21" eObject-URI="BookDetail.page#/0/@children.0/@children.1/@children.1" widget-name="caption21" transform="matrix(1 0 0 1 0 33)">
         <text alignment-baseline="central" font-size="11" font-family="HelveticaNeue" template-id="node-text" x="0" y="9.5" fill="#464646">My Books</text>
@@ -23,7 +23,7 @@
     </g>
     <g widget-id="item31" eObject-URI="BookDetail.page#/0/@children.0/@children.2" widget-name="item31" transform="matrix(1 0 0 1 167 0)">
       <g widget-id="icon31" eObject-URI="BookDetail.page#/0/@children.0/@children.2/@children.0" widget-name="icon31" transform="matrix(1 0 0 1 18 2)">
-        <image xlink:href="/SimplyE/Assets/Holds@2x.png" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
+        <image xlink:href="Assets/Holds@2x.png" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
       </g>
       <g widget-id="caption31" eObject-URI="BookDetail.page#/0/@children.0/@children.2/@children.1" widget-name="caption31" transform="matrix(1 0 0 1 0 33)">
         <text alignment-baseline="central" font-size="11" font-family="HelveticaNeue" template-id="node-text" x="0" y="9.5" fill="#464646">Reservations</text>
@@ -31,7 +31,7 @@
     </g>
     <g widget-id="item41" eObject-URI="BookDetail.page#/0/@children.0/@children.3" widget-name="item41" transform="matrix(1 0 0 1 257 0)">
       <g widget-id="icon41" eObject-URI="BookDetail.page#/0/@children.0/@children.3/@children.0" widget-name="icon41" transform="matrix(1 0 0 1 8 2)">
-        <image xlink:href="/SimplyE/Assets/more.svg" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
+        <image xlink:href="Assets/more.svg" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
       </g>
       <g widget-id="caption41" eObject-URI="BookDetail.page#/0/@children.0/@children.3/@children.1" widget-name="caption41" transform="matrix(1 0 0 1 9 33)">
         <text alignment-baseline="central" font-size="11" font-family="HelveticaNeue" template-id="node-text" x="0" y="9.5" fill="#464646">More</text>
@@ -48,7 +48,7 @@
     <g widget-id="viewBackButton" eObject-URI="BookDetail.page#/0/@children.1/@children.1" widget-name="viewBackButton" transform="matrix(1 0 0 1 0 15)">
       <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h" />
       <g widget-id="bitmap1" eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.0" widget-name="bitmap1" transform="matrix(1 0 0 1 5 5)">
-        <image xlink:href="/SimplyE/Assets/backArrowRed.svg" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
+        <image xlink:href="Assets/backArrowRed.svg" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
       </g>
       <g widget-id="label2" eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.1" widget-name="label2" transform="matrix(1 0 0 1 35 5)">
         <text alignment-baseline="central" font-size="15" font-family="Avenir-Medium" template-id="node-text" x="0" y="15" fill="#c01815">Catalog</text>
@@ -98,7 +98,7 @@
       <g widget-id="horizontalview5" eObject-URI="BookDetail.page#/0/@children.2/@children.1" widget-name="horizontalview5" transform="matrix(1 0 0 1 3 3)">
         <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h" />
         <g widget-id="bmpDetail" scade:bind="content:book.bookImage;contentPriority:trueAttribute" eObject-URI="BookDetail.page#/0/@children.2/@children.1/@children.0" widget-name="bmpDetail" transform="matrix(1 0 0 1 15 0)">
-          <image xlink:href="/SimplyE/Assets/wolf.jpg" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
+          <image xlink:href="Assets/wolf.jpg" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
         </g>
       </g>
     </g>

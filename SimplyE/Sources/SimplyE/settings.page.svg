@@ -156,7 +156,7 @@
     <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/width|size.w;direct!http://scade.com/svg/draw#//Box/height|size.h" />
     <g widget-id="itmCatalog" eObject-URI="settings.page#/0/@children.1/@children.0" widget-name="itmCatalog" transform="matrix(1 0 0 1 17 0)">
       <g widget-id="icon11" eObject-URI="settings.page#/0/@children.1/@children.0/@children.0" widget-name="icon11" transform="matrix(1 0 0 1 8 2)">
-        <image xlink:href="/SimplyE/Assets/Catalog@2x_red.png" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
+        <image xlink:href="Assets/Catalog@2x_red.png" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
       </g>
       <g widget-id="caption11" eObject-URI="settings.page#/0/@children.1/@children.0/@children.1" widget-name="caption11" transform="matrix(1 0 0 1 3 33)">
         <text alignment-baseline="central" font-size="11" font-family="HelveticaNeue" template-id="node-text" x="0" y="9.5" fill="#666666">Catalog</text>
@@ -164,7 +164,7 @@
     </g>
     <g widget-id="item21" eObject-URI="settings.page#/0/@children.1/@children.1" widget-name="item21" transform="matrix(1 0 0 1 94 0)">
       <g widget-id="icon21" eObject-URI="settings.page#/0/@children.1/@children.1/@children.0" widget-name="icon21" transform="matrix(1 0 0 1 11 2)">
-        <image xlink:href="/SimplyE/Assets/MyBooks@2x.png" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
+        <image xlink:href="Assets/MyBooks@2x.png" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
       </g>
       <g widget-id="caption21" eObject-URI="settings.page#/0/@children.1/@children.1/@children.1" widget-name="caption21" transform="matrix(1 0 0 1 0 33)">
         <text alignment-baseline="central" font-size="11" font-family="HelveticaNeue" template-id="node-text" x="0" y="9.5" fill="#666666">My Books</text>
@@ -172,7 +172,7 @@
     </g>
     <g widget-id="item31" eObject-URI="settings.page#/0/@children.1/@children.2" widget-name="item31" transform="matrix(1 0 0 1 167 0)">
       <g widget-id="icon31" eObject-URI="settings.page#/0/@children.1/@children.2/@children.0" widget-name="icon31" transform="matrix(1 0 0 1 18 2)">
-        <image xlink:href="/SimplyE/Assets/Holds@2x.png" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
+        <image xlink:href="Assets/Holds@2x.png" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
       </g>
       <g widget-id="caption31" eObject-URI="settings.page#/0/@children.1/@children.2/@children.1" widget-name="caption31" transform="matrix(1 0 0 1 0 33)">
         <text alignment-baseline="central" font-size="11" font-family="HelveticaNeue" template-id="node-text" x="0" y="9.5" fill="#464646">Reservations</text>
@@ -180,7 +180,7 @@
     </g>
     <g widget-id="item" eObject-URI="settings.page#/0/@children.1/@children.3" widget-name="item" transform="matrix(1 0 0 1 257 0)">
       <g widget-id="icon41" eObject-URI="settings.page#/0/@children.1/@children.3/@children.0" widget-name="icon41" transform="matrix(1 0 0 1 8 2)">
-        <image xlink:href="/SimplyE/Assets/more-button-of-three-dots_red.svg" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
+        <image xlink:href="Assets/more-button-of-three-dots_red.svg" template-id="node-image" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Image/width|size.w;direct!http://scade.com/svg/draw#//Image/height|size.h" />
       </g>
       <g widget-id="caption41" eObject-URI="settings.page#/0/@children.1/@children.3/@children.1" widget-name="caption41" transform="matrix(1 0 0 1 9 33)">
         <text alignment-baseline="central" font-size="11" font-family="HelveticaNeue" template-id="node-text" x="0" y="9.5" fill="#c01815">More</text>
