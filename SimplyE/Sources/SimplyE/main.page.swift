@@ -93,7 +93,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 
   func displayBookDetails(bookId: String) {
     print("BookId : \(bookId)")
-    self.navigation?.goWith(page: "bookdetails.page", data: bookId, transition: .fromLeft)
+    self.navigation?.goWith(page: "BookInformation.page", data: bookId, transition: .fromLeft)
   }
 
 }
