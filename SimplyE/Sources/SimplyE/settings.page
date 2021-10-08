@@ -1,8 +1,17 @@
 <?xml  version="1.0" encoding="UTF-8" standalone="no"?>
 <xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
   <widgets:Page name="settings">
+    <minArea width="320" height="480"/>
+    <location/>
+    <backgroundColor Red="234" Green="234" Blue="234"/>
     <children xsi:type="widgets:ListView" name="viewcenter">
+      <minArea/>
+      <location y="54"/>
+      <backgroundColor Red="234" Green="234" Blue="234"/>
       <children xsi:type="widgets:ListView" name="rowview1">
+        <minArea/>
+        <location y="20"/>
+        <backgroundColor Red="255" Green="255" Blue="255"/>
         <children xsi:type="widgets:RowView" name="horizontalview2">
           <children xsi:type="widgets:Label" text="Library Card" name="label1">
             <location x="5" y="5"/>
@@ -31,13 +40,14 @@
         </children>
         <layout xsi:type="layout:GridLayout"/>
         <maxArea width="-1" height="-1"/>
-        <location y="20"/>
-        <minArea/>
         <size width="320" height="32"/>
         <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
       </children>
       <children xsi:type="widgets:ListView" name="rowview11">
         <children xsi:type="widgets:RowView" name="horizontalview21">
+          <minArea/>
+          <location/>
+          <backgroundColor Red="255" Green="255" Blue="255"/>
           <children xsi:type="widgets:Label" text="Help" name="label11">
             <location x="5" y="5"/>
             <size width="292" height="22"/>
@@ -58,8 +68,6 @@
           </children>
           <layout xsi:type="layout:GridLayout" columns="2" marginRight="5" marginTop="5" marginBottom="5" marginLeft="5"/>
           <maxArea width="-1" height="-1"/>
-          <location/>
-          <minArea/>
           <size width="320" height="32"/>
           <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
         </children>
@@ -71,14 +79,18 @@
         <layoutData xsi:type="layout:GridData" row="2" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
       </children>
       <children xsi:type="widgets:ListView" name="verticalview23">
+        <backgroundColor Red="234" Green="234" Blue="234"/>
         <layout xsi:type="layout:GridLayout" marginTop="15" marginBottom="25" marginLeft="5" marginRight="5"/>
         <maxArea width="-1" height="-1"/>
-        <size width="320" height="40"/>
-        <location y="100"/>
         <minArea/>
+        <location y="100"/>
+        <size width="320" height="40"/>
         <layoutData xsi:type="layout:GridData" row="4" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT"/>
       </children>
       <children xsi:type="widgets:ListView" name="rowview111">
+        <minArea/>
+        <location y="140"/>
+        <backgroundColor Red="255" Green="255" Blue="255"/>
         <children xsi:type="widgets:ListView" name="subrow1">
           <children xsi:type="widgets:RowView" name="horizontalview211">
             <children xsi:type="widgets:Label" text="About" name="label111">
@@ -249,20 +261,22 @@
         </children>
         <layout xsi:type="layout:GridLayout" rows="7"/>
         <maxArea width="-1" height="-1"/>
-        <location y="140"/>
-        <minArea/>
         <size width="320" height="190"/>
         <layoutData xsi:type="layout:GridData" row="5" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT"/>
       </children>
       <children xsi:type="widgets:RowView" name="horizontalview3">
+        <backgroundColor Red="234" Green="234" Blue="234"/>
         <layout xsi:type="layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
         <maxArea width="-1" height="-1"/>
-        <size width="320" height="16"/>
-        <location y="52"/>
         <minArea/>
+        <location y="52"/>
+        <size width="320" height="16"/>
         <layoutData xsi:type="layout:GridData" row="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT"/>
       </children>
       <children xsi:type="widgets:RowView" name="horizontalview1">
+        <minArea/>
+        <location y="330"/>
+        <backgroundColor Red="234" Green="234" Blue="234"/>
         <children xsi:type="widgets:Label" text="SimplyE Clone Version 1.0.3" name="label3">
           <location x="92" y="5"/>
           <size width="136" height="13"/>
@@ -274,15 +288,11 @@
         </children>
         <layout xsi:type="layout:GridLayout" marginTop="5" marginBottom="25" marginLeft="5" marginRight="5"/>
         <maxArea width="-1" height="-1"/>
-        <location y="330"/>
-        <minArea/>
         <size width="320" height="43"/>
         <layoutData xsi:type="layout:GridData" row="6" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT"/>
       </children>
       <layout xsi:type="layout:GridLayout" rows="7" marginTop="20"/>
       <maxArea width="-1" height="-1"/>
-      <location y="54"/>
-      <minArea/>
       <size width="320" height="373"/>
       <layoutData xsi:type="layout:GridData" row="1" grabVerticalSpace="true" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
     </children>
@@ -403,6 +413,9 @@
       </layoutData>
     </children>
     <children xsi:type="widgets:RowView" name="horizontalview5">
+      <minArea/>
+      <location/>
+      <backgroundColor Red="234" Green="234" Blue="234"/>
       <children xsi:type="widgets:Label" text="More" name="label4">
         <location x="134" y="26"/>
         <size width="51" height="21"/>
@@ -414,15 +427,11 @@
       </children>
       <layout xsi:type="layout:GridLayout" marginTop="25" marginBottom="5" marginLeft="5" marginRight="5"/>
       <maxArea width="-1" height="-1"/>
-      <location/>
-      <minArea/>
       <size width="320" height="54"/>
       <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT"/>
     </children>
     <layout xsi:type="layout:GridLayout" rows="9"/>
     <maxArea width="320" height="480"/>
-    <location/>
-    <minArea width="320" height="480"/>
     <size width="320" height="480"/>
   </widgets:Page>
   <binding:BindingModel/>
