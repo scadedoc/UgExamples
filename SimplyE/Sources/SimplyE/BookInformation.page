@@ -1,5 +1,5 @@
 <?xml  version="1.0" encoding="UTF-8" standalone="no"?>
-<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgetlayouts="http://scade.com/sdk/view/widgets/layout" xmlns:widgets="http://scade.com/sdk/view/widgets">
   <widgets:Page name="BookInformation">
     <minArea width="414" height="736"/>
     <location/>
@@ -315,7 +315,7 @@
                 </layoutData>
                 <location/>
                 <size width="187" height="22"/>
-                <contentSize width="39" height="19"/>
+                <contentSize width="44" height="22"/>
               </children>
               <children xsi:type="widgets:Label" text="label" name="lbAuthorName">
                 <font fontFamily="ArialMT" size="17">
@@ -365,36 +365,60 @@
           <maxSize width="-1" height="-1"/>
         </layoutData>
       </children>
-      <children xsi:type="widgets:ListView" name="listView5">
-        <children xsi:type="widgets:Label" text="label" name="lbDescription1" multiline="true" horizontalAlignment="CENTER">
-          <font fontFamily="ArialMT" size="17">
-            <color Red="70" Green="70" Blue="70"/>
-          </font>
-          <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE">
-            <minSize width="44" height="22"/>
-            <maxSize width="-1" height="-1"/>
-          </layoutData>
-          <location x="5" y="5"/>
-          <size width="44" height="22"/>
-          <contentSize width="44" height="22"/>
-        </children>
-        <children xsi:type="widgets:Label" text="label" name="lbDescription2" multiline="true" horizontalAlignment="CENTER">
-          <font fontFamily="ArialMT" size="17">
-            <color Red="70" Green="70" Blue="70"/>
-          </font>
-          <layoutData xsi:type="layout:GridData" row="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE">
-            <minSize width="44" height="22"/>
-            <maxSize width="-1" height="-1"/>
-          </layoutData>
-          <location x="5" y="27"/>
-          <size width="44" height="22"/>
-          <contentSize width="44" height="22"/>
-        </children>
-        <layout xsi:type="layout:GridLayout" rows="2" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
+      <children xsi:type="widgets:List" name="list">
+        <template name="template">
+          <element name="listElement">
+            <children xsi:type="widgets:ListView" name="listView5">
+              <children xsi:type="widgets:Label" text="label" name="lbDescription1">
+                <font fontFamily="ArialMT" size="17">
+                  <color Red="70" Green="70" Blue="70"/>
+                </font>
+                <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+                  <minSize width="44" height="22"/>
+                  <maxSize width="-1" height="-1"/>
+                </layoutData>
+                <location x="5" y="5"/>
+                <size width="374" height="22"/>
+                <contentSize width="44" height="22"/>
+              </children>
+              <children xsi:type="widgets:Label" text="label" name="lbDescription2">
+                <font fontFamily="ArialMT" size="17">
+                  <color Red="70" Green="70" Blue="70"/>
+                </font>
+                <layoutData xsi:type="layout:GridData" row="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+                  <minSize width="44" height="22"/>
+                  <maxSize width="-1" height="-1"/>
+                </layoutData>
+                <location x="5" y="27"/>
+                <size width="374" height="22"/>
+                <contentSize width="44" height="22"/>
+              </children>
+              <layout xsi:type="layout:GridLayout" rows="2" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
+              <maxArea width="-1" height="-1"/>
+              <location x="10"/>
+              <minArea/>
+              <size width="384" height="54"/>
+              <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" heightConstraint="MATCH_PARENT">
+                <maxSize width="-1" height="-1"/>
+              </layoutData>
+            </children>
+            <layout xsi:type="layout:GridLayout" marginLeft="10"/>
+            <maxArea width="-1" height="-1"/>
+            <location/>
+            <minArea height="45"/>
+            <size width="394" height="54"/>
+            <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT">
+              <minSize/>
+            </layoutData>
+          </element>
+          <location/>
+          <size/>
+        </template>
+        <size width="394" height="305"/>
+        <layout xsi:type="widgetlayouts:ListLayout"/>
         <maxArea width="-1" height="-1"/>
         <location x="5" y="311"/>
         <minArea/>
-        <size width="394" height="305"/>
         <layoutData xsi:type="layout:GridData" row="1" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT">
           <maxSize width="-1" height="-1"/>
         </layoutData>

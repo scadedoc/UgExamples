@@ -133,15 +133,7 @@ extension BookInformationPageAdapter {
     return self.page?.getWidgetByName("lbAuthorName") as! SCDWidgetsLabel
   }
 
-  var listView5: SCDWidgetsListView {
-    return self.page?.getWidgetByName("listView5") as! SCDWidgetsListView
-  }
-
-  var lbDescription1: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("lbDescription1") as! SCDWidgetsLabel
-  }
-
-  var lbDescription2: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("lbDescription2") as! SCDWidgetsLabel
+  var list: SCDWidgetsList {
+    return self.page?.getWidgetByName("list") as! SCDWidgetsList
   }
 }

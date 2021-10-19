@@ -1,4 +1,7 @@
 import Foundation
+#if os(Android)
+    import FoundationNetworking
+#endif
 
 class NetworkUtils {
 

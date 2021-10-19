@@ -2,8 +2,8 @@ import ScadeKit
 
 class BookDetailPageAdapter: SCDLatticePageAdapter {
 
-	@objc dynamic var book : Book?
-	@objc dynamic var trueAttribute : Bool = true 
+	var book : Book?
+	var trueAttribute : Bool = true 
 	
 	// page adapter initialization
 	override func load(_ path: String) {		
