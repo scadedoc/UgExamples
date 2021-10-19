@@ -369,7 +369,7 @@
         <template name="template">
           <element name="listElement">
             <children xsi:type="widgets:ListView" name="listView5">
-              <children xsi:type="widgets:Label" text="label" name="lbDescription1">
+              <children xsi:type="widgets:Label" text="label" name="lbDescription1" multiline="true">
                 <font fontFamily="ArialMT" size="17">
                   <color Red="70" Green="70" Blue="70"/>
                 </font>
@@ -379,9 +379,9 @@
                 </layoutData>
                 <location x="5" y="5"/>
                 <size width="374" height="22"/>
-                <contentSize width="44" height="22"/>
+                <contentSize width="36" height="19"/>
               </children>
-              <children xsi:type="widgets:Label" text="label" name="lbDescription2">
+              <children xsi:type="widgets:Label" text="label" name="lbDescription2" multiline="true">
                 <font fontFamily="ArialMT" size="17">
                   <color Red="70" Green="70" Blue="70"/>
                 </font>
@@ -391,7 +391,7 @@
                 </layoutData>
                 <location x="5" y="27"/>
                 <size width="374" height="22"/>
-                <contentSize width="44" height="22"/>
+                <contentSize width="36" height="19"/>
               </children>
               <layout xsi:type="layout:GridLayout" rows="2" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
               <maxArea width="-1" height="-1"/>

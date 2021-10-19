@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" widget-name="BookInformation" eObject-URI="BookInformation.page#/0" width="414" height="736">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="BookInformation.page#/0" widget-name="BookInformation" width="414" height="736">
   <svg template-id="background" width="414" height="736" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
     <rect width="100%" height="100%" fill="#f8f8f8" />
   </svg>
@@ -156,22 +156,22 @@
             </g>
           </g>
         </g>
-        <g widget-name="list" eObject-URI="BookInformation.page#/0/@children.2/@children.1" transform="matrix(1 0 0 1 5 311)">
+        <g eObject-URI="BookInformation.page#/0/@children.2/@children.1" widget-name="list" transform="matrix(1 0 0 1 5 311)">
           <g scrollableBox="394 305" template-id="listContent" scrollable="vertical" constraints="scrollsize!size.w|size.h">
             <svg template-id="background" width="394" height="305" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-            <g widget-name="listElement" eObject-URI="BookInformation.page#/0/@children.2/@children.1/@template/@element">
+            <g eObject-URI="BookInformation.page#/0/@children.2/@children.1/@template/@element" widget-name="listElement">
               <svg template-id="background" width="394" height="54" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
               <g template-id="elementContent">
-                <g widget-name="listView5" eObject-URI="BookInformation.page#/0/@children.2/@children.1/@template/@element/@children.0" transform="matrix(1 0 0 1 10 0)">
+                <g eObject-URI="BookInformation.page#/0/@children.2/@children.1/@template/@element/@children.0" widget-name="listView5" transform="matrix(1 0 0 1 10 0)">
                   <svg template-id="background" width="384" height="54" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
                   <g template-id="content">
-                    <g widget-name="lbDescription1" eObject-URI="BookInformation.page#/0/@children.2/@children.1/@template/@element/@children.0/@children.0" transform="matrix(1 0 0 1 5 5)">
+                    <g eObject-URI="BookInformation.page#/0/@children.2/@children.1/@template/@element/@children.0/@children.0" widget-name="lbDescription1" transform="matrix(1 0 0 1 5 5)">
                       <svg template-id="background" width="374" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-                      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11" fill="#464646">label</text>
+                      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" maxWidth="374" template-id="node-text" x="0" y="1.5" fill="#464646">label</text>
                     </g>
-                    <g widget-name="lbDescription2" eObject-URI="BookInformation.page#/0/@children.2/@children.1/@template/@element/@children.0/@children.1" transform="matrix(1 0 0 1 5 27)">
+                    <g eObject-URI="BookInformation.page#/0/@children.2/@children.1/@template/@element/@children.0/@children.1" widget-name="lbDescription2" transform="matrix(1 0 0 1 5 27)">
                       <svg template-id="background" width="374" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-                      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11" fill="#464646">label</text>
+                      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" maxWidth="374" template-id="node-text" x="0" y="1.5" fill="#464646">label</text>
                     </g>
                   </g>
                 </g>
