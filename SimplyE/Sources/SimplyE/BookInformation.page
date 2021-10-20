@@ -250,7 +250,7 @@
                 </layoutData>
               </children>
               <children xsi:type="widgets:ListView" name="listView4">
-                <children xsi:type="widgets:Label" text="label" name="lbPublisher" multiline="true" horizontalAlignment="CENTER">
+                <children xsi:type="widgets:Label" text="label" name="lbPublisher" multiline="true">
                   <font fontFamily="ArialMT" size="14">
                     <color Red="70" Green="70" Blue="70"/>
                   </font>
@@ -262,7 +262,7 @@
                   <size width="124" height="22"/>
                   <contentSize width="30" height="16"/>
                 </children>
-                <children xsi:type="widgets:Label" text="label" name="lbPublished" horizontalAlignment="CENTER">
+                <children xsi:type="widgets:Label" text="label" name="lbPublished">
                   <font fontFamily="ArialMT" size="14">
                     <color Red="70" Green="70" Blue="70"/>
                   </font>
@@ -274,7 +274,7 @@
                   <size width="124" height="22"/>
                   <contentSize width="44" height="22"/>
                 </children>
-                <children xsi:type="widgets:Label" text="label" name="lbCategory" horizontalAlignment="CENTER">
+                <children xsi:type="widgets:Label" text="label" name="lbCategory">
                   <font fontFamily="ArialMT" size="14">
                     <color Red="70" Green="70" Blue="70"/>
                   </font>
@@ -369,7 +369,7 @@
         <font fontFamily="ArialMT" size="17">
           <color Red="254" Green="255" Blue="255"/>
         </font>
-        <location x="5" y="150"/>
+        <location x="5" y="155"/>
         <size width="394" height="23"/>
         <contentSize width="163" height="23"/>
         <layoutData xsi:type="layout:GridData" row="1" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
@@ -427,10 +427,10 @@
           <location/>
           <size/>
         </template>
-        <size width="394" height="400"/>
+        <size width="394" height="385"/>
         <layout xsi:type="widgetlayouts:ListLayout"/>
         <maxArea width="-1" height="-1"/>
-        <location x="5" y="216"/>
+        <location x="5" y="231"/>
         <minArea/>
         <layoutData xsi:type="layout:GridData" row="3" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT">
           <maxSize width="-1" height="-1"/>
@@ -476,14 +476,14 @@
         </children>
         <layout xsi:type="layout:GridLayout" columns="3" marginRight="5" marginTop="5" marginBottom="5" marginLeft="5"/>
         <maxArea width="-1" height="-1"/>
-        <location x="5" y="178"/>
+        <location x="5" y="188"/>
         <minArea/>
         <size width="394" height="33"/>
         <layoutData xsi:type="layout:GridData" row="2" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
           <maxSize width="-1" height="-1"/>
         </layoutData>
       </children>
-      <layout xsi:type="layout:GridLayout" rows="4" verticalSpacing="5" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
+      <layout xsi:type="layout:GridLayout" rows="4" verticalSpacing="10" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
       <maxArea width="-1" height="-1"/>
       <location x="5" y="65"/>
       <minArea/>
