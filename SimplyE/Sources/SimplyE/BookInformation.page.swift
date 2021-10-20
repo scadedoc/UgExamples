@@ -33,9 +33,14 @@ class BookInformationPageAdapter: SCDLatticePageAdapter {
 
     list.elementProvider = SCDWidgetsElementProvider { (book: Book, elem) in
       guard let label1 = elem.getWidgetByName("lbDescription1") as? SCDWidgetsLabel,
-            let label2 = elem.getWidgetByName("lbDescription2") as? SCDWidgetsLabel else { return }
+            let label2 = elem.getWidgetByName("lbDescription2") as? SCDWidgetsLabel,
+            let elemSeparator = elem.drawing?
+              .findByAttribute("template-id", value: "elementSeparator") as? SCDSvgDrawable else { return }
+
       label1.text = book.description1
       label2.text = book.description2
+
+      elemSeparator.visible = false
     }
     list.items = [book]
 
