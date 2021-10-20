@@ -7,48 +7,51 @@
     <g eObject-URI="BookInformation.page#/0/@children.0" widget-name="toolbar" transform="matrix(1 0 0 1 0 686)">
       <svg template-id="background" width="414" height="50" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
       <g template-id="content">
-        <g eObject-URI="BookInformation.page#/0/@children.0/@children.0" widget-name="listView6" transform="matrix(1 0 0 1 138 0)">
-          <svg template-id="background" width="138" height="50" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+        <g eObject-URI="BookInformation.page#/0/@children.0/@children.0" widget-name="item">
+          <svg template-id="background" width="105" height="52" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
           <g template-id="content">
-            <g eObject-URI="BookInformation.page#/0/@children.0/@children.0/@children.0" widget-name="button2" transform="matrix(1 0 0 1 5 5)">
-              <svg template-id="background" width="128" height="23" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
-                <image xlink:href="Assets/MyBooks@2x.png" width="100%" height="100%" />
-              </svg>
-              <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="64" y="11.5" fill="#446ab3" />
+            <g widget-id="image" eObject-URI="BookInformation.page#/0/@children.0/@children.0/@children.0" widget-name="icon" transform="matrix(1 0 0 1 38 2)">
+              <image xlink:href="Assets/Catalog@2x.png" template-id="node-image" width="28" height="28" constraints="direct!http://scade.com/svg/draw#//Image/height|size.h;direct!http://scade.com/svg/draw#//Image/width|size.w" />
             </g>
-            <g eObject-URI="BookInformation.page#/0/@children.0/@children.0/@children.1" widget-name="button4" transform="matrix(1 0 0 1 5 28)">
-              <svg template-id="background" width="128" height="23" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-              <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="64" y="11.5" fill="#0">My Books</text>
+            <g widget-id="label" eObject-URI="BookInformation.page#/0/@children.0/@children.0/@children.1" widget-name="caption" transform="matrix(1 0 0 1 33 33)">
+              <svg template-id="background" width="39" height="19" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+              <text text-anchor="middle" alignment-baseline="central" font-size="11" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="19.5" y="9.5" fill="#0">Catalog</text>
             </g>
           </g>
         </g>
-        <g eObject-URI="BookInformation.page#/0/@children.0/@children.1" widget-name="listView7">
-          <svg template-id="background" width="138" height="50" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+        <g eObject-URI="BookInformation.page#/0/@children.0/@children.1" widget-name="toolBarItem1" transform="matrix(1 0 0 1 105 0)">
+          <svg template-id="background" width="103" height="52" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
           <g template-id="content">
-            <g eObject-URI="BookInformation.page#/0/@children.0/@children.1/@children.0" widget-name="button" transform="matrix(1 0 0 1 5 5)">
-              <svg template-id="background" width="128" height="23" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
-                <image xlink:href="Assets/Catalog@2x_red.png" width="100%" height="100%" />
-              </svg>
-              <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="64" y="11.5" fill="#446ab3" />
+            <g widget-id="image" eObject-URI="BookInformation.page#/0/@children.0/@children.1/@children.0" widget-name="image1" transform="matrix(1 0 0 1 37 2)">
+              <image xlink:href="Assets/MyBooks@2x.png" template-id="node-image" width="28" height="28" constraints="direct!http://scade.com/svg/draw#//Image/height|size.h;direct!http://scade.com/svg/draw#//Image/width|size.w" />
             </g>
-            <g eObject-URI="BookInformation.page#/0/@children.0/@children.1/@children.1" widget-name="button1" transform="matrix(1 0 0 1 5 28)">
-              <svg template-id="background" width="128" height="23" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-              <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="64" y="11.5" fill="#0">Catalog</text>
+            <g widget-id="label" eObject-URI="BookInformation.page#/0/@children.0/@children.1/@children.1" widget-name="label6" transform="matrix(1 0 0 1 26 33)">
+              <svg template-id="background" width="50" height="19" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+              <text text-anchor="middle" alignment-baseline="central" font-size="11" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="25" y="9.5" fill="#0">My Books</text>
             </g>
           </g>
         </g>
-        <g eObject-URI="BookInformation.page#/0/@children.0/@children.2" widget-name="listView8" transform="matrix(1 0 0 1 276 0)">
-          <svg template-id="background" width="138" height="50" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+        <g eObject-URI="BookInformation.page#/0/@children.0/@children.2" widget-name="toolBarItem2" transform="matrix(1 0 0 1 208 0)">
+          <svg template-id="background" width="103" height="52" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
           <g template-id="content">
-            <g eObject-URI="BookInformation.page#/0/@children.0/@children.2/@children.0" widget-name="button5" transform="matrix(1 0 0 1 5 5)">
-              <svg template-id="background" width="128" height="23" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
-                <image xlink:href="Assets/more-button-of-three-dots.svg" width="100%" height="100%" />
-              </svg>
-              <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="64" y="11.5" fill="#446ab3" />
+            <g widget-id="image" eObject-URI="BookInformation.page#/0/@children.0/@children.2/@children.0" widget-name="image2" transform="matrix(1 0 0 1 37 2)">
+              <image xlink:href="Assets/Holds@2x.png" template-id="node-image" width="28" height="28" constraints="direct!http://scade.com/svg/draw#//Image/height|size.h;direct!http://scade.com/svg/draw#//Image/width|size.w" />
             </g>
-            <g eObject-URI="BookInformation.page#/0/@children.0/@children.2/@children.1" widget-name="button6" transform="matrix(1 0 0 1 5 28)">
-              <svg template-id="background" width="128" height="23" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-              <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="64" y="11.5" fill="#0">More</text>
+            <g widget-id="label" eObject-URI="BookInformation.page#/0/@children.0/@children.2/@children.1" widget-name="label7" transform="matrix(1 0 0 1 19 33)">
+              <svg template-id="background" width="64" height="19" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+              <text text-anchor="middle" alignment-baseline="central" font-size="11" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="32" y="9.5" fill="#0">Reservations</text>
+            </g>
+          </g>
+        </g>
+        <g eObject-URI="BookInformation.page#/0/@children.0/@children.3" widget-name="toolBarItem3" transform="matrix(1 0 0 1 311 0)">
+          <svg template-id="background" width="103" height="52" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+          <g template-id="content">
+            <g widget-id="image" eObject-URI="BookInformation.page#/0/@children.0/@children.3/@children.0" widget-name="image3" transform="matrix(1 0 0 1 37 2)">
+              <image xlink:href="Assets/more-button-of-three-dots.svg" template-id="node-image" width="28" height="28" constraints="direct!http://scade.com/svg/draw#//Image/height|size.h;direct!http://scade.com/svg/draw#//Image/width|size.w" />
+            </g>
+            <g widget-id="label" eObject-URI="BookInformation.page#/0/@children.0/@children.3/@children.1" widget-name="label8" transform="matrix(1 0 0 1 35 33)">
+              <svg template-id="background" width="32" height="19" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+              <text text-anchor="middle" alignment-baseline="central" font-size="11" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="16" y="9.5" fill="#0">More</text>
             </g>
           </g>
         </g>
@@ -123,15 +126,15 @@
                           <g template-id="content">
                             <g eObject-URI="BookInformation.page#/0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0" widget-name="lbPublisher" transform="matrix(1 0 0 1 10 0)">
                               <svg template-id="background" width="124" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-                              <text text-anchor="middle" alignment-baseline="central" font-size="14" font-family="ArialMT" font-style="normal" text-decoration="none" maxWidth="124" template-id="node-text" x="0" y="3" fill="#464646">label</text>
+                              <text text-anchor="middle" alignment-baseline="central" font-size="14" font-family="ArialMT" font-style="normal" text-decoration="none" maxWidth="124" template-id="node-text" x="0" y="11" fill="#464646">label</text>
                             </g>
                             <g eObject-URI="BookInformation.page#/0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.1/@children.1" widget-name="lbPublished" transform="matrix(1 0 0 1 10 22)">
                               <svg template-id="background" width="124" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-                              <text alignment-baseline="central" font-size="14" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11" fill="#464646" text-anchor="start">label</text>
+                              <text alignment-baseline="central" font-size="14" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11" fill="#464646">label</text>
                             </g>
                             <g eObject-URI="BookInformation.page#/0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.1/@children.2" widget-name="lbCategory" transform="matrix(1 0 0 1 10 44)">
                               <svg template-id="background" width="124" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-                              <text alignment-baseline="central" font-size="14" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11" fill="#464646" text-anchor="start">label</text>
+                              <text alignment-baseline="central" font-size="14" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11" fill="#464646">label</text>
                             </g>
                           </g>
                         </g>
@@ -142,11 +145,11 @@
                       <g template-id="content">
                         <g eObject-URI="BookInformation.page#/0/@children.2/@children.0/@children.1/@children.0/@children.1/@children.0" widget-name="lbBookTitle">
                           <svg template-id="background" width="279" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-                          <text alignment-baseline="central" font-size="17" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" maxWidth="192" template-id="node-text" x="0" y="1.5" fill="#464646">label</text>
+                          <text alignment-baseline="central" font-size="17" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" maxWidth="192" template-id="node-text" x="0" y="11" fill="#464646">label</text>
                         </g>
                         <g eObject-URI="BookInformation.page#/0/@children.2/@children.0/@children.1/@children.0/@children.1/@children.1" widget-name="lbAuthorName" transform="matrix(1 0 0 1 0 22)">
                           <svg template-id="background" width="279" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-                          <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" maxWidth="279" template-id="node-text" x="0" y="1.5" fill="#464646">label</text>
+                          <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" maxWidth="279" template-id="node-text" x="0" y="11" fill="#464646">label</text>
                         </g>
                       </g>
                     </g>
@@ -166,23 +169,23 @@
           <g scrollableBox="394 385" template-id="listContent" scrollable="vertical" constraints="scrollsize!size.w|size.h">
             <svg template-id="background" width="394" height="385" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
             <g eObject-URI="BookInformation.page#/0/@children.2/@children.2/@template/@element" widget-name="listElement">
-              <svg template-id="background" width="394" height="45" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+              <svg template-id="background" width="394" height="54" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
               <g template-id="elementContent">
                 <g eObject-URI="BookInformation.page#/0/@children.2/@children.2/@template/@element/@children.0" widget-name="listView5" transform="matrix(1 0 0 1 10 0)">
-                  <svg template-id="background" width="384" height="45" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+                  <svg template-id="background" width="384" height="54" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
                   <g template-id="content">
                     <g eObject-URI="BookInformation.page#/0/@children.2/@children.2/@template/@element/@children.0/@children.0" widget-name="lbDescription1" transform="matrix(1 0 0 1 5 5)">
                       <svg template-id="background" width="374" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-                      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" maxWidth="374" template-id="node-text" x="0" y="1.5" fill="#464646">label</text>
+                      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" maxWidth="374" template-id="node-text" x="0" y="11" fill="#464646">label</text>
                     </g>
                     <g eObject-URI="BookInformation.page#/0/@children.2/@children.2/@template/@element/@children.0/@children.1" widget-name="lbDescription2" transform="matrix(1 0 0 1 5 27)">
                       <svg template-id="background" width="374" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-                      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" maxWidth="374" template-id="node-text" x="0" y="1.5" fill="#464646">label</text>
+                      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" maxWidth="374" template-id="node-text" x="0" y="11" fill="#464646">label</text>
                     </g>
                   </g>
                 </g>
               </g>
-              <g template-id="elementSeparator" transform="matrix(1 0 0 1 10 45)" constraints="matrix!1|0|layout.marginLeft|0|1|size.h">
+              <g template-id="elementSeparator" transform="matrix(1 0 0 1 10 54)" constraints="matrix!1|0|layout.marginLeft|0|1|size.h">
                 <line stroke-miterlimit="10" template-id="separatorLine" y1="0.5" x2="383" y2="0.5" stroke="#cccbd0" constraints="direct!http://scade.com/svg/draw#//Line/x2|size.width-layout.marginLeft" />
               </g>
               <g />

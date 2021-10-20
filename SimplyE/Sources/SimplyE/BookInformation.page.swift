@@ -15,6 +15,15 @@ class BookInformationPageAdapter: SCDLatticePageAdapter {
         (ev: SCDWidgetsEnterEvent?)
         in self.enterpage(ev: ev!)
       })
+      
+
+    toolBarItem3.onClick { _ in 
+    	self.navigation?.go(page: "settings.page", transition: .fromLeft) 
+    }
+    
+    item.onClick { _ in 
+    	self.navigation?.go(page: "main.page", transition: .fromLeft) 
+    }
 
     // add back button event to go back to Catalog page
     let back = self.page!.getWidgetByName("viewBackButton") as! SCDWidgetsContainer

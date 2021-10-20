@@ -5,40 +5,52 @@ extension BookInformationPageAdapter {
     return self.page?.getWidgetByName("toolbar") as! SCDWidgetsToolBar
   }
 
-  var listView6: SCDWidgetsListView {
-    return self.page?.getWidgetByName("listView6") as! SCDWidgetsListView
+  var item: SCDWidgetsToolBarItem {
+    return self.page?.getWidgetByName("item") as! SCDWidgetsToolBarItem
   }
 
-  var button2: SCDWidgetsButton {
-    return self.page?.getWidgetByName("button2") as! SCDWidgetsButton
+  var icon: SCDWidgetsImage {
+    return self.page?.getWidgetByName("icon") as! SCDWidgetsImage
   }
 
-  var button4: SCDWidgetsButton {
-    return self.page?.getWidgetByName("button4") as! SCDWidgetsButton
+  var caption: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("caption") as! SCDWidgetsLabel
   }
 
-  var listView7: SCDWidgetsListView {
-    return self.page?.getWidgetByName("listView7") as! SCDWidgetsListView
+  var toolBarItem1: SCDWidgetsToolBarItem {
+    return self.page?.getWidgetByName("toolBarItem1") as! SCDWidgetsToolBarItem
   }
 
-  var button: SCDWidgetsButton {
-    return self.page?.getWidgetByName("button") as! SCDWidgetsButton
+  var image1: SCDWidgetsImage {
+    return self.page?.getWidgetByName("image1") as! SCDWidgetsImage
   }
 
-  var button1: SCDWidgetsButton {
-    return self.page?.getWidgetByName("button1") as! SCDWidgetsButton
+  var label6: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("label6") as! SCDWidgetsLabel
   }
 
-  var listView8: SCDWidgetsListView {
-    return self.page?.getWidgetByName("listView8") as! SCDWidgetsListView
+  var toolBarItem2: SCDWidgetsToolBarItem {
+    return self.page?.getWidgetByName("toolBarItem2") as! SCDWidgetsToolBarItem
   }
 
-  var button5: SCDWidgetsButton {
-    return self.page?.getWidgetByName("button5") as! SCDWidgetsButton
+  var image2: SCDWidgetsImage {
+    return self.page?.getWidgetByName("image2") as! SCDWidgetsImage
   }
 
-  var button6: SCDWidgetsButton {
-    return self.page?.getWidgetByName("button6") as! SCDWidgetsButton
+  var label7: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("label7") as! SCDWidgetsLabel
+  }
+
+  var toolBarItem3: SCDWidgetsToolBarItem {
+    return self.page?.getWidgetByName("toolBarItem3") as! SCDWidgetsToolBarItem
+  }
+
+  var image3: SCDWidgetsImage {
+    return self.page?.getWidgetByName("image3") as! SCDWidgetsImage
+  }
+
+  var label8: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("label8") as! SCDWidgetsLabel
   }
 
   var horizontalView: SCDWidgetsRowView {
