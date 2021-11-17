@@ -5,7 +5,7 @@ class Pic : EObject {
 	let url : String
 	
 	init(_ filename:String) {
-		self.url = "./assets/\(filename)"
+		self.url = "./Assets/\(filename)"
 	}
 
 }
