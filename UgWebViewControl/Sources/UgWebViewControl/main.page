@@ -1,0 +1,52 @@
+<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:native="http://scade.com/sdk/view/widgets/native" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="main">
+    <minArea width="414" height="736"/>
+    <location/>
+    <backgroundColor Red="248" Green="248" Blue="248"/>
+    <children xsi:type="native:WebView" name="webView">
+      <location/>
+      <size width="414" height="636"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="TOP" targetAnchor="TOP" source="/0/@children.0" target="/0"/>
+        <constraints source="/0/@children.0" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.0" target="/0"/>
+        <constraints sourceAnchor="BOTTOM" targetAnchor="BOTTOM" constant="-100" source="/0/@children.0" target="/0"/>
+      </layoutData>
+    </children>
+    <children xsi:type="widgets:Button" text="Apple Swift Page" name="button" horizontalAlignment="CENTER">
+      <font fontFamily="ArialMT" size="17">
+        <color Red="68" Green="106" Blue="179"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints source="/0/@children.1" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.1" target="/0"/>
+        <constraints sourceAnchor="BOTTOM" targetAnchor="BOTTOM" source="/0/@children.1" target="/0"/>
+        <constraints sourceAnchor="HEIGHT" constant="50" source="/0/@children.1"/>
+      </layoutData>
+      <location y="686"/>
+      <size width="414" height="50"/>
+      <contentSize width="130" height="19"/>
+    </children>
+    <children xsi:type="widgets:Button" text="Get title" name="button1" horizontalAlignment="CENTER">
+      <font fontFamily="ArialMT" size="17">
+        <color Red="68" Green="106" Blue="179"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="TOP" targetAnchor="BOTTOM" source="/0/@children.2" target="/0/@children.0"/>
+        <constraints source="/0/@children.2" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.2" target="/0"/>
+        <constraints sourceAnchor="BOTTOM" targetAnchor="TOP" source="/0/@children.2" target="/0/@children.1"/>
+        <constraints sourceAnchor="HEIGHT" constant="50" source="/0/@children.2"/>
+      </layoutData>
+      <location y="636"/>
+      <size width="414" height="50"/>
+      <contentSize width="59" height="19"/>
+    </children>
+    <layout xsi:type="layout:AutoLayout"/>
+    <maxArea width="414" height="736"/>
+    <size width="414" height="736"/>
+  </widgets:Page>
+  <binding:BindingModel/>
+  <navigation:Navigation page="/0"/>
+</xmi:XMI>
