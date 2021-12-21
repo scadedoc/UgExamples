@@ -4,23 +4,25 @@
     <rect width="100%" height="100%" fill="#f8f8f8" />
   </svg>
   <g template-id="content">
-    <g eObject-URI="main.page#/0/@children.0" widget-name="list1">
+    <g widget-name="list1" eObject-URI="main.page#/0/@children.0">
       <g scrollableBox="320 430" template-id="listContent" scrollable="vertical" constraints="scrollsize!size.w|size.h">
-        <g eObject-URI="main.page#/0/@children.0/@template/@element" widget-name="listElement">
-          <svg template-id="background" width="320" height="54" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+        <g widget-name="listElement" eObject-URI="main.page#/0/@children.0/@template/@element">
+          <svg template-id="background" width="320" height="54" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
+            <rect width="100%" height="100%" fill="#ffffff" />
+          </svg>
           <g template-id="elementContent">
-            <g eObject-URI="main.page#/0/@children.0/@template/@element/@children.0" widget-name="gridView1" transform="matrix(1 0 0 1 10 0)">
+            <g widget-name="gridView1" eObject-URI="main.page#/0/@children.0/@template/@element/@children.0" transform="matrix(1 0 0 1 10 0)">
               <svg template-id="background" width="310" height="54" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
               <g template-id="content">
-                <g eObject-URI="main.page#/0/@children.0/@template/@element/@children.0/@children.0" widget-name="dogName" transform="matrix(1 0 0 1 5 5)">
+                <g widget-name="dogName" eObject-URI="main.page#/0/@children.0/@template/@element/@children.0/@children.0" transform="matrix(1 0 0 1 5 5)">
                   <svg template-id="background" width="78" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
                   <text alignment-baseline="central" font-size="17" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11" fill="#464646">dogName</text>
                 </g>
-                <g eObject-URI="main.page#/0/@children.0/@template/@element/@children.0/@children.1" widget-name="dogBreed" transform="matrix(1 0 0 1 5 27)">
+                <g widget-name="dogBreed" eObject-URI="main.page#/0/@children.0/@template/@element/@children.0/@children.1" transform="matrix(1 0 0 1 5 27)">
                   <svg template-id="background" width="74" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
                   <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11" fill="#464646">dogBreed</text>
                 </g>
-                <g eObject-URI="main.page#/0/@children.0/@template/@element/@children.0/@children.2" widget-name="dogId" transform="matrix(1 0 0 1 261 27)">
+                <g widget-name="dogId" eObject-URI="main.page#/0/@children.0/@template/@element/@children.0/@children.2" transform="matrix(1 0 0 1 261 27)">
                   <svg template-id="background" width="44" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
                   <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11" fill="#464646">dogId</text>
                 </g>
@@ -35,10 +37,10 @@
         </g>
       </g>
     </g>
-    <g eObject-URI="main.page#/0/@children.1" widget-name="rowView1" transform="matrix(1 0 0 1 0 430)">
+    <g widget-name="rowView1" eObject-URI="main.page#/0/@children.1" transform="matrix(1 0 0 1 0 430)">
       <svg template-id="background" width="320" height="50" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
       <g template-id="content">
-        <g eObject-URI="main.page#/0/@children.1/@children.0" widget-name="itmDoglist" transform="matrix(1 0 0 1 5 5)">
+        <g widget-name="itmDoglist" eObject-URI="main.page#/0/@children.1/@children.0" transform="matrix(1 0 0 1 5 5)">
           <svg template-id="background" width="310" height="40" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
             <rect stroke-width="2" width="100%" height="100%" fill="#ffffff" stroke="#80808" />
           </svg>
