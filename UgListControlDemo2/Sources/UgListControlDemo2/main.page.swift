@@ -57,9 +57,8 @@ class MainPageAdapter: SCDLatticePageAdapter {
           let backgroundColor = listElement.backgroundColor,
           let self = self
         {
-
           // We want to animate bacground color from gold to the original color
-          let fromColor = SCDSvgRGBColor.grey
+          let fromColor = SCDSvgRGBColor.gold
           let toColor = self.colorConvert(backgroundColor)
 
           // Lets animate fill property
