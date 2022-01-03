@@ -20,12 +20,12 @@ let package = Package(
         )
     ],
     dependencies: [
-      
+      .package(name: "ScadeExtensions", url: "https://github.com/scade-platform/ScadeExtensions", .branch("main")),
     ],
     targets: [
         .target(
             name: "UgListControlDemo2",
-            dependencies: [],
+            dependencies: ["ScadeExtensions"],
             exclude: ["main.page"],
             swiftSettings: [
                 .unsafeFlags(["-F", SCADE_SDK], .when(platforms: [.macOS, .iOS])),
