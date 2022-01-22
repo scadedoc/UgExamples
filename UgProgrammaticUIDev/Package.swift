@@ -26,6 +26,9 @@ let package = Package(
         .target(
             name: "UgProgrammaticUIDev",
             dependencies: [],
+            resources: [
+                .copy("Resources/")
+            ],
             swiftSettings: [
                 .unsafeFlags(["-F", SCADE_SDK], .when(platforms: [.macOS, .iOS])),
                 .unsafeFlags(["-I", "\(SCADE_SDK)/include"], .when(platforms: [.android])),
