@@ -47,10 +47,9 @@ class HelloWorldPageAdapter: SCDLatticePageAdapter {
 	
 	func getBitmapControl() -> SCDWidgetsImage {
 		let svg = SCDWidgetsImage()
-		svg.url = "Assets/check5.svg" 
+		svg.url = "check5.svg" 
 		svg.contentPriority = false // this needs to be set to false, else we source img from content property
 		self.configureGridData(of:svg)
-		svg.url = "Ewq"
 		return svg
 	}
 	
