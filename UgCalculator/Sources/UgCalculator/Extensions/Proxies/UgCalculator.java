@@ -1,2 +1,2 @@
-package UgCalculator;
+package com.UgCalculator;
 
