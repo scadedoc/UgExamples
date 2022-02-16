@@ -1,2 +1,2 @@
-package UgCryptoSwift;
+package com.UgCryptoSwift;
 

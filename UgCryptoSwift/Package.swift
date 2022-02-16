@@ -20,7 +20,7 @@ let package = Package(
         )
     ],
     dependencies: [
-      .package(url: "git@github.com:krzyzanowskim/CryptoSwift.git", from: "0.11.0")
+      .package(url: "git@github.com:krzyzanowskim/CryptoSwift.git", from: "1.4.1")
     ],
     targets: [
         .target(
