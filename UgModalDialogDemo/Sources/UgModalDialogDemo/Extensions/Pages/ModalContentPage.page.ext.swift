@@ -1,20 +1,20 @@
 import ScadeKit
 
 extension ModalContentPagePageAdapter {
-  var verticalview1: SCDWidgetsListView {
-    return self.page?.getWidgetByName("verticalview1") as! SCDWidgetsListView
+  var verticalView: SCDWidgetsListView {
+    return self.page?.getWidgetByName("verticalView") as! SCDWidgetsListView
   }
 
-  var label1: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("label1") as! SCDWidgetsLabel
+  var label: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("label") as! SCDWidgetsLabel
   }
 
-  var label2: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("label2") as! SCDWidgetsLabel
+  var label3: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("label3") as! SCDWidgetsLabel
   }
 
-  var horizontalview1: SCDWidgetsRowView {
-    return self.page?.getWidgetByName("horizontalview1") as! SCDWidgetsRowView
+  var horizontalView: SCDWidgetsRowView {
+    return self.page?.getWidgetByName("horizontalView") as! SCDWidgetsRowView
   }
 
   var btnLeave: SCDWidgetsButton {
