@@ -19,6 +19,7 @@ ios:
   supported-interface-orientationsiPad: ['portrait']
   entitlements-file: 
   app-delegate-file:
+  export-method: ad-hoc # app-store, enterprise or development
   simulator:
     os: 12.1
     output: UgMasterPageDemo/.build/ios-simulator
@@ -74,8 +75,8 @@ android:
   id: com.scade.UgMasterPageDemo
   version-name: 1.0.1
   version-code: 2
-  build-type: Release
-  key-store-properties: /Users/juliawork/Desktop/keystore.properties
+  build-type: Debug
+  key-store-properties:
   google-api-key: AIzaSyCjyCDkwGlffCOi5BcCgxmHaHvUx1DwiB4
   manifest-file:
   permissions: []
