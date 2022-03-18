@@ -1,5 +1,4 @@
-<?xml encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="ListControl.page#/0" widget-name="ListControl" width="320" height="480">
-  <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" widget-name="ListControl" eObject-URI="ListControl.page#/0" width="320" height="480">
   <g template-id="content" />
 </svg>

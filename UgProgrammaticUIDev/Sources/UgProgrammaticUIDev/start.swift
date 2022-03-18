@@ -26,5 +26,6 @@ class UgProgrammaticUIDev: SCDApplication {
 		helloWorldPage.show(view: window)
 		//formEntryPage.show(view: window)
 		//dynamicButtonGridPage.show(view: window)
+		//listControlPage.show(view: window)
 	}
 }
