@@ -1,7 +1,11 @@
-<?xml encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" widget-name="page1" eObject-URI="page2.page#/0" width="414" height="896">
-  <svg template-id="background" width="414" height="896" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-  <g widget-name="label1" eObject-URI="page2.page#/0/@children.0" transform="matrix(1 0 0 1 172 435)">
-    <text alignment-baseline="central" font-size="27" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="12.5" fill="#804cc6">Page II</text>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="page2.page#/0" widget-name="page2" width="414" height="736">
+  <rect template-id="background" width="100%" height="100%" fill="#f8f8f8" />
+  <g template-id="content">
+    <svg x="160" y="352" width="94" height="33" widget-name="label" eObject-URI="page2.page#/0/@children.0">
+      <g template-id="content">
+        <text template-id="node-text" x="0" y="16.5" alignment-baseline="central" font-family="Arial-BoldMT" font-size="29" font-style="normal" text-decoration="none" fill="#ff7d78">Page 2</text>
+      </g>
+    </svg>
   </g>
 </svg>
