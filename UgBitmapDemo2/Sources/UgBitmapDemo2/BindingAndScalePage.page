@@ -1,71 +1,70 @@
 <?xml  version="1.0" encoding="UTF-8" standalone="no"?>
-<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.3" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
   <widgets:Page name="BindingAndScalePage">
-    <minArea xsi:type="graphics:Dimension" width="428" height="926"/>
-    <location xsi:type="graphics:Point"/>
-    <backgroundColor xsi:type="graphics:RGB" Red="248" Green="248" Blue="248"/>
+    <minArea width="428" height="926"/>
+    <location/>
+    <backgroundColor Red="248" Green="248" Blue="248"/>
     <children xsi:type="widgets:GridView" name="gridView1">
       <children xsi:type="widgets:Button" text="Main" name="main" horizontalAlignment="CENTER">
-        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
-          <color xsi:type="graphics:RGB" Red="68" Green="106" Blue="179"/>
+        <font fontFamily="ArialMT" size="17">
+          <color Red="68" Green="106" Blue="179"/>
         </font>
         <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" grabHorizontalSpace="true">
-          <minSize xsi:type="graphics:Dimension" width="86" height="23"/>
-          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+          <minSize width="86" height="23"/>
+          <maxSize width="-1" height="-1"/>
         </layoutData>
-        <location xsi:type="graphics:Point" x="5" y="5"/>
-        <size xsi:type="graphics:Dimension" width="209" height="50"/>
-        <contentSize xsi:type="graphics:Dimension" width="86" height="23"/>
+        <location x="5" y="5"/>
+        <size width="209" height="50"/>
+        <contentSize width="86" height="23"/>
       </children>
       <children xsi:type="widgets:Button" text="Image" name="button2" horizontalAlignment="CENTER">
-        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
-          <color xsi:type="graphics:RGB" Red="68" Green="106" Blue="179"/>
+        <font fontFamily="ArialMT" size="17">
+          <color Red="68" Green="106" Blue="179"/>
         </font>
         <layoutData xsi:type="layout:GridData" column="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
-          <minSize xsi:type="graphics:Dimension" width="86" height="23"/>
-          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+          <minSize width="86" height="23"/>
+          <maxSize width="-1" height="-1"/>
         </layoutData>
-        <location xsi:type="graphics:Point" x="214" y="5"/>
-        <size xsi:type="graphics:Dimension" width="209" height="50"/>
-        <contentSize xsi:type="graphics:Dimension" width="86" height="23"/>
+        <location x="214" y="5"/>
+        <size width="209" height="50"/>
+        <contentSize width="86" height="23"/>
       </children>
       <layout xsi:type="layout:GridLayout" columns="2" marginRight="5" marginTop="5" marginBottom="5" marginLeft="5"/>
-      <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
-      <location xsi:type="graphics:Point" y="866"/>
-      <minArea xsi:type="graphics:Dimension"/>
-      <size xsi:type="graphics:Dimension" width="428" height="60"/>
+      <maxArea width="-1" height="-1"/>
+      <location y="866"/>
+      <minArea/>
+      <size width="428" height="60"/>
       <layoutData xsi:type="layout:AutoLayoutData">
-        <constraints xsi:type="layout:Constraint" source="/0/@children.0" target="/0"/>
-        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.0" target="/0"/>
-        <constraints xsi:type="layout:Constraint" sourceAnchor="BOTTOM" targetAnchor="BOTTOM" source="/0/@children.0" target="/0"/>
-        <constraints xsi:type="layout:Constraint" sourceAnchor="HEIGHT" constant="60" source="/0/@children.0"/>
+        <constraints source="/0/@children.0" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.0" target="/0"/>
+        <constraints sourceAnchor="BOTTOM" targetAnchor="BOTTOM" source="/0/@children.0" target="/0"/>
+        <constraints sourceAnchor="HEIGHT" constant="60" source="/0/@children.0"/>
       </layoutData>
     </children>
     <children xsi:type="widgets:RowView" name="rowView1">
       <children xsi:type="widgets:Image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDZGQjRCRUYyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDZGQjRCRjAyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpENkZCNEJFRDI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpENkZCNEJFRTI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmri+DQAAAS8SURBVHja7JxdK2xRGMfPnHPChUGHGIphmCGN8lYahdyQQi7kI/hOfALFhaSk3CLlLTZ5G2YoQ+MtjULU+befWu323uaME5PZ/v+L3Zq1n732Wr/9rGc9aymusbGxH1Rq+kkEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVY316/U7QbHR3F9eLiYmZmhp5FERZhERZhfc/VMMkSOT8/H41GGxoaqqqqPB6PLJp7e3sHBwdiFggE6urqbG8ZhRbKysoKCwtzc3Px8+bmJhKJaJr2+PhoNc7JyQkGg7BXzZ6cnGxvb3u93t7eXtSMj4+/9QrYoPz8/ByLxdAZdD4dsER5eXnd3d1+v1/VeHQVFRUtLS3Z3sIjq6urxkYGBwdl2Ep/dFVWVs7Ozpp4lZSU9PX1ZWVlmZqtra3d2tqy7STg9vf3o0FVg8e9utbX102d+URY+FzwBbjA7u7u3d0d/Ki9vR1dwZfPzs4GqcPDw42NDeOt5ubmo6Mj1KhGrq6ucMV3Pj09BRpxHJhheF1dXXBeZVlQUCCk4BqaLtgDX2NjI0aO9m07KaQSiQS4iF+jnaamJnQPb7m/v7d1dpN+DQwMpEKkpaUFV7xsf3/fVIl+o8dwIvn+19fXt7e3NTU1KGNOwckXFhbUrdfX1/LycnkKs0w1FY/Hd3Z2YPDy8oKfuJ6fn7tcrtLSUowqHA4r5+rp6cnPz0cBHofPIPYPDw+wgcMWFxeL2drammq8tbXV5/MB7uTk5OXlpVSiQXQA7o/2ccUUTlOAhycbfwIQsEp5ZWXFeAt9QqdRcLvdxnrbwHR2diYFhQADk9kKTGrYSsvLy9K4SXBSXG3D3+bmJq6YGfDNdMBCcLV2QsEyzjURIrdEmX+2rHDAZaQgDgsdHx9b7dENadwU4CS6YeIneYX6Hp8bsz5QGBgmKRYsDM8YjI1RWTlvim3KrIdGRkaSmCG8ZgwszK/Ozk7lbnBMOKzVARFcMjXP+ihh7RsaGpIFDoEZ8UjNa0nlPkS2mVfmZfChUEhITU9PYwWwDfYiLJFqwqbYONKC9z7ypWEhP5DAb1oN4HFvjby6utrWQ63rBhI3KdTX1zsBluxv5GoU0kVTDVJHWWeRDVg9BR5qu0RiXqOA/BP5c8bDksEAFvZG4k2I99jigYg1b1pcXJQC8ngMXuwBDvbAYZtnqfwLNJHiGykj6UfKKrvFzAjw2Ayhuwhbfl3GQarNuTHjRb2EuZCu5PbiXHNzcx0dHUhHgrqsSXUquciXgIVQNTExgWEjeMG/MNFisRh2msgYkXPJtsm0DUByj52d2BvPDwBLThSsyefU1JTpYCOhC4uG2iokl8th/zFkeHgY7vNJf1hx1OEfIp3k/XKGQVjJ1NbWJoVwOOzYDP4/5lokEonH4xKVsSBWVFSow1hN06wHEt8UViAQkENU27tysubkveG7hLz06enJ5/O53W6VJSCiI07JUa3DN9LvVVRX+t/LP4URFmERFmERFkVYhEVYhEVYhEURFmERFmERFmFRhEVYhEVYhEVYFGERFmERFmERFkVYhEVYhEVYDtVfAQYA9Kg8ERKqtwIAAAAASUVORK5CYII=" name="image1">
-        <location xsi:type="graphics:Point" x="164" y="5"/>
-        <size xsi:type="graphics:Dimension" width="100" height="856"/>
+        <location x="164" y="5"/>
+        <size width="100" height="856"/>
         <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true">
-          <minSize xsi:type="graphics:Dimension" width="100" height="100"/>
-          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+          <minSize width="100" height="100"/>
+          <maxSize width="-1" height="-1"/>
         </layoutData>
       </children>
       <layout xsi:type="layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
-      <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
-      <location xsi:type="graphics:Point"/>
-      <minArea xsi:type="graphics:Dimension"/>
-      <size xsi:type="graphics:Dimension" width="428" height="866"/>
+      <maxArea width="-1" height="-1"/>
+      <location/>
+      <minArea/>
+      <size width="428" height="866"/>
       <layoutData xsi:type="layout:AutoLayoutData">
-        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="TOP" source="/0/@children.1" target="/0"/>
-        <constraints xsi:type="layout:Constraint" source="/0/@children.1" target="/0"/>
-        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.1" target="/0"/>
-        <constraints xsi:type="layout:Constraint" sourceAnchor="BOTTOM" targetAnchor="TOP" source="/0/@children.1" target="/0/@children.0"/>
+        <constraints sourceAnchor="TOP" targetAnchor="TOP" source="/0/@children.1" target="/0"/>
+        <constraints source="/0/@children.1" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.1" target="/0"/>
+        <constraints sourceAnchor="BOTTOM" targetAnchor="TOP" source="/0/@children.1" target="/0/@children.0"/>
       </layoutData>
     </children>
     <layout xsi:type="layout:AutoLayout"/>
-    <maxArea xsi:type="graphics:Dimension" width="428" height="926"/>
-    <size xsi:type="graphics:Dimension" width="428" height="926"/>
+    <maxArea width="428" height="926"/>
+    <size width="428" height="926"/>
   </widgets:Page>
-  <binding:BindingModel/>
   <navigation:Navigation page="/0"/>
 </xmi:XMI>
