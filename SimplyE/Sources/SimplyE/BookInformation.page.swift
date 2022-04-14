@@ -22,7 +22,7 @@ class BookInformationPageAdapter: SCDLatticePageAdapter {
     }
     
     item.onClick { _ in 
-    	self.navigation?.go(page: "main.page", transition: .fromLeft) 
+    	self.navigation?.go(page: "BooksList.page", transition: .fromLeft) 
     }
 
     // add back button event to go back to Catalog page
@@ -63,6 +63,6 @@ class BookInformationPageAdapter: SCDLatticePageAdapter {
   }
 
   func goBack() {
-    self.navigation!.go(page: "main.page", transition: .fromRight)
+    self.navigation!.go(page: "BooksList.page", transition: .fromRight)
   }
 }

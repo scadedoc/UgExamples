@@ -1,5 +1,5 @@
 <?xml  version="1.0" encoding="UTF-8" standalone="no"?>
-<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.3" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
   <widgets:Page name="bookdetails">
     <children xsi:type="widgets:RowView" name="viewNavigation">
       <children xsi:type="widgets:RowView" name="viewBackButton">
@@ -12,13 +12,16 @@
           </layoutData>
         </children>
         <children xsi:type="widgets:Label" text="Catalog" name="label2">
-          <location x="35" y="5"/>
-          <size width="57" height="30"/>
-          <contentSize width="57" height="30"/>
+          <font fontFamily="ArialMT" size="17">
+            <color/>
+          </font>
           <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabVerticalSpace="true">
             <minSize width="57" height="30"/>
             <maxSize width="57" height="30"/>
           </layoutData>
+          <location x="35" y="5"/>
+          <size width="59" height="30"/>
+          <contentSize width="59" height="30"/>
         </children>
         <layout xsi:type="layout:GridLayout" columns="2" marginRight="5" marginTop="5" marginBottom="5" marginLeft="5"/>
         <maxArea width="-1" height="-1"/>
@@ -37,13 +40,16 @@
       </children>
       <children xsi:type="widgets:RowView" name="horizontalview3">
         <children xsi:type="widgets:Label" text="Details" name="label1">
-          <location x="5" y="5"/>
-          <size width="93" height="30"/>
-          <contentSize width="93" height="30"/>
+          <font fontFamily="ArialMT" size="17">
+            <color/>
+          </font>
           <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" grabHorizontalSpace="true">
             <minSize width="93" height="30"/>
             <maxSize width="93" height="30"/>
           </layoutData>
+          <location x="5" y="5"/>
+          <size width="93" height="30"/>
+          <contentSize width="93" height="30"/>
         </children>
         <layout xsi:type="layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
         <maxArea width="-1" height="-1"/>
@@ -74,203 +80,242 @@
           <maxArea width="-1" height="-1"/>
           <location/>
           <minArea/>
-          <size width="130" height="134"/>
+          <size width="130" height="139"/>
           <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" heightConstraint="MATCH_PARENT" grabVerticalSpace="true" widthConstraint="MATCH_PARENT"/>
         </children>
         <children xsi:type="widgets:ListView" name="verticalview1">
           <children xsi:type="widgets:Label" text="Silence of the Lambs" name="lbBookTitle" multiline="true">
-            <location x="2" y="2"/>
-            <size width="179" height="39"/>
-            <contentSize width="179" height="39"/>
-            <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" heightConstraint="MATCH_PARENT">
+            <font fontFamily="ArialMT" size="17">
+              <color/>
+            </font>
+            <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" grabHorizontalSpace="true">
               <minSize width="179" height="39"/>
               <maxSize width="179" height="39"/>
             </layoutData>
+            <location x="2" y="2"/>
+            <size width="179" height="39"/>
+            <contentSize width="179" height="39"/>
           </children>
           <children xsi:type="widgets:Label" text="Charles Dickens" name="lbAuthorName">
-            <location x="2" y="41"/>
-            <size width="179" height="20"/>
-            <contentSize width="179" height="20"/>
-            <layoutData xsi:type="layout:GridData" row="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+            <font fontFamily="ArialMT" size="17">
+              <color/>
+            </font>
+            <layoutData xsi:type="layout:GridData" row="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT">
               <minSize width="179" height="19"/>
               <maxSize width="179" height="19"/>
             </layoutData>
+            <location x="2" y="41"/>
+            <size width="179" height="19"/>
+            <contentSize width="179" height="19"/>
           </children>
           <children xsi:type="widgets:GridView" name="viewPublishingInfo">
             <children xsi:type="widgets:Label" text="Publisher" name="label4">
-              <location y="15"/>
-              <size width="73" height="17"/>
-              <contentSize width="73" height="17"/>
+              <font fontFamily="ArialMT" size="17">
+                <color/>
+              </font>
               <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE">
                 <minSize width="73" height="16"/>
                 <maxSize width="73" height="16"/>
               </layoutData>
+              <location y="15"/>
+              <size width="73" height="19"/>
+              <contentSize width="73" height="19"/>
             </children>
             <children xsi:type="widgets:Label" text="label" name="lbPublisher">
-              <location x="74" y="15"/>
-              <size width="87" height="17"/>
-              <contentSize width="87" height="17"/>
+              <font fontFamily="ArialMT" size="17">
+                <color/>
+              </font>
               <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true">
                 <minSize width="87" height="16"/>
                 <maxSize width="87" height="16"/>
               </layoutData>
+              <location x="75" y="15"/>
+              <size width="87" height="19"/>
+              <contentSize width="87" height="19"/>
             </children>
             <children xsi:type="widgets:Label" text="Published" name="label6">
-              <location y="32"/>
-              <size width="74" height="17"/>
-              <contentSize width="74" height="17"/>
+              <font fontFamily="ArialMT" size="17">
+                <color/>
+              </font>
               <layoutData xsi:type="layout:GridData" row="1" verticalAlignment="MIDDLE">
                 <minSize width="74" height="16"/>
                 <maxSize width="74" height="16"/>
               </layoutData>
+              <location y="34"/>
+              <size width="75" height="19"/>
+              <contentSize width="75" height="19"/>
             </children>
             <children xsi:type="widgets:Label" text="label" name="lbPublished" wrapText="true">
-              <location x="74" y="32"/>
-              <size width="26" height="17"/>
-              <contentSize width="26" height="17"/>
+              <font fontFamily="ArialMT" size="17">
+                <color/>
+              </font>
               <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" row="1" grabHorizontalSpace="true">
                 <minSize width="26" height="15"/>
                 <maxSize width="26" height="15"/>
               </layoutData>
+              <location x="75" y="34"/>
+              <size width="36" height="19"/>
+              <contentSize width="36" height="19"/>
             </children>
             <children xsi:type="widgets:Label" text="Category" name="label8">
-              <location y="49"/>
-              <size width="57" height="17"/>
-              <contentSize width="57" height="17"/>
+              <font fontFamily="ArialMT" size="17">
+                <color/>
+              </font>
               <layoutData xsi:type="layout:GridData" row="2" verticalAlignment="MIDDLE">
                 <minSize width="57" height="16"/>
                 <maxSize width="57" height="16"/>
               </layoutData>
+              <location y="53"/>
+              <size width="69" height="19"/>
+              <contentSize width="69" height="19"/>
             </children>
             <children xsi:type="widgets:Label" text="label" name="lbCategory">
-              <location x="74" y="49"/>
-              <size width="95" height="17"/>
-              <contentSize width="95" height="17"/>
+              <font fontFamily="ArialMT" size="17">
+                <color/>
+              </font>
               <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" row="2">
                 <minSize width="95" height="16"/>
                 <maxSize width="95" height="16"/>
               </layoutData>
+              <location x="75" y="53"/>
+              <size width="95" height="19"/>
+              <contentSize width="95" height="19"/>
             </children>
             <layout xsi:type="layout:GridLayout" columns="2" rows="3" marginTop="15" marginBottom="5"/>
             <maxArea width="-1" height="-1"/>
-            <location x="2" y="61"/>
+            <location x="2" y="60"/>
             <minArea/>
-            <size width="179" height="71"/>
+            <size width="179" height="77"/>
             <layoutData xsi:type="layout:GridData" row="2" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT"/>
           </children>
           <layout xsi:type="layout:GridLayout" rows="3" marginTop="2" marginBottom="2" marginLeft="2" marginRight="2"/>
           <maxArea width="-1" height="-1"/>
           <location x="130"/>
           <minArea/>
-          <size width="183" height="134"/>
+          <size width="183" height="139"/>
           <layoutData xsi:type="layout:GridData" column="1" heightConstraint="MATCH_PARENT" grabVerticalSpace="true"/>
         </children>
         <layout xsi:type="layout:GridLayout" columns="2"/>
         <maxArea width="-1" height="-1"/>
         <location/>
         <minArea/>
-        <size width="320" height="134"/>
+        <size width="320" height="139"/>
         <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
       </children>
       <children xsi:type="widgets:RowView" name="horizontalview5">
         <children xsi:type="widgets:Label" text="This book is available to borrow" name="label10">
-          <location y="8"/>
-          <size width="320" height="15"/>
-          <contentSize width="320" height="17"/>
+          <font fontFamily="ArialMT" size="17">
+            <color/>
+          </font>
           <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" grabHorizontalSpace="true">
             <minSize width="320" height="15"/>
             <maxSize width="320" height="15"/>
           </layoutData>
+          <location y="9"/>
+          <size width="320" height="15"/>
+          <contentSize width="320" height="19"/>
         </children>
         <layout xsi:type="layout:GridLayout" marginTop="7" marginBottom="7"/>
         <maxArea width="-1" height="-1"/>
-        <location y="134"/>
+        <location y="139"/>
         <minArea/>
-        <size width="320" height="31"/>
+        <size width="320" height="33"/>
         <layoutData xsi:type="layout:GridData" row="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
       </children>
       <children xsi:type="widgets:RowView" name="horizontalview6">
         <children xsi:type="widgets:RowView" name="horizontalview7">
           <layout xsi:type="layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
           <maxArea width="-1" height="-1"/>
-          <size width="100" height="34"/>
+          <size width="84" height="31"/>
           <location x="5" y="5"/>
           <minArea/>
           <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
         </children>
         <children xsi:type="widgets:RowView" name="horizontalview8">
           <children xsi:type="widgets:Label" text="Get" name="label11">
-            <location x="31" y="6"/>
-            <size width="37" height="21"/>
-            <contentSize width="37" height="24"/>
+            <font fontFamily="ArialMT" size="17">
+              <color/>
+            </font>
             <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true">
               <minSize width="37" height="21"/>
               <maxSize width="37" height="21"/>
             </layoutData>
+            <location x="23" y="5"/>
+            <size width="37" height="21"/>
+            <contentSize width="37" height="21"/>
           </children>
           <layout xsi:type="layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
           <maxArea width="-1" height="-1"/>
-          <location x="105" y="5"/>
+          <location x="89" y="5"/>
           <minArea/>
-          <size width="99" height="34"/>
+          <size width="84" height="31"/>
           <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
         </children>
         <children xsi:type="widgets:RowView" name="horizontalview9">
           <children xsi:type="widgets:Label" text="Report a problem" name="label51">
-            <location x="5" y="6"/>
-            <size width="101" height="21"/>
-            <contentSize width="101" height="21"/>
+            <font fontFamily="ArialMT" size="17">
+              <color/>
+            </font>
             <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabVerticalSpace="true">
               <minSize width="101" height="21"/>
               <maxSize width="101" height="21"/>
             </layoutData>
+            <location x="5" y="5"/>
+            <size width="132" height="21"/>
+            <contentSize width="132" height="21"/>
           </children>
           <layout xsi:type="layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
           <maxArea width="-1" height="-1"/>
-          <location x="204" y="5"/>
+          <location x="173" y="5"/>
           <minArea/>
-          <size width="111" height="34"/>
+          <size width="142" height="31"/>
           <layoutData xsi:type="layout:GridData" column="2" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
         </children>
         <layout xsi:type="layout:GridLayout" columns="3" marginRight="5" marginTop="5" marginBottom="5" marginLeft="5"/>
         <maxArea width="-1" height="-1"/>
-        <location y="165"/>
+        <location y="172"/>
         <minArea/>
-        <size width="320" height="44"/>
+        <size width="320" height="41"/>
         <layoutData xsi:type="layout:GridData" row="2" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
       </children>
       <children xsi:type="widgets:ListView" name="viewDescription">
         <children xsi:type="widgets:Label" text="description1" name="lbDescription1" multiline="true">
-          <location x="35" y="5"/>
-          <size width="250" height="20"/>
-          <contentSize width="250" height="20"/>
+          <font fontFamily="ArialMT" size="17">
+            <color/>
+          </font>
           <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
             <minSize width="250" height="19"/>
             <maxSize width="250" height="19"/>
           </layoutData>
+          <location x="35" y="5"/>
+          <size width="250" height="19"/>
+          <contentSize width="250" height="19"/>
         </children>
         <children xsi:type="widgets:Label" text="description2" name="lbDescription2" multiline="true">
-          <location x="35" y="35"/>
-          <size width="250" height="20"/>
-          <contentSize width="250" height="20"/>
+          <font fontFamily="ArialMT" size="17">
+            <color/>
+          </font>
           <layoutData xsi:type="layout:GridData" row="2" grabVerticalSpace="true" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
             <minSize width="250" height="19"/>
             <maxSize width="250" height="19"/>
           </layoutData>
+          <location x="35" y="34"/>
+          <size width="250" height="19"/>
+          <contentSize width="250" height="19"/>
         </children>
         <children xsi:type="widgets:RowView" name="horizontalview10">
           <layout xsi:type="layout:GridLayout" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
           <maxArea width="-1" height="-1"/>
           <size width="250" height="10"/>
-          <location x="35" y="25"/>
+          <location x="35" y="24"/>
           <minArea/>
           <layoutData xsi:type="layout:GridData" row="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT"/>
         </children>
         <layout xsi:type="layout:GridLayout" rows="3" marginTop="5" marginBottom="5" marginLeft="35" marginRight="35"/>
         <maxArea width="-1" height="-1"/>
-        <location y="209"/>
+        <location y="213"/>
         <minArea/>
-        <size width="320" height="164"/>
+        <size width="320" height="160"/>
         <layoutData xsi:type="layout:GridData" row="3" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT"/>
       </children>
       <layout xsi:type="layout:GridLayout" rows="4" marginBottom="5"/>
@@ -394,6 +439,5 @@
     <minArea width="320" height="480"/>
     <size width="320" height="480"/>
   </widgets:Page>
-  <binding:BindingModel/>
   <navigation:Navigation page="/0"/>
 </xmi:XMI>
