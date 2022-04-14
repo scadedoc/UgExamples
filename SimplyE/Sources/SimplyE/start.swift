@@ -9,6 +9,7 @@ class SimplyE: SCDApplication {
   var bookDetail: BookInformationPageAdapter!
   var settings : SettingsPageAdapter!
   var booksList : BooksListPageAdapter!
+  var readerSettings: ReaderSettingsPageAdapter!
   
 	override func onFinishLaunching() {
 
@@ -16,6 +17,9 @@ class SimplyE: SCDApplication {
 		
 		loginPage = LoginPageAdapter()
 		loginPage.load("Login.page")
+		
+		readerSettings = ReaderSettingsPageAdapter()
+		readerSettings.load("ReaderSettings.page")
 		
 		bookDetail = BookInformationPageAdapter()
 		bookDetail.load("BookInformation.page")

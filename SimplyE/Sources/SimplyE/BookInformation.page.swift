@@ -18,7 +18,7 @@ class BookInformationPageAdapter: SCDLatticePageAdapter {
       
 
     toolBarItem3.onClick { _ in 
-    	self.navigation?.go(page: "settings.page", transition: .fromLeft) 
+    	self.navigation?.go(page: "ReaderSettings.page", transition: .fromLeft) 
     }
     
     item.onClick { _ in 
