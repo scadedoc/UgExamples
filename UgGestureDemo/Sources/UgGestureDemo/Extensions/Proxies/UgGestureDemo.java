@@ -1,2 +1,2 @@
-package UgGestureDemo;
+package com.UgGestureDemo;
 

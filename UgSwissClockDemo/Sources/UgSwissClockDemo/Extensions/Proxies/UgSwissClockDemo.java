@@ -1,2 +1,2 @@
-package UgSwissClockDemo;
+package com.UgSwissClockDemo;
 

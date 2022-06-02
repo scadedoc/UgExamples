@@ -1,2 +1,2 @@
-package UgMasterPageDemo;
+package com.UgMasterPageDemo;
 

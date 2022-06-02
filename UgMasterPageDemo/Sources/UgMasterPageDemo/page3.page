@@ -1,24 +1,24 @@
 <?xml  version="1.0" encoding="UTF-8" standalone="no"?>
-<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.3" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
   <widgets:Page name="page3">
+    <minArea width="414" height="736"/>
+    <location/>
+    <backgroundColor Red="248" Green="248" Blue="248"/>
     <children xsi:type="widgets:Label" text="Page 3" name="label1">
-      <font xsi:type="graphics:Font" fontFamily="Arial-BoldMT" size="29">
-        <color xsi:type="graphics:RGB" Red="38" Green="147" Blue="35"/>
+      <font fontFamily="Arial-BoldMT" size="29">
+        <color Red="38" Green="147" Blue="35"/>
       </font>
-      <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true">
-        <minSize xsi:type="graphics:Dimension"/>
-        <maxSize xsi:type="graphics:Dimension" width="90" height="34"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.0" target="/0"/>
+        <constraints sourceAnchor="CENTER_Y" targetAnchor="CENTER_Y" source="/0/@children.0" target="/0"/>
       </layoutData>
-      <location xsi:type="graphics:Point" x="166" y="431"/>
-      <size xsi:type="graphics:Dimension" width="82" height="33"/>
-      <contentSize xsi:type="graphics:Dimension" width="82" height="33"/>
+      <location x="160" y="352"/>
+      <size width="94" height="33"/>
+      <contentSize width="94" height="33"/>
     </children>
-    <layout xsi:type="layout:GridLayout"/>
-    <maxArea xsi:type="graphics:Dimension" width="414" height="896"/>
-    <location xsi:type="graphics:Point"/>
-    <minArea xsi:type="graphics:Dimension" width="414" height="896"/>
-    <size xsi:type="graphics:Dimension" width="414" height="896"/>
+    <layout xsi:type="layout:AutoLayout"/>
+    <maxArea width="414" height="736"/>
+    <size width="414" height="736"/>
   </widgets:Page>
-  <binding:BindingModel/>
   <navigation:Navigation page="/0"/>
 </xmi:XMI>

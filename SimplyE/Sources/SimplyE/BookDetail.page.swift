@@ -26,7 +26,7 @@ class BookDetailPageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func goBack() {
-		self.navigation?.go(page: "main.page", transition : .fromRight)
+		self.navigation?.go(page: "BooksList.page", transition : .fromRight)
 	}
 	
 }

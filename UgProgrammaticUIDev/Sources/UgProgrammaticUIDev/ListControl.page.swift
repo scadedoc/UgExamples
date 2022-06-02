@@ -3,6 +3,7 @@ import ScadeKit
 class ListControlPageAdapter: SCDLatticePageAdapter {
 
 	var listControl : SCDWidgetsList?
+	var datapicker : SCDWidgetsDataPicker?
 	
 	// page adapter initialization
 	override func load(_ path: String) {		
@@ -11,6 +12,7 @@ class ListControlPageAdapter: SCDLatticePageAdapter {
 		// Step 1 : create list control
 		self.listControl = createListControl()
 		self.page!.children.append(listControl!)
+		
 	}
 	
 	override func show(view: SCDLatticeView?) {
@@ -36,6 +38,7 @@ class ListControlPageAdapter: SCDLatticePageAdapter {
 		return listControl
 		
 	}
+	
 	
 	func createTemplate() -> SCDWidgetsRowView {
 		

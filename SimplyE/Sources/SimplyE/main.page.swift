@@ -33,7 +33,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
   }
 
   func gotoMore() {
-    self.navigation!.go(page: "settings.page", transition: .fromLeft)
+    self.navigation!.go(page: "ReaderSettings.page", transition: .fromLeft)
   }
 
   func populateBitmaps() {

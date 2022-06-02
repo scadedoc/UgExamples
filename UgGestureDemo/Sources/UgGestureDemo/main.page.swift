@@ -7,7 +7,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	var label : String = "No gesture executed"
 	
 	// holds reference to circle
-	var circle : SCDSvgCircle?
+	//var circle : SCDSvgCircle?
 	
 	// colors
 	let colorDefaultGreen = SCDGraphicsRGB(red: 0, green: 142, blue: 0, alpha: 255)
@@ -30,8 +30,9 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		}
 		
 		// setup and move circle using Pan gesture
-		self.circle = self.page!.drawing!.findById("circle1") as? SCDSvgCircle
-		self.circle!.gestureRecognizers.append(getPanGesture())
+		//self.circle = self.page!.drawing!.findById("circle1") as? SCDSvgCircle
+		//self.circle!.gestureRecognizers.append(getPanGesture())
+		customwidget2.drawing?.gestureRecognizers.append(getPanGesture())
 		
 		// add gesture to button. Is changes the background color
 		// of the button when button is pressed (began) and finger is lifted up (ended)
@@ -100,8 +101,13 @@ class MainPageAdapter: SCDLatticePageAdapter {
 			let panEvent = recognizer as! SCDSvgPanGestureRecognizer
 			
 			// lets change location of circle graphics object
-	 	   	self.circle!.cx.value = self.circle!.cx.value + panEvent.deltaX
-	    	self.circle!.cy.value = self.circle!.cy.value + panEvent.deltaY       
+	 	   	//self.circle!.cx.value = self.circle!.cx.value + panEvent.deltaX
+	    	//self.circle!.cy.value = self.circle!.cy.value + panEvent.deltaY 
+	    	
+	    	if let svg = customwidget2.drawing as? SCDSvgBox {
+	    		svg.x.value += panEvent.deltaX
+	    		svg.y.value += panEvent.deltaY
+	    	}  
 		}
 		
 		// create recognizer
