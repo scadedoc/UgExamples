@@ -68,10 +68,10 @@ class MainPageAdapter: SCDLatticePageAdapter {
     #endif
 
     /**
-	     * An Android implementation of the AlertDialog(android.app.AlertDialog) using
-	     * swift-android repository
-	     * It works only for Android explicitly
-	     */
+	  * An Android implementation of the AlertDialog(android.app.AlertDialog) using
+	  * swift-android repository
+	  * It works only for Android explicitly
+	  */
 
     #if os(Android)
 
