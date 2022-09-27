@@ -1,0 +1,21 @@
+<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.3" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="secondpage">
+    <minArea width="414" height="736"/>
+    <location/>
+    <backgroundColor Red="248" Green="248" Blue="248"/>
+    <children xsi:type="widgets:Label" text="label" name="label" horizontalAlignment="CENTER">
+      <font fontFamily="Arial-BoldMT" size="25">
+        <color Red="70" Green="70" Blue="70"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData"/>
+      <location x="56" y="224"/>
+      <size width="299" height="112"/>
+      <contentSize width="57" height="29"/>
+    </children>
+    <layout xsi:type="layout:AutoLayout"/>
+    <maxArea width="414" height="736"/>
+    <size width="414" height="736"/>
+  </widgets:Page>
+  <navigation:Navigation page="/0"/>
+</xmi:XMI>

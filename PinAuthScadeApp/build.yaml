@@ -1,0 +1,102 @@
+spm:
+  - url:
+    from:
+    path:
+    branch:
+    exact:
+    revision:
+    search-paths: []
+    linked-libs: []
+
+search-paths: []
+linked-libs: []
+
+ios:
+  name: PinAuthApp
+  id: com.scade.pinauthapp
+  device-family: iphone # iphone, ipad or universal
+  supported-interface-orientations: ['portrait'] # portrait, upside_down, landscape_left or landscape_right
+  supported-interface-orientationsiPad: ['portrait']
+  entitlements-file:
+  app-delegate-file:
+  export-method: ad-hoc # app-store, enterprise or development
+  simulator:
+    os: 12.1
+    output: PinAuthApp/.build/ios-simulator
+    extra-args:
+    search-paths: []
+    linked-libs: []
+  device:
+    os: 12.1
+    output: PinAuthApp/.build/ios-device
+    product-path: PinAuthApp/Product/ios-device
+    extra-args:
+    search-paths: []
+    linked-libs: []
+  mac:
+    os: 10.11
+    output:  PinAuthApp/.build/scade-simulator
+    extra-args:
+    search-paths: []
+    linked-libs: []
+  sign:
+    provision-profile:
+    certificate:
+  icons:
+    iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5
+      60X60_2X:
+      76X76_2X:
+      76X76_3X:
+      83.5X83.5_2X:
+    marketing:
+      1024X1024_1X:
+  plist:
+    CFBundleShortVersionString: string# 1.0
+    CFBundleVersion: string# 1
+    NSLocationWhenInUseUsageDescription:
+    NSCameraUsageDescription: Take pictures from camera
+    NSPhotoLibraryUsageDescription: Choose a photo from your library
+
+android:
+  name: PinAuthApp
+  id: com.scade.pinauthapp
+  version-name: 1.0.0
+  version-code: 1
+  build-type: Debug
+  key-store-properties:
+  google-api-key:
+  manifest-file:
+  permissions: []
+  armeabi-v7a:
+    output: PinAuthApp/.build/android-armeabi-v7a
+    product-path: PinAuthApp/Product/android-armeabi-v7a
+    extra-args:
+    search-paths: []
+    linked-libs: []
+  arm64-v8a:
+    output: PinAuthApp/.build/android-arm64-v8a
+    product-path: PinAuthApp/Product/android-arm64-v8a
+    extra-args:
+    search-paths: []
+    linked-libs: []
+  x86:
+    output: PinAuthApp/.build/android-x86
+    product-path: PinAuthApp/Product/android-x86
+    extra-args:
+    search-paths: []
+    linked-libs: []
+  x86_64:
+    output: PinAuthApp/.build/android-x86_64
+    product-path: PinAuthApp/Product/android-x86_64
+    extra-args:
+    search-paths: []
+    linked-libs: []
+  intent-filters:
+    - action:
+      scheme:
+      categories: []
+  icons:
+    mdpi:
+    hdpi:
+    xhdpi:
+    xxhdpi:
