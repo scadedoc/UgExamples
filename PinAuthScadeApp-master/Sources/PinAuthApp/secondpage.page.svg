@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="secondpage.page#/0" widget-name="secondpage" width="414" height="736">
+  <rect template-id="background" width="100%" height="100%" fill="#f8f8f8" />
+  <g template-id="content">
+    <svg x="56" y="224" width="299" height="112" widget-name="label" eObject-URI="secondpage.page#/0/@children.0">
+      <g template-id="content">
+        <text template-id="node-text" x="149.5" y="56" alignment-baseline="central" font-family="Arial-BoldMT" font-size="25" font-style="normal" text-decoration="none" fill="#464646" text-anchor="middle">label</text>
+      </g>
+    </svg>
+  </g>
+</svg>
