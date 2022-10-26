@@ -1,11 +1,11 @@
-<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
-<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.3" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
-  <widgets:Page name="ListControl">
-    <layout xsi:type="layout:GridLayout"/>
-    <maxArea width="320" height="480"/>
-    <minArea width="320" height="480"/>
-    <size width="320" height="480"/>
-    <location/>
-  </widgets:Page>
-  <navigation:Navigation page="/0"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets" xmi:version="2.0" xmi:id="0.5">
+    <widgets:Page name="ListControl">
+        <layout xsi:type="layout:GridLayout"/>
+        <maxArea width="320" height="480"/>
+        <minArea width="320" height="480"/>
+        <size width="320" height="480"/>
+        <location/>
+    </widgets:Page>
+    <navigation:Navigation page="/0"/>
 </xmi:XMI>

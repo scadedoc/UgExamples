@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" widget-name="ListControl" eObject-URI="ListControl.page#/0" width="320" height="480">
-  <g template-id="content" />
+    <svg template-id="content-box">
+        <g template-id="content"/>
+    </svg>
 </svg>
