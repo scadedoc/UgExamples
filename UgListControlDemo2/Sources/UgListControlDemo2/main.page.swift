@@ -37,7 +37,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
       anim.delay = 0.2
       anim.deleteOnComplete = true
 
-      element.backgroundRect?.animations.append(anim)
+      element.backgroundSvgRect?.animations.append(anim)
     }
   }
 }
