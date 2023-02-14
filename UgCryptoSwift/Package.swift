@@ -20,12 +20,13 @@ let package = Package(
         )
     ],
     dependencies: [
-      .package(url: "git@github.com:krzyzanowskim/CryptoSwift.git", from: "1.4.1")
+    .package(name: "ScadeExtensions", url: "https://github.com/scade-platform/ScadeExtensions", .branch("main")),
+      .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.4.1")
     ],
     targets: [
         .target(
             name: "UgCryptoSwift",
-            dependencies: ["CryptoSwift"],
+            dependencies: ["CryptoSwift", "ScadeExtensions"],
             exclude: ["main.page"],
             swiftSettings: [
                 .unsafeFlags(["-F", SCADE_SDK], .when(platforms: [.macOS, .iOS])),

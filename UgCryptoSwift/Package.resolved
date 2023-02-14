@@ -3,11 +3,38 @@
     "pins": [
       {
         "package": "CryptoSwift",
-        "repositoryURL": "git@github.com:krzyzanowskim/CryptoSwift.git",
+        "repositoryURL": "https://github.com/krzyzanowskim/CryptoSwift.git",
         "state": {
           "branch": null,
-          "revision": "8d4f6384e0a8cc41f2005247241dd553963a492a",
-          "version": "1.4.1"
+          "revision": "19b3c3ceed117c5cc883517c4e658548315ba70b",
+          "version": "1.6.0"
+        }
+      },
+      {
+        "package": "ScadeExtensions",
+        "repositoryURL": "https://github.com/scade-platform/ScadeExtensions",
+        "state": {
+          "branch": "main",
+          "revision": "b00036782d4046a73e2588c27b92341d59b5b3ef",
+          "version": null
+        }
+      },
+      {
+        "package": "Android",
+        "repositoryURL": "https://github.com/scade-platform/swift-android.git",
+        "state": {
+          "branch": "android/24",
+          "revision": "510ee0dacb085c532c330377d25dff6ad23c3b5f",
+          "version": null
+        }
+      },
+      {
+        "package": "Java",
+        "repositoryURL": "https://github.com/scade-platform/swift-java.git",
+        "state": {
+          "branch": "main",
+          "revision": "6b2cf43f63cc5959978caee931c487d07f7d9c03",
+          "version": null
         }
       }
     ]
