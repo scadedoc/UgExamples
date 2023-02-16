@@ -17,7 +17,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		// This is another option how to do it,
 		// but our best practice approach is moveSecHand2. Less CPU intensive
 		
-		SCDRuntime.call(withDelay: 1) {
+		DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
         	self.secondHandPos = self.secondHandPos >= 360 ? 0.0 : self.secondHandPos + 6.0
 			if let tranformableSvg = self.secondHandSvg! as? SCDSvgTransformable {
         		tranformableSvg.matrix = SCDSvgMatrix()
