@@ -29,7 +29,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
     
      // Selecting from library when button2 is clicked
     chooseFromLibraryButton.onClick.append(SCDWidgetsEventHandler { event in
-      camera.getPicture(SCDPlatformCameraOptions(sourceType: .photolibrary), onSuccess: _onSuccess, onError: _onError)
+      camera.getPicture(SCDPlatformCameraOptions(sourceType: .photoLibrary), onSuccess: _onSuccess, onError: _onError)
     })
     
      

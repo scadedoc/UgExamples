@@ -6,27 +6,28 @@ import Foundation
 let SCADE_SDK = ProcessInfo.processInfo.environment["SCADE_SDK"] ?? ""
 
 let package = Package(
-    name: "UgCryptoSwift",
+    name: "UgSwiftNioExample",
     platforms: [
         .macOS(.v10_14)
     ],
     products: [
         .library(
-            name: "UgCryptoSwift",
+            name: "UgSwiftNioExample",
             type: .static,
             targets: [
-                "UgCryptoSwift"
+                "UgSwiftNioExample"
             ]
         )
     ],
     dependencies: [
-    .package(name: "ScadeExtensions", url: "https://github.com/scade-platform/ScadeExtensions", .branch("main")),
-      .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.4.1")
+        .package(url: "https://github.com/apple/swift-nio.git", from: "2.46.0")
     ],
     targets: [
         .target(
-            name: "UgCryptoSwift",
-            dependencies: ["CryptoSwift", "ScadeExtensions"],
+            name: "UgSwiftNioExample",
+            dependencies: [
+                .product(name: "NIO", package: "swift-nio")
+            ],
             exclude: ["main.page"],
             swiftSettings: [
                 .unsafeFlags(["-F", SCADE_SDK], .when(platforms: [.macOS, .iOS])),

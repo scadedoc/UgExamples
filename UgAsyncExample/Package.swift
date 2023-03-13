@@ -6,27 +6,26 @@ import Foundation
 let SCADE_SDK = ProcessInfo.processInfo.environment["SCADE_SDK"] ?? ""
 
 let package = Package(
-    name: "UgCryptoSwift",
+    name: "UgAsyncExample",
     platforms: [
-        .macOS(.v10_14)
+        .macOS(.v10_15)
     ],
     products: [
         .library(
-            name: "UgCryptoSwift",
+            name: "UgAsyncExample",
             type: .static,
             targets: [
-                "UgCryptoSwift"
+                "UgAsyncExample"
             ]
         )
     ],
     dependencies: [
-    .package(name: "ScadeExtensions", url: "https://github.com/scade-platform/ScadeExtensions", .branch("main")),
-      .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.4.1")
+      
     ],
     targets: [
         .target(
-            name: "UgCryptoSwift",
-            dependencies: ["CryptoSwift", "ScadeExtensions"],
+            name: "UgAsyncExample",
+            dependencies: [],
             exclude: ["main.page"],
             swiftSettings: [
                 .unsafeFlags(["-F", SCADE_SDK], .when(platforms: [.macOS, .iOS])),

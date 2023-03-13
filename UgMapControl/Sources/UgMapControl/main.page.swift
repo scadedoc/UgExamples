@@ -34,11 +34,11 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		
 		switch(name) {
 			case "btnHybrid":
-				mapwidget1.mapType = SCDWidgetsMapType.hybrid
+				mapwidget1.mapType = SCDWidgetsMapType.HYBRID
 			case "btnSatellite":
-				mapwidget1.mapType = SCDWidgetsMapType.satellite
+				mapwidget1.mapType = SCDWidgetsMapType.SATELLITE
 			case "btnStandard":
-				mapwidget1.mapType = SCDWidgetsMapType.standard	
+				mapwidget1.mapType = SCDWidgetsMapType.STANDARD	
 			default:
 				print("not covered")
 		}
