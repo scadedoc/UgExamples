@@ -107,20 +107,18 @@ class MainPageAdapter: SCDLatticePageAdapter {
       self.client = TCPClient(host: currHostString, port: Int(currPortString)!) {
         data in
         print(data)
-        let stringData:String = String(data)
+        let stringData: String = String(data)
         let a = stringData.index(stringData.startIndex, offsetBy: 500)
-    let result = stringData.substring(to: a)
-        self.response_label.text = result      }
-      
+        let result = stringData.substring(to: a)
+        self.response_label.text = result
+      }
+
       Task {
 
-      
-      let result = try await self.client?.start()
-    }
+        let result = try await self.client?.start()
+      }
 
     }
-
-    
 
   }
 }
