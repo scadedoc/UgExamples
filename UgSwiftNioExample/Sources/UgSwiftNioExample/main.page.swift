@@ -1,6 +1,6 @@
-import ScadeKit
-import NIO
 import Foundation
+import NIO
+import ScadeKit
 
 public class TCPClientHandler: ChannelInboundHandler {
   public typealias InboundIn = ByteBuffer
@@ -32,14 +32,14 @@ public class TCPClientHandler: ChannelInboundHandler {
   // channel closed, invoking data handler
   public func channelInactive(context: ChannelHandlerContext) {
     client.callDataHandler(data: allData)
+
   }
-    
+
   public func errorCaught(context: ChannelHandlerContext, error: Error) {
     print("error: \(error.localizedDescription)")
     context.close(promise: nil)
   }
 }
-
 
 class TCPClient {
   private let group = MultiThreadedEventLoopGroup(numberOfThreads: 10)
@@ -47,50 +47,80 @@ class TCPClient {
   private var port: Int
   private var channel: Channel?
   private var dataHandler: (String) -> Void
-    
+
   init(host: String, port: Int, dataHandler: @escaping (String) -> Void) {
     self.host = host
     self.port = port
     self.dataHandler = dataHandler
   }
-    
-  func start() throws {
-    do {
-    let bootstrap = ClientBootstrap(group: group)
-      .channelOption(ChannelOptions.socket(SocketOptionLevel(SOL_SOCKET), SO_REUSEADDR), value: 1)
-      .channelInitializer { channel in
-        channel.pipeline.addHandler(TCPClientHandler(client: self))
-      }
 
-      channel = try bootstrap.connect(host: host, port: port).wait()
+  func start() async throws -> Bool {
+    do {
+      let bootstrap = ClientBootstrap(group: group)
+        .channelOption(ChannelOptions.socket(SocketOptionLevel(SOL_SOCKET), SO_REUSEADDR), value: 1)
+        .channelInitializer { channel in
+          channel.pipeline.addHandler(TCPClientHandler(client: self))
+        }
+
+      channel = try await bootstrap.connect(host: host, port: port).wait()
+      return true
     } catch let error {
-      throw error
+      print(error)
+      return false
     }
   }
 
-  func callDataHandler(data: String) {
+  func callDataHandler(data: String) -> String {
     dataHandler(data)
+    return data
+
   }
+
 }
 
-
 class MainPageAdapter: SCDLatticePageAdapter {
-  var client: TCPClient
-
-  override init() {
-    client = TCPClient(host: "google.com", port: 80) { data in
-      print("RECEIVED DATA:\n" + data)
-    }
-  }
+  var client: TCPClient?
 
   // page adapter initialization
   override func load(_ path: String) {
     super.load(path)
-    do {
-      try client.start()
+
+    var currHostString: String = ""
+    var currPortString: String = ""
+
+    self.host_tb.onTextChange.append(
+      SCDWidgetsTextChangeEventHandler { ev in
+        currHostString = ev!.newValue
+      })
+
+    self.port_tb.onTextChange.append(
+      SCDWidgetsTextChangeEventHandler { ev in
+        currPortString = ev!.newValue
+      })
+
+    self.getdata_btn.onClick { _ in
+      print("\(currHostString) \(currPortString)")
+      if currHostString.isEmpty || currPortString.isEmpty {
+        print("Host or Port is Empty")
+        return
+      }
+      self.client = TCPClient(host: currHostString, port: Int(currPortString)!) {
+        data in
+        print(data)
+        let stringData:String = String(data)
+        let a = stringData.index(stringData.startIndex, offsetBy: 500)
+    let result = stringData.substring(to: a)
+        self.response_label.text = result      }
+      
+      Task {
+
+      
+      let result = try await self.client?.start()
     }
-    catch {
-      print("ERROR: \(error)")
+
     }
+
+    
+
   }
 }

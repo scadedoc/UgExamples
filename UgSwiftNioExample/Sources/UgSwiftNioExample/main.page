@@ -1,11 +1,102 @@
 <?xml  version="1.0" encoding="UTF-8" standalone="no"?>
-<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets" xmi:id="0.6">
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
   <widgets:Page name="main">
-    <backgroundColor Red="248" Green="248" Blue="248"/>
-    <layout xsi:type="layout:AutoLayout"/>
-    <maxArea width="430" height="932"/>
     <minArea width="430" height="932"/>
     <location/>
+    <backgroundColor Red="33" Green="34" Blue="44"/>
+    <children xsi:type="widgets:Label" text="==============================================" name="loggedin_label">
+      <font fontFamily="ArialMT" size="20">
+        <color Red="211" Green="211" Blue="211"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints source="/0/@children.0" target="/0"/>
+      </layoutData>
+      <location y="335"/>
+      <size width="538" height="23"/>
+      <contentSize width="538" height="23"/>
+    </children>
+    <children xsi:type="widgets:Label" text="Response: " name="response_label" multiline="true" baselineAlignment="HANGING" verticalAlignment="TOP">
+      <font fontFamily="ArialMT" size="13">
+        <color Red="255" Green="255" Blue="255"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="WIDTH" constant="320" source="/0/@children.1"/>
+        <constraints sourceAnchor="HEIGHT" constant="400" source="/0/@children.1"/>
+      </layoutData>
+      <location x="34" y="412"/>
+      <size width="320" height="400"/>
+      <contentSize width="63" height="15"/>
+    </children>
+    <children xsi:type="widgets:Label" text="NIO + SCADE" name="label">
+      <font fontFamily="ArialMT" size="32">
+        <color Red="255" Green="255" Blue="255"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData"/>
+      <location x="113" y="57"/>
+      <size width="204" height="36"/>
+      <contentSize width="204" height="36"/>
+    </children>
+    <children xsi:type="widgets:Button" text="Get Data" cornerRadius="12" name="getdata_btn" paddingTop="2" paddingRight="80" paddingLeft="80">
+      <font fontFamily="ArialMT" size="15">
+        <color Red="255" Green="255" Blue="255"/>
+      </font>
+      <location x="99" y="262"/>
+      <size width="221" height="42"/>
+      <contentSize width="61" height="18"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="WIDTH" constant="221" source="/0/@children.3"/>
+        <constraints sourceAnchor="HEIGHT" constant="42" source="/0/@children.3"/>
+      </layoutData>
+      <backgroundColor Red="255" Green="51" Blue="153"/>
+    </children>
+    <children xsi:type="widgets:Textbox" placeholder="Enter Port,  eg. 80" name="port_tb">
+      <font fontFamily="ArialMT" size="16">
+        <color Red="255" Green="255" Blue="255"/>
+      </font>
+      <location x="20" y="226"/>
+      <size width="311" height="17"/>
+      <contentSize width="311" height="17"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints constant="20" source="/0/@children.4" target="/0"/>
+      </layoutData>
+      <backgroundColor Red="33" Green="34" Blue="44"/>
+    </children>
+    <children xsi:type="widgets:Label" text="Port" name="porttb_label">
+      <font fontFamily="ArialMT" size="20">
+        <color Red="255" Green="255" Blue="255"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints constant="20" source="/0/@children.5" target="/0"/>
+      </layoutData>
+      <location x="20" y="199"/>
+      <size width="37" height="23"/>
+      <contentSize width="37" height="23"/>
+    </children>
+    <children xsi:type="widgets:Textbox" placeholder="Enter Host, eg. google.com" name="host_tb">
+      <font fontFamily="ArialMT" size="16">
+        <color Red="255" Green="255" Blue="255"/>
+      </font>
+      <location x="20" y="146"/>
+      <size width="311" height="17"/>
+      <contentSize width="311" height="17"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints constant="20" source="/0/@children.6" target="/0"/>
+      </layoutData>
+      <backgroundColor Red="33" Green="34" Blue="44"/>
+    </children>
+    <children xsi:type="widgets:Label" text="Host:" name="label1">
+      <font fontFamily="ArialMT" size="20">
+        <color Red="255" Green="255" Blue="255"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints constant="20" source="/0/@children.7" target="/0"/>
+      </layoutData>
+      <location x="20" y="121"/>
+      <size width="47" height="23"/>
+      <contentSize width="47" height="23"/>
+    </children>
+    <layout xsi:type="layout:AutoLayout"/>
+    <maxArea width="430" height="932"/>
     <size width="430" height="932"/>
   </widgets:Page>
   <navigation:Navigation page="/0"/>
