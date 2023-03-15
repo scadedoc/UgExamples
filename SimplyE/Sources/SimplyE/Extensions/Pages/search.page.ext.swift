@@ -1,12 +1,20 @@
 import ScadeKit
 
-extension MainPageAdapter {
-  var heroImage: SCDWidgetsImage {
-    return self.page?.getWidgetByName("heroImage") as! SCDWidgetsImage
+extension SearchPageAdapter {
+  var searchLabelTitle: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("searchLabelTitle") as! SCDWidgetsLabel
   }
 
-  var ctrlListBookCatalog: SCDWidgetsList {
-    return self.page?.getWidgetByName("ctrlListBookCatalog") as! SCDWidgetsList
+  var horizontalTextboxView: SCDWidgetsRowView {
+    return self.page?.getWidgetByName("horizontalTextboxView") as! SCDWidgetsRowView
+  }
+
+  var textbox: SCDWidgetsTextbox {
+    return self.page?.getWidgetByName("textbox") as! SCDWidgetsTextbox
+  }
+
+  var ctrlListBooks: SCDWidgetsList {
+    return self.page?.getWidgetByName("ctrlListBooks") as! SCDWidgetsList
   }
 
   var toolBar: SCDWidgetsToolBar {

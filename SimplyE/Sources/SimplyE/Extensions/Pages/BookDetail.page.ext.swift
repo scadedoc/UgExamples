@@ -1,92 +1,40 @@
 import ScadeKit
 
 extension BookDetailPageAdapter {
-  var toolbar11: SCDWidgetsToolBar {
-    return self.page?.getWidgetByName("toolbar11") as! SCDWidgetsToolBar
+  var navigationBar: SCDWidgetsNavigationBar {
+    return self.page?.getWidgetByName("navigationBar") as! SCDWidgetsNavigationBar
   }
 
-  var item11: SCDWidgetsToolBarItem {
-    return self.page?.getWidgetByName("item11") as! SCDWidgetsToolBarItem
+  var downloadButton: SCDWidgetsButton {
+    return self.page?.getWidgetByName("downloadButton") as! SCDWidgetsButton
   }
 
-  var icon11: SCDWidgetsImage {
-    return self.page?.getWidgetByName("icon11") as! SCDWidgetsImage
+  var backButton: SCDWidgetsButton {
+    return self.page?.getWidgetByName("backButton") as! SCDWidgetsButton
   }
 
-  var caption11: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("caption11") as! SCDWidgetsLabel
+  var detailsLabel: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("detailsLabel") as! SCDWidgetsLabel
   }
 
-  var item21: SCDWidgetsToolBarItem {
-    return self.page?.getWidgetByName("item21") as! SCDWidgetsToolBarItem
+  var listBookDetails: SCDWidgetsListView {
+    return self.page?.getWidgetByName("listBookDetails") as! SCDWidgetsListView
   }
 
-  var icon21: SCDWidgetsImage {
-    return self.page?.getWidgetByName("icon21") as! SCDWidgetsImage
+  var horizontalImageView: SCDWidgetsRowView {
+    return self.page?.getWidgetByName("horizontalImageView") as! SCDWidgetsRowView
   }
 
-  var caption21: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("caption21") as! SCDWidgetsLabel
-  }
-
-  var item31: SCDWidgetsToolBarItem {
-    return self.page?.getWidgetByName("item31") as! SCDWidgetsToolBarItem
-  }
-
-  var icon31: SCDWidgetsImage {
-    return self.page?.getWidgetByName("icon31") as! SCDWidgetsImage
-  }
-
-  var caption31: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("caption31") as! SCDWidgetsLabel
-  }
-
-  var item41: SCDWidgetsToolBarItem {
-    return self.page?.getWidgetByName("item41") as! SCDWidgetsToolBarItem
-  }
-
-  var icon41: SCDWidgetsImage {
-    return self.page?.getWidgetByName("icon41") as! SCDWidgetsImage
-  }
-
-  var caption41: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("caption41") as! SCDWidgetsLabel
-  }
-
-  var viewNavbar: SCDWidgetsRowView {
-    return self.page?.getWidgetByName("viewNavbar") as! SCDWidgetsRowView
-  }
-
-  var label1: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("label1") as! SCDWidgetsLabel
-  }
-
-  var viewBackButton: SCDWidgetsRowView {
-    return self.page?.getWidgetByName("viewBackButton") as! SCDWidgetsRowView
-  }
-
-  var bitmap1: SCDWidgetsImage {
-    return self.page?.getWidgetByName("bitmap1") as! SCDWidgetsImage
-  }
-
-  var label2: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("label2") as! SCDWidgetsLabel
-  }
-
-  var horizontalview3: SCDWidgetsRowView {
-    return self.page?.getWidgetByName("horizontalview3") as! SCDWidgetsRowView
-  }
-
-  var gridBookDetails: SCDWidgetsGridView {
-    return self.page?.getWidgetByName("gridBookDetails") as! SCDWidgetsGridView
+  var image: SCDWidgetsImage {
+    return self.page?.getWidgetByName("image") as! SCDWidgetsImage
   }
 
   var viewBookInfo: SCDWidgetsListView {
     return self.page?.getWidgetByName("viewBookInfo") as! SCDWidgetsListView
   }
 
-  var lbBooktitel: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("lbBooktitel") as! SCDWidgetsLabel
+  var lbBookTitle: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("lbBookTitle") as! SCDWidgetsLabel
   }
 
   var lbAuthorName: SCDWidgetsLabel {
@@ -97,87 +45,95 @@ extension BookDetailPageAdapter {
     return self.page?.getWidgetByName("viewBookPublisherInfo") as! SCDWidgetsGridView
   }
 
-  var lb: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("lb") as! SCDWidgetsLabel
+  var lb1: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("lb1") as! SCDWidgetsLabel
+  }
+
+  var lbPages: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("lbPages") as! SCDWidgetsLabel
+  }
+
+  var lb2: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("lb2") as! SCDWidgetsLabel
+  }
+
+  var lbRating: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("lbRating") as! SCDWidgetsLabel
+  }
+
+  var lb3: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("lb3") as! SCDWidgetsLabel
   }
 
   var lbPublished: SCDWidgetsLabel {
     return self.page?.getWidgetByName("lbPublished") as! SCDWidgetsLabel
   }
 
-  var lb1: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("lb1") as! SCDWidgetsLabel
+  var lb4: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("lb4") as! SCDWidgetsLabel
   }
 
-  var lbpublisher: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("lbpublisher") as! SCDWidgetsLabel
-  }
-
-  var lb11: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("lb11") as! SCDWidgetsLabel
-  }
-
-  var lbcategory: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("lbcategory") as! SCDWidgetsLabel
-  }
-
-  var horizontalview5: SCDWidgetsRowView {
-    return self.page?.getWidgetByName("horizontalview5") as! SCDWidgetsRowView
-  }
-
-  var bmpDetail: SCDWidgetsImage {
-    return self.page?.getWidgetByName("bmpDetail") as! SCDWidgetsImage
+  var lbLanguage: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("lbLanguage") as! SCDWidgetsLabel
   }
 
   var viewBookDescription: SCDWidgetsListView {
     return self.page?.getWidgetByName("viewBookDescription") as! SCDWidgetsListView
   }
 
-  var lbdescription2: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("lbdescription2") as! SCDWidgetsLabel
+  var lbOverviewTitle: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("lbOverviewTitle") as! SCDWidgetsLabel
   }
 
-  var lbDescription1: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("lbDescription1") as! SCDWidgetsLabel
+  var lbDescription: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("lbDescription") as! SCDWidgetsLabel
   }
 
-  var verticalview1: SCDWidgetsListView {
-    return self.page?.getWidgetByName("verticalview1") as! SCDWidgetsListView
+  var horizontalReadBookButtonView: SCDWidgetsRowView {
+    return self.page?.getWidgetByName("horizontalReadBookButtonView") as! SCDWidgetsRowView
   }
 
-  var viewBorrowStatus: SCDWidgetsRowView {
-    return self.page?.getWidgetByName("viewBorrowStatus") as! SCDWidgetsRowView
+  var readBookButton: SCDWidgetsButton {
+    return self.page?.getWidgetByName("readBookButton") as! SCDWidgetsButton
   }
 
-  var label4: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("label4") as! SCDWidgetsLabel
+  var toolBar: SCDWidgetsToolBar {
+    return self.page?.getWidgetByName("toolBar") as! SCDWidgetsToolBar
   }
 
-  var viewGetBook: SCDWidgetsGridView {
-    return self.page?.getWidgetByName("viewGetBook") as! SCDWidgetsGridView
+  var toolBarItem1: SCDWidgetsToolBarItem {
+    return self.page?.getWidgetByName("toolBarItem1") as! SCDWidgetsToolBarItem
   }
 
-  var horizontalview8: SCDWidgetsRowView {
-    return self.page?.getWidgetByName("horizontalview8") as! SCDWidgetsRowView
+  var icon1: SCDWidgetsImage {
+    return self.page?.getWidgetByName("icon1") as! SCDWidgetsImage
   }
 
-  var horizontalview9: SCDWidgetsRowView {
-    return self.page?.getWidgetByName("horizontalview9") as! SCDWidgetsRowView
+  var caption1: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("caption1") as! SCDWidgetsLabel
   }
 
-  var label5: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("label5") as! SCDWidgetsLabel
+  var toolBarItem2: SCDWidgetsToolBarItem {
+    return self.page?.getWidgetByName("toolBarItem2") as! SCDWidgetsToolBarItem
   }
 
-  var horizontalview10: SCDWidgetsRowView {
-    return self.page?.getWidgetByName("horizontalview10") as! SCDWidgetsRowView
+  var icon2: SCDWidgetsImage {
+    return self.page?.getWidgetByName("icon2") as! SCDWidgetsImage
   }
 
-  var label6: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("label6") as! SCDWidgetsLabel
+  var caption2: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("caption2") as! SCDWidgetsLabel
   }
 
-  var customwidget1: SCDWidgetsCustomWidget {
-    return self.page?.getWidgetByName("customwidget1") as! SCDWidgetsCustomWidget
+  var toolBarItem3: SCDWidgetsToolBarItem {
+    return self.page?.getWidgetByName("toolBarItem3") as! SCDWidgetsToolBarItem
+  }
+
+  var icon3: SCDWidgetsImage {
+    return self.page?.getWidgetByName("icon3") as! SCDWidgetsImage
+  }
+
+  var caption3: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("caption3") as! SCDWidgetsLabel
   }
 }
