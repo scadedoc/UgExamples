@@ -1,99 +1,112 @@
 import ScadeKit
-#if os(Android)
-    import FoundationNetworking
-#endif
+import ScadeUI
 
 class MainPageAdapter: SCDLatticePageAdapter {
-
-  var categories: [Category] = []
 
   // page adapter initialization
   override func load(_ path: String) {
     super.load(path)
-    // Get data from REST endpoint instead of local dummy data
 
-    if let rsp = EReaderService.getOverview() {
-      self.categories = rsp.data.map { CatalogServiceManager.fromBookCategory(bc: $0) }
-      // listen to click event
-      print("loaded data \(self.categories.count)")
+    self.fetchAdventure()
+
+    self.fetchFantasy()
+
+    self.fetchHorror()
+
+    self.fetchHealth()
+    
+    self.toolBarItem2.onClick { _ in
+      self.goToPage()
     }
 
-    // setup toolbar events
-    let item = self.page!.getWidgetByName("itmMore") as! SCDWidgetsContainer
-    item.onClick.append(SCDWidgetsEventHandler { _ in self.gotoMore() })
+    self.ctrlListBookCatalog.elementProvider { (genre: Genre, element) in
+      guard let viewCategory = element["viewCategory", as: SCDWidgetsRowView.self],
+        let rowView = element["rowView", as: SCDWidgetsRowView.self],
+        let listView = rowView["listView", as: SCDWidgetsListView.self]
+      else { return }
 
-    // onEnter
-    self.page!.onEnter.append(SCDWidgetsEnterEventHandler { _ in self.enterPage() })
+      if let lbCategory = viewCategory["lbCategory", as: SCDWidgetsLabel.self] {
+        lbCategory.text = genre.lbCategory
+      }
 
-    populateBitmaps()
-  }
+      // rowView - horizontal list with book containers
+      // listView - book container(template)
 
-  func enterPage() {
+      (rowView.layout as? SCDLayoutGridLayout)?.columns = genre.books.count
 
-  }
+      var bookViewList: [SCDWidgetsListView] = [listView]
 
-  func gotoMore() {
-    self.navigation!.go(page: "ReaderSettings.page", transition: .fromLeft)
-  }
+      //create N - 1 book containers by coping first container, created in ScadeIDE
+      for _ in 1..<genre.books.count {
+        bookViewList.append(listView.copyControl() as! SCDWidgetsListView)
+      }
 
-  func populateBitmaps() {
+      // set data for every book container
+      for (index, book) in genre.books.enumerated() {
+        let bookView = bookViewList[index]
 
-    // get a reference to the name of the list control
+        (bookView.layoutData as? SCDLayoutGridData)?.column = index
+        bookView.visible = true
 
-    //let ctrlLst = self.page!.getWidgetByName("ctrlListBookCatalog") as! SCDWidgetsList
-    // Iterate across the elements in the list (the categories)
-    //for (num,e) in ctrlLst.elements.enumerated() {
-      // get bitmaps based on categories
-      //let booksPerCategory = category.books
+        bookView.onClick.append(
+          SCDWidgetsEventHandler { [weak book] event in
+            guard let book = book else { return }
+            self.navigation?.goWith(page: "bookDetail.page", data: book, transition: .FROM_RIGHT)
+          })
 
-      if let ctrlLst = page?.getWidgetByName("ctrlListBookCatalog") as? SCDWidgetsList {
+        //bookView[label]?.text = book.volumeInfo.title ?? "no title"
+        //bookView["label", as: SCDWidgetsLabel.self]?.text = book.volumeInfo.title ?? "no title"
 
-        ctrlLst.elementProvider = SCDWidgetsElementProvider { (category: Category, listElement) in
-
-          // get the horizontal grid layout control that contains the bitmaps
-          guard let row = listElement.getWidgetByName("rowviewbooks") as? SCDWidgetsRowView else {
-            return
-          }
-
-          // iterate through list of books and set the respective URLS
-          // if the list of books is greater than the number of bitmaps,
-          // the respective books will be ignored
-          guard let viewCategory = listElement.getWidgetByName("viewCategory") as? SCDWidgetsRowView else {
-            return
-          }
-          
-          if let lbCategory = viewCategory.getWidgetByName("lbCategory") as? SCDWidgetsLabel {
-          	lbCategory.text = category.label
-          }
-
-          for (index, book) in category.books.enumerated() {
-            let bitmapname = "bmpbook\(index+1)"
-            print("bitmapname \(bitmapname)")
-            if let bitmap = row.getWidgetByName(bitmapname) as? SCDWidgetsImage {
-
-              NetworkUtils.loadDataAsync(from: book.bookCoverUrl, queue: .main) { [weak bitmap] data in
-                bitmap?.content = data
-              }
-
-              // add onClickEvent
-              bitmap.onClick { _ in
-                self.displayBookDetails(bookId: book.id)
-              }
-
-            }
-          }
-
+        if let label = bookView["label ", as: SCDWidgetsLabel.self] {
+          label.text = book.volumeInfo.title ?? "no title"
+          (label.layoutData as? SCDLayoutGridData)?.maxContentWidth = 100
         }
 
-        ctrlLst.items = self.categories
+        if let bitmap = bookView["image", as: SCDWidgetsImage.self] {
+          CatalogManager.loadDataAsync(
+            from: book.volumeInfo.imageLinks.thumbnail ?? "no image", queue: .main
+          ) { [weak bitmap] data in
+            bitmap?.content = data
+          }
+        }
 
+      }
+
+      // add book containers to the horizontal list *rowView*
+      rowView.children = bookViewList
     }
 
   }
 
-  func displayBookDetails(bookId: String) {
-    print("BookId : \(bookId)")
-    self.navigation?.goWith(page: "BookInformation.page", data: bookId, transition: .fromLeft)
+  private func fetchAdventure() {
+    CatalogManager.shared.fetchGenre(with: "Adventure", lbCategory: "Adventure") {
+      [weak self] adventure in
+      self?.ctrlListBookCatalog.items.append(adventure)
+    }
   }
+
+  private func fetchFantasy() {
+    CatalogManager.shared.fetchGenre(with: "Fantasy", lbCategory: "Fantasy") {
+      [weak self] fantasy in
+      self?.ctrlListBookCatalog.items.append(fantasy)
+    }
+  }
+
+  private func fetchHorror() {
+    CatalogManager.shared.fetchGenre(with: "Horror", lbCategory: "Horror") { [weak self] horror in
+      self?.ctrlListBookCatalog.items.append(horror)
+    }
+  }
+
+  private func fetchHealth() {
+    CatalogManager.shared.fetchGenre(with: "Health", lbCategory: "Health") { [weak self] health in
+      self?.ctrlListBookCatalog.items.append(health)
+    }
+  }
+  
+  func goToPage () {
+  	self.navigation?.goWith(page: "search.page", data: nilHandleErr)
+  }
+
 
 }

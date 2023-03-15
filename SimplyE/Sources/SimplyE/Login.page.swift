@@ -12,14 +12,30 @@ class LoginPageAdapter: SCDLatticePageAdapter {
     // call parent to finish display activities
     super.show(view: view)
 
-    // add code here that is executed after the display of the page
+    // add code here that is executed
+    // after the display of the page
     self.postDisplayActions()
+
+    self.loadResults()
 
   }
 
   func postDisplayActions() {
-    // put actions that shall happen after the display of the page here
-    SCDRuntime.call(
-      withDelay: 1, closure: { self.navigation!.go(page: "BooksList.page", transition: .fromLeft) })
+    // put actions that shall happen
+    // after the display of the page here
+
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+
+      self.navigation!.go(page: "main.page", transition: .FROM_LEFT)
+    }
   }
+
+  func loadResults() {
+
+    APICaller.shared.getAdventurousBooks { result in
+
+    }
+
+  }
+
 }

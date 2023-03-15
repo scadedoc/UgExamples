@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ScadeExtensions",
+        "repositoryURL": "https://github.com/scade-platform/ScadeExtensions",
+        "state": {
+          "branch": "main",
+          "revision": "b00036782d4046a73e2588c27b92341d59b5b3ef",
+          "version": null
+        }
+      },
+      {
+        "package": "Android",
+        "repositoryURL": "https://github.com/scade-platform/swift-android.git",
+        "state": {
+          "branch": "android/24",
+          "revision": "510ee0dacb085c532c330377d25dff6ad23c3b5f",
+          "version": null
+        }
+      },
+      {
+        "package": "Java",
+        "repositoryURL": "https://github.com/scade-platform/swift-java.git",
+        "state": {
+          "branch": "main",
+          "revision": "6b2cf43f63cc5959978caee931c487d07f7d9c03",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

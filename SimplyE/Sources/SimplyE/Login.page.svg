@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="Login.page#/0" widget-name="Login" width="320" height="480">
-  <rect template-id="background" width="100%" height="100%" fill="#ff2600" />
-  <svg widget-id="bitmap1" widget-name="bitmap1" eObject-URI="Login.page#/0/@children.0" x="110" y="190" width="100" height="100">
-    <image xlink:href="Assets/NYPLIcon2.png" template-id="node-image" width="100" height="100" />
-  </svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" widget-name="Login" eObject-URI="Login.page#/0" width="320" height="480">
+    <rect width="100%" height="100%" fill="#ff2600" template-id="background"/>
+    <svg widget-id="bitmap1" widget-name="bitmap1" eObject-URI="Login.page#/0/@children.0" x="110" y="190" width="100" height="100">
+        <svg template-id="content-box">
+            <g template-id="content">
+                <image xlink:href="Assets/NYPLIcon2.png" template-id="node-image" width="100%" height="100%"/>
+            </g>
+        </svg>
+    </svg>
 </svg>
