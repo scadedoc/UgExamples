@@ -31,7 +31,9 @@
       <font fontFamily="ArialMT" size="32">
         <color Red="255" Green="255" Blue="255"/>
       </font>
-      <layoutData xsi:type="layout:AutoLayoutData"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.2" target="/0"/>
+      </layoutData>
       <location x="113" y="57"/>
       <size width="204" height="36"/>
       <contentSize width="204" height="36"/>
@@ -40,12 +42,13 @@
       <font fontFamily="ArialMT" size="15">
         <color Red="255" Green="255" Blue="255"/>
       </font>
-      <location x="99" y="262"/>
+      <location x="105" y="262"/>
       <size width="221" height="42"/>
       <contentSize width="61" height="18"/>
       <layoutData xsi:type="layout:AutoLayoutData">
         <constraints sourceAnchor="WIDTH" constant="221" source="/0/@children.3"/>
         <constraints sourceAnchor="HEIGHT" constant="42" source="/0/@children.3"/>
+        <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.3" target="/0"/>
       </layoutData>
       <backgroundColor Red="255" Green="51" Blue="153"/>
     </children>

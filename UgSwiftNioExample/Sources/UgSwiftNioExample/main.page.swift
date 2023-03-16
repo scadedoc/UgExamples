@@ -100,10 +100,12 @@ class MainPageAdapter: SCDLatticePageAdapter {
 
     self.getdata_btn.onClick { _ in
       print("\(currHostString) \(currPortString)")
+
       if currHostString.isEmpty || currPortString.isEmpty {
         print("Host or Port is Empty")
         return
       }
+
       self.client = TCPClient(host: currHostString, port: Int(currPortString)!) {
         data in
         print(data)
@@ -114,7 +116,6 @@ class MainPageAdapter: SCDLatticePageAdapter {
       }
 
       Task {
-
         let result = try await self.client?.start()
       }
 
