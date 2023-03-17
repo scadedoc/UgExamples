@@ -23,7 +23,7 @@ class SimplyE: SCDApplication {
 		//settings.load("settings.page")
 		
 		bookDetail = BookDetailPageAdapter()
-		bookDetail.load("bookDetail.page")
+		bookDetail.load("BookDetail.page")
 		
 		searchPage = SearchPageAdapter()
 		searchPage.load("search.page")
