@@ -55,7 +55,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
         bookView.onClick.append(
           SCDWidgetsEventHandler { [weak book] event in
             guard let book = book else { return }
-            self.navigation?.goWith(page: "bookDetail.page", data: book, transition: .FROM_RIGHT)
+            self.navigation?.goWith(page: "BookDetail.page", data: book, transition: .FROM_RIGHT)
           })
 
         //bookView[label]?.text = book.volumeInfo.title ?? "no title"
