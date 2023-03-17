@@ -1,6 +1,6 @@
 import Foundation
 import Dispatch
-#if Android
+#if os(Android)
 	import FoundationNetworking
 #endif
 

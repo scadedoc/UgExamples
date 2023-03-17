@@ -1,8 +1,5 @@
 import ScadeKit
 import Dispatch
-#if Android
-	import FoundationNetworking
-#endif
 import Foundation
 
 class BookDetailPageAdapter: SCDLatticePageAdapter {
