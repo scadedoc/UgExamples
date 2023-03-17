@@ -1,6 +1,11 @@
 import ScadeGraphics
 import ScadeKit
 import ScadeUI
+import Dispatch
+#if Android
+	import FoundationNetworking
+#endif
+import Foundation
 
 class SearchPageAdapter: SCDLatticePageAdapter {
 
@@ -164,7 +169,7 @@ class SearchPageAdapter: SCDLatticePageAdapter {
   }
 
   func goToPage() {
-    self.navigation?.goWith(page: "main.page", data: nilHandleErr)
+    self.navigation?.go(page: "main.page")
   }
 
 }
