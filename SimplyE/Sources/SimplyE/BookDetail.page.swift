@@ -1,4 +1,6 @@
 import ScadeKit
+import Dispatch
+import Foundation
 
 class BookDetailPageAdapter: SCDLatticePageAdapter {
 
@@ -46,13 +48,3 @@ class BookDetailPageAdapter: SCDLatticePageAdapter {
     }
 
   }
-
-  func goBack() {
-    self.navigation?.go(page: "main.page", transition: .FROM_LEFT)
-  }
-  
-  func goToPage () {
-  	self.navigation?.goWith(page: "search.page", data: nilHandleErr)
-  }
-
-}

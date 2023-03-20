@@ -1,4 +1,5 @@
 import ScadeKit
+import Dispatch
 
 class LoginPageAdapter: SCDLatticePageAdapter {
 
