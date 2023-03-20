@@ -46,7 +46,6 @@ struct imageLinksElements: Codable {
 }
 
 /*
-
 {
       "kind": "books#volume",
       "id": "cdyoCwAAQBAJ",
@@ -120,5 +119,4 @@ struct imageLinksElements: Codable {
         "quoteSharingAllowed": false
       }
     },
-
 */

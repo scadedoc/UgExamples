@@ -1,7 +1,6 @@
 import ScadeKit
-#if os(Android)
-    import FoundationNetworking
-#endif
+import ScadeUI
+import Dispatch
 
 class MainPageAdapter: SCDLatticePageAdapter {
 
@@ -33,7 +32,6 @@ class MainPageAdapter: SCDLatticePageAdapter {
 
       // rowView - horizontal list with book containers
       // listView - book container(template)
-
       (rowView.layout as? SCDLayoutGridLayout)?.columns = genre.books.count
 
       var bookViewList: [SCDWidgetsListView] = [listView]
@@ -43,9 +41,25 @@ class MainPageAdapter: SCDLatticePageAdapter {
         bookViewList.append(listView.copyControl() as! SCDWidgetsListView)
       }
 
-  func gotoMore() {
-    self.navigation!.go(page: "ReaderSettings.page", transition: .fromLeft)
-  }
+      // set data for every book container
+      for (index, book) in genre.books.enumerated() {
+        let bookView = bookViewList[index]
+
+        (bookView.layoutData as? SCDLayoutGridData)?.column = index
+        bookView.visible = true
+
+        bookView.onClick.append(
+          SCDWidgetsEventHandler { [weak book] event in
+            guard let book = book else { return }
+            self.navigation?.goWith(page: "BookDetail.page", data: book, transition: .FROM_RIGHT)
+          })
+
+        //bookView[label]?.text = book.volumeInfo.title ?? "no title"
+        //bookView["label", as: SCDWidgetsLabel.self]?.text = book.volumeInfo.title ?? "no title"
+        if let label = bookView["label ", as: SCDWidgetsLabel.self] {
+          label.text = book.volumeInfo.title ?? "no title"
+          (label.layoutData as? SCDLayoutGridData)?.maxContentWidth = 100
+        }
 
         if let bitmap = bookView["image", as: SCDWidgetsImage.self] {
           CatalogManager.loadDataAsync(
@@ -88,8 +102,10 @@ class MainPageAdapter: SCDLatticePageAdapter {
       self?.ctrlListBookCatalog.items.append(health)
     }
   }
-
-}
+  
+  func goToPage () {
+  	self.navigation?.go(page: "search.page")
+  }
 
 
 }

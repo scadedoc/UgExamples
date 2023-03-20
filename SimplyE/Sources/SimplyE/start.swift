@@ -17,8 +17,13 @@ class SimplyE: SCDApplication {
 		loginPage = LoginPageAdapter()
 		loginPage.load("Login.page")
 		
-		readerSettings = ReaderSettingsPageAdapter()
-		readerSettings.load("ReaderSettings.page")
+		//bookDetail = BookInformationPageAdapter()
+		
+		//settings = SettingsPageAdapter()
+		//settings.load("settings.page")
+		
+		bookDetail = BookDetailPageAdapter()
+		bookDetail.load("BookDetail.page")
 		
 		searchPage = SearchPageAdapter()
 		searchPage.load("search.page")
