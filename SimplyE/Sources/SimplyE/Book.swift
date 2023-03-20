@@ -15,7 +15,7 @@ class Genre: EObject {
 
 struct TrendingBookResponse: Codable {
 
-  let items: [Book]
+  let items: [Book]?
 }
 
 class Book: EObject, Codable {
@@ -30,13 +30,14 @@ struct VolumeInfoElements: Codable {
 
   let title: String?
   let subtitle: String?
-  let authors: [String]
+  let authors: [String]?
   let pageCount: Int?
   let imageLinks: imageLinksElements
   let description: String?
   let publishedDate: String?
   let language: String?
   let averageRating: Float?
+  let previewLink: String?
 }
 
 struct imageLinksElements: Codable {
@@ -46,6 +47,7 @@ struct imageLinksElements: Codable {
 }
 
 /*
+
 {
       "kind": "books#volume",
       "id": "cdyoCwAAQBAJ",
@@ -119,4 +121,5 @@ struct imageLinksElements: Codable {
         "quoteSharingAllowed": false
       }
     },
+
 */

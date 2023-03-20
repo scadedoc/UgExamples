@@ -1,8 +1,4 @@
 import Foundation
-import Dispatch
-#if os(Android)
-	import FoundationNetworking
-#endif
 
 struct constants {
 
@@ -47,7 +43,7 @@ class APICaller {
       do {
         let items = try JSONDecoder().decode(TrendingBookResponse.self, from: data)
 
-        completion(.success(items.items))
+        completion(.success(items.items ?? []))
       } catch {
         print("Unexpected error: \(error).")
         completion(.failure(APIError.FailedTogetData))
@@ -79,7 +75,7 @@ class APICaller {
       do {
         let items = try JSONDecoder().decode(TrendingBookResponse.self, from: data)
 
-        completion(.success(items.items))
+        completion(.success(items.items ?? []))
       } catch {
         completion(.failure(APIError.FailedTogetData))
       }
@@ -107,7 +103,7 @@ class APICaller {
       do {
         let items = try JSONDecoder().decode(TrendingBookResponse.self, from: data)
 
-        completion(.success(items.items))
+        completion(.success(items.items ?? []))
       } catch {
         completion(.failure(APIError.FailedTogetData))
       }
@@ -135,7 +131,7 @@ class APICaller {
       do {
         let items = try JSONDecoder().decode(TrendingBookResponse.self, from: data)
 
-        completion(.success(items.items))
+        completion(.success(items.items ?? []))
       } catch {
         completion(.failure(APIError.FailedTogetData))
       }
@@ -163,7 +159,7 @@ class APICaller {
       do {
         let items = try JSONDecoder().decode(TrendingBookResponse.self, from: data)
 
-        completion(.success(items.items))
+        completion(.success(items.items ?? []))
       } catch {
         completion(.failure(APIError.FailedTogetData))
       }
@@ -195,7 +191,7 @@ class APICaller {
       do {
         let items = try JSONDecoder().decode(TrendingBookResponse.self, from: data)
 
-        completion(.success(items.items))
+        completion(.success(items.items ?? []))
       } catch {
         completion(.failure(APIError.FailedTogetData))
       }
