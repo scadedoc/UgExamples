@@ -1,8 +1,6 @@
 import ScadeGraphics
 import ScadeKit
 import ScadeUI
-import Dispatch
-import Foundation
 
 class SearchPageAdapter: SCDLatticePageAdapter {
 
@@ -38,7 +36,7 @@ class SearchPageAdapter: SCDLatticePageAdapter {
       }
 
       if let bookAuthor = listView["authorTitleLabel", as: SCDWidgetsLabel.self] {
-        bookAuthor.text = "by \(book.volumeInfo.authors[0])"
+        bookAuthor.text = "by \(book.volumeInfo.authors?[0] ?? "Nothing")"
         (bookAuthor.layoutData as? SCDLayoutGridData)?.maxContentWidth = 100
       }
 
@@ -55,7 +53,7 @@ class SearchPageAdapter: SCDLatticePageAdapter {
       element.onClick.append(
         SCDWidgetsEventHandler { [weak book] event in
           guard let book = book else { return }
-          self.navigation?.goWith(page: "BookDetail.page", data: book, transition: .FROM_RIGHT)
+          self.navigation?.goWith(page: "bookDetail.page", data: book, transition: .FROM_RIGHT)
         })
 
     }
@@ -87,21 +85,23 @@ class SearchPageAdapter: SCDLatticePageAdapter {
           let query = textbox.text
 
           //var visible = query.isEmpty
-          
-          if !query.isEmpty && query.count >= 3 {
-          	
-          	APICaller.shared.getBook(with: query) { result in
-            DispatchQueue.main.async {
-              switch result {
-              case .success(let titles):
-                self?.ctrlListBooks.items = titles
 
-              case .failure(let error):
-                print(error.localizedDescription)
+          if !query.isEmpty && query.count >= 3 {
+
+            APICaller.shared.getBook(with: query) { result in
+              DispatchQueue.main.async {
+                switch result {
+                case .success(let titles):
+                  DispatchQueue.main.async {
+                    self?.ctrlListBooks.items = titles
+                  }
+
+                case .failure(let error):
+                  print(error.localizedDescription)
+                }
               }
             }
-          }
-          	
+
           }
 
         }

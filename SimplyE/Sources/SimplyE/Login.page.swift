@@ -24,7 +24,6 @@ class LoginPageAdapter: SCDLatticePageAdapter {
   func postDisplayActions() {
     // put actions that shall happen
     // after the display of the page here
-
     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
 
       self.navigation!.go(page: "main.page", transition: .FROM_LEFT)

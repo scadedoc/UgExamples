@@ -10,13 +10,11 @@ class CatalogManager {
 
   /*
 static func getCategories() -> [Genre] {
-
 		let values = [  ("Adventure","Adventure"),
 	         			("Fantasy","Fantasy"),
 	         			("Horror","Horror"),
 	         			("Health","Health"),
 	  	  ]
-
 		return values.map{Genre(name: $0, labelCategory: $1)}
 	}
 */

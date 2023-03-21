@@ -8,6 +8,7 @@ class SimplyE: SCDApplication {
   var loginPage : LoginPageAdapter!
   var bookDetail: BookDetailPageAdapter!
   var searchPage: SearchPageAdapter!
+  var bookWebView: BookWebViewPageAdapter!
   //var settings : SettingsPageAdapter!
   
 	override func onFinishLaunching() {
@@ -23,10 +24,13 @@ class SimplyE: SCDApplication {
 		//settings.load("settings.page")
 		
 		bookDetail = BookDetailPageAdapter()
-		bookDetail.load("BookDetail.page")
+		bookDetail.load("bookDetail.page")
 		
 		searchPage = SearchPageAdapter()
 		searchPage.load("search.page")
+		
+		bookWebView = BookWebViewPageAdapter()
+		bookWebView.load("bookWebView.page")
 		
 		
 		mainAdapter.load("main.page")

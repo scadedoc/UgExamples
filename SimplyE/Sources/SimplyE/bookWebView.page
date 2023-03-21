@@ -1,0 +1,20 @@
+<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:native="http://scade.com/sdk/view/widgets/native" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="bookWebView">
+    <minArea width="414" height="736"/>
+    <location/>
+    <backgroundColor Red="248" Green="248" Blue="248"/>
+    <children xsi:type="native:WebView" name="webView">
+      <location/>
+      <size width="414" height="736"/>
+      <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true">
+        <minSize width="100" height="100"/>
+        <maxSize width="-1" height="-1"/>
+      </layoutData>
+    </children>
+    <layout xsi:type="layout:GridLayout"/>
+    <maxArea width="414" height="736"/>
+    <size width="414" height="736"/>
+  </widgets:Page>
+  <navigation:Navigation page="/0"/>
+</xmi:XMI>

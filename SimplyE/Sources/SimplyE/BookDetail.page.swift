@@ -1,8 +1,8 @@
 import ScadeKit
-import Dispatch
-import Foundation
 
 class BookDetailPageAdapter: SCDLatticePageAdapter {
+
+  var book: Book?
 
   // page adapter initialization
   override func load(_ path: String) {
@@ -19,6 +19,10 @@ class BookDetailPageAdapter: SCDLatticePageAdapter {
     self.toolBarItem2.onClick { _ in
     	self.goToPage()
     }
+    
+    self.readBookButton.onClick{ _ in
+    	self.navigation?.goWith(page: "bookWebView.page", data: self.book ?? "")
+    }
 
   }
 
@@ -27,9 +31,11 @@ class BookDetailPageAdapter: SCDLatticePageAdapter {
 
     if let book = data as? Book {
       print("show book: \(book.volumeInfo.title)")
+      
+      self.book = book
 
       lbBookTitle.text = book.volumeInfo.title ?? ""
-      lbAuthorName.text = "by \(book.volumeInfo.authors[0])"
+      lbAuthorName.text = "by \(book.volumeInfo.authors?[0] ?? "Nothing")"
       lbPublished.text = book.volumeInfo.publishedDate ?? ""
       lbLanguage.text = book.volumeInfo.language ?? ""
       lbDescription.text =
