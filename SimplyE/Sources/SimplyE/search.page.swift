@@ -1,6 +1,10 @@
 import ScadeGraphics
 import ScadeKit
 import ScadeUI
+import Dispatch
+#if os(Android)
+	import FoundationNetworking
+#endif
 
 class SearchPageAdapter: SCDLatticePageAdapter {
 
@@ -53,7 +57,7 @@ class SearchPageAdapter: SCDLatticePageAdapter {
       element.onClick.append(
         SCDWidgetsEventHandler { [weak book] event in
           guard let book = book else { return }
-          self.navigation?.goWith(page: "bookDetail.page", data: book, transition: .FROM_RIGHT)
+          self.navigation?.goWith(page: "BookDetail.page", data: book, transition: .FROM_RIGHT)
         })
 
     }
