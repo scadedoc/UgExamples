@@ -30,7 +30,7 @@ static func getCategories() -> [Genre] {
           onSuccess(data)
         }
       case .failure(let error):
-        print(error)
+        print("CatalogManager loadDataAsync error: \(error), \(error.localizedDescription)")
       }
     }
   }
