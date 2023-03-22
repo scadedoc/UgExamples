@@ -39,7 +39,14 @@ static func getCategories() -> [Genre] {
     from urlString: String,
     completion: @escaping (Result<Data, Error>) -> Void
   ) {
-    if let url = URL(string: urlString) {
+    if var url = URL(string: urlString) {
+      // force using https in all requests
+      if url.scheme == "http" {
+        var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
+        components.scheme = "https"
+        url = components.url!
+      }
+
       let urlSession = URLSession(configuration: .default).dataTask(with: url) {
         (data, response, error) in
         if let error = error {
