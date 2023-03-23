@@ -1,12 +1,23 @@
+import Dispatch
 import ScadeGraphics
 import ScadeKit
 import ScadeUI
-import Dispatch
+
 #if os(Android)
-	import FoundationNetworking
+  import FoundationNetworking
 #endif
 
 class SearchPageAdapter: SCDLatticePageAdapter {
+
+ // An array to collect all the books in all the four categories
+  public var randomBooks: [Book] = [Book]()
+
+  public let selectedBook: Book?
+
+  override init() {
+    // Getting the selectedBook from randomBooks for generating a random image link for heroImage in the main.page
+    self.selectedBook = randomBooks.randomElement()
+  }
 
   // page adapter initialization
   override func load(_ path: String) {
@@ -120,11 +131,11 @@ class SearchPageAdapter: SCDLatticePageAdapter {
       case .success(let abooks):
         DispatchQueue.main.async {
           self?.ctrlListBooks.items.append(contentsOf: abooks)
+          self?.randomBooks.append(contentsOf: abooks)
         }
       case .failure(let error):
         print(error.localizedDescription)
       }
-
     }
   }
 
@@ -134,6 +145,7 @@ class SearchPageAdapter: SCDLatticePageAdapter {
       case .success(let fanbooks):
         DispatchQueue.main.async {
           self?.ctrlListBooks.items.append(contentsOf: fanbooks)
+          self?.randomBooks.append(contentsOf: fanbooks)
         }
       case .failure(let error):
         print(error.localizedDescription)
@@ -147,6 +159,7 @@ class SearchPageAdapter: SCDLatticePageAdapter {
       case .success(let hobooks):
         DispatchQueue.main.async {
           self?.ctrlListBooks.items.append(contentsOf: hobooks)
+          self?.randomBooks.append(contentsOf: hobooks)
         }
       case .failure(let error):
         print(error.localizedDescription)
@@ -161,11 +174,11 @@ class SearchPageAdapter: SCDLatticePageAdapter {
       case .success(let hebooks):
         DispatchQueue.main.async {
           self?.ctrlListBooks.items.append(contentsOf: hebooks)
+          self?.randomBooks.append(contentsOf: hebooks)
         }
       case .failure(let error):
         print(error.localizedDescription)
       }
-
     }
   }
 
