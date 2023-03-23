@@ -1,8 +1,4 @@
 import Foundation
-import Dispatch
-#if os(Android)
-	import FoundationNetworking
-#endif
 
 struct constants {
 
