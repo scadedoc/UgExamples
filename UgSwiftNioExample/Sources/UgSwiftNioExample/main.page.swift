@@ -110,9 +110,13 @@ class MainPageAdapter: SCDLatticePageAdapter {
         data in
         print(data)
         let stringData: String = String(data)
-        let a = stringData.index(stringData.startIndex, offsetBy: 500)
-        let result = stringData.substring(to: a)
-        self.response_label.text = result
+        if stringData.count > 500 {
+          let a = stringData.index(stringData.startIndex, offsetBy: 500)
+          let result = stringData.substring(to: a)
+          self.response_label.text = result
+        } else {
+          self.response_label.text = stringData
+        }
       }
 
       Task {

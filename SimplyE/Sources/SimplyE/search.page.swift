@@ -1,6 +1,10 @@
 import ScadeGraphics
 import ScadeKit
 import ScadeUI
+import Dispatch
+#if os(Android)
+	import FoundationNetworking
+#endif
 
 class SearchPageAdapter: SCDLatticePageAdapter {
 

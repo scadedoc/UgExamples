@@ -1,5 +1,9 @@
 import ScadeKit
 import ScadeUI
+import Dispatch
+#if os(Android)
+	import FoundationNetworking
+#endif
 
 class MainPageAdapter: SCDLatticePageAdapter {
 
