@@ -35,6 +35,18 @@ class MainPageAdapter: SCDLatticePageAdapter {
     self.toolBarItem2.onClick { _ in
       self.goToPage()
     }
+    
+    //Geeting selectedBook from search.page.swift
+    var searchPage: SearchPageAdapter!
+    searchPage = SearchPageAdapter()
+    
+    //guard let selected = searchPage.selectedBook else {return}
+
+    CatalogManager.loadDataAsync(
+      from: searchPage.selectedBook?.volumeInfo.imageLinks.thumbnail ?? "no image", queue: .main
+    ) { [weak self] data in
+      self?.heroImage.content = data
+    }
 
     self.toolBarItem3.onClick { _ in
       self.navigation?.go(page: "settings.page")

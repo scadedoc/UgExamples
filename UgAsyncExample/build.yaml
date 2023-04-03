@@ -63,7 +63,7 @@ android:
   version-name: 1.0.0
   version-code: 1
   build-type: Debug
-  key-store-properties:
+  key-store-properties: ${env.UGEXAMPLES_ANDROID_KEYSTORE_PROPERTIES}
   google-api-key:
   manifest-file:
   permissions: []
