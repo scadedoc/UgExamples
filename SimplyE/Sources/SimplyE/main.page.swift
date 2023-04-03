@@ -7,10 +7,23 @@ import Dispatch
 
 class MainPageAdapter: SCDLatticePageAdapter {
 
+  public var randomBooks: [Book] = [Book]()
+
+  public let selectedBook: Book?
+
+  override init() {
+    // Getting the selectedBook from randomBooks for generating a random image link for heroImage in the main.page
+    self.selectedBook = randomBooks.randomElement()
+  }
+
   // page adapter initialization
   override func load(_ path: String) {
     super.load(path)
 
+    self.page?.onEnter.append(
+      SCDWidgetsEnterEventHandler { _ in
+        self.createRandomAdventuralBook()
+      })
     self.fetchAdventure()
 
     self.fetchFantasy()
@@ -22,15 +35,15 @@ class MainPageAdapter: SCDLatticePageAdapter {
     self.toolBarItem2.onClick { _ in
       self.goToPage()
     }
-    
-    //Geeting selectedBook from search.page.swift
-    var searchPage: SearchPageAdapter!
-    searchPage = SearchPageAdapter()
-    
+
+    self.toolBarItem3.onClick { _ in
+      self.navigation?.go(page: "settings.page")
+    }
+
     //guard let selected = searchPage.selectedBook else {return}
 
     CatalogManager.loadDataAsync(
-      from: searchPage.selectedBook?.volumeInfo.imageLinks.thumbnail ?? "no image", queue: .main
+      from: selectedBook?.volumeInfo.imageLinks.thumbnail ?? "no image", queue: .main
     ) { [weak self] data in
       self?.heroImage.content = data
     }
@@ -97,33 +110,38 @@ class MainPageAdapter: SCDLatticePageAdapter {
   private func fetchAdventure() {
     CatalogManager.shared.fetchGenre(with: "Adventure", lbCategory: "Adventure") {
       [weak self] adventure in
-      DispatchQueue.main.async {
-        self?.ctrlListBookCatalog.items.append(adventure)
-      }
+      self?.ctrlListBookCatalog.items.append(adventure)
     }
   }
 
   private func fetchFantasy() {
     CatalogManager.shared.fetchGenre(with: "Fantasy", lbCategory: "Fantasy") {
       [weak self] fantasy in
-      DispatchQueue.main.async {
-        self?.ctrlListBookCatalog.items.append(fantasy)
-      }
+      self?.ctrlListBookCatalog.items.append(fantasy)
     }
   }
 
   private func fetchHorror() {
     CatalogManager.shared.fetchGenre(with: "Horror", lbCategory: "Horror") { [weak self] horror in
-      DispatchQueue.main.async {
-        self?.ctrlListBookCatalog.items.append(horror)
-      }
+      self?.ctrlListBookCatalog.items.append(horror)
     }
   }
 
   private func fetchHealth() {
     CatalogManager.shared.fetchGenre(with: "Health", lbCategory: "Health") { [weak self] health in
-      DispatchQueue.main.async {
-        self?.ctrlListBookCatalog.items.append(health)
+      self?.ctrlListBookCatalog.items.append(health)
+    }
+  }
+
+  private func createRandomAdventuralBook() {
+    APICaller.shared.getAdventurousBooks { [weak self] result in
+      switch result {
+      case .success(let createRandomAdventural):
+        DispatchQueue.main.async {
+          self?.randomBooks.append(contentsOf: createRandomAdventural)
+        }
+      case .failure(let error):
+        print(error.localizedDescription)
       }
     }
   }
