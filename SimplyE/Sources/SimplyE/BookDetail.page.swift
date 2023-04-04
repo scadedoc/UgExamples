@@ -34,7 +34,7 @@ class BookDetailPageAdapter: SCDLatticePageAdapter {
     super.show(view: view, data: data)
 
     if let book = data as? Book {
-      print("show book: \(book.volumeInfo.title)")
+      //print("show book: \(book.volumeInfo.title)")
       
       self.book = book
 

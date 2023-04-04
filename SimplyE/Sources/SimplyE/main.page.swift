@@ -7,23 +7,19 @@ import Dispatch
 
 class MainPageAdapter: SCDLatticePageAdapter {
 
-  public var randomBooks: [Book] = [Book]()
+  public var randomBooks: [Book] = []
 
-  public let selectedBook: Book?
-
-  override init() {
-    // Getting the selectedBook from randomBooks for generating a random image link for heroImage in the main.page
-    self.selectedBook = randomBooks.randomElement()
-  }
+  public var selectedBook: Book?
 
   // page adapter initialization
   override func load(_ path: String) {
     super.load(path)
 
     self.page?.onEnter.append(
-      SCDWidgetsEnterEventHandler { _ in
-        self.createRandomAdventuralBook()
+      SCDWidgetsEnterEventHandler { [weak self] _ in
+        self?.showRandomBook()
       })
+
     self.fetchAdventure()
 
     self.fetchFantasy()
@@ -41,12 +37,6 @@ class MainPageAdapter: SCDLatticePageAdapter {
     }
 
     //guard let selected = searchPage.selectedBook else {return}
-
-    CatalogManager.loadDataAsync(
-      from: selectedBook?.volumeInfo.imageLinks.thumbnail ?? "no image", queue: .main
-    ) { [weak self] data in
-      self?.heroImage.content = data
-    }
 
     self.ctrlListBookCatalog.elementProvider { (genre: Genre, element) in
       guard let viewCategory = element["viewCategory", as: SCDWidgetsRowView.self],
@@ -107,10 +97,33 @@ class MainPageAdapter: SCDLatticePageAdapter {
 
   }
 
+  private func addRandomBooks(_ books: [Book]) {
+    self.randomBooks.append(contentsOf: books)
+    showRandomBook()
+  }
+
+  private func showRandomBook() {
+    if selectedBook != nil {
+      CatalogManager.loadDataAsync(
+        from: selectedBook?.volumeInfo.imageLinks.thumbnail ?? "no image", queue: .main
+      ) { [weak self] data in
+        guard let self = self else { return }
+
+        self.heroImage.content = data
+        self.heroImage.contentPriority = true
+      }
+    }
+
+    DispatchQueue.main.async {
+      self.selectedBook = self.randomBooks.randomElement()
+    }
+  }
+
   private func fetchAdventure() {
     CatalogManager.shared.fetchGenre(with: "Adventure", lbCategory: "Adventure") {
       [weak self] adventure in
       self?.ctrlListBookCatalog.items.append(adventure)
+      self?.addRandomBooks(adventure.books)
     }
   }
 
@@ -118,31 +131,21 @@ class MainPageAdapter: SCDLatticePageAdapter {
     CatalogManager.shared.fetchGenre(with: "Fantasy", lbCategory: "Fantasy") {
       [weak self] fantasy in
       self?.ctrlListBookCatalog.items.append(fantasy)
+      self?.addRandomBooks(fantasy.books)
     }
   }
 
   private func fetchHorror() {
     CatalogManager.shared.fetchGenre(with: "Horror", lbCategory: "Horror") { [weak self] horror in
       self?.ctrlListBookCatalog.items.append(horror)
+      self?.addRandomBooks(horror.books)
     }
   }
 
   private func fetchHealth() {
     CatalogManager.shared.fetchGenre(with: "Health", lbCategory: "Health") { [weak self] health in
       self?.ctrlListBookCatalog.items.append(health)
-    }
-  }
-
-  private func createRandomAdventuralBook() {
-    APICaller.shared.getAdventurousBooks { [weak self] result in
-      switch result {
-      case .success(let createRandomAdventural):
-        DispatchQueue.main.async {
-          self?.randomBooks.append(contentsOf: createRandomAdventural)
-        }
-      case .failure(let error):
-        print(error.localizedDescription)
-      }
+      self?.addRandomBooks(health.books)
     }
   }
 
