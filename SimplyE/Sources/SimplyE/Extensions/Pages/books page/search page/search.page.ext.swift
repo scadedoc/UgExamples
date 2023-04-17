@@ -56,4 +56,16 @@ extension SearchPageAdapter {
   var caption3: SCDWidgetsLabel {
     return self.page?.getWidgetByName("caption3") as! SCDWidgetsLabel
   }
+
+  var toolBarItem4: SCDWidgetsToolBarItem {
+    return self.page?.getWidgetByName("toolBarItem4") as! SCDWidgetsToolBarItem
+  }
+
+  var icon4: SCDWidgetsImage {
+    return self.page?.getWidgetByName("icon4") as! SCDWidgetsImage
+  }
+
+  var caption4: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("caption4") as! SCDWidgetsLabel
+  }
 }

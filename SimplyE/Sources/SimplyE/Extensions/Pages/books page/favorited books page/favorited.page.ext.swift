@@ -1,12 +1,12 @@
 import ScadeKit
 
-extension MainPageAdapter {
-  var heroImage: SCDWidgetsImage {
-    return self.page?.getWidgetByName("heroImage") as! SCDWidgetsImage
+extension FavoritedPageAdapter {
+  var favoriteLabelTitle: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("favoriteLabelTitle") as! SCDWidgetsLabel
   }
 
-  var ctrlListBookCatalog: SCDWidgetsList {
-    return self.page?.getWidgetByName("ctrlListBookCatalog") as! SCDWidgetsList
+  var ctrlListBooks: SCDWidgetsList {
+    return self.page?.getWidgetByName("ctrlListBooks") as! SCDWidgetsList
   }
 
   var toolBar: SCDWidgetsToolBar {

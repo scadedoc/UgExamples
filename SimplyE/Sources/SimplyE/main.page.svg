@@ -7,7 +7,7 @@
         <svg widget-name="heroImage" eObject-URI="main.page#/0/@children.0" width="414" height="300">
           <svg template-id="content-box" width="414" height="300">
             <g template-id="content">
-              <image xlink:href="Assets/bookCovers/warOfWorlds.jpeg" preserveAspectRatio="xMidYMid meet" template-id="node-image" width="100%" height="100%" />
+              <image xlink:href="Assets/bookCovers/warOfWorlds.jpeg" template-id="node-image" width="100%" height="100%" />
             </g>
           </svg>
         </svg>
@@ -73,18 +73,18 @@
           <svg template-id="content-box">
             <g template-id="content">
               <g template-id="children-content">
-                <svg widget-name="toolBarItem1" eObject-URI="main.page#/0/@children.2/@children.0" width="138" height="52">
+                <svg widget-name="toolBarItem1" eObject-URI="main.page#/0/@children.2/@children.0" width="105" height="52">
                   <svg template-id="content-box">
                     <g template-id="content">
                       <g template-id="children-content">
-                        <svg widget-id="image" widget-name="icon1" eObject-URI="main.page#/0/@children.2/@children.0/@children.0" x="55" y="2" width="28" height="28">
+                        <svg widget-id="image" widget-name="icon1" eObject-URI="main.page#/0/@children.2/@children.0/@children.0" x="38" y="2" width="28" height="28">
                           <svg template-id="content-box" width="28" height="28">
                             <g template-id="content">
                               <image xlink:href="Assets/Catalog@2x_red.png" template-id="node-image" width="100%" height="100%" />
                             </g>
                           </svg>
                         </svg>
-                        <svg widget-id="label" widget-name="caption1" eObject-URI="main.page#/0/@children.2/@children.0/@children.1" x="27" y="32" width="83" height="20">
+                        <svg widget-id="label" widget-name="caption1" eObject-URI="main.page#/0/@children.2/@children.0/@children.1" x="11" y="32" width="83" height="20">
                           <svg template-id="content-box" width="83" height="20">
                             <g template-id="content">
                               <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="41.5" y="10" fill="#0">Categories</text>
@@ -95,18 +95,18 @@
                     </g>
                   </svg>
                 </svg>
-                <svg widget-name="toolBarItem2" eObject-URI="main.page#/0/@children.2/@children.1" x="138" width="138" height="52">
+                <svg widget-name="toolBarItem2" eObject-URI="main.page#/0/@children.2/@children.1" x="105" width="103" height="52">
                   <svg template-id="content-box">
                     <g template-id="content">
                       <g template-id="children-content">
-                        <svg widget-id="image" widget-name="icon2" eObject-URI="main.page#/0/@children.2/@children.1/@children.0" x="55" y="2" width="28" height="28">
+                        <svg widget-id="image" widget-name="icon2" eObject-URI="main.page#/0/@children.2/@children.1/@children.0" x="37" y="2" width="28" height="28">
                           <svg template-id="content-box" width="28" height="28">
                             <g template-id="content">
                               <image xlink:href="Assets/Search.png" template-id="node-image" width="100%" height="100%" />
                             </g>
                           </svg>
                         </svg>
-                        <svg widget-id="label" widget-name="caption2" eObject-URI="main.page#/0/@children.2/@children.1/@children.1" x="42" y="32" width="54" height="20">
+                        <svg widget-id="label" widget-name="caption2" eObject-URI="main.page#/0/@children.2/@children.1/@children.1" x="24" y="32" width="54" height="20">
                           <svg template-id="content-box" width="54" height="20">
                             <g template-id="content">
                               <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="27" y="10" fill="#0">Search</text>
@@ -117,18 +117,40 @@
                     </g>
                   </svg>
                 </svg>
-                <svg widget-name="toolBarItem3" eObject-URI="main.page#/0/@children.2/@children.2" x="276" width="138" height="52">
+                <svg widget-name="toolBarItem3" eObject-URI="main.page#/0/@children.2/@children.2" x="208" width="103" height="52">
                   <svg template-id="content-box">
                     <g template-id="content">
                       <g template-id="children-content">
-                        <svg widget-id="image" widget-name="icon3" eObject-URI="main.page#/0/@children.2/@children.2/@children.0" x="55" y="2" width="28" height="28">
+                        <svg widget-id="image" widget-name="icon3" eObject-URI="main.page#/0/@children.2/@children.2/@children.0" x="37" y="3" width="28" height="25">
+                          <svg template-id="content-box" width="28" height="25">
+                            <g template-id="content">
+                              <image xlink:href="Assets/black-64bt-favorite-icon.svg" template-id="node-image" width="100%" height="100%" />
+                            </g>
+                          </svg>
+                        </svg>
+                        <svg widget-id="label" widget-name="caption3" eObject-URI="main.page#/0/@children.2/@children.2/@children.1" x="16" y="32" width="70" height="20">
+                          <svg template-id="content-box" width="70" height="20">
+                            <g template-id="content">
+                              <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="35" y="10" fill="#0">Favorites</text>
+                            </g>
+                          </svg>
+                        </svg>
+                      </g>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="toolBarItem4" eObject-URI="main.page#/0/@children.2/@children.3" x="311" width="103" height="52">
+                  <svg template-id="content-box">
+                    <g template-id="content">
+                      <g template-id="children-content">
+                        <svg widget-id="image" widget-name="icon4" eObject-URI="main.page#/0/@children.2/@children.3/@children.0" x="37" y="2" width="28" height="28">
                           <svg template-id="content-box" width="28" height="28">
                             <g template-id="content">
                               <image xlink:href="Assets/more-button-of-three-dots.svg" template-id="node-image" width="100%" height="100%" />
                             </g>
                           </svg>
                         </svg>
-                        <svg widget-id="label" widget-name="caption3" eObject-URI="main.page#/0/@children.2/@children.2/@children.1" x="49" y="32" width="40" height="20">
+                        <svg widget-id="label" widget-name="caption4" eObject-URI="main.page#/0/@children.2/@children.3/@children.1" x="31" y="32" width="40" height="20">
                           <svg template-id="content-box" width="40" height="20">
                             <g template-id="content">
                               <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="20" y="10" fill="#0">More</text>

@@ -5,16 +5,16 @@ extension BookDetailPageAdapter {
     return self.page?.getWidgetByName("navigationBar") as! SCDWidgetsNavigationBar
   }
 
-  var downloadButton: SCDWidgetsButton {
-    return self.page?.getWidgetByName("downloadButton") as! SCDWidgetsButton
-  }
-
   var backButton: SCDWidgetsButton {
     return self.page?.getWidgetByName("backButton") as! SCDWidgetsButton
   }
 
   var detailsLabel: SCDWidgetsLabel {
     return self.page?.getWidgetByName("detailsLabel") as! SCDWidgetsLabel
+  }
+
+  var favoritedButton: SCDWidgetsButton {
+    return self.page?.getWidgetByName("favoritedButton") as! SCDWidgetsButton
   }
 
   var listBookDetails: SCDWidgetsListView {
@@ -135,5 +135,17 @@ extension BookDetailPageAdapter {
 
   var caption3: SCDWidgetsLabel {
     return self.page?.getWidgetByName("caption3") as! SCDWidgetsLabel
+  }
+
+  var toolBarItem4: SCDWidgetsToolBarItem {
+    return self.page?.getWidgetByName("toolBarItem4") as! SCDWidgetsToolBarItem
+  }
+
+  var icon4: SCDWidgetsImage {
+    return self.page?.getWidgetByName("icon4") as! SCDWidgetsImage
+  }
+
+  var caption4: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("caption4") as! SCDWidgetsLabel
   }
 }

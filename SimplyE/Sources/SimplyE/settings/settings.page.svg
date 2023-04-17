@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="settings.page#/0" widget-name="settings" width="414" height="736">
+  <rect template-id="background" width="100%" height="100%" fill="#eaeaea" />
+  <svg template-id="content-box">
+    <g template-id="content">
+      <g template-id="children-content">
+        <svg widget-name="navigationBar" eObject-URI="settings.page#/0/@children.0" width="414" height="46">
+          <svg template-id="content-box">
+            <g template-id="content">
+              <g template-id="children-content">
+                <svg widget-name="titleLabel" eObject-URI="settings.page#/0/@children.0/@children.0" widget-id="titleLabel" x="165" width="85" height="46">
+                  <svg template-id="content-box" width="85" height="46">
+                    <g template-id="content">
+                      <text text-anchor="middle" alignment-baseline="central" font-size="18" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="42.5" y="23" fill="#0">More</text>
+                    </g>
+                  </svg>
+                </svg>
+              </g>
+            </g>
+          </svg>
+        </svg>
+        <svg widget-name="VerticalView" eObject-URI="settings.page#/0/@children.1" width="414" height="144" y="46">
+          <rect template-id="background" width="100%" height="100%" fill="#eaeaea" />
+          <svg template-id="content-box">
+            <g template-id="content">
+              <g template-id="children-content">
+                <svg widget-name="subrow1" eObject-URI="settings.page#/0/@children.1/@children.0" x="5" y="25" width="404" height="38">
+                  <rect template-id="background" width="100%" height="100%" fill="#ffffff" />
+                  <svg template-id="content-box">
+                    <g template-id="content">
+                      <g template-id="children-content">
+                        <svg widget-name="horinzontalView1" eObject-URI="settings.page#/0/@children.1/@children.0/@children.0" x="15" y="5" width="384" height="28">
+                          <svg template-id="content-box">
+                            <g template-id="content">
+                              <g template-id="children-content">
+                                <svg widget-name="aboutLabel" eObject-URI="settings.page#/0/@children.1/@children.0/@children.0/@children.0" y="5" width="367" height="23">
+                                  <svg template-id="content-box" width="367" height="23">
+                                    <g template-id="content">
+                                      <text alignment-baseline="central" font-size="18" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11.5" fill="#0">About</text>
+                                    </g>
+                                  </svg>
+                                </svg>
+                                <svg widget-name="arrowLabel1" eObject-URI="settings.page#/0/@children.1/@children.0/@children.0/@children.1" x="367" y="5" width="12" height="23">
+                                  <svg template-id="content-box" width="12" height="23">
+                                    <g template-id="content">
+                                      <text alignment-baseline="central" font-size="20" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11.5" fill="#0">&gt;</text>
+                                    </g>
+                                  </svg>
+                                </svg>
+                              </g>
+                            </g>
+                          </svg>
+                        </svg>
+                      </g>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="subrow2" eObject-URI="settings.page#/0/@children.1/@children.1" x="5" y="63" width="404" height="38">
+                  <rect template-id="background" width="100%" height="100%" fill="#ffffff" />
+                  <svg template-id="content-box">
+                    <g template-id="content">
+                      <g template-id="children-content">
+                        <svg widget-name="horinzontalView2" eObject-URI="settings.page#/0/@children.1/@children.1/@children.0" x="15" y="5" width="384" height="28">
+                          <svg template-id="content-box">
+                            <g template-id="content">
+                              <g template-id="children-content">
+                                <svg widget-name="rateLabel" eObject-URI="settings.page#/0/@children.1/@children.1/@children.0/@children.0" y="5" width="367" height="23">
+                                  <svg template-id="content-box" width="367" height="23">
+                                    <g template-id="content">
+                                      <text alignment-baseline="central" font-size="18" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11.5" fill="#0">Rate SimplyE</text>
+                                    </g>
+                                  </svg>
+                                </svg>
+                                <svg widget-name="label2" eObject-URI="settings.page#/0/@children.1/@children.1/@children.0/@children.1" x="367" y="5" width="12" height="23">
+                                  <svg template-id="content-box" width="12" height="23">
+                                    <g template-id="content">
+                                      <text alignment-baseline="central" font-size="20" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11.5" fill="#0">&gt;</text>
+                                    </g>
+                                  </svg>
+                                </svg>
+                              </g>
+                            </g>
+                          </svg>
+                        </svg>
+                      </g>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="subrow3" eObject-URI="settings.page#/0/@children.1/@children.2" x="5" y="101" width="404" height="38">
+                  <rect template-id="background" width="100%" height="100%" fill="#ffffff" />
+                  <svg template-id="content-box">
+                    <g template-id="content">
+                      <g template-id="children-content">
+                        <svg widget-name="horinzontalView3" eObject-URI="settings.page#/0/@children.1/@children.2/@children.0" x="15" y="5" width="384" height="28">
+                          <svg template-id="content-box">
+                            <g template-id="content">
+                              <g template-id="children-content">
+                                <svg widget-name="contactUsLabel" eObject-URI="settings.page#/0/@children.1/@children.2/@children.0/@children.0" y="5" width="367" height="23">
+                                  <svg template-id="content-box" width="367" height="23">
+                                    <g template-id="content">
+                                      <text alignment-baseline="central" font-size="18" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11.5" fill="#0">Contact Us</text>
+                                    </g>
+                                  </svg>
+                                </svg>
+                                <svg widget-name="label3" eObject-URI="settings.page#/0/@children.1/@children.2/@children.0/@children.1" x="367" y="5" width="12" height="23">
+                                  <svg template-id="content-box" width="12" height="23">
+                                    <g template-id="content">
+                                      <text alignment-baseline="central" font-size="20" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11.5" fill="#0">&gt;</text>
+                                    </g>
+                                  </svg>
+                                </svg>
+                              </g>
+                            </g>
+                          </svg>
+                        </svg>
+                      </g>
+                    </g>
+                  </svg>
+                </svg>
+              </g>
+            </g>
+          </svg>
+        </svg>
+        <svg widget-name="subrow4" eObject-URI="settings.page#/0/@children.2" width="414" height="60" y="336">
+          <rect template-id="background" width="100%" height="100%" fill="#ffffff" />
+          <svg template-id="content-box">
+            <g template-id="content">
+              <g template-id="children-content">
+                <svg widget-name="horinzontalView4" eObject-URI="settings.page#/0/@children.2/@children.0" x="15" y="5" width="394" height="50">
+                  <svg template-id="content-box">
+                    <g template-id="content">
+                      <g template-id="children-content">
+                        <svg widget-name="darkModeLabel" eObject-URI="settings.page#/0/@children.2/@children.0/@children.0" y="5" width="337" height="45">
+                          <svg template-id="content-box" width="337" height="45">
+                            <g template-id="content">
+                              <text alignment-baseline="central" font-size="18" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="22.5" fill="#0">Dark Mode</text>
+                            </g>
+                          </svg>
+                        </svg>
+                        <svg widget-name="checkbox1" eObject-URI="settings.page#/0/@children.2/@children.0/@children.1" x="337" y="5" width="52" height="45">
+                          <svg template-id="content-box" width="52" height="45">
+                            <g template-id="content">
+                              <use xlink:href="#481ee476-f81e-4bf8-919e-9c1ca5b12dfd" template-id="state" width="0" height="0" />
+                              <symbol template-id="state-on">
+                                <path fill-opacity="0" d="M 4.5 0 h 42 c 2.2 0 4 1.8 4 4 v 37 c 0 2.2 -1.8 4 -4 4 h -42 c -2.2 0 -4 -1.8 -4 -4 V 4 C 0.5 1.8 2.3 0 4.5 0 z" fill="#ffffff" />
+                                <path d="M 16 8.5 h 20 c 8.3 0 15 6.7 15 15 s -6.7 15 -15 15 H 16 c -8.3 0 -15 -6.7 -15 -15 S 7.7 8.5 16 8.5 z" fill="#69bf66" />
+                                <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" d="M 16 8.5 h 20 c 8.3 0 15 6.7 15 15 s -6.7 15 -15 15 H 16 c -8.3 0 -15 -6.7 -15 -15 S 7.7 8.5 16 8.5 z" fill="none" stroke="#65bd4d" />
+                                <path d="M 36 8.5 L 36 8.5 c 8.3 0 15 6.7 15 15 s -6.7 15 -15 15 s -15 -6.7 -15 -15 S 27.7 8.5 36 8.5 z" fill="#ffffff" />
+                                <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" d="M 36 8.5 L 36 8.5 c 8.3 0 15 6.7 15 15 s -6.7 15 -15 15 s -15 -6.7 -15 -15 S 27.7 8.5 36 8.5 z" fill="none" stroke="#68bf66" />
+                              </symbol>
+                              <symbol template-id="state-disabled">
+                                <path opacity="0" d="M 4.5 0.5 h 42 c 2.2 0 4 1.8 4 4 v 37 c 0 2.2 -1.8 4 -4 4 h -42 c -2.2 0 -4 -1.8 -4 -4 v -37 C 0.5 2.3 2.3 0.5 4.5 0.5 z" fill="#ffffff" />
+                                <path d="M 16 8 h 20 c 8.3 0 15 6.7 15 15 s -6.7 15 -15 15 H 16 C 7.7 38 1 31.3 1 23 S 7.7 8 16 8 z" fill="#ffffff" />
+                                <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" d="M 16 8 h 20 c 8.3 0 15 6.7 15 15 s -6.7 15 -15 15 H 16 C 7.7 38 1 31.3 1 23 S 7.7 8 16 8 z" fill="none" stroke="#e3e3e3" />
+                                <polyline points="44 51 44 -1 -8 -1 -8 51" fill="none" />
+                                <path d="M 16 8 L 16 8 c 8.3 0 15 6.7 15 15 s -6.7 15 -15 15 S 1 31.3 1 23 S 7.7 8 16 8 z" fill="#ffffff" />
+                                <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" d="M 16 8 L 16 8 c 8.3 0 15 6.7 15 15 s -6.7 15 -15 15 S 1 31.3 1 23 S 7.7 8 16 8 z" fill="none" stroke="#c7c6c6" />
+                              </symbol>
+                              <symbol id="481ee476-f81e-4bf8-919e-9c1ca5b12dfd" template-id="state-off">
+                                <path opacity="0" d="M 4.5 0.5 h 42 c 2.2 0 4 1.8 4 4 v 37 c 0 2.2 -1.8 4 -4 4 h -42 c -2.2 0 -4 -1.8 -4 -4 v -37 C 0.5 2.3 2.3 0.5 4.5 0.5 z" fill="#ffffff" />
+                                <path d="M 16 8 h 20 c 8.3 0 15 6.7 15 15 s -6.7 15 -15 15 H 16 C 7.7 38 1 31.3 1 23 S 7.7 8 16 8 z" fill="#ffffff" />
+                                <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" d="M 16 8 h 20 c 8.3 0 15 6.7 15 15 s -6.7 15 -15 15 H 16 C 7.7 38 1 31.3 1 23 S 7.7 8 16 8 z" fill="none" stroke="#e3e3e3" />
+                                <image xlink:href="data:image/png;base64,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" overflow="visible" width="104" height="104" transform="matrix(0.5 0 0 0.5 -8 -1)" />
+                                <polyline points="44 51 44 -1 -8 -1 -8 51" fill="none" />
+                                <path d="M 16 8 L 16 8 c 8.3 0 15 6.7 15 15 s -6.7 15 -15 15 S 1 31.3 1 23 S 7.7 8 16 8 z" fill="#ffffff" />
+                                <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" d="M 16 8 L 16 8 c 8.3 0 15 6.7 15 15 s -6.7 15 -15 15 S 1 31.3 1 23 S 7.7 8 16 8 z" fill="none" stroke="#c7c6c6" />
+                              </symbol>
+                            </g>
+                          </svg>
+                        </svg>
+                      </g>
+                    </g>
+                  </svg>
+                </svg>
+              </g>
+            </g>
+          </svg>
+        </svg>
+        <svg widget-name="horinzontalView5" eObject-URI="settings.page#/0/@children.3" width="414" height="212" y="472">
+          <rect template-id="background" width="100%" height="100%" fill="#eaeaea" />
+          <svg template-id="content-box">
+            <g template-id="content">
+              <g template-id="children-content">
+                <svg widget-name="label" eObject-URI="settings.page#/0/@children.3/@children.0" x="5" y="96" width="404" height="20">
+                  <svg template-id="content-box" width="404" height="20">
+                    <g template-id="content">
+                      <text text-anchor="middle" alignment-baseline="central" font-size="18" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="202" y="10" fill="#0">SimplyE Version 1.0.3</text>
+                    </g>
+                  </svg>
+                </svg>
+              </g>
+            </g>
+          </svg>
+        </svg>
+        <svg widget-name="toolBar" eObject-URI="settings.page#/0/@children.4" width="414" height="52" y="684">
+          <svg template-id="content-box">
+            <g template-id="content">
+              <g template-id="children-content">
+                <svg widget-name="toolBarItem1" eObject-URI="settings.page#/0/@children.4/@children.0" width="105" height="52">
+                  <svg template-id="content-box">
+                    <g template-id="content">
+                      <g template-id="children-content">
+                        <svg widget-id="image" eObject-URI="settings.page#/0/@children.4/@children.0/@children.0" widget-name="icon1" x="38" y="2" width="28" height="28">
+                          <svg template-id="content-box" width="28" height="28">
+                            <g template-id="content">
+                              <image xlink:href="Assets/Catalog@2x_red.png" template-id="node-image" width="100%" height="100%" />
+                            </g>
+                          </svg>
+                        </svg>
+                        <svg widget-id="label" eObject-URI="settings.page#/0/@children.4/@children.0/@children.1" widget-name="caption1" x="11" y="32" width="83" height="20">
+                          <svg template-id="content-box" width="83" height="20">
+                            <g template-id="content">
+                              <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="41.5" y="10" fill="#0">Categories</text>
+                            </g>
+                          </svg>
+                        </svg>
+                      </g>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="toolBarItem2" eObject-URI="settings.page#/0/@children.4/@children.1" x="105" width="103" height="52">
+                  <svg template-id="content-box">
+                    <g template-id="content">
+                      <g template-id="children-content">
+                        <svg widget-id="image" eObject-URI="settings.page#/0/@children.4/@children.1/@children.0" widget-name="icon2" x="37" y="2" width="28" height="28">
+                          <svg template-id="content-box" width="28" height="28">
+                            <g template-id="content">
+                              <image xlink:href="Assets/Search.png" template-id="node-image" width="100%" height="100%" />
+                            </g>
+                          </svg>
+                        </svg>
+                        <svg widget-id="label" eObject-URI="settings.page#/0/@children.4/@children.1/@children.1" widget-name="caption2" x="24" y="32" width="54" height="20">
+                          <svg template-id="content-box" width="54" height="20">
+                            <g template-id="content">
+                              <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="27" y="10" fill="#0">Search</text>
+                            </g>
+                          </svg>
+                        </svg>
+                      </g>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="toolBarItem3" eObject-URI="settings.page#/0/@children.4/@children.2" x="208" width="103" height="52">
+                  <svg template-id="content-box">
+                    <g template-id="content">
+                      <g template-id="children-content">
+                        <svg widget-id="image" eObject-URI="settings.page#/0/@children.4/@children.2/@children.0" widget-name="icon3" x="37" y="2" width="28" height="28">
+                          <svg template-id="content-box" width="28" height="28">
+                            <g template-id="content">
+                              <image xlink:href="Assets/black-64bt-favorite-icon.svg" template-id="node-image" width="100%" height="100%" />
+                            </g>
+                          </svg>
+                        </svg>
+                        <svg widget-id="label" eObject-URI="settings.page#/0/@children.4/@children.2/@children.1" widget-name="caption3" x="16" y="32" width="70" height="20">
+                          <svg template-id="content-box" width="70" height="20">
+                            <g template-id="content">
+                              <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="35" y="10" fill="#0">Favorites</text>
+                            </g>
+                          </svg>
+                        </svg>
+                      </g>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="toolBarItem4" eObject-URI="settings.page#/0/@children.4/@children.3" x="311" width="103" height="52">
+                  <svg template-id="content-box">
+                    <g template-id="content">
+                      <g template-id="children-content">
+                        <svg widget-id="image" eObject-URI="settings.page#/0/@children.4/@children.3/@children.0" widget-name="icon4" x="37" y="2" width="28" height="28">
+                          <svg template-id="content-box" width="28" height="28">
+                            <g template-id="content">
+                              <image xlink:href="Assets/more-button-of-three-dots_red.svg" template-id="node-image" width="100%" height="100%" />
+                            </g>
+                          </svg>
+                        </svg>
+                        <svg widget-id="label" eObject-URI="settings.page#/0/@children.4/@children.3/@children.1" widget-name="caption4" x="31" y="32" width="40" height="20">
+                          <svg template-id="content-box" width="40" height="20">
+                            <g template-id="content">
+                              <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="20" y="10" fill="#c21917">More</text>
+                            </g>
+                          </svg>
+                        </svg>
+                      </g>
+                    </g>
+                  </svg>
+                </svg>
+              </g>
+            </g>
+          </svg>
+        </svg>
+      </g>
+    </g>
+  </svg>
+</svg>
