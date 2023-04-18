@@ -18,12 +18,18 @@ class SearchPageAdapter: SCDLatticePageAdapter {
     self.fetchHorrorBooks()
     self.fetchHealthBooks()
 
+    dump(FavoritedDatabase.favoriteDB.allBooks)
+
     self.toolBarItem1.onClick { _ in
       self.goToPage()
     }
-    
+
     self.toolBarItem3.onClick { _ in
-    	self.navigation?.go(page: "settings.page")
+      self.goToFavoritesPage()
+    }
+
+    self.toolBarItem4.onClick { _ in
+      self.goToSettingsPage()
     }
 
     self.ctrlListBooks.elementProvider { (book: Book, element) in
@@ -62,7 +68,7 @@ class SearchPageAdapter: SCDLatticePageAdapter {
       element.onClick.append(
         SCDWidgetsEventHandler { [weak book] event in
           guard let book = book else { return }
-          self.navigation?.goWith(page: "bookDetail.page", data: book, transition: .FROM_RIGHT)
+          self.navigation?.goWith(page: "BookDetail.page", data: book, transition: .FROM_RIGHT)
         })
 
     }
@@ -103,6 +109,9 @@ class SearchPageAdapter: SCDLatticePageAdapter {
                 case .success(let titles):
                   self?.ctrlListBooks.items = titles
 
+                  // Trying to add these searched books to the allBooks property in the FavoritedDatabase.swift file
+                  FavoritedDatabase.favoriteDB.allBooks.append(contentsOf: titles)
+
                 case .failure(let error):
                   print(error.localizedDescription)
                 }
@@ -123,6 +132,7 @@ class SearchPageAdapter: SCDLatticePageAdapter {
       case .success(let abooks):
         DispatchQueue.main.async {
           self?.ctrlListBooks.items.append(contentsOf: abooks)
+          FavoritedDatabase.favoriteDB.allBooks.append(contentsOf: abooks)
         }
       case .failure(let error):
         print(error.localizedDescription)
@@ -136,6 +146,9 @@ class SearchPageAdapter: SCDLatticePageAdapter {
       case .success(let fanbooks):
         DispatchQueue.main.async {
           self?.ctrlListBooks.items.append(contentsOf: fanbooks)
+
+          // Trying to add these books to the allBooks property in the FavoritedDatabase.swift file
+          FavoritedDatabase.favoriteDB.allBooks.append(contentsOf: fanbooks)
         }
       case .failure(let error):
         print(error.localizedDescription)
@@ -149,6 +162,9 @@ class SearchPageAdapter: SCDLatticePageAdapter {
       case .success(let hobooks):
         DispatchQueue.main.async {
           self?.ctrlListBooks.items.append(contentsOf: hobooks)
+
+          // Trying to add these books to the allBooks property in the FavoritedDatabase.swift file
+          FavoritedDatabase.favoriteDB.allBooks.append(contentsOf: hobooks)
         }
       case .failure(let error):
         print(error.localizedDescription)
@@ -163,6 +179,9 @@ class SearchPageAdapter: SCDLatticePageAdapter {
       case .success(let hebooks):
         DispatchQueue.main.async {
           self?.ctrlListBooks.items.append(contentsOf: hebooks)
+
+          // Trying to add these books to the allBooks property in the FavoritedDatabase.swift file
+          FavoritedDatabase.favoriteDB.allBooks.append(contentsOf: hebooks)
         }
       case .failure(let error):
         print(error.localizedDescription)
@@ -174,16 +193,24 @@ class SearchPageAdapter: SCDLatticePageAdapter {
     self.navigation?.go(page: "main.page")
   }
 
+  func goToFavoritesPage() {
+    self.navigation?.go(page: "favorited.page")
+  }
+
+  func goToSettingsPage() {
+    self.navigation?.go(page: "settings.page")
+  }
+
 }
 
-public extension SCDSvgRGBColor {
+extension SCDSvgRGBColor {
 
-  convenience init(widgetRGB color: SCDGraphicsRGB) {
+  public convenience init(widgetRGB color: SCDGraphicsRGB) {
     self.init(red: color.red, green: color.green, blue: color.blue, alpha: color.alpha)
   }
 }
 
-public extension SCDWidgetsWidget {
+extension SCDWidgetsWidget {
 
   /// Find the child element of svg part of widget with `template-id` attribute equals to `id`.
   ///
@@ -193,7 +220,7 @@ public extension SCDWidgetsWidget {
   /// - Parameters:
   ///   - id: The value of `template-id` attribute of child element.
   /// - Returns: A drawable child element.
-  func findSvgElementBy(template id: String) -> SCDSvgElement? {
+  public func findSvgElementBy(template id: String) -> SCDSvgElement? {
     guard let container = self.drawing as? SCDSvgContainerElement else { return nil }
 
     return container.children.first(where: { $0.attributes["template-id"] == id })
@@ -209,19 +236,23 @@ public extension SCDWidgetsWidget {
   ///   - id: The value of `template-id` attribute of child element.
   ///   - type: The type of child element.
   /// - Returns: A drawable child element.
-  func findSvgElementBy<Result: SCDSvgElement>(template id: String, as type: Result.Type) -> Result? {
+  public func findSvgElementBy<Result: SCDSvgElement>(template id: String, as type: Result.Type)
+    -> Result?
+  {
     return findSvgElementBy(template: id) as? Result
   }
 
   /// Background svg image of current widget.
-  var backgroundSvgImage: SCDSvgImage? { self.backgroundSvgElement as? SCDSvgImage }
+  public var backgroundSvgImage: SCDSvgImage? { self.backgroundSvgElement as? SCDSvgImage }
 
   /// Background svg rect of current widget.
-  var backgroundSvgRect: SCDSvgRect? { self.backgroundSvgElement as? SCDSvgRect }
+  public var backgroundSvgRect: SCDSvgRect? { self.backgroundSvgElement as? SCDSvgRect }
 
   /// Background svg element of current widget.
-  var backgroundSvgElement: SCDSvgElement? { self.findSvgElementBy(template: "background") }
+  public var backgroundSvgElement: SCDSvgElement? { self.findSvgElementBy(template: "background") }
 
   /// Content group of current widget.
-  var svgContent: SCDSvgGroup? { self.drawing?.findByAttribute("template-id", value: "content") as? SCDSvgGroup }
+  public var svgContent: SCDSvgGroup? {
+    self.drawing?.findByAttribute("template-id", value: "content") as? SCDSvgGroup
+  }
 }

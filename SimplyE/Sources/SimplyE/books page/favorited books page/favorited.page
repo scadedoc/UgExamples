@@ -1,10 +1,10 @@
 <?xml  version="1.0" encoding="UTF-8" standalone="no"?>
 <xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgetlayouts="http://scade.com/sdk/view/widgets/layout" xmlns:widgets="http://scade.com/sdk/view/widgets">
-  <widgets:Page name="search">
+  <widgets:Page name="favorited ">
     <minArea width="414" height="736"/>
     <location/>
     <backgroundColor Red="248" Green="248" Blue="248"/>
-    <children xsi:type="widgets:Label" text="Search" paddingLeft="20" name="searchLabelTitle" paddingTop="10">
+    <children xsi:type="widgets:Label" text="Favorites" paddingLeft="20" name="favoriteLabelTitle" paddingTop="10">
       <font fontFamily="ArialMT" size="25">
         <color Red="70" Green="70" Blue="70"/>
       </font>
@@ -13,35 +13,13 @@
       </layoutData>
       <location/>
       <size width="414" height="39"/>
-      <contentSize width="80" height="29"/>
+      <contentSize width="103" height="29"/>
     </children>
-    <children xsi:type="widgets:RowView" paddingLeft="20" name="horizontalTextboxView" paddingRight="20" paddingTop="20" paddingBottom="20">
-      <children xsi:type="widgets:Textbox" placeholder="Search for any Book of any Category" cornerRadius="7" name="textbox" paddingTop="5" paddingLeft="5" paddingRight="5" paddingBottom="5">
-        <font fontFamily="ArialMT" size="15">
-          <color Red="191" Green="191" Blue="191"/>
-        </font>
-        <location x="20" y="20"/>
-        <size width="374" height="27"/>
-        <contentSize width="374" height="17"/>
-        <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
-          <maxSize width="-1" height="-1"/>
-        </layoutData>
-        <backgroundColor Red="243" Green="243" Blue="243"/>
-      </children>
-      <layout xsi:type="layout:GridLayout" columns="2"/>
-      <maxArea width="-1" height="-1"/>
-      <location y="39"/>
-      <minArea/>
-      <size width="414" height="67"/>
-      <layoutData xsi:type="layout:GridData" row="1" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
-        <maxSize width="-1" height="-1"/>
-      </layoutData>
-    </children>
-    <children xsi:type="widgets:List" name="ctrlListBooks">
+    <children xsi:type="widgets:List" paddingTop="20" name="ctrlListBooks">
       <template name="template">
         <element name="listElement">
           <minArea height="45"/>
-          <location/>
+          <location y="20"/>
           <backgroundColor Red="255" Green="255" Blue="255"/>
           <children xsi:type="widgets:Image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDZGQjRCRUYyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDZGQjRCRjAyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpENkZCNEJFRDI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpENkZCNEJFRTI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmri+DQAAAS8SURBVHja7JxdK2xRGMfPnHPChUGHGIphmCGN8lYahdyQQi7kI/hOfALFhaSk3CLlLTZ5G2YoQ+MtjULU+befWu323uaME5PZ/v+L3Zq1n732Wr/9rGc9aymusbGxH1Rq+kkEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVY316/U7QbHR3F9eLiYmZmhp5FERZhERZhfc/VMMkSOT8/H41GGxoaqqqqPB6PLJp7e3sHBwdiFggE6urqbG8ZhRbKysoKCwtzc3Px8+bmJhKJaJr2+PhoNc7JyQkGg7BXzZ6cnGxvb3u93t7eXtSMj4+/9QrYoPz8/ByLxdAZdD4dsER5eXnd3d1+v1/VeHQVFRUtLS3Z3sIjq6urxkYGBwdl2Ep/dFVWVs7Ozpp4lZSU9PX1ZWVlmZqtra3d2tqy7STg9vf3o0FVg8e9utbX102d+URY+FzwBbjA7u7u3d0d/Ki9vR1dwZfPzs4GqcPDw42NDeOt5ubmo6Mj1KhGrq6ucMV3Pj09BRpxHJhheF1dXXBeZVlQUCCk4BqaLtgDX2NjI0aO9m07KaQSiQS4iF+jnaamJnQPb7m/v7d1dpN+DQwMpEKkpaUFV7xsf3/fVIl+o8dwIvn+19fXt7e3NTU1KGNOwckXFhbUrdfX1/LycnkKs0w1FY/Hd3Z2YPDy8oKfuJ6fn7tcrtLSUowqHA4r5+rp6cnPz0cBHofPIPYPDw+wgcMWFxeL2drammq8tbXV5/MB7uTk5OXlpVSiQXQA7o/2ccUUTlOAhycbfwIQsEp5ZWXFeAt9QqdRcLvdxnrbwHR2diYFhQADk9kKTGrYSsvLy9K4SXBSXG3D3+bmJq6YGfDNdMBCcLV2QsEyzjURIrdEmX+2rHDAZaQgDgsdHx9b7dENadwU4CS6YeIneYX6Hp8bsz5QGBgmKRYsDM8YjI1RWTlvim3KrIdGRkaSmCG8ZgwszK/Ozk7lbnBMOKzVARFcMjXP+ihh7RsaGpIFDoEZ8UjNa0nlPkS2mVfmZfChUEhITU9PYwWwDfYiLJFqwqbYONKC9z7ypWEhP5DAb1oN4HFvjby6utrWQ63rBhI3KdTX1zsBluxv5GoU0kVTDVJHWWeRDVg9BR5qu0RiXqOA/BP5c8bDksEAFvZG4k2I99jigYg1b1pcXJQC8ngMXuwBDvbAYZtnqfwLNJHiGykj6UfKKrvFzAjw2Ayhuwhbfl3GQarNuTHjRb2EuZCu5PbiXHNzcx0dHUhHgrqsSXUquciXgIVQNTExgWEjeMG/MNFisRh2msgYkXPJtsm0DUByj52d2BvPDwBLThSsyefU1JTpYCOhC4uG2iokl8th/zFkeHgY7vNJf1hx1OEfIp3k/XKGQVjJ1NbWJoVwOOzYDP4/5lokEonH4xKVsSBWVFSow1hN06wHEt8UViAQkENU27tysubkveG7hLz06enJ5/O53W6VJSCiI07JUa3DN9LvVVRX+t/LP4URFmERFmERFkVYhEVYhEVYhEURFmERFmERFmFRhEVYhEVYhEVYFGERFmERFmERFkVYhEVYhEVYDtVfAQYA9Kg8ERKqtwIAAAAASUVORK5CYII=" name="image">
             <location/>
@@ -133,19 +111,19 @@
         <location/>
         <size/>
       </template>
-      <size width="414" height="578"/>
+      <size width="414" height="645"/>
       <layout xsi:type="widgetlayouts:ListLayout"/>
       <maxArea width="-1" height="-1"/>
-      <location y="106"/>
+      <location y="39"/>
       <minArea/>
-      <layoutData xsi:type="layout:GridData" row="2" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT">
+      <layoutData xsi:type="layout:GridData" row="1" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT">
         <maxSize width="-1" height="-1"/>
       </layoutData>
     </children>
     <children xsi:type="widgets:ToolBar" name="toolBar">
       <children xsi:type="widgets:ToolBarItem" name="toolBarItem1">
         <children xsi:type="widgets:Image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABRCAMAAAB7eHFAAAACiFBMVEUAAAAAAACAgIBVVVWAgIBmZmaAgICSkpKAgICOjo6AgICLi4uAgICJiYmSkpKIiIiPj4+Hh4eOjo6GhoaMjIySkpKLi4uQkJCKioqPj4+JiYmOjo6SkpKNjY2MjIyPj4+Pj4+SkpKOjo6RkZGNjY2QkJCMjIyPj4+SkpKOjo6RkZGOjo6NjY2Pj4+Pj4+RkZGOjo6QkJCOjo6SkpKPj4+RkZGPj4+QkJCSkpKPj4+RkZGRkZGPj4+QkJCSkpKQkJCRkZGPj4+RkZGPj4+QkJCSkpKQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGPj4+SkpKRkZGQkJCRkZGPj4+RkZGQkJCRkZGQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGSkpKRkZGQkJCSkpKRkZGRkZGRkZGQkJCRkZGSkpKSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKSkpIWRJMCAAAA13RSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0fICIjJCUmJygpKissLS8wMjM0NTY4OTo7Pj9AQUNERUZHSElKS0xNTk9RVFVWV1hZW11eX2BhY2RlZmhpamtsbW5vcXR1dnd4enx9f4CBgoOFh4iJiouMjY+QkZKTlJWXmJmam52foKGjpKWnqaqrrK2usLGys7W2t7i5uru8vr/Aw8TFxsfIyczNz9DR0tPU1dbX2Nna29zd3+Dh4uPk5ebn6Onq6+zt7/Dx8vP09fb3+Pn6+/z9/mBbZ+MAAAQJSURBVHgBvdfpd1NVF8fxX5NAAoWHPAwCWtQKalUGkAKKIii0QFWgigoqKChYQXAQKdQiteDAICgyWFEUQUBFBgcBRRlKW6BD04bk+++49K6VJl3JHZqz/Lw6L89vn+zsfeXagAky76lKmVfzV45M6xulUKbNhVUybReckmF92oARMmsOwEqZtQPguIzqHQHgVpk0C6JReEkmbYdPd8JhGZTbAjNLgBtlTgk0BEOXYZHM2QLrpSr4Wsb0aILx0niIDZIpM7Ba9BTMlymbYJkkLYfPZUjwKuRLUj5E/y8zihIPtB8ekxnvwzzrNA92yIhuDUTC1jEcobWXTHgQtkqWj+BhmbABpiWVd4sMCNRTG0iUopbGkLI3CdYqYS0UKXtVMEoJo+E9Zc1fmzpFTlAfULYmwhIlWQr3K1vriOUpSV6Md+SkeLG9i+xVii+4uNhesXKrcVCqFKU4eDdXUnEtdppylaJXE3YuTde/Bu4C4LOqtBaok4VVaVVfAdjTMRqebQEaZioL138JtC5UktuOAFT3VFcV1QHfFShFt9djwMkR6pJgBRBf1V2dTTgDRJ7PkXe3/wCcnag0+nwIsPs6efVkM7Al0/B6tAE4/4A8CW8FrpQqoyH7ErVxa9wZYP9NsuF7oQ04PFQu+cquQbTML3sjjgONj8uVG/YBv4yRo1BFHNjcR86m11mt7sbkc8DpQjkIVVqt7lK/j4FomU92Co5are7eE43AV3nKbF6L1epe5B8E6mcog/A2q9U98q8AapRBIbC6uzy7B5irDHLOdm3+rYG2sDIp79r8P2O7NhbC1R7yaiQwS7LL/4i8WgnNvZRZOeyUV8cclsZCaO8nb24BZkj2+Z+RNy/ClaDslMMBeXOw808m+MbW/ko2DrhZXgyOwxQlGX4ULkzrnP9lefE01AWU4FvaBkB179T8P8mLGlivhPxvsHB6Qmr+MXIv3A73dvzLNQGRRQubgdhbweT8a+TebDjnk2XwboDjw6WhBwCOjUzKf8Ev17Z13KGkHmBdD0nyLYkA7WX+jvxT5FaoCcZaddgEUJt49juPABwalsj/gdwqhtP6x6Q/AfYMVEJgeRRoWZBj5bdWYlc2wmuSer4dT7OzjToGsHeIlZ/ZcsdfB8Olu38G+PEudRJ8MwZcnmPl3+3+0+mkuq24BlARSrc//Qqwvb/KIepyS6yAZQVHAC4+pLR6VsaBC0XjgOfkyh+wvhVgV+Zb3Pc7wMYGOCQ3RmNpXSAb/9uAhaFy4VUAOHqH7E09BwCvyIUTAPE1QTnpuxmA3+RsGMD5yXKj5BLAWDlaCuwcIHcGfgJUytG3tHgZaKWXuRRw3Ljj3xfIi7wapjoOktVBeTS/2rFK8m6Q/gN/A0O640AHZc9eAAAAAElFTkSuQmCC" url="Assets/Catalog@2x_red.png" contentPriority="false" name="icon1">
-          <location x="55" y="2"/>
+          <location x="38" y="2"/>
           <size width="28" height="28"/>
           <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true">
             <minSize width="28" height="28"/>
@@ -160,7 +138,7 @@
             <minSize width="32" height="19"/>
             <maxSize width="-1" height="-1"/>
           </layoutData>
-          <location x="27" y="32"/>
+          <location x="11" y="32"/>
           <size width="83" height="20"/>
           <contentSize width="83" height="20"/>
         </children>
@@ -168,14 +146,14 @@
         <maxArea width="-1" height="-1"/>
         <location/>
         <minArea width="45" height="52"/>
-        <size width="138" height="52"/>
+        <size width="105" height="52"/>
         <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" grabHorizontalSpace="true">
           <maxSize width="-1" height="-1"/>
         </layoutData>
       </children>
       <children xsi:type="widgets:ToolBarItem" name="toolBarItem2">
-        <children xsi:type="widgets:Image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABRCAMAAAB7eHFAAAACiFBMVEUAAAAAAACAgIBVVVWAgIBmZmaAgICSkpKAgICOjo6AgICLi4uAgICJiYmSkpKIiIiPj4+Hh4eOjo6GhoaMjIySkpKLi4uQkJCKioqPj4+JiYmOjo6SkpKNjY2MjIyPj4+Pj4+SkpKOjo6RkZGNjY2QkJCMjIyPj4+SkpKOjo6RkZGOjo6NjY2Pj4+Pj4+RkZGOjo6QkJCOjo6SkpKPj4+RkZGPj4+QkJCSkpKPj4+RkZGRkZGPj4+QkJCSkpKQkJCRkZGPj4+RkZGPj4+QkJCSkpKQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGPj4+SkpKRkZGQkJCRkZGPj4+RkZGQkJCRkZGQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGSkpKRkZGQkJCSkpKRkZGRkZGRkZGQkJCRkZGSkpKSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKSkpIWRJMCAAAA13RSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0fICIjJCUmJygpKissLS8wMjM0NTY4OTo7Pj9AQUNERUZHSElKS0xNTk9RVFVWV1hZW11eX2BhY2RlZmhpamtsbW5vcXR1dnd4enx9f4CBgoOFh4iJiouMjY+QkZKTlJWXmJmam52foKGjpKWnqaqrrK2usLGys7W2t7i5uru8vr/Aw8TFxsfIyczNz9DR0tPU1dbX2Nna29zd3+Dh4uPk5ebn6Onq6+zt7/Dx8vP09fb3+Pn6+/z9/mBbZ+MAAAQJSURBVHgBvdfpd1NVF8fxX5NAAoWHPAwCWtQKalUGkAKKIii0QFWgigoqKChYQXAQKdQiteDAICgyWFEUQUBFBgcBRRlKW6BD04bk+++49K6VJl3JHZqz/Lw6L89vn+zsfeXagAky76lKmVfzV45M6xulUKbNhVUybReckmF92oARMmsOwEqZtQPguIzqHQHgVpk0C6JReEkmbYdPd8JhGZTbAjNLgBtlTgk0BEOXYZHM2QLrpSr4Wsb0aILx0niIDZIpM7Ba9BTMlymbYJkkLYfPZUjwKuRLUj5E/y8zihIPtB8ekxnvwzzrNA92yIhuDUTC1jEcobWXTHgQtkqWj+BhmbABpiWVd4sMCNRTG0iUopbGkLI3CdYqYS0UKXtVMEoJo+E9Zc1fmzpFTlAfULYmwhIlWQr3K1vriOUpSV6Md+SkeLG9i+xVii+4uNhesXKrcVCqFKU4eDdXUnEtdppylaJXE3YuTde/Bu4C4LOqtBaok4VVaVVfAdjTMRqebQEaZioL138JtC5UktuOAFT3VFcV1QHfFShFt9djwMkR6pJgBRBf1V2dTTgDRJ7PkXe3/wCcnag0+nwIsPs6efVkM7Al0/B6tAE4/4A8CW8FrpQqoyH7ErVxa9wZYP9NsuF7oQ04PFQu+cquQbTML3sjjgONj8uVG/YBv4yRo1BFHNjcR86m11mt7sbkc8DpQjkIVVqt7lK/j4FomU92Co5are7eE43AV3nKbF6L1epe5B8E6mcog/A2q9U98q8AapRBIbC6uzy7B5irDHLOdm3+rYG2sDIp79r8P2O7NhbC1R7yaiQwS7LL/4i8WgnNvZRZOeyUV8cclsZCaO8nb24BZkj2+Z+RNy/ClaDslMMBeXOw808m+MbW/ko2DrhZXgyOwxQlGX4ULkzrnP9lefE01AWU4FvaBkB179T8P8mLGlivhPxvsHB6Qmr+MXIv3A73dvzLNQGRRQubgdhbweT8a+TebDjnk2XwboDjw6WhBwCOjUzKf8Ev17Z13KGkHmBdD0nyLYkA7WX+jvxT5FaoCcZaddgEUJt49juPABwalsj/gdwqhtP6x6Q/AfYMVEJgeRRoWZBj5bdWYlc2wmuSer4dT7OzjToGsHeIlZ/ZcsdfB8Olu38G+PEudRJ8MwZcnmPl3+3+0+mkuq24BlARSrc//Qqwvb/KIepyS6yAZQVHAC4+pLR6VsaBC0XjgOfkyh+wvhVgV+Zb3Pc7wMYGOCQ3RmNpXSAb/9uAhaFy4VUAOHqH7E09BwCvyIUTAPE1QTnpuxmA3+RsGMD5yXKj5BLAWDlaCuwcIHcGfgJUytG3tHgZaKWXuRRw3Ljj3xfIi7wapjoOktVBeTS/2rFK8m6Q/gN/A0O640AHZc9eAAAAAElFTkSuQmCC" url="Assets/magnifyingglass-red.svg" contentPriority="false" name="icon2">
-          <location x="55" y="2"/>
+        <children xsi:type="widgets:Image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABRCAMAAAB7eHFAAAACiFBMVEUAAAAAAACAgIBVVVWAgIBmZmaAgICSkpKAgICOjo6AgICLi4uAgICJiYmSkpKIiIiPj4+Hh4eOjo6GhoaMjIySkpKLi4uQkJCKioqPj4+JiYmOjo6SkpKNjY2MjIyPj4+Pj4+SkpKOjo6RkZGNjY2QkJCMjIyPj4+SkpKOjo6RkZGOjo6NjY2Pj4+Pj4+RkZGOjo6QkJCOjo6SkpKPj4+RkZGPj4+QkJCSkpKPj4+RkZGRkZGPj4+QkJCSkpKQkJCRkZGPj4+RkZGPj4+QkJCSkpKQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGPj4+SkpKRkZGQkJCRkZGPj4+RkZGQkJCRkZGQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGSkpKRkZGQkJCSkpKRkZGRkZGRkZGQkJCRkZGSkpKSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKSkpIWRJMCAAAA13RSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0fICIjJCUmJygpKissLS8wMjM0NTY4OTo7Pj9AQUNERUZHSElKS0xNTk9RVFVWV1hZW11eX2BhY2RlZmhpamtsbW5vcXR1dnd4enx9f4CBgoOFh4iJiouMjY+QkZKTlJWXmJmam52foKGjpKWnqaqrrK2usLGys7W2t7i5uru8vr/Aw8TFxsfIyczNz9DR0tPU1dbX2Nna29zd3+Dh4uPk5ebn6Onq6+zt7/Dx8vP09fb3+Pn6+/z9/mBbZ+MAAAQJSURBVHgBvdfpd1NVF8fxX5NAAoWHPAwCWtQKalUGkAKKIii0QFWgigoqKChYQXAQKdQiteDAICgyWFEUQUBFBgcBRRlKW6BD04bk+++49K6VJl3JHZqz/Lw6L89vn+zsfeXagAky76lKmVfzV45M6xulUKbNhVUybReckmF92oARMmsOwEqZtQPguIzqHQHgVpk0C6JReEkmbYdPd8JhGZTbAjNLgBtlTgk0BEOXYZHM2QLrpSr4Wsb0aILx0niIDZIpM7Ba9BTMlymbYJkkLYfPZUjwKuRLUj5E/y8zihIPtB8ekxnvwzzrNA92yIhuDUTC1jEcobWXTHgQtkqWj+BhmbABpiWVd4sMCNRTG0iUopbGkLI3CdYqYS0UKXtVMEoJo+E9Zc1fmzpFTlAfULYmwhIlWQr3K1vriOUpSV6Md+SkeLG9i+xVii+4uNhesXKrcVCqFKU4eDdXUnEtdppylaJXE3YuTde/Bu4C4LOqtBaok4VVaVVfAdjTMRqebQEaZioL138JtC5UktuOAFT3VFcV1QHfFShFt9djwMkR6pJgBRBf1V2dTTgDRJ7PkXe3/wCcnag0+nwIsPs6efVkM7Al0/B6tAE4/4A8CW8FrpQqoyH7ErVxa9wZYP9NsuF7oQ04PFQu+cquQbTML3sjjgONj8uVG/YBv4yRo1BFHNjcR86m11mt7sbkc8DpQjkIVVqt7lK/j4FomU92Co5are7eE43AV3nKbF6L1epe5B8E6mcog/A2q9U98q8AapRBIbC6uzy7B5irDHLOdm3+rYG2sDIp79r8P2O7NhbC1R7yaiQwS7LL/4i8WgnNvZRZOeyUV8cclsZCaO8nb24BZkj2+Z+RNy/ClaDslMMBeXOw808m+MbW/ko2DrhZXgyOwxQlGX4ULkzrnP9lefE01AWU4FvaBkB179T8P8mLGlivhPxvsHB6Qmr+MXIv3A73dvzLNQGRRQubgdhbweT8a+TebDjnk2XwboDjw6WhBwCOjUzKf8Ev17Z13KGkHmBdD0nyLYkA7WX+jvxT5FaoCcZaddgEUJt49juPABwalsj/gdwqhtP6x6Q/AfYMVEJgeRRoWZBj5bdWYlc2wmuSer4dT7OzjToGsHeIlZ/ZcsdfB8Olu38G+PEudRJ8MwZcnmPl3+3+0+mkuq24BlARSrc//Qqwvb/KIepyS6yAZQVHAC4+pLR6VsaBC0XjgOfkyh+wvhVgV+Zb3Pc7wMYGOCQ3RmNpXSAb/9uAhaFy4VUAOHqH7E09BwCvyIUTAPE1QTnpuxmA3+RsGMD5yXKj5BLAWDlaCuwcIHcGfgJUytG3tHgZaKWXuRRw3Ljj3xfIi7wapjoOktVBeTS/2rFK8m6Q/gN/A0O640AHZc9eAAAAAElFTkSuQmCC" url="Assets/Search.png" contentPriority="false" name="icon2">
+          <location x="37" y="2"/>
           <size width="28" height="28"/>
           <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true">
             <minSize width="28" height="28"/>
@@ -184,35 +162,65 @@
         </children>
         <children xsi:type="widgets:Label" text="Search" name="caption2" horizontalAlignment="CENTER">
           <font fontFamily="HelveticaNeue" size="17">
-            <color Red="254" Green="54" Blue="62"/>
+            <color/>
           </font>
           <layoutData xsi:type="layout:GridData" row="1" horizontalAlignment="CENTER" grabHorizontalSpace="true">
             <minSize width="32" height="19"/>
             <maxSize width="-1" height="-1"/>
           </layoutData>
-          <location x="42" y="32"/>
+          <location x="24" y="32"/>
           <size width="54" height="20"/>
           <contentSize width="54" height="20"/>
         </children>
         <layout xsi:type="layout:GridLayout" rows="2"/>
         <maxArea width="-1" height="-1"/>
-        <location x="138"/>
+        <location x="105"/>
         <minArea width="45" height="52"/>
-        <size width="138" height="52"/>
+        <size width="103" height="52"/>
         <layoutData xsi:type="layout:GridData" column="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT">
           <maxSize width="-1" height="-1"/>
         </layoutData>
       </children>
       <children xsi:type="widgets:ToolBarItem" name="toolBarItem3">
-        <children xsi:type="widgets:Image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABRCAMAAAB7eHFAAAACiFBMVEUAAAAAAACAgIBVVVWAgIBmZmaAgICSkpKAgICOjo6AgICLi4uAgICJiYmSkpKIiIiPj4+Hh4eOjo6GhoaMjIySkpKLi4uQkJCKioqPj4+JiYmOjo6SkpKNjY2MjIyPj4+Pj4+SkpKOjo6RkZGNjY2QkJCMjIyPj4+SkpKOjo6RkZGOjo6NjY2Pj4+Pj4+RkZGOjo6QkJCOjo6SkpKPj4+RkZGPj4+QkJCSkpKPj4+RkZGRkZGPj4+QkJCSkpKQkJCRkZGPj4+RkZGPj4+QkJCSkpKQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGPj4+SkpKRkZGQkJCRkZGPj4+RkZGQkJCRkZGQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGSkpKRkZGQkJCSkpKRkZGRkZGRkZGQkJCRkZGSkpKSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKSkpIWRJMCAAAA13RSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0fICIjJCUmJygpKissLS8wMjM0NTY4OTo7Pj9AQUNERUZHSElKS0xNTk9RVFVWV1hZW11eX2BhY2RlZmhpamtsbW5vcXR1dnd4enx9f4CBgoOFh4iJiouMjY+QkZKTlJWXmJmam52foKGjpKWnqaqrrK2usLGys7W2t7i5uru8vr/Aw8TFxsfIyczNz9DR0tPU1dbX2Nna29zd3+Dh4uPk5ebn6Onq6+zt7/Dx8vP09fb3+Pn6+/z9/mBbZ+MAAAQJSURBVHgBvdfpd1NVF8fxX5NAAoWHPAwCWtQKalUGkAKKIii0QFWgigoqKChYQXAQKdQiteDAICgyWFEUQUBFBgcBRRlKW6BD04bk+++49K6VJl3JHZqz/Lw6L89vn+zsfeXagAky76lKmVfzV45M6xulUKbNhVUybReckmF92oARMmsOwEqZtQPguIzqHQHgVpk0C6JReEkmbYdPd8JhGZTbAjNLgBtlTgk0BEOXYZHM2QLrpSr4Wsb0aILx0niIDZIpM7Ba9BTMlymbYJkkLYfPZUjwKuRLUj5E/y8zihIPtB8ekxnvwzzrNA92yIhuDUTC1jEcobWXTHgQtkqWj+BhmbABpiWVd4sMCNRTG0iUopbGkLI3CdYqYS0UKXtVMEoJo+E9Zc1fmzpFTlAfULYmwhIlWQr3K1vriOUpSV6Md+SkeLG9i+xVii+4uNhesXKrcVCqFKU4eDdXUnEtdppylaJXE3YuTde/Bu4C4LOqtBaok4VVaVVfAdjTMRqebQEaZioL138JtC5UktuOAFT3VFcV1QHfFShFt9djwMkR6pJgBRBf1V2dTTgDRJ7PkXe3/wCcnag0+nwIsPs6efVkM7Al0/B6tAE4/4A8CW8FrpQqoyH7ErVxa9wZYP9NsuF7oQ04PFQu+cquQbTML3sjjgONj8uVG/YBv4yRo1BFHNjcR86m11mt7sbkc8DpQjkIVVqt7lK/j4FomU92Co5are7eE43AV3nKbF6L1epe5B8E6mcog/A2q9U98q8AapRBIbC6uzy7B5irDHLOdm3+rYG2sDIp79r8P2O7NhbC1R7yaiQwS7LL/4i8WgnNvZRZOeyUV8cclsZCaO8nb24BZkj2+Z+RNy/ClaDslMMBeXOw808m+MbW/ko2DrhZXgyOwxQlGX4ULkzrnP9lefE01AWU4FvaBkB179T8P8mLGlivhPxvsHB6Qmr+MXIv3A73dvzLNQGRRQubgdhbweT8a+TebDjnk2XwboDjw6WhBwCOjUzKf8Ev17Z13KGkHmBdD0nyLYkA7WX+jvxT5FaoCcZaddgEUJt49juPABwalsj/gdwqhtP6x6Q/AfYMVEJgeRRoWZBj5bdWYlc2wmuSer4dT7OzjToGsHeIlZ/ZcsdfB8Olu38G+PEudRJ8MwZcnmPl3+3+0+mkuq24BlARSrc//Qqwvb/KIepyS6yAZQVHAC4+pLR6VsaBC0XjgOfkyh+wvhVgV+Zb3Pc7wMYGOCQ3RmNpXSAb/9uAhaFy4VUAOHqH7E09BwCvyIUTAPE1QTnpuxmA3+RsGMD5yXKj5BLAWDlaCuwcIHcGfgJUytG3tHgZaKWXuRRw3Ljj3xfIi7wapjoOktVBeTS/2rFK8m6Q/gN/A0O640AHZc9eAAAAAElFTkSuQmCC" url="Assets/more-button-of-three-dots.svg" contentPriority="false" name="icon3">
-          <location x="55" y="2"/>
+        <children xsi:type="widgets:Image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABRCAMAAAB7eHFAAAACiFBMVEUAAAAAAACAgIBVVVWAgIBmZmaAgICSkpKAgICOjo6AgICLi4uAgICJiYmSkpKIiIiPj4+Hh4eOjo6GhoaMjIySkpKLi4uQkJCKioqPj4+JiYmOjo6SkpKNjY2MjIyPj4+Pj4+SkpKOjo6RkZGNjY2QkJCMjIyPj4+SkpKOjo6RkZGOjo6NjY2Pj4+Pj4+RkZGOjo6QkJCOjo6SkpKPj4+RkZGPj4+QkJCSkpKPj4+RkZGRkZGPj4+QkJCSkpKQkJCRkZGPj4+RkZGPj4+QkJCSkpKQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGPj4+SkpKRkZGQkJCRkZGPj4+RkZGQkJCRkZGQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGSkpKRkZGQkJCSkpKRkZGRkZGRkZGQkJCRkZGSkpKSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKSkpIWRJMCAAAA13RSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0fICIjJCUmJygpKissLS8wMjM0NTY4OTo7Pj9AQUNERUZHSElKS0xNTk9RVFVWV1hZW11eX2BhY2RlZmhpamtsbW5vcXR1dnd4enx9f4CBgoOFh4iJiouMjY+QkZKTlJWXmJmam52foKGjpKWnqaqrrK2usLGys7W2t7i5uru8vr/Aw8TFxsfIyczNz9DR0tPU1dbX2Nna29zd3+Dh4uPk5ebn6Onq6+zt7/Dx8vP09fb3+Pn6+/z9/mBbZ+MAAAQJSURBVHgBvdfpd1NVF8fxX5NAAoWHPAwCWtQKalUGkAKKIii0QFWgigoqKChYQXAQKdQiteDAICgyWFEUQUBFBgcBRRlKW6BD04bk+++49K6VJl3JHZqz/Lw6L89vn+zsfeXagAky76lKmVfzV45M6xulUKbNhVUybReckmF92oARMmsOwEqZtQPguIzqHQHgVpk0C6JReEkmbYdPd8JhGZTbAjNLgBtlTgk0BEOXYZHM2QLrpSr4Wsb0aILx0niIDZIpM7Ba9BTMlymbYJkkLYfPZUjwKuRLUj5E/y8zihIPtB8ekxnvwzzrNA92yIhuDUTC1jEcobWXTHgQtkqWj+BhmbABpiWVd4sMCNRTG0iUopbGkLI3CdYqYS0UKXtVMEoJo+E9Zc1fmzpFTlAfULYmwhIlWQr3K1vriOUpSV6Md+SkeLG9i+xVii+4uNhesXKrcVCqFKU4eDdXUnEtdppylaJXE3YuTde/Bu4C4LOqtBaok4VVaVVfAdjTMRqebQEaZioL138JtC5UktuOAFT3VFcV1QHfFShFt9djwMkR6pJgBRBf1V2dTTgDRJ7PkXe3/wCcnag0+nwIsPs6efVkM7Al0/B6tAE4/4A8CW8FrpQqoyH7ErVxa9wZYP9NsuF7oQ04PFQu+cquQbTML3sjjgONj8uVG/YBv4yRo1BFHNjcR86m11mt7sbkc8DpQjkIVVqt7lK/j4FomU92Co5are7eE43AV3nKbF6L1epe5B8E6mcog/A2q9U98q8AapRBIbC6uzy7B5irDHLOdm3+rYG2sDIp79r8P2O7NhbC1R7yaiQwS7LL/4i8WgnNvZRZOeyUV8cclsZCaO8nb24BZkj2+Z+RNy/ClaDslMMBeXOw808m+MbW/ko2DrhZXgyOwxQlGX4ULkzrnP9lefE01AWU4FvaBkB179T8P8mLGlivhPxvsHB6Qmr+MXIv3A73dvzLNQGRRQubgdhbweT8a+TebDjnk2XwboDjw6WhBwCOjUzKf8Ev17Z13KGkHmBdD0nyLYkA7WX+jvxT5FaoCcZaddgEUJt49juPABwalsj/gdwqhtP6x6Q/AfYMVEJgeRRoWZBj5bdWYlc2wmuSer4dT7OzjToGsHeIlZ/ZcsdfB8Olu38G+PEudRJ8MwZcnmPl3+3+0+mkuq24BlARSrc//Qqwvb/KIepyS6yAZQVHAC4+pLR6VsaBC0XjgOfkyh+wvhVgV+Zb3Pc7wMYGOCQ3RmNpXSAb/9uAhaFy4VUAOHqH7E09BwCvyIUTAPE1QTnpuxmA3+RsGMD5yXKj5BLAWDlaCuwcIHcGfgJUytG3tHgZaKWXuRRw3Ljj3xfIi7wapjoOktVBeTS/2rFK8m6Q/gN/A0O640AHZc9eAAAAAElFTkSuQmCC" url="Assets/red-64bt-favorite-icon.svg" contentPriority="false" name="icon3">
+          <location x="37" y="3"/>
+          <size width="28" height="25"/>
+          <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true">
+            <minSize width="28" height="25"/>
+            <maxSize width="-1" height="-1"/>
+          </layoutData>
+        </children>
+        <children xsi:type="widgets:Label" text="Favorites" name="caption3" horizontalAlignment="CENTER">
+          <font fontFamily="HelveticaNeue" size="17">
+            <color Red="194" Green="25" Blue="23"/>
+          </font>
+          <layoutData xsi:type="layout:GridData" row="1" horizontalAlignment="CENTER" grabHorizontalSpace="true">
+            <minSize width="32" height="19"/>
+            <maxSize width="-1" height="-1"/>
+          </layoutData>
+          <location x="16" y="32"/>
+          <size width="70" height="20"/>
+          <contentSize width="70" height="20"/>
+        </children>
+        <layout xsi:type="layout:GridLayout" rows="2"/>
+        <maxArea width="-1" height="-1"/>
+        <location x="208"/>
+        <minArea width="45" height="52"/>
+        <size width="103" height="52"/>
+        <layoutData xsi:type="layout:GridData" column="2" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <maxSize width="-1" height="-1"/>
+        </layoutData>
+      </children>
+      <children xsi:type="widgets:ToolBarItem" name="toolBarItem4">
+        <children xsi:type="widgets:Image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABRCAMAAAB7eHFAAAACiFBMVEUAAAAAAACAgIBVVVWAgIBmZmaAgICSkpKAgICOjo6AgICLi4uAgICJiYmSkpKIiIiPj4+Hh4eOjo6GhoaMjIySkpKLi4uQkJCKioqPj4+JiYmOjo6SkpKNjY2MjIyPj4+Pj4+SkpKOjo6RkZGNjY2QkJCMjIyPj4+SkpKOjo6RkZGOjo6NjY2Pj4+Pj4+RkZGOjo6QkJCOjo6SkpKPj4+RkZGPj4+QkJCSkpKPj4+RkZGRkZGPj4+QkJCSkpKQkJCRkZGPj4+RkZGPj4+QkJCSkpKQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGPj4+SkpKRkZGQkJCRkZGPj4+RkZGQkJCRkZGQkJCRkZGRkZGSkpKQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJCRkZGSkpKRkZGQkJCSkpKRkZGRkZGRkZGQkJCRkZGSkpKSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGQkJCRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKRkZGRkZGSkpKRkZGSkpKRkZGSkpKSkpIWRJMCAAAA13RSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0fICIjJCUmJygpKissLS8wMjM0NTY4OTo7Pj9AQUNERUZHSElKS0xNTk9RVFVWV1hZW11eX2BhY2RlZmhpamtsbW5vcXR1dnd4enx9f4CBgoOFh4iJiouMjY+QkZKTlJWXmJmam52foKGjpKWnqaqrrK2usLGys7W2t7i5uru8vr/Aw8TFxsfIyczNz9DR0tPU1dbX2Nna29zd3+Dh4uPk5ebn6Onq6+zt7/Dx8vP09fb3+Pn6+/z9/mBbZ+MAAAQJSURBVHgBvdfpd1NVF8fxX5NAAoWHPAwCWtQKalUGkAKKIii0QFWgigoqKChYQXAQKdQiteDAICgyWFEUQUBFBgcBRRlKW6BD04bk+++49K6VJl3JHZqz/Lw6L89vn+zsfeXagAky76lKmVfzV45M6xulUKbNhVUybReckmF92oARMmsOwEqZtQPguIzqHQHgVpk0C6JReEkmbYdPd8JhGZTbAjNLgBtlTgk0BEOXYZHM2QLrpSr4Wsb0aILx0niIDZIpM7Ba9BTMlymbYJkkLYfPZUjwKuRLUj5E/y8zihIPtB8ekxnvwzzrNA92yIhuDUTC1jEcobWXTHgQtkqWj+BhmbABpiWVd4sMCNRTG0iUopbGkLI3CdYqYS0UKXtVMEoJo+E9Zc1fmzpFTlAfULYmwhIlWQr3K1vriOUpSV6Md+SkeLG9i+xVii+4uNhesXKrcVCqFKU4eDdXUnEtdppylaJXE3YuTde/Bu4C4LOqtBaok4VVaVVfAdjTMRqebQEaZioL138JtC5UktuOAFT3VFcV1QHfFShFt9djwMkR6pJgBRBf1V2dTTgDRJ7PkXe3/wCcnag0+nwIsPs6efVkM7Al0/B6tAE4/4A8CW8FrpQqoyH7ErVxa9wZYP9NsuF7oQ04PFQu+cquQbTML3sjjgONj8uVG/YBv4yRo1BFHNjcR86m11mt7sbkc8DpQjkIVVqt7lK/j4FomU92Co5are7eE43AV3nKbF6L1epe5B8E6mcog/A2q9U98q8AapRBIbC6uzy7B5irDHLOdm3+rYG2sDIp79r8P2O7NhbC1R7yaiQwS7LL/4i8WgnNvZRZOeyUV8cclsZCaO8nb24BZkj2+Z+RNy/ClaDslMMBeXOw808m+MbW/ko2DrhZXgyOwxQlGX4ULkzrnP9lefE01AWU4FvaBkB179T8P8mLGlivhPxvsHB6Qmr+MXIv3A73dvzLNQGRRQubgdhbweT8a+TebDjnk2XwboDjw6WhBwCOjUzKf8Ev17Z13KGkHmBdD0nyLYkA7WX+jvxT5FaoCcZaddgEUJt49juPABwalsj/gdwqhtP6x6Q/AfYMVEJgeRRoWZBj5bdWYlc2wmuSer4dT7OzjToGsHeIlZ/ZcsdfB8Olu38G+PEudRJ8MwZcnmPl3+3+0+mkuq24BlARSrc//Qqwvb/KIepyS6yAZQVHAC4+pLR6VsaBC0XjgOfkyh+wvhVgV+Zb3Pc7wMYGOCQ3RmNpXSAb/9uAhaFy4VUAOHqH7E09BwCvyIUTAPE1QTnpuxmA3+RsGMD5yXKj5BLAWDlaCuwcIHcGfgJUytG3tHgZaKWXuRRw3Ljj3xfIi7wapjoOktVBeTS/2rFK8m6Q/gN/A0O640AHZc9eAAAAAElFTkSuQmCC" url="Assets/more-button-of-three-dots.svg" contentPriority="false" name="icon4">
+          <location x="37" y="2"/>
           <size width="28" height="28"/>
           <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true">
             <minSize width="28" height="28"/>
             <maxSize width="-1" height="-1"/>
           </layoutData>
         </children>
-        <children xsi:type="widgets:Label" text="More" name="caption3" horizontalAlignment="CENTER">
+        <children xsi:type="widgets:Label" text="More" name="caption4" horizontalAlignment="CENTER">
           <font fontFamily="HelveticaNeue" size="17">
             <color/>
           </font>
@@ -220,27 +228,27 @@
             <minSize width="32" height="19"/>
             <maxSize width="-1" height="-1"/>
           </layoutData>
-          <location x="49" y="32"/>
+          <location x="31" y="32"/>
           <size width="40" height="20"/>
           <contentSize width="40" height="20"/>
         </children>
         <layout xsi:type="layout:GridLayout" rows="2"/>
         <maxArea width="-1" height="-1"/>
-        <location x="276"/>
+        <location x="311"/>
         <minArea width="45" height="52"/>
-        <size width="138" height="52"/>
-        <layoutData xsi:type="layout:GridData" column="2" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+        <size width="103" height="52"/>
+        <layoutData xsi:type="layout:GridData" column="3" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
           <maxSize width="-1" height="-1"/>
         </layoutData>
       </children>
-      <layout xsi:type="layout:GridLayout" columns="3"/>
+      <layout xsi:type="layout:GridLayout" columns="4"/>
       <maxArea width="-1" height="-1"/>
       <location y="684"/>
       <minArea width="100" height="52"/>
       <size width="414" height="52"/>
-      <layoutData xsi:type="layout:GridData" row="3"/>
+      <layoutData xsi:type="layout:GridData" row="2"/>
     </children>
-    <layout xsi:type="layout:GridLayout" rows="4"/>
+    <layout xsi:type="layout:GridLayout" rows="3"/>
     <maxArea width="414" height="736"/>
     <size width="414" height="736"/>
   </widgets:Page>
