@@ -252,18 +252,7 @@ extension SCDWidgetsWidget {
   public var backgroundSvgElement: SCDSvgElement? { self.findSvgElementBy(template: "background") }
 
   /// Content group of current widget.
-<<<<<<< HEAD
-<<<<<<<< HEAD:SimplyE/Sources/SimplyE/books page/search page/search.page.swift
-  public var svgContent: SCDSvgGroup? {
-    self.drawing?.findByAttribute("template-id", value: "content") as? SCDSvgGroup
-  }
-========
-  var svgContent: SCDSvgGroup? { self.drawing?.findByAttribute("template-id", value: "content") as? SCDSvgGroup }
->>>>>>>> 16106963cdec4a344c76661b62198ec6efe9e5eb:SimplyE/Sources/SimplyE/search.page.swift
-}
-=======
   public var svgContent: SCDSvgGroup? {
     self.drawing?.findByAttribute("template-id", value: "content") as? SCDSvgGroup
   }
 }
->>>>>>> 16106963cdec4a344c76661b62198ec6efe9e5eb
