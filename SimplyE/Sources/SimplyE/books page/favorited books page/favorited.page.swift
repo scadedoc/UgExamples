@@ -1,5 +1,9 @@
 import ScadeKit
 
+#if os(Android)
+  import FoundationNetworking
+#endif
+
 class FavoritedPageAdapter: SCDLatticePageAdapter {
 
   // page adapter initialization
@@ -10,7 +14,7 @@ class FavoritedPageAdapter: SCDLatticePageAdapter {
     
 
     self.toolBarItem1.onClick { _ in
-      self.goBack()
+      self.goToMainPage()
     }
 
     self.toolBarItem2.onClick { _ in
@@ -76,8 +80,8 @@ class FavoritedPageAdapter: SCDLatticePageAdapter {
     }
   }*/
 
-  func goBack() {
-    self.navigation?.go(page: "main.page", transition: .FROM_LEFT)
+  func goToMainPage() {
+    self.navigation?.go(page: "main.page")
   }
 
   func goToSearchPage() {

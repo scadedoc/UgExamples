@@ -1,6 +1,10 @@
 import Foundation
 import ScadeKit
 
+#if os(Android)
+  import FoundationNetworking
+#endif
+
 class SimplyE: SCDApplication {
 
   var window = SCDLatticeWindow()
