@@ -1,7 +1,10 @@
 import ScadeKit
+<<<<<<< HEAD
 #if os(Android)
   import FoundationNetworking
 #endif
+=======
+>>>>>>> 16106963cdec4a344c76661b62198ec6efe9e5eb
 
 class ContactUsPageAdapter: SCDLatticePageAdapter {
 
@@ -12,6 +15,7 @@ class ContactUsPageAdapter: SCDLatticePageAdapter {
 
   override func show(view: SCDLatticeView?, data: Any) {
     super.show(view: view, data: data)
+<<<<<<< HEAD
     
     self.doneButton.onClick { _ in
       self.navigation?.go(page: "settings.page")
@@ -31,6 +35,13 @@ class ContactUsPageAdapter: SCDLatticePageAdapter {
     self.reloadButton.onClick { _ in
         self.webView.load(contactUsWebView)
       }
+=======
+
+    let contactUsWebView: String =
+      "https://www.scade.io/account/login/?redirect_to=https://www.scade.io/account#"
+
+    webView.load(contactUsWebView)
+>>>>>>> 16106963cdec4a344c76661b62198ec6efe9e5eb
 
     webView.onLoaded.append(
       SCDWidgetsLoadEventHandler { event in

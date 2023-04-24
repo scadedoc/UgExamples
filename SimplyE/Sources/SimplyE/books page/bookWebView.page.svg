@@ -4,44 +4,8 @@
   <svg template-id="content-box">
     <g template-id="content">
       <g template-id="children-content">
-        <svg widget-name="navigationBar" eObject-URI="bookWebView.page#/0/@children.0" width="414" height="46">
-          <svg template-id="content-box">
-            <g template-id="content">
-              <g template-id="children-content">
-                <svg widget-name="doneButton" eObject-URI="bookWebView.page#/0/@children.0/@children.0" y="14" width="56" height="18">
-                  <svg template-id="content-box" x="20" width="36" height="18">
-                    <g template-id="content">
-                      <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="18" y="9" fill="#446ab3">Done</text>
-                    </g>
-                  </svg>
-                </svg>
-                <svg widget-name="reloadButton" eObject-URI="bookWebView.page#/0/@children.0/@children.1" x="356" y="16" width="58" height="15">
-                  <svg template-id="content-box" width="48" height="15">
-                    <g template-id="content">
-                      <svg viewBox="0 0 1024.00 1024.00" stroke-width="0.01024" xmlns="http://www.w3.org/2000/svg" class="icon" template-id="content-background" fill="#446ab3" stroke="#446ab3">
-                        <g stroke-width="0" id="SVGRepo_bgCarrier" />
-                        <g stroke-linejoin="round" id="SVGRepo_tracerCarrier" stroke-linecap="round" />
-                        <g id="SVGRepo_iconCarrier">
-                          <path d="M 909.1 209.3 l -56.4 44.1 C 775.8 155.1 656.2 92 521.9 92 C 290 92 102.3 279.5 102 511.5 C 101.7 743.7 289.8 932 521.9 932 c 181.3 0 335.8 -115 394.6 -276.1 c 1.5 -4.2 -0.7 -8.9 -4.9 -10.3 l -56.7 -19.5 a 8 8 0 0 0 -10.1 4.8 c -1.8 5 -3.8 10 -5.9 14.9 c -17.3 41 -42.1 77.8 -73.7 109.4 A 344.77 344.77 0 0 1 655.9 829 c -42.3 17.9 -87.4 27 -133.8 27 c -46.5 0 -91.5 -9.1 -133.8 -27 A 341.5 341.5 0 0 1 279 755.2 a 342.16 342.16 0 0 1 -73.7 -109.4 c -17.9 -42.4 -27 -87.4 -27 -133.9 s 9.1 -91.5 27 -133.9 c 17.3 -41 42.1 -77.8 73.7 -109.4 c 31.6 -31.6 68.4 -56.4 109.3 -73.8 c 42.3 -17.9 87.4 -27 133.8 -27 c 46.5 0 91.5 9.1 133.8 27 a 341.5 341.5 0 0 1 109.3 73.8 c 9.9 9.9 19.2 20.4 27.8 31.4 l -60.2 47 a 8 8 0 0 0 3 14.1 l 175.6 43 c 5 1.2 9.9 -2.6 9.9 -7.7 l 0.8 -180.9 c -0.1 -6.6 -7.8 -10.3 -13 -6.2 z" />
-                        </g>
-                      </svg>
-                      <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="24" y="7.5" fill="#446ab3" />
-                    </g>
-                  </svg>
-                </svg>
-                <svg widget-name="titleLabel" eObject-URI="bookWebView.page#/0/@children.0/@children.2" x="179" y="14" width="56" height="19">
-                  <svg template-id="content-box" x="10" width="36" height="19">
-                    <g template-id="content">
-                      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="9.5" fill="#464646">label</text>
-                    </g>
-                  </svg>
-                </svg>
-              </g>
-            </g>
-          </svg>
-        </svg>
-        <svg widget-name="webView" eObject-URI="bookWebView.page#/0/@children.1" y="46" width="414" height="690">
-          <svg template-id="content-box" width="414" height="690">
+        <svg widget-name="webView" eObject-URI="bookWebView.page#/0/@children.0" width="414" height="736">
+          <svg template-id="content-box" width="414" height="736">
             <g template-id="content" />
           </svg>
         </svg>
