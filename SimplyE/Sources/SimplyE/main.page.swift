@@ -1,8 +1,9 @@
+import Dispatch
 import ScadeKit
 import ScadeUI
-import Dispatch
+
 #if os(Android)
-	import FoundationNetworking
+  import FoundationNetworking
 #endif
 
 class MainPageAdapter: SCDLatticePageAdapter {
@@ -74,14 +75,19 @@ class MainPageAdapter: SCDLatticePageAdapter {
         bookView.onClick.append(
           SCDWidgetsEventHandler { [weak book] event in
             guard let book = book else { return }
-            self.navigation?.goWith(page: "BookDetail.page", data: book, transition: .FROM_RIGHT)
+            self.navigation?.goWith(page: "BookDetail.page", data: book)
           })
 
         //bookView[label]?.text = book.volumeInfo.title ?? "no title"
         //bookView["label", as: SCDWidgetsLabel.self]?.text = book.volumeInfo.title ?? "no title"
 
         if let label = bookView["label ", as: SCDWidgetsLabel.self] {
-          label.text = book.volumeInfo.title ?? "no title"
+          let text = book.volumeInfo.title ?? "no title"
+          
+          //Solving cutoff texts in Label
+          //let index = text.index(text.startIndex, offsetBy: 20)
+          //let truncated = String(text.prefix(upTo: index))
+          label.text = text
           (label.layoutData as? SCDLayoutGridData)?.maxContentWidth = 100
         }
 

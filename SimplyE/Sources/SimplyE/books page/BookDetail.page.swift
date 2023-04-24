@@ -73,7 +73,7 @@ class BookDetailPageAdapter: SCDLatticePageAdapter {
   }
 
   func goBack() {
-    self.navigation?.go(page: "main.page", transition: .FROM_LEFT)
+    self.navigation?.go(page: "main.page")
   }
 
   func goToSearchPage() {

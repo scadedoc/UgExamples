@@ -91,17 +91,17 @@
                   <svg template-id="content-box">
                     <g template-id="content">
                       <g template-id="children-content">
-                        <svg widget-id="image" eObject-URI="favorited.page#/0/@children.2/@children.0/@children.0" widget-name="icon1" x="38" y="2" width="28" height="28">
-                          <svg template-id="content-box" width="28" height="28">
+                        <svg eObject-URI="favorited.page#/0/@children.2/@children.0/@children.0" widget-name="icon1" widget-id="image" x="38" y="2" width="28" height="28">
+                          <svg template-id="content-box" y="5" width="28" height="23">
                             <g template-id="content">
-                              <image xlink:href="Assets/Catalog@2x_red.png" template-id="node-image" width="100%" height="100%" />
+                              <image xlink:href="Assets/black-categorysvg.svg" template-id="node-image" width="100%" height="100%" />
                             </g>
                           </svg>
                         </svg>
-                        <svg widget-id="label" eObject-URI="favorited.page#/0/@children.2/@children.0/@children.1" widget-name="caption1" x="11" y="32" width="83" height="20">
-                          <svg template-id="content-box" width="83" height="20">
+                        <svg eObject-URI="favorited.page#/0/@children.2/@children.0/@children.1" widget-name="caption1" widget-id="label" x="6" y="33" width="93" height="19">
+                          <svg template-id="content-box" x="10" width="73" height="19">
                             <g template-id="content">
-                              <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="41.5" y="10" fill="#0">Categories</text>
+                              <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="36.5" y="9.5" fill="#0">Categories</text>
                             </g>
                           </svg>
                         </svg>
@@ -113,17 +113,17 @@
                   <svg template-id="content-box">
                     <g template-id="content">
                       <g template-id="children-content">
-                        <svg widget-id="image" eObject-URI="favorited.page#/0/@children.2/@children.1/@children.0" widget-name="icon2" x="37" y="2" width="28" height="28">
-                          <svg template-id="content-box" width="28" height="28">
+                        <svg eObject-URI="favorited.page#/0/@children.2/@children.1/@children.0" widget-name="icon2" widget-id="image" x="37" y="2" width="28" height="28">
+                          <svg template-id="content-box" y="5" width="28" height="23">
                             <g template-id="content">
-                              <image xlink:href="Assets/Search.png" template-id="node-image" width="100%" height="100%" />
+                              <image xlink:href="Assets/black-2x-search.svg" template-id="node-image" width="100%" height="100%" />
                             </g>
                           </svg>
                         </svg>
-                        <svg widget-id="label" eObject-URI="favorited.page#/0/@children.2/@children.1/@children.1" widget-name="caption2" x="24" y="32" width="54" height="20">
-                          <svg template-id="content-box" width="54" height="20">
+                        <svg eObject-URI="favorited.page#/0/@children.2/@children.1/@children.1" widget-name="caption2" widget-id="label" x="18" y="33" width="67" height="19">
+                          <svg template-id="content-box" x="10" width="47" height="19">
                             <g template-id="content">
-                              <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="27" y="10" fill="#0">Search</text>
+                              <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="23.5" y="9.5" fill="#0">Search</text>
                             </g>
                           </svg>
                         </svg>
@@ -135,17 +135,17 @@
                   <svg template-id="content-box">
                     <g template-id="content">
                       <g template-id="children-content">
-                        <svg widget-id="image" eObject-URI="favorited.page#/0/@children.2/@children.2/@children.0" widget-name="icon3" x="37" y="3" width="28" height="25">
-                          <svg template-id="content-box" width="28" height="25">
+                        <svg eObject-URI="favorited.page#/0/@children.2/@children.2/@children.0" widget-name="icon3" widget-id="image" x="37" y="2" width="28" height="28">
+                          <svg template-id="content-box" y="5" width="28" height="23">
                             <g template-id="content">
                               <image xlink:href="Assets/red-64bt-favorite-icon.svg" template-id="node-image" width="100%" height="100%" />
                             </g>
                           </svg>
                         </svg>
-                        <svg widget-id="label" eObject-URI="favorited.page#/0/@children.2/@children.2/@children.1" widget-name="caption3" x="16" y="32" width="70" height="20">
-                          <svg template-id="content-box" width="70" height="20">
+                        <svg eObject-URI="favorited.page#/0/@children.2/@children.2/@children.1" widget-name="caption3" widget-id="label" x="10" y="33" width="82" height="19">
+                          <svg template-id="content-box" x="10" width="62" height="19">
                             <g template-id="content">
-                              <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="35" y="10" fill="#c21917">Favorites</text>
+                              <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="31" y="9.5" fill="#c21917">Favorites</text>
                             </g>
                           </svg>
                         </svg>
@@ -157,17 +157,17 @@
                   <svg template-id="content-box">
                     <g template-id="content">
                       <g template-id="children-content">
-                        <svg widget-id="image" eObject-URI="favorited.page#/0/@children.2/@children.3/@children.0" widget-name="icon4" x="37" y="2" width="28" height="28">
-                          <svg template-id="content-box" width="28" height="28">
+                        <svg eObject-URI="favorited.page#/0/@children.2/@children.3/@children.0" widget-name="icon4" widget-id="image" x="37" y="2" width="28" height="28">
+                          <svg template-id="content-box" y="5" width="28" height="23">
                             <g template-id="content">
                               <image xlink:href="Assets/more-button-of-three-dots.svg" template-id="node-image" width="100%" height="100%" />
                             </g>
                           </svg>
                         </svg>
-                        <svg widget-id="label" eObject-URI="favorited.page#/0/@children.2/@children.3/@children.1" widget-name="caption4" x="31" y="32" width="40" height="20">
-                          <svg template-id="content-box" width="40" height="20">
+                        <svg eObject-URI="favorited.page#/0/@children.2/@children.3/@children.1" widget-name="caption4" widget-id="label" x="24" y="33" width="55" height="19">
+                          <svg template-id="content-box" x="10" width="35" height="19">
                             <g template-id="content">
-                              <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="20" y="10" fill="#0">More</text>
+                              <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="17.5" y="9.5" fill="#0">More</text>
                             </g>
                           </svg>
                         </svg>

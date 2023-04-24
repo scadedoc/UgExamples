@@ -1,6 +1,9 @@
 // swift-tools-version:5.3
 import PackageDescription
 import Foundation
+#if os(Android)
+  import FoundationNetworking
+#endif
 
 let SCADE_SDK = ProcessInfo.processInfo.environment["SCADE_SDK"] ?? ""
 
