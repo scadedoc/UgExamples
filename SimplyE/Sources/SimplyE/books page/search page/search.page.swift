@@ -1,14 +1,26 @@
 import Dispatch
+import Foundation
 import ScadeGraphics
 import ScadeKit
 import ScadeUI
 
-#if os(Android)
-  import FoundationNetworking
-#endif
-
 class SearchPageAdapter: SCDLatticePageAdapter {
 
+  var downloadedBooks: Set<String> = []
+
+  func addBooks(books: [Book]) {
+    for book in books {
+      if let title = book.volumeInfo.title {
+        if !downloadedBooks.contains(title) {
+          self.ctrlListBooks.items.append(book)
+          downloadedBooks.insert(title)
+        }
+      } else {
+      	self.ctrlListBooks.items.append(book)
+      }
+	
+    }
+  }
   // page adapter initialization
   override func load(_ path: String) {
     super.load(path)
@@ -131,7 +143,8 @@ class SearchPageAdapter: SCDLatticePageAdapter {
       switch result {
       case .success(let abooks):
         DispatchQueue.main.async {
-          self?.ctrlListBooks.items.append(contentsOf: abooks)
+          //self?.ctrlListBooks.items.append(contentsOf: abooks)
+          self?.addBooks(books: abooks)
           FavoritedDatabase.favoriteDB.allBooks.append(contentsOf: abooks)
         }
       case .failure(let error):
@@ -145,7 +158,8 @@ class SearchPageAdapter: SCDLatticePageAdapter {
       switch result {
       case .success(let fanbooks):
         DispatchQueue.main.async {
-          self?.ctrlListBooks.items.append(contentsOf: fanbooks)
+          //self?.ctrlListBooks.items.append(contentsOf: fanbooks)
+          self?.addBooks(books: fanbooks)
 
           // Trying to add these books to the allBooks property in the FavoritedDatabase.swift file
           FavoritedDatabase.favoriteDB.allBooks.append(contentsOf: fanbooks)
@@ -161,7 +175,8 @@ class SearchPageAdapter: SCDLatticePageAdapter {
       switch result {
       case .success(let hobooks):
         DispatchQueue.main.async {
-          self?.ctrlListBooks.items.append(contentsOf: hobooks)
+          //self?.ctrlListBooks.items.append(contentsOf: hobooks)
+          self?.addBooks(books: hobooks)
 
           // Trying to add these books to the allBooks property in the FavoritedDatabase.swift file
           FavoritedDatabase.favoriteDB.allBooks.append(contentsOf: hobooks)
@@ -178,7 +193,8 @@ class SearchPageAdapter: SCDLatticePageAdapter {
       switch result {
       case .success(let hebooks):
         DispatchQueue.main.async {
-          self?.ctrlListBooks.items.append(contentsOf: hebooks)
+          //self?.ctrlListBooks.items.append(contentsOf: hebooks)
+          self?.addBooks(books: hebooks)
 
           // Trying to add these books to the allBooks property in the FavoritedDatabase.swift file
           FavoritedDatabase.favoriteDB.allBooks.append(contentsOf: hebooks)
