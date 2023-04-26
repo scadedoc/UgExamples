@@ -1,9 +1,7 @@
 import ScadeKit
 import Dispatch
 
-#if os(Android)
-  import FoundationNetworking
-#endif
+import Foundation
 
 class LoginPageAdapter: SCDLatticePageAdapter {
 
