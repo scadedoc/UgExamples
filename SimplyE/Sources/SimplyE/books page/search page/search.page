@@ -16,14 +16,15 @@
       <contentSize width="80" height="29"/>
     </children>
     <children xsi:type="widgets:RowView" paddingLeft="20" name="horizontalTextboxView" paddingRight="20" paddingTop="20" paddingBottom="20">
-      <children xsi:type="widgets:Textbox" placeholder="Search for any Book of any Category" cornerRadius="7" name="textbox" paddingTop="5" paddingLeft="5" paddingRight="5" paddingBottom="5">
+      <children xsi:type="widgets:Textbox" placeholder="Search for any Book of any Category" cornerRadius="7" name="textbox" paddingTop="5" paddingLeft="15" paddingRight="5" paddingBottom="5">
         <font fontFamily="ArialMT" size="15">
-          <color Red="191" Green="191" Blue="191"/>
+          <color/>
         </font>
         <location x="20" y="20"/>
-        <size width="374" height="27"/>
+        <size width="374" height="60"/>
         <contentSize width="374" height="17"/>
-        <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+        <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true">
+          <minSize height="60"/>
           <maxSize width="-1" height="-1"/>
         </layoutData>
         <backgroundColor Red="243" Green="243" Blue="243"/>
@@ -32,19 +33,20 @@
       <maxArea width="-1" height="-1"/>
       <location y="39"/>
       <minArea/>
-      <size width="414" height="67"/>
+      <size width="414" height="100"/>
       <layoutData xsi:type="layout:GridData" row="1" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+        <minSize/>
         <maxSize width="-1" height="-1"/>
       </layoutData>
     </children>
-    <children xsi:type="widgets:List" name="ctrlListBooks">
+    <children xsi:type="widgets:List" paddingLeft="10" name="ctrlListBooks" paddingRight="10">
       <template name="template">
-        <element name="listElement">
+        <element paddingTop="10" paddingBottom="10" name="listElement">
           <minArea height="45"/>
-          <location/>
+          <location x="10"/>
           <backgroundColor Red="255" Green="255" Blue="255"/>
           <children xsi:type="widgets:Image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDZGQjRCRUYyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDZGQjRCRjAyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpENkZCNEJFRDI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpENkZCNEJFRTI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmri+DQAAAS8SURBVHja7JxdK2xRGMfPnHPChUGHGIphmCGN8lYahdyQQi7kI/hOfALFhaSk3CLlLTZ5G2YoQ+MtjULU+befWu323uaME5PZ/v+L3Zq1n732Wr/9rGc9aymusbGxH1Rq+kkEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVY316/U7QbHR3F9eLiYmZmhp5FERZhERZhfc/VMMkSOT8/H41GGxoaqqqqPB6PLJp7e3sHBwdiFggE6urqbG8ZhRbKysoKCwtzc3Px8+bmJhKJaJr2+PhoNc7JyQkGg7BXzZ6cnGxvb3u93t7eXtSMj4+/9QrYoPz8/ByLxdAZdD4dsER5eXnd3d1+v1/VeHQVFRUtLS3Z3sIjq6urxkYGBwdl2Ep/dFVWVs7Ozpp4lZSU9PX1ZWVlmZqtra3d2tqy7STg9vf3o0FVg8e9utbX102d+URY+FzwBbjA7u7u3d0d/Ki9vR1dwZfPzs4GqcPDw42NDeOt5ubmo6Mj1KhGrq6ucMV3Pj09BRpxHJhheF1dXXBeZVlQUCCk4BqaLtgDX2NjI0aO9m07KaQSiQS4iF+jnaamJnQPb7m/v7d1dpN+DQwMpEKkpaUFV7xsf3/fVIl+o8dwIvn+19fXt7e3NTU1KGNOwckXFhbUrdfX1/LycnkKs0w1FY/Hd3Z2YPDy8oKfuJ6fn7tcrtLSUowqHA4r5+rp6cnPz0cBHofPIPYPDw+wgcMWFxeL2drammq8tbXV5/MB7uTk5OXlpVSiQXQA7o/2ccUUTlOAhycbfwIQsEp5ZWXFeAt9QqdRcLvdxnrbwHR2diYFhQADk9kKTGrYSsvLy9K4SXBSXG3D3+bmJq6YGfDNdMBCcLV2QsEyzjURIrdEmX+2rHDAZaQgDgsdHx9b7dENadwU4CS6YeIneYX6Hp8bsz5QGBgmKRYsDM8YjI1RWTlvim3KrIdGRkaSmCG8ZgwszK/Ozk7lbnBMOKzVARFcMjXP+ihh7RsaGpIFDoEZ8UjNa0nlPkS2mVfmZfChUEhITU9PYwWwDfYiLJFqwqbYONKC9z7ypWEhP5DAb1oN4HFvjby6utrWQ63rBhI3KdTX1zsBluxv5GoU0kVTDVJHWWeRDVg9BR5qu0RiXqOA/BP5c8bDksEAFvZG4k2I99jigYg1b1pcXJQC8ngMXuwBDvbAYZtnqfwLNJHiGykj6UfKKrvFzAjw2Ayhuwhbfl3GQarNuTHjRb2EuZCu5PbiXHNzcx0dHUhHgrqsSXUquciXgIVQNTExgWEjeMG/MNFisRh2msgYkXPJtsm0DUByj52d2BvPDwBLThSsyefU1JTpYCOhC4uG2iokl8th/zFkeHgY7vNJf1hx1OEfIp3k/XKGQVjJ1NbWJoVwOOzYDP4/5lokEonH4xKVsSBWVFSow1hN06wHEt8UViAQkENU27tysubkveG7hLz06enJ5/O53W6VJSCiI07JUa3DN9LvVVRX+t/LP4URFmERFmERFkVYhEVYhEVYhEURFmERFmERFmFRhEVYhEVYhEVYFGERFmERFmERFkVYhEVYhEVYDtVfAQYA9Kg8ERKqtwIAAAAASUVORK5CYII=" name="image">
-            <location/>
+            <location y="10"/>
             <size width="100" height="100"/>
             <layoutData xsi:type="layout:GridData">
               <minSize width="100" height="100"/>
@@ -60,7 +62,7 @@
                 <maxSize width="-1" height="-1"/>
               </layoutData>
               <location x="5" y="6"/>
-              <size width="304" height="18"/>
+              <size width="284" height="18"/>
               <contentSize width="73" height="18"/>
             </children>
             <children xsi:type="widgets:Label" text="Author Name" name="authorTitleLabel">
@@ -71,7 +73,7 @@
                 <maxSize width="-1" height="-1"/>
               </layoutData>
               <location x="5" y="26"/>
-              <size width="304" height="18"/>
+              <size width="284" height="18"/>
               <contentSize width="89" height="18"/>
             </children>
             <children xsi:type="widgets:Label" text="Page Count: 120" name="pageCountLabel">
@@ -82,7 +84,7 @@
                 <maxSize width="-1" height="-1"/>
               </layoutData>
               <location x="5" y="45"/>
-              <size width="304" height="18"/>
+              <size width="284" height="18"/>
               <contentSize width="113" height="18"/>
             </children>
             <children xsi:type="widgets:RowView" paddingLeft="5" name="rowView" paddingRight="5" paddingTop="5" paddingBottom="5">
@@ -109,23 +111,23 @@
               <maxArea width="-1" height="-1"/>
               <location x="5" y="64"/>
               <minArea/>
-              <size width="304" height="31"/>
+              <size width="284" height="31"/>
               <layoutData xsi:type="layout:GridData" row="3" grabVerticalSpace="true" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
                 <maxSize width="-1" height="-1"/>
               </layoutData>
             </children>
             <layout xsi:type="layout:GridLayout" rows="4"/>
             <maxArea width="-1" height="-1"/>
-            <location x="100"/>
+            <location x="100" y="10"/>
             <minArea/>
-            <size width="314" height="100"/>
+            <size width="294" height="100"/>
             <layoutData xsi:type="layout:GridData" column="1" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
               <maxSize width="-1" height="-1"/>
             </layoutData>
           </children>
           <layout xsi:type="layout:GridLayout" columns="2"/>
           <maxArea width="-1" height="-1"/>
-          <size width="414" height="100"/>
+          <size width="394" height="120"/>
           <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
             <minSize/>
           </layoutData>
@@ -133,10 +135,10 @@
         <location/>
         <size/>
       </template>
-      <size width="414" height="578"/>
+      <size width="414" height="545"/>
       <layout xsi:type="widgetlayouts:ListLayout"/>
       <maxArea width="-1" height="-1"/>
-      <location y="106"/>
+      <location y="139"/>
       <minArea/>
       <layoutData xsi:type="layout:GridData" row="2" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT">
         <maxSize width="-1" height="-1"/>
