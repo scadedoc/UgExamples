@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="main.page#/0" widget-name="main" width="414" height="736">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" widget-name="main" eObject-URI="main.page#/0" width="414" height="736">
   <rect template-id="background" width="100%" height="100%" fill="#f8f8f8" />
   <svg template-id="content-box">
     <g template-id="content">
       <g template-id="children-content">
         <svg widget-name="heroImage" eObject-URI="main.page#/0/@children.0" width="414" height="300">
+          <rect template-id="background" width="100%" height="100%" fill="#ffffff" />
           <svg template-id="content-box" width="414" height="300">
             <g template-id="content">
-              <image xlink:href="Assets/bookCovers/warOfWorlds.jpeg" template-id="node-image" width="100%" height="100%" />
+              <image xlink:href="Assets/bookCovers/warOfWorlds.jpeg" template-id="node-image" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" />
             </g>
           </svg>
         </svg>
         <svg widget-name="ctrlListBookCatalog" eObject-URI="main.page#/0/@children.1" y="300" width="414" height="384">
+          <rect template-id="background" width="100%" height="100%" fill="#ffffff" />
           <g scrollableBox="414 384" template-id="listContent" scrollable="vertical">
-            <svg widget-name="listElement" eObject-URI="main.page#/0/@children.1/@template/@element" x="10" width="404" height="174">
+            <svg widget-name="listElement" eObject-URI="main.page#/0/@children.1/@template/@element" x="10" width="394" height="174">
               <g template-id="elementContent">
-                <svg widget-name="viewCategory" eObject-URI="main.page#/0/@children.1/@template/@element/@children.0" width="404" height="34">
+                <svg widget-name="viewCategory" eObject-URI="main.page#/0/@children.1/@template/@element/@children.0" width="394" height="34">
                   <svg template-id="content-box">
                     <g template-id="content">
                       <g template-id="children-content">
-                        <svg widget-name="lbCategory" eObject-URI="main.page#/0/@children.1/@template/@element/@children.0/@children.0" x="5" y="5" width="394" height="24">
-                          <svg template-id="content-box" x="3" width="391" height="23">
+                        <svg widget-name="lbCategory" eObject-URI="main.page#/0/@children.1/@template/@element/@children.0/@children.0" x="5" y="5" width="384" height="24">
+                          <svg template-id="content-box" x="3" width="381" height="23">
                             <g template-id="content">
                               <text alignment-baseline="central" font-size="20" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11.5" fill="#464646">label</text>
                             </g>
@@ -30,9 +32,9 @@
                     </g>
                   </svg>
                 </svg>
-                <svg widget-name="rowView" eObject-URI="main.page#/0/@children.1/@template/@element/@children.1" y="34" width="404" height="140">
+                <svg widget-name="rowView" eObject-URI="main.page#/0/@children.1/@template/@element/@children.1" y="34" width="394" height="140">
                   <svg template-id="content-box">
-                    <g scrollableBox="404 140" scrollable="horizontal" template-id="content">
+                    <g scrollableBox="394 140" scrollable="horizontal" template-id="content">
                       <g template-id="children-content">
                         <svg widget-name="listView" eObject-URI="main.page#/0/@children.1/@template/@element/@children.1/@children.0" x="5" y="5" width="110" height="130">
                           <svg template-id="content-box">
@@ -61,9 +63,6 @@
                   </svg>
                 </svg>
               </g>
-              <g template-id="elementSeparator">
-                <line stroke-miterlimit="10" template-id="separatorLine" x2="100%" stroke="#cccbd0" />
-              </g>
               <g />
               <g />
             </svg>
@@ -77,14 +76,14 @@
                   <svg template-id="content-box">
                     <g template-id="content">
                       <g template-id="children-content">
-                        <svg widget-id="image" widget-name="icon1" eObject-URI="main.page#/0/@children.2/@children.0/@children.0" x="38" y="2" width="28" height="28">
+                        <svg widget-name="icon1" eObject-URI="main.page#/0/@children.2/@children.0/@children.0" widget-id="image" x="38" y="2" width="28" height="28">
                           <svg template-id="content-box" y="5" width="28" height="23">
                             <g template-id="content">
                               <image xlink:href="Assets/red-category.svg" template-id="node-image" width="100%" height="100%" />
                             </g>
                           </svg>
                         </svg>
-                        <svg widget-id="label" widget-name="caption1" eObject-URI="main.page#/0/@children.2/@children.0/@children.1" x="6" y="33" width="93" height="19">
+                        <svg widget-name="caption1" eObject-URI="main.page#/0/@children.2/@children.0/@children.1" widget-id="label" x="6" y="33" width="93" height="19">
                           <svg template-id="content-box" x="10" width="73" height="19">
                             <g template-id="content">
                               <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="36.5" y="9.5" fill="#c21917">Categories</text>
@@ -99,14 +98,14 @@
                   <svg template-id="content-box">
                     <g template-id="content">
                       <g template-id="children-content">
-                        <svg widget-id="image" widget-name="icon2" eObject-URI="main.page#/0/@children.2/@children.1/@children.0" x="37" y="2" width="28" height="28">
+                        <svg widget-name="icon2" eObject-URI="main.page#/0/@children.2/@children.1/@children.0" widget-id="image" x="37" y="2" width="28" height="28">
                           <svg template-id="content-box" y="5" width="28" height="23">
                             <g template-id="content">
                               <image xlink:href="Assets/black-2x-search.svg" template-id="node-image" width="100%" height="100%" />
                             </g>
                           </svg>
                         </svg>
-                        <svg widget-id="label" widget-name="caption2" eObject-URI="main.page#/0/@children.2/@children.1/@children.1" x="18" y="33" width="67" height="19">
+                        <svg widget-name="caption2" eObject-URI="main.page#/0/@children.2/@children.1/@children.1" widget-id="label" x="18" y="33" width="67" height="19">
                           <svg template-id="content-box" x="10" width="47" height="19">
                             <g template-id="content">
                               <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="23.5" y="9.5" fill="#0">Search</text>
@@ -121,14 +120,14 @@
                   <svg template-id="content-box">
                     <g template-id="content">
                       <g template-id="children-content">
-                        <svg widget-id="image" widget-name="icon3" eObject-URI="main.page#/0/@children.2/@children.2/@children.0" x="37" y="2" width="28" height="28">
+                        <svg widget-name="icon3" eObject-URI="main.page#/0/@children.2/@children.2/@children.0" widget-id="image" x="37" y="2" width="28" height="28">
                           <svg template-id="content-box" y="5" width="28" height="23">
                             <g template-id="content">
                               <image xlink:href="Assets/black-64bt-favorite-icon.svg" template-id="node-image" width="100%" height="100%" />
                             </g>
                           </svg>
                         </svg>
-                        <svg widget-id="label" widget-name="caption3" eObject-URI="main.page#/0/@children.2/@children.2/@children.1" x="10" y="33" width="82" height="19">
+                        <svg widget-name="caption3" eObject-URI="main.page#/0/@children.2/@children.2/@children.1" widget-id="label" x="10" y="33" width="82" height="19">
                           <svg template-id="content-box" x="10" width="62" height="19">
                             <g template-id="content">
                               <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="31" y="9.5" fill="#0">Favorites</text>
@@ -143,14 +142,14 @@
                   <svg template-id="content-box">
                     <g template-id="content">
                       <g template-id="children-content">
-                        <svg widget-id="image" widget-name="icon4" eObject-URI="main.page#/0/@children.2/@children.3/@children.0" x="37" y="2" width="28" height="28">
+                        <svg widget-name="icon4" eObject-URI="main.page#/0/@children.2/@children.3/@children.0" widget-id="image" x="37" y="2" width="28" height="28">
                           <svg template-id="content-box" y="5" width="28" height="23">
                             <g template-id="content">
                               <image xlink:href="Assets/more-button-of-three-dots.svg" template-id="node-image" width="100%" height="100%" />
                             </g>
                           </svg>
                         </svg>
-                        <svg widget-id="label" widget-name="caption4" eObject-URI="main.page#/0/@children.2/@children.3/@children.1" x="24" y="33" width="55" height="19">
+                        <svg widget-name="caption4" eObject-URI="main.page#/0/@children.2/@children.3/@children.1" widget-id="label" x="24" y="33" width="55" height="19">
                           <svg template-id="content-box" x="10" width="35" height="19">
                             <g template-id="content">
                               <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="17.5" y="9.5" fill="#0">More</text>

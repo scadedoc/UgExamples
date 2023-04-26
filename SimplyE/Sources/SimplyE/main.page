@@ -13,8 +13,9 @@
         <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.0" target="/0"/>
         <constraints sourceAnchor="HEIGHT" constant="300" source="/0/@children.0"/>
       </layoutData>
+      <backgroundColor Red="255" Green="255" Blue="255"/>
     </children>
-    <children xsi:type="widgets:List" paddingLeft="10" name="ctrlListBookCatalog">
+    <children xsi:type="widgets:List" paddingLeft="10" name="ctrlListBookCatalog" paddingRight="10">
       <template name="template">
         <element name="listElement">
           <children xsi:type="widgets:RowView" paddingLeft="5" name="viewCategory" paddingRight="5" paddingTop="5" paddingBottom="5">
@@ -26,14 +27,14 @@
                 <maxSize width="-1" height="-1"/>
               </layoutData>
               <location x="5" y="5"/>
-              <size width="394" height="24"/>
+              <size width="384" height="24"/>
               <contentSize width="46" height="23"/>
             </children>
             <layout xsi:type="layout:GridLayout"/>
             <maxArea width="-1" height="-1"/>
             <location/>
             <minArea/>
-            <size width="404" height="34"/>
+            <size width="394" height="34"/>
             <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true">
               <maxSize width="-1" height="-1"/>
             </layoutData>
@@ -72,7 +73,7 @@
             <maxArea width="-1" height="-1"/>
             <location y="34"/>
             <minArea/>
-            <size width="404" height="140"/>
+            <size width="394" height="140"/>
             <layoutData xsi:type="layout:GridData" row="1" grabVerticalSpace="true" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT">
               <maxSize width="-1" height="-1"/>
             </layoutData>
@@ -81,7 +82,7 @@
           <maxArea width="-1" height="-1"/>
           <location x="10"/>
           <minArea height="45"/>
-          <size width="404" height="174"/>
+          <size width="394" height="174"/>
           <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT">
             <minSize/>
           </layoutData>
@@ -90,10 +91,11 @@
         <size/>
       </template>
       <size width="414" height="384"/>
+      <minArea/>
+      <location y="300"/>
+      <backgroundColor Red="255" Green="255" Blue="255"/>
       <layout xsi:type="widgetlayouts:ListLayout"/>
       <maxArea width="-1" height="-1"/>
-      <location y="300"/>
-      <minArea/>
       <layoutData xsi:type="layout:AutoLayoutData">
         <constraints sourceAnchor="TOP" targetAnchor="BOTTOM" source="/0/@children.1" target="/0/@children.0"/>
         <constraints source="/0/@children.1" target="/0"/>
