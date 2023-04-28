@@ -53,16 +53,16 @@
               <maxSize width="-1" height="-1"/>
             </layoutData>
           </children>
-          <children xsi:type="widgets:ListView" paddingLeft="5" name="listView" paddingRight="5" paddingTop="5" paddingBottom="5">
-            <children xsi:type="widgets:Label" text="Book Title" name="bookTitleLabel">
+          <children xsi:type="widgets:ListView" paddingLeft="5" name="listView" paddingTop="5" paddingBottom="5">
+            <children xsi:type="widgets:Label" text="Book Title" name="bookTitleLabel" multiline="true" paddingBottom="3">
               <font fontFamily="Arial-BoldMT" size="15">
                 <color Red="70" Green="70" Blue="70"/>
               </font>
               <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true">
                 <maxSize width="-1" height="-1"/>
               </layoutData>
-              <location x="5" y="6"/>
-              <size width="284" height="18"/>
+              <location x="5" y="5"/>
+              <size width="289" height="21"/>
               <contentSize width="73" height="18"/>
             </children>
             <children xsi:type="widgets:Label" text="Author Name" name="authorTitleLabel">
@@ -73,7 +73,7 @@
                 <maxSize width="-1" height="-1"/>
               </layoutData>
               <location x="5" y="26"/>
-              <size width="284" height="18"/>
+              <size width="289" height="18"/>
               <contentSize width="89" height="18"/>
             </children>
             <children xsi:type="widgets:Label" text="Page Count: 120" name="pageCountLabel">
@@ -84,7 +84,7 @@
                 <maxSize width="-1" height="-1"/>
               </layoutData>
               <location x="5" y="45"/>
-              <size width="284" height="18"/>
+              <size width="289" height="18"/>
               <contentSize width="113" height="18"/>
             </children>
             <children xsi:type="widgets:RowView" paddingLeft="5" name="rowView" paddingRight="5" paddingTop="5" paddingBottom="5">
@@ -111,7 +111,7 @@
               <maxArea width="-1" height="-1"/>
               <location x="5" y="64"/>
               <minArea/>
-              <size width="284" height="31"/>
+              <size width="289" height="31"/>
               <layoutData xsi:type="layout:GridData" row="3" grabVerticalSpace="true" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
                 <maxSize width="-1" height="-1"/>
               </layoutData>
