@@ -2,15 +2,15 @@ import Dispatch
 import ScadeKit
 import ScadeUI
 
-#if os(Android)
-  import FoundationNetworking
-#endif
+import Foundation
 
 class MainPageAdapter: SCDLatticePageAdapter {
 
   public var randomBooks: [Book] = []
 
   public var selectedBook: Book?
+  
+  let MAX_BOOK_NAME_LENGTH = 15
 
   // page adapter initialization
   override func load(_ path: String) {
@@ -85,9 +85,14 @@ class MainPageAdapter: SCDLatticePageAdapter {
           let text = book.volumeInfo.title ?? "no title"
           
           //Solving cutoff texts in Label
-          //let index = text.index(text.startIndex, offsetBy: 20)
-          //let truncated = String(text.prefix(upTo: index))
-          label.text = text
+		var truncated = text
+		
+        if text.count > self.MAX_BOOK_NAME_LENGTH {
+          let index = text.index(text.startIndex, offsetBy: self.MAX_BOOK_NAME_LENGTH - 3)
+          truncated = "\(text.prefix(upTo: index))..."
+        }
+        
+          label.text = truncated
           (label.layoutData as? SCDLayoutGridData)?.maxContentWidth = 100
         }
 

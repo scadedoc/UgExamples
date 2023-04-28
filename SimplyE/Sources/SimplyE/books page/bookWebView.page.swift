@@ -1,8 +1,6 @@
 import ScadeKit
 
-#if os(Android)
-  import FoundationNetworking
-#endif
+import Foundation
 
 class BookWebViewPageAdapter: SCDLatticePageAdapter {
 

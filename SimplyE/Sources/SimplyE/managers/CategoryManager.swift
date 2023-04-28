@@ -1,8 +1,5 @@
 import Foundation
 import Dispatch
-#if os(Android)
-	import FoundationNetworking
-#endif
 
 class CatalogManager {
 
