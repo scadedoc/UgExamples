@@ -8,6 +8,8 @@ class SearchPageAdapter: SCDLatticePageAdapter {
 
   var downloadedBooks: Set<String> = []
 
+  let MAX_BOOK_NAME_LENGTH = 32
+
   func addBooks(books: [Book]) {
     for book in books {
       if let title = book.volumeInfo.title {
@@ -16,9 +18,9 @@ class SearchPageAdapter: SCDLatticePageAdapter {
           downloadedBooks.insert(title)
         }
       } else {
-      	self.ctrlListBooks.items.append(book)
+        self.ctrlListBooks.items.append(book)
       }
-	
+
     }
   }
   // page adapter initialization
@@ -59,11 +61,20 @@ class SearchPageAdapter: SCDLatticePageAdapter {
 
       if let bookTitle = listView["bookTitleLabel", as: SCDWidgetsLabel.self] {
         bookTitle.text = book.volumeInfo.title ?? "no title"
-        (bookTitle.layoutData as? SCDLayoutGridData)?.maxContentWidth = 50
+        (bookTitle.layoutData as? SCDLayoutGridData)?.maxContentWidth = 100
       }
 
       if let bookAuthor = listView["authorTitleLabel", as: SCDWidgetsLabel.self] {
-        bookAuthor.text = "by \(book.volumeInfo.authors?[0] ?? "Nothing")"
+        let text = "by \(book.volumeInfo.authors?[0] ?? "Nothing")"
+
+        var truncated = text
+
+        if text.count > self.MAX_BOOK_NAME_LENGTH {
+          let index = text.index(text.startIndex, offsetBy: self.MAX_BOOK_NAME_LENGTH - 3)
+          truncated = "\(text.prefix(upTo: index))..."
+        }
+
+        bookAuthor.text = truncated
         (bookAuthor.layoutData as? SCDLayoutGridData)?.maxContentWidth = 100
       }
 
