@@ -4,46 +4,19 @@
   <svg template-id="content-box">
     <g template-id="content">
       <g template-id="children-content">
-        <svg widget-name="navigationBar" eObject-URI="BookDetail.page#/0/@children.0" width="414" height="40">
+        <svg eObject-URI="BookDetail.page#/0/@children.0" widget-name="navigationBar" width="414" height="40">
           <svg template-id="content-box">
             <g template-id="content">
               <g template-id="children-content">
-                <svg widget-name="backButton" eObject-URI="BookDetail.page#/0/@children.0/@children.0" y="5" width="58" height="30">
-                  <svg template-id="content-box" x="10" width="48" height="30">
-                    <g template-id="content">
-                      <svg viewBox="0 0 72 72" id="emoji" xmlns="http://www.w3.org/2000/svg" template-id="content-background" fill="#0">
-                        <g stroke-width="0" id="SVGRepo_bgCarrier" />
-                        <g stroke-linejoin="round" id="SVGRepo_tracerCarrier" stroke-linecap="round" />
-                        <g id="SVGRepo_iconCarrier">
-                          <g id="color">
-                            <path d="M 56.25 26.12 v 5.867 h -27.84 v 8.067 l -12.66 -11 l 12.84 -11.02 s -0.1813 8.089 -0.1813 8.089 s 27.84 -0.003 27.84 -0.003" fill="#3f3f3f" />
-                          </g>
-                          <g id="line">
-                            <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round" d="M 56.25 31.99 h -27.84 v 8.067 l -12.66 -11 l 12.66 -11 v 8.066 h 27.84 v 5.867" fill="none" stroke="#0" />
-                            <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round" d="M 34.99 53.94 l -4.1 -10 s -4.09 10 -4.09 10" fill="none" stroke="#0" />
-                            <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round" d="M 28.16 51.54 h 5.47" fill="none" stroke="#0" />
-                            <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round" d="M 48.64 44.38 v 9.56" fill="none" stroke="#0" />
-                            <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round" d="M 48.64 50.58 s 5.47 -6.2 5.47 -6.2" fill="none" stroke="#0" />
-                            <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round" d="M 51.27 47.59 l 3.28 6.35" fill="none" stroke="#0" />
-                            <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round" d="M 44.76 53.04 c -0.6237 0.5544 -1.43 0.86 -2.264 0.8589 v 0 c -0.9054 0.0002653 -1.774 -0.3592 -2.414 -0.9993 c -0.6403 -0.6401 -1 -1.508 -1 -2.414 v -2.731 c 0.000552 -1.885 1.528 -3.412 3.413 -3.413 v 0 c 0.8345 -0.001186 1.64 0.3046 2.264 0.8591" fill="none" stroke="#0" />
-                            <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round" d="M 21.43 49.1 h -3.645 v -4.761 h 3.645 c 1.315 -1.159e-07 2.38 1.065 2.381 2.38 v 0 c 0.0002654 0.6316 -0.2505 1.237 -0.6971 1.684 s -1.052 0.6974 -1.684 0.6971 v 0" fill="none" stroke="#0" />
-                            <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round" d="M 21.43 53.86 h -3.645 v -4.761 h 3.645 c 1.314 0.0005518 2.379 1.066 2.38 2.38 v -2.9e-09 c 1.175e-07 1.315 -1.065 2.38 -2.38 2.381 v 0" fill="none" stroke="#0" />
-                          </g>
-                        </g>
-                      </svg>
-                      <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="24" y="15" fill="#446ab3" />
-                    </g>
-                  </svg>
-                </svg>
-                <svg widget-name="detailsLabel" eObject-URI="BookDetail.page#/0/@children.0/@children.1" x="174" y="9" width="66" height="23">
+                <svg eObject-URI="BookDetail.page#/0/@children.0/@children.0" widget-name="detailsLabel" x="174" y="9" width="66" height="23">
                   <svg template-id="content-box" width="66" height="23">
                     <g template-id="content">
                       <text alignment-baseline="central" font-size="20" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11.5" fill="#464646">Details</text>
                     </g>
                   </svg>
                 </svg>
-                <svg widget-name="favoritedButton" eObject-URI="BookDetail.page#/0/@children.0/@children.2" x="356" y="9" width="58" height="23">
-                  <svg template-id="content-box" width="48" height="23">
+                <svg display="none" eObject-URI="BookDetail.page#/0/@children.0/@children.1" widget-name="favoritedButton" x="404" y="9" width="10" height="23">
+                  <svg template-id="content-box" width="0" height="23">
                     <g template-id="content">
                       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" template-id="content-background" fill="none">
                         <g stroke-width="0" id="SVGRepo_bgCarrier" />
@@ -52,7 +25,21 @@
                           <path d="M 20.381 6.06759 C 18.1553 3.19885 13.7697 3.5573 12 6.62866 C 10.2303 3.55729 5.84473 3.19885 3.61898 6.06759 L 3.30962 6.46632 C 1.42724 8.8925 1.69903 12.3524 3.93717 14.4548 L 10.9074 21.0026 C 11.0115 21.1005 11.1254 21.2075 11.2327 21.2902 C 11.3562 21.3853 11.5288 21.4954 11.7593 21.5406 C 11.9182 21.5718 12.0818 21.5718 12.2407 21.5406 C 12.4712 21.4954 12.6438 21.3853 12.7673 21.2902 C 12.8747 21.2075 12.9885 21.1005 13.0927 21.0026 L 20.0628 14.4548 C 22.301 12.3524 22.5728 8.89249 20.6904 6.46631 L 20.381 6.06759 z" fill="#0" />
                         </g>
                       </svg>
-                      <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="24" y="11.5" fill="#446ab3" />
+                      <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11.5" fill="#446ab3" />
+                    </g>
+                  </svg>
+                </svg>
+                <svg eObject-URI="BookDetail.page#/0/@children.0/@children.2" widget-name="backButton" x="33" y="11" width="58" height="19">
+                  <svg template-id="content-box" width="38" height="19">
+                    <g template-id="content">
+                      <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="19" y="9.5" fill="#30406">Back</text>
+                    </g>
+                  </svg>
+                </svg>
+                <svg eObject-URI="BookDetail.page#/0/@children.0/@children.3" widget-name="image1" x="5" width="28" height="40">
+                  <svg template-id="content-box" width="28" height="40">
+                    <g template-id="content">
+                      <image xlink:href="Assets/backButton.svg" template-id="node-image" width="100%" height="100%" />
                     </g>
                   </svg>
                 </svg>
@@ -60,16 +47,16 @@
             </g>
           </svg>
         </svg>
-        <svg widget-name="listBookDetails" eObject-URI="BookDetail.page#/0/@children.1" y="40" width="414" height="398">
+        <svg eObject-URI="BookDetail.page#/0/@children.1" widget-name="listBookDetails" y="40" width="414" height="395">
           <svg template-id="content-box">
             <g template-id="content">
               <g template-id="children-content">
-                <svg widget-name="horizontalImageView" eObject-URI="BookDetail.page#/0/@children.1/@children.0" x="5" y="5" width="404" height="284">
+                <svg eObject-URI="BookDetail.page#/0/@children.1/@children.0" widget-name="horizontalImageView" x="5" y="5" width="404" height="210">
                   <svg template-id="content-box">
                     <g template-id="content">
                       <g template-id="children-content">
-                        <svg widget-name="image" eObject-URI="BookDetail.page#/0/@children.1/@children.0/@children.0" x="5" y="5" width="394" height="274">
-                          <svg template-id="content-box" y="10" width="394" height="264">
+                        <svg eObject-URI="BookDetail.page#/0/@children.1/@children.0/@children.0" widget-name="image" width="404" height="210">
+                          <svg template-id="content-box" y="10" width="404" height="190">
                             <g template-id="content">
                               <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDZGQjRCRUYyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDZGQjRCRjAyNkNBMTFFNDkxNDVFMDcyNTQyRUQwNDYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpENkZCNEJFRDI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpENkZCNEJFRTI2Q0ExMUU0OTE0NUUwNzI1NDJFRDA0NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmri+DQAAAS8SURBVHja7JxdK2xRGMfPnHPChUGHGIphmCGN8lYahdyQQi7kI/hOfALFhaSk3CLlLTZ5G2YoQ+MtjULU+befWu323uaME5PZ/v+L3Zq1n732Wr/9rGc9aymusbGxH1Rq+kkEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVYhEUEhEVYhEVYhEVYREBYhEVYhEVY316/U7QbHR3F9eLiYmZmhp5FERZhERZhfc/VMMkSOT8/H41GGxoaqqqqPB6PLJp7e3sHBwdiFggE6urqbG8ZhRbKysoKCwtzc3Px8+bmJhKJaJr2+PhoNc7JyQkGg7BXzZ6cnGxvb3u93t7eXtSMj4+/9QrYoPz8/ByLxdAZdD4dsER5eXnd3d1+v1/VeHQVFRUtLS3Z3sIjq6urxkYGBwdl2Ep/dFVWVs7Ozpp4lZSU9PX1ZWVlmZqtra3d2tqy7STg9vf3o0FVg8e9utbX102d+URY+FzwBbjA7u7u3d0d/Ki9vR1dwZfPzs4GqcPDw42NDeOt5ubmo6Mj1KhGrq6ucMV3Pj09BRpxHJhheF1dXXBeZVlQUCCk4BqaLtgDX2NjI0aO9m07KaQSiQS4iF+jnaamJnQPb7m/v7d1dpN+DQwMpEKkpaUFV7xsf3/fVIl+o8dwIvn+19fXt7e3NTU1KGNOwckXFhbUrdfX1/LycnkKs0w1FY/Hd3Z2YPDy8oKfuJ6fn7tcrtLSUowqHA4r5+rp6cnPz0cBHofPIPYPDw+wgcMWFxeL2drammq8tbXV5/MB7uTk5OXlpVSiQXQA7o/2ccUUTlOAhycbfwIQsEp5ZWXFeAt9QqdRcLvdxnrbwHR2diYFhQADk9kKTGrYSsvLy9K4SXBSXG3D3+bmJq6YGfDNdMBCcLV2QsEyzjURIrdEmX+2rHDAZaQgDgsdHx9b7dENadwU4CS6YeIneYX6Hp8bsz5QGBgmKRYsDM8YjI1RWTlvim3KrIdGRkaSmCG8ZgwszK/Ozk7lbnBMOKzVARFcMjXP+ihh7RsaGpIFDoEZ8UjNa0nlPkS2mVfmZfChUEhITU9PYwWwDfYiLJFqwqbYONKC9z7ypWEhP5DAb1oN4HFvjby6utrWQ63rBhI3KdTX1zsBluxv5GoU0kVTDVJHWWeRDVg9BR5qu0RiXqOA/BP5c8bDksEAFvZG4k2I99jigYg1b1pcXJQC8ngMXuwBDvbAYZtnqfwLNJHiGykj6UfKKrvFzAjw2Ayhuwhbfl3GQarNuTHjRb2EuZCu5PbiXHNzcx0dHUhHgrqsSXUquciXgIVQNTExgWEjeMG/MNFisRh2msgYkXPJtsm0DUByj52d2BvPDwBLThSsyefU1JTpYCOhC4uG2iokl8th/zFkeHgY7vNJf1hx1OEfIp3k/XKGQVjJ1NbWJoVwOOzYDP4/5lokEonH4xKVsSBWVFSow1hN06wHEt8UViAQkENU27tysubkveG7hLz06enJ5/O53W6VJSCiI07JUa3DN9LvVVRX+t/LP4URFmERFmERFkVYhEVYhEVYhEURFmERFmERFmFRhEVYhEVYhEVYFGERFmERFmERFkVYhEVYhEVYDtVfAQYA9Kg8ERKqtwIAAAAASUVORK5CYII=" template-id="node-image" width="100%" height="100%" />
                             </g>
@@ -79,81 +66,97 @@
                     </g>
                   </svg>
                 </svg>
-                <svg widget-name="viewBookInfo" eObject-URI="BookDetail.page#/0/@children.1/@children.1" x="5" y="289" width="404" height="104">
+                <svg eObject-URI="BookDetail.page#/0/@children.1/@children.1" widget-name="viewBookInfo" x="5" y="215" width="404" height="175">
                   <svg template-id="content-box">
                     <g template-id="content">
                       <g template-id="children-content">
-                        <svg widget-name="lbBookTitle" eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.0" x="5" y="5" width="394" height="24">
-                          <svg template-id="content-box" y="5" width="394" height="19">
+                        <svg eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.0" widget-name="lbBookTitle" x="5" y="5" width="394" height="33">
+                          <svg template-id="content-box" y="5" width="394" height="28">
                             <g template-id="content">
-                              <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" maxWidth="394" template-id="node-text" x="0" y="0" fill="#0">Title</text>
+                              <text text-anchor="middle" alignment-baseline="central" font-size="24" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" maxWidth="394" template-id="node-text" x="0" y="0" fill="#0">Title</text>
                             </g>
                           </svg>
                         </svg>
-                        <svg widget-name="lbAuthorName" eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.1" x="165" y="29" width="74" height="24">
-                          <svg template-id="content-box" y="5" width="74" height="19">
+                        <svg eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.1" widget-name="lbAuthorName" x="165" y="48" width="74" height="19">
+                          <svg template-id="content-box" width="74" height="19">
                             <g template-id="content">
                               <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="9.5" fill="#464646">By Author</text>
                             </g>
                           </svg>
                         </svg>
-                        <svg widget-name="viewBookPublisherInfo" eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.2" x="49" y="53" width="305" height="46">
+                        <svg eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.2" widget-name="viewBookPublisherInfo" x="85" y="77" width="234" height="39">
                           <svg template-id="content-box">
                             <g template-id="content">
                               <g template-id="children-content">
-                                <svg widget-name="lb1" eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.2/@children.0" x="5" y="5" width="43" height="18">
-                                  <svg template-id="content-box" width="43" height="18">
+                                <svg eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.2/@children.0" widget-name="lb1" x="5" y="5" width="29" height="12">
+                                  <svg template-id="content-box" width="29" height="12">
                                     <g template-id="content">
-                                      <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="21.5" y="9" fill="#464646">Pages</text>
+                                      <text text-anchor="middle" alignment-baseline="central" font-size="10" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="14.5" y="6" fill="#464646">Pages</text>
                                     </g>
                                   </svg>
                                 </svg>
-                                <svg widget-name="lbPages" eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.2/@children.1" x="9" y="23" width="35" height="18">
-                                  <svg template-id="content-box" width="35" height="18">
+                                <svg eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.2/@children.1" widget-name="lbPages" x="5" y="17" width="30" height="17">
+                                  <svg template-id="content-box" y="2" width="30" height="15">
                                     <g template-id="content">
-                                      <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" template-id="node-text" x="17.5" y="9" fill="#464646">label</text>
+                                      <text text-anchor="middle" alignment-baseline="central" font-size="13" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" template-id="node-text" x="15" y="7.5" fill="#464646">label</text>
                                     </g>
                                   </svg>
                                 </svg>
-                                <svg widget-name="lb2" eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.2/@children.2" x="73" y="5" width="44" height="18">
-                                  <svg template-id="content-box" width="44" height="18">
+                                <svg eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.2/@children.2" widget-name="lb2" x="60" y="5" width="29" height="12">
+                                  <svg template-id="content-box" width="29" height="12">
                                     <g template-id="content">
-                                      <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="22" y="9" fill="#464646">Rating</text>
+                                      <text text-anchor="middle" alignment-baseline="central" font-size="10" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="14.5" y="6" fill="#464646">Rating</text>
                                     </g>
                                   </svg>
                                 </svg>
-                                <svg widget-name="lbRating" eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.2/@children.3" x="77" y="23" width="35" height="18">
-                                  <svg template-id="content-box" width="35" height="18">
+                                <svg eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.2/@children.3" widget-name="lbRating" x="60" y="17" width="30" height="17">
+                                  <svg template-id="content-box" y="2" width="30" height="15">
                                     <g template-id="content">
-                                      <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" template-id="node-text" x="17.5" y="9" fill="#464646">label</text>
+                                      <text text-anchor="middle" alignment-baseline="central" font-size="13" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" template-id="node-text" x="15" y="7.5" fill="#464646">label</text>
                                     </g>
                                   </svg>
                                 </svg>
-                                <svg widget-name="lb3" eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.2/@children.4" x="142" y="5" width="66" height="18">
-                                  <svg template-id="content-box" width="66" height="18">
+                                <svg eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.2/@children.4" widget-name="lb3" x="115" y="5" width="44" height="12">
+                                  <svg template-id="content-box" width="44" height="12">
                                     <g template-id="content">
-                                      <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="33" y="9" fill="#464646">Published</text>
+                                      <text text-anchor="middle" alignment-baseline="central" font-size="10" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="22" y="6" fill="#464646">Published</text>
                                     </g>
                                   </svg>
                                 </svg>
-                                <svg widget-name="lbPublished" eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.2/@children.5" x="157" y="23" width="35" height="18">
-                                  <svg template-id="content-box" width="35" height="18">
+                                <svg eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.2/@children.5" widget-name="lbPublished" x="122" y="17" width="30" height="17">
+                                  <svg template-id="content-box" y="2" width="30" height="15">
                                     <g template-id="content">
-                                      <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" template-id="node-text" x="17.5" y="9" fill="#464646">label</text>
+                                      <text text-anchor="middle" alignment-baseline="central" font-size="13" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" template-id="node-text" x="15" y="7.5" fill="#464646">label</text>
                                     </g>
                                   </svg>
                                 </svg>
-                                <svg widget-name="lb4" eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.2/@children.6" x="233" y="5" width="67" height="18">
-                                  <svg template-id="content-box" width="67" height="18">
+                                <svg eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.2/@children.6" widget-name="lb4" x="184" y="5" width="45" height="12">
+                                  <svg template-id="content-box" width="45" height="12">
                                     <g template-id="content">
-                                      <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="33.5" y="9" fill="#464646">Language</text>
+                                      <text text-anchor="middle" alignment-baseline="central" font-size="10" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="22.5" y="6" fill="#464646">Language</text>
                                     </g>
                                   </svg>
                                 </svg>
-                                <svg widget-name="lbLanguage" eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.2/@children.7" x="249" y="23" width="35" height="18">
-                                  <svg template-id="content-box" width="35" height="18">
+                                <svg eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.2/@children.7" widget-name="lbLanguage" x="191" y="17" width="30" height="17">
+                                  <svg template-id="content-box" y="2" width="30" height="15">
                                     <g template-id="content">
-                                      <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" template-id="node-text" x="17.5" y="9" fill="#464646">label</text>
+                                      <text text-anchor="middle" alignment-baseline="central" font-size="13" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" template-id="node-text" x="15" y="7.5" fill="#464646">label</text>
+                                    </g>
+                                  </svg>
+                                </svg>
+                              </g>
+                            </g>
+                          </svg>
+                        </svg>
+                        <svg eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.3" widget-name="horizontalReadBookButtonView" x="5" y="126" width="394" height="44">
+                          <svg template-id="content-box">
+                            <g template-id="content">
+                              <g template-id="children-content">
+                                <svg eObject-URI="BookDetail.page#/0/@children.1/@children.1/@children.3/@children.0" widget-name="readBookButton" x="127" y="5" width="139" height="29">
+                                  <rect template-id="background" width="100%" height="100%" rx="5%" fill="#0" />
+                                  <svg template-id="content-box" x="25" y="5" width="89" height="19">
+                                    <g template-id="content">
+                                      <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" template-id="node-text" x="44.5" y="9.5" fill="#ffffff">Read Book</text>
                                     </g>
                                   </svg>
                                 </svg>
@@ -169,37 +172,22 @@
             </g>
           </svg>
         </svg>
-        <svg widget-name="viewBookDescription" eObject-URI="BookDetail.page#/0/@children.2" y="438" width="414" height="246">
+        <svg eObject-URI="BookDetail.page#/0/@children.2" widget-name="viewBookDescription" y="435" width="414" height="246">
+          <rect template-id="background" width="100%" height="100%" fill="#ffffff" />
           <svg template-id="content-box">
             <g scrollableBox="414 246" template-id="content" scrollable="vertical">
               <g template-id="children-content">
-                <svg widget-name="lbOverviewTitle" eObject-URI="BookDetail.page#/0/@children.2/@children.0" x="134" y="5" width="145" height="23">
+                <svg eObject-URI="BookDetail.page#/0/@children.2/@children.0" widget-name="lbOverviewTitle" x="134" y="5" width="145" height="23">
                   <svg template-id="content-box" width="145" height="23">
                     <g template-id="content">
                       <text alignment-baseline="central" font-size="20" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11.5" fill="#0">Book Overview</text>
                     </g>
                   </svg>
                 </svg>
-                <svg widget-name="lbDescription" eObject-URI="BookDetail.page#/0/@children.2/@children.1" x="10" y="28" width="394" height="123">
-                  <svg template-id="content-box" y="10" width="394" height="103">
+                <svg eObject-URI="BookDetail.page#/0/@children.2/@children.1" widget-name="lbDescription" x="20" y="28" width="374" height="140">
+                  <svg template-id="content-box" y="10" width="374" height="120">
                     <g template-id="content">
-                      <text alignment-baseline="central" font-size="15" font-family="ArialMT" font-style="normal" text-decoration="none" maxWidth="394" template-id="node-text" x="0" y="0" fill="#464646">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</text>
-                    </g>
-                  </svg>
-                </svg>
-                <svg widget-name="horizontalReadBookButtonView" eObject-URI="BookDetail.page#/0/@children.2/@children.2" x="10" y="151" width="394" height="39">
-                  <svg template-id="content-box">
-                    <g template-id="content">
-                      <g template-id="children-content">
-                        <svg widget-name="readBookButton" eObject-URI="BookDetail.page#/0/@children.2/@children.2/@children.0" x="162" y="5" width="70" height="24">
-                          <rect template-id="background" width="100%" height="100%" rx="10%" fill="#0" />
-                          <svg template-id="content-box" x="5" y="5" width="60" height="14">
-                            <g template-id="content">
-                              <text text-anchor="middle" alignment-baseline="central" font-size="12" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="30" y="7" fill="#ffffff">Read Book</text>
-                            </g>
-                          </svg>
-                        </svg>
-                      </g>
+                      <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="ArialMT" font-style="normal" text-decoration="none" maxWidth="394" template-id="node-text" x="0" y="0" fill="#464646">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</text>
                     </g>
                   </svg>
                 </svg>
@@ -207,22 +195,22 @@
             </g>
           </svg>
         </svg>
-        <svg widget-name="toolBar" eObject-URI="BookDetail.page#/0/@children.3" y="684" width="414" height="52">
+        <svg eObject-URI="BookDetail.page#/0/@children.3" widget-name="toolBar" y="681" width="414" height="55">
           <svg template-id="content-box">
             <g template-id="content">
               <g template-id="children-content">
-                <svg widget-name="toolBarItem1" eObject-URI="BookDetail.page#/0/@children.3/@children.0" width="105" height="52">
+                <svg eObject-URI="BookDetail.page#/0/@children.3/@children.0" widget-name="toolBarItem1" y="5" width="138" height="52">
                   <svg template-id="content-box">
                     <g template-id="content">
                       <g template-id="children-content">
-                        <svg widget-id="image" widget-name="icon1" eObject-URI="BookDetail.page#/0/@children.3/@children.0/@children.0" x="38" y="2" width="28" height="28">
+                        <svg widget-id="image" eObject-URI="BookDetail.page#/0/@children.3/@children.0/@children.0" widget-name="icon1" x="55" y="2" width="28" height="28">
                           <svg template-id="content-box" y="5" width="28" height="23">
                             <g template-id="content">
                               <image xlink:href="Assets/red-category.svg" template-id="node-image" width="100%" height="100%" />
                             </g>
                           </svg>
                         </svg>
-                        <svg widget-id="label" widget-name="caption1" eObject-URI="BookDetail.page#/0/@children.3/@children.0/@children.1" x="6" y="33" width="93" height="19">
+                        <svg widget-id="label" eObject-URI="BookDetail.page#/0/@children.3/@children.0/@children.1" widget-name="caption1" x="22" y="33" width="93" height="19">
                           <svg template-id="content-box" x="10" width="73" height="19">
                             <g template-id="content">
                               <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="36.5" y="9.5" fill="#c21917">Categories</text>
@@ -233,18 +221,18 @@
                     </g>
                   </svg>
                 </svg>
-                <svg widget-name="toolBarItem2" eObject-URI="BookDetail.page#/0/@children.3/@children.1" x="105" width="103" height="52">
+                <svg eObject-URI="BookDetail.page#/0/@children.3/@children.1" widget-name="toolBarItem2" x="138" y="5" width="138" height="52">
                   <svg template-id="content-box">
                     <g template-id="content">
                       <g template-id="children-content">
-                        <svg widget-id="image" widget-name="icon2" eObject-URI="BookDetail.page#/0/@children.3/@children.1/@children.0" x="37" y="2" width="28" height="28">
+                        <svg widget-id="image" eObject-URI="BookDetail.page#/0/@children.3/@children.1/@children.0" widget-name="icon2" x="55" y="2" width="28" height="28">
                           <svg template-id="content-box" y="5" width="28" height="23">
                             <g template-id="content">
                               <image xlink:href="Assets/black-2x-search.svg" template-id="node-image" width="100%" height="100%" />
                             </g>
                           </svg>
                         </svg>
-                        <svg widget-id="label" widget-name="caption2" eObject-URI="BookDetail.page#/0/@children.3/@children.1/@children.1" x="18" y="33" width="67" height="19">
+                        <svg widget-id="label" eObject-URI="BookDetail.page#/0/@children.3/@children.1/@children.1" widget-name="caption2" x="35" y="33" width="67" height="19">
                           <svg template-id="content-box" x="10" width="47" height="19">
                             <g template-id="content">
                               <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="23.5" y="9.5" fill="#0">Search</text>
@@ -255,40 +243,18 @@
                     </g>
                   </svg>
                 </svg>
-                <svg widget-name="toolBarItem3" eObject-URI="BookDetail.page#/0/@children.3/@children.2" x="208" width="103" height="52">
+                <svg eObject-URI="BookDetail.page#/0/@children.3/@children.2" widget-name="toolBarItem4" x="276" y="5" width="138" height="52">
                   <svg template-id="content-box">
                     <g template-id="content">
                       <g template-id="children-content">
-                        <svg widget-id="image" widget-name="icon3" eObject-URI="BookDetail.page#/0/@children.3/@children.2/@children.0" x="37" y="2" width="28" height="28">
-                          <svg template-id="content-box" y="5" width="28" height="23">
-                            <g template-id="content">
-                              <image xlink:href="Assets/black-64bt-favorite-icon.svg" template-id="node-image" width="100%" height="100%" />
-                            </g>
-                          </svg>
-                        </svg>
-                        <svg widget-id="label" widget-name="caption3" eObject-URI="BookDetail.page#/0/@children.3/@children.2/@children.1" x="10" y="33" width="82" height="19">
-                          <svg template-id="content-box" x="10" width="62" height="19">
-                            <g template-id="content">
-                              <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="31" y="9.5" fill="#0">Favorites</text>
-                            </g>
-                          </svg>
-                        </svg>
-                      </g>
-                    </g>
-                  </svg>
-                </svg>
-                <svg widget-name="toolBarItem4" eObject-URI="BookDetail.page#/0/@children.3/@children.3" x="311" width="103" height="52">
-                  <svg template-id="content-box">
-                    <g template-id="content">
-                      <g template-id="children-content">
-                        <svg widget-id="image" widget-name="icon4" eObject-URI="BookDetail.page#/0/@children.3/@children.3/@children.0" x="37" y="2" width="28" height="28">
+                        <svg widget-id="image" eObject-URI="BookDetail.page#/0/@children.3/@children.2/@children.0" widget-name="icon4" x="55" y="2" width="28" height="28">
                           <svg template-id="content-box" y="5" width="28" height="23">
                             <g template-id="content">
                               <image xlink:href="Assets/more-button-of-three-dots.svg" template-id="node-image" width="100%" height="100%" />
                             </g>
                           </svg>
                         </svg>
-                        <svg widget-id="label" widget-name="caption4" eObject-URI="BookDetail.page#/0/@children.3/@children.3/@children.1" x="24" y="33" width="55" height="19">
+                        <svg widget-id="label" eObject-URI="BookDetail.page#/0/@children.3/@children.2/@children.1" widget-name="caption4" x="41" y="33" width="55" height="19">
                           <svg template-id="content-box" x="10" width="35" height="19">
                             <g template-id="content">
                               <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="17.5" y="9.5" fill="#0">More</text>

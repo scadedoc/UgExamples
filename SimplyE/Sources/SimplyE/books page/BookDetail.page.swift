@@ -24,9 +24,9 @@ class BookDetailPageAdapter: SCDLatticePageAdapter {
       self.goToSearchPage()
     }
 
-    self.toolBarItem3.onClick { _ in
-      self.goToFavoritesPage()
-    }
+//    self.toolBarItem3.onClick { _ in
+//      self.goToFavoritesPage()
+//    }
 
     self.toolBarItem4.onClick { _ in
       self.goToSettingsPage()
