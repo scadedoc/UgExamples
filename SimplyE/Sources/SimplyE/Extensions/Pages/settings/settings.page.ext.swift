@@ -113,18 +113,6 @@ extension SettingsPageAdapter {
     return self.page?.getWidgetByName("caption2") as! SCDWidgetsLabel
   }
 
-  var toolBarItem3: SCDWidgetsToolBarItem {
-    return self.page?.getWidgetByName("toolBarItem3") as! SCDWidgetsToolBarItem
-  }
-
-  var icon3: SCDWidgetsImage {
-    return self.page?.getWidgetByName("icon3") as! SCDWidgetsImage
-  }
-
-  var caption3: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("caption3") as! SCDWidgetsLabel
-  }
-
   var toolBarItem4: SCDWidgetsToolBarItem {
     return self.page?.getWidgetByName("toolBarItem4") as! SCDWidgetsToolBarItem
   }

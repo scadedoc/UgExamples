@@ -5,16 +5,20 @@ extension BookDetailPageAdapter {
     return self.page?.getWidgetByName("navigationBar") as! SCDWidgetsNavigationBar
   }
 
-  var backButton: SCDWidgetsButton {
-    return self.page?.getWidgetByName("backButton") as! SCDWidgetsButton
-  }
-
   var detailsLabel: SCDWidgetsLabel {
     return self.page?.getWidgetByName("detailsLabel") as! SCDWidgetsLabel
   }
 
   var favoritedButton: SCDWidgetsButton {
     return self.page?.getWidgetByName("favoritedButton") as! SCDWidgetsButton
+  }
+
+  var backButton: SCDWidgetsButton {
+    return self.page?.getWidgetByName("backButton") as! SCDWidgetsButton
+  }
+
+  var image1: SCDWidgetsImage {
+    return self.page?.getWidgetByName("image1") as! SCDWidgetsImage
   }
 
   var listBookDetails: SCDWidgetsListView {
@@ -77,6 +81,14 @@ extension BookDetailPageAdapter {
     return self.page?.getWidgetByName("lbLanguage") as! SCDWidgetsLabel
   }
 
+  var horizontalReadBookButtonView: SCDWidgetsRowView {
+    return self.page?.getWidgetByName("horizontalReadBookButtonView") as! SCDWidgetsRowView
+  }
+
+  var readBookButton: SCDWidgetsButton {
+    return self.page?.getWidgetByName("readBookButton") as! SCDWidgetsButton
+  }
+
   var viewBookDescription: SCDWidgetsListView {
     return self.page?.getWidgetByName("viewBookDescription") as! SCDWidgetsListView
   }
@@ -87,14 +99,6 @@ extension BookDetailPageAdapter {
 
   var lbDescription: SCDWidgetsLabel {
     return self.page?.getWidgetByName("lbDescription") as! SCDWidgetsLabel
-  }
-
-  var horizontalReadBookButtonView: SCDWidgetsRowView {
-    return self.page?.getWidgetByName("horizontalReadBookButtonView") as! SCDWidgetsRowView
-  }
-
-  var readBookButton: SCDWidgetsButton {
-    return self.page?.getWidgetByName("readBookButton") as! SCDWidgetsButton
   }
 
   var toolBar: SCDWidgetsToolBar {
@@ -123,18 +127,6 @@ extension BookDetailPageAdapter {
 
   var caption2: SCDWidgetsLabel {
     return self.page?.getWidgetByName("caption2") as! SCDWidgetsLabel
-  }
-
-  var toolBarItem3: SCDWidgetsToolBarItem {
-    return self.page?.getWidgetByName("toolBarItem3") as! SCDWidgetsToolBarItem
-  }
-
-  var icon3: SCDWidgetsImage {
-    return self.page?.getWidgetByName("icon3") as! SCDWidgetsImage
-  }
-
-  var caption3: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("caption3") as! SCDWidgetsLabel
   }
 
   var toolBarItem4: SCDWidgetsToolBarItem {
