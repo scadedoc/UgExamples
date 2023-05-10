@@ -47,11 +47,15 @@ static func getCategories() -> [Genre] {
       let urlSession = URLSession(configuration: .default).dataTask(with: url) {
         (data, response, error) in
         if let error = error {
-          completion(.failure(error))
+          DispatchQueue.main.async {
+            completion(.failure(error))
+          }
         }
 
         if let data = data {
-          completion(.success(data))
+          DispatchQueue.main.async {
+            completion(.success(data))
+          }
         }
       }
 
