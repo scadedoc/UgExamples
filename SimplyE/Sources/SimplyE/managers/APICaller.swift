@@ -43,10 +43,14 @@ class APICaller {
       do {
         let items = try JSONDecoder().decode(TrendingBookResponse.self, from: data)
 
-        completion(.success(items.items ?? []))
+        DispatchQueue.main.async {
+          completion(.success(items.items ?? []))
+        }
       } catch {
         print("Unexpected error: \(error).")
-        completion(.failure(APIError.FailedTogetData))
+        DispatchQueue.main.async {
+          completion(.failure(APIError.FailedTogetData))
+        }
       }
     }
 
@@ -75,9 +79,13 @@ class APICaller {
       do {
         let items = try JSONDecoder().decode(TrendingBookResponse.self, from: data)
 
-        completion(.success(items.items ?? []))
+        DispatchQueue.main.async {
+          completion(.success(items.items ?? []))
+        }
       } catch {
-        completion(.failure(APIError.FailedTogetData))
+        DispatchQueue.main.async {
+          completion(.failure(APIError.FailedTogetData))
+        }
       }
     }
 
@@ -103,9 +111,13 @@ class APICaller {
       do {
         let items = try JSONDecoder().decode(TrendingBookResponse.self, from: data)
 
-        completion(.success(items.items ?? []))
+        DispatchQueue.main.async {
+          completion(.success(items.items ?? []))
+        }
       } catch {
-        completion(.failure(APIError.FailedTogetData))
+        DispatchQueue.main.async {
+          completion(.failure(APIError.FailedTogetData))
+        }
       }
     }
 
@@ -131,9 +143,13 @@ class APICaller {
       do {
         let items = try JSONDecoder().decode(TrendingBookResponse.self, from: data)
 
-        completion(.success(items.items ?? []))
+        DispatchQueue.main.async {
+          completion(.success(items.items ?? []))
+        }
       } catch {
-        completion(.failure(APIError.FailedTogetData))
+        DispatchQueue.main.async {
+          completion(.failure(APIError.FailedTogetData))
+        }
       }
     }
 
@@ -159,9 +175,13 @@ class APICaller {
       do {
         let items = try JSONDecoder().decode(TrendingBookResponse.self, from: data)
 
-        completion(.success(items.items ?? []))
+        DispatchQueue.main.async {
+          completion(.success(items.items ?? []))
+        }
       } catch {
-        completion(.failure(APIError.FailedTogetData))
+        DispatchQueue.main.async {
+          completion(.failure(APIError.FailedTogetData))
+        }
       }
     }
 
@@ -191,9 +211,13 @@ class APICaller {
       do {
         let items = try JSONDecoder().decode(TrendingBookResponse.self, from: data)
 
-        completion(.success(items.items ?? []))
+        DispatchQueue.main.async {
+          completion(.success(items.items ?? []))
+        }
       } catch {
-        completion(.failure(APIError.FailedTogetData))
+        DispatchQueue.main.async {
+          completion(.failure(APIError.FailedTogetData))
+        }
       }
     }
 
