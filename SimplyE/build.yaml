@@ -44,12 +44,12 @@ ios:
     beta-reports-active: false
   icons: 
     iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5
-      60X60_2X:
-      76X76_2X:
-      76X76_3X:
-      83.5X83.5_2X:
+      60X60_2X: Assets/ScadeBooksIcons/ios/AppIcon.appiconset/Icon-App-60x60@2x.png
+      76X76_2X: Assets/ScadeBooksIcons/ios/AppIcon.appiconset/Icon-App-76x76@2x.png
+      76X76_3X: Assets/ScadeBooksIcons/ios/AppIcon.appiconset/Icon-App-76x76@3x.png
+      83.5X83.5_2X: Assets/ScadeBooksIcons/ios/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png
     marketing:
-      1024X1024_1X:
+      1024X1024_1X: Assets/ScadeBooksIcons/ios/iTunesArtwork@1x.png
   plist: 
     - key: CFBundleShortVersionString
       type: string  # string, bool, int, list or dict
@@ -72,8 +72,8 @@ android:
   id: com.scade.simplye
   version-name: 1.0.0
   version-code: 1
-  build-type: Debug
-  key-store-properties:
+  build-type: Release
+  key-store-properties: /Users/olanrewajuolakunle/keystore.properties
   google-api-key: 
   manifest-file:
   permissions: []
@@ -106,7 +106,7 @@ android:
       scheme:
       categories: [] 
   icons:
-    mdpi:
-    hdpi:
-    xhdpi: 
-    xxhdpi:
+    mdpi: Assets/ScadeBooksIcons/android/mipmap-mdpi/ic_launcher.png
+    hdpi: Assets/ScadeBooksIcons/android/mipmap-hdpi/ic_launcher.png
+    xhdpi: Assets/ScadeBooksIcons/android/mipmap-xhdpi/ic_launcher.png
+    xxhdpi: Assets/ScadeBooksIcons/android/mipmap-xxhdpi/ic_launcher.png
