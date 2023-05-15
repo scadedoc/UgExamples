@@ -17,20 +17,27 @@ class BookWebViewPageAdapter: SCDLatticePageAdapter {
 
       guard let bookWebView = book.volumeInfo.previewLink else { return }
 
-      guard let url = URL(string: bookWebView) else { return }
+      guard var url = URL(string: bookWebView) else { return }
 
       guard let domain = url.host else { return }
 
       self.titleLabel.text = domain
 
-      webView.load(bookWebView)
+      // force using https in all requests
+      if url.scheme == "http" {
+        var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
+        components.scheme = "https"
+        url = components.url!
+      }
+
+      webView.load(url.absoluteString)
 
       self.doneButton.onClick { _ in
         self.navigation?.goWith(page: "BookDetail.page", data: book.id)
       }
 
       self.reloadButton.onClick { _ in
-        self.webView.load(bookWebView)
+        self.webView.load(url.absoluteString)
       }
 
       webView.onLoaded.append(
