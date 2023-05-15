@@ -15,6 +15,10 @@ class BookDetailPageAdapter: SCDLatticePageAdapter {
     self.backButton.onClick { _ in
       self.goBack()
     }
+    
+    self.image1.onClick { _ in
+      self.goBack()
+    }
 
     self.toolBarItem1.onClick { _ in
       self.goBack()
