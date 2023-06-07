@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.3"
+    }
+}
+
+
+android {
+    // disable lint release checks
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    compileSdkVersion 33
+    buildToolsVersion "30.0.2"
+    ndkPath ""
+
+    defaultConfig {
+        applicationId "com.scade.ugcustombuildfilesexample"
+        minSdkVersion 24
+        targetSdkVersion 33
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        release {
+            def keystorePropertiesFileName=""
+            def keystoreProperties = new Properties()
+            if (keystorePropertiesFileName != "") {
+                def keystorePropertiesFile = rootProject.file(keystorePropertiesFileName)
+                keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+                storePassword keystoreProperties['storePassword']
+                keyPassword keystoreProperties['keyPassword']
+                keyAlias keystoreProperties['keyAlias']
+                storeFile file(keystoreProperties['storeFile'])
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            jniDebuggable true
+            debuggable true
+        }
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['java_src']
+            resources.srcDirs = ['java_src']
+            aidl.srcDirs = ['java_src']
+            renderscript.srcDirs = ['java_src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ["libs"]
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+    }
+}
+
+
+dependencies {
+    implementation 'com.google.android.gms:play-services:12.0.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:multidex:1.0.3'
+
+}
