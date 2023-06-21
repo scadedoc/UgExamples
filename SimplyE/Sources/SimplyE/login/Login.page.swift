@@ -1,7 +1,6 @@
-import ScadeKit
 import Dispatch
-
 import Foundation
+import ScadeKit
 
 class LoginPageAdapter: SCDLatticePageAdapter {
 
@@ -19,25 +18,14 @@ class LoginPageAdapter: SCDLatticePageAdapter {
     // after the display of the page
     self.postDisplayActions()
 
-    self.loadResults()
-
   }
 
   func postDisplayActions() {
     // put actions that shall happen
     // after the display of the page here
     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-
-      self.navigation!.go(page: "main.page", transition: .FROM_LEFT)
+      Navigation.go(.main, clearHistory: false, transition: .FROM_LEFT)
     }
-  }
-
-  func loadResults() {
-
-    APICaller.shared.getAdventurousBooks { result in
-
-    }
-
   }
 
 }
