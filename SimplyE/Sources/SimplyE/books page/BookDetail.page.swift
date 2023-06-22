@@ -1,8 +1,6 @@
 import Dispatch
-import ScadeKit
-
 import Foundation
-
+import ScadeKit
 
 class BookDetailPageAdapter: SCDLatticePageAdapter {
 
@@ -13,31 +11,33 @@ class BookDetailPageAdapter: SCDLatticePageAdapter {
     super.load(path)
 
     self.backButton.onClick { _ in
-      self.goBack()
+      Navigation.back()
+      //self.goBack()
     }
-    
+
     self.image1.onClick { _ in
-      self.goBack()
+      Navigation.back()
+      //self.goBack()
     }
 
     self.toolBarItem1.onClick { _ in
-      self.goBack()
+      Navigation.go(.main)
     }
 
     self.toolBarItem2.onClick { _ in
-      self.goToSearchPage()
+      Navigation.go(.search)
     }
 
-//    self.toolBarItem3.onClick { _ in
-//      self.goToFavoritesPage()
-//    }
+    //    self.toolBarItem3.onClick { _ in
+    //      Navigation.go(.Favorited, clearHistory: true)
+    //    }
 
     self.toolBarItem4.onClick { _ in
-      self.goToSettingsPage()
+      Navigation.go(.settings)
     }
 
     self.readBookButton.onClick { _ in
-      self.navigation?.goWith(page: "bookWebView.page", data: self.book ?? "")
+      Navigation.go(.bookWebView, with: self.book ?? "")
     }
 
     self.favoritedButton.onClick { _ in
@@ -73,22 +73,6 @@ class BookDetailPageAdapter: SCDLatticePageAdapter {
 
     }
 
-  }
-
-  func goBack() {
-    self.navigation?.go(page: "main.page")
-  }
-
-  func goToSearchPage() {
-    self.navigation?.go(page: "search.page")
-  }
-
-  func goToFavoritesPage() {
-    self.navigation?.go(page: "favorited.page")
-  }
-
-  func goToSettingsPage() {
-    self.navigation?.go(page: "settings.page")
   }
 
   private func fetchClickedBook() {
