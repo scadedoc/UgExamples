@@ -29,7 +29,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
     self.fetchHealth()
 
     self.toolBarItem2.onClick { _ in
-      Navigation.go(.search)
+      Navigation.go(.search, clearHistory: true)
     }
 
     //    self.toolBarItem3.onClick { _ in
@@ -37,7 +37,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
     //    }
 
     self.toolBarItem4.onClick { _ in
-      Navigation.go(.settings)
+      Navigation.go(.settings, clearHistory: true)
     }
 
     //guard let selected = searchPage.selectedBook else {return}

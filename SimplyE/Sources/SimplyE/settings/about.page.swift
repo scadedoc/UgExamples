@@ -13,7 +13,7 @@ class AboutPageAdapter: SCDLatticePageAdapter {
     super.show(view: view, data: data)
 
     self.doneButton.onClick { _ in
-    Navigation.go(.settings)
+    Navigation.go(.settings, clearHistory: true)
     }
 
     let aboutWebView: String = "https://docs.scade.io/docs/how-scade-works"

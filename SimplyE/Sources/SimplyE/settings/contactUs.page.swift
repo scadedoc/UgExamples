@@ -12,7 +12,7 @@ class ContactUsPageAdapter: SCDLatticePageAdapter {
     super.show(view: view, data: data)
     
     self.doneButton.onClick { _ in
-    Navigation.go(.settings)
+    Navigation.go(.settings, clearHistory: true)
     }
 
     let contactUsWebView: String =

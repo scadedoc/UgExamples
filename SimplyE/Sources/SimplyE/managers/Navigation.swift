@@ -58,15 +58,6 @@ class Navigation {
     return self.transitionsStack.last
   }
 
-  private static var penultimate: Page? {
-    guard self.transitionsStack.count >= 3 else {
-      return nil
-    }
-
-    return self.transitionsStack[self.transitionsStack.count - 3]
-
-  }
-
   static func adapter(by page: Page) -> SCDLatticePageAdapter? {
     guard let adapter = self.adapters[page] else {
       let adapter = page.createAdapter()
@@ -112,16 +103,7 @@ class Navigation {
     let page = self.current!.fileName
 
     adapter(by: last!)?.navigation?.go(page: page)
-    /*
-    let previous = self.transitionsStack.remove(at: self.transitionsStack.count - 3)
-    let previousPage = self.penultimate!.fileName
 
-    if (page == "bookWebView.page") {
-      adapter(by: previous)?.navigation?.go(page: previousPage)
-    } else {
-    	adapter(by: last!)?.navigation?.go(page: page)
-    }
-*/
   }
 
   /// Utils

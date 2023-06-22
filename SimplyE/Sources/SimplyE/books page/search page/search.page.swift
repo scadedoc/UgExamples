@@ -35,7 +35,7 @@ class SearchPageAdapter: SCDLatticePageAdapter {
     dump(FavoritedDatabase.favoriteDB.allBooks)
 
     self.toolBarItem1.onClick { _ in
-      Navigation.go(.main, clearHistory: false)
+      Navigation.go(.main, clearHistory: true)
     }
 
     //    self.toolBarItem3.onClick { _ in
@@ -43,7 +43,7 @@ class SearchPageAdapter: SCDLatticePageAdapter {
     //    }
 
     self.toolBarItem4.onClick { _ in
-      Navigation.go(.settings, clearHistory: false)
+      Navigation.go(.settings, clearHistory: true)
     }
 
     self.ctrlListBooks.elementProvider { (book: Book, element) in

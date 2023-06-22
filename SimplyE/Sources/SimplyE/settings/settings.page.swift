@@ -8,19 +8,19 @@ class SettingsPageAdapter: SCDLatticePageAdapter {
     super.load(path)
 
     self.horinzontalView1.onClick { _ in
-      Navigation.go(.about)
+      Navigation.go(.about, clearHistory: true)
     }
 
     self.horinzontalView3.onClick { _ in
-      Navigation.go(.contactUs)
+      Navigation.go(.contactUs, clearHistory: true)
     }
 
     self.toolBarItem1.onClick { _ in
-      Navigation.go(.main)
+      Navigation.go(.main, clearHistory: true)
     }
 
     self.toolBarItem2.onClick { _ in
-      Navigation.go(.search)
+      Navigation.go(.search, clearHistory: true)
     }
 
     //    self.toolBarItem3.onClick { _ in
