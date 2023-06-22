@@ -33,8 +33,7 @@ class BookWebViewPageAdapter: SCDLatticePageAdapter {
       webView.load(url.absoluteString)
 
       self.doneButton.onClick { _ in
-      //Navigation.go(.BookDetail, with: book.id)
-      Navigation.go(.BookDetail, with: book.id, clearHistory: false)
+        self.navigation?.goWith(page: "BookDetail.page", data: book.id)
       }
 
       self.reloadButton.onClick { _ in

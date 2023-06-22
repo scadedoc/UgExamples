@@ -1,14 +1,15 @@
 import Dispatch
-import Foundation
 import ScadeKit
 import ScadeUI
+
+import Foundation
 
 class MainPageAdapter: SCDLatticePageAdapter {
 
   public var randomBooks: [Book] = []
 
   public var selectedBook: Book?
-
+  
   let MAX_BOOK_NAME_LENGTH = 15
 
   // page adapter initialization
@@ -29,15 +30,15 @@ class MainPageAdapter: SCDLatticePageAdapter {
     self.fetchHealth()
 
     self.toolBarItem2.onClick { _ in
-      Navigation.go(.search)
+      self.goToSearchPage()
     }
 
-    //    self.toolBarItem3.onClick { _ in
-    //      Navigation.go(.Favorited)
-    //    }
+//    self.toolBarItem3.onClick { _ in
+//      self.goToFavoritesPage()
+//    }
 
     self.toolBarItem4.onClick { _ in
-      Navigation.go(.settings)
+      self.goToSettingsPage()
     }
 
     //guard let selected = searchPage.selectedBook else {return}
@@ -74,8 +75,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
         bookView.onClick.append(
           SCDWidgetsEventHandler { [weak book] event in
             guard let book = book else { return }
-            Navigation.go(.BookDetail, with: book)
-            //self.navigation?.goWith(page: "BookDetail.page", data: book)
+            self.navigation?.goWith(page: "BookDetail.page", data: book)
           })
 
         //bookView[label]?.text = book.volumeInfo.title ?? "no title"
@@ -83,15 +83,15 @@ class MainPageAdapter: SCDLatticePageAdapter {
 
         if let label = bookView["label ", as: SCDWidgetsLabel.self] {
           let text = book.volumeInfo.title ?? "no title"
-
+          
           //Solving cutoff texts in Label
-          var truncated = text
-
-          if text.count > self.MAX_BOOK_NAME_LENGTH {
-            let index = text.index(text.startIndex, offsetBy: self.MAX_BOOK_NAME_LENGTH - 3)
-            truncated = "\(text.prefix(upTo: index))..."
-          }
-
+		var truncated = text
+		
+        if text.count > self.MAX_BOOK_NAME_LENGTH {
+          let index = text.index(text.startIndex, offsetBy: self.MAX_BOOK_NAME_LENGTH - 3)
+          truncated = "\(text.prefix(upTo: index))..."
+        }
+        
           label.text = truncated
           (label.layoutData as? SCDLayoutGridData)?.maxContentWidth = 100
         }
@@ -102,15 +102,6 @@ class MainPageAdapter: SCDLatticePageAdapter {
           ) { [weak bitmap] data in
             bitmap?.content = data
           }
-
-          // image-caching with NSCache
-          /*ImagesCache.shared.loadCachedData(
-            from: book.volumeInfo.imageLinks.thumbnail ?? "no image", queue: .main
-          ) {
-            [weak bitmap] data in
-            bitmap?.content = data
-          }*/
-
         }
 
       }
@@ -171,6 +162,18 @@ class MainPageAdapter: SCDLatticePageAdapter {
       self?.ctrlListBookCatalog.items.append(health)
       self?.addRandomBooks(health.books)
     }
+  }
+
+  func goToSearchPage() {
+    self.navigation?.go(page: "search.page")
+  }
+
+  func goToFavoritesPage() {
+    self.navigation?.go(page: "favorited.page")
+  }
+
+  func goToSettingsPage() {
+    self.navigation?.go(page: "settings.page")
   }
 
 }
