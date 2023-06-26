@@ -1,12 +1,21 @@
+import Foundation
 import ScadeKit
 
-import Foundation
-
 class BookWebViewPageAdapter: SCDLatticePageAdapter {
+
+  var url: URL?
 
   // page adapter initialization
   override func load(_ path: String) {
     super.load(path)
+
+    self.doneButton.onClick { _ in
+      Navigation.back()
+    }
+
+    self.reloadButton.onClick { _ in
+      self.webView.load(self.url?.absoluteString ?? "")
+    }
 
   }
 
@@ -28,17 +37,11 @@ class BookWebViewPageAdapter: SCDLatticePageAdapter {
         var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
         components.scheme = "https"
         url = components.url!
+        self.url = components.url!
+
       }
 
       webView.load(url.absoluteString)
-
-      self.doneButton.onClick { _ in
-        self.navigation?.goWith(page: "BookDetail.page", data: book.id)
-      }
-
-      self.reloadButton.onClick { _ in
-        self.webView.load(url.absoluteString)
-      }
 
       webView.onLoaded.append(
         SCDWidgetsLoadEventHandler { event in

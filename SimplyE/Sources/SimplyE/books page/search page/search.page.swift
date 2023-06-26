@@ -35,15 +35,15 @@ class SearchPageAdapter: SCDLatticePageAdapter {
     dump(FavoritedDatabase.favoriteDB.allBooks)
 
     self.toolBarItem1.onClick { _ in
-      self.goToPage()
+      Navigation.go(.main, clearHistory: true)
     }
 
-//    self.toolBarItem3.onClick { _ in
-//      self.goToFavoritesPage()
-//    }
+    //    self.toolBarItem3.onClick { _ in
+    //      Navigation.go(.Favorited, clearHistory: true)
+    //    }
 
     self.toolBarItem4.onClick { _ in
-      self.goToSettingsPage()
+      Navigation.go(.settings, clearHistory: true)
     }
 
     self.ctrlListBooks.elementProvider { (book: Book, element) in
@@ -91,7 +91,7 @@ class SearchPageAdapter: SCDLatticePageAdapter {
       element.onClick.append(
         SCDWidgetsEventHandler { [weak book] event in
           guard let book = book else { return }
-          self.navigation?.goWith(page: "BookDetail.page", data: book)
+          Navigation.go(.BookDetail, with: book)
         })
 
     }
@@ -214,18 +214,6 @@ class SearchPageAdapter: SCDLatticePageAdapter {
         print(error.localizedDescription)
       }
     }
-  }
-
-  func goToPage() {
-    self.navigation?.go(page: "main.page")
-  }
-
-  func goToFavoritesPage() {
-    self.navigation?.go(page: "favorited.page")
-  }
-
-  func goToSettingsPage() {
-    self.navigation?.go(page: "settings.page")
   }
 
 }
