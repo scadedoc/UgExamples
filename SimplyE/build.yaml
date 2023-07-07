@@ -67,8 +67,8 @@ ios:
 android:
   name: simplye
   id: com.scade.simplye
-  version-name: 99.0.0
-  version-code: 99
+  version-name: 100.0.0
+  version-code: 100
   build-type: Release
   key-store-properties: /Users/olanrewajuolakunle/keystore.properties
   google-api-key:
