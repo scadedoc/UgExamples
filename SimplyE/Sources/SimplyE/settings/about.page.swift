@@ -21,7 +21,7 @@ class AboutPageAdapter: SCDLatticePageAdapter {
 
   override func show(view: SCDLatticeView?, data: Any) {
     super.show(view: view, data: data)
-
+    
     guard let url = URL(string: self.aboutWebView) else { return }
 
     guard let domain = url.host else { return }
