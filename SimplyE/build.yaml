@@ -17,6 +17,7 @@ ios:
   supported-interface-orientationsiPad: ['portrait']
   entitlements-file:
   app-delegate-file:
+  export-method: app-store
   simulator:
     os: 12.1
     output: SimplyE/.build/ios-simulator
@@ -37,27 +38,28 @@ ios:
     search-paths: []
     linked-libs: []
   sign:
-    provision-profile:
-    certificate:
+    provision-profile: /Users/olanrewajuolakunle/Documents/allmybooksprofile.mobileprovision
+    certificate: /Users/olanrewajuolakunle/Documents/CertificateDistribution.p12
     beta-reports-active: false
   icons:
     iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5
-      60X60_2X: #Assets/ScadeBooksIcons/ios/AppIcon.appiconset/Icon-App-60x60@2x.png
-      76X76_2X: #Assets/ScadeBooksIcons/ios/AppIcon.appiconset/Icon-App-76x76@2x.png
+      60X60_2X: Assets/ScadeBooksIcons/ios/AppIcon.appiconset/Icon-App-60x60@2x.png
+      76X76_2X: Assets/ScadeBooksIcons/ios/AppIcon.appiconset/Icon-App-76x76@2x.png
       76X76_3X: #Assets/ScadeBooksIcons/ios/AppIcon.appiconset/Icon-App-76x76@3x.png
-      83.5X83.5_2X: #Assets/ScadeBooksIcons/ios/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png
+      83.5X83.5_2X: Assets/ScadeBooksIcons/ios/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png
     marketing:
-      1024X1024_1X: #Assets/ScadeBooksIcons/ios/iTunesArtwork@1x.png
+      1024X1024_1X: Assets/ScadeBooksIcons/ios/Icon-1024.png
   plist:
     - key: CFBundleShortVersionString
       type: string  # string, bool, int, list or dict
-      value: 1.0
+      value: 1.0.0
     - key: CFBundleVersion
       type: string
-      value: 1
+      value: 1.0.0.33
     - key: NSLocationWhenInUseUsageDescription
       type: string
-      value:
+      value: You will get zero benefit allowing this app accessing your location. You should never see this alert. If you do alert technical      
+             support at contact@scade.io
     - key: NSCameraUsageDescription
       type: string
       value: Take pictures from camera
@@ -67,8 +69,8 @@ ios:
 android:
   name: simplye
   id: com.scade.simplye
-  version-name: 99.0.0
-  version-code: 99
+  version-name: 100.0.0
+  version-code: 100
   build-type: Release
   key-store-properties: /Users/olanrewajuolakunle/keystore.properties
   google-api-key:

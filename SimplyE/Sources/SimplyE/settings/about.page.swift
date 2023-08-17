@@ -1,34 +1,34 @@
+import Foundation
 import ScadeKit
 
-import Foundation
-
 class AboutPageAdapter: SCDLatticePageAdapter {
+
+  let aboutWebView: String = "https://docs.scade.io/docs/how-scade-works"
 
   // page adapter initialization
   override func load(_ path: String) {
     super.load(path)
+
+    self.doneButton.onClick { _ in
+      Navigation.go(.settings, clearHistory: true)
+    }
+
+    self.reloadButton.onClick { _ in
+      self.webView.load(self.aboutWebView)
+    }
+
   }
 
   override func show(view: SCDLatticeView?, data: Any) {
     super.show(view: view, data: data)
-
-    self.doneButton.onClick { _ in
-    Navigation.go(.settings, clearHistory: true)
-    }
-
-    let aboutWebView: String = "https://docs.scade.io/docs/how-scade-works"
     
-    guard let url = URL(string: aboutWebView) else { return }
+    guard let url = URL(string: self.aboutWebView) else { return }
 
-    guard let domain = url.host else {return}
+    guard let domain = url.host else { return }
 
     self.titleLabel.text = domain
 
-    webView.load(aboutWebView)
-    
-    self.reloadButton.onClick { _ in
-        self.webView.load(aboutWebView)
-      }
+    webView.load(self.aboutWebView)
 
     webView.onLoaded.append(
       SCDWidgetsLoadEventHandler { event in

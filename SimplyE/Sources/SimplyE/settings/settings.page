@@ -212,7 +212,7 @@
       <minArea/>
       <location y="472"/>
       <backgroundColor Red="234" Green="234" Blue="234"/>
-      <children xsi:type="widgets:Label" text="SimplyE Version 1.0.3" name="label" horizontalAlignment="CENTER">
+      <children xsi:type="widgets:Label" text="AllMyBooks Version 1.0.0" name="label" horizontalAlignment="CENTER">
         <font fontFamily="ArialMT" size="18">
           <color/>
         </font>
@@ -221,7 +221,7 @@
         </layoutData>
         <location x="5" y="96"/>
         <size width="404" height="20"/>
-        <contentSize width="177" height="20"/>
+        <contentSize width="205" height="20"/>
       </children>
       <layout xsi:type="layout:GridLayout"/>
       <maxArea width="-1" height="-1"/>
