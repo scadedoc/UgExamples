@@ -19,19 +19,17 @@
         <size width="100" height="46"/>
         <contentSize width="59" height="22"/>
       </children>
-      <children xsi:type="widgets:Label" text="Wedding CountDown" name="titleLabel" horizontalAlignment="CENTER">
+      <children xsi:type="widgets:Label" text="Wedding Guest" name="titleLabel">
         <font fontFamily="ArialMT" size="17">
           <color Red="68" Green="106" Blue="179"/>
         </font>
         <layoutData xsi:type="layout:AutoLayoutData">
           <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.0/@children.1" target="/0/@children.0"/>
-          <constraints sourceAnchor="TOP" targetAnchor="TOP" source="/0/@children.0/@children.1" target="/0/@children.0"/>
-          <constraints sourceAnchor="WIDTH" constant="85" source="/0/@children.0/@children.1"/>
-          <constraints sourceAnchor="BOTTOM" targetAnchor="BOTTOM" source="/0/@children.0/@children.1" target="/0/@children.0"/>
+          <constraints sourceAnchor="CENTER_Y" targetAnchor="CENTER_Y" source="/0/@children.0/@children.1" target="/0/@children.0"/>
         </layoutData>
-        <location x="165"/>
-        <size width="85" height="46"/>
-        <contentSize width="161" height="19"/>
+        <location x="149" y="14"/>
+        <size width="117" height="19"/>
+        <contentSize width="117" height="19"/>
       </children>
       <layout xsi:type="layout:AutoLayout"/>
       <maxArea width="-1" height="-1"/>
