@@ -1,31 +1,16 @@
 import ScadeKit
 
-class StopWatchResultPagePageAdapter: SCDLatticePageAdapter {
-/*
+class StopWatchResult: EObject {
+
+  static let shared = StopWatchResult()
+
   var hours: Int = 0
   var mins: Int = 0
   var secs: Int = 0
 
-  //static let shared = StopWatchResultPagePageAdapter()
-
-  // page adapter initialization
-  override func load(_ path: String) {
-    super.load(path)
-
-    self.backButton.onClick { _ in
-      Navigation.back()
-    } 
-
-    completionHandler = { [weak self] name, date in
-      DispatchQueue.main.async {
-        self?.didCreateEvent(name: name, targetDate: date)
-      }
-    }
-
-  }
-
-  private func didCreateEvent(name: String, targetDate: Date) {
-    self.titleLabel.text = name
+  func didCreateEvent(name: String, targetDate: Date) {
+    // Trying to assign value to the eventLabel element of the List-Control
+    CountDownListPageAdapter.shared.list.eventLabel.text = name
     let difference = floor(targetDate.timeIntervalSince(Date()))
     if difference > 0.0 {
       let computedHours: Int = Int(difference) / 3600
@@ -46,7 +31,7 @@ class StopWatchResultPagePageAdapter: SCDLatticePageAdapter {
     }
   }
 
-  private func startTimer() {
+  func startTimer() {
     Timer.scheduledTimer(
       withTimeInterval: 1.0, repeats: true,
       block: { _ in
@@ -65,8 +50,9 @@ class StopWatchResultPagePageAdapter: SCDLatticePageAdapter {
       })
   }
 
-  private func updateLabel() {
-    self.stopwatchLabel.text = "\(hours):\(mins):\(secs)"
+  func updateLabel() {
+    // Trying to assign value to the label1 element of the List-Control
+    CountDownListPageAdapter.shared.list.label1.text = "\(hours):\(mins):\(secs)"
   }
-*/
+
 }

@@ -72,7 +72,7 @@ class Navigation {
   }
 
   static func go(
-    _ page: Page, clearHistory: Bool = false, transition: SCDLatticeTransition = .FROM_RIGHT
+    _ page: Page, clearHistory: Bool = false, transition: SCDLatticeTransition = .fromRight
   ) {
     navigation(by: page, clearHistory: clearHistory)?.go(
       page: page.fileName, transition: transition)

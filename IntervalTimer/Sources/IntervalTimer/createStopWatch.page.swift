@@ -17,10 +17,14 @@ class CreateStopWatchPageAdapter: SCDLatticePageAdapter {
       let pickedDateTime = self.datePicker.date
 
       guard !text.isEmpty else { return }
+
+      // The completionHandler is publicly created in the start.swift file
+
+      // I used the completionHnadler to collect texts and pickedDateTime from the textbox and datePicker respectively so that I can use it to assign these values to the elements of the List-Control in the countDownList.page
       completionHandler?(text, pickedDateTime)
-      Navigation.go(.stopWatchResultPage, clearHistory: false)
+      Navigation.go(.countDownList, clearHistory: false)
     }
 
   }
 
-} 
+}

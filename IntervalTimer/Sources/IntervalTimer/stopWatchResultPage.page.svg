@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" widget-name="stopWatchResultPage" eObject-URI="stopWatchResultPage.page#/0" width="414" height="736">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="stopWatchResultPage.page#/0" widget-name="stopWatchResultPage" width="414" height="736">
   <rect template-id="background" width="100%" height="100%" fill="#21222c" />
   <svg template-id="content-box">
     <g template-id="content">
