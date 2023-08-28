@@ -26,5 +26,4 @@ class CreateStopWatchPageAdapter: SCDLatticePageAdapter {
     }
 
   }
-
 }
