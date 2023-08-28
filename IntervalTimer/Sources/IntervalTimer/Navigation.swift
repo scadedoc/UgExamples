@@ -6,6 +6,7 @@ class Navigation {
     case createStopWatch
     case stopWatchResultPage
     case main
+    case countDownList
 
     var fileName: String {
       return "\(self.rawValue).page"
@@ -14,14 +15,17 @@ class Navigation {
     func createAdapter() -> SCDLatticePageAdapter {
       switch self {
       case .main:
-      return MainPageAdapter()
-       
+        return MainPageAdapter()
+
       case .createStopWatch:
-      return CreateStopWatchPageAdapter()
-      
+        return CreateStopWatchPageAdapter()
+
       case .stopWatchResultPage:
-      return StopWatchResultPagePageAdapter()
-      
+        return StopWatchResultPagePageAdapter()
+
+      case .countDownList:
+        return CountDownListPageAdapter()
+
       }
 
     }
@@ -67,9 +71,7 @@ class Navigation {
       page: page.fileName, data: data)
   }
 
-  static func go(
-    _ page: Page, clearHistory: Bool = false, transition: SCDLatticeTransition = .FROM_RIGHT
-  ) {
+  static func go(_ page: Page, clearHistory: Bool = false, transition: SCDLatticeTransition = .fromRight) {
     navigation(by: page, clearHistory: clearHistory)?.go(
       page: page.fileName, transition: transition)
   }

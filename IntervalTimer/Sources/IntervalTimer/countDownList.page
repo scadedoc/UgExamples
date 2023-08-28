@@ -1,52 +1,88 @@
 <?xml  version="1.0" encoding="UTF-8" standalone="no"?>
-<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
-  <widgets:Page name="createStopWatch">
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgetlayouts="http://scade.com/sdk/view/widgets/layout" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="countDownList">
     <minArea width="414" height="736"/>
     <location/>
     <backgroundColor Red="33" Green="34" Blue="44"/>
-    <children xsi:type="widgets:RowView" paddingLeft="20" name="horizontalTextboxView" paddingRight="20" paddingTop="20" paddingBottom="20">
-      <children xsi:type="widgets:Textbox" placeholder="Enter an event" cornerRadius="7" name="textbox" paddingTop="5" paddingLeft="15" paddingRight="5" paddingBottom="5">
-        <font fontFamily="ArialMT" size="15">
-          <color/>
+    <children xsi:type="widgets:NavigationBar" name="navigationBar">
+      <children xsi:type="widgets:Button" horizontalAlignment="CENTER" name="addButton">
+        <font fontFamily="ArialMT" size="17">
+          <color Red="68" Green="106" Blue="179"/>
         </font>
-        <location x="20" y="20"/>
-        <size width="374" height="60"/>
-        <contentSize width="374" height="17"/>
-        <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
-          <minSize height="60"/>
-          <maxSize width="-1" height="-1"/>
+        <layoutData xsi:type="layout:AutoLayoutData">
+          <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.0/@children.0" target="/0/@children.0"/>
+          <constraints sourceAnchor="WIDTH" constant="85" source="/0/@children.0/@children.0"/>
+          <constraints sourceAnchor="CENTER_Y" targetAnchor="CENTER_Y" source="/0/@children.0/@children.0" target="/0/@children.0"/>
         </layoutData>
-        <backgroundColor Red="227" Green="227" Blue="227"/>
+        <location x="329" y="11"/>
+        <size width="85" height="24"/>
+        <contentSize width="85" height="24"/>
       </children>
-      <layout xsi:type="layout:GridLayout"/>
+      <layout xsi:type="layout:AutoLayout"/>
       <maxArea width="-1" height="-1"/>
       <location/>
+      <minArea height="46"/>
+      <size width="414" height="46"/>
+      <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true">
+        <maxSize width="-1" height="-1"/>
+      </layoutData>
+    </children>
+    <children xsi:type="widgets:List" paddingLeft="10" name="list" paddingTop="10">
+      <template name="template">
+        <element name="listElement">
+          <children xsi:type="widgets:RowView" paddingLeft="5" name="rowView" paddingRight="5" paddingTop="5" paddingBottom="5">
+            <minArea/>
+            <location/>
+            <backgroundColor Red="42" Green="42" Blue="45"/>
+            <children xsi:type="widgets:Label" text="Tomi&apos;s Wedding" paddingLeft="10" name="eventLabel">
+              <font fontFamily="ArialMT" size="20">
+                <color Red="180" Green="255" Blue="64"/>
+              </font>
+              <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true">
+                <maxSize width="-1" height="-1"/>
+              </layoutData>
+              <location x="5" y="5"/>
+              <size width="197" height="35"/>
+              <contentSize width="141" height="23"/>
+            </children>
+            <children xsi:type="widgets:Label" text="00:00:00" paddingLeft="10" name="label1">
+              <font fontFamily="ArialMT" size="20">
+                <color Red="180" Green="255" Blue="64"/>
+              </font>
+              <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" grabHorizontalSpace="true">
+                <maxSize width="-1" height="-1"/>
+              </layoutData>
+              <location x="202" y="5"/>
+              <size width="197" height="35"/>
+              <contentSize width="78" height="23"/>
+            </children>
+            <layout xsi:type="layout:GridLayout" columns="3"/>
+            <maxArea width="-1" height="-1"/>
+            <size width="404" height="45"/>
+            <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" heightConstraint="MATCH_PARENT">
+              <maxSize width="-1" height="-1"/>
+            </layoutData>
+          </children>
+          <layout xsi:type="layout:GridLayout"/>
+          <maxArea width="-1" height="-1"/>
+          <location x="10" y="10"/>
+          <minArea height="45"/>
+          <size width="404" height="45"/>
+          <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT">
+            <minSize/>
+          </layoutData>
+        </element>
+        <location/>
+        <size/>
+      </template>
+      <size width="414" height="638"/>
+      <layout xsi:type="widgetlayouts:ListLayout"/>
+      <maxArea width="-1" height="-1"/>
+      <location y="46"/>
       <minArea/>
-      <size width="414" height="100"/>
-      <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true">
-        <minSize/>
+      <layoutData xsi:type="layout:GridData" row="1" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT">
         <maxSize width="-1" height="-1"/>
       </layoutData>
-    </children>
-    <children xsi:type="widgets:DatePicker" name="datePicker">
-      <location x="47" y="242"/>
-      <size width="320" height="200"/>
-      <layoutData xsi:type="layout:GridData" row="1" grabVerticalSpace="true" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true">
-        <minSize width="320" height="200"/>
-        <maxSize width="-1" height="-1"/>
-      </layoutData>
-      <backgroundColor Red="223" Green="92" Blue="227"/>
-    </children>
-    <children xsi:type="widgets:Button" text="Save" paddingLeft="20" name="saveButton" horizontalAlignment="CENTER" paddingRight="20">
-      <font fontFamily="ArialMT" size="25">
-        <color Red="68" Green="106" Blue="179"/>
-      </font>
-      <layoutData xsi:type="layout:GridData" row="2" grabVerticalSpace="true" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true">
-        <maxSize width="-1" height="-1"/>
-      </layoutData>
-      <location x="158" y="555"/>
-      <size width="97" height="29"/>
-      <contentSize width="57" height="29"/>
     </children>
     <children xsi:type="widgets:ToolBar" name="toolBar">
       <minArea width="100" height="52"/>
@@ -115,9 +151,9 @@
       <layout xsi:type="layout:GridLayout" columns="4"/>
       <maxArea width="-1" height="-1"/>
       <size width="414" height="52"/>
-      <layoutData xsi:type="layout:GridData" row="3"/>
+      <layoutData xsi:type="layout:GridData" row="2"/>
     </children>
-    <layout xsi:type="layout:GridLayout" rows="4"/>
+    <layout xsi:type="layout:GridLayout" rows="3"/>
     <maxArea width="414" height="736"/>
     <size width="414" height="736"/>
   </widgets:Page>

@@ -1,5 +1,11 @@
 import ScadeKit
 
+// some global variables
+let redColor = SCDGraphicsRGB(red:255,green:51,blue:153)
+let blueColor = SCDGraphicsRGB(red:68,green:106,blue:179)
+
+public var completionHandler: ((String, Date) -> Void)?
+
 class IntervalTimer: SCDApplication {
 
   let window = SCDLatticeWindow()

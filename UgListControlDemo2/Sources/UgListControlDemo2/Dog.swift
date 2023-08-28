@@ -1,6 +1,6 @@
 import ScadeKit
 
-class Dog : EObject {
+class Dog: EObject {
 
   // please make sure you annotate each variable with the type
   // for SCADE to more identify and leverage the type information
