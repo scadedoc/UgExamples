@@ -20,7 +20,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
     super.load(path)
 
     self.toolBarItem2.onClick { _ in
-      Navigation.go(.intervalTimer, clearHistory: false)
+      Navigation.go(.createStopWatch, clearHistory: true)
     }
 
     startTime = userDefaults.object(forKey: self.START_TIME_KEY) as? Date
@@ -39,7 +39,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
         }
       }
     }
-
+ 
     self.resetButton.onClick { _ in
       self.setStopTime(date: nil)
       self.setStartTime(date: nil)
@@ -74,10 +74,20 @@ class MainPageAdapter: SCDLatticePageAdapter {
   }
 
   func startTimer() {
-    scheduledTimer = Timer.scheduledTimer(
-      withTimeInterval: 0.1, repeats: true){ [weak self] _ in
-      	self?.refreshValue()
-      }
+    scheduledTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] timer in
+    if let start = self!.startTime {
+      let diff = Date().timeIntervalSince(start)
+      setTimeLabel(Int(diff))
+    } else {
+      self.stopTimer()
+      self.setTimeLabel(0)
+    }
+}
+    
+  /*  Timer.scheduledTimer(
+      timeInterval: 0.1, target: self, selector: #selector(refreshValue), userInfo: nil,
+      repeats: true)*/
+      
     setTimerCounting(true)
     self.startButton.text = "STOP"
     configureFontStyle(of: self.startButton, off: redColor)
@@ -89,7 +99,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
     control.font!.size = 20
   }
 
-  func refreshValue() {
+ /* @objc func refreshValue() {
     if let start = startTime {
       let diff = Date().timeIntervalSince(start)
       setTimeLabel(Int(diff))
@@ -97,7 +107,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
       stopTimer()
       setTimeLabel(0)
     }
-  }
+  }*/
 
   func setTimeLabel(_ val: Int) {
     let time = secondsToHoursMinutesSeconds(val)
@@ -127,6 +137,8 @@ class MainPageAdapter: SCDLatticePageAdapter {
       scheduledTimer.invalidate()
     }
     setTimerCounting(false)
+    self.startButton.text = "START"
+    self.configureFontStyle(of: self.startButton, off: blueColor)
   }
 
   func setStartTime(date: Date?) {

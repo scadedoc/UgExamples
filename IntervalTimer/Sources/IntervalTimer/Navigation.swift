@@ -3,9 +3,10 @@ import ScadeKit
 class Navigation {
 
   enum Page: String, CaseIterable {
+    case createStopWatch
+    case stopWatchResultPage
     case main
-    case intervalTimer
-    case intervalTimerScreen
+    case countDownList
 
     var fileName: String {
       return "\(self.rawValue).page"
@@ -15,13 +16,15 @@ class Navigation {
       switch self {
       case .main:
         return MainPageAdapter()
-        
-        case .intervalTimer:
-        return IntervalTimerPageAdapter()
-        
-        case .intervalTimerScreen:
-        return IntervalTimerScreenPageAdapter()
 
+      case .createStopWatch:
+        return CreateStopWatchPageAdapter()
+
+      case .stopWatchResultPage:
+        return StopWatchResultPagePageAdapter()
+
+      case .countDownList:
+        return CountDownListPageAdapter()
 
       }
 
@@ -31,7 +34,7 @@ class Navigation {
   private static var adapters: [Page: SCDLatticePageAdapter] = [:]
 
   private static var transitionsStack: [Page] = []
-   
+
   private static var current: Page? {
     return self.transitionsStack.last
   }
