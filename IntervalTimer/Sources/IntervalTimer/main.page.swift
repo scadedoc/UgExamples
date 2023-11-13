@@ -20,7 +20,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
     super.load(path)
 
     self.toolBarItem2.onClick { _ in
-      Navigation.go(.countDownList, clearHistory: true)
+      Navigation.go(.intervalTimer, clearHistory: false)
     }
 
     startTime = userDefaults.object(forKey: self.START_TIME_KEY) as? Date
@@ -75,8 +75,9 @@ class MainPageAdapter: SCDLatticePageAdapter {
 
   func startTimer() {
     scheduledTimer = Timer.scheduledTimer(
-      timeInterval: 0.1, target: self, selector: #selector(refreshValue), userInfo: nil,
-      repeats: true)
+      withTimeInterval: 0.1, repeats: true){ [weak self] _ in
+      	self?.refreshValue()
+      }
     setTimerCounting(true)
     self.startButton.text = "STOP"
     configureFontStyle(of: self.startButton, off: redColor)
@@ -88,7 +89,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
     control.font!.size = 20
   }
 
-  @objc func refreshValue() {
+  func refreshValue() {
     if let start = startTime {
       let diff = Date().timeIntervalSince(start)
       setTimeLabel(Int(diff))

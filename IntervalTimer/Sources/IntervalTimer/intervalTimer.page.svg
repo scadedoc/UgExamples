@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" widget-name="intervalTimer" eObject-URI="intervalTimer.page#/0" width="414" height="736">
+  <rect template-id="background" width="100%" height="100%" fill="#21222c" />
+  <svg template-id="content-box">
+    <g template-id="content">
+      <g template-id="children-content">
+        <svg widget-name="navigationBar" eObject-URI="intervalTimer.page#/0/@children.0" width="414" height="46">
+          <svg template-id="content-box">
+            <g template-id="content">
+              <g template-id="children-content">
+                <svg widget-id="titleLabel" widget-name="titleLabel" eObject-URI="intervalTimer.page#/0/@children.0/@children.0" x="164" y="13" width="105" height="21">
+                  <svg template-id="content-box" width="105" height="21">
+                    <g template-id="content">
+                      <text text-anchor="middle" alignment-baseline="middle" font-size="17" font-family="Apple Braille" font-style="normal" text-decoration="none" template-id="node-text" x="52.5" y="10.5" fill="#ffffff">Interval Timer</text>
+                    </g>
+                  </svg>
+                </svg>
+              </g>
+            </g>
+          </svg>
+        </svg>
+        <svg widget-name="container1" eObject-URI="intervalTimer.page#/0/@children.1" y="286" width="414" height="100">
+          <svg template-id="content-box">
+            <g template-id="content">
+              <g template-id="children-content">
+                <svg widget-name="workLabel" eObject-URI="intervalTimer.page#/0/@children.1/@children.0" x="187" y="20" width="41" height="19">
+                  <svg template-id="content-box" width="41" height="19">
+                    <g template-id="content">
+                      <text alignment-baseline="middle" font-size="17" font-family="Andale Mono" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="9.5" fill="#ffffff">WORK</text>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="workMinusButton" eObject-URI="intervalTimer.page#/0/@children.1/@children.1" x="120" y="49" width="18" height="18">
+                  <rect template-id="background" width="100%" height="100%" fill="#ffffff" />
+                  <svg template-id="content-box" x="20" width="-22" height="18">
+                    <g template-id="content">
+                      <text text-anchor="middle" alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="-11" y="9" fill="#446ab3">-</text>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="workPlusButton" eObject-URI="intervalTimer.page#/0/@children.1/@children.2" x="276" y="49" width="18" height="18">
+                  <rect template-id="background" width="100%" height="100%" fill="#ffffff" />
+                  <svg template-id="content-box" x="20" width="-22" height="18">
+                    <g template-id="content">
+                      <text text-anchor="middle" alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="-11" y="9" fill="#446ab3">+</text>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="workTimeLabel" eObject-URI="intervalTimer.page#/0/@children.1/@children.3" x="186" y="47" width="43" height="19">
+                  <svg template-id="content-box" width="43" height="19">
+                    <g template-id="content">
+                      <text alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="9.5" fill="#ffffff">00:00</text>
+                    </g>
+                  </svg>
+                </svg>
+              </g>
+            </g>
+          </svg>
+        </svg>
+        <svg widget-name="container2" eObject-URI="intervalTimer.page#/0/@children.2" y="456" width="414" height="100">
+          <svg template-id="content-box">
+            <g template-id="content">
+              <g template-id="children-content">
+                <svg widget-name="restLabel" eObject-URI="intervalTimer.page#/0/@children.2/@children.0" x="187" y="20" width="41" height="19">
+                  <svg template-id="content-box" width="41" height="19">
+                    <g template-id="content">
+                      <text alignment-baseline="middle" font-size="17" font-family="Andale Mono" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="9.5" fill="#ffffff">REST</text>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="restTimeLabel" eObject-URI="intervalTimer.page#/0/@children.2/@children.1" x="186" y="48" width="43" height="19">
+                  <svg template-id="content-box" width="43" height="19">
+                    <g template-id="content">
+                      <text alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="9.5" fill="#ffffff">00:00</text>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="restMinusButton" eObject-URI="intervalTimer.page#/0/@children.2/@children.2" x="120" y="49" width="18" height="18">
+                  <rect template-id="background" width="100%" height="100%" fill="#ffffff" />
+                  <svg template-id="content-box" x="20" width="-22" height="18">
+                    <g template-id="content">
+                      <text text-anchor="middle" alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="-11" y="9" fill="#446ab3">-</text>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="restPlusButton" eObject-URI="intervalTimer.page#/0/@children.2/@children.3" x="276" y="49" width="18" height="18">
+                  <rect template-id="background" width="100%" height="100%" fill="#ffffff" />
+                  <svg template-id="content-box" x="20" width="-22" height="18">
+                    <g template-id="content">
+                      <text text-anchor="middle" alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="-11" y="9" fill="#446ab3">+</text>
+                    </g>
+                  </svg>
+                </svg>
+              </g>
+            </g>
+          </svg>
+        </svg>
+        <svg widget-name="startButton" eObject-URI="intervalTimer.page#/0/@children.3" x="147" y="601" width="120" height="30">
+          <rect stroke-width="0" template-id="background" width="100%" height="100%" rx="12.5%" fill="#ff4ab7" />
+          <svg template-id="content-box" x="20" width="80" height="30">
+            <g template-id="content">
+              <text text-anchor="middle" alignment-baseline="middle" font-size="25" font-family="GB18030 Bitmap" font-style="normal" text-decoration="none" template-id="node-text" x="40" y="15" fill="#ffffff">START</text>
+            </g>
+          </svg>
+        </svg>
+        <svg widget-name="container" eObject-URI="intervalTimer.page#/0/@children.4" y="116" width="414" height="100">
+          <svg template-id="content-box">
+            <g template-id="content">
+              <g template-id="children-content">
+                <svg widget-name="setLabel" eObject-URI="intervalTimer.page#/0/@children.4/@children.0" x="187" y="20" width="41" height="19">
+                  <svg template-id="content-box" width="41" height="19">
+                    <g template-id="content">
+                      <text alignment-baseline="middle" font-size="17" font-family="Andale Mono" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="9.5" fill="#ffffff">SETS</text>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="setMinusButton" eObject-URI="intervalTimer.page#/0/@children.4/@children.1" x="120" y="49" width="18" height="18">
+                  <rect template-id="background" width="100%" height="100%" fill="#ffffff" />
+                  <svg template-id="content-box" x="20" width="-22" height="18">
+                    <g template-id="content">
+                      <text text-anchor="middle" alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="-11" y="9" fill="#446ab3">-</text>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="intervalLabel" eObject-URI="intervalTimer.page#/0/@children.4/@children.2" x="200" y="44" width="14" height="29">
+                  <svg template-id="content-box" width="14" height="29">
+                    <g template-id="content">
+                      <text alignment-baseline="middle" font-size="25" font-family="Arial-BoldMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="14.5" fill="#ffffff">1</text>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="setPlusButton" eObject-URI="intervalTimer.page#/0/@children.4/@children.3" x="276" y="49" width="18" height="18">
+                  <rect template-id="background" width="100%" height="100%" fill="#ffffff" />
+                  <svg template-id="content-box" x="20" width="-22" height="18">
+                    <g template-id="content">
+                      <text text-anchor="middle" alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="-11" y="9" fill="#446ab3">+</text>
+                    </g>
+                  </svg>
+                </svg>
+              </g>
+            </g>
+          </svg>
+        </svg>
+        <svg widget-name="toolBar" eObject-URI="intervalTimer.page#/0/@children.5" y="684" width="414" height="52">
+          <rect template-id="background" width="100%" height="100%" fill="#2a292c" />
+          <svg template-id="content-box">
+            <g template-id="content">
+              <g template-id="children-content">
+                <svg widget-name="toolBarItem1" eObject-URI="intervalTimer.page#/0/@children.5/@children.0" width="207" height="52">
+                  <svg template-id="content-box">
+                    <g template-id="content">
+                      <g template-id="children-content">
+                        <svg widget-id="image" widget-name="icon1" eObject-URI="intervalTimer.page#/0/@children.5/@children.0/@children.0" x="89" y="2" width="28" height="28">
+                          <svg template-id="content-box" y="5" width="28" height="23">
+                            <g template-id="content">
+                              <image xlink:href="Assets/stopwatchGrey.svg" template-id="node-image" width="100%" height="100%" />
+                            </g>
+                          </svg>
+                        </svg>
+                        <svg widget-id="label" widget-name="caption1" eObject-URI="intervalTimer.page#/0/@children.5/@children.0/@children.1" x="63" y="33" width="80" height="19">
+                          <svg template-id="content-box" x="10" width="60" height="19">
+                            <g template-id="content">
+                              <text text-anchor="middle" alignment-baseline="middle" font-size="12" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="30" y="9.5" fill="#6b6b6b">StopWatch</text>
+                            </g>
+                          </svg>
+                        </svg>
+                      </g>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="toolBarItem2" eObject-URI="intervalTimer.page#/0/@children.5/@children.1" x="207" width="207" height="52">
+                  <svg template-id="content-box">
+                    <g template-id="content">
+                      <g template-id="children-content">
+                        <svg widget-id="image" widget-name="icon2" eObject-URI="intervalTimer.page#/0/@children.5/@children.1/@children.0" x="89" y="2" width="28" height="28">
+                          <svg template-id="content-box" y="5" width="28" height="23">
+                            <g template-id="content">
+                              <image xlink:href="Assets/timerLemon.svg" template-id="node-image" width="100%" height="100%" />
+                            </g>
+                          </svg>
+                        </svg>
+                        <svg widget-id="label" widget-name="caption2" eObject-URI="intervalTimer.page#/0/@children.5/@children.1/@children.1" x="77" y="33" width="52" height="19">
+                          <svg template-id="content-box" x="10" width="32" height="19">
+                            <g template-id="content">
+                              <text text-anchor="middle" alignment-baseline="middle" font-size="12" font-family="HelveticaNeue" font-style="normal" text-decoration="none" template-id="node-text" x="16" y="9.5" fill="#b4ff40">Timer</text>
+                            </g>
+                          </svg>
+                        </svg>
+                      </g>
+                    </g>
+                  </svg>
+                </svg>
+              </g>
+            </g>
+          </svg>
+        </svg>
+      </g>
+    </g>
+  </svg>
+</svg>
