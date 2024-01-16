@@ -24,9 +24,9 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		btnHybrid.onClick{_ in self.setMapType(self.btnSatellite.name)}
 		
 		// demo annotation https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/AnnotatingMaps/AnnotatingMaps.html
-		self.setPerfectlySoftPin()
-		
-		// demo overlays
+//		self.setPerfectlySoftPin()
+//		
+//		// demo overlays
 		self.setOverlayAroundSushiPlace()
 	}
 	
@@ -34,11 +34,11 @@ class MainPageAdapter: SCDLatticePageAdapter {
 		
 		switch(name) {
 			case "btnHybrid":
-				mapwidget1.mapType = SCDWidgetsMapType.HYBRID
+				mapwidget1.mapType = SCDWidgetsMapType.hybrid
 			case "btnSatellite":
-				mapwidget1.mapType = SCDWidgetsMapType.SATELLITE
+				mapwidget1.mapType = SCDWidgetsMapType.satellite
 			case "btnStandard":
-				mapwidget1.mapType = SCDWidgetsMapType.STANDARD	
+				mapwidget1.mapType = SCDWidgetsMapType.standard
 			default:
 				print("not covered")
 		}
