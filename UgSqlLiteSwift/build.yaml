@@ -1,7 +1,7 @@
 spm:
   - name:
-    url: https://github.com/scadedoc/SQLite.swift
-    branch: master
+    url:
+    branch:
     from:
     path:
     search-paths: []
@@ -20,33 +20,22 @@ ios:
   app-delegate-file:
   simulator:
     os: 12.1
-    output: UgSqlLiteSwift/.build/ios-simulator
+    output:
     extra-args:
     search-paths: []
     linked-libs: []
-    spm:
-      dependencies:
-        - name: SQLite
   device: 
     os: 12.1
-    output: UgSqlLiteSwift/.build/ios-device
+    output:
     extra-args: 
     search-paths: []
     linked-libs: []
-    spm:
-      dependencies:
-        - name: SQLite
-          package: SQLite
   mac:
     os: 10.11
-    output: UgSqlLiteSwift/.build/scade-simulator
+    output:
     extra-args: 
     search-paths: []
     linked-libs: []
-    spm:
-      dependencies:
-        - name: SQLite
-          package: SQLite.swift
   sign:
     provision-profile: ${env.UGEXAMPLES_IOS_PROVISION_PROFILE}
     certificate: ${env.UGEXAMPLES_IOS_CERTIFICATE}
@@ -87,43 +76,27 @@ android:
   manifest-file:
   permissions: []
   armeabi-v7a:
-    output: UgSqlLiteSwift/.build/android-armeabi-v7a
+    output:
     extra-args:
     search-paths: []
     linked-libs: [sqlite3]
-    spm:
-      dependencies:
-        - name: SQLite
-          package: SQLite.swift
   arm64-v8a:
-    output: UgSqlLiteSwift/.build/android-x86
+    output:
     product-path: UgSqlLiteSwift/Product/android-arm64-v8a
     extra-args:
     search-paths: []
     linked-libs: [sqlite3]
-    spm:
-      dependencies:
-        - name: SQLite
-          package: SQLite.swift
   x86:
-    output: UgSqlLiteSwift/.build/android-x86
+    output:
     extra-args:
     search-paths: []
     linked-libs: [sqlite3]
-    spm:
-      dependencies:
-        - name: SQLite
-          package: SQLite.swift
   x86_64:
-    output: UgSqlLiteSwift/.build/android-x86
+    output:
     product-path: UgSqlLiteSwift/Product/android-x86_64
     extra-args:
     search-paths: []
     linked-libs: [sqlite3]
-    spm:
-      dependencies:
-        - name: SQLite
-          package: SQLite.swift
   intent-filters:
     - action:
       scheme:
