@@ -17,40 +17,19 @@ class IntervalTimerScreenPageAdapter: SCDLatticePageAdapter {
     self.remainingRounds = IntervalTimerPageAdapter.updatedSetLabel
     self.intervalLabel.text = "\(self.remainingRounds)"
     if self.preparationTimer == nil && self.timer == nil {
-      
-      //self.preparationTimer?.invalidate()
-      //  self.preparationTimer = nil
-      //  self.timer?.invalidate()
-      //  self.timer = nil
-      
       self.startPreparationTimer()
-      
     } else {
       self.stopTimer()
     }
     self.backButton.onClick { _ in
-    //self.stopTimer()
-    Navigation.back()
-     // if self.remainingRounds == 0 {
-      //  self.stopTimer()
-      //  self.workInterval = IntervalTimerPageAdapter.workTime
-      //  self.restInterval = IntervalTimerPageAdapter.restTime
-       // self.remainingRounds = IntervalTimerPageAdapter.updatedSetLabel
-       // self.intervalLabel.text = "\(self.remainingRounds)"
-       // Navigation.back()
-     // }
-    }
-    
-    self.resetButton.onClick{ _ in
-    self.resetTapping()
-  //  if self.remainingRounds == 0 {
-  //  	self.resetTapping()
-  //  	Navigation.go(.intervalTimer, clearHistory: true)
-  //  }
-    	//self.resetTimer()
-    	//self.reseting()
-    	//self.resetTapping()
-    	//Navigation.go(.intervalTimer, clearHistory: true)
+      if self.remainingRounds == 0 {
+        self.stopTimer()
+        self.workInterval = IntervalTimerPageAdapter.workTime
+        self.restInterval = IntervalTimerPageAdapter.restTime
+        self.remainingRounds = IntervalTimerPageAdapter.updatedSetLabel
+        self.intervalLabel.text = "\(self.remainingRounds)"
+        Navigation.back()
+      }
     }
   }
 
@@ -123,7 +102,6 @@ class IntervalTimerScreenPageAdapter: SCDLatticePageAdapter {
           self.intervalLabel.text = ""
         }
       }
-      
     }
     self.updateLabels()
   }
@@ -141,7 +119,7 @@ class IntervalTimerScreenPageAdapter: SCDLatticePageAdapter {
       self.configureFontStyle(of: self.timerLabel, off: whiteColor)
       self.timerLabel.text = "Completed!"
     }
-    
+
   }
 
   func timerLabelInitialValue() {
@@ -155,24 +133,6 @@ class IntervalTimerScreenPageAdapter: SCDLatticePageAdapter {
     control.font!.fontFamily = "Arial"
     control.font!.color = color
     control.font!.size = 55
-  }
-  
-  func resetTapping(){
-  	//if self.preparationTimer == nil && self.timer == nil {
-        // Both timers are nil, implying completion
-        self.preparationTimer?.invalidate()
-        self.preparationTimer = nil
-        self.timer?.invalidate()
-        self.timer = nil
-        
-        // Reset necessary properties
-        //self.remainingRounds = IntervalTimerPageAdapter.updatedSetLabel
-        //self.intervalLabel.text = "\(remainingRounds)"
-        //isWorkingInterval = true
-
-        //self.preparationTime = 5 // Set the desired preparation time
-        startPreparationTimer()
-   // }
   }
 
 }
