@@ -33,6 +33,15 @@
         <size width="100" height="46"/>
         <contentSize width="24" height="24"/>
       </children>
+      <children xsi:type="widgets:Button" text="RESET" paddingLeft="20" name="resetButton" horizontalAlignment="CENTER" paddingRight="20">
+        <font fontFamily="ArialMT" size="17">
+          <color Red="68" Green="106" Blue="179"/>
+        </font>
+        <layoutData xsi:type="layout:AutoLayoutData"/>
+        <location x="308" y="14"/>
+        <size width="97" height="19"/>
+        <contentSize width="57" height="19"/>
+      </children>
       <layout xsi:type="layout:AutoLayout"/>
       <maxArea width="-1" height="-1"/>
       <location/>

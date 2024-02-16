@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SQLite.swift",
+        "repositoryURL": "https://github.com/scadedoc/SQLite.swift",
+        "state": {
+          "branch": "master",
+          "revision": "6e102c81037ce5bb52ed3f8dbd0fd890a1b45a9b",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

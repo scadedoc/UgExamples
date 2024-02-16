@@ -1,19 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="main.page#/0" widget-name="main" width="414" height="896">
-  <image xlink:href="Assets/image1.png" preserveAspectRatio="xMidYMid slice" template-id="background" width="100%" height="100%" />
-  <g template-id="content">
-    <svg eObject-URI="main.page#/0/@children.0" widget-name="label1" scade:bind="text:label" x="50" y="114" width="314" height="654">
-      <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="157" y="327" fill="#0">My gesture</text>
+    <image xlink:href="Assets/image1.png" preserveAspectRatio="xMidYMid slice" template-id="background" width="100%" height="100%"/>
+    <svg template-id="content-box">
+        <g template-id="content">
+            <g template-id="children-content">
+                <svg eObject-URI="main.page#/0/@children.0" widget-name="label1" scade:bind="text:label" x="50" y="114" width="314" height="654">
+                    <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="157" y="327" fill="#0">My gesture</text>
+                </svg>
+                <svg eObject-URI="main.page#/0/@children.1" widget-name="customwidget1" x="50" y="20" width="314" height="94">
+                    <rect fill-opacity="0.6" stroke-width="3" id="rect1" fill-stroke="#804000" width="314" height="100" fill="#803f00"/>
+                </svg>
+                <svg eObject-URI="main.page#/0/@children.2" widget-name="customwidget2" x="178" y="826" width="58" height="50">
+                    <circle fill-opacity="0.9" stroke-width="3" cx="50%" cy="50%" r="30%" fill="#f4fb91" stroke="#803f"/>
+                </svg>
+                <svg eObject-URI="main.page#/0/@children.3" widget-name="button1" x="50" y="768" width="314" height="58">
+                    <rect template-id="background" width="100%" height="100%" fill="#125606"/>
+                    <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="157" y="29" fill="#feffff">MyButton</text>
+                </svg>
+            </g>
+        </g>
     </svg>
-    <svg eObject-URI="main.page#/0/@children.1" widget-name="customwidget1" x="50" y="20" width="314" height="94">
-      <rect fill-opacity="0.6" stroke-width="3" id="rect1" fill-stroke="#804000" width="314" height="100" fill="#803f00" />
-    </svg>
-    <svg eObject-URI="main.page#/0/@children.2" widget-name="customwidget2" x="178" y="826" width="58" height="50">
-      <circle fill-opacity="0.9" stroke-width="3" cx="50%" cy="50%" r="30%" fill="#f4fb91" stroke="#803f" />
-    </svg>
-    <svg eObject-URI="main.page#/0/@children.3" widget-name="button1" x="50" y="768" width="314" height="58">
-      <rect template-id="background" width="100%" height="100%" fill="#125606" />
-      <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="157" y="29" fill="#feffff">MyButton</text>
-    </svg>
-  </g>
 </svg>

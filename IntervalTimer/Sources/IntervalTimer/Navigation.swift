@@ -6,6 +6,7 @@ class Navigation {
     case main
     case intervalTimer
     case intervalTimerScreen
+    case savingTimerScreen
 
     var fileName: String {
       return "\(self.rawValue).page"
@@ -21,6 +22,9 @@ class Navigation {
         
         case .intervalTimerScreen:
         return IntervalTimerScreenPageAdapter()
+        
+        case .savingTimerScreen:
+        return SavingTimerScreenPageAdapter()
 
 
       }

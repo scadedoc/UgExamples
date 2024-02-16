@@ -1,67 +1,99 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="main.page#/0" widget-name="main" width="428" height="926">
-  <rect template-id="background" width="100%" height="100%" fill="#f8f8f8" />
-  <g template-id="content">
-    <svg widget-name="list1" eObject-URI="main.page#/0/@children.0" y="50" width="428" height="816">
-      <g scrollableBox="428 816" template-id="listContent" scrollable="vertical">
-        <svg widget-name="listElement" eObject-URI="main.page#/0/@children.0/@template/@element" width="428" height="45">
-          <g template-id="content">
-            <g template-id="elementContent">
-              <svg widget-name="gridView1" eObject-URI="main.page#/0/@children.0/@template/@element/@children.0" x="10" width="418" height="45">
-                <g template-id="content">
-                  <svg widget-name="rowView1" eObject-URI="main.page#/0/@children.0/@template/@element/@children.0/@children.0" x="5" y="5" width="204" height="35">
-                    <g template-id="content">
-                      <svg widget-name="label2" eObject-URI="main.page#/0/@children.0/@template/@element/@children.0/@children.0/@children.0" x="5" y="5" width="44" height="25">
-                        <g template-id="content">
-                          <text alignment-baseline="central" font-size="15" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="12.5" fill="#464646">label</text>
-                        </g>
-                      </svg>
-                      <svg widget-name="label3" eObject-URI="main.page#/0/@children.0/@template/@element/@children.0/@children.0/@children.1" x="155" y="5" width="44" height="25">
-                        <g template-id="content">
-                          <text alignment-baseline="central" font-size="15" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="12.5" fill="#464646">label</text>
-                        </g>
-                      </svg>
+    <rect template-id="background" width="100%" height="100%" fill="#f8f8f8"/>
+    <svg template-id="content-box">
+        <g template-id="content">
+            <g template-id="children-content">
+                <svg widget-name="list1" eObject-URI="main.page#/0/@children.0" y="50" width="428" height="816">
+                    <g scrollableBox="428 816" template-id="listContent" scrollable="vertical">
+                        <svg widget-name="listElement" eObject-URI="main.page#/0/@children.0/@template/@element" width="428" height="45">
+                            <svg template-id="content-box">
+                                <g template-id="content">
+                                    <g template-id="children-content">
+                                        <g template-id="elementContent">
+                                            <svg widget-name="gridView1" eObject-URI="main.page#/0/@children.0/@template/@element/@children.0" x="10" width="418" height="45">
+                                                <svg template-id="content-box">
+                                                    <g template-id="content">
+                                                        <g template-id="children-content">
+                                                            <svg widget-name="rowView1" eObject-URI="main.page#/0/@children.0/@template/@element/@children.0/@children.0" x="5" y="5" width="204" height="35">
+                                                                <svg template-id="content-box">
+                                                                    <g template-id="content">
+                                                                        <g template-id="children-content">
+                                                                            <svg widget-name="label2" eObject-URI="main.page#/0/@children.0/@template/@element/@children.0/@children.0/@children.0" x="5" y="5" width="44" height="25">
+                                                                                <svg template-id="content-box">
+                                                                                    <g template-id="content">
+                                                                                        <text alignment-baseline="central" font-size="15" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="12.5" fill="#464646">label</text>
+                                                                                    </g>
+                                                                                </svg>
+                                                                            </svg>
+                                                                            <svg widget-name="label3" eObject-URI="main.page#/0/@children.0/@template/@element/@children.0/@children.0/@children.1" x="155" y="5" width="44" height="25">
+                                                                                <svg template-id="content-box">
+                                                                                    <g template-id="content">
+                                                                                        <text alignment-baseline="central" font-size="15" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="12.5" fill="#464646">label</text>
+                                                                                    </g>
+                                                                                </svg>
+                                                                            </svg>
+                                                                        </g>
+                                                                    </g>
+                                                                </svg>
+                                                            </svg>
+                                                            <svg widget-name="rowView2" eObject-URI="main.page#/0/@children.0/@template/@element/@children.0/@children.1" x="209" y="5" width="204" height="35">
+                                                                <svg template-id="content-box">
+                                                                    <g template-id="content">
+                                                                        <g template-id="children-content">
+                                                                            <svg widget-name="label4" eObject-URI="main.page#/0/@children.0/@template/@element/@children.0/@children.1/@children.0" x="19" y="5" width="68" height="25">
+                                                                                <svg template-id="content-box">
+                                                                                    <g template-id="content">
+                                                                                        <rect template-id="background" width="100%" height="100%" fill="#28b636"/>
+                                                                                        <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="34" y="12.5" fill="#0">Passed</text>
+                                                                                    </g>
+                                                                                </svg>
+                                                                            </svg>
+                                                                            <svg widget-name="label5" eObject-URI="main.page#/0/@children.0/@template/@element/@children.0/@children.1/@children.1" x="122" y="5" width="57" height="25">
+                                                                                <svg template-id="content-box">
+                                                                                    <g template-id="content">
+                                                                                        <rect template-id="background" width="100%" height="100%" fill="#a81a11"/>
+                                                                                        <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="28.5" y="12.5" fill="#0">Failed</text>
+                                                                                    </g>
+                                                                                </svg>
+                                                                            </svg>
+                                                                        </g>
+                                                                    </g>
+                                                                </svg>
+                                                            </svg>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </svg>
+                                        </g>
+                                        <g template-id="elementSeparator">
+                                            <line template-id="separatorLine" stroke-miterlimit="10" x2="100%" stroke="#cccacf"/>
+                                        </g>
+                                        <g/>
+                                        <g/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </svg>
                     </g>
-                  </svg>
-                  <svg widget-name="rowView2" eObject-URI="main.page#/0/@children.0/@template/@element/@children.0/@children.1" x="209" y="5" width="204" height="35">
-                    <g template-id="content">
-                      <svg widget-name="label4" eObject-URI="main.page#/0/@children.0/@template/@element/@children.0/@children.1/@children.0" x="19" y="5" width="68" height="25">
+                </svg>
+                <svg widget-name="label1" eObject-URI="main.page#/0/@children.1" x="20" y="5" width="388" height="22">
+                    <svg template-id="content-box">
                         <g template-id="content">
-                          <rect template-id="background" width="100%" height="100%" fill="#28b636" />
-                          <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="34" y="12.5" fill="#0">Passed</text>
+                            <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="194" y="11" fill="#464646">Swift Foundation 4.0 on Android and iOS</text>
                         </g>
-                      </svg>
-                      <svg widget-name="label5" eObject-URI="main.page#/0/@children.0/@template/@element/@children.0/@children.1/@children.1" x="122" y="5" width="57" height="25">
+                    </svg>
+                </svg>
+                <svg widget-name="button1" eObject-URI="main.page#/0/@children.2" x="50" y="871" width="328" height="50">
+                    <rect template-id="background" width="100%" height="100%" rx="7.5%" fill="#54ff81"/>
+                    <svg template-id="content-box">
                         <g template-id="content">
-                          <rect template-id="background" width="100%" height="100%" fill="#a81a11" />
-                          <text text-anchor="middle" alignment-baseline="central" font-size="15" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="28.5" y="12.5" fill="#0">Failed</text>
+                            <rect template-id="background" width="100%" height="100%" rx="7.5%" fill="#54ff81"/>
+                            <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="164" y="25" fill="#0">Run TestFoundation tests</text>
                         </g>
-                      </svg>
-                    </g>
-                  </svg>
-                </g>
-              </svg>
+                    </svg>
+                </svg>
             </g>
-            <g template-id="elementSeparator">
-              <line template-id="separatorLine" stroke-miterlimit="10" x2="100%" stroke="#cccacf" />
-            </g>
-            <g />
-            <g />
-          </g>
-        </svg>
-      </g>
+        </g>
     </svg>
-    <svg widget-name="label1" eObject-URI="main.page#/0/@children.1" x="20" y="5" width="388" height="22">
-      <g template-id="content">
-        <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="194" y="11" fill="#464646">Swift Foundation 4.0 on Android and iOS</text>
-      </g>
-    </svg>
-    <svg widget-name="button1" eObject-URI="main.page#/0/@children.2" x="50" y="871" width="328" height="50">
-      <rect template-id="background" width="100%" height="100%" rx="7.5%" fill="#54ff81" />
-      <g template-id="content">
-        <rect template-id="background" width="100%" height="100%" rx="7.5%" fill="#54ff81" />
-        <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="164" y="25" fill="#0">Run TestFoundation tests</text>
-      </g>
-    </svg>
-  </g>
 </svg>

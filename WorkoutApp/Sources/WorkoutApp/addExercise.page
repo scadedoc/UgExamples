@@ -1,0 +1,123 @@
+<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="addExercise">
+    <minArea width="414" height="736"/>
+    <location/>
+    <backgroundColor Red="248" Green="248" Blue="248"/>
+    <children xsi:type="widgets:NavigationBar" name="navigationBar">
+      <children xsi:type="widgets:Button" name="backButton">
+        <font fontFamily="ArialMT" size="17">
+          <color Red="68" Green="106" Blue="179"/>
+        </font>
+        <layoutData xsi:type="layout:AutoLayoutData">
+          <constraints sourceAnchor="TOP" targetAnchor="TOP" source="/0/@children.0/@children.0" target="/0/@children.0"/>
+          <constraints source="/0/@children.0/@children.0" target="/0/@children.0"/>
+          <constraints sourceAnchor="BOTTOM" targetAnchor="BOTTOM" source="/0/@children.0/@children.0" target="/0/@children.0"/>
+          <constraints sourceAnchor="WIDTH" constant="172" source="/0/@children.0/@children.0"/>
+        </layoutData>
+        <location/>
+        <size width="172" height="46"/>
+        <contentSize width="132" height="44"/>
+      </children>
+      <children xsi:type="widgets:Label" text="Circuit" name="navTitle">
+        <font fontFamily="SFPro-Semibold" size="17">
+          <color/>
+        </font>
+        <layoutData xsi:type="layout:AutoLayoutData">
+          <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.0/@children.1" target="/0/@children.0"/>
+          <constraints sourceAnchor="CENTER_Y" targetAnchor="CENTER_Y" source="/0/@children.0/@children.1" target="/0/@children.0"/>
+        </layoutData>
+        <location x="181" y="13"/>
+        <size width="53" height="21"/>
+        <contentSize width="53" height="21"/>
+      </children>
+      <children xsi:type="widgets:Button" text="Done" name="doneButton" horizontalAlignment="CENTER" paddingRight="20">
+        <font fontFamily="ArialMT" size="17">
+          <color Red="191" Green="191" Blue="191"/>
+        </font>
+        <layoutData xsi:type="layout:AutoLayoutData">
+          <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.0/@children.2" target="/0/@children.0"/>
+          <constraints sourceAnchor="CENTER_Y" targetAnchor="CENTER_Y" source="/0/@children.0/@children.2" target="/0/@children.0"/>
+        </layoutData>
+        <location x="353" y="14"/>
+        <size width="61" height="19"/>
+        <contentSize width="41" height="19"/>
+      </children>
+      <layout xsi:type="layout:AutoLayout"/>
+      <maxArea width="-1" height="-1"/>
+      <location/>
+      <minArea height="46"/>
+      <size width="414" height="46"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="TOP" targetAnchor="TOP" source="/0/@children.0" target="/0"/>
+        <constraints source="/0/@children.0" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.0" target="/0"/>
+      </layoutData>
+    </children>
+    <children xsi:type="widgets:RowView" cornerRadius="12" name="rowView" paddingTop="17" paddingLeft="20" paddingRight="20" paddingBottom="17">
+      <minArea/>
+      <location x="16" y="54"/>
+      <backgroundColor Red="255" Green="255" Blue="255"/>
+      <children xsi:type="widgets:Textbox" placeholder="Circuit name" name="textbox">
+        <font fontFamily="SF Pro Display" size="16">
+          <color Red="191" Green="191" Blue="191"/>
+        </font>
+        <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true">
+          <maxSize width="-1" height="-1"/>
+        </layoutData>
+        <location x="20" y="17"/>
+        <size width="342" height="24"/>
+        <contentSize width="342" height="19"/>
+      </children>
+      <layout xsi:type="layout:GridLayout"/>
+      <maxArea width="-1" height="-1"/>
+      <size width="382" height="58"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="TOP" targetAnchor="BOTTOM" constant="8" source="/0/@children.1" target="/0/@children.0"/>
+        <constraints constant="16" source="/0/@children.1" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-16" source="/0/@children.1" target="/0"/>
+        <constraints sourceAnchor="HEIGHT" constant="58" source="/0/@children.1"/>
+      </layoutData>
+    </children>
+    <children xsi:type="widgets:ListView" paddingLeft="5" name="listView" paddingRight="5" paddingTop="5" paddingBottom="5">
+      <children xsi:type="widgets:Button" horizontalAlignment="CENTER" paddingLeft="20" name="addExerciseButton" paddingRight="20">
+        <font fontFamily="ArialMT" size="17">
+          <color Red="68" Green="106" Blue="179"/>
+        </font>
+        <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true">
+          <maxSize width="-1" height="-1"/>
+        </layoutData>
+        <location x="99" y="5"/>
+        <size width="135" height="94"/>
+        <contentSize width="95" height="94"/>
+      </children>
+      <children xsi:type="widgets:Label" text="Add your first Exercise" name="label1">
+        <font fontFamily="SF Pro" size="17">
+          <color/>
+        </font>
+        <layoutData xsi:type="layout:GridData" row="1" grabVerticalSpace="true" horizontalAlignment="CENTER" verticalAlignment="BOTTOM" grabHorizontalSpace="true">
+          <maxSize width="-1" height="-1"/>
+        </layoutData>
+        <location x="81" y="114"/>
+        <size width="171" height="21"/>
+        <contentSize width="171" height="21"/>
+      </children>
+      <layout xsi:type="layout:GridLayout" rows="2"/>
+      <maxArea width="-1" height="-1"/>
+      <location x="40" y="298"/>
+      <minArea/>
+      <size width="334" height="140"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints constant="40" source="/0/@children.2" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-40" source="/0/@children.2" target="/0"/>
+        <constraints sourceAnchor="HEIGHT" constant="140" source="/0/@children.2"/>
+        <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.2" target="/0"/>
+        <constraints sourceAnchor="CENTER_Y" targetAnchor="CENTER_Y" source="/0/@children.2" target="/0"/>
+      </layoutData>
+    </children>
+    <layout xsi:type="layout:AutoLayout"/>
+    <maxArea width="414" height="736"/>
+    <size width="414" height="736"/>
+  </widgets:Page>
+  <navigation:Navigation page="/0"/>
+</xmi:XMI>

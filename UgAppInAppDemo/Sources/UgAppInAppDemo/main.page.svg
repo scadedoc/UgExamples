@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" widget-name="main" eObject-URI="main.page#/0" width="414" height="896">
-  <rect template-id="background" width="100%" height="100%" fill="#f8f8f8" />
-  <g template-id="content">
-    <svg eObject-URI="main.page#/0/@children.0" widget-name="lblTemperature" x="138" y="422" width="139" height="52">
-      <text text-anchor="middle" alignment-baseline="central" font-size="46" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="69.5" y="26" fill="#8f51">Label1</text>
+    <rect template-id="background" width="100%" height="100%" fill="#f8f8f8"/>
+    <svg template-id="content-box">
+        <g template-id="content">
+            <g template-id="children-content">
+                <svg eObject-URI="main.page#/0/@children.0" widget-name="lblTemperature" x="138" y="422" width="139" height="52">
+                    <text text-anchor="middle" alignment-baseline="central" font-size="46" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="69.5" y="26" fill="#8f51">Label1</text>
+                </svg>
+            </g>
+        </g>
     </svg>
-  </g>
 </svg>

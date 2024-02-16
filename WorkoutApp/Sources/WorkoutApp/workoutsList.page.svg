@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="workoutsList.page#/0" widget-name="workoutsList" width="414" height="736">
+  <rect template-id="background" width="100%" height="100%" fill="#f8f8f8" />
+  <svg template-id="content-box">
+    <g template-id="content">
+      <g template-id="children-content">
+        <svg widget-name="navigationBar" eObject-URI="workoutsList.page#/0/@children.0" width="414" height="30">
+          <svg template-id="content-box">
+            <g template-id="content">
+              <g template-id="children-content" />
+            </g>
+          </svg>
+        </svg>
+        <svg widget-name="rowView" eObject-URI="workoutsList.page#/0/@children.1" y="30" width="414" height="52">
+          <svg template-id="content-box">
+            <g template-id="content">
+              <g template-id="children-content">
+                <svg widget-name="label" eObject-URI="workoutsList.page#/0/@children.1/@children.0" x="16" width="382" height="52">
+                  <svg template-id="content-box" width="382" height="52">
+                    <g template-id="content">
+                      <text alignment-baseline="middle" font-size="34" font-family="SFPro-Bold" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="26" fill="#0">Workouts</text>
+                    </g>
+                  </svg>
+                </svg>
+              </g>
+            </g>
+          </svg>
+        </svg>
+        <svg widget-name="list" eObject-URI="workoutsList.page#/0/@children.2" x="16" y="98" width="382" height="638">
+          <g scrollableBox="382 638" template-id="listContent" scrollable="vertical">
+            <svg widget-name="listElement" eObject-URI="workoutsList.page#/0/@children.2/@template/@element" x="5" width="377" height="206">
+              <g template-id="elementContent">
+                <svg widget-name="gridView" eObject-URI="workoutsList.page#/0/@children.2/@template/@element/@children.0" width="377" height="130">
+                  <rect template-id="background" width="100%" height="100%" rx="6%" fill="#ebecf1" />
+                  <svg template-id="content-box">
+                    <g template-id="content">
+                      <g template-id="children-content">
+                        <svg widget-name="rowView1" eObject-URI="workoutsList.page#/0/@children.2/@template/@element/@children.0/@children.0" x="20" y="20" width="337" height="54">
+                          <svg template-id="content-box">
+                            <g template-id="content">
+                              <g template-id="children-content">
+                                <svg widget-name="workoutTitleLabel" eObject-URI="workoutsList.page#/0/@children.2/@template/@element/@children.0/@children.0/@children.0" x="5" y="5" width="33" height="44">
+                                  <svg template-id="content-box" width="33" height="44">
+                                    <g template-id="content">
+                                      <text alignment-baseline="middle" font-size="20" font-family="SFProDisplay-Bold" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="22" fill="#0">Бег</text>
+                                    </g>
+                                  </svg>
+                                </svg>
+                                <svg widget-name="rowView3" eObject-URI="workoutsList.page#/0/@children.2/@template/@element/@children.0/@children.0/@children.1" x="234" y="5" width="98" height="44">
+                                  <svg template-id="content-box">
+                                    <g template-id="content">
+                                      <g template-id="children-content">
+                                        <svg widget-name="workoutStartButton" eObject-URI="workoutsList.page#/0/@children.2/@template/@element/@children.0/@children.0/@children.1/@children.0" x="5" y="5" width="78" height="34">
+                                          <svg template-id="content-box" width="62" height="34">
+                                            <g template-id="content">
+                                              <svg viewBox="0 0 62 34" xmlns="http://www.w3.org/2000/svg" template-id="content-background" width="62" height="34" fill="none">
+                                                <rect width="62" height="34" rx="17" fill="#0" />
+                                                <path d="M 19.9785 21.2109 C 18.0156 21.2109 16.7676 20.2441 16.6621 18.7852 L 16.6562 18.7031 H 18.1211 L 18.127 18.7617 C 18.1973 19.4707 18.9531 19.9395 20.0254 19.9395 C 21.0449 19.9395 21.7598 19.4355 21.7598 18.709 V 18.7031 C 21.7598 18.0938 21.3203 17.7246 20.2305 17.4902 L 19.3223 17.3027 C 17.5938 16.9395 16.8438 16.1309 16.8438 14.8711 V 14.8652 C 16.8438 13.3535 18.1445 12.334 19.9727 12.334 C 21.8477 12.334 23.0137 13.3594 23.1191 14.7188 L 23.125 14.7949 H 21.6777 L 21.666 14.7246 C 21.5605 14.0684 20.9336 13.5996 19.9668 13.6055 C 19.0293 13.6055 18.3613 14.0449 18.3613 14.7656 V 14.7715 C 18.3613 15.3691 18.7891 15.7441 19.8438 15.9668 L 20.752 16.1602 C 22.5332 16.5352 23.2773 17.25 23.2773 18.5273 V 18.5332 C 23.2773 20.1797 22.0059 21.2109 19.9785 21.2109 z M 27.3438 21.0293 C 25.873 21.0293 25.2695 20.5371 25.2695 19.3008 V 15.7266 H 24.2734 V 14.5957 H 25.2695 V 13.0254 H 26.752 V 14.5957 H 28.1055 V 15.7266 H 26.752 V 18.9551 C 26.752 19.5938 27.0039 19.8633 27.6133 19.8633 C 27.8184 19.8633 27.9297 19.8574 28.1055 19.8398 V 20.9648 C 27.8945 21.0059 27.625 21.0293 27.3438 21.0293 z M 31.3047 21.1055 C 30.0859 21.1055 29.2012 20.3555 29.2012 19.1895 V 19.1777 C 29.2012 18.0352 30.0742 17.3672 31.6328 17.2734 L 33.2793 17.1738 V 16.623 C 33.2793 15.9844 32.8633 15.6328 32.0781 15.6328 C 31.4102 15.6328 30.9766 15.873 30.8301 16.2949 L 30.8242 16.3184 H 29.4473 L 29.4531 16.2656 C 29.5938 15.1875 30.625 14.4727 32.1484 14.4727 C 33.7949 14.4727 34.7207 15.2695 34.7207 16.623 V 21 H 33.2793 V 20.1211 H 33.1797 C 32.8281 20.7422 32.1484 21.1055 31.3047 21.1055 z M 30.6426 19.1191 C 30.6426 19.6641 31.1055 19.9863 31.75 19.9863 C 32.6289 19.9863 33.2793 19.4121 33.2793 18.6504 V 18.1348 L 31.8379 18.2285 C 31.0234 18.2812 30.6426 18.5801 30.6426 19.1074 V 19.1191 z M 36.4727 21 V 14.5957 H 37.9316 V 15.5801 H 38.0312 C 38.248 14.8945 38.834 14.4902 39.6777 14.4902 C 39.9004 14.4902 40.1289 14.5195 40.2695 14.5605 V 15.8672 C 40.0352 15.8203 39.7949 15.7852 39.543 15.7852 C 38.5703 15.7852 37.9316 16.3652 37.9316 17.2793 V 21 H 36.4727 z M 44.2773 21.0293 C 42.8066 21.0293 42.2031 20.5371 42.2031 19.3008 V 15.7266 H 41.207 V 14.5957 H 42.2031 V 13.0254 H 43.6855 V 14.5957 H 45.0391 V 15.7266 H 43.6855 V 18.9551 C 43.6855 19.5938 43.9375 19.8633 44.5469 19.8633 C 44.752 19.8633 44.8633 19.8574 45.0391 19.8398 V 20.9648 C 44.8281 21.0059 44.5586 21.0293 44.2773 21.0293 z" fill="#ffffff" />
+                                              </svg>
+                                              <text text-anchor="middle" alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="31" y="17" fill="#446ab3" />
+                                            </g>
+                                          </svg>
+                                        </svg>
+                                        <svg widget-name="arrowButton" eObject-URI="workoutsList.page#/0/@children.2/@template/@element/@children.0/@children.0/@children.1/@children.1" x="83" y="5" width="10" height="34">
+                                          <svg template-id="content-box" width="10" height="34">
+                                            <g template-id="content">
+                                              <svg viewBox="0 0 10 20" xmlns="http://www.w3.org/2000/svg" template-id="content-background" y="7" width="10" height="20" fill="none">
+                                                <path d="M 8.71533 10 C 8.71533 10.1686 8.68115 10.3258 8.61279 10.4717 C 8.54899 10.613 8.44645 10.752 8.30518 10.8887 L 3.14404 15.9473 C 2.93441 16.1569 2.6792 16.2617 2.37842 16.2617 C 2.18245 16.2617 2.00016 16.2116 1.83154 16.1113 C 1.66292 16.0156 1.52848 15.8857 1.42822 15.7217 C 1.33252 15.5576 1.28467 15.3753 1.28467 15.1748 C 1.28467 14.874 1.40088 14.6051 1.6333 14.3682 L 6.13818 9.99316 L 1.6333 5.625 C 1.40088 5.39714 1.28467 5.13053 1.28467 4.8252 C 1.28467 4.62467 1.33252 4.44238 1.42822 4.27832 C 1.52848 4.11426 1.66292 3.98438 1.83154 3.88867 C 2.00016 3.78841 2.18245 3.73828 2.37842 3.73828 C 2.6792 3.73828 2.93441 3.84082 3.14404 4.0459 L 8.30518 9.10449 C 8.44645 9.24121 8.54899 9.38249 8.61279 9.52832 C 8.6766 9.6696 8.71077 9.82682 8.71533 10 z" fill="#c7c7cc" />
+                                              </svg>
+                                              <text text-anchor="middle" alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="5" y="17" fill="#446ab3" />
+                                            </g>
+                                          </svg>
+                                        </svg>
+                                      </g>
+                                    </g>
+                                  </svg>
+                                </svg>
+                              </g>
+                            </g>
+                          </svg>
+                        </svg>
+                        <svg widget-name="label1" eObject-URI="workoutsList.page#/0/@children.2/@template/@element/@children.0/@children.1" x="20" y="74" width="337" height="1">
+                          <svg template-id="content-box" width="337" height="1">
+                            <g template-id="content">
+                              <svg viewBox="0 0 307 1" xmlns="http://www.w3.org/2000/svg" template-id="content-background" width="307" height="1" fill="none">
+                                <rect width="307" height="1" fill="#e5e5e5" />
+                              </svg>
+                              <text alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="0.5" fill="#464646" />
+                            </g>
+                          </svg>
+                        </svg>
+                        <svg widget-name="rowView2" eObject-URI="workoutsList.page#/0/@children.2/@template/@element/@children.0/@children.2" x="20" y="75" width="337" height="35">
+                          <svg template-id="content-box">
+                            <g template-id="content">
+                              <g template-id="children-content">
+                                <svg widget-name="label5" eObject-URI="workoutsList.page#/0/@children.2/@template/@element/@children.0/@children.2/@children.0" x="5" y="8" width="76" height="19">
+                                  <svg template-id="content-box" width="76" height="19">
+                                    <g template-id="content">
+                                      <text alignment-baseline="middle" font-size="16" font-family="SFProText-Semibold" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="9.5" fill="#0">3 Circuits</text>
+                                    </g>
+                                  </svg>
+                                </svg>
+                                <svg widget-name="arrowDownButton" eObject-URI="workoutsList.page#/0/@children.2/@template/@element/@children.0/@children.2/@children.1" x="308" y="5" width="24" height="25">
+                                  <svg template-id="content-box" width="24" height="25">
+                                    <g template-id="content">
+                                      <svg viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg" template-id="content-background" width="24" height="25" fill="none">
+                                        <path stroke-width="2" stroke-linecap="round" d="M 6 10.5 L 10.8686 15.2939 C 11.2646 15.6838 11.4627 15.8788 11.691 15.9518 C 11.8918 16.0161 12.1082 16.0161 12.309 15.9518 C 12.5373 15.8788 12.7354 15.6838 13.1314 15.2939 L 18 10.5" stroke="#afb0b4" />
+                                      </svg>
+                                      <text text-anchor="middle" alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="12" y="12.5" fill="#446ab3" />
+                                    </g>
+                                  </svg>
+                                </svg>
+                              </g>
+                            </g>
+                          </svg>
+                        </svg>
+                      </g>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="listView" eObject-URI="workoutsList.page#/0/@children.2/@template/@element/@children.1" y="132" width="377" height="74" display="none">
+                  <rect template-id="background" width="100%" height="100%" fill="#ebecf1" />
+                  <svg template-id="content-box">
+                    <g scrollableBox="377 74" template-id="content" scrollable="vertical">
+                      <g template-id="children-content">
+                        <svg widget-name="gridView1" eObject-URI="workoutsList.page#/0/@children.2/@template/@element/@children.1/@children.0" x="16" y="20" width="345" height="34">
+                          <svg template-id="content-box">
+                            <g template-id="content">
+                              <g template-id="children-content">
+                                <svg widget-name="listView2" eObject-URI="workoutsList.page#/0/@children.2/@template/@element/@children.1/@children.0/@children.0" width="276" height="34">
+                                  <svg template-id="content-box">
+                                    <g template-id="content">
+                                      <g template-id="children-content">
+                                        <svg widget-name="label4" eObject-URI="workoutsList.page#/0/@children.2/@template/@element/@children.1/@children.0/@children.0/@children.0" width="129" height="19">
+                                          <svg template-id="content-box" width="129" height="19">
+                                            <g template-id="content">
+                                              <text alignment-baseline="middle" font-size="16" font-family="SF Pro Text" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="9.5" fill="#0">Разминка, 10:00</text>
+                                            </g>
+                                          </svg>
+                                        </svg>
+                                        <svg widget-name="label6" eObject-URI="workoutsList.page#/0/@children.2/@template/@element/@children.1/@children.0/@children.0/@children.1" y="19" width="132" height="14">
+                                          <svg template-id="content-box" width="132" height="14">
+                                            <g template-id="content">
+                                              <text alignment-baseline="middle" font-size="12" font-family="SFProText-Medium" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="7" fill="#464646">1 Exercise, No Repeats</text>
+                                            </g>
+                                          </svg>
+                                        </svg>
+                                      </g>
+                                    </g>
+                                  </svg>
+                                </svg>
+                                <svg widget-name="button1" eObject-URI="workoutsList.page#/0/@children.2/@template/@element/@children.1/@children.0/@children.1" x="276" width="69" height="34">
+                                  <svg template-id="content-box" width="62" height="34">
+                                    <g template-id="content">
+                                      <svg viewBox="0 0 62 34" xmlns="http://www.w3.org/2000/svg" template-id="content-background" width="62" height="34" fill="none">
+                                        <rect width="62" height="34" rx="17" fill="#0" />
+                                        <path d="M 19.9785 21.2109 C 18.0156 21.2109 16.7676 20.2441 16.6621 18.7852 L 16.6562 18.7031 H 18.1211 L 18.127 18.7617 C 18.1973 19.4707 18.9531 19.9395 20.0254 19.9395 C 21.0449 19.9395 21.7598 19.4355 21.7598 18.709 V 18.7031 C 21.7598 18.0938 21.3203 17.7246 20.2305 17.4902 L 19.3223 17.3027 C 17.5938 16.9395 16.8438 16.1309 16.8438 14.8711 V 14.8652 C 16.8438 13.3535 18.1445 12.334 19.9727 12.334 C 21.8477 12.334 23.0137 13.3594 23.1191 14.7188 L 23.125 14.7949 H 21.6777 L 21.666 14.7246 C 21.5605 14.0684 20.9336 13.5996 19.9668 13.6055 C 19.0293 13.6055 18.3613 14.0449 18.3613 14.7656 V 14.7715 C 18.3613 15.3691 18.7891 15.7441 19.8438 15.9668 L 20.752 16.1602 C 22.5332 16.5352 23.2773 17.25 23.2773 18.5273 V 18.5332 C 23.2773 20.1797 22.0059 21.2109 19.9785 21.2109 z M 27.3438 21.0293 C 25.873 21.0293 25.2695 20.5371 25.2695 19.3008 V 15.7266 H 24.2734 V 14.5957 H 25.2695 V 13.0254 H 26.752 V 14.5957 H 28.1055 V 15.7266 H 26.752 V 18.9551 C 26.752 19.5938 27.0039 19.8633 27.6133 19.8633 C 27.8184 19.8633 27.9297 19.8574 28.1055 19.8398 V 20.9648 C 27.8945 21.0059 27.625 21.0293 27.3438 21.0293 z M 31.3047 21.1055 C 30.0859 21.1055 29.2012 20.3555 29.2012 19.1895 V 19.1777 C 29.2012 18.0352 30.0742 17.3672 31.6328 17.2734 L 33.2793 17.1738 V 16.623 C 33.2793 15.9844 32.8633 15.6328 32.0781 15.6328 C 31.4102 15.6328 30.9766 15.873 30.8301 16.2949 L 30.8242 16.3184 H 29.4473 L 29.4531 16.2656 C 29.5938 15.1875 30.625 14.4727 32.1484 14.4727 C 33.7949 14.4727 34.7207 15.2695 34.7207 16.623 V 21 H 33.2793 V 20.1211 H 33.1797 C 32.8281 20.7422 32.1484 21.1055 31.3047 21.1055 z M 30.6426 19.1191 C 30.6426 19.6641 31.1055 19.9863 31.75 19.9863 C 32.6289 19.9863 33.2793 19.4121 33.2793 18.6504 V 18.1348 L 31.8379 18.2285 C 31.0234 18.2812 30.6426 18.5801 30.6426 19.1074 V 19.1191 z M 36.4727 21 V 14.5957 H 37.9316 V 15.5801 H 38.0312 C 38.248 14.8945 38.834 14.4902 39.6777 14.4902 C 39.9004 14.4902 40.1289 14.5195 40.2695 14.5605 V 15.8672 C 40.0352 15.8203 39.7949 15.7852 39.543 15.7852 C 38.5703 15.7852 37.9316 16.3652 37.9316 17.2793 V 21 H 36.4727 z M 44.2773 21.0293 C 42.8066 21.0293 42.2031 20.5371 42.2031 19.3008 V 15.7266 H 41.207 V 14.5957 H 42.2031 V 13.0254 H 43.6855 V 14.5957 H 45.0391 V 15.7266 H 43.6855 V 18.9551 C 43.6855 19.5938 43.9375 19.8633 44.5469 19.8633 C 44.752 19.8633 44.8633 19.8574 45.0391 19.8398 V 20.9648 C 44.8281 21.0059 44.5586 21.0293 44.2773 21.0293 z" fill="#ffffff" />
+                                      </svg>
+                                      <text text-anchor="middle" alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="31" y="17" fill="#446ab3" />
+                                    </g>
+                                  </svg>
+                                </svg>
+                              </g>
+                            </g>
+                          </svg>
+                        </svg>
+                      </g>
+                    </g>
+                  </svg>
+                </svg>
+              </g>
+              <g template-id="elementSeparator">
+                <line stroke-miterlimit="10" template-id="separatorLine" x2="100%" stroke="#cccbd0" />
+              </g>
+              <g />
+              <g />
+            </svg>
+          </g>
+        </svg>
+        <svg widget-name="addWorkoutButton" eObject-URI="workoutsList.page#/0/@children.3" x="318" y="624" width="72" height="72">
+          <svg template-id="content-box" width="72" height="72">
+            <g template-id="content">
+              <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" template-id="content-background" width="72" height="72" fill="none">
+                <circle cx="36" cy="36" r="36" fill="#0" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 72 0)" />
+                <path stroke-width="2" stroke-linejoin="round" stroke-linecap="square" d="M 36.0011 45 L 36.0011 27 M 45.0011 36 L 27.0011 36" stroke="#ffffff" />
+              </svg>
+              <text text-anchor="middle" alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="36" y="36" fill="#446ab3" />
+            </g>
+          </svg>
+        </svg>
+      </g>
+    </g>
+  </svg>
+</svg>

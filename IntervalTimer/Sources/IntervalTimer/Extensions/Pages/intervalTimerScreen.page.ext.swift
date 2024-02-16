@@ -13,6 +13,10 @@ extension IntervalTimerScreenPageAdapter {
     return self.page?.getWidgetByName("backButton") as! SCDWidgetsButton
   }
 
+  var resetButton: SCDWidgetsButton {
+    return self.page?.getWidgetByName("resetButton") as! SCDWidgetsButton
+  }
+
   var timerLabel: SCDWidgetsLabel {
     return self.page?.getWidgetByName("timerLabel") as! SCDWidgetsLabel
   }

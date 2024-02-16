@@ -1,10 +1,14 @@
-<?xml encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="main.page#/0" widget-name="main" width="320" height="480">
-  <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-  <g template-id="content">
-    <g eObject-URI="main.page#/0/@children.0" widget-name="grid1">
-      <svg template-id="background" width="320" height="480" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-      <g scrollableBox="320 480" scrollable="horizontal" template-id="content" constraints="scrollsize!size.w|size.h" />
-    </g>
-  </g>
+    <svg template-id="content-box">
+        <g template-id="content">
+            <g template-id="children-content">
+                <svg eObject-URI="main.page#/0/@children.0" widget-name="grid1" width="320" height="480">
+                    <svg template-id="content-box">
+                        <g scrollableBox="320 480" scrollable="horizontal" template-id="content"/>
+                    </svg>
+                </svg>
+            </g>
+        </g>
+    </svg>
 </svg>
