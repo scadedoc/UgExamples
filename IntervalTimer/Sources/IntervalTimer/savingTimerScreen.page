@@ -1,0 +1,232 @@
+<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="savingTimerScreen">
+    <minArea width="414" height="736"/>
+    <location/>
+    <backgroundColor Red="33" Green="34" Blue="44"/>
+    <children xsi:type="widgets:NavigationBar" name="navigationBar">
+      <children xsi:type="widgets:Button" horizontalAlignment="CENTER" name="backButton">
+        <font fontFamily="ArialMT" size="17">
+          <color Red="68" Green="106" Blue="179"/>
+        </font>
+        <layoutData xsi:type="layout:AutoLayoutData">
+          <constraints sourceAnchor="TOP" targetAnchor="TOP" source="/0/@children.0/@children.0" target="/0/@children.0"/>
+          <constraints source="/0/@children.0/@children.0" target="/0/@children.0"/>
+          <constraints sourceAnchor="BOTTOM" targetAnchor="BOTTOM" source="/0/@children.0/@children.0" target="/0/@children.0"/>
+          <constraints sourceAnchor="WIDTH" constant="100" source="/0/@children.0/@children.0"/>
+        </layoutData>
+        <location/>
+        <size width="100" height="46"/>
+        <contentSize width="24" height="24"/>
+      </children>
+      <children xsi:type="widgets:Label" text="Add Timer" name="titleLabel" horizontalAlignment="CENTER">
+        <font fontFamily="Apple Braille" size="16">
+          <color Red="255" Green="255" Blue="255"/>
+        </font>
+        <layoutData xsi:type="layout:AutoLayoutData">
+          <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.0/@children.1" target="/0/@children.0"/>
+          <constraints sourceAnchor="CENTER_Y" targetAnchor="CENTER_Y" source="/0/@children.0/@children.1" target="/0/@children.0"/>
+        </layoutData>
+        <location x="170" y="13"/>
+        <size width="75" height="20"/>
+        <contentSize width="75" height="20"/>
+      </children>
+      <children xsi:type="widgets:Button" horizontalAlignment="CENTER" name="saveButton">
+        <font fontFamily="ArialMT" size="17">
+          <color Red="68" Green="106" Blue="179"/>
+        </font>
+        <layoutData xsi:type="layout:AutoLayoutData">
+          <constraints sourceAnchor="TOP" targetAnchor="TOP" source="/0/@children.0/@children.2" target="/0/@children.0"/>
+          <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.0/@children.2" target="/0/@children.0"/>
+          <constraints sourceAnchor="BOTTOM" targetAnchor="BOTTOM" source="/0/@children.0/@children.2" target="/0/@children.0"/>
+          <constraints sourceAnchor="WIDTH" constant="85" source="/0/@children.0/@children.2"/>
+        </layoutData>
+        <location x="329"/>
+        <size width="85" height="46"/>
+        <contentSize width="24" height="24"/>
+      </children>
+      <layout xsi:type="layout:AutoLayout"/>
+      <maxArea width="-1" height="-1"/>
+      <location/>
+      <minArea height="46"/>
+      <size width="414" height="46"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="TOP" targetAnchor="TOP" source="/0/@children.0" target="/0"/>
+        <constraints source="/0/@children.0" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.0" target="/0"/>
+      </layoutData>
+    </children>
+    <children xsi:type="widgets:Container" cornerRadius="10" name="container1">
+      <minArea/>
+      <location x="72" y="293"/>
+      <backgroundColor Red="13" Green="14" Blue="22"/>
+      <children xsi:type="widgets:Label" text="WORK" name="workLabel">
+        <font fontFamily="ArialMT" size="17">
+          <color Red="207" Green="207" Blue="207"/>
+        </font>
+        <layoutData xsi:type="layout:AutoLayoutData">
+          <constraints constant="45" source="/0/@children.1/@children.0" target="/0/@children.1"/>
+          <constraints sourceAnchor="CENTER_Y" targetAnchor="CENTER_Y" source="/0/@children.1/@children.0" target="/0/@children.1"/>
+        </layoutData>
+        <location x="45" y="66"/>
+        <size width="53" height="19"/>
+        <contentSize width="53" height="19"/>
+      </children>
+      <children xsi:type="widgets:Label" text="REST" name="restLabel">
+        <font fontFamily="ArialMT" size="17">
+          <color Red="207" Green="207" Blue="207"/>
+        </font>
+        <layoutData xsi:type="layout:AutoLayoutData">
+          <constraints constant="45" source="/0/@children.1/@children.1" target="/0/@children.1"/>
+          <constraints sourceAnchor="BOTTOM" targetAnchor="BOTTOM" constant="-30" source="/0/@children.1/@children.1" target="/0/@children.1"/>
+        </layoutData>
+        <location x="45" y="101"/>
+        <size width="46" height="19"/>
+        <contentSize width="46" height="19"/>
+      </children>
+      <children xsi:type="widgets:Container" cornerRadius="30" name="container2">
+        <minArea/>
+        <location x="173" y="63"/>
+        <backgroundColor Red="18" Green="121" Blue="9"/>
+        <children xsi:type="widgets:Label" text="00:05" name="label1" horizontalAlignment="CENTER" verticalAlignment="BOTTOM" baselineAlignment="BOTTOM">
+          <font fontFamily="ArialMT" size="17">
+            <color Red="255" Green="255" Blue="255"/>
+          </font>
+          <layoutData xsi:type="layout:AutoLayoutData">
+            <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.1/@children.2/@children.0" target="/0/@children.1/@children.2"/>
+            <constraints sourceAnchor="CENTER_Y" targetAnchor="CENTER_Y" source="/0/@children.1/@children.2/@children.0" target="/0/@children.1/@children.2"/>
+          </layoutData>
+          <location x="5" y="3"/>
+          <size width="43" height="19"/>
+          <contentSize width="43" height="19"/>
+        </children>
+        <layout xsi:type="layout:AutoLayout"/>
+        <maxArea width="-1" height="-1"/>
+        <size width="52" height="25"/>
+        <layoutData xsi:type="layout:AutoLayoutData">
+          <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-45" source="/0/@children.1/@children.2" target="/0/@children.1"/>
+          <constraints sourceAnchor="HEIGHT" constant="25" source="/0/@children.1/@children.2"/>
+          <constraints sourceAnchor="CENTER_Y" targetAnchor="CENTER_Y" source="/0/@children.1/@children.2" target="/0/@children.1"/>
+        </layoutData>
+      </children>
+      <children xsi:type="widgets:Container" cornerRadius="30" name="container3">
+        <minArea/>
+        <location x="173" y="100"/>
+        <backgroundColor Red="18" Green="67" Blue="121"/>
+        <children xsi:type="widgets:Label" text="00:01" name="label2" horizontalAlignment="CENTER" verticalAlignment="BOTTOM" baselineAlignment="BOTTOM">
+          <font fontFamily="ArialMT" size="17">
+            <color Red="255" Green="255" Blue="255"/>
+          </font>
+          <layoutData xsi:type="layout:AutoLayoutData">
+            <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.1/@children.3/@children.0" target="/0/@children.1/@children.3"/>
+            <constraints sourceAnchor="CENTER_Y" targetAnchor="CENTER_Y" source="/0/@children.1/@children.3/@children.0" target="/0/@children.1/@children.3"/>
+          </layoutData>
+          <location x="5" y="3"/>
+          <size width="43" height="19"/>
+          <contentSize width="43" height="19"/>
+        </children>
+        <layout xsi:type="layout:AutoLayout"/>
+        <maxArea width="-1" height="-1"/>
+        <size width="52" height="25"/>
+        <layoutData xsi:type="layout:AutoLayoutData">
+          <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-45" source="/0/@children.1/@children.3" target="/0/@children.1"/>
+          <constraints sourceAnchor="BOTTOM" targetAnchor="BOTTOM" constant="-25" source="/0/@children.1/@children.3" target="/0/@children.1"/>
+          <constraints sourceAnchor="HEIGHT" constant="25" source="/0/@children.1/@children.3"/>
+        </layoutData>
+      </children>
+      <children xsi:type="widgets:Label" text="SETS" name="setLabel">
+        <font fontFamily="ArialMT" size="17">
+          <color Red="207" Green="207" Blue="207"/>
+        </font>
+        <layoutData xsi:type="layout:AutoLayoutData"/>
+        <location x="44" y="29"/>
+        <size width="45" height="19"/>
+        <contentSize width="45" height="19"/>
+      </children>
+      <children xsi:type="widgets:Container" cornerRadius="30" name="container">
+        <minArea/>
+        <location x="173" y="25"/>
+        <backgroundColor Red="120" Green="121" Blue="121"/>
+        <children xsi:type="widgets:Label" text="2" name="label" horizontalAlignment="CENTER" verticalAlignment="BOTTOM" baselineAlignment="BOTTOM">
+          <font fontFamily="ArialMT" size="17">
+            <color Red="255" Green="255" Blue="255"/>
+          </font>
+          <layoutData xsi:type="layout:AutoLayoutData">
+            <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.1/@children.5/@children.0" target="/0/@children.1/@children.5"/>
+            <constraints sourceAnchor="CENTER_Y" targetAnchor="CENTER_Y" source="/0/@children.1/@children.5/@children.0" target="/0/@children.1/@children.5"/>
+          </layoutData>
+          <location x="21" y="3"/>
+          <size width="10" height="19"/>
+          <contentSize width="10" height="19"/>
+        </children>
+        <layout xsi:type="layout:AutoLayout"/>
+        <maxArea width="-1" height="-1"/>
+        <size width="52" height="25"/>
+        <layoutData xsi:type="layout:AutoLayoutData">
+          <constraints sourceAnchor="HEIGHT" constant="25" source="/0/@children.1/@children.5"/>
+        </layoutData>
+      </children>
+      <layout xsi:type="layout:AutoLayout"/>
+      <maxArea width="-1" height="-1"/>
+      <size width="270" height="150"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints constant="72" source="/0/@children.1" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-72" source="/0/@children.1" target="/0"/>
+        <constraints sourceAnchor="HEIGHT" constant="150" source="/0/@children.1"/>
+        <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.1" target="/0"/>
+        <constraints sourceAnchor="CENTER_Y" targetAnchor="CENTER_Y" source="/0/@children.1" target="/0"/>
+      </layoutData>
+    </children>
+    <children xsi:type="widgets:RowView" paddingLeft="32" name="rowView1" paddingRight="5">
+      <children xsi:type="widgets:Button" enable="false" paddingLeft="16" paddingRight="16" horizontalAlignment="CENTER" text="Cancel" visible="false" name="cancelButton">
+        <font fontFamily="ArialMT" size="17">
+          <color Red="255" Green="51" Blue="153"/>
+        </font>
+        <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabVerticalSpace="true">
+          <maxSize width="-1" height="-1"/>
+        </layoutData>
+        <location x="337"/>
+        <size width="32" height="40"/>
+        <contentSize/>
+      </children>
+      <children xsi:type="widgets:RowView" cornerRadius="12" name="rowView2">
+        <minArea/>
+        <location x="32"/>
+        <backgroundColor/>
+        <children xsi:type="widgets:Textbox" placeholder="Enter a Name" text="timer" name="textbox">
+          <font fontFamily="ArialMT" size="17">
+            <color Red="255" Green="255" Blue="255"/>
+          </font>
+          <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" grabHorizontalSpace="true">
+            <maxSize width="-1" height="-1"/>
+          </layoutData>
+          <location/>
+          <size width="305" height="40"/>
+          <contentSize width="305" height="19"/>
+        </children>
+        <layout xsi:type="layout:GridLayout" columns="2"/>
+        <maxArea width="-1" height="-1"/>
+        <size width="305" height="40"/>
+        <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true">
+          <minSize/>
+          <maxSize width="-1" height="-1"/>
+        </layoutData>
+      </children>
+      <layout xsi:type="layout:GridLayout" columns="2"/>
+      <maxArea width="-1" height="-1"/>
+      <location x="20" y="233"/>
+      <minArea/>
+      <size width="374" height="40"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints constant="20" source="/0/@children.2" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-20" source="/0/@children.2" target="/0"/>
+        <constraints sourceAnchor="BOTTOM" targetAnchor="TOP" constant="-20" source="/0/@children.2" target="/0/@children.1"/>
+        <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.2" target="/0"/>
+      </layoutData>
+    </children>
+    <layout xsi:type="layout:AutoLayout"/>
+    <maxArea width="414" height="736"/>
+    <size width="414" height="736"/>
+  </widgets:Page>
+  <navigation:Navigation page="/0"/>
+</xmi:XMI>

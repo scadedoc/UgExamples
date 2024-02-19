@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets" xmi:version="2.0" xmi:id="0.3">
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets" xmi:version="2.0" xmi:id="0.6">
     <widgets:Page name="main">
         <minArea width="414" height="896"/>
         <location/>
         <backgroundColor Green="150" Blue="255"/>
-        <children xsi:type="widgets:ListView" name="verticalview1">
+        <children xsi:type="widgets:ListView" name="verticalview1" paddingTop="5" paddingBottom="5" paddingLeft="5" paddingRight="5">
             <children xsi:type="widgets:Button" text="Custom Modal Dialog" name="btnCustomModalDialog" horizontalAlignment="CENTER">
                 <font fontFamily="Arial" size="20">
                     <color Red="254" Green="255" Blue="255"/>
@@ -31,7 +31,7 @@
                 </layoutData>
                 <backgroundColor Green="149" Blue="255"/>
             </children>
-            <layout xsi:type="layout:GridLayout" rows="2" verticalSpacing="5" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
+            <layout xsi:type="layout:GridLayout" rows="2" verticalSpacing="5"/>
             <maxArea width="-1" height="-1"/>
             <location x="40" y="40"/>
             <minArea/>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" widget-name="savingTimerScreen" eObject-URI="savingTimerScreen.page#/0" width="414" height="736">
+  <rect template-id="background" width="100%" height="100%" fill="#21222c" />
+  <svg template-id="content-box">
+    <g template-id="content">
+      <g template-id="children-content">
+        <svg widget-name="navigationBar" eObject-URI="savingTimerScreen.page#/0/@children.0" width="414" height="46">
+          <svg template-id="content-box">
+            <g template-id="content">
+              <g template-id="children-content">
+                <svg widget-id="backButton" widget-name="backButton" eObject-URI="savingTimerScreen.page#/0/@children.0/@children.0" width="100" height="46">
+                  <svg template-id="content-box" width="100" height="46">
+                    <g template-id="content">
+                      <svg viewBox="0 0 24 24" template-id="content-background" xmlns="http://www.w3.org/2000/svg" x="38" y="11" width="24" height="24" fill="none">
+                        <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round" d="M 21 12 H 3 M 3 12 L 9 6 M 3 12 L 9 18" stroke="#ffffff" />
+                      </svg>
+                      <text text-anchor="middle" alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="50" y="23" fill="#446ab3" />
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-id="titleLabel" widget-name="titleLabel" eObject-URI="savingTimerScreen.page#/0/@children.0/@children.1" x="170" y="13" width="75" height="20">
+                  <svg template-id="content-box" width="75" height="20">
+                    <g template-id="content">
+                      <text text-anchor="middle" alignment-baseline="middle" font-size="16" font-family="Apple Braille" font-style="normal" text-decoration="none" template-id="node-text" x="37.5" y="10" fill="#ffffff">Add Timer</text>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-id="extraButton" widget-name="saveButton" eObject-URI="savingTimerScreen.page#/0/@children.0/@children.2" x="329" width="85" height="46">
+                  <svg template-id="content-box" width="85" height="46">
+                    <g template-id="content">
+                      <svg viewBox="0 0 24 24" template-id="content-background" xmlns="http://www.w3.org/2000/svg" x="30.5" y="11" width="24" height="24" fill="none">
+                        <path stroke-width="2" stroke-linecap="round" d="M 3 17 V 20 C 3 20.5523 3.44772 21 4 21 H 20 C 20.5523 21 21 20.5523 21 20 V 17" stroke="#ffffff" />
+                        <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round" d="M 12 16 L 12 3 M 12 3 L 6 9 M 12 3 L 18 9" stroke="#ffffff" />
+                      </svg>
+                      <text text-anchor="middle" alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="42.5" y="23" fill="#446ab3" />
+                    </g>
+                  </svg>
+                </svg>
+              </g>
+            </g>
+          </svg>
+        </svg>
+        <svg widget-name="container1" eObject-URI="savingTimerScreen.page#/0/@children.1" x="72" y="293" width="270" height="150">
+          <rect template-id="background" width="100%" height="100%" rx="5%" fill="#d0e16" />
+          <svg template-id="content-box">
+            <g template-id="content">
+              <g template-id="children-content">
+                <svg widget-name="workLabel" eObject-URI="savingTimerScreen.page#/0/@children.1/@children.0" x="45" y="66" width="53" height="19">
+                  <svg template-id="content-box" width="53" height="19">
+                    <g template-id="content">
+                      <text alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="9.5" fill="#cfcfcf">WORK</text>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="restLabel" eObject-URI="savingTimerScreen.page#/0/@children.1/@children.1" x="45" y="101" width="46" height="19">
+                  <svg template-id="content-box" width="46" height="19">
+                    <g template-id="content">
+                      <text alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="9.5" fill="#cfcfcf">REST</text>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="container2" eObject-URI="savingTimerScreen.page#/0/@children.1/@children.2" x="173" y="63" width="52" height="25">
+                  <rect template-id="background" width="100%" height="100%" rx="15%" fill="#127909" />
+                  <svg template-id="content-box">
+                    <g template-id="content">
+                      <g template-id="children-content">
+                        <svg widget-name="label1" eObject-URI="savingTimerScreen.page#/0/@children.1/@children.2/@children.0" x="5" y="3" width="43" height="19">
+                          <svg template-id="content-box" width="43" height="19">
+                            <g template-id="content">
+                              <text text-anchor="middle" alignment-baseline="bottom" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="21.5" y="19" fill="#ffffff">00:05</text>
+                            </g>
+                          </svg>
+                        </svg>
+                      </g>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="container3" eObject-URI="savingTimerScreen.page#/0/@children.1/@children.3" x="173" y="100" width="52" height="25">
+                  <rect template-id="background" width="100%" height="100%" rx="15%" fill="#124379" />
+                  <svg template-id="content-box">
+                    <g template-id="content">
+                      <g template-id="children-content">
+                        <svg widget-name="label2" eObject-URI="savingTimerScreen.page#/0/@children.1/@children.3/@children.0" x="5" y="3" width="43" height="19">
+                          <svg template-id="content-box" width="43" height="19">
+                            <g template-id="content">
+                              <text text-anchor="middle" alignment-baseline="bottom" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="21.5" y="19" fill="#ffffff">00:01</text>
+                            </g>
+                          </svg>
+                        </svg>
+                      </g>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="setLabel" eObject-URI="savingTimerScreen.page#/0/@children.1/@children.4" x="44" y="29" width="45" height="19">
+                  <svg template-id="content-box" width="45" height="19">
+                    <g template-id="content">
+                      <text alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="9.5" fill="#cfcfcf">SETS</text>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="container" eObject-URI="savingTimerScreen.page#/0/@children.1/@children.5" x="173" y="25" width="52" height="25">
+                  <rect template-id="background" width="100%" height="100%" rx="15%" fill="#787979" />
+                  <svg template-id="content-box">
+                    <g template-id="content">
+                      <g template-id="children-content">
+                        <svg widget-name="label" eObject-URI="savingTimerScreen.page#/0/@children.1/@children.5/@children.0" x="21" y="3" width="10" height="19">
+                          <svg template-id="content-box" width="10" height="19">
+                            <g template-id="content">
+                              <text text-anchor="middle" alignment-baseline="bottom" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="5" y="19" fill="#ffffff">2</text>
+                            </g>
+                          </svg>
+                        </svg>
+                      </g>
+                    </g>
+                  </svg>
+                </svg>
+              </g>
+            </g>
+          </svg>
+        </svg>
+        <svg widget-name="rowView1" eObject-URI="savingTimerScreen.page#/0/@children.2" x="20" y="233" width="374" height="40">
+          <svg template-id="content-box">
+            <g template-id="content">
+              <g template-id="children-content">
+                <svg display="none" widget-name="cancelButton" eObject-URI="savingTimerScreen.page#/0/@children.2/@children.0" x="337" width="32" height="40">
+                  <svg template-id="content-box" x="16" width="0" height="40">
+                    <g template-id="content">
+                      <text text-anchor="middle" alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="20" fill="#ff3399">Cancel</text>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="rowView2" eObject-URI="savingTimerScreen.page#/0/@children.2/@children.1" x="32" width="305" height="40">
+                  <rect template-id="background" width="100%" height="100%" rx="6%" fill="#0" />
+                  <svg template-id="content-box">
+                    <g template-id="content">
+                      <g template-id="children-content">
+                        <svg widget-name="textbox" eObject-URI="savingTimerScreen.page#/0/@children.2/@children.1/@children.0" width="305" height="40">
+                          <svg template-id="content-box" width="305" height="40">
+                            <g template-id="content">
+                              <text alignment-baseline="middle" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" inputTextWidth="305" editable="true" template-id="node-text" x="0" y="20" fill="#ffffff">timer</text>
+                            </g>
+                          </svg>
+                        </svg>
+                      </g>
+                    </g>
+                  </svg>
+                </svg>
+              </g>
+            </g>
+          </svg>
+        </svg>
+      </g>
+    </g>
+  </svg>
+</svg>

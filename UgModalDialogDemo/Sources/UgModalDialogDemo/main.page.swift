@@ -23,7 +23,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
     modalContentPage.load("ModalContentPage.page")
 
     // Specify behaviour when leaving the modal dialog
-    modalContentPage.onExit = { print("left modalDialog \($0)") }
+    //modalContentPage.onExit = { print("left modalDialog \($0)") }
 
     // Display custom modal content page when button on main page is clicked
     btnCustomModalDialog.onClick {
@@ -91,3 +91,4 @@ class MainPageAdapter: SCDLatticePageAdapter {
     #endif
   }
 }
+ 

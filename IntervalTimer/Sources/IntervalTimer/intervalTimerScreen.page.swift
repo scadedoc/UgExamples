@@ -119,6 +119,7 @@ class IntervalTimerScreenPageAdapter: SCDLatticePageAdapter {
       self.configureFontStyle(of: self.timerLabel, off: whiteColor)
       self.timerLabel.text = "Completed!"
     }
+
   }
 
   func timerLabelInitialValue() {

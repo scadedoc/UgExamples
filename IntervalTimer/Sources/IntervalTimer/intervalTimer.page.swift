@@ -11,7 +11,7 @@ class IntervalTimerPageAdapter: SCDLatticePageAdapter {
   var totalRestInSecs: Int?
   static var workTime: Int = 1
   static var restTime: Int = 1
-
+  
   // page adapter initialization
   override func load(_ path: String) {
     super.load(path)
@@ -49,7 +49,7 @@ class IntervalTimerPageAdapter: SCDLatticePageAdapter {
         IntervalTimerPageAdapter.workTime = self.totalWorkInSecs!
       }
     }
- 
+    
     self.workMinusButton.onClick { _ in
       if self.workElapsedTime > 1 {
         self.workElapsedTime -= 1
@@ -134,7 +134,7 @@ class IntervalTimerPageAdapter: SCDLatticePageAdapter {
     self.toolBarItem1.onClick { _ in
       Navigation.go(.main, clearHistory: true)
     }
-
+    
   }
 
 }

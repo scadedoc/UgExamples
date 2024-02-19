@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="workoutScreen.page#/0" widget-name="workoutScreen" width="414" height="736">
+  <rect template-id="background" width="100%" height="100%" fill="#f8f8f8" />
+  <svg template-id="content-box">
+    <g template-id="content">
+      <g template-id="children-content">
+        <svg widget-name="navigationBar" eObject-URI="workoutScreen.page#/0/@children.0" width="414" height="46">
+          <svg template-id="content-box">
+            <g template-id="content">
+              <g template-id="children-content">
+                <svg widget-name="titleLabel" eObject-URI="workoutScreen.page#/0/@children.0/@children.0" x="153" y="11" width="109" height="24">
+                  <svg template-id="content-box" width="109" height="24">
+                    <g template-id="content">
+                      <text alignment-baseline="middle" font-size="20" font-family="SFProDisplay-Bold" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="12" fill="#0">Интервалы</text>
+                    </g>
+                  </svg>
+                </svg>
+              </g>
+            </g>
+          </svg>
+        </svg>
+        <svg widget-name="pauseButton" eObject-URI="workoutScreen.page#/0/@children.1" x="32" y="624" width="350" height="58">
+          <rect template-id="background" width="100%" height="100%" rx="6%" fill="#0" />
+          <svg template-id="content-box" x="24" y="20" width="302" height="18">
+            <g template-id="content">
+              <text text-anchor="middle" alignment-baseline="middle" font-size="12" font-family="SFProText-Bold" font-style="normal" text-decoration="none" template-id="node-text" x="151" y="9" fill="#ffffff">Pause</text>
+            </g>
+          </svg>
+        </svg>
+        <svg widget-name="resumeButton" eObject-URI="workoutScreen.page#/0/@children.2" x="32" y="558" width="350" height="58">
+          <rect template-id="background" width="100%" height="100%" rx="6%" fill="#0" />
+          <svg template-id="content-box" x="24" y="20" width="302" height="18">
+            <g template-id="content">
+              <text text-anchor="middle" alignment-baseline="middle" font-size="12" font-family="SFProText-Bold" font-style="normal" text-decoration="none" template-id="node-text" x="151" y="9" fill="#ffffff">Resume</text>
+            </g>
+          </svg>
+        </svg>
+        <svg widget-name="listView" eObject-URI="workoutScreen.page#/0/@children.3" x="34" y="426" width="168" height="90">
+          <rect template-id="background" width="100%" height="100%" rx="6%" fill="#ebecf1" />
+          <svg template-id="content-box">
+            <g template-id="content">
+              <g template-id="children-content">
+                <svg widget-name="repeatsLabel" eObject-URI="workoutScreen.page#/0/@children.3/@children.0" x="56" y="22" width="56" height="17">
+                  <svg template-id="content-box" width="56" height="17">
+                    <g template-id="content">
+                      <text alignment-baseline="middle" font-size="14" font-family="SFProText-Semibold" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="8.5" fill="#0">Repeats</text>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="repeatsCountLabel" eObject-URI="workoutScreen.page#/0/@children.3/@children.1" x="63" y="47" width="42" height="24">
+                  <svg template-id="content-box" width="42" height="24">
+                    <g template-id="content">
+                      <text alignment-baseline="middle" font-size="20" font-family="SFProDisplay-Bold" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="12" fill="#0">5/10</text>
+                    </g>
+                  </svg>
+                </svg>
+              </g>
+            </g>
+          </svg>
+        </svg>
+        <svg widget-name="listView1" eObject-URI="workoutScreen.page#/0/@children.4" x="211" y="426" width="168" height="90">
+          <rect template-id="background" width="100%" height="100%" rx="6%" fill="#ebecf1" />
+          <svg template-id="content-box">
+            <g template-id="content">
+              <g template-id="children-content">
+                <svg widget-name="nextLabel" eObject-URI="workoutScreen.page#/0/@children.4/@children.0" x="68" y="22" width="32" height="17">
+                  <svg template-id="content-box" width="32" height="17">
+                    <g template-id="content">
+                      <text alignment-baseline="middle" font-size="14" font-family="SFProText-Semibold" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="8.5" fill="#0">Next</text>
+                    </g>
+                  </svg>
+                </svg>
+                <svg widget-name="label2" eObject-URI="workoutScreen.page#/0/@children.4/@children.1" x="23" y="47" width="121" height="24">
+                  <svg template-id="content-box" width="121" height="24">
+                    <g template-id="content">
+                      <text alignment-baseline="middle" font-size="20" font-family="SFProDisplay-Bold" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="12" fill="#0">Замедление</text>
+                    </g>
+                  </svg>
+                </svg>
+              </g>
+            </g>
+          </svg>
+        </svg>
+        <svg widget-name="exerciseNameLabel" eObject-URI="workoutScreen.page#/0/@children.5" x="155" y="251" width="104" height="24">
+          <svg template-id="content-box" width="104" height="24">
+            <g template-id="content">
+              <text alignment-baseline="middle" font-size="20" font-family="SFProDisplay-Bold" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="12" fill="#af52de">Ускорение</text>
+            </g>
+          </svg>
+        </svg>
+        <svg eObject-URI="workoutScreen.page#/0/@children.6" widget-name="timerCountLabel" x="145" y="196" width="124" height="56">
+          <svg template-id="content-box" width="124" height="56">
+            <g template-id="content">
+              <text alignment-baseline="bottom" font-size="46" font-family="SFProDisplay-Bold" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="56" fill="#af52de">00:18</text>
+            </g>
+          </svg>
+        </svg>
+      </g>
+    </g>
+  </svg>
+</svg>

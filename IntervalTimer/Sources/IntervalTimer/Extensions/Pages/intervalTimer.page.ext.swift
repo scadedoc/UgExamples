@@ -48,7 +48,7 @@ extension IntervalTimerPageAdapter {
   var workTimeLabel: SCDWidgetsLabel {
     return self.page?.getWidgetByName("workTimeLabel") as! SCDWidgetsLabel
   }
-
+  
   var container2: SCDWidgetsContainer {
     return self.page?.getWidgetByName("container2") as! SCDWidgetsContainer
   }

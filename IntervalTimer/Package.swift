@@ -20,12 +20,12 @@ let package = Package(
         )
     ],
     dependencies: [
-      
+      .package(url: "https://github.com/scadedoc/SQLite.swift", .branch("master"))
     ],
     targets: [
         .target(
             name: "IntervalTimer",
-            dependencies: [],
+            dependencies: [.product(name: "SQLite", package: "SQLite.swift")],
             exclude: ["main.page"],
             swiftSettings: [
                 .unsafeFlags(["-F", SCADE_SDK], .when(platforms: [.macOS, .iOS])),

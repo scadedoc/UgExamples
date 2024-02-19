@@ -1,7 +1,7 @@
 <?xml  version="1.0" encoding="UTF-8" standalone="no"?>
-<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.3" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
   <widgets:Page name="ModalContentPage">
-    <children xsi:type="widgets:ListView" name="verticalView">
+    <children xsi:type="widgets:ListView" paddingLeft="5" name="verticalView" paddingRight="5" paddingTop="5" paddingBottom="5">
       <minArea/>
       <location x="32" y="198"/>
       <backgroundColor Red="255" Green="255" Blue="255"/>
@@ -66,7 +66,7 @@
           <maxSize width="-1" height="-1"/>
         </layoutData>
       </children>
-      <layout xsi:type="layout:GridLayout" rows="3" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
+      <layout xsi:type="layout:GridLayout" rows="3"/>
       <maxArea width="-1" height="-1"/>
       <size width="350" height="500"/>
       <layoutData xsi:type="layout:AutoLayoutData">

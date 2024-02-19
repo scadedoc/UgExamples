@@ -1,11 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="page2.page#/0" widget-name="page2" width="414" height="736">
-  <rect template-id="background" width="100%" height="100%" fill="#f8f8f8" />
-  <g template-id="content">
-    <svg x="160" y="352" width="94" height="33" widget-name="label" eObject-URI="page2.page#/0/@children.0">
-      <g template-id="content">
-        <text template-id="node-text" x="0" y="16.5" alignment-baseline="central" font-family="Arial-BoldMT" font-size="29" font-style="normal" text-decoration="none" fill="#ff7d78">Page 2</text>
-      </g>
+    <rect template-id="background" width="100%" height="100%" fill="#f8f8f8"/>
+    <svg template-id="content-box">
+        <g template-id="content">
+            <g template-id="children-content">
+                <svg x="160" y="352" width="94" height="33" widget-name="label" eObject-URI="page2.page#/0/@children.0">
+                    <svg template-id="content-box">
+                        <g template-id="content">
+                            <text template-id="node-text" x="0" y="16.5" alignment-baseline="central" font-family="Arial-BoldMT" font-size="29" font-style="normal" text-decoration="none" fill="#ff7d78">Page 2</text>
+                        </g>
+                    </svg>
+                </svg>
+            </g>
+        </g>
     </svg>
-  </g>
 </svg>

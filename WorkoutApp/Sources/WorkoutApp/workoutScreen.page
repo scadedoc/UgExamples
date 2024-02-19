@@ -1,0 +1,162 @@
+<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="workoutScreen">
+    <minArea width="414" height="736"/>
+    <location/>
+    <backgroundColor Red="248" Green="248" Blue="248"/>
+    <children xsi:type="widgets:NavigationBar" name="navigationBar">
+      <children xsi:type="widgets:Label" text="Интервалы" name="titleLabel">
+        <font fontFamily="SFProDisplay-Bold" size="20">
+          <color/>
+        </font>
+        <layoutData xsi:type="layout:AutoLayoutData">
+          <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.0/@children.0" target="/0/@children.0"/>
+          <constraints sourceAnchor="CENTER_Y" targetAnchor="CENTER_Y" source="/0/@children.0/@children.0" target="/0/@children.0"/>
+        </layoutData>
+        <location x="153" y="11"/>
+        <size width="109" height="24"/>
+        <contentSize width="109" height="24"/>
+      </children>
+      <layout xsi:type="layout:AutoLayout"/>
+      <maxArea width="-1" height="-1"/>
+      <location/>
+      <minArea height="46"/>
+      <size width="414" height="46"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="TOP" targetAnchor="TOP" source="/0/@children.0" target="/0"/>
+        <constraints source="/0/@children.0" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.0" target="/0"/>
+      </layoutData>
+    </children>
+    <children xsi:type="widgets:Button" text="Pause" horizontalAlignment="CENTER" cornerRadius="12" name="pauseButton" paddingRight="24" paddingLeft="24" paddingTop="20" paddingBottom="20">
+      <font fontFamily="SFProText-Bold" size="12">
+        <color Red="255" Green="255" Blue="255"/>
+      </font>
+      <location x="32" y="624"/>
+      <size width="350" height="58"/>
+      <contentSize width="37" height="14"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints constant="32" source="/0/@children.1" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-32" source="/0/@children.1" target="/0"/>
+        <constraints sourceAnchor="BOTTOM" targetAnchor="BOTTOM" constant="-54" source="/0/@children.1" target="/0"/>
+        <constraints sourceAnchor="HEIGHT" constant="58" source="/0/@children.1"/>
+      </layoutData>
+      <backgroundColor/>
+    </children>
+    <children xsi:type="widgets:Button" text="Resume" horizontalAlignment="CENTER" cornerRadius="12" name="resumeButton" paddingRight="24" paddingLeft="24" paddingTop="20" paddingBottom="20">
+      <font fontFamily="SFProText-Bold" size="12">
+        <color Red="255" Green="255" Blue="255"/>
+      </font>
+      <location x="32" y="558"/>
+      <size width="350" height="58"/>
+      <contentSize width="49" height="14"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints constant="32" source="/0/@children.2" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-32" source="/0/@children.2" target="/0"/>
+        <constraints sourceAnchor="BOTTOM" targetAnchor="TOP" constant="-8" source="/0/@children.2" target="/0/@children.1"/>
+        <constraints sourceAnchor="HEIGHT" constant="58" source="/0/@children.2"/>
+      </layoutData>
+      <backgroundColor/>
+    </children>
+    <children xsi:type="widgets:ListView" cornerRadius="12" name="listView" paddingTop="16" paddingLeft="20" paddingRight="20" paddingBottom="16">
+      <minArea/>
+      <location x="34" y="426"/>
+      <backgroundColor Red="235" Green="236" Blue="241"/>
+      <children xsi:type="widgets:Label" text="Repeats" name="repeatsLabel">
+        <font fontFamily="SFProText-Semibold" size="14">
+          <color/>
+        </font>
+        <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true">
+          <maxSize width="-1" height="-1"/>
+        </layoutData>
+        <location x="56" y="22"/>
+        <size width="56" height="17"/>
+        <contentSize width="56" height="17"/>
+      </children>
+      <children xsi:type="widgets:Label" text="5/10" name="repeatsCountLabel">
+        <font fontFamily="SFProDisplay-Bold" size="20">
+          <color/>
+        </font>
+        <layoutData xsi:type="layout:GridData" row="1" grabVerticalSpace="true" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true">
+          <maxSize width="-1" height="-1"/>
+        </layoutData>
+        <location x="63" y="47"/>
+        <size width="42" height="24"/>
+        <contentSize width="42" height="24"/>
+      </children>
+      <layout xsi:type="layout:GridLayout" rows="2"/>
+      <maxArea width="-1" height="-1"/>
+      <size width="168" height="90"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints constant="34" source="/0/@children.3" target="/0"/>
+        <constraints sourceAnchor="BOTTOM" targetAnchor="TOP" constant="-42" source="/0/@children.3" target="/0/@children.2"/>
+        <constraints sourceAnchor="WIDTH" constant="168" source="/0/@children.3"/>
+        <constraints sourceAnchor="HEIGHT" constant="90" source="/0/@children.3"/>
+      </layoutData>
+    </children>
+    <children xsi:type="widgets:ListView" cornerRadius="12" name="listView1" paddingTop="16" paddingLeft="20" paddingRight="20" paddingBottom="16">
+      <minArea/>
+      <location x="211" y="426"/>
+      <backgroundColor Red="235" Green="236" Blue="241"/>
+      <children xsi:type="widgets:Label" text="Next" name="nextLabel">
+        <font fontFamily="SFProText-Semibold" size="14">
+          <color/>
+        </font>
+        <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" grabVerticalSpace="true">
+          <maxSize width="-1" height="-1"/>
+        </layoutData>
+        <location x="68" y="22"/>
+        <size width="32" height="17"/>
+        <contentSize width="32" height="17"/>
+      </children>
+      <children xsi:type="widgets:Label" text="Замедление" name="label2">
+        <font fontFamily="SFProDisplay-Bold" size="20">
+          <color/>
+        </font>
+        <layoutData xsi:type="layout:GridData" row="1" grabVerticalSpace="true" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true">
+          <maxSize width="-1" height="-1"/>
+        </layoutData>
+        <location x="23" y="47"/>
+        <size width="121" height="24"/>
+        <contentSize width="121" height="24"/>
+      </children>
+      <layout xsi:type="layout:GridLayout" rows="2"/>
+      <maxArea width="-1" height="-1"/>
+      <size width="168" height="90"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-35" source="/0/@children.4" target="/0"/>
+        <constraints sourceAnchor="BOTTOM" targetAnchor="TOP" constant="-42" source="/0/@children.4" target="/0/@children.2"/>
+        <constraints sourceAnchor="WIDTH" constant="168" source="/0/@children.4"/>
+        <constraints sourceAnchor="HEIGHT" constant="90" source="/0/@children.4"/>
+      </layoutData>
+    </children>
+    <children xsi:type="widgets:Label" text="Ускорение" name="exerciseNameLabel">
+      <font fontFamily="SFProDisplay-Bold" size="20">
+        <color Red="175" Green="82" Blue="222"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="BOTTOM" targetAnchor="TOP" constant="-151" source="/0/@children.5" target="/0/@children.3"/>
+        <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.5" target="/0"/>
+      </layoutData>
+      <location x="155" y="251"/>
+      <size width="104" height="24"/>
+      <contentSize width="104" height="24"/>
+    </children>
+    <children xsi:type="widgets:Label" text="00:18" name="timerCountLabel" baselineAlignment="BOTTOM" verticalAlignment="BOTTOM">
+      <font fontFamily="SFProDisplay-Bold" size="46">
+        <color Red="175" Green="82" Blue="222"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="BOTTOM" targetAnchor="TOP" constant="-174" source="/0/@children.6" target="/0/@children.3"/>
+        <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.6" target="/0"/>
+      </layoutData>
+      <location x="145" y="196"/>
+      <size width="124" height="56"/>
+      <contentSize width="124" height="56"/>
+    </children>
+    <layout xsi:type="layout:AutoLayout"/>
+    <maxArea width="414" height="736"/>
+    <size width="414" height="736"/>
+  </widgets:Page>
+  <navigation:Navigation page="/0"/>
+</xmi:XMI>

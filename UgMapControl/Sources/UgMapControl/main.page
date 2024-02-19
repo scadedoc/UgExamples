@@ -1,5 +1,5 @@
 <?xml  version="1.0" encoding="UTF-8" standalone="no"?>
-<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.3" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:native="http://scade.com/sdk/view/widgets/native" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:native="http://scade.com/sdk/view/widgets/native" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
   <widgets:Page name="main">
     <children xsi:type="native:MapWidget" name="mapwidget1">
       <location y="14"/>
@@ -9,8 +9,8 @@
         <maxSize width="414" height="810"/>
       </layoutData>
     </children>
-    <children xsi:type="widgets:RowView" name="horizontalview2">
-      <children xsi:type="widgets:Button" text="Standard" name="btnStandard" wrapText="true">
+    <children xsi:type="widgets:RowView" paddingLeft="5" name="horizontalview2" paddingRight="5" paddingTop="5" paddingBottom="5">
+      <children xsi:type="widgets:Button" text="Standard" name="btnStandard">
         <font fontFamily="ArialMT" size="17">
           <color/>
         </font>
@@ -22,7 +22,7 @@
         <size width="69" height="19"/>
         <contentSize width="69" height="19"/>
       </children>
-      <children xsi:type="widgets:Button" text="Satellite" name="btnSatellite" wrapText="true">
+      <children xsi:type="widgets:Button" text="Satellite" name="btnSatellite">
         <font fontFamily="ArialMT" size="17">
           <color/>
         </font>
@@ -34,7 +34,7 @@
         <size width="61" height="19"/>
         <contentSize width="61" height="19"/>
       </children>
-      <children xsi:type="widgets:Button" text="Hybrid" name="btnHybrid" wrapText="true">
+      <children xsi:type="widgets:Button" text="Hybrid" name="btnHybrid">
         <font fontFamily="ArialMT" size="17">
           <color/>
         </font>
@@ -46,7 +46,7 @@
         <size width="50" height="19"/>
         <contentSize width="50" height="19"/>
       </children>
-      <layout xsi:type="layout:GridLayout" columns="3" marginRight="5" marginTop="5" marginBottom="5" marginLeft="5"/>
+      <layout xsi:type="layout:GridLayout" columns="3"/>
       <maxArea width="-1" height="-1"/>
       <location y="867"/>
       <minArea/>
@@ -55,7 +55,7 @@
         <minSize/>
       </layoutData>
     </children>
-    <children xsi:type="widgets:GridView" name="grid1">
+    <children xsi:type="widgets:GridView" paddingLeft="5" name="grid1" paddingRight="5" paddingTop="5" paddingBottom="5">
       <minArea/>
       <location y="838"/>
       <backgroundColor Red="251" Green="246" Blue="240"/>
@@ -71,7 +71,7 @@
         <size width="57" height="19"/>
         <contentSize width="57" height="19"/>
       </children>
-      <children xsi:type="widgets:Button" text="Current location" name="btnCurrLoc" wrapText="true">
+      <children xsi:type="widgets:Button" text="Current location" name="btnCurrLoc">
         <font fontFamily="ArialMT" size="17">
           <color/>
         </font>
@@ -95,7 +95,7 @@
         <size width="43" height="19"/>
         <contentSize width="43" height="19"/>
       </children>
-      <layout xsi:type="layout:GridLayout" rows="2" marginTop="5" columns="3" marginBottom="5" marginLeft="5" marginRight="5"/>
+      <layout xsi:type="layout:GridLayout" columns="3" rows="2"/>
       <maxArea width="-1" height="-1"/>
       <size width="414" height="29"/>
       <layoutData xsi:type="layout:GridData" row="1" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT">
