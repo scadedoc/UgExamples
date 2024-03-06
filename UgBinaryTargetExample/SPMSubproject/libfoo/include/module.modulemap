@@ -1,0 +1,5 @@
+module foo [extern_c] {
+    header "foo.h"
+    link "foo"
+    export *
+}
