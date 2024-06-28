@@ -1,0 +1,31 @@
+<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="main">
+    <minArea width="430" height="932"/>
+    <location/>
+    <backgroundColor Red="248" Green="248" Blue="248"/>
+    <children xsi:type="widgets:ListView" paddingLeft="5" name="listView" paddingRight="5" paddingTop="5" paddingBottom="5">
+      <children xsi:type="widgets:Label" text="label" name="label" multiline="true">
+        <font fontFamily="ArialMT" size="17">
+          <color Red="70" Green="70" Blue="70"/>
+        </font>
+        <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
+          <maxSize width="-1" height="-1"/>
+        </layoutData>
+        <location x="5" y="5"/>
+        <size width="411" height="19"/>
+        <contentSize width="36" height="19"/>
+      </children>
+      <layout xsi:type="layout:GridLayout"/>
+      <maxArea width="-1" height="-1"/>
+      <location x="3" y="4"/>
+      <minArea/>
+      <size width="421" height="924"/>
+      <layoutData xsi:type="layout:AutoLayoutData"/>
+    </children>
+    <layout xsi:type="layout:AutoLayout"/>
+    <maxArea width="430" height="932"/>
+    <size width="430" height="932"/>
+  </widgets:Page>
+  <navigation:Navigation page="/0"/>
+</xmi:XMI>
